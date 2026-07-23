@@ -1,0 +1,12 @@
+{
+  "tokens": [
+    {
+      "name": "SOL",
+      "address": "So11111111111111111111111111111111111111112",
+      "chain": "solana",
+      "active": true
+    }
+  ],
+  "checkInterval": 5,
+  "volumeSurgeThreshold": 5
+}

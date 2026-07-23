@@ -1,0 +1,49 @@
+[
+  {
+    "symbol": "SOL",
+    "price": 78.02,
+    "regime": "极端行情",
+    "regimeConfidence": 92.3076923076923,
+    "direction": "中性",
+    "directionConfidence": 0,
+    "adx": 45.58328877968807,
+    "rsi": 62.19768366720526,
+    "volStatus": "normal",
+    "signals": [
+      "波动率处于历史 92% 分位，极高"
+    ],
+    "timestamp": "2026-07-21T19:13:45.669Z"
+  },
+  {
+    "symbol": "BTC",
+    "price": 66664,
+    "regime": "震荡",
+    "regimeConfidence": 54.92957746478873,
+    "direction": "偏空（震荡区间上沿）",
+    "directionConfidence": 50,
+    "adx": 39.3445477470368,
+    "rsi": 70.58593368067427,
+    "volStatus": "normal",
+    "signals": [
+      "ADX 39.3，无明显趋势",
+      "处于震荡区间上沿(100%)，关注阻力"
+    ],
+    "timestamp": "2026-07-21T19:13:45.852Z"
+  },
+  {
+    "symbol": "ETH",
+    "price": 1930.64,
+    "regime": "震荡",
+    "regimeConfidence": 60.563380281690144,
+    "direction": "偏空（震荡区间上沿）",
+    "directionConfidence": 50,
+    "adx": 39.88019141465806,
+    "rsi": 70.35077841581916,
+    "volStatus": "normal",
+    "signals": [
+      "ADX 39.9，无明显趋势",
+      "处于震荡区间上沿(97%)，关注阻力"
+    ],
+    "timestamp": "2026-07-21T19:13:46.034Z"
+  }
+]

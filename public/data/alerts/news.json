@@ -1,0 +1,405 @@
+{
+  "updated": 1784831435297,
+  "alerts": [
+    {
+      "ts": 1784831371,
+      "detected": 1784831435296,
+      "src": "CoinDesk",
+      "title": "Robinhood 首席执行官 Vlad Tenev 的 X 账户被黑客入侵，以在 memecoin 热潮中推广代币",
+      "orig": "Robinhood CEO Vlad Tenev's X account hacked to promote token amid memecoin frenzy",
+      "link": "https://www.coindesk.com/business/2026/07/23/robinhood-ceo-vlad-tenev-s-x-account-hacked-to-promote-token-amid-memecoin-frenzy"
+    },
+    {
+      "ts": 1784830166,
+      "detected": 1784830354963,
+      "src": "CoinTelegraph",
+      "title": "Robinhood 首席执行官的 X 账户在明显的 memecoin 骗局中被黑",
+      "orig": "Robinhood CEO’s X account hacked in apparent memecoin scam",
+      "link": "https://cointelegraph.com/news/robinhood-ceo-x-account-hacked-in-apparent-memecoin-scam?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1784830202,
+      "detected": 1784830354963,
+      "src": "CoinDesk",
+      "title": "塔萨特希望帮助小型银行在华尔街将其拒之门外之前利用万亿美元的稳定币繁荣",
+      "orig": "Tassat wants to help smaller banks tap the trillion-dollar stablecoin boom before Wall Street lock them out",
+      "link": "https://www.coindesk.com/business/2026/07/23/tassat-wants-to-help-smaller-banks-tap-the-trillion-dollar-stablecoin-boom-before-wall-street-lock-them-out"
+    },
+    {
+      "ts": 1784829354,
+      "detected": 1784829454386,
+      "src": "CNBC",
+      "title": "《奥德赛》正在为 Imax 做准备。",
+      "orig": "'The Odyssey' is cleaning up for Imax. Expect the momentum to continue",
+      "link": "https://www.cnbc.com/2026/07/23/the-odyssey-imax-ticket-sales-revenue.html"
+    },
+    {
+      "ts": 1784828494,
+      "detected": 1784828554067,
+      "src": "CNBC",
+      "title": "由于燃油上涨进一步推迟了扭亏为盈，美国航空股价下跌 9%",
+      "orig": "American Airlines stock tumbles 9% as fuel spike further postpones turnaround",
+      "link": "https://www.cnbc.com/2026/07/23/american-airlines-aal-2q-2026-earnings.html"
+    },
+    {
+      "ts": 1784827877,
+      "detected": 1784828013962,
+      "src": "Decrypt",
+      "title": "巴西农民正在对奶牛进行代币化以获得农业贷款——而且它正在发挥作用",
+      "orig": "Brazilian Farmers Are Tokenizing Cows to Get Farm Loans—And It's Working",
+      "link": "https://decrypt.co/374148/brazilian-farmers-cows-blockchain-loans"
+    },
+    {
+      "ts": 1784827510,
+      "detected": 1784827833483,
+      "src": "BBC Business",
+      "title": "人工智能支出扰乱市场，谷歌和特斯拉股价暴跌",
+      "orig": "Google and Tesla shares plunge as AI spending rattles markets",
+      "link": "https://www.bbc.co.uk/news/articles/c235n47g8g8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1784827510,
+      "detected": 1784827653360,
+      "src": "BBC Business",
+      "title": "由于人工智能支出扰乱市场，谷歌和特斯拉股价下跌",
+      "orig": "Google and Tesla shares fall as AI spending rattles markets",
+      "link": "https://www.bbc.co.uk/news/articles/c235n47g8g8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1784825880,
+      "detected": 1784826933265,
+      "src": "U.Today",
+      "title": "130 万比特币支持为 84,569 美元的比特币价格目标开辟道路",
+      "orig": "1.3 Million BTC Support Opens Way for $84,569 Bitcoin Price Target",
+      "link": "https://u.today/13-million-btc-support-opens-way-for-84569-bitcoin-price-target"
+    },
+    {
+      "ts": 1784825831,
+      "detected": 1784826212635,
+      "src": "CoinTelegraph",
+      "title": "高盛首席执行官支持“不完美”的清晰法案，预计很快就会投票",
+      "orig": "Goldman Sachs CEO backs ‘not perfect’ CLARITY Act as vote expected soon",
+      "link": "https://cointelegraph.com/news/goldman-sachs-ceo-clarity-act-stablecoin-vote?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1784825652,
+      "detected": 1784825672487,
+      "src": "CoinDesk",
+      "title": "Coinbase 的企业客户现在可以接受人工智能代理的付款",
+      "orig": "Coinbase's corporate customers can now accept payments from AI agents",
+      "link": "https://www.coindesk.com/business/2026/07/23/coinbase-closes-the-gaps-in-ai-agent-economy-for-businesses-users-and-developers"
+    },
+    {
+      "ts": 1784824560,
+      "detected": 1784825312714,
+      "src": "U.Today",
+      "title": "“我需要它火箭”：Dave Portnoy 解释为什么他在距离 2 美元还差的时候退出 XRP",
+      "orig": "'I Need It to Rocket': Dave Portnoy Explains Why He Is Exiting XRP Well Short of $2",
+      "link": "https://u.today/i-need-it-to-rocket-dave-portnoy-explains-why-he-is-exiting-xrp-well-short-of-2"
+    },
+    {
+      "ts": 1784824972,
+      "detected": 1784825312714,
+      "src": "CoinTelegraph",
+      "title": "BTC 财务公司 Empery Digital 向人工智能数据中心开发商 Cardinal Data Power 投资 2000 万美元",
+      "orig": "BTC treasury firm Empery Digital invests $20M in AI data center developer Cardinal Data Power",
+      "link": "https://cointelegraph.com/news/bitcoin-treasury-firm-empery-digital-invests-20m-in-ai-data-center-developer-cardinal-data-power?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1784825082,
+      "detected": 1784825312714,
+      "src": "CoinTelegraph",
+      "title": "这就是为什么《清晰法案》的道德协议可能很难达成",
+      "orig": "Here’s why the CLARITY Act’s ethics deal may be so hard to reach",
+      "link": "https://cointelegraph.com/magazine/heres-why-the-clarity-acts-ethics-deal-may-be-so-hard-to-reach?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1784824003,
+      "detected": 1784824414001,
+      "src": "CoinTelegraph",
+      "title": "以太坊兑比特币接近市场底部，但关键信号仍未得到证实：CryptoQuant",
+      "orig": "Ethereum nears market bottom against Bitcoin, though key signals remain unconfirmed: CryptoQuant",
+      "link": "https://cointelegraph.com/news/ethereum-nears-market-bottom-against-bitcoin-key-signals-remain-unconfirmed-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1784821437,
+      "detected": 1784822434569,
+      "src": "U.Today",
+      "title": "美国参议院银行业主席承诺将澄清法案跨越终点线",
+      "orig": "U.S. Senate Banking Chairman Promises to Get Clarity Bill Across Finish Line",
+      "link": "https://u.today/us-senate-banking-chairman-promises-to-get-clarity-bill-across-finish-line"
+    },
+    {
+      "ts": 1784822401,
+      "detected": 1784822434569,
+      "src": "CNBC",
+      "title": "本田 CR-V 引领美国销量，汽车制造商预告新款美国制造皮卡车",
+      "orig": "As Honda CR-V leads U.S. sales, automaker teases new American-built pickup truck",
+      "link": "https://www.cnbc.com/2026/07/23/honda-american-built-pickup-truck.html"
+    },
+    {
+      "ts": 1784820999,
+      "detected": 1784821173295,
+      "src": "CoinDesk",
+      "title": "SEC 与 Coinbase 就其丢失的 Gary Gensler 文本达成和解",
+      "orig": "The SEC settles with Coinbase over its missing Gary Gensler texts",
+      "link": "https://www.coindesk.com/policy/2026/07/23/sec-agrees-to-end-lawsuit-over-missing-ethereum-records-will-pay-usd150-000-in-fees"
+    },
+    {
+      "ts": 1784820725,
+      "detected": 1784820993000,
+      "src": "CNBC",
+      "title": "《奥德赛》正在为 IMAX 做准备。",
+      "orig": "'The Odyssey' is cleaning up for IMAX. Expect the momentum to continue",
+      "link": "https://www.cnbc.com/2026/07/23/the-odyssey-imax-ticket-sales-revenue.html"
+    },
+    {
+      "ts": 1784819325,
+      "detected": 1784820272914,
+      "src": "U.Today",
+      "title": "传奇加密货币交易所 BitMEX 关闭，CZ 股价反应",
+      "orig": "Legendary Crypto Exchange BitMEX Shuts Down, CZ Shares Reaction",
+      "link": "https://u.today/legendary-crypto-exchange-bitmex-shuts-down-cz-shares-reaction"
+    },
+    {
+      "ts": 1784819858,
+      "detected": 1784820092674,
+      "src": "Decrypt",
+      "title": "BlackRock、Coinbase 和 Strategy 承诺向量子证明比特币提供 1500 万美元",
+      "orig": "BlackRock, Coinbase and Strategy Pledge $15M to Quantum-Proof Bitcoin",
+      "link": "https://decrypt.co/374145/blackrock-coinbase-strategy-15m-quantum-proof-bitcoin"
+    },
+    {
+      "ts": 1784818035,
+      "detected": 1784818832051,
+      "src": "U.Today",
+      "title": "中本聪的钱包从 Revolut 用户处收到奇怪的 5,000 美元比特币转账",
+      "orig": "Satoshi Nakamoto's Wallets Receive Weird $5,000 Bitcoin Transfer From Revolut User",
+      "link": "https://u.today/satoshi-nakamotos-wallets-receive-weird-5000-bitcoin-transfer-from-revolut-user"
+    },
+    {
+      "ts": 1784818414,
+      "detected": 1784818472354,
+      "src": "CoinDesk",
+      "title": "顾问的加密货币：是时候让代币化发挥作用了",
+      "orig": "Crypto for Advisors: It’s time for tokenization to get to work",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/07/23/crypto-for-advisors-it-s-time-for-tokenization-to-get-to-work"
+    },
+    {
+      "ts": 1784816985,
+      "detected": 1784817752250,
+      "src": "BBC Business",
+      "title": "伯纳姆表示，英国酒吧营业价格下调 20% 是“第一步”",
+      "orig": "Burnham says 20% business rates cut for English pubs 'a first step'",
+      "link": "https://www.bbc.co.uk/news/articles/cq6dg816464o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1784816985,
+      "detected": 1784817391590,
+      "src": "BBC Business",
+      "title": "伯纳姆称英国酒吧营业价格下调 20% 是“第一步”",
+      "orig": "Burnham calls 20% business rates cut for English pubs 'a first step'",
+      "link": "https://www.bbc.co.uk/news/articles/cq6dg816464o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1784816857,
+      "detected": 1784817031183,
+      "src": "BBC Business",
+      "title": "酒吧欢呼商业利率下调，而其他公司则“被冷落”",
+      "orig": "Pubs cheer business rates relief while other firms 'left out in the cold'",
+      "link": "https://www.bbc.co.uk/news/articles/clyvnz4489wo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1784816985,
+      "detected": 1784817031183,
+      "src": "BBC Business",
+      "title": "伯纳姆 (Burnham) 称英国酒吧营业价格下调 20% 是第一步",
+      "orig": "Burnham calls 20% business rates cut for English pubs a first step",
+      "link": "https://www.bbc.co.uk/news/articles/cq6dg816464o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1784815200,
+      "detected": 1784816131020,
+      "src": "U.Today",
+      "title": "Shibarium 增长 74%，但 SHIB 多头仍在等待",
+      "orig": "Shibarium Posts 74% Growth, but SHIB Bulls Still Waiting",
+      "link": "https://u.today/shibarium-posts-74-growth-but-shib-bulls-still-waiting"
+    },
+    {
+      "ts": 1784815200,
+      "detected": 1784815410494,
+      "src": "CoinDesk",
+      "title": "Uniswap 通过许可交易池更深入地推进代币化资产",
+      "orig": "Uniswap pushes deeper into tokenized assets with permissioned trading pools",
+      "link": "https://www.coindesk.com/business/2026/07/22/uniswap-pushes-deeper-into-tokenized-assets-with-permissioned-trading-pools"
+    },
+    {
+      "ts": 1784812243,
+      "detected": 1784815229700,
+      "src": "BBC Business",
+      "title": "政府将降低酒吧、俱乐部和音乐场所的营业费率",
+      "orig": "Government to cut business rates for pubs, clubs and music venues",
+      "link": "https://www.bbc.co.uk/news/articles/cq6dg816464o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1784814956,
+      "detected": 1784815229700,
+      "src": "BBC Business",
+      "title": "油价自5月以来首次触及100美元",
+      "orig": "Oil prices hit $100 for the first time since May",
+      "link": "https://www.bbc.co.uk/news/articles/cx2djnzrqk2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1784814799,
+      "detected": 1784814868417,
+      "src": "CoinDesk",
+      "title": "尽管银行业对稳定币规则感到担忧，高盛首席执行官还是支持《清晰法案》",
+      "orig": "Goldman Sachs CEO backs Clarity Act despite banking industry's concerns over stablecoin rules",
+      "link": "https://www.coindesk.com/policy/2026/07/23/goldman-sachs-ceo-backs-clarity-act-despite-banking-industry-s-concerns-over-stablecoin-rules"
+    },
+    {
+      "ts": 1784811267,
+      "detected": 1784814689894,
+      "src": "CoinDesk",
+      "title": "贝莱德 (BlackRock)、Coinbase、Strategy 组成的新团队承诺投入 1500 万美元，为比特币应对量子威胁做好准备",
+      "orig": "BlackRock, Coinbase, Strategy in a new group pledging $15 million to prepare Bitcoin for quantum threats",
+      "link": "https://www.coindesk.com/business/2026/07/23/blackrock-coinbase-strategy-in-group-pledging-usd15-million-to-prepare-bitcoin-for-quantum-threats"
+    },
+    {
+      "ts": 1784814327,
+      "detected": 1784814510487,
+      "src": "CNBC",
+      "title": "由于燃油上涨进一步推迟了扭亏为盈，美国航空股价下跌 8%",
+      "orig": "American Airlines stock tumbles 8% as fuel spike further postpones turnaround",
+      "link": "https://www.cnbc.com/2026/07/23/american-airlines-aal-2q-2026-earnings.html"
+    },
+    {
+      "ts": 1784814076,
+      "detected": 1784814327890,
+      "src": "CNBC",
+      "title": "艾伯森股价暴跌，因为该公司表示杂货支出疲软将削减销售额和收益",
+      "orig": "Albertsons stock plunges as it says weaker grocery spending will cut into sales and earnings",
+      "link": "https://www.cnbc.com/2026/07/23/albertsons-stock-plunges-on-lowered-outlook-softened-grocery-trends.html"
+    },
+    {
+      "ts": 1784813400,
+      "detected": 1784813790247,
+      "src": "CoinTelegraph",
+      "title": "目前对人工智能驱动的 DeFi 黑客流行病的担忧有些言过其实，但这种担忧不会持续太久",
+      "orig": "Fears of AI-driven DeFi hack epidemic overstated for now — but not for long",
+      "link": "https://cointelegraph.com/magazine/ai-hasnt-unleashed-a-defi-hackpocalypse-but-its-making-every-weakness-more-dangerous?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1784811798,
+      "detected": 1784812347396,
+      "src": "CoinTelegraph",
+      "title": "以战略为主导的组织承诺向量子比特币网络提供 1500 万美元",
+      "orig": "Strategy-led group pledges $15M to quantum-proof Bitcoin network",
+      "link": "https://cointelegraph.com/news/strategy-consortium-15m-quantum-proof-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1784811600,
+      "detected": 1784811986931,
+      "src": "CoinTelegraph",
+      "title": "币安加入 STOP THE TRAFFIK 打击人口贩运活动",
+      "orig": "Binance joins STOP THE TRAFFIK in anti-human trafficking effort",
+      "link": "https://cointelegraph.com/news/binance-stop-the-traffik-anti-human-trafficking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1784811600,
+      "detected": 1784811807246,
+      "src": "CoinDesk",
+      "title": "《儿童法案》比数字卡片更糟糕——它是一个大规模监控系统",
+      "orig": "The KIDS Act is way worse than digital carding — it is a mass surveillance system",
+      "link": "https://www.coindesk.com/opinion/2026/07/23/the-kids-act-is-way-worse-than-digital-carding-it-is-a-mass-surveillance-system"
+    },
+    {
+      "ts": 1784810715,
+      "detected": 1784811626955,
+      "src": "U.Today",
+      "title": "由于 ETF 反弹，目前所有 XRP 的 1.47% 已无法使用；",
+      "orig": "Record 1.47% of All XRP Now Unavailable Due to ETF Rally; Grayscale Rejects 4-Year Cycle Theory for Bitcoin; Crypto Protocols Lose $35.56 Million in Three Back-to-Back Exploits - Morning Crypto Report",
+      "link": "https://u.today/record-147-of-all-xrp-now-unavailable-due-to-etf-rally-grayscale-rejects-4-year-cycle-theory-for"
+    },
+    {
+      "ts": 1784809930,
+      "detected": 1784811446767,
+      "src": "CNBC",
+      "title": "环孢菌爆发考验 RFK Jr. 改革食品系统、重建对 CDC 信任的承诺",
+      "orig": "Cyclospora outbreak tests RFK Jr.'s promise to overhaul food system, rebuild trust in CDC",
+      "link": "https://www.cnbc.com/2026/07/23/cyclospora-outbreak-tests-rfk-jr-response-funding-cuts.html"
+    },
+    {
+      "ts": 1784811267,
+      "detected": 1784811446767,
+      "src": "CoinDesk",
+      "title": "贝莱德、Coinbase、Strategy 联合承诺投入 1500 万美元，为比特币应对量子威胁做好准备",
+      "orig": "BlackRock, Coinbase, Strategy in group pledging $15 million to prepare Bitcoin for quantum threats",
+      "link": "https://www.coindesk.com/business/2026/07/23/blackrock-coinbase-strategy-in-group-pledging-usd15-million-to-prepare-bitcoin-for-quantum-threats"
+    },
+    {
+      "ts": 1784810847,
+      "detected": 1784811087028,
+      "src": "CoinTelegraph",
+      "title": "交易所宣布关闭，BitMEX 代币暴跌 90%",
+      "orig": "BitMEX token crashes 90% as exchange announces shutdown",
+      "link": "https://cointelegraph.com/markets/bitmex-token-crashes-90-as-exchange-announces-shutdown?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1784809987,
+      "detected": 1784810546952,
+      "src": "CoinTelegraph",
+      "title": "Bitget 获得新西兰扩张许可",
+      "orig": "Bitget secures license for New Zealand expansion",
+      "link": "https://cointelegraph.com/news/bitget-secures-license-new-zealand-expansion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1784810060,
+      "detected": 1784810186968,
+      "src": "Decrypt",
+      "title": "联合国：东南亚诈骗网络一年内给受害者造成的损失高达 114B 美元",
+      "orig": "Southeast Asian Scam Networks Cost Victims Up to $114B in a Year: UN",
+      "link": "https://decrypt.co/374140/southeast-asian-scam-networks-cost-victims-up-to-114b-in-a-year-un"
+    },
+    {
+      "ts": 1784809200,
+      "detected": 1784810006674,
+      "src": "U.Today",
+      "title": "近协议（NEAR）24小时内交易量损失36%：分析导致资金外流的原因",
+      "orig": "Near Protocol (NEAR) Loses 36% of Volume in 24 Hours: Analyzing What Caused Outflow",
+      "link": "https://u.today/near-protocol-near-loses-36-of-volume-in-24-hours-analyzing-what-caused-outflow"
+    },
+    {
+      "ts": 1784808172,
+      "detected": 1784808386142,
+      "src": "Decrypt",
+      "title": "早间分钟：华尔街转向链上将推动下一个牛市",
+      "orig": "Morning Minute: Wall Street Moving Onchain Will Drive the Next Bull Market",
+      "link": "https://decrypt.co/374139/morning-minute-wall-street-moving-onchain-will-drive-the-next-bull-market"
+    },
+    {
+      "ts": 1784806523,
+      "detected": 1784808205880,
+      "src": "U.Today",
+      "title": "“3到4年”：狗狗币联合创始人对加密货币熊市设定了预期",
+      "orig": "'3 to 4 Years': Dogecoin Co-Founder Sets Expectations for Crypto Bear Market",
+      "link": "https://u.today/3-to-4-years-dogecoin-co-founder-sets-expectations-for-crypto-bear-market"
+    },
+    {
+      "ts": 1784808000,
+      "detected": 1784808205880,
+      "src": "CoinDesk",
+      "title": "Coinbase 入股链上基金，阿布扎比 Mubadala Capital 加入代币化进程",
+      "orig": "Abu Dhabi's Mubadala Capital joins tokenization push as Coinbase takes stake in onchain fund",
+      "link": "https://www.coindesk.com/business/2026/07/23/abu-dhabi-s-mubadala-capital-joins-tokenization-push-as-coinbase-takes-stake-in-onchain-fund"
+    },
+    {
+      "ts": 1784807276,
+      "detected": 1784807845999,
+      "src": "CoinTelegraph",
+      "title": "伯恩斯坦表示，比特币挖矿交易对于人工智能电力紧缩是必要的",
+      "orig": "Bernstein says Bitcoin mining deals necessary for AI power crunch",
+      "link": "https://cointelegraph.com/news/bernstein-bitcoin-mining-deals-necessary-ai-power-crunch?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    }
+  ]
+}

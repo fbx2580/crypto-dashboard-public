@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="green">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>链上仪表盘</title>
+  <link rel="stylesheet" href="style.css?v=1784821738">
+</head>
+<body>
+  <!-- 全屏 loading：终端启动效果 -->
+  <div id="fullLoader">
+    <div class="term-boot">
+      <div class="term-boot-header">
+        <span class="term-boot-title">⧩ TUHASEN TERMINAL</span>
+        <span class="term-boot-ver">v1.0</span>
+      </div>
+      <div class="term-boot-sep">━━━━━━━━━━━━━━━━━━━━━━</div>
+      <div class="term-boot-body" id="termBootBody"></div>
+      <div class="term-boot-cursor">_</div>
+    </div>
+  </div>
+
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <h1 class="logo" id="mainLogo"><span class="logo-icon">⧩</span> TUHASEN</h1>
+        <div class="theme-picker" id="themePicker">
+          <span class="theme-dot" data-theme="green" style="color:#00ff55" title="终端绿">⧩</span>
+          <span class="theme-dot" data-theme="white" style="color:#24292f" title="皓月白">⧩</span>
+        </div>
+        <span class="subtitle" id="headerStatus">加载中...</span>
+      </div>
+    </header>
+
+    <!-- Tabs -->
+    <div class="tabs" id="tabBar">
+      <button class="tab active" data-tab="trade">📈 大看板</button>
+      <button class="tab" data-tab="news">📰 消息面</button>
+      <button class="tab" data-tab="altcoin">💪 币圈强信号</button>
+    </div>
+
+    <!-- Tab: 交易 -->
+    <div class="tab-content active" id="tabTrade">
+
+    <!-- Market Overview -->
+    <div class="market-overview" id="marketOverview">
+      <div class="mo-item mo-btc" id="moCrypto">
+        <span class="mo-label">₿ BTC</span>
+        <span class="mo-value" id="moCryptoVal">—</span>
+        <span class="mo-change" id="moCryptoChg">—</span>
+      </div>
+      <div class="mo-item mo-sh" id="moA01">
+        <span class="mo-label">🇨🇳 上证</span>
+        <span class="mo-value" id="moA01Val">—</span>
+        <span class="mo-change" id="moA01Chg">—</span>
+      </div>
+      <div class="mo-item mo-nasdaq" id="moNasdaq">
+        <span class="mo-label">📈 纳指</span>
+        <span class="mo-value" id="moNasdaqVal">—</span>
+        <span class="mo-change" id="moNasdaqChg">—</span>
+      </div>
+      <div class="mo-item mo-sp500" id="moSp500">
+        <span class="mo-label">📊 标普</span>
+        <span class="mo-value" id="moSp500Val">—</span>
+        <span class="mo-change" id="moSp500Chg">—</span>
+      </div>
+    </div>
+
+    <!-- 市场指标 -->
+    <div class="indicator-bar" id="indicatorBar">
+      <div class="indicator-item" id="indFng">
+        <svg viewBox="0 0 36 36" class="indicator-ring">
+          <path class="ring-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="ring-fill" id="fngRing" stroke-dasharray="50, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+          <text x="18" y="16" class="ring-text" id="fngValue" style="font-size:5px;font-weight:800">--</text>
+          <text x="18" y="26" class="ring-text" id="fngLabel" style="font-size:3.2px">😨 恐惧</text>
+        </svg>
+      </div>
+      <div class="indicator-item" id="indAlt">
+        <svg viewBox="0 0 36 36" class="indicator-ring">
+          <path class="ring-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="ring-fill" id="altRing" stroke-dasharray="50, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+          <text x="18" y="16" class="ring-text" id="altValue" style="font-size:5px;font-weight:800">--</text>
+          <text x="18" y="26" class="ring-text" id="altLabel" style="font-size:3.2px">🟢 山寨季</text>
+        </svg>
+      </div>
+    </div>
+
+
+    <div class="rank-row">
+      <div class="rank-box" id="binanceBar">
+        <div class="rank-title">📊 主流币</div>
+        <div class="rank-body bar-tickers" id="tickerBar">
+          <span class="ticker-loading">加载中...</span>
+        </div>
+      </div>
+      <div class="rank-box" id="anomaliesBar">
+        <div class="rank-title">💾 存储</div>
+        <div class="rank-body anomalies-scroll" id="anomaliesScroll">
+          <span class="anomalies-loading">扫描中...</span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- DefiLlama 全链收益排行 -->
+    <div class="defi-yield-section" style="margin-bottom:10px;background:var(--card-bg);border-radius:8px;padding:10px;border:1px solid var(--border);">
+      <div class="rank-title" style="font-size:13px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center;">
+        <span>🦙 DeFi 全链收益排行</span>
+        <span id="llamaCount" style="font-size:10px;color:var(--text-dim);">加载中...</span>
+      </div>
+      <div style="margin-bottom:6px;">
+        <select id="llamaProject" style="width:100%;font-size:10px;padding:3px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:4px;">
+          <option value="">📦 全部</option>
+          <option value="uniswap-v3">Uniswap V3</option>
+          <option value="uniswap-v4">Uniswap V4</option>
+          <option value="pancakeswap-amm">PancakeSwap AMM</option>
+          <option value="pancakeswap-amm-v3">PancakeSwap AMM V3</option>
+        </select>
+      </div>
+      <div id="llamaList" style="font-size:11px;max-height:300px;overflow-y:auto;">
+        <span style="color:var(--text-dim);">加载中...</span>
+      </div>
+    </div>
+
+    </div><!-- /tabTrade -->
+
+    <!-- Tab: 消息面 -->
+    <div class="tab-content" id="tabNews">
+      <div class="signal-layout">
+        <div class="signal-section">
+          <div class="signal-header">🔴 金十快讯 <span class="sig-count" id="jin10Count"></span></div>
+          <div class="signal-body signal-scroll" id="jin10Body">
+            <div class="sig-loading"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+          </div>
+        </div>
+        <div class="signal-section">
+          <div class="signal-header">📡 墙外新闻 <span class="sig-count" id="rssCount"></span></div>
+          <div class="signal-body signal-scroll" id="rssBody">
+            <div class="sig-loading"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: 币圈强信号 -->
+    <div class="tab-content" id="tabAltcoin">
+      <div class="signal-layout" style="padding:0;display:flex;flex-direction:column;flex:1;">
+        <div class="signal-section" style="margin:0;border:none;">
+          <div class="signal-header" style="font-size:14px;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface);display:flex;justify-content:space-between;align-items:center;">
+            <span>👛 鲸鱼钱包监控 <span class="sig-count" id="walletCount"></span></span>
+            <span style="display:flex;align-items:center;gap:6px;">
+              <span id="walletUpdateTime" style="font-size:11px;color:var(--text-dim);"></span>
+              <span class="toggle-icon" style="cursor:pointer;font-size:12px;user-select:none;" onclick="var p=this.parentElement.parentElement.nextElementSibling;var h=p.style.display==='none';p.style.display=h?'':'none';this.textContent=h?'▼':'▶';var ss=this.closest('.signal-layout').querySelectorAll('.signal-section');var visible=Array.from(ss).filter(s=>s.querySelector('.signal-body').style.display!=='none');visible.forEach(v=>v.style.flex='1');ss.forEach(s=>{var b=s.querySelector('.signal-body');if(b.style.display==='none')s.style.flex='0 0 auto';})">▼</span>
+            </span>
+          </div>
+          <div class="signal-body" id="walletBody" style="padding:10px 14px;max-height:300px;overflow-y:auto;">
+            <div class="sig-loading">加载中...</div>
+          </div>
+        </div>
+        <div class="signal-section" style="margin:0;border:none;border-top:1px solid var(--border);">
+          <div class="signal-header" style="font-size:14px;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface);display:flex;justify-content:space-between;align-items:center;">
+            <span>🐋 巨鲸转账 <select id="whaleFilter" style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:2px;font-size:11px;padding:1px 4px;font-family:var(--font);vertical-align:middle;" onchange="applyWhaleFilter()">
+                <option value="all">全部</option>
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+                <option value="USDT/C">USDT/C</option>
+              </select>
+              <span class="sig-count" id="whaleCount"></span>
+            <span id="whaleLiveDot" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);animation:whale-pulse 2s infinite;margin-left:4px;"></span></span>
+            <span style="display:flex;align-items:center;">
+              <span class="toggle-icon" style="cursor:pointer;font-size:12px;user-select:none;" onclick="var p=this.parentElement.parentElement.nextElementSibling;var h=p.style.display==='none';p.style.display=h?'':'none';this.textContent=h?'▼':'▶';var ss=this.closest('.signal-layout').querySelectorAll('.signal-section');var visible=Array.from(ss).filter(s=>s.querySelector('.signal-body').style.display!=='none');visible.forEach(v=>v.style.flex='1');ss.forEach(s=>{var b=s.querySelector('.signal-body');if(b.style.display==='none')s.style.flex='0 0 auto';})">▼</span>
+            </span>
+          </div>
+          <div class="signal-body" id="whaleTransfers" style="padding:10px 14px;max-height:500px;overflow-y:auto;">
+            <div class="sig-loading">加载中...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 聊天后门 -->
+  <div class="backdoor" id="backdoor">
+    <div class="backdoor-header">⧩ TUHASEN <span class="backdoor-sub">聊天</span> <span class="backdoor-uid" id="bdUid"></span> <span class="backdoor-expand" id="backdoorExpand">⛶</span> <span class="backdoor-close" id="backdoorClose">✕</span></div>
+    <div class="backdoor-msgs" id="bdMsgs"></div>
+    <div class="backdoor-input-line">
+      <input type="text" class="backdoor-input" id="backdoorInput" placeholder="按回车或点击发送..." autocomplete="off">
+      <button class="backdoor-send" id="backdoorSend">↵</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
+  <script src="app.js?v=1784829965"></script>
+</body>
+</html>

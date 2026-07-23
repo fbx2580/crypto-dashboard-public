@@ -1,0 +1,772 @@
+// ─── State ───
+const State = {
+  currentSymbol: 'BTCUSDT',
+  interval: '1h',
+  timeRange: 2880,
+  chartType: 'candle',
+  charts: { price: null },
+};
+
+// ─── Formatting ───
+const fmt = {
+  price(v) {
+    if (!v && v !== 0) return '—';
+    if (v >= 1000) return v.toLocaleString('en', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    if (v < 0.00001) return v.toExponential(4);
+    if (v < 0.001) return v.toFixed(8);
+    if (v < 1) return v.toFixed(6);
+    return v.toFixed(4);
+  },
+  vol(v) {
+    if (!v) return '—';
+    if (v >= 1e9) return `$${(v/1e9).toFixed(2)}B`;
+    if (v >= 1e6) return `$${(v/1e6).toFixed(2)}M`;
+    if (v >= 1e3) return `$${(v/1e3).toFixed(1)}K`;
+    return `$${v.toFixed(0)}`;
+  },
+};
+
+// ─── API ───
+const API = {
+  async binanceMajors() { return (await fetch('/api/binance/majors')).json(); },
+  async binanceAnomalies() { return (await fetch('/api/binance/anomalies')).json(); },
+  async marketOverview() { return (await fetch('/api/market/overview')).json(); },
+  async binanceKlines(symbol, interval) { return (await fetch(`/api/binance/klines/${symbol}/${interval}`)).json(); },
+};
+
+// ─── Market Overview ───
+async function refreshIndicators() {
+  try {
+    const d = await (await fetch("/api/market/indicators")).json();
+    const f = d.fear || {};
+    const a = d.altSeason || {};
+    if (f.value != null) {
+      document.getElementById("fngRing").setAttribute("stroke-dasharray", f.value + ", " + (100-f.value));
+      document.getElementById("fngText").textContent = f.value;
+      document.getElementById("fngLabel").textContent = (f.value >= 50 ? "😊" : "😨") + " 恐惧";
+      document.getElementById("fngValue").textContent = f.value + " - " + (f.label || "");
+    }
+    if (a.value != null) {
+      document.getElementById("altRing").setAttribute("stroke-dasharray", a.value + ", " + (100-a.value));
+      document.getElementById("altText").textContent = a.value;
+      document.getElementById("altRing").style.stroke = a.value >= 50 ? "var(--green)" : "var(--accent)";
+      document.getElementById("altLabel").textContent = a.value >= 50 ? "🟢 山寨季" : "🔵 比特季";
+      document.getElementById("altValue").textContent = a.value + "/100";
+    }
+  } catch(e) {}
+}
+
+async function refreshMarket() {
+  try {
+    const data = await API.marketOverview();
+    const setItem = (id, priceText, chg) => {
+      const valEl = document.getElementById(id + 'Val');
+      const chgEl = document.getElementById(id + 'Chg');
+      if (!valEl) return;
+      valEl.textContent = priceText;
+      if (chg !== null && chg !== undefined) {
+        const cls = chg >= 0 ? 'up' : 'down';
+        const sign = chg >= 0 ? '+' : '';
+        chgEl.textContent = `${sign}${chg.toFixed(2)}%`;
+        chgEl.className = `mo-change ${cls}`;
+      } else { chgEl.textContent = '—'; }
+    };
+    // BTC 由 tickBtcPrice 每秒实时更新，这里不覆盖
+    const c = data.crypto || {};
+    const sh = data.aShares?.['000001'];
+    if (sh) setItem('moA01', sh.price.toFixed(0), sh.changePercent);
+    if (data.nasdaq) setItem('moNasdaq', `$${data.nasdaq.price.toLocaleString('en', {minimumFractionDigits:0})}`, data.nasdaq.changePercent);
+    if (data.sp500) setItem('moSp500', `$${data.sp500.price.toLocaleString('en', {minimumFractionDigits:0})}`, data.sp500.changePercent);
+  } catch(e) {}
+}
+
+// ─── 主流币排行（谁更硬谁更软）───
+async function refreshTickers() {
+  try {
+    // 从 signals 接口拿全量数据，取主流排序
+    const resp = await fetch('/api/binance/signals');
+    if (!resp.ok) return;
+    const data = await resp.json();
+    const majors = (data.majors || []).sort((a, b) => b.change24h - a.change24h);
+    const bar = document.getElementById('tickerBar');
+    if (!majors?.length) { bar.innerHTML = '<span class="ticker-loading">等待...</span>'; return; }
+    bar.innerHTML = majors.map(t => {
+      const chg = parseFloat(t.change24h) || 0;
+      const cls = chg >= 0 ? 'up' : 'down';
+      const sign = chg >= 0 ? '+' : '';
+      return `<div class="ticker-item" data-sym="${t.symbol}">
+        <span class="ticker-symbol">${t.symbol.replace('USDT','')}</span>
+        <span class="ticker-price">$${fmt.price(t.price)}</span>
+        <span class="ticker-change ${cls}">${sign}${chg.toFixed(2)}%</span>
+      </div>`;
+    }).join('');
+  } catch(e) {}
+}
+
+// 美股存储类（币安 TradFi 永续合约代码）
+const STORAGE_STOCKS = ['MUUSDT', 'WDCUSDT', 'SNDKUSDT', 'SKHYNIXUSDT', 'SKHYUSDT', 'DRAMUSDT'];
+
+// ─── 秒级 BTC 价格刷新（无缓存，带跳动指示）───
+async function tickBtcPrice() {
+  // BTC 大盘价格（无缓存实时拉）
+  const valEl = document.getElementById('moCryptoVal');
+  const chgEl = document.getElementById('moCryptoChg');
+  if (valEl) {
+    try {
+      const resp = await fetch('/api/binance/price/btc');
+      if (resp.ok) {
+        const data = await resp.json();
+        if (data.price != null) {
+          const chg = parseFloat(data.change24h) || 0;
+          const cls = chg >= 0 ? 'up' : 'down';
+          const sign = chg >= 0 ? '+' : '';
+          valEl.textContent = `$${Math.round(data.price).toLocaleString('en')}`;
+          valEl.className = `mo-value ${cls}`;
+          chgEl.textContent = `${sign}${chg.toFixed(2)}%`;
+          chgEl.className = `mo-change ${cls}`;
+          const box = document.getElementById('moCrypto');
+          if (box) {
+            box.style.transition = 'box-shadow 0.1s';
+            box.style.boxShadow = 'inset 0 0 6px rgba(0,255,68,0.15)';
+            setTimeout(() => { box.style.boxShadow = 'none'; }, 200);
+          }
+        }
+      }
+    } catch(e) {}
+  }
+
+  // 当前 K 线币种实时价格（图表上方）
+  const priceEl = document.getElementById('chartLivePrice');
+  if (!priceEl || !State.currentSymbol) return;
+  try {
+    const sym = State.currentSymbol;
+    const resp = await fetch(`https://fapi.binance.com/fapi/v1/ticker/24hr?symbol=${sym}`, {
+      headers: { 'User-Agent': 'Mozilla/5.0' },
+    });
+    if (!resp.ok) return;
+    const data = await resp.json();
+    const price = parseFloat(data.lastPrice);
+    const chg = parseFloat(data.priceChangePercent) || 0;
+    const cls = chg >= 0 ? 'up' : 'down';
+    const sign = chg >= 0 ? '+' : '';
+    const label = sym.replace('USDT', '');
+    priceEl.textContent = `${label} $${fmt.price(price)}  ${sign}${chg.toFixed(2)}%`;
+    priceEl.className = `chart-live-price ${cls}`;
+  } catch(e) {}
+}
+
+// ─── 秒级 K 线最新蜡烛更新（不跳过期蜡烛，但更新收盘价）───
+async function tickChart() {
+  if (!State.charts.priceSeries || !State.currentSymbol) return;
+  try {
+    const resp = await fetch(`/api/binance/klines/${State.currentSymbol}/${State.interval}?limit=1`);
+    if (!resp.ok) return;
+    const data = await resp.json();
+    const candles = data.candles || [];
+    if (!candles.length) return;
+    const last = candles[candles.length - 1];
+    // 同一根蜡烛的收盘价可能变（未完成蜡烛实时更新），所以这里不跳 time 重复
+    if (State.chartType === 'area') {
+      State.charts.priceSeries.update({ time: last.time, value: last.close });
+    } else {
+      State.charts.priceSeries.update(last);
+    }
+  } catch(e) {}
+}
+
+// ─── 美股存储类排行（从币安拉）───
+async function refreshAnomalies() {
+  try {
+    const resp = await fetch('/api/binance/signals');
+    if (!resp.ok) return;
+    const data = await resp.json();
+    const all = data.altcoins || [];
+    const stocks = (all || []).filter(t => STORAGE_STOCKS.includes(t.symbol))
+      .sort((a, b) => b.change24h - a.change24h);
+    const scroll = document.getElementById('anomaliesScroll');
+    if (!stocks?.length) { scroll.innerHTML = '<span class="anomalies-loading">等待数据...</span>'; return; }
+    scroll.innerHTML = stocks.map(t => {
+      const chg = parseFloat(t.change24h) || 0;
+      const cls = chg >= 0 ? 'up' : 'down';
+      const sign = chg >= 0 ? '+' : '';
+      return `<div class="anomaly-item">
+        <span class="anomaly-symbol">${t.symbol.replace('USDT','')}</span>
+        <span class="anomaly-chg ${cls}">${sign}${chg.toFixed(2)}%</span>
+        <span style="color:#006622;font-size:10px">$${fmt.price(t.price)}</span>
+      </div>`;
+    }).join('');
+  } catch(e) {}
+}
+
+// ─── Chart ───
+function initChart() {
+  const el = document.getElementById('priceChart');
+  if (!el) return;
+  State.charts.price = LightweightCharts.createChart(el, {
+    layout: { background:{color: getCS('--bg','#0a0a0a')}, textColor: getCS('--text-dim','#006622') },
+    grid: { vertLines:{color: getCS('--border','#001a00')}, horzLines:{color: getCS('--border','#001a00')} },
+    timeScale: { borderColor: getCS('--border','#003300'), timeVisible:true, secondsVisible:false },
+    rightPriceScale: { borderColor: getCS('--border','#003300') },
+    width: Math.max(el.clientWidth || 400, 300),
+    height: Math.max(300, Math.min(500, window.innerHeight - 280)),
+  });
+  State.charts.priceSeries = null;
+  // 延迟重绘确保容器渲染完毕
+  setTimeout(() => {
+    if (State.charts.price && el.clientWidth > 0) {
+      State.charts.price.applyOptions({ width: el.clientWidth });
+    }
+  }, 100);
+  window.addEventListener('resize', () => {
+    if (State.charts.price) State.charts.price.applyOptions({ width: Math.max(el.clientWidth, 300), height: Math.max(300, Math.min(500, window.innerHeight - 280)) });
+  });
+}
+
+async function loadChart(symbol, interval) {
+  const s = symbol || State.currentSymbol;
+  const i = interval || State.interval;
+  const input = document.getElementById('chartSearch');
+  try {
+    const data = await API.binanceKlines(s, i);
+    const candles = data.candles || [];
+    if (!candles.length) return;
+    let cutoff = 0;
+    if (State.timeRange !== 'all') cutoff = Date.now()/1000 - State.timeRange*60;
+    let shown = candles.filter(c => c.time >= cutoff);
+    if (shown.length < 2) return;
+    // 取所有可见K线的最高最低作为范围
+    const allHigh = Math.max(...shown.map(c => c.high));
+    const allLow = Math.min(...shown.map(c => c.low));
+    const padding = (allHigh - allLow) * 0.08; // 上下各8%边距
+    const topPrice = allHigh + padding;
+    const bottomPrice = allLow - padding;
+    if (State.charts.priceSeries) { try { State.charts.price.removeSeries(State.charts.priceSeries); } catch(e) {} }
+    if (State.chartType === 'area') {
+      State.charts.priceSeries = State.charts.price.addAreaSeries({
+        lineColor: getCS('--accent','#00cc44'), topColor: getCS('--accent','#00cc44'), bottomColor: getCS('--accent','#00cc44'),
+        lineWidth: 2, priceFormat: { type:'custom', minMove: 0.00000001, formatter: p => p >= 1000 ? p.toFixed(2) : p >= 1 ? p.toFixed(4) : p >= 0.001 ? p.toFixed(6) : p.toFixed(8) },
+      });
+      State.charts.priceSeries.setData(shown.map(c => ({ time: c.time, value: c.close })));
+    } else {
+      State.charts.priceSeries = State.charts.price.addCandlestickSeries({
+        upColor: getCS('--green','#00ff00'), downColor: getCS('--red','#ff3333'), borderDownColor: getCS('--red','#ff3333'), borderUpColor: getCS('--green','#00ff00'),
+        wickDownColor: getCS('--red','#ff3333'), wickUpColor: getCS('--green','#00ff00'),
+        priceFormat: { type:'custom', minMove: 0.00000001, formatter: p => p >= 1000 ? p.toFixed(2) : p >= 1 ? p.toFixed(4) : p >= 0.001 ? p.toFixed(6) : p.toFixed(8) },
+      });
+      State.charts.priceSeries.setData(shown);
+    }
+    // Set visible range to center current price
+    State.charts.price.priceScale('right').applyOptions({
+      mode: LightweightCharts.PriceScaleMode.Normal,
+      autoScale: false,
+    });
+    // 设置价格范围：显示所有K线的最高最低+边距
+    State.charts.price.priceScale('right').setVisibleRange({
+      from: bottomPrice,
+      to: topPrice,
+    });
+    State._isFirstLoad = false;
+    // Store candles for lazy load
+    State._candles = candles;
+    State._allShown = shown;
+    State._high = high;
+    State._low = low;
+    // Subscribe to scroll for lazy loading
+    setupScrollLoad();
+  } catch(e) {}
+}
+
+// ─── Scroll-triggered lazy load ───
+function setupScrollLoad() {
+  if (State._scrollSubscribed) return;
+  try {
+    State.charts.price.timeScale().subscribeVisibleTimeRangeChange((range) => {
+      if (!range || !State._candles || State._candles.length < 10) return;
+      const earliestVisible = range.from;
+      const earliestLoaded = State._candles[0].time;
+      // If scrolled near the earliest candle, load more
+      if (earliestVisible <= earliestLoaded + 5) {
+        const btn = document.getElementById('loadMoreChart');
+        if (btn && btn.style.pointerEvents !== 'none') {
+          btn.click();
+        }
+      }
+    });
+    State._scrollSubscribed = true;
+  } catch(e) {}
+}
+
+// ─── Chart Load More ───
+function setupChartMore() {
+  const btn = document.getElementById('loadMoreChart');
+  if (!btn) return;
+  btn.addEventListener('click', async function() {
+    const candles = State._candles || [];
+    if (candles.length === 0) return;
+    const earliest = candles[0];
+    const sym = State.currentSymbol;
+    const intv = State.interval;
+    this.textContent = '加载中...';
+    fetch('/api/binance/klines/history/'+sym+'/'+intv+'/'+(earliest.time*1000-1)).then(r=>r.json()).then(data => {
+      const older = data.candles || [];
+      if (older.length === 0) { this.textContent = '— 已加载全部 —'; this.style.pointerEvents='none'; this.style.color='#6b7199'; return; }
+      // Merge older + existing
+      const merged = older.concat(candles);
+      const cutoff = State.timeRange === 'all' ? 0 : Date.now()/1000 - State.timeRange*60;
+      const shown = merged.filter(c => c.time >= cutoff);
+      if (shown.length < 2) return;
+      if (State.charts.priceSeries) { try { State.charts.price.removeSeries(State.charts.priceSeries); } catch(e) {} }
+      if (State.chartType === 'area') {
+        State.charts.priceSeries = State.charts.price.addAreaSeries({ lineColor:'#5b8def', topColor: getCS('--accent','#5b8def'), bottomColor: getCS('--accent','#5b8def'), lineWidth:2, priceFormat:{type:'custom',minMove:0.00000001,formatter:p=>p>=1000?p.toFixed(2):p>=1?p.toFixed(4):p>=0.001?p.toFixed(6):p.toFixed(8)} });
+        State.charts.priceSeries.setData(shown.map(c=>({time:c.time,value:c.close})));
+      } else {
+        State.charts.priceSeries = State.charts.price.addCandlestickSeries({ upColor: getCS('--green','#2ecc71'), downColor: getCS('--red','#e74c5e'), borderDownColor: getCS('--red','#e74c5e'), borderUpColor: getCS('--green','#2ecc71'), wickDownColor: getCS('--red','#e74c5e'), wickUpColor: getCS('--green','#2ecc71') });
+        State.charts.priceSeries.setData(shown);
+      }
+      State.charts.price.timeScale().fitContent();
+      State.charts.price.priceScale('right').applyOptions({ autoScale: true });
+      State._candles = merged;
+      State._allShown = shown;
+      this.textContent = '加载更多K线 ▼';
+    }).catch(() => { this.textContent = '加载更多K线 ▼'; });
+  });
+}
+
+let _newsVersion = 0;
+
+// ─── 币圈强信号 ───
+let _altcoinData = null;
+
+async function refreshAltcoinSignals() {
+  // 已清空，预留
+  _altcoinData = null;
+}
+
+// ─── Auto Refresh ───
+async function refreshAll() {
+  document.getElementById('headerStatus').textContent = '⟳ 更新中...';
+  await Promise.all([refreshMarket(), refreshTickers(), refreshAnomalies(), refreshIndicators(), refreshAltcoinSignals()]);
+  await loadChart();
+  // 加载完成
+  document.getElementById('headerStatus').textContent = '已连接';
+}
+
+// ─── Tab Switching ───
+function setupTabs() {
+  document.querySelectorAll('.tab:not(.disabled)').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      tab.classList.add('active');
+      const target = document.getElementById('tab' + tab.dataset.tab.charAt(0).toUpperCase() + tab.dataset.tab.slice(1));
+      if (target) target.classList.add('active');
+      // 币圈强信号tab（预留）
+      if (tab.dataset.tab === 'altcoin') {
+        refreshAltcoinSignals();
+      }
+    });
+  });
+}
+
+// ─── Search ───
+function setupSearch() {
+  const input = document.getElementById('chartSearch');
+  const btn = document.getElementById('searchBtn');
+  const dd = document.getElementById('searchDropdown');
+  if (!input || !btn || !dd) return;
+  let allSymbols = [], filtered = [], highlightIdx = -1;
+  const go = (sym) => {
+    const s = sym || input.value.trim().toUpperCase();
+    if (!s) return;
+    const fullSym = s.endsWith('USDT') ? s : s + 'USDT';
+    State.currentSymbol = fullSym;
+    dd.classList.remove('show');
+    loadChart().catch(() => {});
+  };
+  const render = (list) => {
+    dd.innerHTML = (!list || list.length === 0) ? '<div class="opt empty">无匹配</div>' :
+      list.map((s, i) => `<div class="opt ${i === highlightIdx ? 'highlight' : ''}" data-sym="${s}">${s}</div>`).join('');
+    dd.classList.add('show');
+  };
+  const filter = (val) => {
+    const q = val.toUpperCase();
+    filtered = q ? allSymbols.filter(s => s.includes(q)).slice(0, 30) : allSymbols.slice(0, 30);
+    highlightIdx = -1; render(filtered);
+  };
+  const hide = () => { dd.classList.remove('show'); highlightIdx = -1; };
+  fetch('/api/symbols/all').then(r => r.json()).then(syms => { allSymbols = syms || []; }).catch(() => {});
+  input.addEventListener('focus', () => filter(input.value));
+  input.addEventListener('input', () => filter(input.value));
+  input.addEventListener('blur', () => setTimeout(hide, 200));
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { go(); hide(); }
+    if (e.key === 'ArrowDown') { e.preventDefault(); highlightIdx = Math.min(highlightIdx + 1, filtered.length - 1); render(filtered); }
+    if (e.key === 'ArrowUp') { e.preventDefault(); highlightIdx = Math.max(highlightIdx - 1, -1); render(filtered); }
+  });
+  btn.addEventListener('click', () => go());
+  dd.addEventListener('mousedown', (e) => { const opt = e.target.closest('.opt'); if (opt && opt.dataset.sym) { input.value = opt.dataset.sym; go(opt.dataset.sym); }});
+  dd.addEventListener('touchstart', (e) => { const opt = e.target.closest('.opt'); if (opt && opt.dataset.sym) { input.value = opt.dataset.sym; go(opt.dataset.sym); }}, { passive: true });
+}
+
+// ─── Views ───
+function setupViews() {
+  document.querySelectorAll('#viewGroup .btn-sm').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#viewGroup .btn-sm').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      State.interval = btn.dataset.int;
+      State.timeRange = btn.dataset.range === 'all' ? 'all' : parseInt(btn.dataset.range);
+      loadChart();
+    });
+  });
+}
+
+// ─── News: 分类页面导航 + 下拉刷新 ───
+// ─── 消息面：重建版 — 只展示真实 RSS 数据，零伪造 ───
+function setupNews() {
+  fetch('/api/news').then(r => r.json()).then(data => {
+    // 只有数据真正变了才重绘
+    const ver = data?.updated || 0;
+    if (ver === _newsVersion) return;
+    _newsVersion = ver;
+    const jin10 = data?.jin10 || [];
+    const rss = data?.rss || [];
+
+    // 金十模块
+    const jin10Body = document.getElementById('jin10Body');
+    const jin10Count = document.getElementById('jin10Count');
+    if (jin10Count) jin10Count.textContent = `(${jin10.length})`;
+    if (jin10Body) {
+      if (!jin10.length) {
+        jin10Body.innerHTML = '<div class="sig-loading">暂无快讯</div>';
+      } else {
+        jin10Body.innerHTML = jin10.map(i => {
+          const hasBody = i.body && i.body.length > 5;
+          const imp = i.imp ? ' imp' : '';
+          return hasBody
+            ? `<div class="jin10-item${imp}" onclick="this.classList.toggle('expanded')">
+                <div class="jin10-head">
+                  <span class="jin10-time">${i.t}</span>
+                  <span class="jin10-text">${i.s}</span>
+                  <span class="jin10-arrow">▾</span>
+                </div>
+                <div class="jin10-body">${i.body}</div>
+              </div>`
+            : `<div class="jin10-item${imp}">
+                <div class="jin10-head">
+                  <span class="jin10-time">${i.t}</span>
+                  <span class="jin10-text">${i.s}</span>
+                </div>
+              </div>`;
+        }).join('');
+        requestAnimationFrame(() => {
+          const rows = jin10Body.querySelectorAll('.jin10-item');
+          rows.forEach((r, i) => { r.style.animationDelay = `${i*15}ms`; r.classList.add('type-row'); });
+        });
+      }
+    }
+
+    // RSS 模块
+    const rssBody = document.getElementById('rssBody');
+    const rssCount = document.getElementById('rssCount');
+    if (rssCount) rssCount.textContent = `(${rss.length})`;
+    if (rssBody) {
+      if (!rss.length) {
+        rssBody.innerHTML = '<div class="sig-loading">暂无新闻</div>';
+      } else {
+        const now = new Date();
+        const pad2 = n => String(n).padStart(2, '0');
+        rssBody.innerHTML = rss.map(i => {
+          const pub = new Date(i.t);
+          let ts;
+          if (pub.toDateString() === now.toDateString()) ts = `${pad2(pub.getHours())}:${pad2(pub.getMinutes())}`;
+          else {
+            const y = new Date(now); y.setDate(y.getDate()-1);
+            ts = pub.toDateString() === y.toDateString()
+              ? `昨天 ${pad2(pub.getHours())}:${pad2(pub.getMinutes())}`
+              : `${pad2(pub.getMonth()+1)}-${pad2(pub.getDate())} ${pad2(pub.getHours())}:${pad2(pub.getMinutes())}`;
+          }
+          const title = i.s_cn || i.s;
+          const orig = i.s_cn ? i.s : null;
+          const link = i.link || '';
+          return `<div class="news-item"><span class="ni-time">${ts}</span><span class="ni-src">${i.src}</span><span class="ni-text">${title}${orig ? `<a class="ni-orig" href="${link}" target="_blank">${orig} ↗</a>` : ''}</span></div>`;
+        }).join('');
+        requestAnimationFrame(() => {
+          const rows = rssBody.querySelectorAll('.news-item');
+          rows.forEach((r, i) => { r.style.animationDelay = `${i*15}ms`; r.classList.add('type-row'); });
+        });
+      }
+    }
+  }).catch(() => {
+    ['jin10Body','rssBody'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = '<div class="sig-loading">加载失败</div>';
+    });
+  });
+}
+
+// ─── Init ───
+function init() {
+  initTheme();
+  initChart();
+  setupTabs();
+  setupSearch();
+  setupViews();
+  setupNews();
+  initBackdoor();
+
+  // Chart type
+  const areaBtn = document.getElementById('chartTypeArea');
+  const candleBtn = document.getElementById('chartTypeCandle');
+  if (areaBtn) areaBtn.addEventListener('click', () => { areaBtn.classList.add('active'); candleBtn.classList.remove('active'); State.chartType = 'area'; loadChart(); });
+  if (candleBtn) candleBtn.addEventListener('click', () => { candleBtn.classList.add('active'); areaBtn.classList.remove('active'); State.chartType = 'candle'; loadChart(); });
+
+  // —— 分级别刷新 ——
+  // Tier 0: 秒级（BTC大盘 + K线最新蜡烛）—— 1秒
+  setInterval(() => { tickBtcPrice(); tickChart(); }, 1000);
+
+  // Tier 1: 大盘（纳指/标普/上证 + 主流排行）—— 5秒
+  setInterval(() => { refreshMarket(); refreshTickers(); }, 5000);
+
+  // Tier 2: 存储股 + 强信号—— 5秒
+  setInterval(() => { refreshAnomalies(); refreshAltcoinSignals(); }, 5000);
+
+  // Tier 3: 低频（恐惧指数 + 山寨季指数）—— 3分钟
+  setInterval(() => { refreshIndicators(); }, 180000);
+
+  // 消息面：10秒刷新一次（实时新闻）
+  setInterval(() => {
+    if (document.getElementById('tabNews')?.classList.contains('active')) {
+      setupNews();
+    }
+  }, 10000);
+
+  // 终端启动动画 + 数据拉取，两边都完成才淡出
+  const bootDone = bootTerminal();
+  Promise.all([refreshAll(), bootDone]).then(() => {
+    const loader = document.getElementById('fullLoader');
+    if (loader) {
+      loader.classList.add('hidden');
+      setTimeout(() => { if (loader.parentNode) loader.remove(); }, 500);
+    }
+  });
+}
+
+// ─── 终端启动动画（返回 Promise，完成后 resolve）───
+function bootTerminal() {
+  const body = document.getElementById('termBootBody');
+  if (!body) return Promise.resolve();
+
+  const speed = 0.7 + Math.random() * 0.6;
+  const baseChar = Math.round(4 * speed);
+  const jitter = () => Math.random() * 2 * speed;
+
+  const lines = [
+    { pre: '> ',        text: 'connecting to data sources...',        then: ' ✓', wait: 40 },
+    { pre: '> ',        text: 'fetching BTC price...',                then: ' ✓', wait: 30 },
+    { pre: '> ',        text: 'fetching ETH price...',                then: ' ✓', wait: 30 },
+    { pre: '> ',        text: 'scanning altcoin markets...',          then: ' ✓', wait: 40 },
+    { pre: '> ',        text: 'loading K-line data...',               then: ' ✓', wait: 30 },
+    { pre: '> ',        text: 'syncing news feeds...',                then: ' ✓', wait: 30 },
+    { pre: '> ',        text: 'initializing dashboard...',            then: ' ✓', wait: 30 },
+    { pre: '',           text: 'system ready',                         then: '',  wait: 0, cls: 'ok' },
+  ];
+
+  return new Promise(resolve => {
+    let lineIdx = 0;
+    let charIdx = 0;
+    let currentEl = null;
+
+    function typeNext() {
+      if (lineIdx >= lines.length) {
+        // 所有命令行输出完毕 → resolve
+        resolve();
+        return;
+      }
+
+      const line = lines[lineIdx];
+
+      if (!currentEl) {
+        const div = document.createElement('div');
+        div.className = 'term-boot-line';
+        div.innerHTML = `<span class="prompt">${line.pre}</span><span class="text${line.cls ? ' '+line.cls : ''}"></span>`;
+        body.appendChild(div);
+        currentEl = div.querySelector('.text');
+        charIdx = 0;
+      }
+
+      if (charIdx < line.text.length) {
+        currentEl.textContent += line.text[charIdx];
+        charIdx++;
+        setTimeout(typeNext, baseChar + jitter());
+      } else {
+        if (line.then) {
+          const ok = document.createElement('span');
+          ok.className = 'ok';
+          ok.textContent = line.then;
+          currentEl.after(ok);
+        }
+        currentEl = null;
+        lineIdx++;
+        setTimeout(typeNext, Math.round(line.wait * speed));
+      }
+    }
+
+    typeNext();
+  });
+}
+
+document.addEventListener('DOMContentLoaded', init);
+
+// ─── 隐藏后门：logo点5次激活 ───
+// ─── 主题切换 ───
+function getCS(v, fallback) {
+  try { return getComputedStyle(document.documentElement).getPropertyValue(v).trim() || fallback; } catch(e) { return fallback; }
+}
+
+function initTheme() {
+  const saved = localStorage.getItem("tuhasen_theme") || "green";
+  document.documentElement.setAttribute("data-theme", saved);
+  document.querySelectorAll(".theme-dot").forEach(dot => {
+    const t = dot.dataset.theme;
+    if (t === saved) dot.classList.add("active");
+    dot.addEventListener("click", () => {
+      document.querySelectorAll(".theme-dot").forEach(d => d.classList.remove("active"));
+      dot.classList.add("active");
+      document.documentElement.setAttribute("data-theme", t);
+      localStorage.setItem("tuhasen_theme", t);
+      // 更新 K 线颜色
+      setTimeout(updateChartTheme, 50);
+    });
+  });
+}
+
+// ─── 主题切换时更新 K 线颜色 ───
+function updateChartTheme() {
+  const style = getComputedStyle(document.documentElement);
+  const green = style.getPropertyValue('--green').trim() || '#00ff00';
+  const red = style.getPropertyValue('--red').trim() || '#ff3333';
+  if (State.charts.price) {
+    try { State.charts.price.removeSeries(State.charts.priceSeries); } catch(e) {}
+    loadChart();
+  }
+}
+
+function initBackdoor() {
+  // 用户ID（从 localStorage 读取，每个设备唯一）
+  let uid = localStorage.getItem('bd_uid');
+  if (!uid) {
+    uid = 'user_' + Math.random().toString(36).slice(2, 10) + '_' + Date.now().toString(36);
+    localStorage.setItem('bd_uid', uid);
+  }
+
+  let clickCount = 0, clickTimer = null;
+  const logo = document.getElementById('mainLogo');
+  const bd = document.getElementById('backdoor');
+  const input = document.getElementById('backdoorInput');
+  const msgs = document.getElementById('bdMsgs');
+  const close = document.getElementById('backdoorClose');
+  const expand = document.getElementById('backdoorExpand');
+  const sendBtn = document.getElementById('backdoorSend');
+  const uidEl = document.getElementById('bdUid');
+
+  if (!logo || !bd) return;
+  if (uidEl) uidEl.textContent = uid.slice(0, 10) + '...';
+
+  // 快捷键 Ctrl+Shift+B
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key === 'B') {
+      e.preventDefault(); toggle();
+    }
+  });
+
+  // 点 logo 5 次
+  logo.addEventListener('click', () => {
+    clickCount++;
+    clearTimeout(clickTimer);
+    clickTimer = setTimeout(() => { clickCount = 0; }, 1500);
+    if (clickCount >= 5) { clickCount = 0; toggle(); }
+  });
+
+  function toggle() {
+    bd.classList.toggle('active');
+    if (bd.classList.contains('active')) {
+      loadMsgs();
+      setTimeout(() => { if (input) input.focus(); }, 200);
+    }
+  }
+
+  if (close) close.addEventListener('click', () => bd.classList.remove('active'));
+
+  // 展开/还原
+  if (expand) expand.addEventListener('click', () => {
+    bd.classList.toggle('expanded');
+    if (bd.classList.contains('expanded')) {
+      loadMsgs();
+      setTimeout(() => { if (input) input.focus(); }, 200);
+    }
+  });
+
+  // 发消息
+  function sendMsg() {
+    if (!input) return;
+    const msg = input.value.trim();
+    if (!msg) return;
+    input.value = '';
+    // 本地显示
+    addMsg('user', msg);
+    // 发到后端
+    fetch('/api/bd/send', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ uid, msg }),
+    }).catch(() => {});
+  }
+
+  if (input) input.addEventListener('keydown', (e) => { if (e.key === 'Enter') sendMsg(); });
+  if (sendBtn) sendBtn.addEventListener('click', sendMsg);
+
+  // 添加消息气泡
+  function addMsg(role, text) {
+    if (!msgs) return;
+    const div = document.createElement('div');
+    div.className = 'bd-msg ' + role;
+    const t = new Date();
+    const pad = n => String(n).padStart(2,'0');
+    div.innerHTML = text + `<span class="bd-time">${pad(t.getHours())}:${pad(t.getMinutes())}</span>`;
+    // 去掉旧的思考气泡
+    const think = msgs.querySelector('.bd-thinking');
+    if (think) think.remove();
+    msgs.appendChild(div);
+    msgs.scrollTop = msgs.scrollHeight;
+  }
+
+  // 载入历史
+  function loadMsgs() {
+    fetch('/api/bd/messages?uid=' + uid).then(r => r.json()).then(data => {
+      if (!msgs) return;
+      msgs.innerHTML = '';
+      (data.messages || []).forEach(m => addMsg(m.role, m.text));
+    }).catch(() => {});
+  }
+
+  // 轮询
+  let thinkingShown = false;
+  setInterval(() => {
+    if (!bd.classList.contains('active')) return;
+    fetch('/api/bd/status?uid=' + uid).then(r => r.json()).then(data => {
+      if (data.thinking && !thinkingShown && msgs) {
+        thinkingShown = true;
+        const div = document.createElement('div');
+        div.className = 'bd-thinking';
+        div.innerHTML = '<span></span><span></span><span></span>';
+        msgs.appendChild(div);
+        msgs.scrollTop = msgs.scrollHeight;
+      }
+      if (!data.thinking) thinkingShown = false;
+      if (data.reply) {
+        addMsg('assistant', data.reply);
+      }
+    }).catch(() => {});
+  }, 2000);
+}

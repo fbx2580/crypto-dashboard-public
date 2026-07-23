@@ -1,0 +1,185 @@
+{
+  "updated": 1784700636647,
+  "alerts": [
+    {
+      "type": "alt_loss",
+      "symbol": "ACE",
+      "change": -10.098,
+      "price": 0.09028,
+      "vol": 60017308.403754,
+      "level": "⚠️",
+      "msg": "ACE -10.10%  ｜ $0.090280"
+    },
+    {
+      "type": "alt_loss",
+      "symbol": "ERA",
+      "change": -15.784,
+      "price": 0.08558,
+      "vol": 387727364.12471,
+      "level": "⚠️",
+      "msg": "ERA -15.78%  ｜ $0.085580"
+    },
+    {
+      "type": "alt_loss",
+      "symbol": "PROM",
+      "change": -25.217,
+      "price": 1.379,
+      "vol": 31704252.084,
+      "level": "💥",
+      "msg": "PROM -25.22%  ｜ $1.3790"
+    },
+    {
+      "type": "alt_loss",
+      "symbol": "LA",
+      "change": -19.634,
+      "price": 0.05272,
+      "vol": 96170594.329432,
+      "level": "⚠️",
+      "msg": "LA -19.63%  ｜ $0.052720"
+    },
+    {
+      "type": "alt_loss",
+      "symbol": "ON",
+      "change": -24.389,
+      "price": 0.11502,
+      "vol": 57327555.74674,
+      "level": "💥",
+      "msg": "ON -24.39%  ｜ $0.115020"
+    },
+    {
+      "type": "alt_gain",
+      "symbol": "ONE",
+      "change": 12.039,
+      "price": 0.001275,
+      "vol": 135458210.971449,
+      "level": "⚡",
+      "msg": "ONE +12.04%  ｜ $0.001275"
+    },
+    {
+      "type": "alt_loss",
+      "symbol": "STAR",
+      "change": -13.861,
+      "price": 0.14878,
+      "vol": 3414545.9342,
+      "level": "⚠️",
+      "msg": "STAR -13.86%  ｜ $0.148780"
+    },
+    {
+      "type": "alt_gain",
+      "symbol": "1000XEC",
+      "change": 13.141,
+      "price": 0.00805,
+      "vol": 34786683.655516,
+      "level": "⚡",
+      "msg": "1000XEC +13.14%  ｜ $0.008050"
+    },
+    {
+      "type": "alt_gain",
+      "symbol": "RE",
+      "change": 15.686,
+      "price": 0.4307,
+      "vol": 44456003.9537,
+      "level": "⚡",
+      "msg": "RE +15.69%  ｜ $0.430700"
+    },
+    {
+      "type": "alt_gain",
+      "symbol": "BULLA",
+      "change": 16.92,
+      "price": 0.012155,
+      "vol": 11267246.471481,
+      "level": "⚡",
+      "msg": "BULLA +16.92%  ｜ $0.012155"
+    },
+    {
+      "type": "alt_loss",
+      "symbol": "CLO",
+      "change": -13.399,
+      "price": 0.11686,
+      "vol": 5676524.28305,
+      "level": "⚠️",
+      "msg": "CLO -13.40%  ｜ $0.116860"
+    },
+    {
+      "type": "alt_gain",
+      "symbol": "NIGHT",
+      "change": 19.367,
+      "price": 0.02299,
+      "vol": 68939645.17645,
+      "level": "⚡",
+      "msg": "NIGHT +19.37%  ｜ $0.022990"
+    },
+    {
+      "type": "alt_gain",
+      "symbol": "AIOT",
+      "change": 13.246,
+      "price": 0.05369,
+      "vol": 2011118.16197,
+      "level": "⚡",
+      "msg": "AIOT +13.25%  ｜ $0.053690"
+    },
+    {
+      "type": "alt_loss",
+      "symbol": "XAN",
+      "change": -15.68,
+      "price": 0.010454,
+      "vol": 4881032.805386,
+      "level": "⚠️",
+      "msg": "XAN -15.68%  ｜ $0.010454"
+    },
+    {
+      "type": "alt_gain",
+      "symbol": "EPIC",
+      "change": 12.096,
+      "price": 0.5625,
+      "vol": 41696627.4147,
+      "level": "⚡",
+      "msg": "EPIC +12.10%  ｜ $0.562500"
+    },
+    {
+      "type": "alt_gain",
+      "symbol": "LAB",
+      "change": 26.401,
+      "price": 0.1647,
+      "vol": 156241934.7802,
+      "level": "🔥",
+      "msg": "LAB +26.40%  ｜ $0.164700"
+    },
+    {
+      "type": "alt_gain",
+      "symbol": "BILL",
+      "change": 11.901,
+      "price": 0.02661,
+      "vol": 10858091.87881,
+      "level": "⚡",
+      "msg": "BILL +11.90%  ｜ $0.026610"
+    },
+    {
+      "type": "alt_loss",
+      "symbol": "BANK",
+      "change": -29.975,
+      "price": 0.17154,
+      "vol": 1473578727.07522,
+      "level": "💥",
+      "msg": "BANK -29.98%  ｜ $0.171540"
+    },
+    {
+      "type": "alt_gain",
+      "symbol": "BEAT",
+      "change": 10.386,
+      "price": 2.604,
+      "vol": 23554136.8696,
+      "level": "⚡",
+      "msg": "BEAT +10.39%  ｜ $2.6040"
+    },
+    {
+      "type": "alt_loss",
+      "symbol": "EVAA",
+      "change": -10.691,
+      "price": 0.8329,
+      "vol": 17015489.62346,
+      "level": "⚠️",
+      "msg": "EVAA -10.69%  ｜ $0.832900"
+    }
+  ]
+}
