@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "s": "Trump vows to investigate EU over fining of US tech companies",
+      "t": "2026-07-24T18:57:39.000Z",
+      "ts": 1784919459,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cvgjenp4680o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "特朗普发誓要调查欧盟对美国科技公司的罚款"
+    },
+    {
       "s": "Claude Opus 5 Outscores Fable 5 on Most Benchmarks—At Half the Price",
       "t": "2026-07-24T18:28:43.000Z",
       "ts": 1784917723,
@@ -401,14 +409,6 @@
       "s_cn": "特朗普征收新一波美国关税，苏格兰威士忌关税被取消"
     },
     {
-      "s": "Tech titan ordered to pay ex-wife $644m in divorce settlement",
-      "t": "2026-07-24T08:30:58.000Z",
-      "ts": 1784881858,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/ckg68jky65eo?at_medium=RSS&at_campaign=rss",
-      "s_cn": "科技巨头被判向前妻支付 6.44 亿美元离婚协议金"
-    },
-    {
       "s": "UK complacent about war threat, warns BAE boss",
       "t": "2026-07-23T23:04:19.000Z",
       "ts": 1784847859,
@@ -481,5 +481,5 @@
       "s_cn": "中国吉利将通过新合资企业在西班牙福特工厂生产电动汽车"
     }
   ],
-  "updated": 1784917870068
+  "updated": 1784919491580
 }

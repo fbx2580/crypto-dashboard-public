@@ -1,6 +1,14 @@
 {
-  "updated": 1784917870069,
+  "updated": 1784918410351,
   "alerts": [
+    {
+      "ts": 1784918115,
+      "detected": 1784918410350,
+      "src": "BBC Business",
+      "title": "特朗普发誓要调查欧盟对美国科技公司的罚款",
+      "orig": "Trump vows to investigate EU over fining of US tech companies",
+      "link": "https://www.bbc.co.uk/news/articles/cvgjenp4680o?at_medium=RSS&at_campaign=rss"
+    },
     {
       "ts": 1784917723,
       "detected": 1784917870069,
@@ -392,14 +400,6 @@
       "title": "拍卖行表示，科技财富的繁荣正在推动恐龙骨骼、艺术品和手表的价格创下新纪录",
       "orig": "Boom in tech wealth is fueling record prices for dinosaur bones, art and watches, auction houses say",
       "link": "https://www.cnbc.com/2026/07/24/wealth-auctions-art-watches.html"
-    },
-    {
-      "ts": 1784889941,
-      "detected": 1784890498604,
-      "src": "BBC Business",
-      "title": "为什么英国燃油价格再次上涨？",
-      "orig": "Why are UK fuel prices rising again?",
-      "link": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
