@@ -58,26 +58,28 @@ async function scanEthBlock() {
   return txs;
 }
 
-// ─── BTC 最新区块大额转账（mempool.space）───
+// ─── BTC 最新区块大额转账（mempool.space，用块哈希查） ───
 async function scanBtcBlock() {
   const txs = [];
   try {
     const h = await axios.get('https://mempool.space/api/blocks/tip/height', {timeout:5000});
-    if (!h.data) return txs;
-    const blk = await axios.get('https://mempool.space/api/block/' + parseInt(h.data), {timeout:8000});
-    if (!blk.data || !blk.data.tx) return txs;
-    for (const t of blk.data.tx.slice(0, 100)) {
-      try {
-        let val = 0;
-        for (const vout of (t.vout || [])) val += (vout.value || 0);
-        if (val > 25 && t.vout && t.vout.length) {
-          const to = t.vout[0].scriptpubkey_address || t.vout[0].addresses?.[0] || 'unknown';
-          const from = t.vin?.[0]?.prevout?.scriptpubkey_address || t.vin?.[0]?.addresses?.[0] || 'unknown';
-          txs.push({c:'BTC', val:parseFloat(val.toFixed(2)), hash:t.txid, ts:blk.data.timestamp, from, to, exFrom:'', exTo:getEx(to)});
-        }
-      } catch(e2) {}
+    const blk = await axios.get('https://mempool.space/api/block-height/' + parseInt(h.data), {timeout:8000});
+    const hash = blk.data.trim();
+    const txRes = await axios.get('https://mempool.space/api/block/' + hash + '/txs', {timeout:10000});
+    const blockTxs = txRes.data || [];
+    
+    for (const tx of blockTxs.slice(0, 100)) {
+      let val = 0;
+      for (const vout of (tx.vout || [])) val += (vout.value || 0);
+      val = val / 1e8;
+      if (val <= 25) continue;
+      
+      const from = tx.vin?.[0]?.prevout?.scriptpubkey_address || 'unknown';
+      const to = tx.vout?.[0]?.scriptpubkey_address || 'unknown';
+      const ts = tx.status?.block_time || Math.floor(Date.now()/1000);
+      txs.push({c:'BTC', val:parseFloat(val.toFixed(5)), hash:tx.txid, ts, from, to, exFrom:'', exTo:''});
     }
-  } catch(e) {}
+  } catch(e) { /* rate limit - wait for next cycle */ }
   return txs;
 }
 
@@ -90,7 +92,18 @@ function updateCache(fresh) {
     if (!seen.has(t.hash)) { old.unshift(t); seen.add(t.hash); }
   }
   fs.writeFileSync(CACHE_FILE, JSON.stringify({updated:Date.now(), transfers:old.slice(0,500)}, null, 2));
-  console.log('[whale] ✅', `| ${old.length} total`);
+  
+  // 同步写 SQLite（主存储）
+  try {
+    const db = require('./db');
+    const insert = db.prepare('INSERT OR IGNORE INTO whale_transfers (chain, value, hash, ts, from_addr, to_addr, ex_from, ex_to) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
+    const tx = db.transaction((items) => {
+      for (const t of items) {
+        insert.run(t.c || '', t.val || 0, t.hash, t.ts || Math.floor(Date.now()/1000), t.from || '', t.to || '', t.exFrom || '', t.exTo || '');
+      }
+    });
+    tx(fresh);
+  } catch(e) {}
 }
 
 // ─── 启动 ───

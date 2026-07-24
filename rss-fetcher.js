@@ -12,6 +12,7 @@ const DATA_DIR = path.join(__dirname, 'public', 'data', 'news');
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
 
 // 兜底缓存文件 —— 所有源都挂了时用最后成功的数据
+const db = require('./db');
 const FALLBACK_FILE = path.join(DATA_DIR, 'fallback.json');
 
 // 可信数据源 — 只包含真实可访问的 RSS feed
@@ -142,6 +143,7 @@ async function fetchNews() {
   const merged = { items: existingItems.slice(0, 500), updated: Date.now(), sources: successCount };
   fs.writeFileSync(path.join(DATA_DIR, 'latest.json'), JSON.stringify(merged, null, 2));
   fs.writeFileSync(FALLBACK_FILE, JSON.stringify(merged, null, 2));
+  try { const ins = db.prepare('INSERT OR IGNORE INTO news_archive (source, title, content, url, ts) VALUES (?, ?, ?, ?, ?)'); const tx = db.transaction((list) => { for (const i of list) { try { ins.run('rss', i.s||'', i.c||i.desc||'', i.u||i.link||'', Math.floor(i.t||Date.now()/1000)); }catch(e){} } }); tx(items); } catch(e2) {}
 
   console.log(`[rss] ✅ ${items.length} articles from ${successCount}/${SOURCES.length} sources`);
   return output;

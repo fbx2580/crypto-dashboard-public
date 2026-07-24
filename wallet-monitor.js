@@ -35,6 +35,7 @@ const WATCHED_WALLETS = [
   },
 ];
 
+const db = require('./db');
 const CACHE_FILE = path.join(DATA_DIR, 'latest.json');
 const HISTORY_DIR = path.join(DATA_DIR, 'history');
 if (!fs.existsSync(HISTORY_DIR)) fs.mkdirSync(HISTORY_DIR, { recursive: true });
@@ -86,6 +87,7 @@ async function refreshAll() {
   }
   
   // 写最新数据
+  try { const ins = db.prepare('INSERT OR REPLACE INTO addresses (address, chain, balance, last_seen) VALUES (?, ?, ?, ?)'); for (const w of results) { if (w.address) ins.run(w.address, 'ETH', w.balance||0, Math.floor(now/1000)); } } catch(e3) {}
   fs.writeFileSync(CACHE_FILE, JSON.stringify({
     updated: now,
     wallets: results,

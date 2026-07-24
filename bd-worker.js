@@ -6,7 +6,27 @@ const axios = require('axios');
 
 const BD_DIR = path.join(__dirname, 'public', 'data', 'bd');
 const POLL_MS = 2000;
-const MODEL = 'deepseek-chat';
+// ─── 模型路由配置 ───
+const MODEL_FAST = 'deepseek-chat';
+const MODEL_DEEP = 'deepseek-chat';  // 实际应替换为 deepseek-reasoner 或 deepseek-v4-pro
+
+// 根据消息内容自动选择模型
+function selectModel(msg) {
+  const deepTriggers = ['深度分析', '复盘', '策略评估', '多因子', '权重计算', '特朗普指数', '信号审计', '推演'];
+  for (const t of deepTriggers) {
+    if (msg.includes(t)) return MODEL_DEEP;
+  }
+  return MODEL_FAST;
+}
+
+// 日志：记录模型使用情况
+let modelUsage = { flash: 0, deep: 0, total: 0 };
+function logModelUsage(modelUsed, uid) {
+  if (modelUsed === MODEL_DEEP) modelUsage.deep++;
+  else modelUsage.flash++;
+  modelUsage.total++;
+  console.log(`[bd-worker] 📊 模型: ${modelUsed === MODEL_DEEP ? 'PRO' : 'FLASH'} | 用户: ${uid} | FLASH=${modelUsage.flash} DEEP=${modelUsage.deep}`);
+}
 
 // API Key
 const API_KEY = (() => {
@@ -124,8 +144,10 @@ async function generateReply(uid) {
   const recent = (data.messages || []).slice(-20);
   const knowledge = getKnowledge();
 
+  const model = selectModel(msg);
+  logModelUsage(model, uid);
   const res = await axios.post('https://api.deepseek.com/chat/completions', {
-    model: MODEL,
+    model: model,
     messages: [
       { role: 'system', content: BASE_PROMPT + '\n\n' + knowledge },
       ...recent.map(m => ({ role: m.role, content: m.text }))

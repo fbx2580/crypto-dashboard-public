@@ -122,10 +122,17 @@ async function refreshMarket() {
 // ─── 主流币排行（谁更硬谁更软）───
 async function refreshTickers() {
   try {
-    const resp = await fetch('/api/binance/signals');
+    const [resp, analysisResp] = await Promise.all([
+      fetch('/api/binance/signals'),
+      fetch('/api/market/coin-analysis')
+    ]);
     if (!resp.ok) return;
     const data = await resp.json();
-    const majors = (data.majors || []).sort((a, b) => b.change24h - a.change24h);
+    const analysis = analysisResp.ok ? await analysisResp.json() : { coins: [] };
+    const analysisMap = {};
+    for (const c of (analysis.coins || [])) analysisMap[c.symbol] = c;
+    
+    const majors = (data.majors || []).filter(t => ['BTCUSDT','ETHUSDT','SOLUSDT','XRPUSDT','BNBUSDT','DOTUSDT'].includes(t.symbol)).sort((a, b) => b.change24h - a.change24h);
     const bar = document.getElementById('tickerBar');
     if (!majors?.length) {
       if (!bar.querySelector('.ticker-item')) bar.innerHTML = '<span class="ticker-loading">等待数据...</span>';
@@ -138,10 +145,15 @@ async function refreshTickers() {
         const chg = parseFloat(t.change24h) || 0;
         const cls = chg >= 0 ? 'up' : 'down';
         const sign = chg >= 0 ? '+' : '';
+        const a = analysisMap[t.symbol.replace('USDT','')] || {};
+        const badge = a.level ? '<span style="font-size:9px;color:var(--' + (a.cl||'text-dim') + ');margin-left:4px;">' + (a.color||'') + ' ' + (a.level||'') + (a.depthRatio ? (a.depthRatio >= 1 ? ' · 挂买 ' + Math.round(a.depthRatio/(1+a.depthRatio)*100) + '%' : ' · 挂卖 ' + Math.round(1/(1+a.depthRatio)*100) + '%') : '') + '</span>' : '';
         return '<div class="ticker-item" data-sym="' + t.symbol + '">' +
+          '<div style="display:flex;justify-content:space-between;align-items:center;">' +
           '<span class="ticker-symbol">' + t.symbol.replace('USDT','') + '</span>' +
           '<span class="ticker-price">$' + fmt.price(t.price) + '</span>' +
-          '<span class="ticker-change ' + cls + '">' + sign + chg.toFixed(2) + '%</span></div>';
+          '<span class="ticker-change ' + cls + '">' + sign + chg.toFixed(2) + '%</span></div>' +
+          (a.level ? '<div style="font-size:9px;margin-top:2px;">' + '<span style="color:var(--' + (a.cl||'text-dim') + ');">' + (a.color||'') + ' ' + (a.level||'') + '</span>' + (a.depthRatio ? '<span style="color:var(--green);"> · ' + (a.depthRatio >= 1 ? '多军 ' + Math.round(a.depthRatio/(1+a.depthRatio)*100) + '%' : '') + '</span>' : '') + (a.depthRatio && a.depthRatio < 1 ? '<span style="color:var(--red);"> · 空军 ' + Math.round(1/(1+a.depthRatio)*100) + '%</span>' : '') + '</div>' : '') +
+          '</div>';
       }).join('');
       return;
     }
@@ -164,7 +176,7 @@ async function refreshTickers() {
 }
 
 // 美股存储类（币安 TradFi 永续合约代码）
-const STORAGE_STOCKS = ['MUUSDT', 'WDCBUSDT', 'SNDKBUSDT', 'SKHYNIXUSDT', 'SKHYBUSDT', 'DRAMBUSDT', 'NVDABUSDT', 'AMDBUSDT', 'INTCBUSDT'];
+const STORAGE_STOCKS = ['NVDABUSDT','AMDBUSDT','INTCBUSDT','MUBUSDT','WDCBUSDT','DRAMBUSDT','SKHYBUSDT','SNDKBUSDT','STXUSDT','SKHYNIXUSDT'];
 
 // ─── 秒级 BTC 价格刷新（无缓存，带跳动指示）───
 async function tickBtcPrice() {
@@ -437,7 +449,7 @@ function applyWhaleFilter() {
     const isNew = !window._whaleHashes.has(t.hash);
     if (isNew) window._whaleHashes.add(t.hash);
     const newClass = isNew ? ' class="whale-new"' : '';
-    const colors = {USDC:'#3b82f6', BTC:'#f7931a', USDT:'#2775ca', ETH:'#627eea'};
+    const colors = {USDC:'#22c55e', BTC:'#f7931a', USDT:'#16a34a', ETH:'#627eea'};
     const col = colors[t.c] || 'var(--accent)';
     const vs = t.c === 'BTC' ? t.val.toFixed(2) + ' BTC' : t.c === 'ETH' ? t.val.toFixed(0) + ' ETH' : t.c === 'SOL' ? t.val.toFixed(0) + ' SOL' : '$' + Number(t.val).toLocaleString();
     const fAddr = (t.from||'').slice(0,8)+'...';
@@ -716,6 +728,9 @@ function init() {
   }, 10000);
 
   // 巨鲸转账：无论哪个 tab 都 2 秒拉一次
+  // 聪明地址分析：30秒刷新
+  refreshAddressAnalysis();
+  setInterval(refreshAddressAnalysis, 30000);
   setInterval(() => {
     refreshAltcoinSignals();
   }, 2000);
@@ -949,3 +964,227 @@ function initBackdoor() {
     }).catch(() => {});
   }, 2000);
 }
+
+// ─── 聪明地址分析（纯展示，不碰巨鲸） ───
+function renderAddressAnalysis(data) {
+  const el = document.getElementById('addressAnalysis');
+  if (!el) return;
+  if (!data || (!data.btc?.length && !data.eth?.length)) {
+    el.innerHTML = '<div style="color:var(--text-dim);padding:8px;font-size:11px;">暂无数据，正在积累中...</div>';
+    return;
+  }
+  let html = '';
+  if (data.btc?.length) {
+    html += '<div style="font-weight:700;color:var(--accent);font-size:12px;margin:6px 0 4px;">🐋 BTC (' + data.btc.length + ')</div>';
+    for (const a of data.btc) {
+      const addr = (a.address||'').slice(0, 16) + '...';
+      const c = a.behavior?.includes('🔴') ? 'var(--red)' : a.behavior?.includes('🔵') ? 'var(--green)' : 'var(--text)';
+      html += '<div style="font-size:10px;padding:3px 0;border-bottom:1px solid var(--border);">' + 
+        '<span style="color:' + c + '">' + (a.behavior||'') + '</span> ' +
+        '<span style="font-weight:700;">' + (a.balance||0).toFixed(1) + ' BTC</span> | ' +
+        '7天: ' + (a.recentNet >= 0 ? '+' : '') + (a.recentNet||0).toFixed(4) +
+        '<span style="color:var(--text-dim);float:right;font-size:9px;">' + addr + '</span></div>';
+    }
+  }
+  if (data.eth?.length) {
+    html += '<div style="font-weight:700;color:var(--accent);font-size:12px;margin:8px 0 4px;">🐋 ETH (' + data.eth.length + ')</div>';
+    const top = data.eth.filter(a => a.behavior !== '中性').concat(data.eth.filter(a => a.behavior === '中性').slice(0,5));
+    for (const a of top) {
+      const addr = (a.address||'').slice(0, 16) + '...';
+      const c = a.behavior?.includes('🔴') ? 'var(--red)' : a.behavior?.includes('🔵') ? 'var(--green)' : 'var(--text)';
+      html += '<div style="font-size:10px;padding:3px 0;border-bottom:1px solid var(--border);">' + 
+        '<span style="color:' + c + '">' + (a.behavior||'') + '</span> ' +
+        '<span>' + (a.totalVal||0).toFixed(0) + ' ETH</span> | 交易所: ' + (a.netExchangeFlow >= 0 ? '+' : '') + (a.netExchangeFlow||0).toFixed(0) +
+        '<span style="color:var(--text-dim);float:right;font-size:9px;">' + addr + '</span></div>';
+    }
+  }
+  el.innerHTML = html || '<div style="color:var(--text-dim);padding:8px;font-size:11px;">暂无数据</div>';
+}
+
+async function refreshAddressAnalysis() {
+  try {
+    const res = await fetch('/api/whale/addresses');
+    if (res.ok) {
+      const data = await res.json();
+      renderAddressAnalysis(data);
+    }
+  } catch(e) {}
+}
+
+// ─── BTC 行情告警显示（实例） ───
+async function refreshBtcAlert() {
+  const el = document.getElementById('btcAlertBar');
+  if (!el) return;
+  try {
+    const res = await fetch('/api/alerts/price');
+    if (!res.ok) return;
+    const data = await res.json();
+    const alerts = (data.alerts || []).filter(a => a.name === 'BTC' || a.symbol === 'BTCUSDT');
+    if (alerts.length === 0) { el.style.display = 'none'; return; }
+    el.style.display = 'block';
+    const latest = alerts[0];
+    el.innerHTML = '<span style="color:var(--accent);font-weight:700;">BTC</span> ' +
+      (latest.msg || '') +
+      '<span style="color:var(--text-dim);float:right;font-size:10px;">' +
+      (latest.ts ? new Date(latest.ts*1000).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'}) : '') +
+      '</span>';
+  } catch(e) {}
+}
+
+// 添加到刷新循环
+setInterval(refreshBtcAlert, 5000);
+setTimeout(refreshBtcAlert, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ─── 聪明钱地址追踪 ───
+let _smBuilt = false;
+const _smCats = ['超短线交易员 ⚡', '短线交易员 🔹', '中线交易员', '钻石手 💎'];
+const _acCats = ['15分钟内活跃 🔥', '1小时内活跃 ⚡', '一天内活跃 🔹', '7天内活跃 💤'];
+
+function getCatIdx(w) {
+  const tx = w.txCount || 0;
+  const bal = parseFloat(w.balance || 0);
+  if (tx > 1000) return 0;
+  if (tx > 100) return 1;
+  if (bal > 1000 && tx < 5) return 3;
+  return 2;
+}
+
+// 从交易记录时间戳判断活跃度
+function getActivityIdx(w) {
+  const txs = w.recentTxs || [];
+  if (txs.length === 0) return 3;
+  // 取第一条交易的时间
+  const first = txs[0];
+  const m = first.match(/\[(\d{2}:\d{2})\]/);
+  if (!m) return 3;
+  const [h, min] = m[1].split(':').map(Number);
+  const now = new Date();
+  const txMin = h * 60 + min;
+  const nowMin = now.getHours() * 60 + now.getMinutes();
+  const diff = Math.abs(nowMin - txMin);
+  if (diff <= 15) return 0;
+  if (diff <= 60) return 1;
+  if (diff <= 1440) return 2;
+  return 3;
+}
+
+async function refreshSmartMoney() {
+  const el = document.getElementById('smartMoneyBody');
+  if (!el) return;
+  try {
+    const res = await fetch('/api/whale/smart-money');
+    if (!res.ok) return;
+    const d = await res.json();
+    const whales = d.whales || [];const cntEl=document.getElementById("ethNewCount");if(cntEl){cntEl.textContent="+"+d.new24h+" 今日新增"};
+    
+    if (!_smBuilt) {
+      // 交易员分类
+      const tGroups = [[],[],[],[]];
+      for (const w of whales) tGroups[getCatIdx(w)].push(w);
+      
+      // 活跃度分类
+      const aGroups = [[],[],[],[]];
+      for (const w of whales) aGroups[getActivityIdx(w)].push(w);
+      
+      let html = '';
+      
+      // ═══ 一级分类2：活跃度分类 ═══
+      html += '<div style="margin:4px 0;border:1px solid var(--border);border-radius:4px;">';
+      html += '<div style="display:flex;justify-content:space-between;align-items:center;padding:4px 6px;cursor:pointer;background:var(--surface2);font-size:11px;font-weight:700;" onclick="var b=document.getElementById(\'sm_active\');b.style.display=b.style.display===\'none\'?\'\':\'none\';this.querySelector(\'.sm_t2\').textContent=b.style.display===\'none\'?\'▶\':\'▼\';">';
+      html += '<span>⚡ 活跃度分类 <span style="color:var(--text-dim);font-weight:400;font-size:10px;">' + whales.length + '个</span></span>';
+      html += '<span class="sm_t2" style="font-size:10px;">▼</span>';
+      html += '</div>';
+      html += '<div id="sm_active" style="padding:2px 0;">';
+      for (let ci = 0; ci < _acCats.length; ci++) {
+        const list = aGroups[ci];
+        
+        html += '<div style="margin:1px 4px;border:1px solid var(--border);border-radius:3px;">';
+        html += '<div style="display:flex;justify-content:space-between;padding:3px 6px;cursor:pointer;font-size:10px;background:var(--surface);" onclick="var b=document.getElementById(\'al_'+ci+'\');b.style.display=b.style.display===\'none\'?\'\':\'none\';this.querySelector(\'.ac_'+ci+'\').textContent=b.style.display===\'none\'?\'▶\':\'▼\';">';
+        html += '<span><b>' + _acCats[ci] + '</b> <span style="color:var(--text-dim);">' + list.length + '</span></span>';
+        html += '<span class="ac_'+ci+'" style="font-size:9px;">▶</span>';
+        html += '</div>';
+        html += '<div id="al_'+ci+'" style="display:none;padding:1px 0;">';
+        for (let wi = 0; wi < list.length; wi++) {
+          const w = list[wi];
+          html += walletRow(ci, wi, 'a', w);
+        }
+        html += '</div></div>';
+      }
+      html += '</div></div>';
+      
+// ═══ 一级分类1：交易员分类 ═══
+      html += '<div style="margin:2px 0;border:1px solid var(--border);border-radius:4px;">';
+      html += '<div style="display:flex;justify-content:space-between;align-items:center;padding:4px 6px;cursor:pointer;background:var(--surface2);font-size:11px;font-weight:700;" onclick="var b=document.getElementById(\'sm_trader\');b.style.display=b.style.display===\'none\'?\'\':\'none\';this.querySelector(\'.sm_t1\').textContent=b.style.display===\'none\'?\'▶\':\'▼\';">';
+      html += '<span>📊 交易员分类 <span style="color:var(--text-dim);font-weight:400;font-size:10px;">' + whales.length + '个</span></span>';
+      html += '<span class="sm_t1" style="font-size:10px;">▼</span>';
+      html += '</div>';
+      html += '<div id="sm_trader" style="display:none;padding:2px 0;">';
+      for (let ci = 0; ci < _smCats.length; ci++) {
+        const list = tGroups[ci];
+        
+        html += '<div style="margin:1px 4px;border:1px solid var(--border);border-radius:3px;">';
+        html += '<div style="display:flex;justify-content:space-between;padding:3px 6px;cursor:pointer;font-size:10px;background:var(--surface);" onclick="var b=document.getElementById(\'tl_'+ci+'\');b.style.display=b.style.display===\'none\'?\'\':\'none\';this.querySelector(\'.tc_'+ci+'\').textContent=b.style.display===\'none\'?\'▶\':\'▼\';">';
+        html += '<span><b>' + _smCats[ci] + '</b> <span style="color:var(--text-dim);">' + list.length + '</span></span>';
+        html += '<span class="tc_'+ci+'" style="font-size:9px;">▶</span>';
+        html += '</div>';
+        html += '<div id="tl_'+ci+'" style="display:none;padding:1px 0;">';
+        for (let wi = 0; wi < list.length; wi++) {
+          const w = list[wi];
+          html += walletRow(ci, wi, 't', w);
+        }
+        html += '</div></div>';
+      }
+      html += '</div></div>';
+      
+            el.innerHTML = html || '<div style="color:var(--text-dim);font-size:10px;padding:4px 0;">正在积累数据...</div>';
+      _smBuilt = true;
+    } else {
+      // 增量更新
+      for (let ci = 0; ci < 4; ci++) {
+        const tList = whales.filter(w => getCatIdx(w) === ci);
+        for (let wi = 0; wi < tList.length; wi++) {
+          for (const p of ['t','a']) {
+            const bid = document.getElementById('sb_'+p+'_'+ci+'_'+wi);
+            const tid = document.getElementById('st_'+p+'_'+ci+'_'+wi);
+            if (bid) bid.textContent = parseFloat(tList[wi].balance).toFixed(0) + ' ETH';
+            if (tid) tid.textContent = tList[wi].behavior || '';
+          }
+        }
+      }
+    }
+  } catch(e) {}
+}
+
+function walletRow(ci, wi, prefix, w) {
+  const addr = (w.fullAddr||'').slice(0,6)+'..'+(w.fullAddr||'').slice(-4);
+  let r = '<div style="padding:2px 6px;cursor:pointer;border-bottom:1px dotted var(--surface3);" onclick="var b=document.getElementById(\'sd_'+prefix+'_'+ci+'_'+wi+'\');b.style.display=b.style.display===\'none\'?\'\':\'none\';this.querySelector(\'.sw_'+prefix+'_'+ci+'_'+wi+'\').textContent=b.style.display===\'none\'?\'▸\':\'▾\';">';
+  r += '<div style="display:flex;justify-content:space-between;font-size:10px;">';
+  r += '<span><span class="sw_'+prefix+'_'+ci+'_'+wi+'" style="font-size:9px;">▸</span><b>' + addr + '</b></span>';
+  r += '<span id="sb_'+prefix+'_'+ci+'_'+wi+'" style="font-weight:700;">' + parseFloat(w.balance).toFixed(0) + ' ETH</span>';
+  r += '</div>';
+  r += '<div id="st_'+prefix+'_'+ci+'_'+wi+'" style="color:var(--text-dim);font-size:9px;margin:1px 0 0 14px;">' + (w.behavior||'') + '</div>';
+  r += '</div>';
+  r += '<div id="sd_'+prefix+'_'+ci+'_'+wi+'" style="display:none;padding:2px 6px 4px 16px;font-size:9px;background:var(--surface);color:var(--text-dim);">';
+  const txs = w.recentTxs || [];
+  if (txs.length) for (const tx of txs) r += '<div>' + tx + '</div>';
+  else r += '<div>无近期交易</div>';
+  r += '</div>';
+  return r;
+}
+
+setInterval(refreshSmartMoney, 30000);
+setTimeout(refreshSmartMoney, 2000);
