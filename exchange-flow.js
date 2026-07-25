@@ -5,7 +5,7 @@
  */
 const axios = require('axios'); const fs = require('fs'); const path = require('path');
 
-const BSC_KEY = 'NB66FT4WSZNCUGR4YPQ9WE47GC37256GZF';
+const BSC_KEY = process.env.BSC_KEY || '';
 const BSC_API = 'https://api.bscscan.com/api';
 const CG = 'https://api.coingecko.com/api/v3';
 const OUT = path.join(__dirname, 'public', 'data', 'analysis', 'exchange_flow_bsc.json');

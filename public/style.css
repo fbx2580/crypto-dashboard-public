@@ -733,3 +733,55 @@ input:focus, select:focus { border-color: var(--accent); }
   gap: 8px;
   align-items: center;
 }
+
+/* ─── 吸筹雷达Dashboard ─── */
+.radar-dash {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 8px;
+}
+@media (min-width: 768px) { .radar-dash { grid-template-columns: 1fr 1fr; } }
+.radar-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.radar-card-hd {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 8px;
+  background: var(--surface2);
+  border-bottom: 1px solid var(--border);
+}
+.radar-card-bd {
+  padding: 8px;
+}
+.radar-row {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  gap: 6px;
+  font-size: 10px;
+}
+.radar-row:hover { background: var(--surface2); }
+.radar-tier-badge {
+  font-size: 9px;
+  padding: 1px 4px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+.radar-score-bar {
+  height: 4px;
+  background: var(--surface3);
+  border-radius: 2px;
+  flex: 1;
+  min-width: 40px;
+}
+.radar-score-fill {
+  height: 4px;
+  border-radius: 2px;
+}

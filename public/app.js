@@ -563,6 +563,12 @@ async function refreshAccumulationMonitor() {
     document.getElementById('accumUpdateTime').textContent =
       (data.scannedAt ? new Date(data.scannedAt).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'}) : '—');
 
+    // 同步刷新雷达统计
+    fetch('/api/accumulation/radar').then(r=>r.json()).then(rd=>{
+      document.getElementById('radarHigh').textContent = '🔥' + (rd.tiers?.high || 0);
+      document.getElementById('radarCand').textContent = '⭐' + ((rd.tiers?.candidate || 0) + (rd.tiers?.watch || 0));
+    }).catch(()=>{});
+
     if (!signals.length) {
       el.innerHTML = '<div style="color:var(--text-dim);padding:10px;">暂无信号 · 扫描' + (data.totalScanned||0) + '个币</div>';
       return;

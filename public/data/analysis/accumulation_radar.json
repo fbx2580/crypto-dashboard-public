@@ -1,0 +1,3487 @@
+{
+  "scannedAt": "2026-07-25T19:24:40.961Z",
+  "totalAnalyzed": 76,
+  "tiers": {
+    "high": 5,
+    "candidate": 27,
+    "watch": 41
+  },
+  "results": [
+    {
+      "symbol": "ICP",
+      "total": 95,
+      "tier": "🔥 高关注",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5254349262277033,
+          "label": "-53%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 25,
+          "value": 71,
+          "label": "71天",
+          "reason": "60-75天最稳(回测验证)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.5597991479001827,
+          "label": "收缩56%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.07428620521778959,
+          "label": "距MA60 -7%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 10,
+          "value": 1194835581.0481334,
+          "label": "$1.2B",
+          "reason": "流动性充足"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 2.153,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "KAVA",
+      "total": 93,
+      "tier": "🔥 高关注",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5131410256410257,
+          "label": "-51%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 25,
+          "value": 75,
+          "label": "75天",
+          "reason": "60-75天最稳(回测验证)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.5608377659574469,
+          "label": "收缩56%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.01538040483847143,
+          "label": "距MA60 -2%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 49279792.85186737,
+          "label": "$49M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.04543,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "above_cost",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "FIL",
+      "total": 93,
+      "tier": "🔥 高关注",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5421482412060302,
+          "label": "-54%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 25,
+          "value": 71,
+          "label": "71天",
+          "reason": "60-75天最稳(回测验证)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.4684529356943148,
+          "label": "收缩47%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.07843248813113587,
+          "label": "距MA60 -8%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 10911571.507883301,
+          "label": "$11M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.7301,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ORDI",
+      "total": 93,
+      "tier": "🔥 高关注",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5779525710260625,
+          "label": "-58%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 25,
+          "value": 75,
+          "label": "75天",
+          "reason": "60-75天最稳(回测验证)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.26753152499319605,
+          "label": "收缩27%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": 0.055815797588804755,
+          "label": "距MA60 6%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 75227754.96677202,
+          "label": "$75M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 3.581,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "above_cost",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "GTC",
+      "total": 90,
+      "tier": "🔥 高关注",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6110112359550561,
+          "label": "-61%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 25,
+          "value": 64,
+          "label": "64天",
+          "reason": "60-75天最稳(回测验证)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.30700000000000094,
+          "label": "收缩31%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.0804556994526203,
+          "label": "距MA60 -8%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 6034553.025362376,
+          "label": "$6M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.06891,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "CGPT",
+      "total": 88,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5632748538011696,
+          "label": "-56%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 20,
+          "value": 58,
+          "label": "58天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.48581030619865595,
+          "label": "收缩49%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.07221361780369268,
+          "label": "距MA60 -7%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 17359264.10876478,
+          "label": "$17M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.01859,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "SSV",
+      "total": 88,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5439248251748251,
+          "label": "-54%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 20,
+          "value": 86,
+          "label": "86天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.517254174397032,
+          "label": "收缩52%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.02942270726111456,
+          "label": "距MA60 -3%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 30673108.336263336,
+          "label": "$31M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 2.082,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "in_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "MOVR",
+      "total": 88,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5606579849211789,
+          "label": "-56%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 20,
+          "value": 82,
+          "label": "82天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.2816582914572859,
+          "label": "收缩28%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.040778151889263155,
+          "label": "距MA60 -4%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 15848846.582058229,
+          "label": "$16M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 1.27,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "in_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "REZ",
+      "total": 88,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6331403762662808,
+          "label": "-63%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 25,
+          "value": 68,
+          "label": "68天",
+          "reason": "60-75天最稳(回测验证)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.34961474958723143,
+          "label": "收缩35%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 10,
+          "value": -0.1725376057449064,
+          "label": "距MA60 -17%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 21991959.60148824,
+          "label": "$22M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.002541,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "in_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ENA",
+      "total": 85,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6425602660016626,
+          "label": "-64%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 15,
+          "value": 120,
+          "label": "120天",
+          "reason": "90天+递减(过拟合风险)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.47777400746521886,
+          "label": "收缩48%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": 0.020872489860519833,
+          "label": "距MA60 2%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 10,
+          "value": 823262061.4825013,
+          "label": "$823M",
+          "reason": "流动性充足"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.08605,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "in_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ZRO",
+      "total": 85,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.62905317769131,
+          "label": "-63%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 15,
+          "value": 93,
+          "label": "93天",
+          "reason": "90天+递减(过拟合风险)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.38835593781012245,
+          "label": "收缩39%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.07228199167432564,
+          "label": "距MA60 -7%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 10,
+          "value": 304554614.7261607,
+          "label": "$305M",
+          "reason": "流动性充足"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.8611,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "in_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "VET",
+      "total": 85,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6163934426229508,
+          "label": "-62%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 15,
+          "value": 120,
+          "label": "120天",
+          "reason": "90天+递减(过拟合风险)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.3750995222929941,
+          "label": "收缩38%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.05488276911270695,
+          "label": "距MA60 -5%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 10,
+          "value": 402254578.93015563,
+          "label": "$402M",
+          "reason": "流动性充足"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.004673,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "BCH",
+      "total": 83,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6772454167308581,
+          "label": "-68%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 15,
+          "value": 120,
+          "label": "120天",
+          "reason": "90天+递减(过拟合风险)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.3817404239494234,
+          "label": "收缩38%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.07484415135166958,
+          "label": "距MA60 -7%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 20170602.39442583,
+          "label": "$20M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 209.85,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "in_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "STORJ",
+      "total": 83,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 15,
+          "value": -0.49931787175989084,
+          "label": "-50%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 25,
+          "value": 61,
+          "label": "61天",
+          "reason": "60-75天最稳(回测验证)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.20221606648199433,
+          "label": "收缩20%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.059978655282817636,
+          "label": "距MA60 -6%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 31156715.662284266,
+          "label": "$31M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.07315,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "above_cost",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "API3",
+      "total": 83,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5359104351499788,
+          "label": "-54%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 20,
+          "value": 76,
+          "label": "76天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.3580155497963718,
+          "label": "收缩36%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 10,
+          "value": -0.11076632487857523,
+          "label": "距MA60 -11%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 31742419.669801697,
+          "label": "$32M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.2198,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "in_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "XAI",
+      "total": 83,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6865875912408759,
+          "label": "-69%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 20,
+          "value": 89,
+          "label": "89天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.45128722867238735,
+          "label": "收缩45%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 10,
+          "value": -0.10902645685630295,
+          "label": "距MA60 -11%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 10947797.856348371,
+          "label": "$11M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.006856,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "in_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "DOGS",
+      "total": 82,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5703788748564869,
+          "label": "-57%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 25,
+          "value": 67,
+          "label": "67天",
+          "reason": "60-75天最稳(回测验证)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.316753022452504,
+          "label": "收缩32%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.08519368126831003,
+          "label": "距MA60 -9%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 76256.9708843073,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.00003732,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "GRT",
+      "total": 80,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6265502985760221,
+          "label": "-63%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 15,
+          "value": 120,
+          "label": "120天",
+          "reason": "90天+递减(过拟合风险)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.49391504018369653,
+          "label": "收缩49%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 10,
+          "value": -0.15915398272800907,
+          "label": "距MA60 -16%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 10,
+          "value": 175935860.88947433,
+          "label": "$176M",
+          "reason": "流动性充足"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.01629,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "avalanche",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "IOST",
+      "total": 78,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6797449730259931,
+          "label": "-68%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 15,
+          "value": 92,
+          "label": "92天",
+          "reason": "90天+递减(过拟合风险)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.44727773949000665,
+          "label": "收缩45%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 10,
+          "value": -0.15419985752218118,
+          "label": "距MA60 -15%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 22281271.507101916,
+          "label": "$22M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.0006503,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "SUPER",
+      "total": 77,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6327066025360735,
+          "label": "-63%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 20,
+          "value": 53,
+          "label": "53天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.4514697726012198,
+          "label": "收缩45%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.09108943030783893,
+          "label": "距MA60 -9%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 19228.81784957465,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.0839,
+      "score": 60,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ACH",
+      "total": 77,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6696070569366479,
+          "label": "-67%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 25,
+          "value": 70,
+          "label": "70天",
+          "reason": "60-75天最稳(回测验证)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.3840078973346497,
+          "label": "收缩38%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 10,
+          "value": -0.162374627270263,
+          "label": "距MA60 -16%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 0,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.004121,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ALT",
+      "total": 77,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5530358449158742,
+          "label": "-55%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 20,
+          "value": 50,
+          "label": "50天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.4437333333333334,
+          "label": "收缩44%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.035313930845744905,
+          "label": "距MA60 -4%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 0,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.006115,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "above_cost",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "NEIRO",
+      "total": 77,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5716894977168949,
+          "label": "-57%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 20,
+          "value": 90,
+          "label": "90天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.4562545597396039,
+          "label": "收缩46%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.07701623585512624,
+          "label": "距MA60 -8%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 61194.32957626914,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.00006109,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "in_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "VTHO",
+      "total": 75,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5853379152348224,
+          "label": "-59%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 10,
+          "value": 43,
+          "label": "43天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.4984093319194061,
+          "label": "收缩50%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.0807905539802784,
+          "label": "距MA60 -8%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 36757447.866209775,
+          "label": "$37M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.0003607,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ETC",
+      "total": 75,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 15,
+          "value": -0.4951091045899172,
+          "label": "-50%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 15,
+          "value": 120,
+          "label": "120天",
+          "reason": "90天+递减(过拟合风险)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.36909871244635195,
+          "label": "收缩37%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.06941266209000747,
+          "label": "距MA60 -7%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 10,
+          "value": 1054433115.1794986,
+          "label": "$1.1B",
+          "reason": "流动性充足"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 6.69,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ICX",
+      "total": 75,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6200657894736842,
+          "label": "-62%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 15,
+          "value": 103,
+          "label": "103天",
+          "reason": "90天+递减(过拟合风险)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.541062801932367,
+          "label": "收缩54%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 10,
+          "value": -0.15969443433976008,
+          "label": "距MA60 -16%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 25146837.05621418,
+          "label": "$25M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.02294,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "FIDA",
+      "total": 73,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.51584377302874,
+          "label": "-52%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 10,
+          "value": 39,
+          "label": "39天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.714642582628747,
+          "label": "收缩71%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 10,
+          "value": -0.12001726331768206,
+          "label": "距MA60 -12%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 19577530.235544216,
+          "label": "$20M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.01974,
+      "score": 60,
+      "accType": "quiet",
+      "entryStatus": "avalanche",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "BMT",
+      "total": 72,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5373076923076923,
+          "label": "-54%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 15,
+          "value": 120,
+          "label": "120天",
+          "reason": "90天+递减(过拟合风险)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.22725512969415412,
+          "label": "收缩23%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.05759162303664936,
+          "label": "距MA60 -6%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 10315.616157074497,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.01204,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "in_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "TURBO",
+      "total": 72,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5948923385077617,
+          "label": "-59%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 15,
+          "value": 92,
+          "label": "92天",
+          "reason": "90天+递减(过拟合风险)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.18124999999999947,
+          "label": "收缩18%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.08153418229294773,
+          "label": "距MA60 -8%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 78362.0165946306,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.0008066,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "SAGA",
+      "total": 70,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.8019431988041854,
+          "label": "-80%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 20,
+          "value": 52,
+          "label": "52天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.42712721145745575,
+          "label": "收缩43%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.046213648142816026,
+          "label": "距MA60 -5%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 5532890.184857025,
+          "label": "$6M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.01326,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "above_cost",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "RVN",
+      "total": 70,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5427872860635696,
+          "label": "-54%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 5,
+          "label": "5天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.2394557823129256,
+          "label": "收缩24%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.09730882175469668,
+          "label": "距MA60 -10%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 61205913.884111986,
+          "label": "$61M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.003734,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "RARE",
+      "total": 70,
+      "tier": "⭐ 吸筹候选",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5709897610921503,
+          "label": "-57%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 12,
+          "label": "12天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.44398826979472117,
+          "label": "收缩44%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.038427212688374845,
+          "label": "距MA60 -4%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 10297047.087024309,
+          "label": "$10M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.01255,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "NEAR",
+      "total": 68,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 15,
+          "value": -0.3606673766418176,
+          "label": "-36%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 10,
+          "value": 43,
+          "label": "43天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.5473098330241188,
+          "label": "收缩55%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.12598979269959648,
+          "label": "距MA60 -13%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 23309035.6107192,
+          "label": "$23M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 1.8,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "WLFI",
+      "total": 67,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6873958911715714,
+          "label": "-69%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 10,
+          "value": 42,
+          "label": "42天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.2833638025594146,
+          "label": "收缩28%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.03394629221837707,
+          "label": "距MA60 -3%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 2330.8789661510405,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.05638,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ZEN",
+      "total": 67,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.677077567802641,
+          "label": "-68%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 10,
+          "value": 44,
+          "label": "44天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.44715672676837737,
+          "label": "收缩45%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.08573645898238566,
+          "label": "距MA60 -9%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 13238.043342588095,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 4.084,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ZRX",
+      "total": 65,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 15,
+          "value": -0.46079691516709503,
+          "label": "-46%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 10,
+          "value": 41,
+          "label": "41天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.24661944623309714,
+          "label": "收缩25%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.04161748467425654,
+          "label": "距MA60 -4%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 71215064.84441674,
+          "label": "$71M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.0837,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "above_cost",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "BANANAS31",
+      "total": 63,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5350957753870376,
+          "label": "-54%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 10,
+          "value": 32,
+          "label": "32天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.59375,
+          "label": "收缩59%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 0,
+          "value": -0.2053343998146117,
+          "label": "距MA60 -21%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 70981951.55664194,
+          "label": "$71M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.007101,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "NMR",
+      "total": 63,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 5,
+          "value": -0.15509039010466213,
+          "label": "-16%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 25,
+          "value": 60,
+          "label": "60天",
+          "reason": "60-75天最稳(回测验证)"
+        },
+        "volatility": {
+          "score": 5,
+          "value": 0.028909329829172423,
+          "label": "无收缩",
+          "reason": "未收缩"
+        },
+        "structure": {
+          "score": 20,
+          "value": -0.017681004443296865,
+          "label": "距MA60 -2%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 62388759.08208945,
+          "label": "$62M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 8.86,
+      "score": 60,
+      "accType": "band",
+      "entryStatus": "above_cost",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ESP",
+      "total": 63,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5840413126769948,
+          "label": "-58%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 10,
+          "value": 41,
+          "label": "41天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 15,
+          "value": -0.1404858997185685,
+          "label": "收缩14%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 5,
+          "value": 0.11327979867533935,
+          "label": "距MA60 11%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 48370296.1259857,
+          "label": "$48M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.07491,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "above_cost",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "NOT",
+      "total": 63,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 15,
+          "value": -0.4907801418439716,
+          "label": "-49%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 10,
+          "value": 34,
+          "label": "34天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.48076923076923056,
+          "label": "收缩48%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 10,
+          "value": -0.10566742785966383,
+          "label": "距MA60 -11%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 35688082.27443727,
+          "label": "$36M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.0003588,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "SOLV",
+      "total": 62,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.8096313017306245,
+          "label": "-81%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 25,
+          "value": 65,
+          "label": "65天",
+          "reason": "60-75天最稳(回测验证)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.22255639097744367,
+          "label": "收缩22%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 10,
+          "value": -0.179991356957649,
+          "label": "距MA60 -18%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 3748697.1885594134,
+          "label": "$4M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.002532,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "XTZ",
+      "total": 62,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6372153125504765,
+          "label": "-64%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 12,
+          "label": "12天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.27006444053895723,
+          "label": "收缩27%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.0747301639614405,
+          "label": "距MA60 -7%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 1137110.9385483724,
+          "label": "$1M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.2241,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ID",
+      "total": 62,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.635933806146572,
+          "label": "-64%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 19,
+          "label": "19天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.5063357972544881,
+          "label": "收缩51%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.06525037936267049,
+          "label": "距MA60 -7%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 1523869.3157920071,
+          "label": "$2M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.03086,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "avalanche",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "1INCH",
+      "total": 60,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5080693365212194,
+          "label": "-51%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 2,
+          "label": "2天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.15073212747631354,
+          "label": "收缩15%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 0,
+          "value": 0.10420393559928431,
+          "label": "距MA60 10%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 10,
+          "value": 115832727.47075368,
+          "label": "$116M",
+          "reason": "流动性充足"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.08236,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "JTO",
+      "total": 60,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 5,
+          "value": -0.2766423357664233,
+          "label": "-28%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 5,
+          "value": 23,
+          "label": "23天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.26709945841253885,
+          "label": "收缩27%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 20,
+          "value": -0.06987657797174916,
+          "label": "距MA60 -7%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 10,
+          "value": 299360713.4925237,
+          "label": "$299M",
+          "reason": "流动性充足"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.5953,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "in_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "KMNO",
+      "total": 58,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.7004538577912254,
+          "label": "-70%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 5,
+          "value": 9,
+          "label": "9天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.3492347445835823,
+          "label": "收缩35%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.02230269113653182,
+          "label": "距MA60 -2%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 91779679.84078306,
+          "label": "$92M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.0178,
+      "score": 60,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "LISTA",
+      "total": 58,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.7088681446907817,
+          "label": "-71%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 5,
+          "value": 2,
+          "label": "2天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.30912863070539387,
+          "label": "收缩31%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.04173601331455626,
+          "label": "距MA60 -4%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 20759274.306038067,
+          "label": "$21M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.04938,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "far_above",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "SYN",
+      "total": 58,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6915897799858056,
+          "label": "-69%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 17,
+          "label": "17天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 5,
+          "value": 1.4372341199141927,
+          "label": "无收缩",
+          "reason": "未收缩"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.140203003502107,
+          "label": "距MA60 -14%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 37555040.18859591,
+          "label": "$38M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.1707,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "in_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "GENIUS",
+      "total": 57,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 15,
+          "value": -0.4943432671081678,
+          "label": "-49%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 10,
+          "value": 44,
+          "label": "44天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.6912030528218517,
+          "label": "收缩69%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.09894036370192473,
+          "label": "距MA60 -10%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 30503.538387845383,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.3588,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "in_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ARB",
+      "total": 57,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6242095754290876,
+          "label": "-62%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 5,
+          "label": "5天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 15,
+          "value": -0.14026402640264074,
+          "label": "收缩14%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.030660789529893834,
+          "label": "距MA60 -3%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 2613.414637471966,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.08311,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "MITO",
+      "total": 55,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.7177794081682562,
+          "label": "-72%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 5,
+          "value": 28,
+          "label": "28天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.4154826065654091,
+          "label": "收缩42%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.044411935190040976,
+          "label": "距MA60 -4%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 8330128.869148544,
+          "label": "$8M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.02303,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "above_cost",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "POWR",
+      "total": 55,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5571428571428572,
+          "label": "-56%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 14,
+          "label": "14天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 5,
+          "value": 0.4332953249714934,
+          "label": "无收缩",
+          "reason": "未收缩"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.08865012424316647,
+          "label": "距MA60 -9%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 22905472.962491035,
+          "label": "$23M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.04321,
+      "score": 70,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "RESOLV",
+      "total": 55,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.8545454545454545,
+          "label": "-85%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 5,
+          "value": 16,
+          "label": "16天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.2307600950118767,
+          "label": "收缩23%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.061207091096010434,
+          "label": "距MA60 -6%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 8106552.038475115,
+          "label": "$8M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.01863,
+      "score": 70,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "AT",
+      "total": 55,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 5,
+          "value": -0.28916281458654347,
+          "label": "-29%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 10,
+          "value": 33,
+          "label": "33天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.34248239008987147,
+          "label": "收缩34%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.007541442076705236,
+          "label": "距MA60 -1%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 31847354.49745377,
+          "label": "$32M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.1387,
+      "score": 60,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "CHZ",
+      "total": 55,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.771000965561635,
+          "label": "-77%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 15,
+          "value": 120,
+          "label": "120天",
+          "reason": "90天+递减(过拟合风险)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.6671541742839731,
+          "label": "收缩67%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 0,
+          "value": -0.3449289150433108,
+          "label": "距MA60 -34%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 10,
+          "value": 150634257.14868096,
+          "label": "$151M",
+          "reason": "流动性充足"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.01424,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "avalanche",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "WLD",
+      "total": 55,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 15,
+          "value": -0.4828914234928159,
+          "label": "-48%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 10,
+          "value": 42,
+          "label": "42天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.6262650127977949,
+          "label": "收缩63%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 0,
+          "value": -0.22114719596629687,
+          "label": "距MA60 -22%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 10,
+          "value": 1314654823.0514827,
+          "label": "$1.3B",
+          "reason": "流动性充足"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.3498,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "AGLD",
+      "total": 53,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6152061855670103,
+          "label": "-62%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 8,
+          "label": "8天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 5,
+          "value": 0.7328703703703697,
+          "label": "无收缩",
+          "reason": "未收缩"
+        },
+        "structure": {
+          "score": 10,
+          "value": -0.14158401609889285,
+          "label": "距MA60 -14%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 13887948.63550656,
+          "label": "$14M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.1493,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "VANRY",
+      "total": 53,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.5427450980392158,
+          "label": "-54%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 4,
+          "label": "4天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 5,
+          "value": 3.0031375502007993,
+          "label": "无收缩",
+          "reason": "未收缩"
+        },
+        "structure": {
+          "score": 10,
+          "value": 0.08425612373786283,
+          "label": "距MA60 8%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 11141287.485956864,
+          "label": "$11M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.004679,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "STO",
+      "total": 50,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.9096183887525107,
+          "label": "-91%",
+          "reason": "腰斩以下风险高"
+        },
+        "time": {
+          "score": 15,
+          "value": 102,
+          "label": "102天",
+          "reason": "90天+递减(过拟合风险)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.5767973856209149,
+          "label": "收缩58%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 10,
+          "value": -0.17360993028396507,
+          "label": "距MA60 -17%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 9131673.238939852,
+          "label": "$9M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [
+        {
+          "reason": "极端下跌",
+          "deduct": 10,
+          "detail": "距高点>90%"
+        }
+      ],
+      "riskDeduct": 10,
+      "price": 0.04052,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "avalanche",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "LUMIA",
+      "total": 50,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.633139227104288,
+          "label": "-63%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 2,
+          "label": "2天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 15,
+          "value": -0.1205109664979513,
+          "label": "收缩12%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 0,
+          "value": -0.31564567628954227,
+          "label": "距MA60 -32%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 9575639.434643388,
+          "label": "$10M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.0691,
+      "score": 70,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "JST",
+      "total": 50,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 5,
+          "value": 0,
+          "label": "0%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 10,
+          "value": 41,
+          "label": "41天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.2835810382475169,
+          "label": "收缩28%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 5,
+          "value": 0.15597865496532418,
+          "label": "距MA60 16%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 10,
+          "value": 847834165.906156,
+          "label": "$848M",
+          "reason": "流动性充足"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.10353,
+      "score": 70,
+      "accType": "band",
+      "entryStatus": "far_above",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "GLM",
+      "total": 50,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.7010526315789474,
+          "label": "-70%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 5,
+          "value": 15,
+          "label": "15天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 15,
+          "value": -0.09615384615384635,
+          "label": "收缩10%",
+          "reason": "未收缩"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.07476070060038169,
+          "label": "距MA60 -7%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 98982277.07808375,
+          "label": "$99M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.09923,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "STG",
+      "total": 48,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.7932528628907458,
+          "label": "-79%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 10,
+          "value": 30,
+          "label": "30天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.8476731372382809,
+          "label": "收缩85%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 0,
+          "value": -0.36158520559727936,
+          "label": "距MA60 -36%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 18804712.97891853,
+          "label": "$19M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.1334,
+      "score": 70,
+      "accType": "band",
+      "entryStatus": "avalanche",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "C",
+      "total": 47,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 15,
+          "value": -0.4396632366697848,
+          "label": "-44%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 15,
+          "value": 92,
+          "label": "92天",
+          "reason": "90天+递减(过拟合风险)"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.5455661245780916,
+          "label": "收缩55%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 0,
+          "value": -0.24759771390290364,
+          "label": "距MA60 -25%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 3344.0303754921797,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.05957,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "avalanche",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "NIGHT",
+      "total": 47,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6187175043327555,
+          "label": "-62%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 2,
+          "label": "2天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.22643752702118441,
+          "label": "收缩23%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 0,
+          "value": -0.36460394715729794,
+          "label": "距MA60 -36%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 35152.30607804803,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.01988,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "T",
+      "total": 47,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6464250734573946,
+          "label": "-65%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 2,
+          "label": "2天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 5,
+          "value": 0.6017369727047158,
+          "label": "无收缩",
+          "reason": "未收缩"
+        },
+        "structure": {
+          "score": 15,
+          "value": -0.0722974130546511,
+          "label": "距MA60 -7%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 567087.6545368315,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.0036,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ZAMA",
+      "total": 45,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 5,
+          "value": 0,
+          "label": "0%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 20,
+          "value": 87,
+          "label": "87天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 5,
+          "value": 0.1366740088105731,
+          "label": "无收缩",
+          "reason": "未收缩"
+        },
+        "structure": {
+          "score": 5,
+          "value": 0.6187242649714657,
+          "label": "距MA60 62%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 10,
+          "value": 119909249.54075895,
+          "label": "$120M",
+          "reason": "流动性充足"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.05451,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "above_cost",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ONDO",
+      "total": 45,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 5,
+          "value": -0.14965685189284922,
+          "label": "-15%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 5,
+          "value": 2,
+          "label": "2天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.3553459119496857,
+          "label": "收缩36%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 5,
+          "value": 0.10115151225572121,
+          "label": "距MA60 10%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 10,
+          "value": 1873238382.6962173,
+          "label": "$1.9B",
+          "reason": "流动性充足"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.3844,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "BICO",
+      "total": 43,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.7835725677830941,
+          "label": "-78%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 5,
+          "value": 17,
+          "label": "17天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.7226072175732218,
+          "label": "收缩72%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 0,
+          "value": -0.30098987800376026,
+          "label": "距MA60 -30%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 13501355.383942053,
+          "label": "$14M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.01351,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "BIGTIME",
+      "total": 43,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.7379227053140096,
+          "label": "-74%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 5,
+          "value": 2,
+          "label": "2天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.46998460749102106,
+          "label": "收缩47%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 0,
+          "value": -0.2056777972099077,
+          "label": "距MA60 -21%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 32486462.61664047,
+          "label": "$32M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.006497,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "CATI",
+      "total": 43,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 15,
+          "value": -0.46806722689075636,
+          "label": "-47%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 9,
+          "label": "9天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 15,
+          "value": -0.08922192887094327,
+          "label": "收缩9%",
+          "reason": "未收缩"
+        },
+        "structure": {
+          "score": 0,
+          "value": -0.2472251585623682,
+          "label": "距MA60 -25%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 8,
+          "value": 37990981.31052442,
+          "label": "$38M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.03781,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "KITE",
+      "total": 42,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 25,
+          "value": -0.6532445923460898,
+          "label": "-65%",
+          "reason": "最佳吸筹区(-50~-70%)"
+        },
+        "time": {
+          "score": 5,
+          "value": 2,
+          "label": "2天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 15,
+          "value": -0.1273684210526316,
+          "label": "收缩13%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 0,
+          "value": -0.30914836955921204,
+          "label": "距MA60 -31%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 521977.10987723985,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.10446,
+      "score": 75,
+      "accType": "band",
+      "entryStatus": "avalanche",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "PARTI",
+      "total": 40,
+      "tier": "👀 观察",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.745685740236149,
+          "label": "-75%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 5,
+          "value": 5,
+          "label": "5天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 20,
+          "value": -0.4341463414634147,
+          "label": "收缩43%",
+          "reason": "ATR显著收缩(庄控盘)"
+        },
+        "structure": {
+          "score": 0,
+          "value": -0.395074175428489,
+          "label": "距MA60 -40%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 6525103.095976071,
+          "label": "$7M",
+          "reason": "可交易"
+        }
+      },
+      "risks": [],
+      "riskDeduct": 0,
+      "price": 0.02795,
+      "score": 70,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "ACE",
+      "total": 32,
+      "tier": "普通",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.7061016949152542,
+          "label": "-71%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 5,
+          "value": 2,
+          "label": "2天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 5,
+          "value": 0.2587883320867617,
+          "label": "无收缩",
+          "reason": "未收缩"
+        },
+        "structure": {
+          "score": 15,
+          "value": 0.023149696123359986,
+          "label": "距MA60 2%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 336537.995013444,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.08705,
+      "score": 70,
+      "accType": "band",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "MIRA",
+      "total": 32,
+      "tier": "普通",
+      "breakdown": {
+        "drawdown": {
+          "score": 10,
+          "value": -0.700136612021858,
+          "label": "-70%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 5,
+          "value": 2,
+          "label": "2天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 10,
+          "value": -0.03482587064676648,
+          "label": "收缩3%",
+          "reason": "未收缩"
+        },
+        "structure": {
+          "score": 10,
+          "value": -0.14666148313733082,
+          "label": "距MA60 -15%",
+          "reason": "远离均线(弱结构)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 0,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.04393,
+      "score": 50,
+      "accType": "quiet",
+      "entryStatus": "sub_zone",
+      "marketRegime": "neutral"
+    },
+    {
+      "symbol": "BANK",
+      "total": 17,
+      "tier": "普通",
+      "breakdown": {
+        "drawdown": {
+          "score": 5,
+          "value": 0,
+          "label": "0%",
+          "reason": "回撤不足"
+        },
+        "time": {
+          "score": 5,
+          "value": 2,
+          "label": "2天",
+          "reason": "吸筹不充分"
+        },
+        "volatility": {
+          "score": 5,
+          "value": 6.09570724841661,
+          "label": "无收缩",
+          "reason": "未收缩"
+        },
+        "structure": {
+          "score": 5,
+          "value": 4.1540275347988125,
+          "label": "距MA60 415%",
+          "reason": "接近MA60(结构良好)"
+        },
+        "liquidity": {
+          "score": 5,
+          "value": 2832.202788073464,
+          "label": "N/A",
+          "reason": "⚠ 接近僵尸币"
+        }
+      },
+      "risks": [
+        {
+          "reason": "低流动性",
+          "deduct": 8,
+          "detail": "市值<5M"
+        }
+      ],
+      "riskDeduct": 8,
+      "price": 0.34569,
+      "score": 50,
+      "accType": "band",
+      "entryStatus": "far_above",
+      "marketRegime": "neutral"
+    }
+  ]
+}

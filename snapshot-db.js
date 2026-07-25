@@ -91,7 +91,7 @@ function saveSnapshot(db) {
     (timestamp, symbol, price, market_cap, volume_24h, funding_rate, 
      score, met_count, breakout_confidence, trend_score, final_score,
      btc_price, market_regime, acc_type, entry_status, price_vs_cost, accum_days, est_accumulation)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   
   const transaction = db.transaction(() => {
@@ -108,6 +108,7 @@ function saveSnapshot(db) {
         (s.breakout || {}).confidence || 0,
         0, // trend_score placeholder
         s.score || 0,
+        0, // btc_price
         s.marketRegime || 'neutral',
         s.accType || 'quiet',
         s.entryStatus || 'neutral',
