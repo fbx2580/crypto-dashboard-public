@@ -48,44 +48,35 @@
     <!-- Market Overview -->
     <div class="market-overview" id="marketOverview">
       <div class="mo-item mo-btc" id="moCrypto">
-        <span class="mo-label">₿ BTC</span>
+        <span class="mo-label">₿ BTC · <span class="mo-flow" id="moBtcFlow">—</span></span>
         <span class="mo-value" id="moCryptoVal">—</span>
         <span class="mo-change" id="moCryptoChg">—</span>
       </div>
       <div class="mo-item mo-sh" id="moA01">
-        <span class="mo-label">🇨🇳 上证</span>
+        <span class="mo-label">🇨🇳 上证 · <span class="mo-flow" id="moShFlow">—</span></span>
         <span class="mo-value" id="moA01Val">—</span>
         <span class="mo-change" id="moA01Chg">—</span>
       </div>
       <div class="mo-item mo-nasdaq" id="moNasdaq">
-        <span class="mo-label">📈 纳指</span>
+        <span class="mo-label">📈 纳指 · <span class="mo-flow" id="moNasdaqFlow">—</span></span>
         <span class="mo-value" id="moNasdaqVal">—</span>
         <span class="mo-change" id="moNasdaqChg">—</span>
       </div>
       <div class="mo-item mo-sp500" id="moSp500">
-        <span class="mo-label">📊 标普</span>
+        <span class="mo-label">📊 标普 · <span class="mo-flow" id="moSp500Flow">—</span></span>
         <span class="mo-value" id="moSp500Val">—</span>
         <span class="mo-change" id="moSp500Chg">—</span>
       </div>
       <div class="mo-item mo-gold" id="moGold">
-        <span class="mo-label">🥇 XAU</span>
+        <span class="mo-label">🥇 XAU · <span class="mo-flow" id="moGoldFlow">—</span></span>
         <span class="mo-value" id="moGoldVal">—</span>
         <span class="mo-change" id="moGoldChg">—</span>
       </div>
       <div class="mo-item mo-oil" id="moOil">
-        <span class="mo-label">🛢️ BZ</span>
+        <span class="mo-label">🛢️ BZ · <span class="mo-flow" id="moOilFlow">—</span></span>
         <span class="mo-value" id="moOilVal">—</span>
         <span class="mo-change" id="moOilChg">—</span>
       </div>
-    </div>
-
-    <!-- 跨市场资金流向 -->
-    <div class="flow-bar" id="flowBar">
-      <span class="flow-item" id="flowBtc">₿ —</span>
-      <span class="flow-item" id="flowNasdaq">📈 —</span>
-      <span class="flow-item" id="flowSp500">📊 —</span>
-      <span class="flow-item" id="flowGold">🥇 —</span>
-      <span class="flow-item" id="flowOil">🛢️ —</span>
     </div>
 
     <!-- 市场指标 -->
@@ -152,7 +143,7 @@
       <div class="signal-layout" style="padding:0;display:flex;flex-direction:column;flex:1;">
         <div class="signal-section" style="margin:0;border:none;">
           <div class="signal-header" style="font-size:14px;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface);display:flex;justify-content:space-between;align-items:center;">
-            <span>💰 山寨币吸筹监控 <span style="font-size:9px;color:var(--text-dim);font-weight:400;">量价背离 · 大额提币 · 聪明钱潜伏</span></span>
+            <span>💰 山寨币吸筹监控 <input type="text" id="accumSearch" placeholder="搜索币种…" style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:3px;padding:2px 6px;font-size:10px;font-family:var(--font);width:100px;margin-left:8px;" oninput="applyAccumFilter()"> <span style="font-size:9px;color:var(--text-dim);font-weight:400;">量价背离 · 大额提币 · 聪明钱潜伏</span></span>
             <span style="font-size:10px;color:var(--text-dim);">更新时间 <span id="accumUpdateTime">—</span></span>
           </div>
           <div class="signal-body" id="accumulationBody" style="padding:6px 14px;overflow-y:auto;font-size:11px;">

@@ -142,6 +142,15 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: err.message });
 });
 
+// ═══ 山寨币吸筹扫描 ═══
+app.get('/api/accumulation/scan', (req, res) => {
+  const file = path.join(DATA_DIR, 'analysis', 'accumulation_signals.json');
+  try {
+    if (fs.existsSync(file)) return res.json(JSON.parse(fs.readFileSync(file, 'utf8')));
+    res.json({ scannedAt: null, totalScanned: 0, signalsFound: 0, signals: [] });
+  } catch(e) { res.json({ scannedAt: null, totalScanned: 0, signalsFound: 0, signals: [] }); }
+});
+
 // ═══ 健康检查 ═══
 app.get('/api/health', (req, res) => {
   res.json({

@@ -124,7 +124,7 @@ if (require.main === module) {
     idx = (i + 1) % TASKS.length;
     console.log('[whale] 📡', LABELS[i]);
     TASKS[i]().catch(() => {});
-  }, 1000);
+  }, 2000);
 
   // 首次全量加载
   (async () => {
