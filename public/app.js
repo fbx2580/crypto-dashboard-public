@@ -116,7 +116,38 @@ async function refreshMarket() {
     if (sh) setItem('moA01', sh.price.toFixed(0), sh.changePercent);
     if (data.nasdaq) setItem('moNasdaq', `$${data.nasdaq.price.toLocaleString('en', {minimumFractionDigits:0})}`, data.nasdaq.changePercent);
     if (data.sp500) setItem('moSp500', `$${data.sp500.price.toLocaleString('en', {minimumFractionDigits:0})}`, data.sp500.changePercent);
+    if (data.gold) setItem('moGold', `$${data.gold.price.toFixed(1)}`, data.gold.changePercent);
+    if (data.oil) setItem('moOil', `$${data.oil.price.toFixed(2)}`, data.oil.changePercent);
+
+    // 更新资金流向条
+    if (data.flow) updateFlowBar(data.flow);
   } catch(e) {}
+}
+
+function updateFlowBar(flow) {
+  const signals = {
+    inflow: { text: '⤴ 流入', color: '#22c55e' },
+    weak_in: { text: '↗ 微入', color: '#86efac' },
+    neutral: { text: '—', color: 'var(--text-dim)' },
+    weak_out: { text: '↘ 微出', color: '#fbbf24' },
+    outflow: { text: '⤵ 流出', color: '#ef4444' },
+    nodata: { text: '—', color: 'var(--text-dim)' },
+  };
+  const ids = ['btc','nasdaq','sp500','gold','oil'];
+  for (const key of ids) {
+    const el = document.getElementById('flow' + key.charAt(0).toUpperCase() + key.slice(1));
+    if (!el) continue;
+    const s = flow[key];
+    if (!s || s.signal === 'nodata') {
+      el.textContent = (key === 'btc' ? '₿ ' : key === 'gold' ? '🥇 ' : key === 'oil' ? '🛢️ ' : key === 'nasdaq' ? '📈 ' : '📊 ') + '—';
+      el.style.color = 'var(--text-dim)';
+      continue;
+    }
+    const sig = signals[s.signal] || signals.neutral;
+    const icon = key === 'btc' ? '₿ ' : key === 'gold' ? '🥇 ' : key === 'oil' ? '🛢️ ' : key === 'nasdaq' ? '📈 ' : '📊 ';
+    el.textContent = icon + sig.text;
+    el.style.color = sig.color;
+  }
 }
 
 // ─── 主流币排行（谁更硬谁更软）───
@@ -427,6 +458,96 @@ function setupChartMore() {
 
 let _newsVersion = 0;
 
+// ─── 山寨币吸筹监控 ───
+async function refreshAccumulationMonitor() {
+  const el = document.getElementById('accumulationBody');
+  if (!el) return;
+  try {
+    const resp = await fetch('/api/binance/signals');
+    if (!resp.ok) return;
+    const data = await resp.json();
+    const altcoins = data.altcoins || [];
+    if (!altcoins.length) {
+      el.innerHTML = '<div style="color:var(--text-dim);padding:10px;">暂无数据</div>';
+      return;
+    }
+
+    // 计算所有山寨币的成交量中位数（排除极端值）
+    const vols = altcoins.map(t => t.quoteVolume || 0).sort((a, b) => a - b);
+    const medianVol = vols[Math.floor(vols.length / 2)] || 1;
+
+    // 为每个币计算吸筹评分
+    const scored = altcoins.map(t => {
+      const vol = t.quoteVolume || 0;
+      const chg = t.change24h || 0;
+
+      // 成交量倍率（相对中位数）
+      const volRatio = vol / (medianVol || 1);
+
+      // 价格因子：最理想的吸筹区间是微跌（-5%~-1%）或横盘（-1%~+1%）
+      let priceFactor = 0;
+      if (chg >= -5 && chg < -1) priceFactor = 1.5;   // 最佳：跌中带量 = 吸筹
+      else if (chg >= -1 && chg < 1) priceFactor = 1.3; // 良好：横盘带量 = 潜伏
+      else if (chg >= -10 && chg < -5) priceFactor = 1.2; // 大跌：资金在接
+      else if (chg >= 1 && chg < 3) priceFactor = 0.8;  // 小涨：可能拉完了
+      else if (chg >= -1 && chg < 0) priceFactor = 1.4; 
+      else priceFactor = 0.5;  // 大涨或暴跌
+
+      // 成交量越大、价格越靠近吸筹区间，分数越高
+      const score = volRatio * priceFactor * 20;
+
+      return { ...t, score, volRatio, priceFactor };
+    });
+
+    // 按评分降序排列
+    scored.sort((a, b) => b.score - a.score);
+
+    // 只显示前50名
+    const top = scored.slice(0, 50);
+
+    document.getElementById('accumUpdateTime').textContent = new Date().toLocaleTimeString('zh-CN', {hour:'2-digit',minute:'2-digit',second:'2-digit'});
+
+    let html = '<div style="font-size:10px;color:var(--text-dim);margin-bottom:4px;">基于量价关系自动评分 · 评分越高越可能被吸筹 · 共' + altcoins.length + '个币种</div>';
+    html += '<div style="display:flex;font-size:9px;color:var(--text-dim);padding:4px 0;border-bottom:1px solid var(--border);font-weight:700;">' +
+      '<span style="width:30px;">#</span>' +
+      '<span style="flex:1;">币种</span>' +
+      '<span style="width:65px;text-align:right;">价格</span>' +
+      '<span style="width:58px;text-align:right;">24h涨跌</span>' +
+      '<span style="width:60px;text-align:right;">成交量</span>' +
+      '<span style="width:40px;text-align:right;">吸筹分</span>' +
+    '</div>';
+
+    for (let i = 0; i < top.length; i++) {
+      const t = top[i];
+      const chgCls = t.change24h >= 0 ? 'up' : 'down';
+      const chgSign = t.change24h >= 0 ? '+' : '';
+      const volStr = t.quoteVolume >= 1e9 ? (t.quoteVolume/1e9).toFixed(1) + 'B' : t.quoteVolume >= 1e6 ? (t.quoteVolume/1e6).toFixed(1) + 'M' : (t.quoteVolume/1e3).toFixed(0) + 'K';
+      
+      // 吸筹分颜色
+      const score = t.score;
+      let scoreColor = 'var(--text-dim)';
+      if (score > 300) scoreColor = '#22c55e';  // 强
+      else if (score > 150) scoreColor = '#86efac';  // 中
+      else if (score > 80) scoreColor = '#fbbf24';  // 弱
+
+      const sym = t.symbol ? t.symbol.replace('USDT', '') : '?';
+
+      html += '<div style="display:flex;align-items:center;padding:3px 0;border-bottom:1px solid var(--border);font-size:10px;">' +
+        '<span style="width:30px;color:var(--text-dim);">' + (i+1) + '</span>' +
+        '<span style="flex:1;font-weight:600;">' + sym + '</span>' +
+        '<span style="width:65px;text-align:right;">$' + fmt.price(t.price) + '</span>' +
+        '<span style="width:58px;text-align:right;" class="' + chgCls + '">' + chgSign + t.change24h.toFixed(2) + '%</span>' +
+        '<span style="width:60px;text-align:right;color:var(--text-dim);">' + volStr + '</span>' +
+        '<span style="width:40px;text-align:right;color:' + scoreColor + ';font-weight:700;">' + Math.round(score) + '</span>' +
+      '</div>';
+    }
+
+    el.innerHTML = html;
+  } catch(e) {
+    el.innerHTML = '<div style="color:var(--text-dim);padding:10px;">加载失败</div>';
+  }
+}
+
 // ─── 币圈强信号 ───
 window._whaleTxs = [];
 window._whaleHashes = new Set();
@@ -500,6 +621,7 @@ async function refreshAll() {
       refreshIndicators().catch(e => console.error('indicators', e)),
       refreshLlama().catch(e => console.error('llama', e)),
       refreshAltcoinSignals().catch(e => console.error('altcoin', e)),
+      refreshAccumulationMonitor().catch(e => console.error('accum', e)),
     ]);
   } catch(e) {}
   await loadChart().catch(e => console.error('loadChart', e));
@@ -518,6 +640,9 @@ function setupTabs() {
       // 币圈强信号tab（预留）
       if (tab.dataset.tab === 'altcoin') {
         refreshAltcoinSignals();
+      }
+      if (tab.dataset.tab === 'accumulation') {
+        refreshAccumulationMonitor();
       }
     });
   });
@@ -715,7 +840,7 @@ function init() {
   setInterval(() => { refreshMarket(); refreshTickers(); }, 5000);
 
   // Tier 2: 存储股 + 强信号—— 5秒
-  setInterval(() => { refreshAnomalies(); refreshAltcoinSignals(); }, 2000);
+  setInterval(() => { refreshAnomalies(); refreshAltcoinSignals(); refreshAccumulationMonitor(); }, 2000);
 
   // Tier 3: 低频（恐惧指数 + 山寨季指数）—— 3分钟
   setInterval(() => { refreshIndicators(); refreshLlama(); }, 180000);

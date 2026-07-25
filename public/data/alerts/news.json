@@ -1,6 +1,70 @@
 {
-  "updated": 1784918410351,
+  "updated": 1784994404098,
   "alerts": [
+    {
+      "ts": 1784993746,
+      "detected": 1784994404098,
+      "src": "U.Today",
+      "title": "狗狗币 ETF 在短暂的 34.5 万美元资金流入激增后再次陷入沉寂",
+      "orig": "Dogecoin ETFs Go Quiet Again After Brief $345K Inflow Surge",
+      "link": "https://u.today/dogecoin-etfs-go-quiet-again-after-brief-345k-inflow-surge"
+    },
+    {
+      "ts": 1784992672,
+      "detected": 1784993502997,
+      "src": "U.Today",
+      "title": "“前富豪的新定义”，币安 CZ 对埃隆·马斯克退出亿万富翁俱乐部的反应",
+      "orig": "'New Definition of Pre-Rich,' Binance's CZ Reacts as Elon Musk Exits Trillionaire Club",
+      "link": "https://u.today/new-definition-of-pre-rich-binances-cz-reacts-as-elon-musk-exits-trillionaire-club"
+    },
+    {
+      "ts": 1784989847,
+      "detected": 1784990621799,
+      "src": "U.Today",
+      "title": "卡尔达诺创始人抨击方舟投资总监对批评的偏见",
+      "orig": "Cardano Founder Blasts Ark Invest Director's Bias Over Criticism",
+      "link": "https://u.today/cardano-founder-blasts-ark-invest-directors-bias-over-criticism"
+    },
+    {
+      "ts": 1784984400,
+      "detected": 1784989901727,
+      "src": "CoinDesk",
+      "title": "通过代币化使天气衍生品民主化可能是加密货币最重要的现实用例",
+      "orig": "Democratizing weather derivatives through tokenization could be crypto's most important real-world use case",
+      "link": "https://www.coindesk.com/opinion/2026/07/25/democratizing-weather-derivatives-through-tokenization-could-be-crypto-s-most-important-real-world-use-case"
+    },
+    {
+      "ts": 1784985258,
+      "detected": 1784989901727,
+      "src": "CoinTelegraph",
+      "title": "朝鲜逮捕了与加密货币洗钱有关的银行黑客团伙：报告",
+      "orig": "North Korea arrests bank hacking ring tied to crypto laundering: Report",
+      "link": "https://cointelegraph.com/news/north-korea-bank-hacking-ring-crypto-laundering-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1784988063,
+      "detected": 1784989901727,
+      "src": "Decrypt",
+      "title": "什么是人工智能终止开关以及为什么美国立法者想要一个？",
+      "orig": "What Is an AI Kill Switch and Why Do US Lawmakers Want One?",
+      "link": "https://decrypt.co/374332/what-is-ai-kill-switch-openai-hack-hugging-face"
+    },
+    {
+      "ts": 1784989094,
+      "detected": 1784989901727,
+      "src": "U.Today",
+      "title": "XRP 多头因 2,205% 的清算失衡而震惊",
+      "orig": "XRP Bulls Stunned by 2,205% Liquidation Imbalance",
+      "link": "https://u.today/xrp-bulls-stunned-by-2205-liquidation-imbalance"
+    },
+    {
+      "ts": 1784989126,
+      "detected": 1784989901727,
+      "src": "U.Today",
+      "title": "Coinbase 的 CLO 询问参议院是否也希望通过“执法部门希望通过明确性”",
+      "orig": "'Law Enforcement Wants CLARITY Passed,' Coinbase's CLO Asks if Senate Wants the Same",
+      "link": "https://u.today/law-enforcement-wants-clarity-passed-coinbases-clo-asks-if-senate-wants-the-same"
+    },
     {
       "ts": 1784918115,
       "detected": 1784918410350,
@@ -336,70 +400,6 @@
       "title": "RWA 成为 Hyperliquid 最大的交易类别",
       "orig": "RWAs become Hyperliquid’s largest trading category",
       "link": "https://cointelegraph.com/news/hyperliquid-rwa-volume-crypto-trading-first-time?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1784892893,
-      "detected": 1784893019711,
-      "src": "CoinDesk",
-      "title": "比特币期权已形成价值 50 亿美元的集群。",
-      "orig": "A $5 billion cluster has formed in bitcoin options. It tells a bullish story",
-      "link": "https://www.coindesk.com/markets/2026/07/24/a-usd5-billion-cluster-has-formed-in-bitcoin-options-it-tells-a-bullish-story"
-    },
-    {
-      "ts": 1784892948,
-      "detected": 1784893019711,
-      "src": "CoinDesk",
-      "title": "加密货币机构的涌入扼杀了模因币热潮",
-      "orig": "Crypto's institutional influx has killed the memecoin craze",
-      "link": "https://www.coindesk.com/daybook-us/2026/07/24/crypto-s-institutional-influx-has-killed-the-memecoin-craze"
-    },
-    {
-      "ts": 1784885723,
-      "detected": 1784892479338,
-      "src": "BBC Business",
-      "title": "特朗普征收新一波美国关税，苏格兰威士忌关税被取消",
-      "orig": "Scotch whisky levy lifted as Trump imposes new wave of US tariffs",
-      "link": "https://www.bbc.co.uk/news/articles/c7vgz680977o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1784888491,
-      "detected": 1784892479338,
-      "src": "BBC Business",
-      "title": "观察：特朗普的关税是否实现了他的目标？",
-      "orig": "Watch: Are Trump's tariffs delivering on his objectives?",
-      "link": "https://www.bbc.co.uk/news/videos/c5yw2xgnv2jo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1784891978,
-      "detected": 1784892119134,
-      "src": "CoinDesk",
-      "title": "油价逼近 100 美元未能惊动市场，比特币收于 65,000 美元附近",
-      "orig": "Bitcoin settles near $65,000 as oil's march toward $100 fails to spook the market",
-      "link": "https://www.coindesk.com/markets/2026/07/24/bitcoin-settles-near-usd65-000-as-oil-s-march-toward-usd100-fails-to-spook-the-market"
-    },
-    {
-      "ts": 1784890843,
-      "detected": 1784891938794,
-      "src": "U.Today",
-      "title": "300 万个 SHIB 被发送到死亡钱包，但销毁率仍然很低",
-      "orig": "3 Million SHIB Sent to Dead Wallet, but Burn Rate Stays Low",
-      "link": "https://u.today/3-million-shib-sent-to-dead-wallet-but-burn-rate-stays-low"
-    },
-    {
-      "ts": 1784891380,
-      "detected": 1784891758858,
-      "src": "CoinDesk",
-      "title": "币印矿池曾是比特币最大矿池，现已申请破产",
-      "orig": "Poolin was bitcoin's biggest mining pool and now it's filing for bankruptcy",
-      "link": "https://www.coindesk.com/markets/2026/07/24/poolin-was-bitcoin-s-biggest-mining-pool-and-now-it-s-filing-for-bankruptcy"
-    },
-    {
-      "ts": 1784890801,
-      "detected": 1784890859071,
-      "src": "CNBC",
-      "title": "拍卖行表示，科技财富的繁荣正在推动恐龙骨骼、艺术品和手表的价格创下新纪录",
-      "orig": "Boom in tech wealth is fueling record prices for dinosaur bones, art and watches, auction houses say",
-      "link": "https://www.cnbc.com/2026/07/24/wealth-auctions-art-watches.html"
     }
   ]
 }

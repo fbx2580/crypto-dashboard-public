@@ -254,6 +254,8 @@ html, body {
 .mo-sh { border-left-color: var(--red); }
 .mo-nasdaq { border-left-color: var(--yellow); }
 .mo-sp500 { border-left-color: var(--green); }
+.mo-gold { border-left-color: #f0b90b; }
+.mo-oil { border-left-color: #627eea; }
 
 .mo-label { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2px; }
 .mo-value { font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -264,9 +266,36 @@ html, body {
 .mo-change.down { color: var(--red); }
 
 @media (min-width: 480px) {
-  .market-overview { grid-template-columns: repeat(4, 1fr); gap: var(--gap); }
+  .market-overview { grid-template-columns: repeat(3, 1fr); gap: var(--gap); }
   .mo-item { padding: 10px 14px; }
   .mo-value { font-size: 15px; }
+}
+@media (min-width: 768px) {
+  .market-overview { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1024px) {
+  .market-overview { grid-template-columns: repeat(6, 1fr); }
+}
+
+/* ─── 资金流向条 ─── */
+.flow-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 8px;
+  margin-bottom: var(--gap);
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.flow-item {
+  font-size: 10px;
+  font-family: var(--font);
+  color: var(--text-dim);
+  white-space: nowrap;
+  padding: 2px 6px;
 }
 
 /* ─── Main Layout ─── */
