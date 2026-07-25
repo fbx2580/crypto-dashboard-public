@@ -132,7 +132,7 @@ async function main() {
   L(`${signals.length}个≥2条件币`);
 
   // 逐币分析 (取前100个高分币，节省API)
-  const targets = signals.sort((a, b) => b.score - a.score).slice(0, 100);
+  const targets = signals.sort((a, b) => b.score - a.score).slice(0, 307);
   const results = [];
   let done = 0;
 

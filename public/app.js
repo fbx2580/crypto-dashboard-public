@@ -742,21 +742,30 @@ async function refreshAll() {
 }
 
 // ─── Tab Switching ───
+let _activeTab = 'trade';
+let _tabVisited = {trade: true};
+function isTabActive(id) { return _activeTab === id || document.getElementById('tab' + id.charAt(0).toUpperCase() + id.slice(1))?.classList.contains('active'); }
 function setupTabs() {
   document.querySelectorAll('.tab:not(.disabled)').forEach(tab => {
     tab.addEventListener('click', () => {
+      const prev = _activeTab;
+      _activeTab = tab.dataset.tab;
       document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
       document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
       tab.classList.add('active');
       const target = document.getElementById('tab' + tab.dataset.tab.charAt(0).toUpperCase() + tab.dataset.tab.slice(1));
       if (target) target.classList.add('active');
-      // 币圈强信号tab（预留）
-      if (tab.dataset.tab === 'altcoin') {
-        refreshAltcoinSignals();
+      // 首次进入Tab: 初始化数据
+      if (!_tabVisited[_activeTab]) {
+        _tabVisited[_activeTab] = true;
+        if (_activeTab === 'altcoin') refreshAltcoinSignals();
+        if (_activeTab === 'accumulation') refreshAccumulationMonitor();
+        if (_activeTab === 'news') setupNews();
+        if (_activeTab === 'defi') refreshLlama();
       }
-      if (tab.dataset.tab === 'accumulation') {
-        refreshAccumulationMonitor();
-      }
+      // 离开Tab时停止高频刷新，进入时恢复
+      if (_activeTab === 'accumulation') refreshAccumulationMonitor();
+      if (_activeTab === 'altcoin' && prev !== 'altcoin') refreshAltcoinSignals();
     });
   });
 }
@@ -949,12 +958,13 @@ function init() {
   // Tier 0: 秒级（BTC大盘 + K线最新蜡烛）—— 1秒
   setInterval(() => { tickBtcPrice(); tickChart(); }, 1000);
 
-  // Tier 1: 大盘（纳指/标普/上证 + 主流排行）—— 5秒
-  setInterval(() => { refreshMarket(); refreshTickers(); }, 5000);
+  // Tier 1: 大盘 — 仅大看板Tab有效
+  setInterval(() => { if (_activeTab === 'trade') { refreshMarket(); refreshTickers(); } }, 5000);
 
-  // Tier 2: 存储股 + 强信号—— 5秒
-  setInterval(() => { refreshAnomalies(); refreshAltcoinSignals(); }, 2000);
-  setInterval(() => { refreshAccumulationMonitor(); }, 30000);
+  // Tier 2: 存储股+强信号 — 仅链上侦探Tab有效
+  setInterval(() => { if (_activeTab === 'altcoin') { refreshAnomalies(); refreshAltcoinSignals(); } }, 2000);
+  // 雷达 — 仅吸筹雷达Tab有效
+  setInterval(() => { if (_activeTab === 'accumulation') refreshAccumulationMonitor(); }, 30000);
 
   // Tier 3: 低频（恐惧指数 + 山寨季指数）—— 3分钟
   setInterval(() => { refreshIndicators(); refreshLlama(); }, 180000);
