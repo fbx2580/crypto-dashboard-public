@@ -737,10 +737,11 @@ input:focus, select:focus { border-color: var(--accent); }
 /* ─── 吸筹雷达Dashboard ─── */
 .radar-dash {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 8px;
-  padding: 8px;
+  padding: 4px;
 }
+@media (min-width: 480px) { .radar-dash { padding: 8px; } }
 @media (min-width: 768px) { .radar-dash { grid-template-columns: 1fr 1fr; } }
 .radar-card {
   background: var(--surface);
@@ -756,18 +757,21 @@ input:focus, select:focus { border-color: var(--accent); }
   border-bottom: 1px solid var(--border);
 }
 .radar-card-bd {
-  padding: 8px;
+  padding: 6px;
 }
+@media (min-width: 480px) { .radar-card-bd { padding: 8px; } }
 .radar-row {
   display: flex;
   align-items: center;
-  padding: 4px 0;
+  padding: 5px 8px;
   border-bottom: 1px solid var(--border);
   cursor: pointer;
   gap: 6px;
   font-size: 10px;
+  min-height: 36px;
+  -webkit-tap-highlight-color: transparent;
 }
-.radar-row:hover { background: var(--surface2); }
+.radar-row:hover, .radar-row:active { background: var(--surface2); }
 .radar-tier-badge {
   font-size: 9px;
   padding: 1px 4px;
@@ -784,4 +788,29 @@ input:focus, select:focus { border-color: var(--accent); }
 .radar-score-fill {
   height: 4px;
   border-radius: 2px;
+}
+
+/* ─── 移动端触摸优化 ─── */
+@media (max-width: 767px) {
+  .accum-cond { padding: 2px 6px; min-height: 24px; display: inline-flex; align-items: center; }
+  .accum-tooltip { display: none !important; }
+  .radar-score-bar { min-width: 20px; }
+  .radar-row { padding: 8px 6px; }
+  .market-overview { grid-template-columns: repeat(3, 1fr) !important; gap: 4px; }
+  .mo-item { padding: 6px 8px !important; }
+  .mo-value { font-size: 11px !important; }
+  .mo-label { font-size: 8px !important; }
+}
+@media (max-width: 400px) {
+  .market-overview { grid-template-columns: repeat(2, 1fr) !important; }
+  .mo-item { padding: 4px 6px !important; }
+  .mo-value { font-size: 10px !important; }
+  .mo-label { font-size: 7px !important; }
+  .radar-dash { padding: 2px; gap: 4px; }
+  .radar-card-hd { font-size: 10px; padding: 4px 6px; }
+  .radar-card-bd { padding: 4px; }
+  .radar-row { font-size: 9px; gap: 3px; }
+  .tab { font-size: 10px; padding: 6px 8px; }
+  .header { padding: 6px 8px; }
+  .logo { font-size: 13px; }
 }
