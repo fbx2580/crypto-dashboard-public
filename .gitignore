@@ -1,9 +1,32 @@
+# Dependencies
 node_modules/
-*.log
+
+# Secrets & Config
 .env
 secrets/
-*.bak
-data/
-.DS_Store
+*.key
+*.pem
+openclaw-workspace-state.json
+
+# Logs & Cache
+*.log
+/tmp/
 *.pid
-tmp/
+/tmp/*
+.npm/
+
+# Data (runtime generated)
+public/data/binance/latest_snapshot.json
+public/data/news/*.json
+public/data/whale/transfers.json
+public/data/alerts/*.json
+public/data/analysis/backtest_*.json
+public/data/analysis/pnl_*.json
+public/data/analysis/exchange_flow*.json
+public/data/snapshots.db
+
+# System
+.DS_Store
+*.bak
+*.tar.gz
+.server_pid_checked
