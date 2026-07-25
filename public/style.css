@@ -17,6 +17,7 @@
 /* ─── 主题 1：终端绿（默认） ─── */
 [data-theme="green"] {
   --bg: #0a0a0a;
+  --gray: #555555;
   --surface: #0d0d0d;
   --surface2: #111111;
   --surface3: #1a1a1a;
@@ -33,6 +34,7 @@
 /* ─── 主题 2：皓月白 ─── */
 [data-theme="white"] {
   --bg: #ffffff;
+  --gray: #999999;
   --surface: #f6f8fa;
   --surface2: #eef1f5;
   --surface3: #e1e4e8;
@@ -427,11 +429,15 @@ html, body {
 /* ─── Ticker 行 ─── */
 .ticker-item, .anomaly-item {
   display: flex;
-  align-items: center;
-  gap: 6px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin: 3px 0;
   font-size: 12px;
   font-variant-numeric: tabular-nums;
-  white-space: nowrap;
 }
 .ticker-symbol, .anomaly-symbol { font-weight: 700; color: var(--text); }
 .ticker-price { color: var(--text-dim); font-size: 10px; }

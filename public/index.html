@@ -37,7 +37,8 @@
     <div class="tabs" id="tabBar">
       <button class="tab active" data-tab="trade">📈 大看板</button>
       <button class="tab" data-tab="news">📰 消息面</button>
-      <button class="tab" data-tab="altcoin">💪 币圈强信号</button>
+      <button class="tab" data-tab="altcoin">🕵️ 链上侦探</button>
+      <button class="tab" data-tab="defi">🦙 DeFi</button>
     </div>
 
     <!-- Tab: 交易 -->
@@ -106,7 +107,67 @@
 
 
     <!-- DefiLlama 全链收益排行 -->
-    <div class="defi-yield-section" style="margin-bottom:10px;background:var(--card-bg);border-radius:8px;padding:10px;border:1px solid var(--border);">
+            </div><!-- /tabTrade -->
+
+    <!-- Tab: 消息面 -->
+    <div class="tab-content" id="tabNews">
+      <div class="signal-layout">
+        <div class="signal-section">
+          <div class="signal-header">🔴 金十快讯 <span class="sig-count" id="jin10Count"></span> <span style="font-size:9px;color:var(--text-dim);font-weight:400;">来源 金十数据</span></div>
+          <div class="signal-body signal-scroll" id="jin10Body">
+            <div class="sig-loading"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+          </div>
+        </div>
+        <div class="signal-section">
+          <div class="signal-header">📡 墙外新闻 <span class="sig-count" id="rssCount"></span> <span style="font-size:9px;color:var(--text-dim);font-weight:400;">来源 RSS聚合</span></div>
+          <div class="signal-body signal-scroll" id="rssBody">
+            <div class="sig-loading"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: 币圈强信号 -->
+    <div class="tab-content" id="tabAltcoin">
+      <div class="signal-layout" style="padding:0;display:flex;flex-direction:column;flex:1;">
+        <div class="signal-section" style="margin:0;border:none;">
+          <div class="signal-header" style="font-size:14px;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface);display:flex;justify-content:space-between;align-items:center;">
+            <span>🔗 ETH链上追踪 <span class="sig-count" id="ethCount"></span> <span id="ethNewCount" style="font-size:9px;color:var(--green);font-weight:700;"></span> <span style="font-size:9px;color:var(--text-dim);font-weight:400;">来源 Alchemy</span></span>
+            <span style="display:flex;align-items:center;">
+              <span class="toggle-icon" style="cursor:pointer;font-size:12px;user-select:none;" onclick="var b=document.getElementById('smartMoneyBody');b.style.display=b.style.display==='none'?'':'none';this.textContent=b.style.display==='none'?'▶':'▼';">▼</span>
+            </span>
+          </div>
+          <div class="signal-body" id="smartMoneyBody" style="padding:6px 14px;overflow-y:auto;font-size:11px;">
+            <div class="sig-loading">加载中...</div>
+          </div>
+        </div>
+<div class="signal-section" style="margin:0;border:none;">
+          <div class="signal-header" style="font-size:14px;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface);display:flex;justify-content:space-between;align-items:center;">
+            <span>🐋 巨鲸转账 <span style="font-size:9px;color:var(--text-dim);font-weight:400;margin-left:4px;">USDT/USDC/ETH 来源于 Etherscan · BTC 来源于 mempool.space + Blockstream</span> <select id="whaleFilter" style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:2px;font-size:11px;padding:1px 4px;font-family:var(--font);vertical-align:middle;" onchange="applyWhaleFilter()">
+                <option value="all">全部</option>
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+                <option value="USDT/C">USDT/C</option>
+              </select>
+              <span class="sig-count" id="whaleCount"></span>
+            <span id="whaleLiveDot" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);animation:whale-pulse 2s infinite;margin-left:4px;"></span></span>
+            <span style="display:flex;align-items:center;">
+              <span class="toggle-icon" style="cursor:pointer;font-size:12px;user-select:none;" onclick="var p=this.parentElement.parentElement.nextElementSibling;var h=p.style.display==='none';p.style.display=h?'':'none';this.textContent=h?'▼':'▶';var ss=this.closest('.signal-layout').querySelectorAll('.signal-section');var visible=Array.from(ss).filter(s=>s.querySelector('.signal-body').style.display!=='none');visible.forEach(v=>v.style.flex='1');ss.forEach(s=>{var b=s.querySelector('.signal-body');if(b.style.display==='none')s.style.flex='0 0 auto';})">▼</span>
+            </span>
+          </div>
+          <div class="signal-body" id="whaleTransfers" style="padding:10px 14px;overflow-y:auto;">
+            <div class="sig-loading">加载中...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Tab: DeFi -->
+    <div class="tab-content" id="tabDefi">
+      <div class="signal-layout">
+        <div class="signal-section">
+<div class="defi-yield-section" style="margin:0;background:var(--card-bg);border-radius:8px;padding:10px;border:1px solid var(--border);">
       <div class="rank-title" style="font-size:13px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center;">
         <span>🦙 DeFi 全链收益排行</span>
         <span id="llamaCount" style="font-size:10px;color:var(--text-dim);">加载中...</span>
@@ -125,62 +186,10 @@
       </div>
     </div>
 
-    </div><!-- /tabTrade -->
-
-    <!-- Tab: 消息面 -->
-    <div class="tab-content" id="tabNews">
-      <div class="signal-layout">
-        <div class="signal-section">
-          <div class="signal-header">🔴 金十快讯 <span class="sig-count" id="jin10Count"></span></div>
-          <div class="signal-body signal-scroll" id="jin10Body">
-            <div class="sig-loading"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
-          </div>
-        </div>
-        <div class="signal-section">
-          <div class="signal-header">📡 墙外新闻 <span class="sig-count" id="rssCount"></span></div>
-          <div class="signal-body signal-scroll" id="rssBody">
-            <div class="sig-loading"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
-          </div>
+    
         </div>
       </div>
     </div>
-
-    <!-- Tab: 币圈强信号 -->
-    <div class="tab-content" id="tabAltcoin">
-      <div class="signal-layout" style="padding:0;display:flex;flex-direction:column;flex:1;">
-        <div class="signal-section" style="margin:0;border:none;">
-          <div class="signal-header" style="font-size:14px;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface);display:flex;justify-content:space-between;align-items:center;">
-            <span>👛 鲸鱼钱包监控 <span class="sig-count" id="walletCount"></span></span>
-            <span style="display:flex;align-items:center;gap:6px;">
-              <span id="walletUpdateTime" style="font-size:11px;color:var(--text-dim);"></span>
-              <span class="toggle-icon" style="cursor:pointer;font-size:12px;user-select:none;" onclick="var p=this.parentElement.parentElement.nextElementSibling;var h=p.style.display==='none';p.style.display=h?'':'none';this.textContent=h?'▼':'▶';var ss=this.closest('.signal-layout').querySelectorAll('.signal-section');var visible=Array.from(ss).filter(s=>s.querySelector('.signal-body').style.display!=='none');visible.forEach(v=>v.style.flex='1');ss.forEach(s=>{var b=s.querySelector('.signal-body');if(b.style.display==='none')s.style.flex='0 0 auto';})">▼</span>
-            </span>
-          </div>
-          <div class="signal-body" id="walletBody" style="padding:10px 14px;max-height:300px;overflow-y:auto;">
-            <div class="sig-loading">加载中...</div>
-          </div>
-        </div>
-        <div class="signal-section" style="margin:0;border:none;border-top:1px solid var(--border);">
-          <div class="signal-header" style="font-size:14px;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface);display:flex;justify-content:space-between;align-items:center;">
-            <span>🐋 巨鲸转账 <select id="whaleFilter" style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:2px;font-size:11px;padding:1px 4px;font-family:var(--font);vertical-align:middle;" onchange="applyWhaleFilter()">
-                <option value="all">全部</option>
-                <option value="BTC">BTC</option>
-                <option value="ETH">ETH</option>
-                <option value="USDT/C">USDT/C</option>
-              </select>
-              <span class="sig-count" id="whaleCount"></span>
-            <span id="whaleLiveDot" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);animation:whale-pulse 2s infinite;margin-left:4px;"></span></span>
-            <span style="display:flex;align-items:center;">
-              <span class="toggle-icon" style="cursor:pointer;font-size:12px;user-select:none;" onclick="var p=this.parentElement.parentElement.nextElementSibling;var h=p.style.display==='none';p.style.display=h?'':'none';this.textContent=h?'▼':'▶';var ss=this.closest('.signal-layout').querySelectorAll('.signal-section');var visible=Array.from(ss).filter(s=>s.querySelector('.signal-body').style.display!=='none');visible.forEach(v=>v.style.flex='1');ss.forEach(s=>{var b=s.querySelector('.signal-body');if(b.style.display==='none')s.style.flex='0 0 auto';})">▼</span>
-            </span>
-          </div>
-          <div class="signal-body" id="whaleTransfers" style="padding:10px 14px;max-height:500px;overflow-y:auto;">
-            <div class="sig-loading">加载中...</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- 聊天后门 -->
   <div class="backdoor" id="backdoor">
@@ -193,6 +202,6 @@
   </div>
 
   <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
-  <script src="app.js?v=1784829965"></script>
+  <script src="app.js?v=1784915346"></script>
 </body>
 </html>
