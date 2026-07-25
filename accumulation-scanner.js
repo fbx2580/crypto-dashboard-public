@@ -9,9 +9,9 @@ const fs = require('fs');
 const path = require('path');
 const { SocksProxyAgent } = require('socks-proxy-agent');
 
-// Tor SOCKS5 代理，绕 Binance fapi IP封锁
-const TOR_PROXY = 'socks5://127.0.0.1:9050';
-const torAgent = new SocksProxyAgent(TOR_PROXY);
+// Cloudflare WARP SOCKS5 代理，绕 Binance fapi IP封锁
+const WARP_PROXY = 'socks5://127.0.0.1:40000';
+const warpAgent = new SocksProxyAgent(WARP_PROXY);
 
 const BINANCE_SPOT = 'https://api.binance.com/api/v3';
 const BINANCE_FAPI = 'https://fapi.binance.com/fapi/v1';
@@ -36,7 +36,7 @@ function isStablecoin(sym, klines) {
 // ═══ 工具函数 ═══
 async function getJSON(url, params = {}, useProxy = false) {
   const opts = { params, timeout: 15000 };
-  if (useProxy) opts.httpsAgent = torAgent;
+  if (useProxy) opts.httpsAgent = warpAgent;
   const res = await axios.get(url, opts);
   return res.data;
 }
@@ -82,7 +82,47 @@ function pearson(xs, ys) {
   return den === 0 ? 0 : num / den;
 }
 
-// ═══ 对敲过滤 ═══
+// ═══ 成交量分布（Volume Profile）═══
+// 替代 min/max 区间，用量密集区作为真实吸筹区
+function calcVolumeProfile(klines, nBins = 20) {
+  const prices = klines.map(k => (k.high + k.low + k.close) / 3);
+  const low = Math.min(...klines.map(k => k.low));
+  const high = Math.max(...klines.map(k => k.high));
+  const step = (high - low) / nBins;
+  const bins = [];
+  for (let i = 0; i < nBins; i++) {
+    bins.push({ priceLow: low + i * step, priceHigh: low + (i + 1) * step, volume: 0 });
+  }
+  // 分配每根K线的成交量到所在价格带
+  for (const k of klines) {
+    const kLow = Math.min(k.open, k.close);
+    const kHigh = Math.max(k.open, k.close);
+    for (const bin of bins) {
+      if (kHigh >= bin.priceLow && kLow <= bin.priceHigh) {
+        const overlapLow = Math.max(kLow, bin.priceLow);
+        const overlapHigh = Math.min(kHigh, bin.priceHigh);
+        const ratio = (overlapHigh - overlapLow) / (kHigh - kLow || 1);
+        bin.volume += k.volume * Math.max(0, Math.min(1, ratio));
+      }
+    }
+  }
+  // 找成交量最大的 60% 作为真实吸筹带
+  bins.sort((a, b) => b.volume - a.volume);
+  const totalVol = bins.reduce((s, b) => s + b.volume, 0);
+  let cumVol = 0;
+  const denseBins = [];
+  for (const bin of bins) {
+    if (cumVol / totalVol >= 0.6) break;
+    cumVol += bin.volume;
+    denseBins.push(bin);
+  }
+  const denseLow = Math.min(...denseBins.map(b => b.priceLow));
+  const denseHigh = Math.max(...denseBins.map(b => b.priceHigh));
+  // 成交量加权均价
+  const tvp = denseBins.reduce((s, b) => s + (b.priceLow + b.priceHigh) / 2 * b.volume, 0);
+  const volWeightedPrice = cumVol > 0 ? tvp / cumVol : (high + low) / 2;
+  return { denseLow, denseHigh, volWeightedPrice, denseBins };
+}
 function filterWashTrading(klines) {
   let washedVol = 0, washedDays = 0;
   const clean = [];
@@ -150,27 +190,27 @@ function checkAll(klines, btcKlines) {
     const lw = Math.min(k.open, k.close) - k.low;
     if (body > 0 && lw > body * 2.5) wickCount++; // 放宽到2.5倍（原3倍）
   }
-  const c3 = { met: wickCount >= 2, label: '长下影', desc: '多次出现长下影线，庄家在低位接筹托底', detail: `近${n}日${wickCount}根`, wickCount, weight: wickCount >= 5 ? 20 : (wickCount >= 3 ? 15 : 10) };
+  const c3 = { met: wickCount >= 7, label: '长下影', desc: '多次出现长下影线，庄家在低位接筹托底', detail: `近${n}日${wickCount}根`, wickCount, weight: wickCount >= 10 ? 25 : (wickCount >= 7 ? 20 : 10) };
 
   // 4. 震仓
-  let c4 = { met: false, label: '震仓', desc: '故意砸破箱体低位逼散户割肉，然后快速拉回', detail: '未检测到', weight: 30 };
-  const lowN = Math.min(...klines.map(k => k.low));
+  let c4 = { met: false, label: '震仓', desc: '故意砸破箱体低位逼散户割肉，然后快速拉回', detail: '未检测到', weight: 35 };
+  const lowWindow = Math.min(...klines.map(k => k.low));
   for (let i = 5; i < klines.length - 3; i++) {
-    if (klines[i].low < lowN * 0.95) {
+    if (klines[i].low < lowWindow * 0.95) {
       let recovered = false, volSurge = false;
       for (let j = i + 1; j < Math.min(i + 4, klines.length); j++) {
-        if (klines[j].close > lowN) recovered = true;
-        const preVol = klines.slice(Math.max(0, i-5), i).reduce((s,x) => s + x.volume, 0) / 5;
+        if (klines[j].close > lowWindow) recovered = true;
+        const preVol = klines.slice(Math.max(0, i-5), i).reduce((s,x) => s + x.volume, 0) / Math.max(i-5, 1);
         if (klines[j].volume > preVol) volSurge = true;
       }
-      if (recovered && volSurge) { c4 = { met: true, label: '震仓', desc: c4.desc, detail: '跌破箱体后放量收回', weight: 30 }; break; }
+      if (recovered && volSurge) { c4 = { met: true, label: '震仓', desc: c4.desc, detail: '跌破箱体后放量收回', weight: 35 }; break; }
     }
   }
 
   // 5. 独立走势
   const bs = btcKlines.slice(-n).map(k => k.close);
   const corr = pearson(closes.slice(-Math.min(n, bs.length)), bs);
-  const c5 = { met: Math.abs(corr) < 0.3, label: '独立走势', desc: '与BTC价格走势脱钩，走自己的独立行情', detail: `BTC相关${corr.toFixed(2)}`, correlation: corr, weight: 15 };
+  const c5 = { met: Math.abs(corr) < 0.3, label: '独立走势', desc: '与BTC价格走势脱钩，走自己的独立行情', detail: `BTC相关${corr.toFixed(2)}`, correlation: corr, weight: 25 };
 
   return [c1, c2, c3, c4, c5];
 }
@@ -188,18 +228,49 @@ function checkHighVolAccum(klines, conditions) {
   return { met, label: '波段型', desc: `高振幅(${(range*100).toFixed(0)}%)但密集长下影+独立走势，适合做波段而非等拉升`, range };
 }
 
-// ═══ 拉升临近检测 ═══
-function checkBreakoutReady(klines, accLow, accHigh, whaleCost) {
-  const last3 = klines.slice(-3);
-  const prev20 = klines.slice(-23, -3);
-  const avg3 = last3.reduce((s,k) => s + k.volume, 0) / 3;
-  const avg20 = prev20.length > 0 ? prev20.reduce((s,k) => s + k.volume, 0) / prev20.length : avg3;
-  const volSurge = avg3 > avg20 * 1.5;
+// ═══ 真拉确认度计算 ═══
+function calcBreakoutConfidence(klines, accLow, accHigh, whaleCost) {
+  const last5 = klines.slice(-5);
+  const prev25 = klines.slice(-30, -5);
+  const avg25 = prev25.length > 0 ? prev25.reduce((s,k) => s + k.volume, 0) / prev25.length : 1;
   const lastPrice = klines[klines.length - 1].close;
-  const boxMid = (accLow + accHigh) / 2;
-  const priceRising = lastPrice > boxMid || lastPrice > klines[klines.length - 2].close;
-  const met = volSurge && priceRising;
-  return { met, label: '突破预备', desc: met ? `近3日均量×${(avg3/avg20).toFixed(1)}，价格逼近箱体上沿` : '量或价未达标', volRatio: avg20 > 0 ? avg3/avg20 : 0 };
+
+  // ① 持续放量天数（最近5天里有几天量>1.5倍）
+  const volDays = last5.filter(k => k.volume > avg25 * 1.5).length;
+  const volScore = Math.min(volDays * 8, 30);
+
+  // ② 量比幅度
+  const last3avg = last5.slice(-3).reduce((s,k) => s + k.volume, 0) / 3;
+  const volRatio = avg25 > 0 ? last3avg / avg25 : 1;
+  const volMagScore = Math.min(Math.round((volRatio - 1) * 15), 25);
+
+  // ③ 价格位置（越靠近箱体上沿越强）
+  const boxPos = accHigh > accLow ? (lastPrice - accLow) / (accHigh - accLow) : 0.5;
+  const posScore = Math.round(Math.max(0, Math.min(boxPos, 1)) * 20);
+
+  // ④ 振幅收窄（突破前酝酿）
+  const range5 = (Math.max(...last5.map(k => k.high)) - Math.min(...last5.map(k => k.low))) / (lastPrice||1);
+  const range25 = (Math.max(...prev25.map(k => k.high)) - Math.min(...prev25.map(k => k.low))) / (lastPrice||1);
+  const tightening = range5 < range25 * 0.7;
+  const tightScore = tightening ? 15 : 0;
+
+  // ⑤ 连续阳线
+  const closes = last5.map(k => k.close);
+  const streak = (closes[4] > closes[3] && closes[3] > closes[2]) ? 10 : 0;
+
+  const confidence = volScore + volMagScore + posScore + tightScore + streak;
+  const ready = confidence >= 50;
+
+  return {
+    ready,
+    confidence: Math.min(confidence, 100),
+    label: '突破预备',
+    detail: ready ? `确认度${confidence}%` : `确认度${confidence}% 未达标`,
+    volRatio,
+    volDays,
+    boxPos,
+    breakdown: { volDays:volScore, volMag:volMagScore, pos:posScore, tight:tightScore, streak }
+  };
 }
 
 // ═══ 吸筹时长检测 ═══
@@ -255,6 +326,51 @@ async function main() {
   const altcoins = all.filter(s => !MAJOR_PAIRS.includes(s) && !STABLECOINS.has(s.replace('USDT','')));
   log(`山寨币${altcoins.length}个`);
 
+  // 2.5 拉资金费率（fapi 批量接口）
+  let fundingMap = {};
+  try {
+    const premiums = await getJSON(`${BINANCE_FAPI}/premiumIndex`, {}, true);
+    for (const p of (premiums || [])) fundingMap[p.symbol] = parseFloat(p.lastFundingRate || 0);
+    log(`资金费率: ${Object.keys(fundingMap).length}条`);
+  } catch(e) { log('⚠ 资金费率拉取失败'); }
+
+  // 2.6 CoinGecko 市值+流通率（免费 30次/分，仅拉信号币）
+  let cgMap = {};
+  try {
+    const cgList = await getJSON('https://api.coingecko.com/api/v3/coins/list');
+    // 建映射: binance symbol → coingecko id
+    const symToId = {};
+    for (const c of (cgList || [])) {
+      const sym = (c.symbol || '').toUpperCase();
+      if (!symToId[sym]) symToId[sym] = c.id;
+    }
+    log(`CoinGecko 映射: ${Object.keys(symToId).length}个`);
+    // 只拉出现在信号池里的币（省API次数）
+    const targetSymbols = new Set(altcoins.map(s => s.replace('USDT','')));
+    const idsToFetch = [];
+    for (const [s, id] of Object.entries(symToId)) {
+      if (targetSymbols.has(s)) idsToFetch.push(id);
+    }
+    log(`需拉市值: ${idsToFetch.length}个币`);
+    // 批量拉（每批200个，3-4次API调用）
+    for (let i = 0; i < idsToFetch.length; i += 200) {
+      const batch = idsToFetch.slice(i, i + 200);
+      const url = `https://api.coingecko.com/api/v3/simple/price?ids=${batch.join(',')}&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_circulating_supply=true&include_total_supply=true`;
+      try {
+        const prices = await getJSON(url);
+        for (const [id, data] of Object.entries(prices || {})) {
+          const binSym = Object.entries(symToId).find(([,v]) => v === id)?.[0];
+          if (binSym) cgMap[binSym] = {
+            marketCap: data.usd_market_cap || 0,
+            volume24h: data.usd_24h_vol || 0,
+          };
+        }
+        await new Promise(r => setTimeout(r, 2100)); // 2秒间隔，控制在30次/分内
+      } catch(e) {}
+    }
+    log(`市值数据: ${Object.keys(cgMap).length}个`);
+  } catch(e) { log('⚠ CoinGecko 拉取失败'); }
+
   // 3. 扫描
   const results = [];
   const CONC = 2;
@@ -288,7 +404,7 @@ async function main() {
       }
       const bestConds = best.conditions;
       const met = bestConds.filter(c => c.met).length;
-      if (met < 2) return null;
+      // 全量保留——即使0条件也入库，搜索能搜到
 
       // 加权分
       const score = bestConds.reduce((s, c) => s + (c.met ? c.weight : 0), 0);
@@ -310,13 +426,12 @@ async function main() {
       const accVol = accKlines.reduce((s,k) => s + k.quoteVolume, 0);
       const estAccSpent = accVol * 0.5;
 
-      // 理想开仓区间（修正：庄家在地板价吸筹，成本在区间下半部）
-      const accLow = Math.min(...accKlines.map(k => k.low));
-      const accHigh = Math.max(...accKlines.map(k => k.high));
+      // 理想开仓区间（Volume Profile：成交量最密集的价格带）
+      const vp = calcVolumeProfile(accKlines);
+      const accLow = vp.denseLow;
+      const accHigh = vp.denseHigh;
+      const whaleCost = vp.volWeightedPrice;
       const price = closes[closes.length - 1];
-      // 庄家成本 ≈ 吸筹区价格中位数（非均值VWAP，因为VWAP被散户拉高了）
-      const mids = accKlines.map(k => (k.high + k.low) / 2).sort((a,b) => a-b);
-      const whaleCost = mids[Math.floor(mids.length / 2)];
       const entryLow = accLow * 1.03;  // 比地板价高3%
       const entryHigh = Math.min(whaleCost * 1.02, accHigh * 0.88);  // 略高于庄家成本但不碰箱体上沿
       const priceVsCost = whaleCost > 0 ? ((price - whaleCost) / whaleCost * 100) : 0;
@@ -335,7 +450,7 @@ async function main() {
 
       // 高波吸筹 + 突破预备检测
       const hiVol = checkHighVolAccum(clean, bestConds);
-      const brk = checkBreakoutReady(clean, accLow, accHigh, whaleCost);
+      const brk = calcBreakoutConfidence(clean, accLow, accHigh, whaleCost);
       const accType = hiVol.met ? 'band' : 'quiet';
 
       return {
@@ -358,8 +473,11 @@ async function main() {
         priceVsCost,
         entryStatus,
         entryLabel,
-        breakout: { ready: brk.met, label: brk.label, detail: brk.desc, volRatio: brk.volRatio },
+        breakout: { ready: brk.ready, label: brk.label, detail: brk.detail, confidence: brk.confidence, volRatio: brk.volRatio },
         hiVolAccum: { isHiVol: hiVol.met, label: hiVol.label, desc: hiVol.desc, range: hiVol.range },
+        fundingRate: fundingMap[sym] || 0,
+        oiSignal: fundingMap[sym] && fundingMap[sym] > 0.01 ? 'extreme' : fundingMap[sym] < -0.01 ? 'shortCrowded' : 'normal',
+        marketCap: (cgMap[sym.replace('USDT','')] || {}).marketCap || 0,
       };
     }));
     for (const r of res) { if (r.status === 'fulfilled' && r.value) results.push(r.value); }
@@ -367,7 +485,15 @@ async function main() {
     await new Promise(r => setTimeout(r, 30));
   }
 
-  results.sort((a, b) => b.score - a.score);
+  // 排序：突破预备按确认度排前面，其余按分
+  results.sort((a, b) => {
+    const ba = a.breakout?.ready ? (a.breakout.confidence || 50) : 0;
+    const bb = b.breakout?.ready ? (b.breakout.confidence || 50) : 0;
+    if (ba && bb) return bb - ba;  // 俩都突破 → 按确认度
+    if (ba) return -1;  // 突破在前
+    if (bb) return 1;
+    return b.score - a.score;  // 都非突破 → 按分
+  });
   if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
   const out = { scannedAt: new Date().toISOString(), totalScanned: altcoins.length, signalsFound: results.length, signals: results };
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(out, null, 2));
@@ -375,8 +501,9 @@ async function main() {
   const dur = ((Date.now() - t0) / 1000).toFixed(0);
   const hi = results.filter(r => r.score >= 60);
   const mid = results.filter(r => r.score >= 40 && r.score < 60);
-  const lo = results.filter(r => r.score < 40);
-  log(`✅ 完成 ${dur}s | 扫${altcoins.length}币 → ${results.length}信号 | 强(${hi.length}) 中(${mid.length}) 弱(${lo.length})`);
+  const lo = results.filter(r => r.metCount >= 2 && r.score < 40);
+  const none = results.filter(r => r.metCount < 2);
+  log(`✅ 完成 ${dur}s | 扫${altcoins.length}币 → 全量入库 | 强(${hi.length}) 中(${mid.length}) 弱(${lo.length}) 无(${none.length})`);
 
   // 查特定币
   const checkSyms = ['HUMA'];

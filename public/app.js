@@ -484,21 +484,63 @@ function setupChartMore() {
 let _newsVersion = 0;
 
 // ─── 山寨币吸筹监控（基于扫描引擎）───
-let _accumBuilt = false;
 let _accumSignals = null;
 function applyAccumFilter() {
   const q = (document.getElementById('accumSearch')?.value || '').toUpperCase();
   const rows = document.querySelectorAll('.accum-row');
+  const groups = document.querySelectorAll('.accum-group');
+  
+  if (!q) {
+    // 清空搜索：恢复原分组
+    rows.forEach(row => { row.style.display = ''; });
+    groups.forEach(g => { g.style.display = ''; });
+    // 清理之前注入的搜索结果行
+    document.querySelectorAll('.accum-row-search').forEach(r => r.remove());
+    return;
+  }
+
+  // 搜索模式：隐藏所有分组，创建搜索结果区
+  groups.forEach(g => { g.style.display = 'none'; });
+  
+  // 先从现有DOM找
+  let found = false;
   rows.forEach(row => {
     const sym = (row.dataset.sym || '').toUpperCase();
-    row.style.display = (!q || sym.includes(q)) ? '' : 'none';
+    if (sym.includes(q)) { row.style.display = ''; found = true; }
+    else row.style.display = 'none';
   });
-  // Also hide group headers with no visible children
-  document.querySelectorAll('.accum-group').forEach(g => {
-    const visible = g.querySelectorAll('.accum-row[style*="display: none"]').length;
-    const total = g.querySelectorAll('.accum-row').length;
-    g.style.display = (visible === total && total > 0) ? 'none' : '';
-  });
+
+  // 如果没找到，从全量数据里匹配（包括被截断的弱信号）
+  if (!found && _accumSignals) {
+    const matches = _accumSignals.filter(s => (s.symbol||'').toUpperCase().includes(q));
+    if (matches.length) {
+      document.querySelectorAll('.accum-row-search').forEach(r => r.remove());
+      const el = document.getElementById('accumulationBody');
+      if (el) {
+        let inject = '<div class="accum-row-search" style="margin-top:8px;">';
+        for (const s of matches) {
+          const chgCls = s.change24h >= 0 ? 'up' : 'down';
+          const chgSign = s.change24h >= 0 ? '+' : '';
+          const estVal = s.estAccumulation >= 1e9 ? (s.estAccumulation/1e9).toFixed(1)+'B' : s.estAccumulation >= 1e6 ? (s.estAccumulation/1e6).toFixed(1)+'M' : (s.estAccumulation/1e3).toFixed(0)+'K';
+          const sc = s.score||0;
+          const scClr = sc >= 60 ? '#22c55e' : sc >= 40 ? '#fbbf24' : 'var(--text-dim)';
+          const btns = (s.conditions||[]).map(c => '<span class="accum-cond ' + (c.met?'met':'') + '">' + (c.met?'✅':'❌') + ' ' + c.label + '</span>').join('');
+          const dur = s.accumDays ? s.accumDays + '天' : '';
+          inject += '<div style="padding:6px 0;border-bottom:1px solid var(--border);font-size:10px;">' +
+            '<div class="accum-top"><span class="accum-sym">' + s.symbol + (s.accType==='band'?' 📡':'') + '</span>' +
+            '<span class="accum-score-badge" style="color:' + scClr + '">' + sc + '分</span>' +
+            '<span class="accum-price">$' + fmt.price(s.price) + '</span>' +
+            '<span class="accum-chg ' + chgCls + '">' + chgSign + s.change24h.toFixed(2) + '%</span></div>' +
+            '<div class="accum-conds">' + btns + '</div>' +
+            '<div class="accum-info"><span>VWAP ' + fmt.price(s.vwap) + '</span><span>吸筹 ~$' + estVal + '</span>' + (dur ? '<span>' + dur + '</span>' : '') + '</div>' +
+            (s.entryLabel ? '<div class="accum-entry"><span style="color:' + (s.entryStatus==='in_zone'?'#22c55e':'var(--text-dim)') + ';">' + s.entryLabel + '</span></div>' : '') +
+          '</div>';
+        }
+        inject += '</div>';
+        el.insertAdjacentHTML('beforeend', inject);
+      }
+    }
+  }
 }
 async function refreshAccumulationMonitor() {
   const el = document.getElementById('accumulationBody');
@@ -514,7 +556,7 @@ async function refreshAccumulationMonitor() {
       (data.scannedAt ? new Date(data.scannedAt).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'}) : '—');
 
     if (!signals.length) {
-      if (!_accumBuilt) el.innerHTML = '<div style="color:var(--text-dim);padding:10px;">暂无信号 · 扫描' + (data.totalScanned||0) + '个币</div>';
+      el.innerHTML = '<div style="color:var(--text-dim);padding:10px;">暂无信号 · 扫描' + (data.totalScanned||0) + '个币</div>';
       return;
     }
 
@@ -522,13 +564,20 @@ async function refreshAccumulationMonitor() {
     const m4 = signals.filter(s => s.metCount === 4);
     const m3 = signals.filter(s => s.metCount === 3);
     const m2 = signals.filter(s => s.metCount === 2);
+    const brk = signals.filter(s => s.breakout?.ready);
+    const rest = signals.filter(s => !s.breakout?.ready);
+    const rm5 = rest.filter(s => s.metCount >= 5);
+    const rm4 = rest.filter(s => s.metCount === 4);
+    const rm3 = rest.filter(s => s.metCount === 3);
+    const rm2 = rest.filter(s => s.metCount === 2);
     const groups = [
-      { label: '🔴 强吸筹 (' + (m5.length+m4.length) + ')', signals: [...m5, ...m4], cls: 'accum-strong' },
-      { label: '🟡 中等 (' + m3.length + ')', signals: m3, cls: 'accum-mid' },
-      { label: '⚪ 弱信号 (' + m2.length + ')', signals: m2.slice(0, 20), cls: 'accum-weak' },
+      { label: '🔥 突破预备 (' + brk.length + ')', signals: brk, cls: '' },
+      { label: '🔴 强吸筹 (' + (rm5.length+rm4.length) + ')', signals: [...rm5, ...rm4], cls: 'accum-strong' },
+      { label: '🟡 中等 (' + rm3.length + ')', signals: rm3, cls: 'accum-mid' },
+      { label: '⚪ 弱信号 (' + rm2.length + ')', signals: rm2.slice(0, 20), cls: 'accum-weak' },
     ];
 
-    if (!_accumBuilt) {
+    if (true) { // 全量重建
       let html = '<div style="font-size:10px;color:var(--text-dim);margin-bottom:4px;" id="accumSummary">扫描' + (data.totalScanned||'?') + '币 → 信号' + signals.length + ' · 权重:震仓30+底背离25+地量15+长下影10~20+独立15</div>';
       for (const g of groups) {
         if (!g.signals.length) continue;
@@ -559,7 +608,7 @@ async function refreshAccumulationMonitor() {
             '</div>' +
             '<div class="accum-conds">' + btns + '</div>' +
             '<div class="accum-info"><span>VWAP ' + fmt.price(s.vwap) + '</span><span>吸筹 ~$' + estVal + '</span>' + (s.accumDays ? '<span>' + s.accumDays + '天</span>' : '') + '</div>' +
-            (s.breakout && s.breakout.ready ? '<div class="accum-entry" style="color:#f0b90b;">🔥 ' + s.breakout.label + ': ' + s.breakout.detail + '</div>' : '') +
+            (s.breakout && s.breakout.ready ? '<div class="accum-entry" style="color:#f0b90b;">🔥 突破预备 · 确认度' + (s.breakout.confidence||0) + '%</div>' : '') +
             '<div class="accum-entry">' +
               (s.entryStatus === 'in_zone' ? '<span style="color:#22c55e;">' + (s.entryLabel||'✓ 成本区内') + '</span>' :
                s.entryStatus === 'sub_zone' ? '<span style="color:#fbbf24;">' + (s.entryLabel||'⚠ 吸筹区下方') + '</span>' :
@@ -573,7 +622,7 @@ async function refreshAccumulationMonitor() {
         html += '</div>';
       }
       el.innerHTML = html;
-      _accumBuilt = true;
+      // DOM rebuilt
     } else {
       // 增量更新
       document.getElementById('accumSummary').textContent = '形态识别 · 扫' + (data.totalScanned||'?') + '币 · 信号' + signals.length;
@@ -585,7 +634,8 @@ async function refreshAccumulationMonitor() {
         const row = rows[i];
         const chgCls = s.change24h >= 0 ? 'up' : 'down';
         const chgSign = s.change24h >= 0 ? '+' : '';
-        row.querySelector('.accum-sym').textContent = s.symbol;
+        row.querySelector('.accum-sym').textContent = s.symbol + (s.accType === 'band' ? ' 📡' : '');
+        row.dataset.sym = s.symbol;
         row.querySelector('.accum-price').textContent = '$' + fmt.price(s.price);
         const chgEl = row.querySelector('.accum-chg');
         chgEl.textContent = chgSign + s.change24h.toFixed(2) + '%';
@@ -593,7 +643,7 @@ async function refreshAccumulationMonitor() {
       }
     }
   } catch(e) {
-    if (!_accumBuilt) el.innerHTML = '<div style="color:var(--text-dim);padding:10px;">加载失败</div>';
+    el.innerHTML = '<div style="color:var(--text-dim);padding:10px;">加载失败</div>';
   }
 }
 

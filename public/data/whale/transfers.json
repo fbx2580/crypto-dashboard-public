@@ -1,6 +1,16 @@
 {
-  "updated": 1784994460752,
+  "updated": 1784999540385,
   "transfers": [
+    {
+      "c": "USDC",
+      "val": 2512631.46,
+      "hash": "0x955b6664380c3f9bcd8d5b3cd33edec6f803a5968812e604a6cb00ff2090a8be",
+      "ts": 1784999339,
+      "from": "0x55fe002aeff02f77364de339a1292923a15844b8",
+      "to": "0xa7af2a159cebdb41aa72fd562cbd5cf32798e05d",
+      "exFrom": null,
+      "exTo": null
+    },
     {
       "c": "USDT",
       "val": 3587360,
@@ -4988,16 +4998,6 @@
       "ts": 1784912015,
       "from": "0x977c1bf3971205d9e49552be32f3f8a591e5733d",
       "to": "0x6ad038ca6c04e885630851278ca0a856ad9a66cc",
-      "exFrom": null,
-      "exTo": null
-    },
-    {
-      "c": "USDT",
-      "val": 10000000,
-      "hash": "0x95ac3c87c86201bfefa8fba46c71fa527da65b99c43a867381886c1b43438f02",
-      "ts": 1784912027,
-      "from": "0xfa780071f3971c4254db2ba26db2e3264aeb9cf2",
-      "to": "0x5754284f345afc66a98fbb0a0afe71e0f007b949",
       "exFrom": null,
       "exTo": null
     }
