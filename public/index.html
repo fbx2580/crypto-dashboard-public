@@ -139,17 +139,43 @@
       </div>
     </div>
 
-    <!-- Tab: 山寨币吸筹监控 -->
+    <!-- Tab: 山寨币底部吸筹雷达 -->
     <div class="tab-content" id="tabAccumulation">
-      <div class="signal-layout" style="padding:0;display:flex;flex-direction:column;flex:1;">
-        <div class="signal-section" style="margin:0;border:none;">
-          <div class="signal-header" style="font-size:14px;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface);display:flex;justify-content:space-between;align-items:center;">
-            <span>💰 山寨币吸筹监控 <input type="text" id="accumSearch" placeholder="搜索币种…" style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:3px;padding:2px 6px;font-size:10px;font-family:var(--font);width:100px;margin-left:8px;" oninput="applyAccumFilter()"> <span style="font-size:9px;color:var(--text-dim);font-weight:400;">量价背离 · 大额提币 · 聪明钱潜伏</span></span>
-            <span style="font-size:10px;color:var(--text-dim);">更新时间 <span id="accumUpdateTime">—</span></span>
+      <div class="radar-dash" id="radarDash">
+        <!-- ① 市场环境 -->
+        <div class="radar-card" id="radarEnv">
+          <div class="radar-card-hd">🌍 市场环境</div>
+          <div class="radar-card-bd">加载中…</div>
+        </div>
+        <!-- ② 吸筹总览 -->
+        <div class="radar-card" id="radarOverview">
+          <div class="radar-card-hd">📊 吸筹总览</div>
+          <div class="radar-card-bd">
+            <div style="display:flex;gap:12px;">
+              <span style="font-size:20px;font-weight:700;" id="radarHighCount">—</span>
+              <span style="font-size:20px;font-weight:700;color:var(--text-dim);" id="radarCandCount">—</span>
+              <span style="font-size:20px;font-weight:700;color:var(--text-dim);" id="radarWatchCount">—</span>
+            </div>
+            <div style="font-size:9px;color:var(--text-dim);margin-top:2px;">🔥高关注  ⭐候选  👀观察</div>
           </div>
-          <div class="signal-body" id="accumulationBody" style="padding:6px 14px;overflow-y:auto;font-size:11px;">
-            <div class="sig-loading">加载中...</div>
+        </div>
+        <!-- ③ 搜索 -->
+        <div class="radar-card" style="grid-column:1/-1;">
+          <div class="radar-card-hd">
+            🔍 候选池
+            <input type="text" id="accumSearch" placeholder="搜索币种…" oninput="applyAccumFilter()" style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:3px;padding:2px 6px;font-size:10px;font-family:var(--font);width:100px;margin-left:8px;float:right;">
           </div>
+          <div class="radar-card-bd" id="radarPool" style="max-height:400px;overflow-y:auto;font-size:10px;">加载中…</div>
+        </div>
+        <!-- ④ 币种详情(点击展开) -->
+        <div class="radar-card" style="display:none;grid-column:1/-1;" id="radarDetail">
+          <div class="radar-card-hd">📋 详情 <span style="float:right;cursor:pointer;font-size:12px;" onclick="document.getElementById('radarDetail').style.display='none'">✕</span></div>
+          <div class="radar-card-bd" id="radarDetailBody"></div>
+        </div>
+        <!-- ⑤ 历史验证 -->
+        <div class="radar-card" style="grid-column:1/-1;">
+          <div class="radar-card-hd">📈 历史验证 <span style="font-size:9px;color:var(--text-dim);font-weight:400;margin-left:8px;" id="radarTrackUpdate"></span></div>
+          <div class="radar-card-bd" id="radarTrackBody" style="font-size:10px;">加载中…</div>
         </div>
       </div>
     </div>
@@ -229,6 +255,7 @@
   </div>
 
   <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
-  <script src="app.js?v=1785180200"></script>
+  <script src="app.js?v=1785180500"></script>
+  <script src="app_radar.js?v=1785180600"></script>
 </body>
 </html>

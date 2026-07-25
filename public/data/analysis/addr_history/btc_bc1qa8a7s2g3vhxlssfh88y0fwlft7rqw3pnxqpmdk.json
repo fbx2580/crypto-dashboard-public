@@ -1,0 +1,16 @@
+{
+  "address": "bc1qa8a7s2g3vhxlssfh88y0fwlft7rqw3pnxqpmdk",
+  "balance": 0.00211502,
+  "nTx": 1,
+  "txs": [
+    {
+      "hash": "02a76ce5254b95c91ae0369f802e31d36d177cdbcd6c2a1615ee519924715c0c",
+      "time": 1784897176,
+      "netBtc": 0.00212,
+      "isSend": false,
+      "isReceive": true,
+      "totalTx": 0.00211502
+    }
+  ],
+  "lastSync": 1784898365102
+}
