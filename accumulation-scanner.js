@@ -306,9 +306,21 @@ async function main() {
       btcAll = await getDailyKlines('BTCUSDT', 120, BINANCE_FAPI, false);
       apiUrl = BINANCE_FAPI; apiLabel = 'fapi'; log('✅ 合约K线(直连)可用');
     } catch(e2) {
-      apiUrl = BINANCE_SPOT; btcAll = await getDailyKlines('BTCUSDT', 120, apiUrl, false); log('⚠ 回退现货');
+      apiUrl = BINANCE_SPOT; btcAll = await getDailyKlines('BTCUSDT', 120, BINANCE_SPOT, false); log('⚠ 回退现货');
     }
   }
+
+  // BTC Market Regime Engine
+  const btcC = btcAll.map(k => k.close);
+  const btcPrice = btcC[btcC.length - 1];
+  const btcMA200 = btcC.length >= 200 ? btcC.slice(-200).reduce((s,c) => s + c, 0) / 200 : btcC.reduce((s,c) => s + c, 0) / btcC.length;
+  const btc30d = btcC.length > 30 ? (btcC[btcC.length - 1] - btcC[btcC.length - 31]) / btcC[btcC.length - 31] : 0;
+  let marketRegime = 'neutral';
+  if (btc30d > 0.15 && btcPrice > btcMA200) marketRegime = 'strong_bull';
+  else if (btc30d > 0.05 && btcPrice > btcMA200) marketRegime = 'bull';
+  else if (btc30d < -0.20) marketRegime = 'panic';
+  else if (btc30d < -0.05 && btcPrice < btcMA200) marketRegime = 'bear';
+  log(`BTC: $${btcPrice.toFixed(0)} MA200:$${btcMA200.toFixed(0)} 30d:${(btc30d*100).toFixed(1)}% [${marketRegime}]`);
 
   // 2. 币种列表
   let xinfo;
@@ -478,6 +490,8 @@ async function main() {
         fundingRate: fundingMap[sym] || 0,
         oiSignal: fundingMap[sym] && fundingMap[sym] > 0.01 ? 'extreme' : fundingMap[sym] < -0.01 ? 'shortCrowded' : 'normal',
         marketCap: (cgMap[sym.replace('USDT','')] || {}).marketCap || 0,
+        marketRegime,
+        btcMetrics: { price: btcPrice, ma200: btcMA200, ret30d: btc30d },
       };
     }));
     for (const r of res) { if (r.status === 'fulfilled' && r.value) results.push(r.value); }

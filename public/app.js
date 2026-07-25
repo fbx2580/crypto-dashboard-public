@@ -114,6 +114,14 @@ async function refreshMarket() {
     const c = data.crypto || {};
     const sh = data.aShares?.['000001'];
     setMoFlow('moBtcFlow', c.btcPrice);
+    // 市场状态
+    if (data.marketRegime) {
+      const mr = document.getElementById('marketRegime');
+      if (mr) {
+        const regimeLabels = {strong_bull:'🟢强牛',bull:'🟢牛',neutral:'⚪',bear:'🔴熊',panic:'🛑恐慌'};
+        mr.textContent = regimeLabels[data.marketRegime] || '?';
+      }
+    }
     if (sh) { setItem('moA01', sh.price.toFixed(0), sh.changePercent); setMoFlow('moShFlow', sh.price); }
     if (data.nasdaq) { setItem('moNasdaq', '$' + data.nasdaq.price.toLocaleString('en', {minimumFractionDigits:0}), data.nasdaq.changePercent); setMoFlow('moNasdaqFlow', data.nasdaq.price); }
     if (data.sp500) { setItem('moSp500', '$' + data.sp500.price.toLocaleString('en', {minimumFractionDigits:0}), data.sp500.changePercent); setMoFlow('moSp500Flow', data.sp500.price); }
@@ -532,7 +540,7 @@ function applyAccumFilter() {
             '<span class="accum-price">$' + fmt.price(s.price) + '</span>' +
             '<span class="accum-chg ' + chgCls + '">' + chgSign + s.change24h.toFixed(2) + '%</span></div>' +
             '<div class="accum-conds">' + btns + '</div>' +
-            '<div class="accum-info"><span>VWAP ' + fmt.price(s.vwap) + '</span><span>吸筹 ~$' + estVal + '</span>' + (dur ? '<span>' + dur + '</span>' : '') + '</div>' +
+            '<div class="accum-info"><span>VWAP ' + fmt.price(s.vwap) + '</span><span>吸筹 ~$' + estVal + '</span>' + (dur ? '<span>' + dur + '</span>' : '') + '<span>费率 ' + ((s.fundingRate||0)*100).toFixed(4) + '%</span>' + (s.marketCap ? '<span>市值 ' + (s.marketCap>=1e9?'$'+(s.marketCap/1e9).toFixed(1)+'B':s.marketCap>=1e6?'$'+(s.marketCap/1e6).toFixed(0)+'M':'$'+(s.marketCap/1e3).toFixed(0)+'K') + '</span>' : '') + '</div>' +
             (s.entryLabel ? '<div class="accum-entry"><span style="color:' + (s.entryStatus==='in_zone'?'#22c55e':'var(--text-dim)') + ';">' + s.entryLabel + '</span></div>' : '') +
           '</div>';
         }
@@ -607,7 +615,7 @@ async function refreshAccumulationMonitor() {
               '<span class="accum-chg ' + chgCls + '">' + chgSign + s.change24h.toFixed(2) + '%</span>' +
             '</div>' +
             '<div class="accum-conds">' + btns + '</div>' +
-            '<div class="accum-info"><span>VWAP ' + fmt.price(s.vwap) + '</span><span>吸筹 ~$' + estVal + '</span>' + (s.accumDays ? '<span>' + s.accumDays + '天</span>' : '') + '</div>' +
+            '<div class="accum-info"><span>VWAP ' + fmt.price(s.vwap) + '</span><span>吸筹 ~$' + estVal + '</span>' + (s.accumDays ? '<span>' + s.accumDays + '天</span>' : '') + '<span>费率 ' + ((s.fundingRate||0)*100).toFixed(4) + '%</span>' + (s.marketCap ? '<span>市值 ' + (s.marketCap>=1e9?'$'+(s.marketCap/1e9).toFixed(1)+'B':s.marketCap>=1e6?'$'+(s.marketCap/1e6).toFixed(0)+'M':'$'+(s.marketCap/1e3).toFixed(0)+'K') + '</span>' : '') + '</div>' +
             (s.breakout && s.breakout.ready ? '<div class="accum-entry" style="color:#f0b90b;">🔥 突破预备 · 确认度' + (s.breakout.confidence||0) + '%</div>' : '') +
             '<div class="accum-entry">' +
               (s.entryStatus === 'in_zone' ? '<span style="color:#22c55e;">' + (s.entryLabel||'✓ 成本区内') + '</span>' :
