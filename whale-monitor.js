@@ -93,6 +93,8 @@ function updateCache(fresh) {
     if (!seen.has(t.hash)) { old.unshift(t); seen.add(t.hash); }
   }
   fs.writeFileSync(CACHE_FILE, JSON.stringify({updated:Date.now(), transfers:old.slice(0,500)}, null, 2));
+  // P0: 写 SQLite
+  try { require('./data-store').save('whale', fresh, 'hash'); } catch(e) {}
   // P2: 按日归档
   try { const { archive } = require('./archive-manager'); archive('whale', fresh, 'hash'); } catch(e) {}
   

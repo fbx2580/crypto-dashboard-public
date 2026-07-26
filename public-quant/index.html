@@ -84,7 +84,9 @@ async function tick(){
       const max=f.status==='fresh'?30:f.status==='stale'?180:600;
       const pct=Math.min(100,(f.delay||0)/max*100);
       const cls=f.status==='fresh'?'ok':f.status==='stale'?'warn':'bad';
-      return `<div class="fbar"><div class="label"><span>${f.name}</span><span style="color:${f.status==='fresh'?'var(--green)':f.status==='stale'?'var(--yellow)':'var(--red)'}">${f.delay!=null?f.delay+'s':'缺'}</span></div><div class="track"><div class="fill ${cls}" style="width:${pct}%"></div></div></div>`;
+      const mins=f.delay!=null?Math.floor(f.delay/60):null;
+      const txt=f.delay!=null?(mins>=1?mins+'m':f.delay+'s'):'缺';
+      return `<div class="fbar"><div class="label"><span>${f.name}</span><span style="color:${f.status==='fresh'?'var(--green)':f.status==='stale'?'var(--yellow)':'var(--red)'}">${txt}</span></div><div class="track"><div class="fill ${cls}" style="width:${pct}%"></div></div></div>`;
     }).join('');
 
     // ── 质量 ──
@@ -126,15 +128,20 @@ async function tick(){
       ? Object.entries(a).slice(0,4).map(([k,v])=>`<div style="display:flex;justify-content:space-between;padding:2px 0;font-size:10px"><span style="color:var(--cyan)">${k}</span><span style="color:var(--muted)">${v.total}条 / ${v.files}天</span></div>`).join('')
       : '<div style="color:var(--muted);font-size:10px">等待归档...</div>';
 
-    // ── 数据量（直播 + 归档）──
+    // ── 数据量（直播+归档+数据库）──
     const vol=mon.volumes||{};
     const arc=mon.archVolumes||{};
-    document.getElementById('datavol').innerHTML=
-      `<div class="dv-item">📰 金十 <b>${vol.jin10||'?'}</b>条${arc.news?' +📦'+arc.news+'':''}</div>`+
-      `<div class="dv-item">📡 RSS <b>${vol.rss||'?'}</b>条${arc.news?' +📦'+arc.news+'':''}</div>`+
-      `<div class="dv-item">🐋 鲸鱼 <b>${vol.whale||'?'}</b>条${arc.whale?' +📦'+arc.whale+'':''}</div>`+
-      `<div class="dv-item">💹 ETH <b>${vol.eth||'?'}</b>大户</div>`+
-      `<div class="dv-item">⚡ 异动 <b>${vol.alerts||'?'}</b>条${arc.alerts?' +📦'+arc.alerts+'':''}</div>`;
+    const db=mon.dbStats||{};
+    const items=[
+      {name:'金十',live:vol.jin10,arch:0,total:db._jin10_db||vol.jin10,today:db._jin10_today||0,type:'追加式📂DB'},
+      {name:'RSS',live:vol.rss,arch:arc.news||0,total:db._rss_db||(vol.rss||0)+(arc.news||0),today:db._rss_today||0,type:'覆盖式📂DB'},
+      {name:'鲸鱼',live:vol.whale,arch:arc.whale||0,total:db.whale_transfers||(vol.whale||0)+(arc.whale||0),today:db._whale_today||0,type:'覆盖式📂DB'},
+      {name:'ETH',live:vol.eth,arch:0,total:db.addresses||vol.eth,today:db._eth_today||0,type:'覆盖式📂DB'},
+      {name:'异动',live:vol.alerts,arch:arc.alerts||0,total:db.alerts||(vol.alerts||0)+(arc.alerts||0),today:db._alerts_today||0,type:'覆盖式📂DB'},
+    ];
+    document.getElementById('datavol').innerHTML=items.map(i=>
+      `<div class="dv-item">${i.name} <b>${i.total||'?'}</b>条 <span style="color:var(--cyan);font-size:8px">+${i.today}今日</span> <span style="font-size:7px;color:var(--muted)">${i.type}</span></div>`
+    ).join('');
 
   } catch(e) {
     document.getElementById('procs').innerHTML='<span style="color:var(--red)">⚠️ API 不可达</span>';

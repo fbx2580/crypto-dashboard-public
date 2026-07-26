@@ -1,6 +1,490 @@
 {
   "alerts": [
     {
+      "time": "2026-07-26T16:51:59.613Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "jin10",
+      "message": "金十快讯 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:49:31.235Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "alerts_log",
+      "message": "告警日志 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:49:31.235Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "data_quality",
+      "message": "数据质量 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:49:31.235Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "market_snapshot",
+      "message": "市场快照 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:49:31.235Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "alerts",
+      "message": "异动数据 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:49:31.235Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "eth",
+      "message": "ETH大户 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:49:31.235Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "whale",
+      "message": "鲸鱼转账 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:49:31.235Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "rss",
+      "message": "RSS新闻 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:48:35.385Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts_log",
+      "message": "告警日志: 自身",
+      "errors": [
+        "延迟91s但诊断通过: 自身"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 3,
+      "resolvedAt": "2026-07-26T16:48:35.385Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:48:35.385Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "data_quality",
+      "message": "数据质量: 自身",
+      "errors": [
+        "延迟91s但诊断通过: 自身"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 3,
+      "resolvedAt": "2026-07-26T16:48:35.385Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:48:35.385Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "market_snapshot",
+      "message": "市场快照: Binance正常",
+      "errors": [
+        "延迟4691s但诊断通过: Binance正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 3,
+      "resolvedAt": "2026-07-26T16:48:35.385Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:48:35.385Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟92s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 3,
+      "resolvedAt": "2026-07-26T16:48:35.385Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:48:35.385Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25618264",
+      "errors": [
+        "延迟13s但诊断通过: Alchemy正常，区块25618264"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 3,
+      "resolvedAt": "2026-07-26T16:48:35.385Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:48:35.385Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "whale",
+      "message": "鲸鱼转账: Etherscan V2正常，但V1失败",
+      "errors": [
+        "延迟2s但诊断通过: Etherscan V2正常，但V1失败"
+      ],
+      "fix": "切换whale-monitor到V2 API",
+      "resolved": true,
+      "consecutiveFailures": 3,
+      "resolvedAt": "2026-07-26T16:48:35.385Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:48:35.385Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "rss",
+      "message": "RSS新闻: rt-daemon运行中，RSS源正常",
+      "errors": [
+        "延迟10s但诊断通过: rt-daemon运行中，RSS源正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 3,
+      "resolvedAt": "2026-07-26T16:48:35.385Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:48:35.385Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "jin10",
+      "message": "金十快讯: 采集循环卡住: 日志2378s无输出，可能page.goto挂起",
+      "errors": [
+        "采集循环卡住: 日志2378s无输出，可能page.goto挂起",
+        "建议修复: 强制重启 jin10-scraper"
+      ],
+      "fix": "强制重启 jin10-scraper",
+      "resolved": true,
+      "consecutiveFailures": 3,
+      "resolvedAt": "2026-07-26T16:51:59.613Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:46:31.678Z",
+      "type": "staleness",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25618254 (82分钟)",
+      "errors": [
+        "延迟4941s但诊断通过: Alchemy正常，区块25618254"
+      ],
+      "fix": "",
+      "resolved": true,
+      "resolvedAt": "2026-07-26T16:48:35.385Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:45:01.401Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "jin10",
+      "message": "金十快讯 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:40:49.120Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "jin10",
+      "message": "金十快讯: 采集循环卡住: 日志1912s无输出，可能page.goto挂起",
+      "errors": [
+        "采集循环卡住: 日志1912s无输出，可能page.goto挂起",
+        "建议修复: 强制重启 jin10-scraper"
+      ],
+      "fix": "强制重启 jin10-scraper",
+      "resolved": true,
+      "consecutiveFailures": 18,
+      "resolvedAt": "2026-07-26T16:45:01.401Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:40:49.120Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "eth",
+      "message": "ETH大户 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:40:25.082Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25618224",
+      "errors": [
+        "延迟4575s但诊断通过: Alchemy正常，区块25618224"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 24,
+      "resolvedAt": "2026-07-26T16:40:49.120Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:38:27.982Z",
+      "type": "staleness",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25618214 (74分钟)",
+      "errors": [
+        "延迟4457s但诊断通过: Alchemy正常，区块25618214"
+      ],
+      "fix": "",
+      "resolved": true,
+      "resolvedAt": "2026-07-26T16:40:49.120Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:38:27.982Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "jin10",
+      "message": "金十快讯: 采集循环卡住: 日志1771s无输出，可能page.goto挂起",
+      "errors": [
+        "采集循环卡住: 日志1771s无输出，可能page.goto挂起",
+        "建议修复: 强制重启 jin10-scraper"
+      ],
+      "fix": "强制重启 jin10-scraper",
+      "resolved": true,
+      "consecutiveFailures": 15,
+      "resolvedAt": "2026-07-26T16:45:01.401Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:38:27.982Z",
+      "type": "staleness",
+      "level": "warn",
+      "source": "jin10",
+      "message": "金十快讯: 采集循环卡住: 日志1771s无输出，可能page.goto挂起 (30分钟)",
+      "errors": [
+        "采集循环卡住: 日志1771s无输出，可能page.goto挂起",
+        "建议修复: 强制重启 jin10-scraper"
+      ],
+      "fix": "强制重启 jin10-scraper",
+      "resolved": true,
+      "resolvedAt": "2026-07-26T16:45:01.401Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:35:01.435Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25618196",
+      "errors": [
+        "延迟4251s但诊断通过: Alchemy正常，区块25618196"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 21,
+      "resolvedAt": "2026-07-26T16:35:01.435Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:30:01.953Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "jin10",
+      "message": "金十快讯: 进程运行中(PID1)，可能jin10网站无新快讯",
+      "errors": [
+        "延迟1265s但诊断通过: 进程运行中(PID1)，可能jin10网站无新快讯"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 12,
+      "resolvedAt": "2026-07-26T16:30:01.953Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:29:28.952Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25618169",
+      "errors": [
+        "延迟3918s但诊断通过: Alchemy正常，区块25618169"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 18,
+      "resolvedAt": "2026-07-26T16:29:28.952Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:29:28.952Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "whale",
+      "message": "鲸鱼转账 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:29:28.952Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "rss",
+      "message": "RSS新闻 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:24:58.056Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "jin10",
+      "message": "金十快讯: 进程运行中(PID1)，可能jin10网站无新快讯",
+      "errors": [
+        "延迟961s但诊断通过: 进程运行中(PID1)，可能jin10网站无新快讯"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 9,
+      "resolvedAt": "2026-07-26T16:24:58.056Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:20:01.977Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Etherscan API返回异常",
+      "errors": [
+        "Etherscan API返回异常",
+        "建议修复: 检查Etherscan API或更换代理"
+      ],
+      "fix": "检查Etherscan API或更换代理",
+      "resolved": true,
+      "consecutiveFailures": 15,
+      "resolvedAt": "2026-07-26T16:24:58.056Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:20:01.977Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "whale",
+      "message": "鲸鱼转账: Etherscan V2正常，但V1失败",
+      "errors": [
+        "延迟495s但诊断通过: Etherscan V2正常，但V1失败"
+      ],
+      "fix": "切换whale-monitor到V2 API",
+      "resolved": true,
+      "consecutiveFailures": 6,
+      "resolvedAt": "2026-07-26T16:20:01.977Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:20:01.977Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "rss",
+      "message": "RSS新闻: rt-daemon运行中但零输出——所有采集循环全哑",
+      "errors": [
+        "rt-daemon运行中但零输出——所有采集循环全哑",
+        "建议修复: 重启 rt-daemon"
+      ],
+      "fix": "重启 rt-daemon",
+      "resolved": true,
+      "consecutiveFailures": 6,
+      "resolvedAt": "2026-07-26T16:29:28.952Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:16:58.454Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "jin10",
+      "message": "金十快讯: 进程运行中(PID1)，可能jin10网站无新快讯",
+      "errors": [
+        "延迟481s但诊断通过: 进程运行中(PID1)，可能jin10网站无新快讯"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 6,
+      "resolvedAt": "2026-07-26T16:17:30.598Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:09:14.003Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "whale",
+      "message": "鲸鱼转账 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:09:14.003Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "jin10",
+      "message": "金十快讯 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T16:06:07.554Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "jin10",
+      "message": "金十快讯: Chromium浏览器崩溃(closed/page.goto错误)，恢复循环失效",
+      "errors": [
+        "Chromium浏览器崩溃(closed/page.goto错误)，恢复循环失效",
+        "建议修复: 强制重启 jin10-scraper"
+      ],
+      "fix": "强制重启 jin10-scraper",
+      "resolved": true,
+      "consecutiveFailures": 6,
+      "resolvedAt": "2026-07-26T16:17:30.598Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-26T16:05:01.231Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "rss",
+      "message": "RSS新闻 恢复 (延迟18s)",
+      "errors": [],
+      "resolved": true
+    },
+    {
       "time": "2026-07-26T15:55:43.166Z",
       "type": "confirmed_failure",
       "level": "warn",
@@ -9,8 +493,10 @@
       "errors": [
         "API验证失败: Etherscan 可达不可达"
       ],
-      "resolved": false,
-      "consecutiveFailures": 3
+      "resolved": true,
+      "consecutiveFailures": 3,
+      "resolvedAt": "2026-07-26T16:24:58.056Z",
+      "regressed": true
     },
     {
       "time": "2026-07-26T15:55:43.166Z",
@@ -21,8 +507,10 @@
       "errors": [
         "API验证失败: Etherscan 区块号可达不可达"
       ],
-      "resolved": false,
-      "consecutiveFailures": 3
+      "resolved": true,
+      "consecutiveFailures": 3,
+      "resolvedAt": "2026-07-26T16:17:30.598Z",
+      "regressed": true
     },
     {
       "time": "2026-07-26T15:55:43.166Z",
@@ -33,8 +521,10 @@
       "errors": [
         "采集可能卡住: 文件1257s未更新但API可达"
       ],
-      "resolved": false,
-      "consecutiveFailures": 3
+      "resolved": true,
+      "consecutiveFailures": 3,
+      "resolvedAt": "2026-07-26T16:29:28.952Z",
+      "regressed": true
     },
     {
       "time": "2026-07-26T15:55:43.166Z",
@@ -45,10 +535,12 @@
       "errors": [
         "采集可能卡住: 文件1888s未更新但API可达"
       ],
-      "resolved": false,
-      "consecutiveFailures": 3
+      "resolved": true,
+      "consecutiveFailures": 3,
+      "resolvedAt": "2026-07-26T16:17:30.598Z",
+      "regressed": true
     }
   ],
-  "updated": "2026-07-26T15:56:10.420Z",
-  "total": 4
+  "updated": "2026-07-26T17:00:02.134Z",
+  "total": 42
 }

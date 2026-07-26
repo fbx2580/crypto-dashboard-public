@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * P0: 进程守护 — 不可删除
- * 每30秒巡检 rt-daemon 和 jin10-scraper，死了就自动拉起
+ * P0: 进程守护 v2 — 不可删除
+ * PID检查 + 心跳验证，双重保障
  */
 const { execSync } = require('child_process');
 const fs = require('fs');
@@ -10,36 +10,57 @@ const LOG = '/tmp/supervisor.log';
 
 function log(msg) {
   const ts = new Date().toISOString().slice(0,19);
-  const line = `[${ts}] ${msg}`;
-  console.log(line);
-  fs.appendFileSync(LOG, line + '\n');
+  console.log(`[${ts}] ${msg}`);
+  fs.appendFileSync(LOG, msg + '\n');
 }
 
 function checkDaemons() {
+  // ── rt-daemon ──
   try {
-    // rt-daemon
     const rt = execSync('pgrep -cf rt-daemon', { encoding: 'utf8', timeout: 3000 }).trim();
     const rtCount = parseInt(rt) || 0;
     if (rtCount < 1) {
-      log(`⚠️ rt-daemon 挂了，拉起...`);
+      log('⚠️ rt-daemon 挂了，拉起...');
       execSync(`cd ${D} && nohup node rt-daemon.js > /tmp/rt.log 2>&1 &`, { timeout: 5000 });
       log('✅ rt-daemon 已拉');
+      return;
     }
-  } catch(e) { log('❌ rt-daemon检查失败: '+e.message); }
+    // 心跳检查：进程在但不输出 = 僵尸
+    try {
+      const rtLog = fs.statSync('/tmp/rt.log');
+      const age = (Date.now() - rtLog.mtimeMs) / 1000;
+      if (age > 120) {
+        log(`⚠️ rt-daemon PID存在但 ${Math.round(age)}s无心跳 (僵尸)`);
+        execSync('pkill -9 -f rt-daemon 2>/dev/null', { timeout: 3000 });
+        execSync(`cd ${D} && nohup node rt-daemon.js > /tmp/rt.log 2>&1 &`, { timeout: 5000 });
+        log('✅ rt-daemon 已杀旧启新');
+      }
+    } catch(e) {}
+  } catch(e) { log('❌ rt检查失败'); }
 
+  // ── jin10 ──
   try {
-    // jin10
     const j10 = execSync('pgrep -cf jin10-scraper', { encoding: 'utf8', timeout: 3000 }).trim();
     const j10Count = parseInt(j10) || 0;
     if (j10Count < 1) {
-      log(`⚠️ jin10-scraper 挂了，拉起...`);
+      log('⚠️ jin10-scraper 挂了，拉起...');
       execSync(`cd ${D} && nohup node jin10-scraper.js > /tmp/jin10.log 2>&1 &`, { timeout: 5000 });
       log('✅ jin10-scraper 已拉');
+      return;
     }
-  } catch(e) { log('❌ jin10检查失败: '+e.message); }
+    try {
+      const j10Log = fs.statSync('/tmp/jin10.log');
+      const age = (Date.now() - j10Log.mtimeMs) / 1000;
+      if (age > 120) {
+        log(`⚠️ jin10 PID存在但 ${Math.round(age)}s无心跳 (僵尸)`);
+        execSync('pkill -9 -f jin10-scraper 2>/dev/null', { timeout: 3000 });
+        execSync(`cd ${D} && nohup node jin10-scraper.js > /tmp/jin10.log 2>&1 &`, { timeout: 5000 });
+        log('✅ jin10 已杀旧启新');
+      }
+    } catch(e) {}
+  } catch(e) { log('❌ jin10检查失败'); }
 }
 
-// 立即检查一次，然后每30秒
-log('🛡 supervisor 启动');
+log('🛡 supervisor v2 启动 (PID+心跳)');
 checkDaemons();
 setInterval(checkDaemons, 30000);

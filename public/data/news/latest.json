@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "s": "Russia’s Sberbank to launch crypto trading infrastructure this year",
+      "t": "2026-07-26T16:07:11.000Z",
+      "ts": 1785082031,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/russias-sberbank-to-launch-crypto-trading-infrastructure-this-year?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "俄罗斯联邦储蓄银行今年将推出加密货币交易基础设施",
+      "_ts": 1785083245481
+    },
+    {
+      "s": "Shiba Inu (SHIB) Deflation Spikes 5,223% in a Day, Hundreds of Millions of Tokens Gone Forever",
+      "t": "2026-07-26T15:38:45.000Z",
+      "ts": 1785080325,
+      "src": "U.Today",
+      "link": "https://u.today/shiba-inu-shib-deflation-spikes-5223-in-a-day-hundreds-of-millions-of-tokens-gone-forever",
+      "s_cn": "Shiba Inu (SHIB) 通货紧缩一天内飙升 5,223%，数亿代币永远消失",
+      "_ts": 1785081883142
+    },
+    {
       "s": "32.445 Billion XRP: Community Sets Record Straight on XRP Escrow",
       "t": "2026-07-26T15:20:16.000Z",
       "ts": 1785079216,
@@ -760,6 +778,6 @@
       "s_cn": "中国吉利将通过新合资企业在西班牙福特工厂生产电动汽车"
     }
   ],
-  "updated": 1785080086683,
+  "updated": 1785085186110,
   "sources": 6
 }

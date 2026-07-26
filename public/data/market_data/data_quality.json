@@ -1,86 +1,65 @@
 {
-  "timestamp": "2026-07-26T15:55:43.166Z",
-  "overall_score": 80,
+  "timestamp": "2026-07-26T17:00:02.134Z",
+  "overall_score": 100,
   "status": "healthy",
   "checks": {
     "jin10": {
-      "status": "warn",
-      "score": 70,
-      "errors": [
-        "采集可能卡住: 文件1888s未更新但API可达"
-      ],
-      "delay": 1888,
-      "verified": true,
-      "verifyResult": "jin10.com 可达 ✅"
+      "status": "ok",
+      "score": 100,
+      "errors": [],
+      "delay": 122,
+      "diagnosis": null
     },
     "rss": {
-      "status": "warn",
-      "score": 70,
-      "errors": [
-        "采集可能卡住: 文件1257s未更新但API可达"
-      ],
-      "delay": 1257,
-      "verified": true,
-      "verifyResult": "CoinTelegraph RSS 可达 ✅"
+      "status": "ok",
+      "score": 100,
+      "errors": [],
+      "delay": 16,
+      "diagnosis": null
     },
     "whale": {
-      "status": "warn",
-      "score": 50,
-      "errors": [
-        "API验证失败: Etherscan 区块号可达不可达"
-      ],
-      "delay": 682,
-      "verified": true,
-      "verifyResult": "Etherscan 区块号可达 ❌"
+      "status": "ok",
+      "score": 100,
+      "errors": [],
+      "delay": 32,
+      "diagnosis": null
     },
     "eth": {
-      "status": "warn",
-      "score": 50,
-      "errors": [
-        "API验证失败: Etherscan 可达不可达"
-      ],
-      "delay": 1893,
-      "verified": true,
-      "verifyResult": "Etherscan 可达 ❌"
+      "status": "ok",
+      "score": 100,
+      "errors": [],
+      "delay": 3,
+      "diagnosis": null
     },
     "alerts": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 37,
-      "verified": false,
-      "verifyResult": null
+      "delay": 297,
+      "diagnosis": null
     },
     "market_snapshot": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 1519,
-      "verified": false,
-      "verifyResult": null
+      "delay": 5378,
+      "diagnosis": null
     },
     "data_quality": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 41,
-      "verified": false,
-      "verifyResult": null
+      "delay": 300,
+      "diagnosis": null
     },
     "alerts_log": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 41,
-      "verified": false,
-      "verifyResult": null
+      "delay": 300,
+      "diagnosis": null
     }
   },
   "dataErrors": [],
-  "errors": [
-    "采集可能卡住: 文件1888s未更新但API可达",
-    "采集可能卡住: 文件1257s未更新但API可达",
-    "API验证失败: Etherscan 区块号可达不可达",
-    "API验证失败: Etherscan 可达不可达"
-  ]
+  "errors": []
 }

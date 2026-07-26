@@ -60,7 +60,7 @@ async function scanNew() {
       }
     }
   }
-  if (added > 0) { fs.writeFileSync(FILE, JSON.stringify(data,null,2)); try { const { archive } = require('./archive-manager'); archive('eth', data.whales.slice(-added), 'fullAddr'); } catch(e) {} }
+  if (added > 0) { fs.writeFileSync(FILE, JSON.stringify(data,null,2)); try { require('./data-store').save('eth', data.whales.slice(-added), 'fullAddr'); } catch(e) {} try { const { archive } = require('./archive-manager'); archive('eth', data.whales.slice(-added), 'fullAddr'); } catch(e) {} }
   return added;
 }
 

@@ -111,14 +111,53 @@ if (require.main === module) {
     page = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
     console.log('[jin10] 浏览器已启动');
   }
+  // 心跳
+  let crashCount = 0;
+  setInterval(() => console.log(`[jin10] 💓 ${new Date().toISOString().slice(11,19)} #${tick}`), 30000);
   async function loop() {
     tick++;
     try {
-      if (!page || tick % 100 === 0) await init(); // 每100轮重建避免泄漏
-      await scrapeJin10WithPage(page);
+      if (!page || tick % 50 === 0) { crashCount=0; await init(); } // 每50轮或空时重建
+      // 超时保护: 10秒不返回就抛异常
+      await Promise.race([
+        scrapeJin10WithPage(page),
+        new Promise((_,rej)=>setTimeout(()=>rej(new Error('page超时')),10000))
+      ]);
+      crashCount = 0;
     } catch(e) {
-      console.error('[jin10] 崩溃,3秒后重建:', e.message?.slice(0,40));
+      crashCount++;
+      console.error(`[jin10] 崩溃 #${crashCount}:`, e.message?.slice(0,40));
       browser = null; page = null;
+      if (crashCount >= 3) {
+        console.log('[jin10] 🔄 连续3次崩溃，切HTTP降级抓取...');
+        try {
+          const axios = require('axios');
+          const resp = await axios.get('https://www.jin10.com', { timeout: 10000, headers: { 'User-Agent': 'Mozilla/5.0' } });
+          // 简单文本解析
+          const text = resp.data;
+          const timeRe = /(\d{2}:\d{2}:\d{2})[\s\S]*?>(.*?)</g;
+          let m; const items = [];
+          const seen = new Set();
+          while ((m = timeRe.exec(text)) !== null && items.length < 30) {
+            const title = m[2].replace(/<[^>]*>/g, '').trim();
+            if (title.length < 5 || seen.has(title)) continue;
+            if (['TradingHero','金十数据·','VIP年会员'].some(k=>title.includes(k))) continue;
+            seen.add(title);
+            items.push({ t: m[1].slice(0,5), s: title, src: 'jin10-http' });
+          }
+          if (items.length > 0) {
+            const fs=require('fs');const p=require('path');
+            const f=p.join(__dirname,'public','data','news','jin10.json');
+            let e=[];try{e=JSON.parse(fs.readFileSync(f,'utf8')).items||[]}catch(e){}
+            const es=new Set(e.map(i=>i.s));
+            for(const i of items){if(!es.has(i.s)){e.unshift(i);es.add(i.s)}}
+            e.sort((a,b)=>{const ta=a.t||'',tb=b.t||'';return(parseInt(tb)*60+parseInt(tb.split(':')[1]||0))-(parseInt(ta)*60+parseInt(ta.split(':')[1]||0))});
+            fs.writeFileSync(f,JSON.stringify({items:e.slice(0,500),updated:Date.now(),source:'jin10-http'},null,2));
+            console.log(`[jin10] HTTP降级 ✅ ${items.length} items`);
+            crashCount = 0;
+          }
+        } catch(e2) { console.error('[jin10] HTTP降级失败:', e2.message.slice(0,40)); }
+      }
       await new Promise(r => setTimeout(r, 3000));
     }
     setTimeout(loop, 1000);
@@ -129,8 +168,8 @@ if (require.main === module) {
 // P0: 复用浏览器版本的爬取（1秒间隔）
 async function scrapeJin10WithPage(page) {
   try {
-    await page.goto('https://www.jin10.com', { waitUntil: 'domcontentloaded', timeout: 15000 });
-    await page.waitForTimeout(800);
+    await page.goto('https://www.jin10.com', { waitUntil: "domcontentloaded", timeout: 8000 });
+    await page.waitForTimeout(500);
 
     const items = await page.evaluate(() => {
       const lines = document.body.innerText.split('\n').map(l => l.trim()).filter(l => l);
@@ -191,8 +230,18 @@ async function scrapeJin10WithPage(page) {
       if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
       fs.writeFileSync(CACHE_FILE, JSON.stringify(merged, null, 2));
       fs.writeFileSync(FALLBACK_FILE, JSON.stringify(merged, null, 2));
+      // P0: 写 SQLite
+      try { require('./data-store').save('jin10', items, 's'); } catch(e) {}
       const imp = items.filter(i => i.imp).length;
       console.log(`[jin10] ✅ ${items.length} new (${imp} 🔴) | total ${existing.length}`);
+    } else {
+      // 无新数据但采集器存活——刷新时间戳避免误报
+      try {
+        let d = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+        d.updated = Date.now();
+        d.alive = true;
+        fs.writeFileSync(CACHE_FILE, JSON.stringify(d, null, 2));
+      } catch(e) {}
     }
   } catch(e) {
     console.error(`[jin10] ✗ ${e.message}`);

@@ -35,6 +35,8 @@ function saveAlert(a) {
     data.alerts.unshift(a);
     if (data.alerts.length > 30) data.alerts = data.alerts.slice(0, 30);
     fs.writeFileSync(ALERT_FILE, JSON.stringify(data, null, 2));
+    // P0: 写 SQLite
+    try { require('./data-store').save('alerts', [a], 'time'); } catch(e) {}
     // P2: 按日归档
     try { const { archive } = require('./archive-manager'); archive('alerts', [a], 'time'); } catch(e) {}
   } catch(e) {}

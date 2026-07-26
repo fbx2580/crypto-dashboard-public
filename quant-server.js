@@ -158,6 +158,9 @@ app.get('/api/monitor', (req, res) => {
   for (const [type, info] of Object.entries(archiveStats)) {
     archVolumes[type] = info.total;
   }
+  // P0: SQLite数据库统计
+  let dbStats = {};
+  try { dbStats = require('./data-store').dbStats(); } catch(e) {}
 
-  res.json({ procs, freshness, archive: archiveStats, volumes, archVolumes, timestamp: Date.now() });
+  res.json({ procs, freshness, archive: archiveStats, volumes, archVolumes, dbStats, timestamp: Date.now() });
 });
