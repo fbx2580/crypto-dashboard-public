@@ -1,0 +1,153 @@
+{
+  "updated": 1784899782083,
+  "eth": [],
+  "btc": [
+    {
+      "address": "bc1q89zqat5x9cye7v2uwun2ds7980p25n02g7g90w",
+      "count": 781,
+      "totalVal": 299195.8553899995,
+      "lastSeen": 1784899310,
+      "tags": []
+    },
+    {
+      "address": "3LddaNKHGbtB8JXfHX1YTz9owuSHpdT1aX",
+      "count": 43,
+      "totalVal": 71519.18884999998,
+      "lastSeen": 1784899310,
+      "tags": []
+    },
+    {
+      "address": "1NBSAB1xtgN5BUbUJJtoe8ejySzmqwBjHG",
+      "count": 43,
+      "totalVal": 71519.18884999998,
+      "lastSeen": 1784899310,
+      "tags": []
+    },
+    {
+      "address": "bc1qryhgpmfv03qjhhp2dj8nw8g4ewg08jzmgy3cyx",
+      "count": 233,
+      "totalVal": 42842.737529999875,
+      "lastSeen": 1784897176,
+      "tags": []
+    },
+    {
+      "address": "bc1qa8a7s2g3vhxlssfh88y0fwlft7rqw3pnxqpmdk",
+      "count": 233,
+      "totalVal": 42842.737529999875,
+      "lastSeen": 1784897176,
+      "tags": []
+    },
+    {
+      "address": "bc1p2ws3jd3krrplhs2r8z7pfv8dyydy2mh0y0ejqj4eesqv4cx4c6xq6x5yjg",
+      "count": 233,
+      "totalVal": 39921.7540000001,
+      "lastSeen": 1784897176,
+      "tags": []
+    },
+    {
+      "address": "bc1qd68dr06qxwrvxnvlskhk5yuafmpa56yhhhswsd",
+      "count": 233,
+      "totalVal": 39921.7540000001,
+      "lastSeen": 1784897176,
+      "tags": []
+    },
+    {
+      "address": "bc1q55q234h9wetrgl3xxfqcre2r03r57zeu9f9yae",
+      "count": 43,
+      "totalVal": 15687.26817000001,
+      "lastSeen": 1784899310,
+      "tags": []
+    },
+    {
+      "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
+      "count": 25,
+      "totalVal": 15552.18175,
+      "lastSeen": 1784899645,
+      "tags": []
+    },
+    {
+      "address": "1FcDv7di5DuvzyNjxk2NwuVtrhGyRj9i6n",
+      "count": 25,
+      "totalVal": 15552.18175,
+      "lastSeen": 1784899645,
+      "tags": []
+    },
+    {
+      "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+      "count": 23,
+      "totalVal": 5719.900589999999,
+      "lastSeen": 1784899524,
+      "tags": []
+    },
+    {
+      "address": "bc1qvct2l4ts24zneqeqzawt2cqhcwk46lrr97rece",
+      "count": 23,
+      "totalVal": 5719.900589999999,
+      "lastSeen": 1784899524,
+      "tags": []
+    },
+    {
+      "address": "bc1quuya9e7dlurmc8sj4asxpdyqvjg7ujedy8stke",
+      "count": 130,
+      "totalVal": 3468.7626999999934,
+      "lastSeen": 1784898578,
+      "tags": []
+    },
+    {
+      "address": "bc1qleahpf5a8jl4jxzv2jud7ah5zjmpg8sx5nrem7",
+      "count": 130,
+      "totalVal": 3468.7626999999934,
+      "lastSeen": 1784898578,
+      "tags": []
+    },
+    {
+      "address": "bc1qyrdvuvfuea28e8tt932v22pcfry8ypn088en7e",
+      "count": 25,
+      "totalVal": 2999.998249999999,
+      "lastSeen": 1784899645,
+      "tags": []
+    },
+    {
+      "address": "bc1qtw8l7a8644snjclfz7lhzzeqq2fnlf68jnw7nz",
+      "count": 25,
+      "totalVal": 2999.998249999999,
+      "lastSeen": 1784899645,
+      "tags": []
+    },
+    {
+      "address": "15HDtCKXwycXJdPFGRtYvZ5cmLNYaK7Rke",
+      "count": 46,
+      "totalVal": 1551.2731800000008,
+      "lastSeen": 1784899524,
+      "tags": []
+    },
+    {
+      "address": "bc1q2nfxrvvg67nhey0gk0cc8ke2ea4akge8kskyyq",
+      "count": 25,
+      "totalVal": 1180.1300000000003,
+      "lastSeen": 1784899645,
+      "tags": []
+    },
+    {
+      "address": "bc1qph56frd52xddxjrndgq4kwxpsvzyruxd3q0rfg",
+      "count": 25,
+      "totalVal": 1180.1300000000003,
+      "lastSeen": 1784899645,
+      "tags": []
+    },
+    {
+      "address": "bc1qpnk0shp4jetalmamxcy6vvmrvhhamswmhprlcx",
+      "count": 6,
+      "totalVal": 158.53206,
+      "lastSeen": 1784899205,
+      "tags": []
+    },
+    {
+      "address": "bc1qmedm5qe4ldnz0q4tjhq2k5y0j6jlz28tfggtva",
+      "count": 6,
+      "totalVal": 158.53206,
+      "lastSeen": 1784899205,
+      "tags": []
+    }
+  ]
+}

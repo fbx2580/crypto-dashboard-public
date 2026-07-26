@@ -254,8 +254,6 @@ html, body {
 .mo-sh { border-left-color: var(--red); }
 .mo-nasdaq { border-left-color: var(--yellow); }
 .mo-sp500 { border-left-color: var(--green); }
-.mo-gold { border-left-color: #f0b90b; }
-.mo-oil { border-left-color: #627eea; }
 
 .mo-label { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2px; }
 .mo-value { font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -266,19 +264,10 @@ html, body {
 .mo-change.down { color: var(--red); }
 
 @media (min-width: 480px) {
-  .market-overview { grid-template-columns: repeat(3, 1fr); gap: var(--gap); }
+  .market-overview { grid-template-columns: repeat(4, 1fr); gap: var(--gap); }
   .mo-item { padding: 10px 14px; }
   .mo-value { font-size: 15px; }
 }
-@media (min-width: 768px) {
-  .market-overview { grid-template-columns: repeat(3, 1fr); }
-}
-@media (min-width: 1024px) {
-  .market-overview { grid-template-columns: repeat(6, 1fr); }
-}
-
-/* ─── 资金流向（嵌入大盘框内） ─── */
-.mo-flow { font-weight: 600; }
 
 /* ─── Main Layout ─── */
 .main-layout { display: grid; grid-template-columns: 1fr; gap: var(--gap); }
@@ -660,157 +649,4 @@ input:focus, select:focus { border-color: var(--accent); }
 }
 .news-section, .defi-yield-section {
   border-radius: var(--radius);
-}
-
-/* ─── 山寨币吸筹监控 ─── */
-.accum-group { margin-bottom: 8px; }
-.accum-group-hd { font-size: 11px; font-weight: 700; padding: 4px 0; color: var(--text); }
-.accum-row {
-  padding: 6px 0;
-  border-bottom: 1px solid var(--border);
-  font-size: 10px;
-}
-.accum-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 3px;
-}
-.accum-sym { font-weight: 700; color: var(--text); font-size: 11px; }
-.accum-price { color: var(--text); }
-.accum-chg { font-weight: 600; }
-.accum-chg.up { color: var(--green); }
-.accum-chg.down { color: var(--red); }
-.accum-conds { display: flex; gap: 4px; margin-bottom: 2px; flex-wrap: wrap; }
-.accum-cond {
-  font-size: 9px;
-  padding: 1px 4px;
-  border-radius: 2px;
-  background: var(--surface2);
-  cursor: default;
-  white-space: nowrap;
-  position: relative;
-}
-.accum-cond:hover { z-index: 10; }
-.accum-cond .accum-tooltip {
-  display: none;
-  position: absolute;
-  bottom: 120%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #1a1a2e;
-  color: #e0e0e0;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 6px 8px;
-  font-size: 11px;
-  white-space: nowrap;
-  max-width: 260px;
-  white-space: normal;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  pointer-events: none;
-}
-.accum-cond:hover .accum-tooltip { display: block; }
-.accum-cond.met { background: rgba(34,197,94,0.15); color: #22c55e; }
-.accum-info {
-  font-size: 9px;
-  color: var(--text-dim);
-  display: flex;
-  gap: 10px;
-}
-.accum-score-badge {
-  font-size: 10px;
-  font-weight: 700;
-  background: var(--surface2);
-  padding: 0 5px;
-  border-radius: 3px;
-  margin-left: 4px;
-}
-.accum-entry {
-  font-size: 9px;
-  margin-top: 2px;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-/* ─── 吸筹雷达Dashboard ─── */
-.radar-dash {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
-  padding: 4px;
-}
-@media (min-width: 480px) { .radar-dash { padding: 8px; } }
-@media (min-width: 768px) { .radar-dash { grid-template-columns: 1fr 1fr; } }
-.radar-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-.radar-card-hd {
-  font-size: 11px;
-  font-weight: 700;
-  padding: 6px 8px;
-  background: var(--surface2);
-  border-bottom: 1px solid var(--border);
-}
-.radar-card-bd {
-  padding: 6px;
-}
-@media (min-width: 480px) { .radar-card-bd { padding: 8px; } }
-.radar-row {
-  display: flex;
-  align-items: center;
-  padding: 5px 8px;
-  border-bottom: 1px solid var(--border);
-  cursor: pointer;
-  gap: 6px;
-  font-size: 10px;
-  min-height: 36px;
-  -webkit-tap-highlight-color: transparent;
-}
-.radar-row:hover, .radar-row:active { background: var(--surface2); }
-.radar-tier-badge {
-  font-size: 9px;
-  padding: 1px 4px;
-  border-radius: 2px;
-  font-weight: 600;
-}
-.radar-score-bar {
-  height: 4px;
-  background: var(--surface3);
-  border-radius: 2px;
-  flex: 1;
-  min-width: 40px;
-}
-.radar-score-fill {
-  height: 4px;
-  border-radius: 2px;
-}
-
-/* ─── 移动端触摸优化 ─── */
-@media (max-width: 767px) {
-  .accum-cond { padding: 2px 6px; min-height: 24px; display: inline-flex; align-items: center; }
-  .accum-tooltip { display: none !important; }
-  .radar-score-bar { min-width: 20px; }
-  .radar-row { padding: 8px 6px; }
-  .market-overview { grid-template-columns: repeat(3, 1fr) !important; gap: 4px; }
-  .mo-item { padding: 6px 8px !important; }
-  .mo-value { font-size: 11px !important; }
-  .mo-label { font-size: 8px !important; }
-}
-@media (max-width: 400px) {
-  .market-overview { grid-template-columns: repeat(2, 1fr) !important; }
-  .mo-item { padding: 4px 6px !important; }
-  .mo-value { font-size: 10px !important; }
-  .mo-label { font-size: 7px !important; }
-  .radar-dash { padding: 2px; gap: 4px; }
-  .radar-card-hd { font-size: 10px; padding: 4px 6px; }
-  .radar-card-bd { padding: 4px; }
-  .radar-row { font-size: 9px; gap: 3px; }
-  .tab { font-size: 10px; padding: 6px 8px; }
-  .header { padding: 6px 8px; }
-  .logo { font-size: 13px; }
 }

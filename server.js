@@ -142,36 +142,6 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: err.message });
 });
 
-// ═══ 山寨币吸筹雷达 ═══
-app.get('/api/accumulation/radar', (req, res) => {
-  const file = path.join(DATA_DIR, 'analysis', 'accumulation_radar.json');
-  try {
-    if (fs.existsSync(file)) return res.json(JSON.parse(fs.readFileSync(file, 'utf8')));
-    res.json({ scannedAt: null, totalAnalyzed: 0, results: [] });
-  } catch(e) { res.json({ scannedAt: null, results: [] }); }
-});
-
-// 山寨币吸筹雷达市场历史
-app.get('/api/accumulation/radar/history', (req, res) => {
-  try {
-    const Database = require('better-sqlite3');
-    const db = new Database(path.join(__dirname, 'public', 'data', 'snapshots.db'));
-    db.pragma('journal_mode = WAL');
-    const rows = db.prepare('SELECT * FROM radar_market_history ORDER BY date DESC LIMIT 90').all();
-    db.close();
-    res.json({ count: rows.length, history: rows });
-  } catch(e) { res.json({ count: 0, history: [] }); }
-});
-
-// ═══ 山寨币吸筹扫描 ═══
-app.get('/api/accumulation/scan', (req, res) => {
-  const file = path.join(DATA_DIR, 'analysis', 'accumulation_signals.json');
-  try {
-    if (fs.existsSync(file)) return res.json(JSON.parse(fs.readFileSync(file, 'utf8')));
-    res.json({ scannedAt: null, totalScanned: 0, signalsFound: 0, signals: [] });
-  } catch(e) { res.json({ scannedAt: null, totalScanned: 0, signalsFound: 0, signals: [] }); }
-});
-
 // ═══ 健康检查 ═══
 app.get('/api/health', (req, res) => {
   res.json({

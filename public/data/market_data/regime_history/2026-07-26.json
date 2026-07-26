@@ -1,0 +1,40 @@
+{
+  "date": "2026-07-26",
+  "btc": {
+    "price": 64512,
+    "trend": {
+      "label": "上涨",
+      "class": "up"
+    },
+    "vsMA200": {
+      "label": "下方",
+      "class": "down",
+      "distance": "-7.4%"
+    },
+    "volatility": {
+      "label": "Normal",
+      "class": "normal",
+      "value": "30%"
+    },
+    "state": "SIDEWAYS"
+  },
+  "altcoin": {
+    "btcDominance": 56.475314277255684,
+    "ethbtcPrice": 0.029232,
+    "ethbtcTrend": "走强",
+    "totalMC": 2288911106717.9116,
+    "state": "ALT_SEASON"
+  },
+  "risk": {
+    "level": "LOW",
+    "factors": [
+      "BTC低于MA200"
+    ]
+  },
+  "updatedAt": "2026-07-26T13:59:27.841Z",
+  "sources": {
+    "btc": "Binance FAPI",
+    "alt": "CoinGecko",
+    "ethbtc": "Binance FAPI"
+  }
+}

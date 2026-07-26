@@ -1,0 +1,7893 @@
+{
+  "testDate": "2026-04-26T17:49:41.079Z",
+  "fwdEnd": "2026-05-26T17:49:41.079Z",
+  "totalBacktested": 405,
+  "btcReturn": 0,
+  "summary": {
+    "byFactor": [
+      {
+        "factor": "地量横盘",
+        "metCount": 14,
+        "metWinRate": 0.14285714285714285,
+        "metAvgReturn": -0.04061137668028138,
+        "notCount": 391,
+        "notWinRate": 0.26854219948849106,
+        "advantage": -0.1256850566313482
+      },
+      {
+        "factor": "底背离",
+        "metCount": 31,
+        "metWinRate": 0.2903225806451613,
+        "metAvgReturn": -0.07619200772625033,
+        "notCount": 374,
+        "notWinRate": 0.2620320855614973,
+        "advantage": 0.02829049508366399
+      },
+      {
+        "factor": "长下影",
+        "metCount": 381,
+        "metWinRate": 0.2545931758530184,
+        "metAvgReturn": -0.04737450974749904,
+        "notCount": 24,
+        "notWinRate": 0.4166666666666667,
+        "advantage": -0.1620734908136483
+      },
+      {
+        "factor": "震仓",
+        "metCount": 0,
+        "metWinRate": 0,
+        "metAvgReturn": 0,
+        "notCount": 405,
+        "notWinRate": 0.2641975308641975,
+        "advantage": -0.2641975308641975
+      },
+      {
+        "factor": "独立走势",
+        "metCount": 97,
+        "metWinRate": 0.3402061855670103,
+        "metAvgReturn": -0.047817610733279906,
+        "notCount": 308,
+        "notWinRate": 0.24025974025974026,
+        "advantage": 0.09994644530727007
+      }
+    ],
+    "byConditionCount": [
+      {
+        "met": 0,
+        "count": 15,
+        "winRate": 0.3333333333333333,
+        "avgReturn": -0.028480402471566156
+      },
+      {
+        "met": 1,
+        "count": 268,
+        "winRate": 0.2462686567164179,
+        "avgReturn": -0.04344280328079481
+      },
+      {
+        "met": 2,
+        "count": 111,
+        "winRate": 0.2972972972972973,
+        "avgReturn": -0.04656881462756535
+      },
+      {
+        "met": 3,
+        "count": 11,
+        "winRate": 0.2727272727272727,
+        "avgReturn": -0.1102290861027413
+      },
+      {
+        "met": 4,
+        "count": 0,
+        "winRate": 0,
+        "avgReturn": 0
+      },
+      {
+        "met": 5,
+        "count": 0,
+        "winRate": 0,
+        "avgReturn": 0
+      }
+    ]
+  },
+  "raw": [
+    {
+      "symbol": "NEO",
+      "entryPrice": 2.922,
+      "exitPrice": 2.808,
+      "fwdReturn": -0.03901437371663255,
+      "maxReturn": 0.16461327857631755,
+      "maxDrawdown": -0.08145106091718,
+      "metCount": 2,
+      "metLabels": [
+        "地量横盘",
+        "长下影"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.7433825060591698
+    },
+    {
+      "symbol": "LTC",
+      "entryPrice": 56.28,
+      "exitPrice": 51.92,
+      "fwdReturn": -0.07746979388770432,
+      "maxReturn": 0.07693674484719258,
+      "maxDrawdown": -0.08546552949538028,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.7736313192135847
+    },
+    {
+      "symbol": "QTUM",
+      "entryPrice": 0.908,
+      "exitPrice": 0.885,
+      "fwdReturn": -0.02533039647577095,
+      "maxReturn": 0.42070484581497797,
+      "maxDrawdown": -0.053964757709251146,
+      "metCount": 2,
+      "metLabels": [
+        "地量横盘",
+        "长下影"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.5558211225416388
+    },
+    {
+      "symbol": "TUSD",
+      "entryPrice": 0.9999,
+      "exitPrice": 0.9999,
+      "fwdReturn": 0,
+      "maxReturn": 0.003100310031002981,
+      "maxDrawdown": -0.001900190019001913,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": -0.3190584006952174
+    },
+    {
+      "symbol": "IOTA",
+      "entryPrice": 0.0579,
+      "exitPrice": 0.0564,
+      "fwdReturn": -0.02590673575129536,
+      "maxReturn": 0.1588946459412782,
+      "maxDrawdown": -0.06908462867012084,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.37109132756915386
+    },
+    {
+      "symbol": "XLM",
+      "entryPrice": 0.1708,
+      "exitPrice": 0.1478,
+      "fwdReturn": -0.13466042154566757,
+      "maxReturn": 0.018149882903981215,
+      "maxDrawdown": -0.18325526932084304,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6569222032893761
+    },
+    {
+      "symbol": "ONT",
+      "entryPrice": 0.07218,
+      "exitPrice": 0.05276,
+      "fwdReturn": -0.26904959822665553,
+      "maxReturn": 0.02521474092546415,
+      "maxDrawdown": -0.27556109725685773,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 7,
+      "btcCorr": 0.08995818609645022
+    },
+    {
+      "symbol": "TRX",
+      "entryPrice": 0.3234,
+      "exitPrice": 0.3756,
+      "fwdReturn": 0.1614100185528756,
+      "maxReturn": 0.16728509585652435,
+      "maxDrawdown": -0.005875077303648771,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 10,
+      "btcCorr": -0.2629710574822336
+    },
+    {
+      "symbol": "ETC",
+      "entryPrice": 8.53,
+      "exitPrice": 8.63,
+      "fwdReturn": 0.011723329425557026,
+      "maxReturn": 0.1817116060961314,
+      "maxDrawdown": -0.046893317702227266,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.7315707692085738
+    },
+    {
+      "symbol": "ICX",
+      "entryPrice": 0.0387,
+      "exitPrice": 0.0364,
+      "fwdReturn": -0.05943152454780353,
+      "maxReturn": 0.08785529715762275,
+      "maxDrawdown": -0.1033591731266149,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5957399010912435
+    },
+    {
+      "symbol": "VET",
+      "entryPrice": 0.00737,
+      "exitPrice": 0.006311,
+      "fwdReturn": -0.14369063772048848,
+      "maxReturn": 0.1029850746268658,
+      "maxDrawdown": -0.15305291723202166,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5691725658303911
+    },
+    {
+      "symbol": "USDC",
+      "entryPrice": 0.99963,
+      "exitPrice": 1.0011,
+      "fwdReturn": 0.0014705441013175698,
+      "maxReturn": 0.0017306403369246714,
+      "maxDrawdown": -0.000010003701369572254,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 5,
+      "btcCorr": 0.047029553661810296
+    },
+    {
+      "symbol": "ONG",
+      "entryPrice": 0.07565,
+      "exitPrice": 0.0625,
+      "fwdReturn": -0.17382683410442823,
+      "maxReturn": 0.07032385988103114,
+      "maxDrawdown": -0.17382683410442823,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.10132634842593523
+    },
+    {
+      "symbol": "HOT",
+      "entryPrice": 0.000452,
+      "exitPrice": 0.000381,
+      "fwdReturn": -0.1570796460176991,
+      "maxReturn": 0.039823008849557535,
+      "maxDrawdown": -0.16592920353982296,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.7299835111649011
+    },
+    {
+      "symbol": "ZIL",
+      "entryPrice": 0.00419,
+      "exitPrice": 0.00391,
+      "fwdReturn": -0.06682577565632455,
+      "maxReturn": 0.1336515513126491,
+      "maxDrawdown": -0.09546539379474944,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.7468748854719958
+    },
+    {
+      "symbol": "ZRX",
+      "entryPrice": 0.1165,
+      "exitPrice": 0.1035,
+      "fwdReturn": -0.11158798283261812,
+      "maxReturn": 0.1090128755364807,
+      "maxDrawdown": -0.12360515021459235,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.7223986479815266
+    },
+    {
+      "symbol": "FET",
+      "entryPrice": 0.212,
+      "exitPrice": 0.2503,
+      "fwdReturn": 0.1806603773584907,
+      "maxReturn": 0.23537735849056618,
+      "maxDrawdown": -0.12877358490566035,
+      "metCount": 2,
+      "metLabels": [
+        "地量横盘",
+        "长下影"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.6042246236852807
+    },
+    {
+      "symbol": "BAT",
+      "entryPrice": 0.1055,
+      "exitPrice": 0.097,
+      "fwdReturn": -0.08056872037914686,
+      "maxReturn": 0.09099526066350709,
+      "maxDrawdown": -0.11563981042654031,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.501707159741379
+    },
+    {
+      "symbol": "ZEC",
+      "entryPrice": 355.09,
+      "exitPrice": 568.77,
+      "fwdReturn": 0.6017629333408432,
+      "maxReturn": 0.9431693373510942,
+      "maxDrawdown": -0.10445239235123484,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.46711971298208266
+    },
+    {
+      "symbol": "IOST",
+      "entryPrice": 0.001101,
+      "exitPrice": 0.001032,
+      "fwdReturn": -0.06267029972752049,
+      "maxReturn": 0.1580381471389647,
+      "maxDrawdown": -0.06993642143505907,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.6414804540810107
+    },
+    {
+      "symbol": "CELR",
+      "entryPrice": 0.002921,
+      "exitPrice": 0.002437,
+      "fwdReturn": -0.16569667921944542,
+      "maxReturn": 0.09928106812735361,
+      "maxDrawdown": -0.16946251283806907,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.5679175602633113
+    },
+    {
+      "symbol": "DASH",
+      "entryPrice": 36.27,
+      "exitPrice": 43.55,
+      "fwdReturn": 0.200716845878136,
+      "maxReturn": 0.6015991177281499,
+      "maxDrawdown": -0.07251171767300806,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.4715679752751466
+    },
+    {
+      "symbol": "THETA",
+      "entryPrice": 0.215,
+      "exitPrice": 0.19,
+      "fwdReturn": -0.11627906976744183,
+      "maxReturn": 0.20930232558139542,
+      "maxDrawdown": -0.13488372093023254,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 1,
+      "btcCorr": 0.5772939112546762
+    },
+    {
+      "symbol": "ENJ",
+      "entryPrice": 0.06012,
+      "exitPrice": 0.03913,
+      "fwdReturn": -0.3491350632069195,
+      "maxReturn": 0.04973386560212907,
+      "maxDrawdown": -0.353459747172322,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": -0.1732747228725845
+    },
+    {
+      "symbol": "ATOM",
+      "entryPrice": 2,
+      "exitPrice": 2.218,
+      "fwdReturn": 0.10899999999999999,
+      "maxReturn": 0.14900000000000002,
+      "maxDrawdown": -0.08099999999999996,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 1,
+      "btcCorr": 0.6198817515650238
+    },
+    {
+      "symbol": "TFUEL",
+      "entryPrice": 0.01198,
+      "exitPrice": 0.01051,
+      "fwdReturn": -0.1227045075125208,
+      "maxReturn": 0.04173622704507517,
+      "maxDrawdown": -0.12854757929883137,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5833874386049024
+    },
+    {
+      "symbol": "ONE",
+      "entryPrice": 0.00229,
+      "exitPrice": 0.00188,
+      "fwdReturn": -0.17903930131004367,
+      "maxReturn": 0.1746724890829695,
+      "maxDrawdown": -0.18777292576419208,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.4072012739777613
+    },
+    {
+      "symbol": "ALGO",
+      "entryPrice": 0.12,
+      "exitPrice": 0.1086,
+      "fwdReturn": -0.09499999999999995,
+      "maxReturn": 0.14250000000000004,
+      "maxDrawdown": -0.125,
+      "metCount": 3,
+      "metLabels": [
+        "底背离",
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 5,
+      "btcCorr": 0.25547827138800294
+    },
+    {
+      "symbol": "DUSK",
+      "entryPrice": 0.1286,
+      "exitPrice": 0.131,
+      "fwdReturn": 0.018662519440124523,
+      "maxReturn": 0.2900466562986003,
+      "maxDrawdown": -0.08786936236391907,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.022181108238772212
+    },
+    {
+      "symbol": "ANKR",
+      "entryPrice": 0.00515,
+      "exitPrice": 0.00465,
+      "fwdReturn": -0.09708737864077678,
+      "maxReturn": 0.12233009708737871,
+      "maxDrawdown": -0.13398058252427178,
+      "metCount": 3,
+      "metLabels": [
+        "地量横盘",
+        "长下影",
+        "独立走势"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.2992878843740274
+    },
+    {
+      "symbol": "WIN",
+      "entryPrice": 0.00002049,
+      "exitPrice": 0.00001996,
+      "fwdReturn": -0.025866276232308444,
+      "maxReturn": 0.15178135675939494,
+      "maxDrawdown": -0.08199121522693985,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5462915010895968
+    },
+    {
+      "symbol": "MTL",
+      "entryPrice": 0.303,
+      "exitPrice": 0.289,
+      "fwdReturn": -0.04620462046204625,
+      "maxReturn": 0.23762376237623767,
+      "maxDrawdown": -0.05610561056105616,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.6107504051623619
+    },
+    {
+      "symbol": "CVC",
+      "entryPrice": 0.0331,
+      "exitPrice": 0.02896,
+      "fwdReturn": -0.1250755287009063,
+      "maxReturn": 0.15619335347432028,
+      "maxDrawdown": -0.12900302114803613,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.6489150109995796
+    },
+    {
+      "symbol": "CHZ",
+      "entryPrice": 0.04968,
+      "exitPrice": 0.03611,
+      "fwdReturn": -0.2731481481481481,
+      "maxReturn": 0.033816425120772965,
+      "maxDrawdown": -0.3019323671497584,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.5013158185524332
+    },
+    {
+      "symbol": "BAND",
+      "entryPrice": 0.229,
+      "exitPrice": 0.198,
+      "fwdReturn": -0.1353711790393013,
+      "maxReturn": 0.1135371179039301,
+      "maxDrawdown": -0.13973799126637554,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.6586248416545267
+    },
+    {
+      "symbol": "XTZ",
+      "entryPrice": 0.3706,
+      "exitPrice": 0.3322,
+      "fwdReturn": -0.10361575822989744,
+      "maxReturn": 0.08715596330275228,
+      "maxDrawdown": -0.11926605504587146,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.7779202101103785
+    },
+    {
+      "symbol": "RVN",
+      "entryPrice": 0.00604,
+      "exitPrice": 0.00521,
+      "fwdReturn": -0.13741721854304637,
+      "maxReturn": 0.07119205298013243,
+      "maxDrawdown": -0.14072847682119205,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6924808127027566
+    },
+    {
+      "symbol": "HBAR",
+      "entryPrice": 0.09231,
+      "exitPrice": 0.08657,
+      "fwdReturn": -0.062181778788863704,
+      "maxReturn": 0.07951467879969666,
+      "maxDrawdown": -0.07485646192178529,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 9,
+      "btcCorr": 0.7329628549577207
+    },
+    {
+      "symbol": "STX",
+      "entryPrice": 0.2315,
+      "exitPrice": 0.2423,
+      "fwdReturn": 0.04665226781857441,
+      "maxReturn": 0.6069114470842332,
+      "maxDrawdown": -0.06781857451403896,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.7536238815612243
+    },
+    {
+      "symbol": "KAVA",
+      "entryPrice": 0.06259,
+      "exitPrice": 0.0568,
+      "fwdReturn": -0.09250679022208025,
+      "maxReturn": 0.1006550567183256,
+      "maxDrawdown": -0.1025722958939129,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.6476535706589829
+    },
+    {
+      "symbol": "ARPA",
+      "entryPrice": 0.00997,
+      "exitPrice": 0.01061,
+      "fwdReturn": 0.0641925777331996,
+      "maxReturn": 0.2778335005015045,
+      "maxDrawdown": -0.023069207622868536,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5532850575213468
+    },
+    {
+      "symbol": "IOTX",
+      "entryPrice": 0.00477,
+      "exitPrice": 0.00417,
+      "fwdReturn": -0.12578616352201255,
+      "maxReturn": 0.15303983228511525,
+      "maxDrawdown": -0.13836477987421383,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.6061152614919837
+    },
+    {
+      "symbol": "RLC",
+      "entryPrice": 0.46,
+      "exitPrice": 0.4417,
+      "fwdReturn": -0.039782608695652255,
+      "maxReturn": 0.15,
+      "maxDrawdown": -0.1108695652173914,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.4712845347666267
+    },
+    {
+      "symbol": "BCH",
+      "entryPrice": 454.9,
+      "exitPrice": 343.4,
+      "fwdReturn": -0.24510881512420313,
+      "maxReturn": 0.07562101560782597,
+      "maxDrawdown": -0.2668718399648274,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.664953486722772
+    },
+    {
+      "symbol": "FTT",
+      "entryPrice": 0.2995,
+      "exitPrice": 0.3181,
+      "fwdReturn": 0.06210350584307181,
+      "maxReturn": 0.43238731218697835,
+      "maxDrawdown": -0.06811352253756252,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 9,
+      "btcCorr": 0.579109634538059
+    },
+    {
+      "symbol": "EUR",
+      "entryPrice": 1.1701,
+      "exitPrice": 1.1651,
+      "fwdReturn": -0.004273139047944529,
+      "maxReturn": 0.007862575848218185,
+      "maxDrawdown": -0.009828219810272494,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.6182270328398494
+    },
+    {
+      "symbol": "OGN",
+      "entryPrice": 0.02338,
+      "exitPrice": 0.02142,
+      "fwdReturn": -0.08383233532934131,
+      "maxReturn": 0.08041060735671512,
+      "maxDrawdown": -0.11077844311377254,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.6072437630528403
+    },
+    {
+      "symbol": "LSK",
+      "entryPrice": 0.129,
+      "exitPrice": 0.115,
+      "fwdReturn": -0.10852713178294572,
+      "maxReturn": 0.11627906976744175,
+      "maxDrawdown": -0.11627906976744186,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 0,
+      "btcCorr": 0.7844395441123464
+    },
+    {
+      "symbol": "BNT",
+      "entryPrice": 0.325,
+      "exitPrice": 0.3349,
+      "fwdReturn": 0.030461538461538352,
+      "maxReturn": 0.09230769230769222,
+      "maxDrawdown": -0.07076923076923083,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.8869562859141039
+    },
+    {
+      "symbol": "MBL",
+      "entryPrice": 0.000959,
+      "exitPrice": 0.000896,
+      "fwdReturn": -0.06569343065693432,
+      "maxReturn": 0.6631908237747655,
+      "maxDrawdown": -0.0771637122002085,
+      "metCount": 2,
+      "metLabels": [
+        "地量横盘",
+        "长下影"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.634621656322089
+    },
+    {
+      "symbol": "COTI",
+      "entryPrice": 0.01419,
+      "exitPrice": 0.01223,
+      "fwdReturn": -0.13812544045102185,
+      "maxReturn": 0.11768851303735023,
+      "maxDrawdown": -0.1550387596899224,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.6084076521347281
+    },
+    {
+      "symbol": "CTSI",
+      "entryPrice": 0.03349,
+      "exitPrice": 0.02868,
+      "fwdReturn": -0.14362496267542546,
+      "maxReturn": 0.11854284861152588,
+      "maxDrawdown": -0.1454165422514183,
+      "metCount": 3,
+      "metLabels": [
+        "底背离",
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": -0.2062174394901664
+    },
+    {
+      "symbol": "HIVE",
+      "entryPrice": 0.0624,
+      "exitPrice": 0.061,
+      "fwdReturn": -0.02243589743589741,
+      "maxReturn": 0.5833333333333334,
+      "maxDrawdown": -0.0881410256410256,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.5640832220783933
+    },
+    {
+      "symbol": "CHR",
+      "entryPrice": 0.02179,
+      "exitPrice": 0.02046,
+      "fwdReturn": -0.06103717301514462,
+      "maxReturn": 0.34970169802661766,
+      "maxDrawdown": -0.07618173474070683,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.3936007561335726
+    },
+    {
+      "symbol": "KNC",
+      "entryPrice": 0.1477,
+      "exitPrice": 0.1451,
+      "fwdReturn": -0.017603249830737924,
+      "maxReturn": 0.3540961408259987,
+      "maxDrawdown": -0.07921462423832085,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6268277454329438
+    },
+    {
+      "symbol": "COMP",
+      "entryPrice": 22.45,
+      "exitPrice": 19.04,
+      "fwdReturn": -0.15189309576837418,
+      "maxReturn": 0.24721603563474392,
+      "maxDrawdown": -0.16481069042316257,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.39552650801048705
+    },
+    {
+      "symbol": "SC",
+      "entryPrice": 0.000958,
+      "exitPrice": 0.000915,
+      "fwdReturn": -0.0448851774530271,
+      "maxReturn": 0.105427974947808,
+      "maxDrawdown": -0.06263048016701456,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.7611333058059846
+    },
+    {
+      "symbol": "ZEN",
+      "entryPrice": 6.114,
+      "exitPrice": 6.028,
+      "fwdReturn": -0.014066077854105382,
+      "maxReturn": 0.3377494275433432,
+      "maxDrawdown": -0.09649983644095517,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.7022681238943539
+    },
+    {
+      "symbol": "SNX",
+      "entryPrice": 0.323,
+      "exitPrice": 0.316,
+      "fwdReturn": -0.021671826625387015,
+      "maxReturn": 0.16099071207430338,
+      "maxDrawdown": -0.09907120743034065,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.7009356058943736
+    },
+    {
+      "symbol": "VTHO",
+      "entryPrice": 0.000587,
+      "exitPrice": 0.000499,
+      "fwdReturn": -0.1499148211243611,
+      "maxReturn": 0.11073253833049415,
+      "maxDrawdown": -0.15502555366269155,
+      "metCount": 2,
+      "metLabels": [
+        "地量横盘",
+        "长下影"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.7470876103080406
+    },
+    {
+      "symbol": "DGB",
+      "entryPrice": 0.00393,
+      "exitPrice": 0.00356,
+      "fwdReturn": -0.09414758269720115,
+      "maxReturn": 0.08905852417302788,
+      "maxDrawdown": -0.1272264631043258,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.6653550795631455
+    },
+    {
+      "symbol": "DCR",
+      "entryPrice": 19.84,
+      "exitPrice": 16.19,
+      "fwdReturn": -0.18397177419354832,
+      "maxReturn": 0.08165322580645167,
+      "maxDrawdown": -0.19002016129032256,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.5625242034449766
+    },
+    {
+      "symbol": "STORJ",
+      "entryPrice": 0.1023,
+      "exitPrice": 0.1033,
+      "fwdReturn": 0.009775171065493655,
+      "maxReturn": 0.5610948191593353,
+      "maxDrawdown": -0.07233626588465301,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.570768624284005
+    },
+    {
+      "symbol": "MANA",
+      "entryPrice": 0.0948,
+      "exitPrice": 0.0854,
+      "fwdReturn": -0.09915611814345983,
+      "maxReturn": 0.08227848101265825,
+      "maxDrawdown": -0.12341772151898737,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5644355795202888
+    },
+    {
+      "symbol": "YFI",
+      "entryPrice": 2763,
+      "exitPrice": 2451,
+      "fwdReturn": -0.11292073832790445,
+      "maxReturn": 0.04958378574013753,
+      "maxDrawdown": -0.13608396670285922,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.7105474735221353
+    },
+    {
+      "symbol": "JST",
+      "entryPrice": 0.08102,
+      "exitPrice": 0.09365,
+      "fwdReturn": 0.15588743520118492,
+      "maxReturn": 0.1661318193038756,
+      "maxDrawdown": -0.05085164156998271,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 7,
+      "btcCorr": -0.24067138012551517
+    },
+    {
+      "symbol": "CRV",
+      "entryPrice": 0.2299,
+      "exitPrice": 0.2188,
+      "fwdReturn": -0.04828186167899086,
+      "maxReturn": 0.2749021313614617,
+      "maxDrawdown": -0.06307090039147449,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.7649088775931043
+    },
+    {
+      "symbol": "SAND",
+      "entryPrice": 0.0809,
+      "exitPrice": 0.07022,
+      "fwdReturn": -0.13201483312731763,
+      "maxReturn": 0.05315203955500616,
+      "maxDrawdown": -0.16402966625463541,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.6069211242604021
+    },
+    {
+      "symbol": "NMR",
+      "entryPrice": 9.07,
+      "exitPrice": 8.28,
+      "fwdReturn": -0.08710033076074983,
+      "maxReturn": 0.1686879823594266,
+      "maxDrawdown": -0.10694597574421176,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 7,
+      "btcCorr": 0.2575001814246829
+    },
+    {
+      "symbol": "LUNA",
+      "entryPrice": 0.0655,
+      "exitPrice": 0.0635,
+      "fwdReturn": -0.030534351145038195,
+      "maxReturn": 0.23664122137404578,
+      "maxDrawdown": -0.08091603053435123,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.546747127213768
+    },
+    {
+      "symbol": "RSR",
+      "entryPrice": 0.001926,
+      "exitPrice": 0.001613,
+      "fwdReturn": -0.16251298026998956,
+      "maxReturn": 0.15732087227414335,
+      "maxDrawdown": -0.16614745586708202,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 1,
+      "btcCorr": 0.4612334037339926
+    },
+    {
+      "symbol": "PAXG",
+      "entryPrice": 4673.25,
+      "exitPrice": 4520.62,
+      "fwdReturn": -0.03266035414326221,
+      "maxReturn": 0.019098058096613704,
+      "maxDrawdown": -0.04563205477986412,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5980314570586627
+    },
+    {
+      "symbol": "TRB",
+      "entryPrice": 18.66,
+      "exitPrice": 17.32,
+      "fwdReturn": -0.07181136120042872,
+      "maxReturn": 0.18810289389067533,
+      "maxDrawdown": -0.12325830653804934,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.2194478829290497
+    },
+    {
+      "symbol": "SUSHI",
+      "entryPrice": 0.2227,
+      "exitPrice": 0.2011,
+      "fwdReturn": -0.09699146834306245,
+      "maxReturn": 0.17153120790300858,
+      "maxDrawdown": -0.11360574764256855,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.6280364213989625
+    },
+    {
+      "symbol": "KSM",
+      "entryPrice": 4.82,
+      "exitPrice": 4.64,
+      "fwdReturn": -0.03734439834024909,
+      "maxReturn": 0.5975103734439834,
+      "maxDrawdown": -0.04979253112033199,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.5972000252104408
+    },
+    {
+      "symbol": "EGLD",
+      "entryPrice": 4.44,
+      "exitPrice": 3.76,
+      "fwdReturn": -0.15315315315315328,
+      "maxReturn": 0.1148648648648648,
+      "maxDrawdown": -0.15315315315315328,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.7191665901964045
+    },
+    {
+      "symbol": "DIA",
+      "entryPrice": 0.1918,
+      "exitPrice": 0.173,
+      "fwdReturn": -0.09801876955161633,
+      "maxReturn": 0.23670490093847757,
+      "maxDrawdown": -0.10427528675703852,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.2965989552432827
+    },
+    {
+      "symbol": "RUNE",
+      "entryPrice": 0.51,
+      "exitPrice": 0.449,
+      "fwdReturn": -0.1196078431372549,
+      "maxReturn": 0.25098039215686274,
+      "maxDrawdown": -0.19803921568627458,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.7437681818486181
+    },
+    {
+      "symbol": "UMA",
+      "entryPrice": 0.483,
+      "exitPrice": 0.446,
+      "fwdReturn": -0.07660455486542439,
+      "maxReturn": 0.2525879917184265,
+      "maxDrawdown": -0.12215320910973085,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 1,
+      "btcCorr": 0.6977270679197634
+    },
+    {
+      "symbol": "BEL",
+      "entryPrice": 0.1112,
+      "exitPrice": 0.1,
+      "fwdReturn": -0.10071942446043156,
+      "maxReturn": 0.1636690647482014,
+      "maxDrawdown": -0.10701438848920858,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.4409012051094827
+    },
+    {
+      "symbol": "UNI",
+      "entryPrice": 3.283,
+      "exitPrice": 3.251,
+      "fwdReturn": -0.00974718245507159,
+      "maxReturn": 0.2701797136765154,
+      "maxDrawdown": -0.05421870240633565,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 9,
+      "btcCorr": 0.7554851978656115
+    },
+    {
+      "symbol": "SUN",
+      "entryPrice": 0.01832,
+      "exitPrice": 0.02032,
+      "fwdReturn": 0.109170305676856,
+      "maxReturn": 0.13100436681222705,
+      "maxDrawdown": -0.008187772925764237,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.3448749733620166
+    },
+    {
+      "symbol": "XVS",
+      "entryPrice": 2.67,
+      "exitPrice": 2.74,
+      "fwdReturn": 0.02621722846441958,
+      "maxReturn": 0.08988764044943828,
+      "maxDrawdown": -0.07116104868913856,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5339301510556274
+    },
+    {
+      "symbol": "AAVE",
+      "entryPrice": 96.53,
+      "exitPrice": 85.8,
+      "fwdReturn": -0.11115715321661664,
+      "maxReturn": 0.07230912669636387,
+      "maxDrawdown": -0.14482544286750237,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 9,
+      "btcCorr": 0.7183785040187183
+    },
+    {
+      "symbol": "NEAR",
+      "entryPrice": 1.394,
+      "exitPrice": 2.553,
+      "fwdReturn": 0.8314203730272598,
+      "maxReturn": 1.1362984218077479,
+      "maxDrawdown": -0.106886657101865,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.6169117448030589
+    },
+    {
+      "symbol": "FIL",
+      "entryPrice": 0.943,
+      "exitPrice": 1.009,
+      "fwdReturn": 0.06998939554612932,
+      "maxReturn": 0.4040296924708379,
+      "maxDrawdown": -0.07529162248144215,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.6798088075577299
+    },
+    {
+      "symbol": "INJ",
+      "entryPrice": 3.74,
+      "exitPrice": 5.678,
+      "fwdReturn": 0.5181818181818181,
+      "maxReturn": 0.6336898395721925,
+      "maxDrawdown": -0.09518716577540115,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.6331634176927582
+    },
+    {
+      "symbol": "AUDIO",
+      "entryPrice": 0.02042,
+      "exitPrice": 0.01944,
+      "fwdReturn": -0.04799216454456424,
+      "maxReturn": 0.17776689520078343,
+      "maxDrawdown": -0.08374142997061702,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.2559389368384456
+    },
+    {
+      "symbol": "CTK",
+      "entryPrice": 0.1821,
+      "exitPrice": 0.1605,
+      "fwdReturn": -0.11861614497528834,
+      "maxReturn": 0.1301482701812191,
+      "maxDrawdown": -0.14717188358045039,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.4080086502578703
+    },
+    {
+      "symbol": "AXS",
+      "entryPrice": 1.42,
+      "exitPrice": 1.148,
+      "fwdReturn": -0.1915492957746479,
+      "maxReturn": 0.10422535211267615,
+      "maxDrawdown": -0.22816901408450693,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.1614599149281508
+    },
+    {
+      "symbol": "STRAX",
+      "entryPrice": 0.01342,
+      "exitPrice": 0.01203,
+      "fwdReturn": -0.10357675111773465,
+      "maxReturn": 0.08494783904619974,
+      "maxDrawdown": -0.11400894187779435,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.7970849242386172
+    },
+    {
+      "symbol": "ROSE",
+      "entryPrice": 0.01011,
+      "exitPrice": 0.00979,
+      "fwdReturn": -0.03165182987141436,
+      "maxReturn": 0.2116716122650842,
+      "maxDrawdown": -0.08803165182987127,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.5272184502724875
+    },
+    {
+      "symbol": "AVA",
+      "entryPrice": 0.2578,
+      "exitPrice": 0.2267,
+      "fwdReturn": -0.12063615205585712,
+      "maxReturn": 0.1652443754848721,
+      "maxDrawdown": -0.12102404965089208,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.33196565608835005
+    },
+    {
+      "symbol": "SKL",
+      "entryPrice": 0.00727,
+      "exitPrice": 0.00597,
+      "fwdReturn": -0.17881705639614864,
+      "maxReturn": 0.060522696011004046,
+      "maxDrawdown": -0.1966987620357635,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5463373590663462
+    },
+    {
+      "symbol": "GRT",
+      "entryPrice": 0.02505,
+      "exitPrice": 0.02811,
+      "fwdReturn": 0.1221556886227545,
+      "maxReturn": 0.21277445109780446,
+      "maxDrawdown": -0.04630738522954083,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.7583318348904774
+    },
+    {
+      "symbol": "JUV",
+      "entryPrice": 0.539,
+      "exitPrice": 0.411,
+      "fwdReturn": -0.23747680890538042,
+      "maxReturn": 0.003710575139146571,
+      "maxDrawdown": -0.24675324675324675,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.3693024904305335
+    },
+    {
+      "symbol": "PSG",
+      "entryPrice": 0.81,
+      "exitPrice": 1.045,
+      "fwdReturn": 0.2901234567901233,
+      "maxReturn": 0.7950617283950615,
+      "maxDrawdown": -0.10370370370370378,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.35363226037421663
+    },
+    {
+      "symbol": "1INCH",
+      "entryPrice": 0.0968,
+      "exitPrice": 0.0891,
+      "fwdReturn": -0.07954545454545453,
+      "maxReturn": 0.08574380165289258,
+      "maxDrawdown": -0.09297520661157019,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.8487700718871047
+    },
+    {
+      "symbol": "OG",
+      "entryPrice": 3.171,
+      "exitPrice": 2.939,
+      "fwdReturn": -0.07316304005045719,
+      "maxReturn": 0.25701671397035647,
+      "maxDrawdown": -0.09113844213181953,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.11551416908186371
+    },
+    {
+      "symbol": "ATM",
+      "entryPrice": 1.159,
+      "exitPrice": 0.993,
+      "fwdReturn": -0.14322691975841245,
+      "maxReturn": 0.07075064710957728,
+      "maxDrawdown": -0.1578947368421053,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 5,
+      "btcCorr": 0.22865290356972895
+    },
+    {
+      "symbol": "ASR",
+      "entryPrice": 1.3,
+      "exitPrice": 1.023,
+      "fwdReturn": -0.21307692307692316,
+      "maxReturn": 0.06153846153846142,
+      "maxDrawdown": -0.22461538461538463,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5539759803278319
+    },
+    {
+      "symbol": "CELO",
+      "entryPrice": 0.09325,
+      "exitPrice": 0.07577,
+      "fwdReturn": -0.1874530831099195,
+      "maxReturn": 0.12203753351206435,
+      "maxDrawdown": -0.19034852546916892,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.5868890010118253
+    },
+    {
+      "symbol": "RIF",
+      "entryPrice": 0.0449,
+      "exitPrice": 0.057,
+      "fwdReturn": 0.26948775055679286,
+      "maxReturn": 0.8596881959910914,
+      "maxDrawdown": 0.002227171492204809,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.32940193682761076
+    },
+    {
+      "symbol": "CKB",
+      "entryPrice": 0.001622,
+      "exitPrice": 0.001359,
+      "fwdReturn": -0.1621454993834772,
+      "maxReturn": 0.10850801479654744,
+      "maxDrawdown": -0.1652281134401973,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.42234847210884224
+    },
+    {
+      "symbol": "TWT",
+      "entryPrice": 0.4437,
+      "exitPrice": 0.4502,
+      "fwdReturn": 0.014649537976109997,
+      "maxReturn": 0.2084741942754114,
+      "maxDrawdown": -0.05882352941176461,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.1446456279403145
+    },
+    {
+      "symbol": "SFP",
+      "entryPrice": 0.3519,
+      "exitPrice": 0.2743,
+      "fwdReturn": -0.22051719238420006,
+      "maxReturn": 0.09406081273088951,
+      "maxDrawdown": -0.23159988633134418,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.4731637079618026
+    },
+    {
+      "symbol": "DODO",
+      "entryPrice": 0.01975,
+      "exitPrice": 0.01798,
+      "fwdReturn": -0.089620253164557,
+      "maxReturn": 0.30835443037974675,
+      "maxDrawdown": -0.18126582278481013,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.2929419935644807
+    },
+    {
+      "symbol": "CAKE",
+      "entryPrice": 1.53,
+      "exitPrice": 1.417,
+      "fwdReturn": -0.07385620915032678,
+      "maxReturn": 0.07712418300653587,
+      "maxDrawdown": -0.10915032679738565,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.7452799639066501
+    },
+    {
+      "symbol": "ACM",
+      "entryPrice": 0.445,
+      "exitPrice": 0.371,
+      "fwdReturn": -0.1662921348314607,
+      "maxReturn": 0.07415730337078645,
+      "maxDrawdown": -0.1977528089887641,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.3554669378276065
+    },
+    {
+      "symbol": "ALICE",
+      "entryPrice": 0.1572,
+      "exitPrice": 0.1243,
+      "fwdReturn": -0.20928753180661586,
+      "maxReturn": 0.05661577608142488,
+      "maxDrawdown": -0.23600508905852421,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.10338700097475027
+    },
+    {
+      "symbol": "SUPER",
+      "entryPrice": 0.1283,
+      "exitPrice": 0.1161,
+      "fwdReturn": -0.09508963367108342,
+      "maxReturn": 0.1418550272798129,
+      "maxDrawdown": -0.1691348402182385,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.3463410089900997
+    },
+    {
+      "symbol": "CFX",
+      "entryPrice": 0.0615,
+      "exitPrice": 0.05379,
+      "fwdReturn": -0.1253658536585366,
+      "maxReturn": 0.28130081300813004,
+      "maxDrawdown": -0.131869918699187,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.4924448029858298
+    },
+    {
+      "symbol": "TKO",
+      "entryPrice": 0.0641,
+      "exitPrice": 0.0514,
+      "fwdReturn": -0.19812792511700472,
+      "maxReturn": 0.04524180967238689,
+      "maxDrawdown": -0.24024960998439943,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 8,
+      "btcCorr": 0.6633064761696429
+    },
+    {
+      "symbol": "PUNDIX",
+      "entryPrice": 0.1522,
+      "exitPrice": 0.1376,
+      "fwdReturn": -0.0959264126149803,
+      "maxReturn": 0.08409986859395537,
+      "maxDrawdown": -0.10906701708278584,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.7523248784419508
+    },
+    {
+      "symbol": "TLM",
+      "entryPrice": 0.001878,
+      "exitPrice": 0.001365,
+      "fwdReturn": -0.2731629392971246,
+      "maxReturn": 0.1400425985090523,
+      "maxDrawdown": -0.2784877529286474,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.5235087254001018
+    },
+    {
+      "symbol": "BAR",
+      "entryPrice": 0.457,
+      "exitPrice": 0.367,
+      "fwdReturn": -0.1969365426695843,
+      "maxReturn": 0.2341356673960611,
+      "maxDrawdown": -0.20131291028446394,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.5002369781484846
+    },
+    {
+      "symbol": "SLP",
+      "entryPrice": 0.000715,
+      "exitPrice": 0.00061,
+      "fwdReturn": -0.14685314685314693,
+      "maxReturn": 0.18601398601398597,
+      "maxDrawdown": -0.15524475524475523,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5918737683725374
+    },
+    {
+      "symbol": "SHIB",
+      "entryPrice": 0.00000621,
+      "exitPrice": 0.00000553,
+      "fwdReturn": -0.10950080515297897,
+      "maxReturn": 0.07890499194847027,
+      "maxDrawdown": -0.11755233494363926,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.724659082036158
+    },
+    {
+      "symbol": "ICP",
+      "entryPrice": 2.445,
+      "exitPrice": 2.655,
+      "fwdReturn": 0.08588957055214723,
+      "maxReturn": 0.6736196319018405,
+      "maxDrawdown": -0.052760736196319026,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.7127237821728052
+    },
+    {
+      "symbol": "AR",
+      "entryPrice": 1.97,
+      "exitPrice": 2.08,
+      "fwdReturn": 0.0558375634517767,
+      "maxReturn": 0.42131979695431465,
+      "maxDrawdown": -0.09137055837563449,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 0,
+      "btcCorr": 0.44250972949711564
+    },
+    {
+      "symbol": "MASK",
+      "entryPrice": 0.564,
+      "exitPrice": 0.443,
+      "fwdReturn": -0.2145390070921985,
+      "maxReturn": 0.0017730496453900726,
+      "maxDrawdown": -0.22340425531914887,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 1,
+      "btcCorr": 0.3808761106015348
+    },
+    {
+      "symbol": "LPT",
+      "entryPrice": 2.179,
+      "exitPrice": 2.288,
+      "fwdReturn": 0.050022946305644786,
+      "maxReturn": 0.12574575493345574,
+      "maxDrawdown": -0.08444240477283145,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 8,
+      "btcCorr": 0.5511388677632666
+    },
+    {
+      "symbol": "XVG",
+      "entryPrice": 0.003422,
+      "exitPrice": 0.00324,
+      "fwdReturn": -0.0531852717708943,
+      "maxReturn": 0.2647574517825833,
+      "maxDrawdown": -0.11747516072472239,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.16853127216641747
+    },
+    {
+      "symbol": "GTC",
+      "entryPrice": 0.091,
+      "exitPrice": 0.093,
+      "fwdReturn": 0.021978021978021997,
+      "maxReturn": 1.3626373626373627,
+      "maxDrawdown": -0.043956043956043994,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 2,
+      "btcCorr": 0.08713366958960535
+    },
+    {
+      "symbol": "PHA",
+      "entryPrice": 0.0347,
+      "exitPrice": 0.0531,
+      "fwdReturn": 0.5302593659942363,
+      "maxReturn": 0.8011527377521613,
+      "maxDrawdown": -0.14697406340057637,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.44171556218197827
+    },
+    {
+      "symbol": "DEXE",
+      "entryPrice": 13.753,
+      "exitPrice": 16.341,
+      "fwdReturn": 0.18817712499091113,
+      "maxReturn": 0.3088053515596597,
+      "maxDrawdown": -0.2860466807242056,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 8,
+      "btcCorr": -0.22087184619413505
+    },
+    {
+      "symbol": "C98",
+      "entryPrice": 0.0213,
+      "exitPrice": 0.0206,
+      "fwdReturn": -0.032863849765258184,
+      "maxReturn": 0.1220657276995306,
+      "maxDrawdown": -0.15023474178403748,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5621827545170776
+    },
+    {
+      "symbol": "QNT",
+      "entryPrice": 70.78,
+      "exitPrice": 75.48,
+      "fwdReturn": 0.06640293868324389,
+      "maxReturn": 0.2009042102288782,
+      "maxDrawdown": -0.05764340209098613,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.45632779639740767
+    },
+    {
+      "symbol": "FLOW",
+      "entryPrice": 0.03924,
+      "exitPrice": 0.03353,
+      "fwdReturn": -0.14551478083588176,
+      "maxReturn": 0.18934760448521934,
+      "maxDrawdown": -0.16335372069317022,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5807646548661582
+    },
+    {
+      "symbol": "MINA",
+      "entryPrice": 0.0637,
+      "exitPrice": 0.0555,
+      "fwdReturn": -0.12872841444270022,
+      "maxReturn": 0.1365777080062794,
+      "maxDrawdown": -0.1428571428571429,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.4632241345938993
+    },
+    {
+      "symbol": "RAY",
+      "entryPrice": 0.751,
+      "exitPrice": 0.749,
+      "fwdReturn": -0.0026631158455392833,
+      "maxReturn": 0.19840213049267647,
+      "maxDrawdown": -0.09187749667110513,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.6709992606971957
+    },
+    {
+      "symbol": "QUICK",
+      "entryPrice": 0.0113,
+      "exitPrice": 0.00761,
+      "fwdReturn": -0.32654867256637166,
+      "maxReturn": 0.07256637168141605,
+      "maxDrawdown": -0.37345132743362824,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.7285815977629138
+    },
+    {
+      "symbol": "REQ",
+      "entryPrice": 0.0774,
+      "exitPrice": 0.0844,
+      "fwdReturn": 0.0904392764857882,
+      "maxReturn": 0.3385012919896641,
+      "maxDrawdown": -0.18475452196382422,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.02151749015269469
+    },
+    {
+      "symbol": "WAXP",
+      "entryPrice": 0.0069,
+      "exitPrice": 0.00613,
+      "fwdReturn": -0.11159420289855071,
+      "maxReturn": 0.06521739130434781,
+      "maxDrawdown": -0.12898550724637683,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.723225907356288
+    },
+    {
+      "symbol": "GNO",
+      "entryPrice": 126.3,
+      "exitPrice": 117.2,
+      "fwdReturn": -0.07205067300079172,
+      "maxReturn": 0.5631828978622329,
+      "maxDrawdown": -0.09738717339667456,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.7972215679577729
+    },
+    {
+      "symbol": "XEC",
+      "entryPrice": 0.00000713,
+      "exitPrice": 0.00000693,
+      "fwdReturn": -0.02805049088359055,
+      "maxReturn": 0.5357643758765778,
+      "maxDrawdown": -0.03786816269284712,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.7460294001524745
+    },
+    {
+      "symbol": "DYDX",
+      "entryPrice": 0.15907,
+      "exitPrice": 0.16682,
+      "fwdReturn": 0.04872068900484068,
+      "maxReturn": 0.3099893128811217,
+      "maxDrawdown": -0.180172251210159,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.34809723528241227
+    },
+    {
+      "symbol": "USDP",
+      "entryPrice": 0.9995,
+      "exitPrice": 1.0009,
+      "fwdReturn": 0.0014007003501749333,
+      "maxReturn": 0.0018009004502251363,
+      "maxDrawdown": -0.0005002501250625872,
+      "metCount": 3,
+      "metLabels": [
+        "底背离",
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 2,
+      "btcCorr": -0.18494797241991684
+    },
+    {
+      "symbol": "GALA",
+      "entryPrice": 0.0034,
+      "exitPrice": 0.00327,
+      "fwdReturn": -0.038235294117647034,
+      "maxReturn": 0.33529411764705885,
+      "maxDrawdown": -0.10294117647058813,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.45659649851251594
+    },
+    {
+      "symbol": "ILV",
+      "entryPrice": 4.97,
+      "exitPrice": 4.17,
+      "fwdReturn": -0.16096579476861164,
+      "maxReturn": 0.0865191146881289,
+      "maxDrawdown": -0.17303822937625743,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.38491647766019754
+    },
+    {
+      "symbol": "YGG",
+      "entryPrice": 0.04267,
+      "exitPrice": 0.03773,
+      "fwdReturn": -0.11577220529646122,
+      "maxReturn": 0.17037731427232244,
+      "maxDrawdown": -0.1806890086711976,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.42943441880736455
+    },
+    {
+      "symbol": "FIDA",
+      "entryPrice": 0.01712,
+      "exitPrice": 0.03232,
+      "fwdReturn": 0.8878504672897197,
+      "maxReturn": 1.8265186915887854,
+      "maxDrawdown": -0.07126168224299059,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": -0.18123419713064784
+    },
+    {
+      "symbol": "AGLD",
+      "entryPrice": 0.269,
+      "exitPrice": 0.226,
+      "fwdReturn": -0.15985130111524165,
+      "maxReturn": 0.033457249070631995,
+      "maxDrawdown": -0.171003717472119,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.5033553244142912
+    },
+    {
+      "symbol": "RAD",
+      "entryPrice": 0.247,
+      "exitPrice": 0.292,
+      "fwdReturn": 0.1821862348178137,
+      "maxReturn": 0.5465587044534413,
+      "maxDrawdown": -0.028340080971659944,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.3950153740512814
+    },
+    {
+      "symbol": "RARE",
+      "entryPrice": 0.0176,
+      "exitPrice": 0.0153,
+      "fwdReturn": -0.13068181818181826,
+      "maxReturn": 0.12500000000000003,
+      "maxDrawdown": -0.14204545454545456,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.39120956359317155
+    },
+    {
+      "symbol": "LAZIO",
+      "entryPrice": 0.665,
+      "exitPrice": 0.515,
+      "fwdReturn": -0.2255639097744361,
+      "maxReturn": 0.039097744360902124,
+      "maxDrawdown": -0.2691729323308271,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.6313534787591988
+    },
+    {
+      "symbol": "ADX",
+      "entryPrice": 0.0765,
+      "exitPrice": 0.0613,
+      "fwdReturn": -0.19869281045751633,
+      "maxReturn": 0.08235294117647059,
+      "maxDrawdown": -0.19869281045751633,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.12051720475839828
+    },
+    {
+      "symbol": "AUCTION",
+      "entryPrice": 4.88,
+      "exitPrice": 4.58,
+      "fwdReturn": -0.06147540983606554,
+      "maxReturn": 0.12704918032786888,
+      "maxDrawdown": -0.081967213114754,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6557796383192874
+    },
+    {
+      "symbol": "MOVR",
+      "entryPrice": 2.22,
+      "exitPrice": 1.867,
+      "fwdReturn": -0.15900900900900908,
+      "maxReturn": 0.3018018018018017,
+      "maxDrawdown": -0.1608108108108109,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 2,
+      "btcCorr": 0.28527731810926854
+    },
+    {
+      "symbol": "CITY",
+      "entryPrice": 0.666,
+      "exitPrice": 0.451,
+      "fwdReturn": -0.3228228228228228,
+      "maxReturn": 0.2012012012012012,
+      "maxDrawdown": -0.33333333333333337,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.17943833031919587
+    },
+    {
+      "symbol": "ENS",
+      "entryPrice": 6.2,
+      "exitPrice": 6.18,
+      "fwdReturn": -0.003225806451612978,
+      "maxReturn": 0.3161290322580645,
+      "maxDrawdown": -0.05967741935483872,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.8111360951409755
+    },
+    {
+      "symbol": "QI",
+      "entryPrice": 0.0017,
+      "exitPrice": 0.00154,
+      "fwdReturn": -0.09411764705882353,
+      "maxReturn": 0.4117647058823529,
+      "maxDrawdown": -0.1294117647058823,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 1,
+      "btcCorr": 0.3881420945610663
+    },
+    {
+      "symbol": "PORTO",
+      "entryPrice": 0.981,
+      "exitPrice": 0.708,
+      "fwdReturn": -0.27828746177370034,
+      "maxReturn": 0.014271151885830799,
+      "maxDrawdown": -0.2976554536187564,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.555302539811324
+    },
+    {
+      "symbol": "POWR",
+      "entryPrice": 0.0664,
+      "exitPrice": 0.0621,
+      "fwdReturn": -0.06475903614457829,
+      "maxReturn": 0.05873493975903615,
+      "maxDrawdown": -0.07078313253012053,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.613532450205813
+    },
+    {
+      "symbol": "JASMY",
+      "entryPrice": 0.00594,
+      "exitPrice": 0.00545,
+      "fwdReturn": -0.08249158249158249,
+      "maxReturn": 0.31818181818181823,
+      "maxDrawdown": -0.11279461279461273,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6016014897519392
+    },
+    {
+      "symbol": "AMP",
+      "entryPrice": 0.000919,
+      "exitPrice": 0.000788,
+      "fwdReturn": -0.14254624591947773,
+      "maxReturn": 0.18607181719260069,
+      "maxDrawdown": -0.1490750816104461,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.277843636706359
+    },
+    {
+      "symbol": "PYR",
+      "entryPrice": 0.287,
+      "exitPrice": 0.246,
+      "fwdReturn": -0.1428571428571428,
+      "maxReturn": 0.20209059233449478,
+      "maxDrawdown": -0.15679442508710797,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.4257864100869383
+    },
+    {
+      "symbol": "SANTOS",
+      "entryPrice": 1.279,
+      "exitPrice": 0.826,
+      "fwdReturn": -0.35418295543393274,
+      "maxReturn": 0.08131352619233784,
+      "maxDrawdown": -0.3596559812353401,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.14941018566555228
+    },
+    {
+      "symbol": "BICO",
+      "entryPrice": 0.03,
+      "exitPrice": 0.0249,
+      "fwdReturn": -0.17,
+      "maxReturn": 0.1233333333333334,
+      "maxDrawdown": -0.24666666666666667,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.45275087685637094
+    },
+    {
+      "symbol": "FLUX",
+      "entryPrice": 0.0717,
+      "exitPrice": 0.0754,
+      "fwdReturn": 0.05160390516039044,
+      "maxReturn": 0.23849372384937245,
+      "maxDrawdown": -0.11715481171548124,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 8,
+      "btcCorr": 0.21989048818805013
+    },
+    {
+      "symbol": "CVX",
+      "entryPrice": 1.787,
+      "exitPrice": 1.622,
+      "fwdReturn": -0.0923335198656966,
+      "maxReturn": 0.16508114157806375,
+      "maxDrawdown": -0.10352546166759924,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.8585781274982298
+    },
+    {
+      "symbol": "PEOPLE",
+      "entryPrice": 0.00788,
+      "exitPrice": 0.00661,
+      "fwdReturn": -0.16116751269035526,
+      "maxReturn": 0.1205583756345177,
+      "maxDrawdown": -0.21065989847715735,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.4788438610107958
+    },
+    {
+      "symbol": "SPELL",
+      "entryPrice": 0.000166,
+      "exitPrice": 0.0001525,
+      "fwdReturn": -0.0813253012048193,
+      "maxReturn": 0.2867469879518072,
+      "maxDrawdown": -0.09397590361445783,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 10,
+      "btcCorr": 0.6995483146416713
+    },
+    {
+      "symbol": "JOE",
+      "entryPrice": 0.0472,
+      "exitPrice": 0.0409,
+      "fwdReturn": -0.13347457627118645,
+      "maxReturn": 0.15889830508474576,
+      "maxDrawdown": -0.14194915254237284,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.48717677378695656
+    },
+    {
+      "symbol": "ACH",
+      "entryPrice": 0.00647,
+      "exitPrice": 0.00639,
+      "fwdReturn": -0.012364760432766648,
+      "maxReturn": 0.4142194744976816,
+      "maxDrawdown": -0.027820710973724957,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.38035723381838255
+    },
+    {
+      "symbol": "IMX",
+      "entryPrice": 0.1757,
+      "exitPrice": 0.1665,
+      "fwdReturn": -0.05236198064883316,
+      "maxReturn": 0.2151394422310757,
+      "maxDrawdown": -0.09618668184405235,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6998722311316329
+    },
+    {
+      "symbol": "GLMR",
+      "entryPrice": 0.0177,
+      "exitPrice": 0.0127,
+      "fwdReturn": -0.28248587570621475,
+      "maxReturn": 0.016949152542372777,
+      "maxDrawdown": -0.288135593220339,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.35485974470164267
+    },
+    {
+      "symbol": "SCRT",
+      "entryPrice": 0.1145,
+      "exitPrice": 0.0807,
+      "fwdReturn": -0.2951965065502184,
+      "maxReturn": 0.04803493449781651,
+      "maxDrawdown": -0.32139737991266376,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.5062149666628325
+    },
+    {
+      "symbol": "API3",
+      "entryPrice": 0.3459,
+      "exitPrice": 0.3236,
+      "fwdReturn": -0.06446949985544952,
+      "maxReturn": 0.23966464296039328,
+      "maxDrawdown": -0.09800520381613179,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.09082842810789458
+    },
+    {
+      "symbol": "BTTC",
+      "entryPrice": 3.2e-7,
+      "exitPrice": 3.2e-7,
+      "fwdReturn": 0,
+      "maxReturn": 0.09374999999999993,
+      "maxDrawdown": -0.03125000000000003,
+      "metCount": 1,
+      "metLabels": [
+        "地量横盘"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 0,
+      "btcCorr": 0.38213792474941005
+    },
+    {
+      "symbol": "XNO",
+      "entryPrice": 0.522,
+      "exitPrice": 0.439,
+      "fwdReturn": -0.15900383141762456,
+      "maxReturn": 0.005747126436781614,
+      "maxDrawdown": -0.2164750957854407,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.4444360504965833
+    },
+    {
+      "symbol": "WOO",
+      "entryPrice": 0.0202,
+      "exitPrice": 0.0171,
+      "fwdReturn": -0.1534653465346534,
+      "maxReturn": 0.04455445544554463,
+      "maxDrawdown": -0.2178217821782177,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6388511560549665
+    },
+    {
+      "symbol": "ALPINE",
+      "entryPrice": 0.466,
+      "exitPrice": 0.397,
+      "fwdReturn": -0.148068669527897,
+      "maxReturn": 0.13090128755364805,
+      "maxDrawdown": -0.15236051502145923,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.50575226601832
+    },
+    {
+      "symbol": "T",
+      "entryPrice": 0.00625,
+      "exitPrice": 0.00509,
+      "fwdReturn": -0.18560000000000007,
+      "maxReturn": 0.04159999999999997,
+      "maxDrawdown": -0.1920000000000001,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.787628491346086
+    },
+    {
+      "symbol": "ASTR",
+      "entryPrice": 0.008336,
+      "exitPrice": 0.007646,
+      "fwdReturn": -0.08277351247600764,
+      "maxReturn": 0.1755038387715932,
+      "maxDrawdown": -0.09488963531669867,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.684298317658909
+    },
+    {
+      "symbol": "GMT",
+      "entryPrice": 0.01183,
+      "exitPrice": 0.01066,
+      "fwdReturn": -0.09890109890109898,
+      "maxReturn": 0.2874049027895182,
+      "maxDrawdown": -0.15469146238377007,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.5531111225425869
+    },
+    {
+      "symbol": "APE",
+      "entryPrice": 0.1452,
+      "exitPrice": 0.1371,
+      "fwdReturn": -0.05578512396694212,
+      "maxReturn": 0.3202479338842976,
+      "maxDrawdown": -0.09848484848484854,
+      "metCount": 3,
+      "metLabels": [
+        "底背离",
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 2,
+      "btcCorr": 0.02299414610163177
+    },
+    {
+      "symbol": "STEEM",
+      "entryPrice": 0.05845,
+      "exitPrice": 0.05245,
+      "fwdReturn": -0.10265183917878537,
+      "maxReturn": 0.34046193327630453,
+      "maxDrawdown": -0.11531223267750218,
+      "metCount": 2,
+      "metLabels": [
+        "地量横盘",
+        "长下影"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.5377476643016682
+    },
+    {
+      "symbol": "NEXO",
+      "entryPrice": 0.919,
+      "exitPrice": 0.832,
+      "fwdReturn": -0.09466811751904251,
+      "maxReturn": 0.014145810663764974,
+      "maxDrawdown": -0.10554951033732327,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.8666415199744981
+    },
+    {
+      "symbol": "LDO",
+      "entryPrice": 0.4474,
+      "exitPrice": 0.3419,
+      "fwdReturn": -0.23580688421993748,
+      "maxReturn": 0.03866785873938306,
+      "maxDrawdown": -0.2729101475189987,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6118143596813702
+    },
+    {
+      "symbol": "OP",
+      "entryPrice": 0.1258,
+      "exitPrice": 0.1279,
+      "fwdReturn": 0.016693163751987428,
+      "maxReturn": 0.44594594594594605,
+      "maxDrawdown": -0.08187599364069945,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 9,
+      "btcCorr": 0.6803943114411403
+    },
+    {
+      "symbol": "STG",
+      "entryPrice": 0.2079,
+      "exitPrice": 0.1611,
+      "fwdReturn": -0.22510822510822515,
+      "maxReturn": 0.34102934102934096,
+      "maxDrawdown": -0.2443482443482444,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.25060995684750326
+    },
+    {
+      "symbol": "LUNC",
+      "entryPrice": 0.00006205,
+      "exitPrice": 0.00008982,
+      "fwdReturn": 0.4475423045930701,
+      "maxReturn": 0.9822723609991942,
+      "maxDrawdown": -0.07800161160354555,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.40715470820886845
+    },
+    {
+      "symbol": "GMX",
+      "entryPrice": 7.43,
+      "exitPrice": 6.45,
+      "fwdReturn": -0.13189771197846561,
+      "maxReturn": 0.05652759084791385,
+      "maxDrawdown": -0.15074024226110366,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.6548019050708591
+    },
+    {
+      "symbol": "POLYX",
+      "entryPrice": 0.0511,
+      "exitPrice": 0.055,
+      "fwdReturn": 0.07632093933463797,
+      "maxReturn": 0.3013698630136987,
+      "maxDrawdown": -0.08806262230919759,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.3948268433204439
+    },
+    {
+      "symbol": "APT",
+      "entryPrice": 0.983,
+      "exitPrice": 0.972,
+      "fwdReturn": -0.011190233977619542,
+      "maxReturn": 0.2604272634791456,
+      "maxDrawdown": -0.08850457782299082,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.5983944911046913
+    },
+    {
+      "symbol": "OSMO",
+      "entryPrice": 0.0329,
+      "exitPrice": 0.0621,
+      "fwdReturn": 0.8875379939209728,
+      "maxReturn": 2.908814589665653,
+      "maxDrawdown": -0.07902735562310025,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.7151159735955414
+    },
+    {
+      "symbol": "HFT",
+      "entryPrice": 0.0156,
+      "exitPrice": 0.0109,
+      "fwdReturn": -0.30128205128205127,
+      "maxReturn": 0.12820512820512833,
+      "maxDrawdown": -0.3076923076923076,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.013778241389452479
+    },
+    {
+      "symbol": "MAGIC",
+      "entryPrice": 0.0683,
+      "exitPrice": 0.0601,
+      "fwdReturn": -0.12005856515373352,
+      "maxReturn": 0.09077598828696921,
+      "maxDrawdown": -0.13762811127379207,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.5990882767166578
+    },
+    {
+      "symbol": "RPL",
+      "entryPrice": 1.97,
+      "exitPrice": 1.69,
+      "fwdReturn": -0.14213197969543148,
+      "maxReturn": 0.08121827411167509,
+      "maxDrawdown": -0.1725888324873097,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.7012939769378137
+    },
+    {
+      "symbol": "GNS",
+      "entryPrice": 0.705,
+      "exitPrice": 0.474,
+      "fwdReturn": -0.3276595744680851,
+      "maxReturn": 0.0028368794326241163,
+      "maxDrawdown": -0.36170212765957444,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.6441331492192356
+    },
+    {
+      "symbol": "SYN",
+      "entryPrice": 0.0541,
+      "exitPrice": 0.0429,
+      "fwdReturn": -0.20702402957486138,
+      "maxReturn": 0.12754158964879844,
+      "maxDrawdown": -0.2199630314232902,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.16460906021488372
+    },
+    {
+      "symbol": "SSV",
+      "entryPrice": 3.017,
+      "exitPrice": 2.549,
+      "fwdReturn": -0.15512098110706,
+      "maxReturn": 0.09313887968180316,
+      "maxDrawdown": -0.1958899569108385,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.4685979041706211
+    },
+    {
+      "symbol": "LQTY",
+      "entryPrice": 0.318,
+      "exitPrice": 0.246,
+      "fwdReturn": -0.22641509433962267,
+      "maxReturn": 0.09119496855345903,
+      "maxDrawdown": -0.23584905660377362,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.6959851851803521
+    },
+    {
+      "symbol": "USTC",
+      "entryPrice": 0.0059,
+      "exitPrice": 0.00637,
+      "fwdReturn": 0.07966101694915254,
+      "maxReturn": 0.4677966101694914,
+      "maxDrawdown": -0.0661016949152542,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.5814498835476866
+    },
+    {
+      "symbol": "GAS",
+      "entryPrice": 1.686,
+      "exitPrice": 1.498,
+      "fwdReturn": -0.11150652431791219,
+      "maxReturn": 0.058718861209964404,
+      "maxDrawdown": -0.11625148279952548,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.4169818181996995
+    },
+    {
+      "symbol": "GLM",
+      "entryPrice": 0.1368,
+      "exitPrice": 0.139,
+      "fwdReturn": 0.016081871345029294,
+      "maxReturn": 0.1359649122807018,
+      "maxDrawdown": -0.05409356725146212,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.6516618732934528
+    },
+    {
+      "symbol": "PROM",
+      "entryPrice": 2.368,
+      "exitPrice": 1.117,
+      "fwdReturn": -0.5282939189189189,
+      "maxReturn": 0.06418918918918926,
+      "maxDrawdown": -0.5603885135135135,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.038047926498435254
+    },
+    {
+      "symbol": "QKC",
+      "entryPrice": 0.003179,
+      "exitPrice": 0.002899,
+      "fwdReturn": -0.08807801195344443,
+      "maxReturn": 0.11041207927021082,
+      "maxDrawdown": -0.10128971374646109,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.6692923308841952
+    },
+    {
+      "symbol": "ID",
+      "entryPrice": 0.0329,
+      "exitPrice": 0.0295,
+      "fwdReturn": -0.10334346504559272,
+      "maxReturn": 0.11550151975683906,
+      "maxDrawdown": -0.1489361702127659,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.6178950017412385
+    },
+    {
+      "symbol": "ARB",
+      "entryPrice": 0.1295,
+      "exitPrice": 0.1088,
+      "fwdReturn": -0.15984555984555993,
+      "maxReturn": 0.15444015444015435,
+      "maxDrawdown": -0.20386100386100392,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.5944844708754157
+    },
+    {
+      "symbol": "WBTC",
+      "entryPrice": 78428.59,
+      "exitPrice": 75747.6,
+      "fwdReturn": -0.03418383525701521,
+      "maxReturn": 0.053669076544663144,
+      "maxDrawdown": -0.07799362451881378,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.9997082847719068
+    },
+    {
+      "symbol": "EDU",
+      "entryPrice": 0.046,
+      "exitPrice": 0.0462,
+      "fwdReturn": 0.004347826086956496,
+      "maxReturn": 0.25217391304347825,
+      "maxDrawdown": -0.09347826086956518,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.31703695074443905
+    },
+    {
+      "symbol": "SUI",
+      "entryPrice": 0.9456,
+      "exitPrice": 1.0007,
+      "fwdReturn": 0.05826988155668351,
+      "maxReturn": 0.5041243654822334,
+      "maxDrawdown": -0.06778764805414557,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.7955685170021038
+    },
+    {
+      "symbol": "PEPE",
+      "entryPrice": 0.0000039,
+      "exitPrice": 0.00000352,
+      "fwdReturn": -0.09743589743589737,
+      "maxReturn": 0.17692307692307696,
+      "maxDrawdown": -0.1179487179487179,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.7494619330855411
+    },
+    {
+      "symbol": "FLOKI",
+      "entryPrice": 0.00003297,
+      "exitPrice": 0.00002909,
+      "fwdReturn": -0.11768274188656346,
+      "maxReturn": 0.1628753412192904,
+      "maxDrawdown": -0.15195632393084615,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.7211642346722712
+    },
+    {
+      "symbol": "MAV",
+      "entryPrice": 0.01612,
+      "exitPrice": 0.01318,
+      "fwdReturn": -0.1823821339950371,
+      "maxReturn": 0.12468982630272962,
+      "maxDrawdown": -0.18982630272952847,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.2984139647652339
+    },
+    {
+      "symbol": "PENDLE",
+      "entryPrice": 1.337,
+      "exitPrice": 1.794,
+      "fwdReturn": 0.3418100224382947,
+      "maxReturn": 0.6462228870605835,
+      "maxDrawdown": -0.07180254300673139,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.6265576624355008
+    },
+    {
+      "symbol": "ARKM",
+      "entryPrice": 0.1209,
+      "exitPrice": 0.1537,
+      "fwdReturn": 0.27129859387923916,
+      "maxReturn": 0.37220843672456577,
+      "maxDrawdown": -0.11662531017369718,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.2674658912654657
+    },
+    {
+      "symbol": "WBETH",
+      "entryPrice": 2594.01,
+      "exitPrice": 2277.39,
+      "fwdReturn": -0.12205812622156442,
+      "maxReturn": 0.022952879904086707,
+      "maxDrawdown": -0.15218522673389864,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.9381168198056659
+    },
+    {
+      "symbol": "WLD",
+      "entryPrice": 0.2598,
+      "exitPrice": 0.3757,
+      "fwdReturn": 0.4461123941493457,
+      "maxReturn": 0.5950731331793688,
+      "maxDrawdown": -0.12740569668976123,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.43498859307280113
+    },
+    {
+      "symbol": "FDUSD",
+      "entryPrice": 0.9983,
+      "exitPrice": 0.9984,
+      "fwdReturn": 0.00010017028949212561,
+      "maxReturn": 0.001602724631874232,
+      "maxDrawdown": -0.0009015326054292416,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 1,
+      "btcCorr": 0.5630831393042709
+    },
+    {
+      "symbol": "SEI",
+      "entryPrice": 0.06235,
+      "exitPrice": 0.0659,
+      "fwdReturn": 0.05693664795509218,
+      "maxReturn": 0.2840417000801925,
+      "maxDrawdown": -0.09591018444266237,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.5954885878094054
+    },
+    {
+      "symbol": "CYBER",
+      "entryPrice": 0.559,
+      "exitPrice": 0.461,
+      "fwdReturn": -0.1753130590339893,
+      "maxReturn": 0.06976744186046498,
+      "maxDrawdown": -0.1914132379248659,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.6433883864386113
+    },
+    {
+      "symbol": "ARK",
+      "entryPrice": 0.1759,
+      "exitPrice": 0.1548,
+      "fwdReturn": -0.11995451961341676,
+      "maxReturn": 0.0932347924957362,
+      "maxDrawdown": -0.12052302444570777,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.7461426894689153
+    },
+    {
+      "symbol": "IQ",
+      "entryPrice": 0.001107,
+      "exitPrice": 0.001065,
+      "fwdReturn": -0.03794037940379398,
+      "maxReturn": 0.1391147244805782,
+      "maxDrawdown": -0.050587172538391914,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 8,
+      "btcCorr": 0.6798330494741129
+    },
+    {
+      "symbol": "TIA",
+      "entryPrice": 0.3564,
+      "exitPrice": 0.4682,
+      "fwdReturn": 0.31369248035914704,
+      "maxReturn": 0.46548821548821545,
+      "maxDrawdown": -0.04713804713804709,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.5079058577555379
+    },
+    {
+      "symbol": "MEME",
+      "entryPrice": 0.000575,
+      "exitPrice": 0.000501,
+      "fwdReturn": -0.12869565217391296,
+      "maxReturn": 0.1269565217391305,
+      "maxDrawdown": -0.15826086956521737,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.4747011848125986
+    },
+    {
+      "symbol": "ORDI",
+      "entryPrice": 4.586,
+      "exitPrice": 3.996,
+      "fwdReturn": -0.12865242040994337,
+      "maxReturn": 0.40645442651548186,
+      "maxDrawdown": -0.19079808111644142,
+      "metCount": 1,
+      "metLabels": [
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": true,
+      "wickCount": 0,
+      "btcCorr": 0.13535039644970992
+    },
+    {
+      "symbol": "BEAMX",
+      "entryPrice": 0.002044,
+      "exitPrice": 0.001777,
+      "fwdReturn": -0.13062622309197647,
+      "maxReturn": 0.0655577299412916,
+      "maxDrawdown": -0.17465753424657532,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.7157411705489768
+    },
+    {
+      "symbol": "PIVX",
+      "entryPrice": 0.0754,
+      "exitPrice": 0.0629,
+      "fwdReturn": -0.16578249336870024,
+      "maxReturn": 0.11405835543766593,
+      "maxDrawdown": -0.20291777188328905,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.3794747135435077
+    },
+    {
+      "symbol": "VIC",
+      "entryPrice": 0.0581,
+      "exitPrice": 0.0572,
+      "fwdReturn": -0.015490533562822685,
+      "maxReturn": 0.49741824440619614,
+      "maxDrawdown": -0.28399311531841653,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.2912094288961701
+    },
+    {
+      "symbol": "BLUR",
+      "entryPrice": 0.02733,
+      "exitPrice": 0.02179,
+      "fwdReturn": -0.2027076472740578,
+      "maxReturn": 0.08891328210757415,
+      "maxDrawdown": -0.2228320526893524,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": -0.08256240724591374
+    },
+    {
+      "symbol": "VANRY",
+      "entryPrice": 0.005422,
+      "exitPrice": 0.004684,
+      "fwdReturn": -0.13611213574326816,
+      "maxReturn": 0.18535595721136125,
+      "maxDrawdown": -0.13980081150866838,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.5813276568154085
+    },
+    {
+      "symbol": "AEUR",
+      "entryPrice": 1.1686,
+      "exitPrice": 1.148,
+      "fwdReturn": -0.017627930857436396,
+      "maxReturn": 0.0032517542358377763,
+      "maxDrawdown": -0.02130754749272646,
+      "metCount": 2,
+      "metLabels": [
+        "地量横盘",
+        "长下影"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.5577890677754653
+    },
+    {
+      "symbol": "JTO",
+      "entryPrice": 0.3541,
+      "exitPrice": 0.517,
+      "fwdReturn": 0.46003953685399596,
+      "maxReturn": 0.9768426998023154,
+      "maxDrawdown": -0.07766167749223389,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5783873152967204
+    },
+    {
+      "symbol": "1000SATS",
+      "entryPrice": 0.00001461,
+      "exitPrice": 0.00001271,
+      "fwdReturn": -0.13004791238877483,
+      "maxReturn": 0.16016427104722777,
+      "maxDrawdown": -0.17111567419575643,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.3016236550783141
+    },
+    {
+      "symbol": "BONK",
+      "entryPrice": 0.0000063,
+      "exitPrice": 0.00000595,
+      "fwdReturn": -0.055555555555555566,
+      "maxReturn": 0.3190476190476191,
+      "maxDrawdown": -0.09523809523809527,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.7852561658301281
+    },
+    {
+      "symbol": "ACE",
+      "entryPrice": 0.123,
+      "exitPrice": 0.1153,
+      "fwdReturn": -0.06260162601626015,
+      "maxReturn": 0.4959349593495935,
+      "maxDrawdown": -0.11382113821138211,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 0,
+      "btcCorr": 0.5883593703326299
+    },
+    {
+      "symbol": "AI",
+      "entryPrice": 0.0193,
+      "exitPrice": 0.0268,
+      "fwdReturn": 0.38860103626943,
+      "maxReturn": 0.9274611398963728,
+      "maxDrawdown": -0.12953367875647678,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.440830504057673
+    },
+    {
+      "symbol": "XAI",
+      "entryPrice": 0.01081,
+      "exitPrice": 0.01005,
+      "fwdReturn": -0.07030527289546719,
+      "maxReturn": 0.21646623496762257,
+      "maxDrawdown": -0.10360777058279366,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.47579930973228735
+    },
+    {
+      "symbol": "MANTA",
+      "entryPrice": 0.06475,
+      "exitPrice": 0.07468,
+      "fwdReturn": 0.15335907335907326,
+      "maxReturn": 0.4058687258687258,
+      "maxDrawdown": -0.03073359073359082,
+      "metCount": 2,
+      "metLabels": [
+        "地量横盘",
+        "长下影"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.582350721004582
+    },
+    {
+      "symbol": "ALT",
+      "entryPrice": 0.00796,
+      "exitPrice": 0.00701,
+      "fwdReturn": -0.11934673366834175,
+      "maxReturn": 0.38065326633165825,
+      "maxDrawdown": -0.19472361809045227,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.4797312855027188
+    },
+    {
+      "symbol": "JUP",
+      "entryPrice": 0.1828,
+      "exitPrice": 0.1982,
+      "fwdReturn": 0.08424507658643325,
+      "maxReturn": 0.5131291028446391,
+      "maxDrawdown": -0.048140043763676164,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 8,
+      "btcCorr": 0.689738778013602
+    },
+    {
+      "symbol": "PYTH",
+      "entryPrice": 0.0496,
+      "exitPrice": 0.0403,
+      "fwdReturn": -0.18749999999999992,
+      "maxReturn": 0.2721774193548388,
+      "maxDrawdown": -0.23185483870967735,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.44164179385197994
+    },
+    {
+      "symbol": "RONIN",
+      "entryPrice": 0.1006,
+      "exitPrice": 0.09,
+      "fwdReturn": -0.10536779324055665,
+      "maxReturn": 0.49105367793240556,
+      "maxDrawdown": -0.1540755467196819,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.565959866888599
+    },
+    {
+      "symbol": "DYM",
+      "entryPrice": 0.0189,
+      "exitPrice": 0.0245,
+      "fwdReturn": 0.29629629629629634,
+      "maxReturn": 0.851851851851852,
+      "maxDrawdown": -0.06878306878306874,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.43889906137114615
+    },
+    {
+      "symbol": "PIXEL",
+      "entryPrice": 0.00822,
+      "exitPrice": 0.00663,
+      "fwdReturn": -0.1934306569343066,
+      "maxReturn": 0.12530413625304132,
+      "maxDrawdown": -0.20802919708029194,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.4557803291334474
+    },
+    {
+      "symbol": "STRK",
+      "entryPrice": 0.0398,
+      "exitPrice": 0.0403,
+      "fwdReturn": 0.01256281407035177,
+      "maxReturn": 0.6030150753768843,
+      "maxDrawdown": -0.05527638190954775,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.6167719368841165
+    },
+    {
+      "symbol": "PORTAL",
+      "entryPrice": 0.01194,
+      "exitPrice": 0.00831,
+      "fwdReturn": -0.30402010050251255,
+      "maxReturn": 0.013400335008375246,
+      "maxDrawdown": -0.33249581239530984,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 7,
+      "btcCorr": 0.06998056650539375
+    },
+    {
+      "symbol": "AXL",
+      "entryPrice": 0.057,
+      "exitPrice": 0.0569,
+      "fwdReturn": -0.0017543859649123308,
+      "maxReturn": 0.6087719298245614,
+      "maxDrawdown": -0.05789473684210534,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.07892943675336478
+    },
+    {
+      "symbol": "WIF",
+      "entryPrice": 0.178,
+      "exitPrice": 0.194,
+      "fwdReturn": 0.08988764044943828,
+      "maxReturn": 0.5730337078651687,
+      "maxDrawdown": -0.039325842696629094,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.6689581658418396
+    },
+    {
+      "symbol": "METIS",
+      "entryPrice": 3.6,
+      "exitPrice": 3.31,
+      "fwdReturn": -0.08055555555555556,
+      "maxReturn": 0.15277777777777785,
+      "maxDrawdown": -0.11944444444444449,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 1,
+      "btcCorr": 0.5395009659998
+    },
+    {
+      "symbol": "AEVO",
+      "entryPrice": 0.0263,
+      "exitPrice": 0.0245,
+      "fwdReturn": -0.06844106463878324,
+      "maxReturn": 0.2699619771863117,
+      "maxDrawdown": -0.10266159695817494,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.4237860969047689
+    },
+    {
+      "symbol": "BOME",
+      "entryPrice": 0.00052,
+      "exitPrice": 0.000519,
+      "fwdReturn": -0.0019230769230767614,
+      "maxReturn": 0.28653846153846163,
+      "maxDrawdown": -0.07115384615384612,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 5,
+      "btcCorr": 0.2960956818380777
+    },
+    {
+      "symbol": "ETHFI",
+      "entryPrice": 0.445,
+      "exitPrice": 0.382,
+      "fwdReturn": -0.14157303370786517,
+      "maxReturn": 0.07640449438202242,
+      "maxDrawdown": -0.22471910112359558,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.7818547674405206
+    },
+    {
+      "symbol": "ENA",
+      "entryPrice": 0.1094,
+      "exitPrice": 0.0969,
+      "fwdReturn": -0.1142595978062157,
+      "maxReturn": 0.28062157221206585,
+      "maxDrawdown": -0.14351005484460688,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6619904704711262
+    },
+    {
+      "symbol": "W",
+      "entryPrice": 0.0135,
+      "exitPrice": 0.0122,
+      "fwdReturn": -0.09629629629629623,
+      "maxReturn": 0.22962962962962966,
+      "maxDrawdown": -0.1333333333333333,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.39654510098260864
+    },
+    {
+      "symbol": "TNSR",
+      "entryPrice": 0.0396,
+      "exitPrice": 0.0385,
+      "fwdReturn": -0.02777777777777787,
+      "maxReturn": 0.2777777777777776,
+      "maxDrawdown": -0.08838383838383845,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 2,
+      "btcCorr": 0.22113264057613338
+    },
+    {
+      "symbol": "SAGA",
+      "entryPrice": 0.01771,
+      "exitPrice": 0.02012,
+      "fwdReturn": 0.13608130999435342,
+      "maxReturn": 2.8424618859401467,
+      "maxDrawdown": -0.056465273856578256,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.47533963165146426
+    },
+    {
+      "symbol": "TAO",
+      "entryPrice": 251.1,
+      "exitPrice": 278.3,
+      "fwdReturn": 0.10832337714058152,
+      "maxReturn": 0.3273596176821984,
+      "maxDrawdown": -0.027080844285145293,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.315686204553641
+    },
+    {
+      "symbol": "REZ",
+      "entryPrice": 0.00402,
+      "exitPrice": 0.00429,
+      "fwdReturn": 0.06716417910447768,
+      "maxReturn": 0.8009950248756218,
+      "maxDrawdown": -0.037313432835820885,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": false,
+      "c4": false,
+      "c5": true,
+      "wickCount": 1,
+      "btcCorr": 0.29574249223263993
+    },
+    {
+      "symbol": "BB",
+      "entryPrice": 0.0277,
+      "exitPrice": 0.0294,
+      "fwdReturn": 0.06137184115523466,
+      "maxReturn": 0.4440433212996391,
+      "maxDrawdown": -0.057761732851985464,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.433006483917144
+    },
+    {
+      "symbol": "NOT",
+      "entryPrice": 0.00042,
+      "exitPrice": 0.00046,
+      "fwdReturn": 0.09523809523809522,
+      "maxReturn": 0.8333333333333331,
+      "maxDrawdown": -0.11428571428571435,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 1,
+      "btcCorr": 0.5021706867767386
+    },
+    {
+      "symbol": "IO",
+      "entryPrice": 0.1229,
+      "exitPrice": 0.1817,
+      "fwdReturn": 0.4784377542717657,
+      "maxReturn": 0.7957689178193654,
+      "maxDrawdown": -0.08868999186330345,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 1,
+      "btcCorr": 0.4630997423004466
+    },
+    {
+      "symbol": "ZK",
+      "entryPrice": 0.01596,
+      "exitPrice": 0.01469,
+      "fwdReturn": -0.07957393483709264,
+      "maxReturn": 0.25814536340852146,
+      "maxDrawdown": -0.11654135338345858,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6864488082954623
+    },
+    {
+      "symbol": "LISTA",
+      "entryPrice": 0.087,
+      "exitPrice": 0.0737,
+      "fwdReturn": -0.15287356321839074,
+      "maxReturn": 0.13908045977011496,
+      "maxDrawdown": -0.16666666666666666,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.3928994925976016
+    },
+    {
+      "symbol": "ZRO",
+      "entryPrice": 1.556,
+      "exitPrice": 1.284,
+      "fwdReturn": -0.17480719794344474,
+      "maxReturn": 0.016066838046272437,
+      "maxDrawdown": -0.20437017994858614,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6759255351698433
+    },
+    {
+      "symbol": "G",
+      "entryPrice": 0.0038,
+      "exitPrice": 0.00337,
+      "fwdReturn": -0.11315789473684205,
+      "maxReturn": 0.11052631578947363,
+      "maxDrawdown": -0.12105263157894734,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.6520267341776205
+    },
+    {
+      "symbol": "BANANA",
+      "entryPrice": 3.96,
+      "exitPrice": 3.716,
+      "fwdReturn": -0.06161616161616156,
+      "maxReturn": 0.32070707070707083,
+      "maxDrawdown": -0.0782828282828283,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.6298244009584915
+    },
+    {
+      "symbol": "RENDER",
+      "entryPrice": 1.823,
+      "exitPrice": 2.291,
+      "fwdReturn": 0.2567196928140428,
+      "maxReturn": 0.33680746023038943,
+      "maxDrawdown": -0.09160724081184862,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.5911853672547888
+    },
+    {
+      "symbol": "DOGS",
+      "entryPrice": 0.0000319,
+      "exitPrice": 0.0000518,
+      "fwdReturn": 0.6238244514106581,
+      "maxReturn": 2.3040752351097176,
+      "maxDrawdown": -0.06896551724137939,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.14459115711024403
+    },
+    {
+      "symbol": "EURI",
+      "entryPrice": 1.1701,
+      "exitPrice": 1.1651,
+      "fwdReturn": -0.004273139047944529,
+      "maxReturn": 0.00803350141013595,
+      "maxDrawdown": -0.00974275702931361,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6441021312287044
+    },
+    {
+      "symbol": "POL",
+      "entryPrice": 0.0923,
+      "exitPrice": 0.0917,
+      "fwdReturn": -0.006500541711809203,
+      "maxReturn": 0.1375947995666306,
+      "maxDrawdown": -0.052762730227518956,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.575854439588957
+    },
+    {
+      "symbol": "NEIRO",
+      "entryPrice": 0.00008792,
+      "exitPrice": 0.00008653,
+      "fwdReturn": -0.015809827115559585,
+      "maxReturn": 0.3057324840764331,
+      "maxDrawdown": -0.05141037306642407,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.35593966908071145
+    },
+    {
+      "symbol": "TURBO",
+      "entryPrice": 0.001181,
+      "exitPrice": 0.001093,
+      "fwdReturn": -0.07451312447078745,
+      "maxReturn": 0.3243014394580864,
+      "maxDrawdown": -0.10160880609652827,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5407378131316688
+    },
+    {
+      "symbol": "1MBABYDOGE",
+      "entryPrice": 0.0004203,
+      "exitPrice": 0.000393,
+      "fwdReturn": -0.06495360456816562,
+      "maxReturn": 0.16678562931239582,
+      "maxDrawdown": -0.10325957649298126,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.7151520093352147
+    },
+    {
+      "symbol": "CATI",
+      "entryPrice": 0.0465,
+      "exitPrice": 0.0547,
+      "fwdReturn": 0.17634408602150536,
+      "maxReturn": 0.6193548387096776,
+      "maxDrawdown": -0.02580645161290322,
+      "metCount": 1,
+      "metLabels": [
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": true,
+      "wickCount": 1,
+      "btcCorr": -0.2461812689025038
+    },
+    {
+      "symbol": "HMSTR",
+      "entryPrice": 0.0001578,
+      "exitPrice": 0.0001691,
+      "fwdReturn": 0.07160963244613437,
+      "maxReturn": 0.5614702154626112,
+      "maxDrawdown": -0.13117870722433453,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.30194577108476145
+    },
+    {
+      "symbol": "EIGEN",
+      "entryPrice": 0.1816,
+      "exitPrice": 0.2463,
+      "fwdReturn": 0.35627753303964743,
+      "maxReturn": 0.4801762114537443,
+      "maxDrawdown": -0.060022026431718174,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.6727902947320562
+    },
+    {
+      "symbol": "SCR",
+      "entryPrice": 0.04672,
+      "exitPrice": 0.0418,
+      "fwdReturn": -0.10530821917808221,
+      "maxReturn": 0.1954195205479452,
+      "maxDrawdown": -0.1106592465753425,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.4118779638573523
+    },
+    {
+      "symbol": "BNSOL",
+      "entryPrice": 96.3,
+      "exitPrice": 93.2,
+      "fwdReturn": -0.03219106957424708,
+      "maxReturn": 0.1360332294911735,
+      "maxDrawdown": -0.06230529595015576,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.8239808968321622
+    },
+    {
+      "symbol": "LUMIA",
+      "entryPrice": 0.1474,
+      "exitPrice": 0.1039,
+      "fwdReturn": -0.29511533242876525,
+      "maxReturn": 0.47014925373134325,
+      "maxDrawdown": -0.3663500678426052,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.2773031096393993
+    },
+    {
+      "symbol": "KAIA",
+      "entryPrice": 0.0485,
+      "exitPrice": 0.0488,
+      "fwdReturn": 0.006185567010309312,
+      "maxReturn": 0.21237113402061847,
+      "maxDrawdown": -0.07628865979381447,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5765567264532608
+    },
+    {
+      "symbol": "COW",
+      "entryPrice": 0.1917,
+      "exitPrice": 0.1593,
+      "fwdReturn": -0.1690140845070423,
+      "maxReturn": 0.021909233176838714,
+      "maxDrawdown": -0.17840375586854462,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5634470098817186
+    },
+    {
+      "symbol": "CETUS",
+      "entryPrice": 0.03064,
+      "exitPrice": 0.02425,
+      "fwdReturn": -0.2085509138381201,
+      "maxReturn": 0.3045039164490861,
+      "maxDrawdown": -0.21605744125326373,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.41425740623856405
+    },
+    {
+      "symbol": "PNUT",
+      "entryPrice": 0.0539,
+      "exitPrice": 0.0562,
+      "fwdReturn": 0.04267161410018546,
+      "maxReturn": 0.24118738404452683,
+      "maxDrawdown": -0.04823747680890547,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.3352154473493948
+    },
+    {
+      "symbol": "ACT",
+      "entryPrice": 0.0152,
+      "exitPrice": 0.01291,
+      "fwdReturn": -0.15065789473684213,
+      "maxReturn": 0.12500000000000006,
+      "maxDrawdown": -0.19999999999999996,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.3639755454936504
+    },
+    {
+      "symbol": "USUAL",
+      "entryPrice": 0.0145,
+      "exitPrice": 0.01356,
+      "fwdReturn": -0.06482758620689666,
+      "maxReturn": 0.37172413793103454,
+      "maxDrawdown": -0.08827586206896551,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.4169880212637049
+    },
+    {
+      "symbol": "THE",
+      "entryPrice": 0.1031,
+      "exitPrice": 0.0839,
+      "fwdReturn": -0.18622696411251208,
+      "maxReturn": 0.18816682832201748,
+      "maxDrawdown": -0.18913676042677016,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.37004608432160785
+    },
+    {
+      "symbol": "ACX",
+      "entryPrice": 0.0446,
+      "exitPrice": 0.0413,
+      "fwdReturn": -0.07399103139013447,
+      "maxReturn": 0.08071748878923765,
+      "maxDrawdown": -0.094170403587444,
+      "metCount": 2,
+      "metLabels": [
+        "地量横盘",
+        "长下影"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.6220329497178955
+    },
+    {
+      "symbol": "ORCA",
+      "entryPrice": 1.34,
+      "exitPrice": 1.346,
+      "fwdReturn": 0.004477611940298511,
+      "maxReturn": 0.8074626865671641,
+      "maxDrawdown": -0.12238805970149264,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.4731880476160922
+    },
+    {
+      "symbol": "MOVE",
+      "entryPrice": 0.0188,
+      "exitPrice": 0.0156,
+      "fwdReturn": -0.1702127659574469,
+      "maxReturn": 0.2819148936170212,
+      "maxDrawdown": -0.18085106382978725,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.5721405477075144
+    },
+    {
+      "symbol": "ME",
+      "entryPrice": 0.1109,
+      "exitPrice": 0.094,
+      "fwdReturn": -0.15238954012623984,
+      "maxReturn": 0.14607754733994582,
+      "maxDrawdown": -0.18034265103697028,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.6630141232508714
+    },
+    {
+      "symbol": "VELODROME",
+      "entryPrice": 0.01659,
+      "exitPrice": 0.01587,
+      "fwdReturn": -0.04339963833634731,
+      "maxReturn": 0.18505123568414705,
+      "maxDrawdown": -0.11512959614225438,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.6954416555036969
+    },
+    {
+      "symbol": "VANA",
+      "entryPrice": 1.465,
+      "exitPrice": 1.521,
+      "fwdReturn": 0.038225255972696125,
+      "maxReturn": 0.24300341296928318,
+      "maxDrawdown": -0.046416382252559764,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.560623184889022
+    },
+    {
+      "symbol": "1000CAT",
+      "entryPrice": 0.00189,
+      "exitPrice": 0.00179,
+      "fwdReturn": -0.052910052910052935,
+      "maxReturn": 0.25396825396825407,
+      "maxDrawdown": -0.07407407407407404,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5043331403906496
+    },
+    {
+      "symbol": "PENGU",
+      "entryPrice": 0.008951,
+      "exitPrice": 0.008495,
+      "fwdReturn": -0.050944028600156385,
+      "maxReturn": 0.3261088146575801,
+      "maxDrawdown": -0.09920679253714668,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.7748344588028109
+    },
+    {
+      "symbol": "BIO",
+      "entryPrice": 0.03,
+      "exitPrice": 0.033,
+      "fwdReturn": 0.10000000000000009,
+      "maxReturn": 1.2000000000000002,
+      "maxDrawdown": -0.08999999999999993,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.06921592000945247
+    },
+    {
+      "symbol": "AIXBT",
+      "entryPrice": 0.0282,
+      "exitPrice": 0.0309,
+      "fwdReturn": 0.09574468085106387,
+      "maxReturn": 0.36524822695035464,
+      "maxDrawdown": -0.07092198581560277,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.3689427959744903
+    },
+    {
+      "symbol": "CGPT",
+      "entryPrice": 0.02492,
+      "exitPrice": 0.02439,
+      "fwdReturn": -0.021268057784911823,
+      "maxReturn": 0.8057784911717495,
+      "maxDrawdown": -0.05337078651685398,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.43074530094187163
+    },
+    {
+      "symbol": "COOKIE",
+      "entryPrice": 0.0165,
+      "exitPrice": 0.0126,
+      "fwdReturn": -0.2363636363636364,
+      "maxReturn": 0.24848484848484845,
+      "maxDrawdown": -0.24242424242424243,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 1,
+      "btcCorr": 0.4005532719134563
+    },
+    {
+      "symbol": "S",
+      "entryPrice": 0.04673,
+      "exitPrice": 0.04471,
+      "fwdReturn": -0.043227049004921914,
+      "maxReturn": 0.2544404023111491,
+      "maxDrawdown": -0.09544190027819385,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.571916066793558
+    },
+    {
+      "symbol": "SOLV",
+      "entryPrice": 0.00409,
+      "exitPrice": 0.00406,
+      "fwdReturn": -0.007334963325183287,
+      "maxReturn": 0.5745721271393645,
+      "maxDrawdown": -0.04645476772616139,
+      "metCount": 1,
+      "metLabels": [
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": true,
+      "wickCount": 0,
+      "btcCorr": -0.09478929056749553
+    },
+    {
+      "symbol": "TRUMP",
+      "entryPrice": 2.612,
+      "exitPrice": 2.015,
+      "fwdReturn": -0.22856049004594178,
+      "maxReturn": 0.004977029096477756,
+      "maxDrawdown": -0.25574272588055136,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.5484400690373995
+    },
+    {
+      "symbol": "ANIME",
+      "entryPrice": 0.0049,
+      "exitPrice": 0.00424,
+      "fwdReturn": -0.1346938775510204,
+      "maxReturn": 0.06122448979591835,
+      "maxDrawdown": -0.1551020408163266,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.5582740686293187
+    },
+    {
+      "symbol": "BERA",
+      "entryPrice": 0.388,
+      "exitPrice": 0.37,
+      "fwdReturn": -0.046391752577319624,
+      "maxReturn": 0.10051546391752572,
+      "maxDrawdown": -0.1056701030927836,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.7052014828298909
+    },
+    {
+      "symbol": "1000CHEEMS",
+      "entryPrice": 0.000598,
+      "exitPrice": 0.00065,
+      "fwdReturn": 0.08695652173913038,
+      "maxReturn": 0.27591973244147155,
+      "maxDrawdown": -0.06521739130434778,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6030694763587298
+    },
+    {
+      "symbol": "TST",
+      "entryPrice": 0.0113,
+      "exitPrice": 0.0178,
+      "fwdReturn": 0.5752212389380532,
+      "maxReturn": 2.0725663716814164,
+      "maxDrawdown": -0.08761061946902651,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.42306363020881815
+    },
+    {
+      "symbol": "LAYER",
+      "entryPrice": 0.0883,
+      "exitPrice": 0.0852,
+      "fwdReturn": -0.03510758776896948,
+      "maxReturn": 1.4269535673839184,
+      "maxDrawdown": -0.08946772366930922,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.7667569105113674
+    },
+    {
+      "symbol": "HEI",
+      "entryPrice": 0.0829,
+      "exitPrice": 0.0581,
+      "fwdReturn": -0.2991556091676719,
+      "maxReturn": 0.1749095295536791,
+      "maxDrawdown": -0.31242460796139926,
+      "metCount": 3,
+      "metLabels": [
+        "底背离",
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.24188568625796594
+    },
+    {
+      "symbol": "KAITO",
+      "entryPrice": 0.4086,
+      "exitPrice": 0.495,
+      "fwdReturn": 0.211453744493392,
+      "maxReturn": 0.3551150269211942,
+      "maxDrawdown": -0.0031815956926089656,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 7,
+      "btcCorr": 0.2455088858822681
+    },
+    {
+      "symbol": "SHELL",
+      "entryPrice": 0.0335,
+      "exitPrice": 0.0319,
+      "fwdReturn": -0.04776119402985087,
+      "maxReturn": 0.3134328358208954,
+      "maxDrawdown": -0.07462686567164185,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.2616934098099772
+    },
+    {
+      "symbol": "RED",
+      "entryPrice": 0.1325,
+      "exitPrice": 0.1318,
+      "fwdReturn": -0.005283018867924575,
+      "maxReturn": 0.19018867924528302,
+      "maxDrawdown": -0.07320754716981132,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.05636393380743467
+    },
+    {
+      "symbol": "GPS",
+      "entryPrice": 0.00685,
+      "exitPrice": 0.00674,
+      "fwdReturn": -0.01605839416058392,
+      "maxReturn": 0.34598540145985407,
+      "maxDrawdown": -0.051094890510948975,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.35592898168586745
+    },
+    {
+      "symbol": "EPIC",
+      "entryPrice": 0.305,
+      "exitPrice": 0.212,
+      "fwdReturn": -0.30491803278688523,
+      "maxReturn": 0.24590163934426235,
+      "maxDrawdown": -0.31475409836065577,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.23137815668637032
+    },
+    {
+      "symbol": "BMT",
+      "entryPrice": 0.0162,
+      "exitPrice": 0.01547,
+      "fwdReturn": -0.045061728395061715,
+      "maxReturn": 0.23703703703703702,
+      "maxDrawdown": -0.1061728395061728,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.497580657434734
+    },
+    {
+      "symbol": "FORM",
+      "entryPrice": 0.2589,
+      "exitPrice": 0.226,
+      "fwdReturn": -0.1270760911548861,
+      "maxReturn": 0.23986095017381223,
+      "maxDrawdown": -0.1591348010814987,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6828829349652941
+    },
+    {
+      "symbol": "XUSD",
+      "entryPrice": 0.9998,
+      "exitPrice": 1.0013,
+      "fwdReturn": 0.0015003000600120593,
+      "maxReturn": 0.06081216243248646,
+      "maxDrawdown": -0.0003000600120023674,
+      "metCount": 1,
+      "metLabels": [
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": true,
+      "wickCount": 1,
+      "btcCorr": 0.1582753260859882
+    },
+    {
+      "symbol": "NIL",
+      "entryPrice": 0.04414,
+      "exitPrice": 0.07542,
+      "fwdReturn": 0.7086542818305392,
+      "maxReturn": 1.4583144540099682,
+      "maxDrawdown": -0.1622111463525147,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 7,
+      "btcCorr": 0.1702833011044644
+    },
+    {
+      "symbol": "PARTI",
+      "entryPrice": 0.0409,
+      "exitPrice": 0.0537,
+      "fwdReturn": 0.31295843520782396,
+      "maxReturn": 0.6772616136919315,
+      "maxDrawdown": -0.053789731051344755,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 5,
+      "btcCorr": 0.28381608271908304
+    },
+    {
+      "symbol": "MUBARAK",
+      "entryPrice": 0.01354,
+      "exitPrice": 0.01431,
+      "fwdReturn": 0.056868537666174286,
+      "maxReturn": 0.3618906942392911,
+      "maxDrawdown": -0.08567208271787294,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6332248253312517
+    },
+    {
+      "symbol": "TUT",
+      "entryPrice": 0.01105,
+      "exitPrice": 0.01019,
+      "fwdReturn": -0.07782805429864266,
+      "maxReturn": 0.3402714932126696,
+      "maxDrawdown": -0.08506787330316756,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.35766257841511345
+    },
+    {
+      "symbol": "BROCCOLI714",
+      "entryPrice": 0.01687,
+      "exitPrice": 0.01419,
+      "fwdReturn": -0.15886188500296386,
+      "maxReturn": 0.3414344991108477,
+      "maxDrawdown": -0.19087136929460574,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.5897687827185906
+    },
+    {
+      "symbol": "BANANAS31",
+      "entryPrice": 0.009536,
+      "exitPrice": 0.011695,
+      "fwdReturn": 0.226405201342282,
+      "maxReturn": 0.5484479865771813,
+      "maxDrawdown": -0.042051174496644146,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.15821391295216455
+    },
+    {
+      "symbol": "GUN",
+      "entryPrice": 0.01489,
+      "exitPrice": 0.00917,
+      "fwdReturn": -0.384150436534587,
+      "maxReturn": 0.11349899261249163,
+      "maxDrawdown": -0.43049026192075224,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 2,
+      "btcCorr": -0.005458265266393109
+    },
+    {
+      "symbol": "BABY",
+      "entryPrice": 0.01547,
+      "exitPrice": 0.01564,
+      "fwdReturn": 0.010989010989011103,
+      "maxReturn": 1.0678733031674208,
+      "maxDrawdown": -0.06076276664511958,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.3460663408135018
+    },
+    {
+      "symbol": "ONDO",
+      "entryPrice": 0.2672,
+      "exitPrice": 0.4056,
+      "fwdReturn": 0.5179640718562876,
+      "maxReturn": 0.8252245508982037,
+      "maxDrawdown": -0.049026946107784436,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 8,
+      "btcCorr": 0.8448525009001379
+    },
+    {
+      "symbol": "BIGTIME",
+      "entryPrice": 0.01382,
+      "exitPrice": 0.01164,
+      "fwdReturn": -0.1577424023154849,
+      "maxReturn": 0.12952243125904486,
+      "maxDrawdown": -0.16714905933429822,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6424711577778279
+    },
+    {
+      "symbol": "VIRTUAL",
+      "entryPrice": 0.7122,
+      "exitPrice": 0.7963,
+      "fwdReturn": 0.11808480763830377,
+      "maxReturn": 0.3736310025273798,
+      "maxDrawdown": -0.06402695871946094,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.844040173943335
+    },
+    {
+      "symbol": "KERNEL",
+      "entryPrice": 0.0686,
+      "exitPrice": 0.0611,
+      "fwdReturn": -0.10932944606413984,
+      "maxReturn": 0.19096209912536447,
+      "maxDrawdown": -0.14577259475218654,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 9,
+      "btcCorr": 0.3317964307602916
+    },
+    {
+      "symbol": "WCT",
+      "entryPrice": 0.0647,
+      "exitPrice": 0.05844,
+      "fwdReturn": -0.09675425038639869,
+      "maxReturn": 0.17310664605873266,
+      "maxDrawdown": -0.11282843894899529,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5192156597872342
+    },
+    {
+      "symbol": "HYPER",
+      "entryPrice": 0.1258,
+      "exitPrice": 0.0946,
+      "fwdReturn": -0.24801271860095384,
+      "maxReturn": 0.1422893481717011,
+      "maxDrawdown": -0.2615262321144674,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.03812129731690768
+    },
+    {
+      "symbol": "INIT",
+      "entryPrice": 0.0907,
+      "exitPrice": 0.0779,
+      "fwdReturn": -0.1411245865490629,
+      "maxReturn": 0.2613009922822492,
+      "maxDrawdown": -0.15325248070562303,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 2,
+      "btcCorr": 0.12171292622801949
+    },
+    {
+      "symbol": "SIGN",
+      "entryPrice": 0.01756,
+      "exitPrice": 0.01228,
+      "fwdReturn": -0.3006833712984055,
+      "maxReturn": 0.00740318906605932,
+      "maxDrawdown": -0.30125284738041,
+      "metCount": 3,
+      "metLabels": [
+        "底背离",
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.01901490518403533
+    },
+    {
+      "symbol": "STO",
+      "entryPrice": 0.0871,
+      "exitPrice": 0.0638,
+      "fwdReturn": -0.2675086107921929,
+      "maxReturn": 0.08725602755453513,
+      "maxDrawdown": -0.27554535017221576,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.03612192109468748
+    },
+    {
+      "symbol": "SYRUP",
+      "entryPrice": 0.2519,
+      "exitPrice": 0.195,
+      "fwdReturn": -0.2258832870186582,
+      "maxReturn": 0.04088924176260411,
+      "maxDrawdown": -0.2520841603811036,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.364786129563544
+    },
+    {
+      "symbol": "KMNO",
+      "entryPrice": 0.02072,
+      "exitPrice": 0.01933,
+      "fwdReturn": -0.06708494208494203,
+      "maxReturn": 0.28281853281853286,
+      "maxDrawdown": -0.09218146718146711,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.6881916455103693
+    },
+    {
+      "symbol": "SXT",
+      "entryPrice": 0.01701,
+      "exitPrice": 0.0117,
+      "fwdReturn": -0.3121693121693122,
+      "maxReturn": 0.0111699000587889,
+      "maxDrawdown": -0.35332157554379784,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.23602054176676074
+    },
+    {
+      "symbol": "NXPC",
+      "entryPrice": 0.3029,
+      "exitPrice": 0.375,
+      "fwdReturn": 0.23803235391218222,
+      "maxReturn": 0.2591614394189502,
+      "maxDrawdown": -0.04655001650709806,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.503777356385032
+    },
+    {
+      "symbol": "AWE",
+      "entryPrice": 0.05522,
+      "exitPrice": 0.05258,
+      "fwdReturn": -0.04780876494023898,
+      "maxReturn": 0.14994567185802252,
+      "maxDrawdown": -0.16226005070626578,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.4049768878531815
+    },
+    {
+      "symbol": "HAEDAL",
+      "entryPrice": 0.03462,
+      "exitPrice": 0.02787,
+      "fwdReturn": -0.1949740034662045,
+      "maxReturn": 0.20132871172732536,
+      "maxDrawdown": -0.2045060658578856,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.27586029658999667
+    },
+    {
+      "symbol": "USD1",
+      "entryPrice": 0.9997,
+      "exitPrice": 0.99978,
+      "fwdReturn": 0.00008002400720212962,
+      "maxReturn": 0.0013003901170349672,
+      "maxDrawdown": -0.0008002400720216294,
+      "metCount": 3,
+      "metLabels": [
+        "底背离",
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 2,
+      "btcCorr": 0.1085918944884821
+    },
+    {
+      "symbol": "HUMA",
+      "entryPrice": 0.02373,
+      "exitPrice": 0.02533,
+      "fwdReturn": 0.06742520016856288,
+      "maxReturn": 0.14201432785503573,
+      "maxDrawdown": -0.2090181205225454,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.19575919651319906
+    },
+    {
+      "symbol": "A",
+      "entryPrice": 0.0916,
+      "exitPrice": 0.0782,
+      "fwdReturn": -0.14628820960698685,
+      "maxReturn": 0.09388646288209603,
+      "maxDrawdown": -0.17358078602620083,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.5717018491800309
+    },
+    {
+      "symbol": "SOPH",
+      "entryPrice": 0.00928,
+      "exitPrice": 0.00761,
+      "fwdReturn": -0.1799568965517242,
+      "maxReturn": 0.08297413793103446,
+      "maxDrawdown": -0.19396551724137934,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.5348876722190321
+    },
+    {
+      "symbol": "RESOLV",
+      "entryPrice": 0.0297,
+      "exitPrice": 0.0226,
+      "fwdReturn": -0.23905723905723913,
+      "maxReturn": 0.24915824915824916,
+      "maxDrawdown": -0.26262626262626265,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.07156015006967574
+    },
+    {
+      "symbol": "HOME",
+      "entryPrice": 0.01596,
+      "exitPrice": 0.02377,
+      "fwdReturn": 0.4893483709273184,
+      "maxReturn": 0.5444862155388471,
+      "maxDrawdown": -0.1779448621553884,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.6057382583881913
+    },
+    {
+      "symbol": "SPK",
+      "entryPrice": 0.037769,
+      "exitPrice": 0.025893,
+      "fwdReturn": -0.31443776642219806,
+      "maxReturn": 0.11350578516773031,
+      "maxDrawdown": -0.31915062617490536,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.23776736316756258
+    },
+    {
+      "symbol": "NEWT",
+      "entryPrice": 0.0803,
+      "exitPrice": 0.0742,
+      "fwdReturn": -0.07596513075965124,
+      "maxReturn": 0.09713574097135744,
+      "maxDrawdown": -0.12453300124532996,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.5511021752681121
+    },
+    {
+      "symbol": "SAHARA",
+      "entryPrice": 0.02395,
+      "exitPrice": 0.03198,
+      "fwdReturn": 0.33528183716075166,
+      "maxReturn": 0.9899791231732777,
+      "maxDrawdown": -0.09478079331941536,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.41803024776533115
+    },
+    {
+      "symbol": "LA",
+      "entryPrice": 0.1672,
+      "exitPrice": 0.1126,
+      "fwdReturn": -0.3265550239234449,
+      "maxReturn": 0.007775119617225021,
+      "maxDrawdown": -0.3510765550239234,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.5621841221891497
+    },
+    {
+      "symbol": "ERA",
+      "entryPrice": 0.1434,
+      "exitPrice": 0.1367,
+      "fwdReturn": -0.04672245467224555,
+      "maxReturn": 0.24407252440725247,
+      "maxDrawdown": -0.15202231520223153,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.4539227951334156
+    },
+    {
+      "symbol": "C",
+      "entryPrice": 0.0811,
+      "exitPrice": 0.0885,
+      "fwdReturn": 0.0912453760789148,
+      "maxReturn": 0.24167694204685564,
+      "maxDrawdown": -0.14303329223181255,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": -0.11361821448554002
+    },
+    {
+      "symbol": "TREE",
+      "entryPrice": 0.0728,
+      "exitPrice": 0.0628,
+      "fwdReturn": -0.13736263736263749,
+      "maxReturn": 0.07829670329670325,
+      "maxDrawdown": -0.18681318681318682,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.2653573854077756
+    },
+    {
+      "symbol": "TOWNS",
+      "entryPrice": 0.00338,
+      "exitPrice": 0.00321,
+      "fwdReturn": -0.05029585798816568,
+      "maxReturn": 0.18934911242603547,
+      "maxDrawdown": -0.11538461538461542,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.3254148898661675
+    },
+    {
+      "symbol": "PROVE",
+      "entryPrice": 0.2539,
+      "exitPrice": 0.2388,
+      "fwdReturn": -0.05947223316266247,
+      "maxReturn": 0.5171327294210317,
+      "maxDrawdown": -0.14572666404096102,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.5637047172333293
+    },
+    {
+      "symbol": "BFUSD",
+      "entryPrice": 0.9994,
+      "exitPrice": 0.9996,
+      "fwdReturn": 0.000200120072043315,
+      "maxReturn": 0.0006003602161297228,
+      "maxDrawdown": -0.0002001200720432039,
+      "metCount": 1,
+      "metLabels": [
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": true,
+      "wickCount": 0,
+      "btcCorr": 0.01589749533948236
+    },
+    {
+      "symbol": "PLUME",
+      "entryPrice": 0.01385,
+      "exitPrice": 0.01366,
+      "fwdReturn": -0.013718411552346514,
+      "maxReturn": 0.24548736462093879,
+      "maxDrawdown": -0.2180505415162455,
+      "metCount": 0,
+      "metLabels": [],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": false,
+      "wickCount": 1,
+      "btcCorr": 0.5585311145307599
+    },
+    {
+      "symbol": "DOLO",
+      "entryPrice": 0.03364,
+      "exitPrice": 0.03203,
+      "fwdReturn": -0.04785969084423306,
+      "maxReturn": 0.20689655172413773,
+      "maxDrawdown": -0.12306777645659941,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.5117861353366714
+    },
+    {
+      "symbol": "MITO",
+      "entryPrice": 0.04019,
+      "exitPrice": 0.03659,
+      "fwdReturn": -0.08957452102513061,
+      "maxReturn": 1.1510325951729288,
+      "maxDrawdown": -0.12192087583976101,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.4379875874718727
+    },
+    {
+      "symbol": "WLFI",
+      "entryPrice": 0.075,
+      "exitPrice": 0.0568,
+      "fwdReturn": -0.2426666666666666,
+      "maxReturn": 0.01733333333333346,
+      "maxDrawdown": -0.3173333333333333,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.40033119334849365
+    },
+    {
+      "symbol": "SOMI",
+      "entryPrice": 0.183,
+      "exitPrice": 0.1609,
+      "fwdReturn": -0.12076502732240442,
+      "maxReturn": 0.11803278688524595,
+      "maxDrawdown": -0.1568306010928962,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.6929955712051574
+    },
+    {
+      "symbol": "OPEN",
+      "entryPrice": 0.2494,
+      "exitPrice": 0.1827,
+      "fwdReturn": -0.2674418604651163,
+      "maxReturn": 0.16760224538893345,
+      "maxDrawdown": -0.3708901363271852,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.5393906573010971
+    },
+    {
+      "symbol": "USDE",
+      "entryPrice": 0.9993,
+      "exitPrice": 1.0002,
+      "fwdReturn": 0.0009006304413089282,
+      "maxReturn": 0.0017011908335834323,
+      "maxDrawdown": -0.000300210147102939,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.35865115728258906
+    },
+    {
+      "symbol": "LINEA",
+      "entryPrice": 0.003553,
+      "exitPrice": 0.003095,
+      "fwdReturn": -0.1289051505769772,
+      "maxReturn": 0.22600619195046423,
+      "maxDrawdown": -0.15564311849141574,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.5762909989511135
+    },
+    {
+      "symbol": "HOLO",
+      "entryPrice": 0.063,
+      "exitPrice": 0.0724,
+      "fwdReturn": 0.1492063492063493,
+      "maxReturn": 0.40793650793650793,
+      "maxDrawdown": -0.06984126984126986,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.5785402080823193
+    },
+    {
+      "symbol": "PUMP",
+      "entryPrice": 0.00176,
+      "exitPrice": 0.001799,
+      "fwdReturn": 0.022159090909090892,
+      "maxReturn": 0.27954545454545454,
+      "maxDrawdown": -0.08693181818181826,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.803302409866641
+    },
+    {
+      "symbol": "AVNT",
+      "entryPrice": 0.18,
+      "exitPrice": 0.1464,
+      "fwdReturn": -0.18666666666666662,
+      "maxReturn": 0.0072222222222221985,
+      "maxDrawdown": -0.2677777777777777,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.5694904830449372
+    },
+    {
+      "symbol": "ZKC",
+      "entryPrice": 0.0799,
+      "exitPrice": 0.0662,
+      "fwdReturn": -0.1714643304130163,
+      "maxReturn": 0.05381727158948684,
+      "maxDrawdown": -0.17897371714643295,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.6734982760707655
+    },
+    {
+      "symbol": "SKY",
+      "entryPrice": 0.08821,
+      "exitPrice": 0.06932,
+      "fwdReturn": -0.214148055775989,
+      "maxReturn": 0.017911801383063124,
+      "maxDrawdown": -0.22786532139213234,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.6353518511653906
+    },
+    {
+      "symbol": "BARD",
+      "entryPrice": 0.3055,
+      "exitPrice": 0.2056,
+      "fwdReturn": -0.32700490998363335,
+      "maxReturn": 0,
+      "maxDrawdown": -0.33191489361702126,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.6755265697336177
+    },
+    {
+      "symbol": "0G",
+      "entryPrice": 0.553,
+      "exitPrice": 0.449,
+      "fwdReturn": -0.18806509945750458,
+      "maxReturn": 0.18264014466546108,
+      "maxDrawdown": -0.20072332730560585,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": -0.10991133412938846
+    },
+    {
+      "symbol": "HEMI",
+      "entryPrice": 0.00912,
+      "exitPrice": 0.00682,
+      "fwdReturn": -0.25219298245614036,
+      "maxReturn": 0.07565789473684206,
+      "maxDrawdown": -0.2653508771929824,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.046014257859363826
+    },
+    {
+      "symbol": "XPL",
+      "entryPrice": 0.1007,
+      "exitPrice": 0.0882,
+      "fwdReturn": -0.1241310824230387,
+      "maxReturn": 0.12214498510427016,
+      "maxDrawdown": -0.23336643495531276,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.41983299488011677
+    },
+    {
+      "symbol": "MIRA",
+      "entryPrice": 0.0897,
+      "exitPrice": 0.0831,
+      "fwdReturn": -0.07357859531772584,
+      "maxReturn": 0.03232998885172798,
+      "maxDrawdown": -0.16610925306577476,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.5624739286419462
+    },
+    {
+      "symbol": "FF",
+      "entryPrice": 0.06958,
+      "exitPrice": 0.09469,
+      "fwdReturn": 0.36087956309284264,
+      "maxReturn": 0.43259557344064387,
+      "maxDrawdown": -0.11986202931876976,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 8,
+      "btcCorr": 0.220299336384347
+    },
+    {
+      "symbol": "EDEN",
+      "entryPrice": 0.0366,
+      "exitPrice": 0.065,
+      "fwdReturn": 0.7759562841530055,
+      "maxReturn": 3.778688524590164,
+      "maxDrawdown": -0.08743169398907108,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.20202429017781232
+    },
+    {
+      "symbol": "NOM",
+      "entryPrice": 0.00272,
+      "exitPrice": 0.00211,
+      "fwdReturn": -0.22426470588235303,
+      "maxReturn": 0.3345588235294117,
+      "maxDrawdown": -0.2610294117647059,
+      "metCount": 3,
+      "metLabels": [
+        "底背离",
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 2,
+      "btcCorr": 0.14270399547324003
+    },
+    {
+      "symbol": "2Z",
+      "entryPrice": 0.08851,
+      "exitPrice": 0.09544,
+      "fwdReturn": 0.07829623771325264,
+      "maxReturn": 0.3549881369336797,
+      "maxDrawdown": -0.090498248785448,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.48174019992538875
+    },
+    {
+      "symbol": "MORPHO",
+      "entryPrice": 1.955,
+      "exitPrice": 2.238,
+      "fwdReturn": 0.14475703324808178,
+      "maxReturn": 0.2383631713554986,
+      "maxDrawdown": -0.16214833759590802,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 9,
+      "btcCorr": 0.7180624275709445
+    },
+    {
+      "symbol": "ASTER",
+      "entryPrice": 0.661,
+      "exitPrice": 0.684,
+      "fwdReturn": 0.03479576399394859,
+      "maxReturn": 0.13010590015128587,
+      "maxDrawdown": -0.05446293494704997,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.539358780141857
+    },
+    {
+      "symbol": "WAL",
+      "entryPrice": 0.0753,
+      "exitPrice": 0.0636,
+      "fwdReturn": -0.15537848605577692,
+      "maxReturn": 0.37715803452855234,
+      "maxDrawdown": -0.19389110225763623,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.41312938469259725
+    },
+    {
+      "symbol": "EUL",
+      "entryPrice": 1.458,
+      "exitPrice": 1.206,
+      "fwdReturn": -0.17283950617283952,
+      "maxReturn": 0.12002743484224969,
+      "maxDrawdown": -0.22290809327846361,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.5975599350806042
+    },
+    {
+      "symbol": "ENSO",
+      "entryPrice": 0.978,
+      "exitPrice": 0.751,
+      "fwdReturn": -0.23210633946830264,
+      "maxReturn": 0.1390593047034766,
+      "maxDrawdown": -0.24335378323108384,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.5628635968112582
+    },
+    {
+      "symbol": "YB",
+      "entryPrice": 0.1235,
+      "exitPrice": 0.1109,
+      "fwdReturn": -0.1020242914979757,
+      "maxReturn": 0.11578947368421058,
+      "maxDrawdown": -0.19595141700404858,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.23566115298304838
+    },
+    {
+      "symbol": "ZBT",
+      "entryPrice": 0.2179,
+      "exitPrice": 0.1333,
+      "fwdReturn": -0.38825149150986693,
+      "maxReturn": 0.06654428636989437,
+      "maxDrawdown": -0.39375860486461683,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 2,
+      "btcCorr": -0.022123053599951172
+    },
+    {
+      "symbol": "TURTLE",
+      "entryPrice": 0.0495,
+      "exitPrice": 0.0443,
+      "fwdReturn": -0.10505050505050512,
+      "maxReturn": 0.28888888888888875,
+      "maxDrawdown": -0.12727272727272726,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.2537515048886771
+    },
+    {
+      "symbol": "GIGGLE",
+      "entryPrice": 33.9,
+      "exitPrice": 30.17,
+      "fwdReturn": -0.11002949852507365,
+      "maxReturn": 0.2191740412979351,
+      "maxDrawdown": -0.13421828908554564,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.39963268911329536
+    },
+    {
+      "symbol": "F",
+      "entryPrice": 0.00576,
+      "exitPrice": 0.00526,
+      "fwdReturn": -0.08680555555555562,
+      "maxReturn": 0.11458333333333333,
+      "maxDrawdown": -0.13368055555555566,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.7450188068467561
+    },
+    {
+      "symbol": "KITE",
+      "entryPrice": 0.1533,
+      "exitPrice": 0.2097,
+      "fwdReturn": 0.36790606653620356,
+      "maxReturn": 0.6314416177429876,
+      "maxDrawdown": -0.08936725375081533,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.22069682676624983
+    },
+    {
+      "symbol": "MMT",
+      "entryPrice": 0.1366,
+      "exitPrice": 0.1259,
+      "fwdReturn": -0.07833089311859434,
+      "maxReturn": 0.1676427525622255,
+      "maxDrawdown": -0.1595900439238653,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.3933066644050732
+    },
+    {
+      "symbol": "SAPIEN",
+      "entryPrice": 0.0954,
+      "exitPrice": 0.1079,
+      "fwdReturn": 0.13102725366876308,
+      "maxReturn": 0.5020964360587004,
+      "maxDrawdown": -0.08385744234800832,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 3,
+      "btcCorr": 0.316896328464169
+    },
+    {
+      "symbol": "ALLO",
+      "entryPrice": 0.113,
+      "exitPrice": 0.084,
+      "fwdReturn": -0.2566371681415929,
+      "maxReturn": 0.18053097345132732,
+      "maxDrawdown": -0.284070796460177,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.3840089076402877
+    },
+    {
+      "symbol": "BANK",
+      "entryPrice": 0.0341,
+      "exitPrice": 0.0338,
+      "fwdReturn": -0.008797653958944331,
+      "maxReturn": 0.3137829912023461,
+      "maxDrawdown": -0.04105571847507327,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": -0.009508995795954255
+    },
+    {
+      "symbol": "MET",
+      "entryPrice": 0.1623,
+      "exitPrice": 0.1362,
+      "fwdReturn": -0.1608133086876156,
+      "maxReturn": 0.17313616759088116,
+      "maxDrawdown": -0.2057917436845349,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.5190076241162793
+    },
+    {
+      "symbol": "AT",
+      "entryPrice": 0.166,
+      "exitPrice": 0.1168,
+      "fwdReturn": -0.29638554216867474,
+      "maxReturn": 0.19819277108433725,
+      "maxDrawdown": -0.4289156626506025,
+      "metCount": 2,
+      "metLabels": [
+        "地量横盘",
+        "长下影"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.33027442381410715
+    },
+    {
+      "symbol": "KGST",
+      "entryPrice": 0.01142,
+      "exitPrice": 0.01142,
+      "fwdReturn": 0,
+      "maxReturn": 0.0043782837127845625,
+      "maxDrawdown": -0.005253940455341444,
+      "metCount": 3,
+      "metLabels": [
+        "地量横盘",
+        "长下影",
+        "独立走势"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 6,
+      "btcCorr": 0.07988560079818675
+    },
+    {
+      "symbol": "BREV",
+      "entryPrice": 0.1344,
+      "exitPrice": 0.1083,
+      "fwdReturn": -0.19419642857142858,
+      "maxReturn": 0.0543154761904762,
+      "maxDrawdown": -0.20089285714285712,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.4718173493263681
+    },
+    {
+      "symbol": "币安人生",
+      "entryPrice": 0.3459,
+      "exitPrice": 0.4202,
+      "fwdReturn": 0.21480196588609435,
+      "maxReturn": 0.38508239375542075,
+      "maxDrawdown": -0.05001445504481059,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 8,
+      "btcCorr": -0.07602243020680646
+    },
+    {
+      "symbol": "ZKP",
+      "entryPrice": 0.0875,
+      "exitPrice": 0.0725,
+      "fwdReturn": -0.17142857142857143,
+      "maxReturn": 0.26285714285714296,
+      "maxDrawdown": -0.2182857142857142,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 4,
+      "btcCorr": 0.4114377829371037
+    },
+    {
+      "symbol": "U",
+      "entryPrice": 0.9997,
+      "exitPrice": 1.0011,
+      "fwdReturn": 0.0014004201260378792,
+      "maxReturn": 0.0016004801440432587,
+      "maxDrawdown": -0.00010003000900268979,
+      "metCount": 1,
+      "metLabels": [
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": true,
+      "wickCount": 0,
+      "btcCorr": 0.18092316352361792
+    },
+    {
+      "symbol": "FRAX",
+      "entryPrice": 0.5093,
+      "exitPrice": 0.4059,
+      "fwdReturn": -0.20302375809935205,
+      "maxReturn": 0.030826624779108674,
+      "maxDrawdown": -0.21460828588258385,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.01700996224726319
+    },
+    {
+      "symbol": "FOGO",
+      "entryPrice": 0.0195,
+      "exitPrice": 0.01478,
+      "fwdReturn": -0.24205128205128207,
+      "maxReturn": 0.17846153846153848,
+      "maxDrawdown": -0.2687179487179487,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 7,
+      "btcCorr": 0.21083736579831736
+    },
+    {
+      "symbol": "RLUSD",
+      "entryPrice": 0.9997,
+      "exitPrice": 1.0013,
+      "fwdReturn": 0.0016004801440432587,
+      "maxReturn": 0.002000600180054018,
+      "maxDrawdown": 0,
+      "metCount": 3,
+      "metLabels": [
+        "底背离",
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 5,
+      "btcCorr": 0.1550394102924144
+    },
+    {
+      "symbol": "SENT",
+      "entryPrice": 0.0188,
+      "exitPrice": 0.01672,
+      "fwdReturn": -0.11063829787234053,
+      "maxReturn": 0.026063829787234087,
+      "maxDrawdown": -0.21914893617021278,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.27193569170581533
+    },
+    {
+      "symbol": "ZAMA",
+      "entryPrice": 0.02702,
+      "exitPrice": 0.03347,
+      "fwdReturn": 0.23871206513693566,
+      "maxReturn": 0.272020725388601,
+      "maxDrawdown": -0.06254626202812734,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 9,
+      "btcCorr": -0.11451447677076523
+    },
+    {
+      "symbol": "ESP",
+      "entryPrice": 0.0701,
+      "exitPrice": 0.06738,
+      "fwdReturn": -0.03880171184022825,
+      "maxReturn": 0.1038516405135522,
+      "maxDrawdown": -0.10841654778887298,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 8,
+      "btcCorr": 0.603574215260775
+    },
+    {
+      "symbol": "MANTRA",
+      "entryPrice": 0.01035,
+      "exitPrice": 0.00908,
+      "fwdReturn": -0.12270531400966186,
+      "maxReturn": 0.16714975845410635,
+      "maxDrawdown": -0.15362318840579706,
+      "metCount": 2,
+      "metLabels": [
+        "底背离",
+        "长下影"
+      ],
+      "c1": false,
+      "c2": true,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 6,
+      "btcCorr": 0.6062905907991635
+    },
+    {
+      "symbol": "ROBO",
+      "entryPrice": 0.02178,
+      "exitPrice": 0.01853,
+      "fwdReturn": -0.14921946740128555,
+      "maxReturn": 0.12534435261707988,
+      "maxDrawdown": -0.17676767676767674,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 5,
+      "btcCorr": 0.4004287611776028
+    },
+    {
+      "symbol": "OPN",
+      "entryPrice": 0.19,
+      "exitPrice": 0.1738,
+      "fwdReturn": -0.0852631578947368,
+      "maxReturn": 0.15105263157894738,
+      "maxDrawdown": -0.17526315789473682,
+      "metCount": 1,
+      "metLabels": [
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": false,
+      "c4": false,
+      "c5": true,
+      "wickCount": 1,
+      "btcCorr": 0.14683361274175183
+    },
+    {
+      "symbol": "NIGHT",
+      "entryPrice": 0.03562,
+      "exitPrice": 0.03307,
+      "fwdReturn": -0.07158899494665909,
+      "maxReturn": 0.03677709152161703,
+      "maxDrawdown": -0.16507580011229647,
+      "metCount": 1,
+      "metLabels": [
+        "长下影"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 7,
+      "btcCorr": 0.4997560875828448
+    },
+    {
+      "symbol": "CFG",
+      "entryPrice": 0.2196,
+      "exitPrice": 0.2928,
+      "fwdReturn": 0.3333333333333334,
+      "maxReturn": 0.5938069216757741,
+      "maxDrawdown": -0.1120218579234972,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 3,
+      "btcCorr": 0.18226568569005694
+    },
+    {
+      "symbol": "KAT",
+      "entryPrice": 0.01226,
+      "exitPrice": 0.00785,
+      "fwdReturn": -0.3597063621533443,
+      "maxReturn": 0.04486133768352366,
+      "maxDrawdown": -0.3637846655791191,
+      "metCount": 2,
+      "metLabels": [
+        "长下影",
+        "独立走势"
+      ],
+      "c1": false,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": true,
+      "wickCount": 4,
+      "btcCorr": 0.0006851335147640988
+    },
+    {
+      "symbol": "XAUT",
+      "entryPrice": 4675.48,
+      "exitPrice": 4512.39,
+      "fwdReturn": -0.03488198003199655,
+      "maxReturn": 0.017955375704740633,
+      "maxDrawdown": -0.04583914378844519,
+      "metCount": 2,
+      "metLabels": [
+        "地量横盘",
+        "长下影"
+      ],
+      "c1": true,
+      "c2": false,
+      "c3": true,
+      "c4": false,
+      "c5": false,
+      "wickCount": 2,
+      "btcCorr": 0.6059002156384112
+    }
+  ]
+}

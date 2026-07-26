@@ -1,0 +1,297 @@
+{
+  "windows": [
+    {
+      "id": "W1",
+      "label": "2026-06",
+      "total": 411,
+      "baselineWinRate": 0.49391727493917276,
+      "btcReturn": 0,
+      "m2WinRate": 0.41025641025641024,
+      "m2Count": 117,
+      "m3WinRate": 0.2222222222222222,
+      "m3Count": 9,
+      "factorReport": [
+        {
+          "factor": "长下影",
+          "metCount": 401,
+          "metWinRate": 0.49875311720698257,
+          "metAvgReturn": 0.026118296694670386,
+          "metMedian": 0,
+          "notWinRate": 0.3,
+          "advantage": 0.19875311720698258
+        },
+        {
+          "factor": "底背离",
+          "metCount": 51,
+          "metWinRate": 0.5098039215686274,
+          "metAvgReturn": 0.021598395693897498,
+          "metMedian": 0.0003001801080649169,
+          "notWinRate": 0.49166666666666664,
+          "advantage": 0.018137254901960775
+        },
+        {
+          "factor": "地量横盘",
+          "metCount": 2,
+          "metWinRate": 0.5,
+          "metAvgReturn": 0.006788552810113972,
+          "metMedian": 0.016078606520768216,
+          "notWinRate": 0.4938875305623472,
+          "advantage": 0.006112469437652812
+        },
+        {
+          "factor": "震仓",
+          "metCount": 0,
+          "metWinRate": 0,
+          "metAvgReturn": 0,
+          "metMedian": 0,
+          "notWinRate": 0.49391727493917276,
+          "advantage": 0
+        },
+        {
+          "factor": "独立走势",
+          "metCount": 82,
+          "metWinRate": 0.3170731707317073,
+          "metAvgReturn": -0.04616653926356029,
+          "metMedian": -0.02060606060606069,
+          "notWinRate": 0.5379939209726444,
+          "advantage": -0.2209207502409371
+        }
+      ]
+    },
+    {
+      "id": "W2",
+      "label": "2026-05",
+      "total": 407,
+      "baselineWinRate": 0.10073710073710074,
+      "btcReturn": 0,
+      "m2WinRate": 0.11274509803921569,
+      "m2Count": 204,
+      "m3WinRate": 0,
+      "m3Count": 6,
+      "factorReport": [
+        {
+          "factor": "独立走势",
+          "metCount": 100,
+          "metWinRate": 0.17,
+          "metAvgReturn": -0.1220034980723125,
+          "metMedian": -0.18305084745762704,
+          "notWinRate": 0.0781758957654723,
+          "advantage": 0.0918241042345277
+        },
+        {
+          "factor": "震仓",
+          "metCount": 0,
+          "metWinRate": 0,
+          "metAvgReturn": 0,
+          "metMedian": 0,
+          "notWinRate": 0.10073710073710074,
+          "advantage": 0
+        },
+        {
+          "factor": "底背离",
+          "metCount": 115,
+          "metWinRate": 0.06956521739130435,
+          "metAvgReturn": -0.21252070806989126,
+          "metMedian": -0.2594268476621417,
+          "notWinRate": 0.11301369863013698,
+          "advantage": -0.04344848123883263
+        },
+        {
+          "factor": "长下影",
+          "metCount": 395,
+          "metWinRate": 0.09873417721518987,
+          "metAvgReturn": -0.18487880395809722,
+          "metMedian": -0.2661538461538462,
+          "notWinRate": 0.16666666666666666,
+          "advantage": -0.06793248945147679
+        },
+        {
+          "factor": "地量横盘",
+          "metCount": 3,
+          "metWinRate": 0,
+          "metAvgReturn": -0.04553141154862014,
+          "metMedian": -0.024825783972125412,
+          "notWinRate": 0.10148514851485149,
+          "advantage": -0.10148514851485149
+        }
+      ]
+    },
+    {
+      "id": "W3",
+      "label": "2026-04",
+      "total": 405,
+      "baselineWinRate": 0.2641975308641975,
+      "btcReturn": 0,
+      "m2WinRate": 0.32231404958677684,
+      "m2Count": 121,
+      "m3WinRate": 0.45454545454545453,
+      "m3Count": 11,
+      "factorReport": [
+        {
+          "factor": "地量横盘",
+          "metCount": 6,
+          "metWinRate": 0.8333333333333334,
+          "metAvgReturn": -0.002254334940734172,
+          "metMedian": 0.0009006304413089282,
+          "notWinRate": 0.2556390977443609,
+          "advantage": 0.5776942355889725
+        },
+        {
+          "factor": "独立走势",
+          "metCount": 97,
+          "metWinRate": 0.3402061855670103,
+          "metAvgReturn": -0.047817610733279906,
+          "metMedian": -0.0852631578947368,
+          "notWinRate": 0.24025974025974026,
+          "advantage": 0.09994644530727007
+        },
+        {
+          "factor": "底背离",
+          "metCount": 34,
+          "metWinRate": 0.2647058823529412,
+          "metAvgReturn": -0.07507821254511532,
+          "metMedian": -0.09499999999999995,
+          "notWinRate": 0.2641509433962264,
+          "advantage": 0.0005549389567147678
+        },
+        {
+          "factor": "震仓",
+          "metCount": 0,
+          "metWinRate": 0,
+          "metAvgReturn": 0,
+          "metMedian": 0,
+          "notWinRate": 0.2641975308641975,
+          "advantage": 0
+        },
+        {
+          "factor": "长下影",
+          "metCount": 398,
+          "metWinRate": 0.2638190954773869,
+          "metAvgReturn": -0.04528651242392831,
+          "metMedian": -0.07957393483709264,
+          "notWinRate": 0.2857142857142857,
+          "advantage": -0.021895190236898787
+        }
+      ]
+    },
+    {
+      "id": "W4",
+      "label": "2026-03",
+      "total": 191,
+      "baselineWinRate": 0.900523560209424,
+      "btcReturn": 0,
+      "m2WinRate": 0.864406779661017,
+      "m2Count": 59,
+      "m3WinRate": 1,
+      "m3Count": 3,
+      "factorReport": [
+        {
+          "factor": "底背离",
+          "metCount": 42,
+          "metWinRate": 0.9523809523809523,
+          "metAvgReturn": 0.1788923615839082,
+          "metMedian": 0.15926892950391652,
+          "notWinRate": 0.8859060402684564,
+          "advantage": 0.0664749121124959
+        },
+        {
+          "factor": "震仓",
+          "metCount": 0,
+          "metWinRate": 0,
+          "metAvgReturn": 0,
+          "metMedian": 0,
+          "notWinRate": 0.900523560209424,
+          "advantage": 0
+        },
+        {
+          "factor": "长下影",
+          "metCount": 189,
+          "metWinRate": 0.8994708994708994,
+          "metAvgReturn": 0.17437346917502056,
+          "metMedian": 0.1348973607038123,
+          "notWinRate": 1,
+          "advantage": -0.10052910052910058
+        },
+        {
+          "factor": "独立走势",
+          "metCount": 20,
+          "metWinRate": 0.75,
+          "metAvgReturn": 0.2516712595696707,
+          "metMedian": 0.16136363636363643,
+          "notWinRate": 0.9181286549707602,
+          "advantage": -0.16812865497076024
+        },
+        {
+          "factor": "地量横盘",
+          "metCount": 1,
+          "metWinRate": 0,
+          "metAvgReturn": -0.0009995002498749525,
+          "metMedian": -0.0009995002498749525,
+          "notWinRate": 0.9052631578947369,
+          "advantage": -0.9052631578947369
+        }
+      ]
+    }
+  ],
+  "consistency": {
+    "excessReturn": -0.012413282301618866,
+    "stdDev": 0,
+    "factorConsistency": [
+      {
+        "factor": "地量横盘",
+        "avgAdvantage": 0.23368659228574468,
+        "positiveWindows": 4,
+        "totalWindows": 4,
+        "stdDev": 0.2047231776293062,
+        "consistent": true
+      },
+      {
+        "factor": "底背离",
+        "avgAdvantage": 0.02952092505230771,
+        "positiveWindows": 2,
+        "totalWindows": 4,
+        "stdDev": 0.04132889994048339,
+        "consistent": false
+      },
+      {
+        "factor": "长下影",
+        "avgAdvantage": -0.03432754334339141,
+        "positiveWindows": 2,
+        "totalWindows": 4,
+        "stdDev": 0.04277271293433892,
+        "consistent": false
+      },
+      {
+        "factor": "震仓",
+        "avgAdvantage": -0.059015286105559256,
+        "positiveWindows": 0,
+        "totalWindows": 4,
+        "stdDev": 0.06883104635422137,
+        "consistent": false
+      },
+      {
+        "factor": "独立走势",
+        "avgAdvantage": -0.31239106172185604,
+        "positiveWindows": 0,
+        "totalWindows": 4,
+        "stdDev": 0.34954731291998486,
+        "consistent": false
+      }
+    ]
+  },
+  "risks": [
+    "震仓: 仅0/4窗口正向 → 可能过拟合",
+    "独立走势: 仅0/4窗口正向 → 可能过拟合",
+    "≥2条件超额仅-1.2% → 接近噪音水平",
+    "≥2条件负超额 → 模型在回测期内整体失效",
+    "地量横盘: 标准差20.5% → 高度不可预测",
+    "独立走势: 标准差35.0% → 高度不可预测"
+  ],
+  "dataNeeds": [
+    "exchange_netflow",
+    "sector_tags",
+    "circulating_supply",
+    "market_regime",
+    "longer_history"
+  ]
+}

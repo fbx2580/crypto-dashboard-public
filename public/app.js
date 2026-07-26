@@ -113,73 +113,10 @@ async function refreshMarket() {
     // BTC 由 tickBtcPrice 每秒实时更新，这里不覆盖
     const c = data.crypto || {};
     const sh = data.aShares?.['000001'];
-    setMoFlow('moBtcFlow', c.btcPrice);
-    // 市场状态
-    if (data.marketRegime) {
-      const mr = document.getElementById('marketRegime');
-      if (mr) {
-        const regimeLabels = {strong_bull:'🟢强牛',bull:'🟢牛',neutral:'⚪',bear:'🔴熊',panic:'🛑恐慌'};
-        mr.textContent = regimeLabels[data.marketRegime] || '?';
-      }
-    }
-    if (sh) { setItem('moA01', sh.price.toFixed(0), sh.changePercent); setMoFlow('moShFlow', sh.price); }
-    if (data.nasdaq) { setItem('moNasdaq', '$' + data.nasdaq.price.toLocaleString('en', {minimumFractionDigits:0}), data.nasdaq.changePercent); setMoFlow('moNasdaqFlow', data.nasdaq.price); }
-    if (data.sp500) { setItem('moSp500', '$' + data.sp500.price.toLocaleString('en', {minimumFractionDigits:0}), data.sp500.changePercent); setMoFlow('moSp500Flow', data.sp500.price); }
-    if (data.gold) { setItem('moGold', '$' + data.gold.price.toFixed(1), data.gold.changePercent); setMoFlow('moGoldFlow', data.gold.price); }
-    if (data.oil) { setItem('moOil', '$' + data.oil.price.toFixed(2), data.oil.changePercent); setMoFlow('moOilFlow', data.oil.price); }
+    if (sh) setItem('moA01', sh.price.toFixed(0), sh.changePercent);
+    if (data.nasdaq) setItem('moNasdaq', `$${data.nasdaq.price.toLocaleString('en', {minimumFractionDigits:0})}`, data.nasdaq.changePercent);
+    if (data.sp500) setItem('moSp500', `$${data.sp500.price.toLocaleString('en', {minimumFractionDigits:0})}`, data.sp500.changePercent);
   } catch(e) {}
-}
-
-// 资金流向：基于价格短期动量（对比~15秒前）
-const _flowTracker = {};
-function isMarketOpen(marketId) {
-  const now = new Date();
-  const d = now.getUTCDay(), h = now.getUTCHours(), m = now.getUTCMinutes();
-  const t = h * 60 + m;
-  switch(marketId) {
-    case 'moBtcFlow': return true;
-    case 'moShFlow': // A股 周一~五 9:30-11:30/13:00-15:00 北京时间 → UTC+8
-      if (d === 0 || d === 6) return false;
-      return (t >= 90 && t <= 210) || (t >= 300 && t <= 420);
-    case 'moNasdaqFlow': case 'moSp500Flow': // 美股 周一~五 9:30-16:00 ET → UTC-4(夏)
-      if (d === 0 || d === 6) return false;
-      return t >= 810 && t <= 1200;
-    case 'moGoldFlow': case 'moOilFlow': // 期货 周日22:00~周五21:00 UTC，每日21-22维护
-      if (d === 6) return false;
-      if (d === 0 && t < 1320) return false;
-      if (d === 5 && t >= 1260) return false;
-      if (t >= 1260 && t < 1320) return false;
-      return true;
-    default: return true;
-  }
-}
-function getFlowHTML(id, price) {
-  if (!price || price <= 0) return 'neutral';
-  if (!_flowTracker[id]) _flowTracker[id] = [];
-  const t = _flowTracker[id];
-  t.push(price);
-  if (t.length > 10) t.shift();
-  // 数据不够先按开盘/休盘区分
-  if (t.length < 3) return isMarketOpen(id) ? 'neutral' : 'closed';
-  const prev = t[t.length - 4] || t[0];
-  const pct = (price - prev) / prev;
-  // 有波动就报方向，不管开没开盘
-  if (pct > 0.0005) return 'in_strong';
-  if (pct > 0.0002) return 'in_weak';
-  if (pct < -0.0005) return 'out_strong';
-  if (pct < -0.0002) return 'out_weak';
-  // 价格完全没动 + 休盘 → 休盘；开盘但没动 → 观望
-  if (Math.abs(pct) < 0.00001 && !isMarketOpen(id)) return 'closed';
-  return 'neutral';
-}
-function setMoFlow(elId, price) {
-  const el = document.getElementById(elId);
-  if (!el) return;
-  const signal = getFlowHTML(elId, price);
-  const map = { in_strong:['⤴ 流入','#22c55e'], in_weak:['↗ 微入','#86efac'], out_strong:['⤵ 流出','#ef4444'], out_weak:['↘ 微出','#fbbf24'], neutral:['—','var(--text-dim)'], closed:['休盘','var(--text-dim)'] };
-  const v = map[signal] || ['—','var(--text-dim)'];
-  el.textContent = v[0];
-  el.style.color = v[1];
 }
 
 // ─── 主流币排行（谁更硬谁更软）───
@@ -259,7 +196,6 @@ async function tickBtcPrice() {
           valEl.className = `mo-value ${cls}`;
           chgEl.textContent = `${sign}${chg.toFixed(2)}%`;
           chgEl.className = `mo-change ${cls}`;
-          setMoFlow('moBtcFlow', data.price);
           const box = document.getElementById('moCrypto');
           if (box) {
             box.style.transition = 'box-shadow 0.1s';
@@ -491,176 +427,6 @@ function setupChartMore() {
 
 let _newsVersion = 0;
 
-// ─── 山寨币吸筹监控（基于扫描引擎）───
-let _accumSignals = null;
-function applyAccumFilter() {
-  const q = (document.getElementById('accumSearch')?.value || '').toUpperCase();
-  const rows = document.querySelectorAll('.accum-row');
-  const groups = document.querySelectorAll('.accum-group');
-  
-  if (!q) {
-    // 清空搜索：恢复原分组
-    rows.forEach(row => { row.style.display = ''; });
-    groups.forEach(g => { g.style.display = ''; });
-    // 清理之前注入的搜索结果行
-    document.querySelectorAll('.accum-row-search').forEach(r => r.remove());
-    return;
-  }
-
-  // 搜索模式：隐藏所有分组，创建搜索结果区
-  groups.forEach(g => { g.style.display = 'none'; });
-  
-  // 先从现有DOM找
-  let found = false;
-  rows.forEach(row => {
-    const sym = (row.dataset.sym || '').toUpperCase();
-    if (sym.includes(q)) { row.style.display = ''; found = true; }
-    else row.style.display = 'none';
-  });
-
-  // 如果没找到，从全量数据里匹配（包括被截断的弱信号）
-  if (!found && _accumSignals) {
-    const matches = _accumSignals.filter(s => (s.symbol||'').toUpperCase().includes(q));
-    if (matches.length) {
-      document.querySelectorAll('.accum-row-search').forEach(r => r.remove());
-      const el = document.getElementById('accumulationBody');
-      if (el) {
-        let inject = '<div class="accum-row-search" style="margin-top:8px;">';
-        for (const s of matches) {
-          const chgCls = s.change24h >= 0 ? 'up' : 'down';
-          const chgSign = s.change24h >= 0 ? '+' : '';
-          const estVal = s.estAccumulation >= 1e9 ? (s.estAccumulation/1e9).toFixed(1)+'B' : s.estAccumulation >= 1e6 ? (s.estAccumulation/1e6).toFixed(1)+'M' : (s.estAccumulation/1e3).toFixed(0)+'K';
-          const sc = s.score||0;
-          const scClr = sc >= 60 ? '#22c55e' : sc >= 40 ? '#fbbf24' : 'var(--text-dim)';
-          const btns = (s.conditions||[]).map(c => '<span class="accum-cond ' + (c.met?'met':'') + '">' + (c.met?'✅':'❌') + ' ' + c.label + '</span>').join('');
-          const dur = s.accumDays ? s.accumDays + '天' : '';
-          inject += '<div style="padding:6px 0;border-bottom:1px solid var(--border);font-size:10px;">' +
-            '<div class="accum-top"><span class="accum-sym">' + s.symbol + (s.accType==='band'?' 📡':'') + '</span>' +
-            '<span class="accum-score-badge" style="color:' + scClr + '">' + sc + '分</span>' +
-            '<span class="accum-price">$' + fmt.price(s.price) + '</span>' +
-            '<span class="accum-chg ' + chgCls + '">' + chgSign + s.change24h.toFixed(2) + '%</span></div>' +
-            '<div class="accum-conds">' + btns + '</div>' +
-            '<div class="accum-info"><span>VWAP ' + fmt.price(s.vwap) + '</span><span>吸筹 ~$' + estVal + '</span>' + (dur ? '<span>' + dur + '</span>' : '') + '<span>费率 ' + ((s.fundingRate||0)*100).toFixed(4) + '%</span>' + (s.marketCap ? '<span>市值 ' + (s.marketCap>=1e9?'$'+(s.marketCap/1e9).toFixed(1)+'B':s.marketCap>=1e6?'$'+(s.marketCap/1e6).toFixed(0)+'M':'$'+(s.marketCap/1e3).toFixed(0)+'K') + '</span>' : '') + '</div>' +
-            (s.entryLabel ? '<div class="accum-entry"><span style="color:' + (s.entryStatus==='in_zone'?'#22c55e':'var(--text-dim)') + ';">' + s.entryLabel + '</span></div>' : '') +
-          '</div>';
-        }
-        inject += '</div>';
-        el.insertAdjacentHTML('beforeend', inject);
-      }
-    }
-  }
-}
-async function refreshAccumulationMonitor() {
-  const el = document.getElementById('accumulationBody');
-  if (!el) return;
-  try {
-    const resp = await fetch('/api/accumulation/scan');
-    if (!resp.ok) return;
-    const data = await resp.json();
-    const signals = data.signals || [];
-    _accumSignals = signals;
-
-    document.getElementById('accumUpdateTime').textContent =
-      (data.scannedAt ? new Date(data.scannedAt).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'}) : '—');
-
-    // 同步刷新雷达统计
-    fetch('/api/accumulation/radar').then(r=>r.json()).then(rd=>{
-      document.getElementById('radarHigh').textContent = '🔥' + (rd.tiers?.high || 0);
-      document.getElementById('radarCand').textContent = '⭐' + ((rd.tiers?.candidate || 0) + (rd.tiers?.watch || 0));
-    }).catch(()=>{});
-
-    if (!signals.length) {
-      el.innerHTML = '<div style="color:var(--text-dim);padding:10px;">暂无信号 · 扫描' + (data.totalScanned||0) + '个币</div>';
-      return;
-    }
-
-    const m5 = signals.filter(s => s.metCount >= 5);
-    const m4 = signals.filter(s => s.metCount === 4);
-    const m3 = signals.filter(s => s.metCount === 3);
-    const m2 = signals.filter(s => s.metCount === 2);
-    const brk = signals.filter(s => s.breakout?.ready);
-    const rest = signals.filter(s => !s.breakout?.ready);
-    const rm5 = rest.filter(s => s.metCount >= 5);
-    const rm4 = rest.filter(s => s.metCount === 4);
-    const rm3 = rest.filter(s => s.metCount === 3);
-    const rm2 = rest.filter(s => s.metCount === 2);
-    const groups = [
-      { label: '🔥 突破预备 (' + brk.length + ')', signals: brk, cls: '' },
-      { label: '🔴 强吸筹 (' + (rm5.length+rm4.length) + ')', signals: [...rm5, ...rm4], cls: 'accum-strong' },
-      { label: '🟡 中等 (' + rm3.length + ')', signals: rm3, cls: 'accum-mid' },
-      { label: '⚪ 弱信号 (' + rm2.length + ')', signals: rm2.slice(0, 20), cls: 'accum-weak' },
-    ];
-
-    if (true) { // 全量重建
-      let html = '<div style="font-size:10px;color:var(--text-dim);margin-bottom:4px;" id="accumSummary">扫描' + (data.totalScanned||'?') + '币 → 信号' + signals.length + ' · 权重:震仓30+底背离25+地量15+长下影10~20+独立15</div>';
-      for (const g of groups) {
-        if (!g.signals.length) continue;
-        html += '<div class="accum-group"><div class="accum-group-hd">' + g.label + '</div>';
-        for (let i = 0; i < g.signals.length; i++) {
-          const s = g.signals[i];
-          const btns = s.conditions.map(c => {
-            const ico = c.met ? '✅' : '❌';
-            const wt = c.met ? c.weight : 0;
-            const tip = '<b>' + c.label + (c.met ? ' (+' + c.weight + '分)</b><br>' : ' (0分)</b><br>') +
-              '<span style="color:var(--text-dim);font-size:11px;">' + c.desc + '</span><br>' +
-              '<span style="font-size:10px;">' + c.detail + '</span>';
-            return '<span class="accum-cond ' + (c.met ? 'met' : '') + '">' + ico + ' ' + c.label +
-              '<span class="accum-tooltip">' + tip + '</span></span>';
-          }).join('');
-          const chgCls = s.change24h >= 0 ? 'up' : 'down';
-          const chgSign = s.change24h >= 0 ? '+' : '';
-          const estVal = s.estAccumulation >= 1e9 ? (s.estAccumulation/1e9).toFixed(1)+'B' : s.estAccumulation >= 1e6 ? (s.estAccumulation/1e6).toFixed(1)+'M' : (s.estAccumulation/1e3).toFixed(0)+'K';
-          const sc = s.score || 0;
-          const scClr = sc >= 60 ? '#22c55e' : sc >= 40 ? '#fbbf24' : 'var(--text-dim)';
-          const durTxt = s.accumDays ? s.accumDays + '天' : '';
-          html += '<div class="accum-row" data-sym="' + s.symbol + '">' +
-            '<div class="accum-top">' +
-              '<span class="accum-sym">' + s.symbol + (s.accType === 'band' ? ' 📡' : '') + '</span>' +
-              '<span class="accum-score-badge" style="color:' + scClr + '">' + sc + '分</span>' +
-              '<span class="accum-price">$' + fmt.price(s.price) + '</span>' +
-              '<span class="accum-chg ' + chgCls + '">' + chgSign + s.change24h.toFixed(2) + '%</span>' +
-            '</div>' +
-            '<div class="accum-conds">' + btns + '</div>' +
-            '<div class="accum-info"><span>VWAP ' + fmt.price(s.vwap) + '</span><span>吸筹 ~$' + estVal + '</span>' + (s.accumDays ? '<span>' + s.accumDays + '天</span>' : '') + '<span>费率 ' + ((s.fundingRate||0)*100).toFixed(4) + '%</span>' + (s.marketCap ? '<span>市值 ' + (s.marketCap>=1e9?'$'+(s.marketCap/1e9).toFixed(1)+'B':s.marketCap>=1e6?'$'+(s.marketCap/1e6).toFixed(0)+'M':'$'+(s.marketCap/1e3).toFixed(0)+'K') + '</span>' : '') + '</div>' +
-            (s.breakout && s.breakout.ready ? '<div class="accum-entry" style="color:#f0b90b;">🔥 突破预备 · 确认度' + (s.breakout.confidence||0) + '%</div>' : '') +
-            '<div class="accum-entry">' +
-              (s.entryStatus === 'in_zone' ? '<span style="color:#22c55e;">' + (s.entryLabel||'✓ 成本区内') + '</span>' :
-               s.entryStatus === 'sub_zone' ? '<span style="color:#fbbf24;">' + (s.entryLabel||'⚠ 吸筹区下方') + '</span>' :
-               s.entryStatus === 'avalanche' ? '<span style="color:#ef4444;">' + (s.entryLabel||'⚠ 深跌中') + '</span>' :
-               s.entryStatus === 'above_cost' ? '<span style="color:#86efac;">' + (s.entryLabel||'庄家已获利') + '</span>' :
-               '<span style="color:#fbbf24;">' + (s.entryLabel||'已脱离吸筹区') + '</span>') +
-              '<span style="color:var(--text-dim);font-size:9px;">区间 ' + fmt.price(s.entryZone.low) + '~' + fmt.price(s.entryZone.high) + ' 庄成本' + fmt.price(s.entryZone.whaleCost) + '</span>' +
-            '</div>' +
-          '</div>';
-        }
-        html += '</div>';
-      }
-      el.innerHTML = html;
-      // DOM rebuilt
-    } else {
-      // 增量更新
-      document.getElementById('accumSummary').textContent = '形态识别 · 扫' + (data.totalScanned||'?') + '币 · 信号' + signals.length;
-      const rows = el.querySelectorAll('.accum-row');
-      const allFlat = [...m5, ...m4, ...m3, ...m2.slice(0,20)];
-      const len = Math.min(rows.length, allFlat.length);
-      for (let i = 0; i < len; i++) {
-        const s = allFlat[i];
-        const row = rows[i];
-        const chgCls = s.change24h >= 0 ? 'up' : 'down';
-        const chgSign = s.change24h >= 0 ? '+' : '';
-        row.querySelector('.accum-sym').textContent = s.symbol + (s.accType === 'band' ? ' 📡' : '');
-        row.dataset.sym = s.symbol;
-        row.querySelector('.accum-price').textContent = '$' + fmt.price(s.price);
-        const chgEl = row.querySelector('.accum-chg');
-        chgEl.textContent = chgSign + s.change24h.toFixed(2) + '%';
-        chgEl.className = 'accum-chg ' + chgCls;
-      }
-    }
-  } catch(e) {
-    el.innerHTML = '<div style="color:var(--text-dim);padding:10px;">加载失败</div>';
-  }
-}
-
 // ─── 币圈强信号 ───
 window._whaleTxs = [];
 window._whaleHashes = new Set();
@@ -734,7 +500,6 @@ async function refreshAll() {
       refreshIndicators().catch(e => console.error('indicators', e)),
       refreshLlama().catch(e => console.error('llama', e)),
       refreshAltcoinSignals().catch(e => console.error('altcoin', e)),
-      refreshAccumulationMonitor().catch(e => console.error('accum', e)),
     ]);
   } catch(e) {}
   await loadChart().catch(e => console.error('loadChart', e));
@@ -742,30 +507,18 @@ async function refreshAll() {
 }
 
 // ─── Tab Switching ───
-let _activeTab = 'trade';
-let _tabVisited = {trade: true};
-function isTabActive(id) { return _activeTab === id || document.getElementById('tab' + id.charAt(0).toUpperCase() + id.slice(1))?.classList.contains('active'); }
 function setupTabs() {
   document.querySelectorAll('.tab:not(.disabled)').forEach(tab => {
     tab.addEventListener('click', () => {
-      const prev = _activeTab;
-      _activeTab = tab.dataset.tab;
       document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
       document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
       tab.classList.add('active');
       const target = document.getElementById('tab' + tab.dataset.tab.charAt(0).toUpperCase() + tab.dataset.tab.slice(1));
       if (target) target.classList.add('active');
-      // 首次进入Tab: 初始化数据
-      if (!_tabVisited[_activeTab]) {
-        _tabVisited[_activeTab] = true;
-        if (_activeTab === 'altcoin') refreshAltcoinSignals();
-        if (_activeTab === 'accumulation') refreshAccumulationMonitor();
-        if (_activeTab === 'news') setupNews();
-        if (_activeTab === 'defi') refreshLlama();
+      // 币圈强信号tab（预留）
+      if (tab.dataset.tab === 'altcoin') {
+        refreshAltcoinSignals();
       }
-      // 离开Tab时停止高频刷新，进入时恢复
-      if (_activeTab === 'accumulation') refreshAccumulationMonitor();
-      if (_activeTab === 'altcoin' && prev !== 'altcoin') refreshAltcoinSignals();
     });
   });
 }
@@ -958,13 +711,11 @@ function init() {
   // Tier 0: 秒级（BTC大盘 + K线最新蜡烛）—— 1秒
   setInterval(() => { tickBtcPrice(); tickChart(); }, 1000);
 
-  // Tier 1: 大盘 — 仅大看板Tab有效
-  setInterval(() => { if (_activeTab === 'trade') { refreshMarket(); refreshTickers(); } }, 5000);
+  // Tier 1: 大盘（纳指/标普/上证 + 主流排行）—— 5秒
+  setInterval(() => { refreshMarket(); refreshTickers(); }, 5000);
 
-  // Tier 2: 存储股+强信号 — 仅链上侦探Tab有效
-  setInterval(() => { if (_activeTab === 'altcoin') { refreshAnomalies(); refreshAltcoinSignals(); } }, 2000);
-  // 雷达 — 仅吸筹雷达Tab有效
-  setInterval(() => { if (_activeTab === 'accumulation') refreshAccumulationMonitor(); }, 30000);
+  // Tier 2: 存储股 + 强信号—— 5秒
+  setInterval(() => { refreshAnomalies(); refreshAltcoinSignals(); }, 2000);
 
   // Tier 3: 低频（恐惧指数 + 山寨季指数）—— 3分钟
   setInterval(() => { refreshIndicators(); refreshLlama(); }, 180000);
