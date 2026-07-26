@@ -15,15 +15,18 @@ async function fetch() {
       headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)' }
     });
 
-    // 解析时间+标题
-    const re = /(\d{2}:\d{2}:\d{2})\s*<[^>]*>([^<]+)/g;
+    // 简单解析：先去掉HTML标签，再找 HH:MM:SS 文本对
+    const text = resp.data.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '').replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '').replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, ' ').replace(/&[a-z]+;/gi, ' ').replace(/\s+/g, ' ');
+    
+    // 匹配时间戳后跟文本: HH:MM:SS 后面直到下一个 HH:MM:SS 的所有文本
+    const re = /(\d{2}:\d{2}:\d{2})\s+([\s\S]*?)(?=\d{2}:\d{2}:\d{2}|$)/g;
     let m;
     const items = [];
-    while ((m = re.exec(resp.data)) !== null && items.length < 30) {
+    while ((m = re.exec(text)) !== null && items.length < 30) {
       const time = m[1].slice(0, 5);
       const title = m[2].trim();
       if (title.length < 5) continue;
-      if (/TradingHero|金十数据·|VIP年会员|高定礼盒|金十数据APP|金十开放平台/.test(title)) continue;
+      if (/TradingHero|金十数据·|VIP年会员|高定礼盒|金十数据APP|金十开放平台|PLUS|解锁直达/i.test(title)) continue;
       items.push({ t: time, s: title, src: 'jin10-http' });
     }
 

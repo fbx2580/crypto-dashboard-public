@@ -38,7 +38,29 @@ function checkDaemons() {
     } catch(e) {}
   } catch(e) { log('❌ rt检查失败'); }
 
-  // ── jin10 ──
+  // ── jin10-http ──
+  try {
+    const jh = execSync('pgrep -cf jin10-http', { encoding: 'utf8', timeout: 3000 }).trim();
+    const jhCount = parseInt(jh) || 0;
+    if (jhCount < 1) {
+      log('⚠️ jin10-http 挂了，拉起...');
+      execSync(`cd ${D} && nohup node jin10-http.js > /tmp/jin10-http.log 2>&1 &`, { timeout: 5000 });
+      log('✅ jin10-http 已拉');
+      return;
+    }
+    try {
+      const jhLog = fs.statSync('/tmp/jin10-http.log');
+      const age = (Date.now() - jhLog.mtimeMs) / 1000;
+      if (age > 120) {
+        log(`⚠️ jin10-http PID存在但 ${Math.round(age)}s无心跳 (僵尸)`);
+        execSync('pkill -9 -f jin10-http 2>/dev/null', { timeout: 3000 });
+        execSync(`cd ${D} && nohup node jin10-http.js > /tmp/jin10-http.log 2>&1 &`, { timeout: 5000 });
+        log('✅ jin10-http 已杀旧启新');
+      }
+    } catch(e) {}
+  } catch(e) { log('❌ jin10-http检查失败'); }
+
+  // ── jin10-scraper ──
   try {
     const j10 = execSync('pgrep -cf jin10-scraper', { encoding: 'utf8', timeout: 3000 }).trim();
     const j10Count = parseInt(j10) || 0;

@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-07-26T17:00:02.134Z",
-  "overall_score": 100,
+  "timestamp": "2026-07-26T18:55:01.438Z",
+  "overall_score": 96,
   "status": "healthy",
   "checks": {
     "jin10": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 122,
+      "delay": 30,
       "diagnosis": null
     },
     "rss": {
@@ -21,28 +21,34 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 32,
+      "delay": 7,
       "diagnosis": null
     },
     "eth": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 3,
+      "delay": 1,
       "diagnosis": null
     },
     "alerts": {
-      "status": "ok",
-      "score": 100,
-      "errors": [],
-      "delay": 297,
-      "diagnosis": null
+      "status": "warn",
+      "score": 70,
+      "errors": [
+        "延迟6898s但诊断通过: Binance API正常"
+      ],
+      "delay": 6898,
+      "diagnosis": {
+        "ok": true,
+        "detail": "Binance API正常",
+        "fix": ""
+      }
     },
     "market_snapshot": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 5378,
+      "delay": 12277,
       "diagnosis": null
     },
     "data_quality": {
@@ -61,5 +67,7 @@
     }
   },
   "dataErrors": [],
-  "errors": []
+  "errors": [
+    "延迟6898s但诊断通过: Binance API正常"
+  ]
 }

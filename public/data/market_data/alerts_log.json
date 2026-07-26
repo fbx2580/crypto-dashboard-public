@@ -1,6 +1,81 @@
 {
   "alerts": [
     {
+      "time": "2026-07-26T18:45:02.027Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟6299s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 9
+    },
+    {
+      "time": "2026-07-26T18:30:01.214Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟5398s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 6
+    },
+    {
+      "time": "2026-07-26T18:15:01.283Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟4498s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 3
+    },
+    {
+      "time": "2026-07-26T18:05:01.625Z",
+      "type": "staleness",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常 (65分钟)",
+      "errors": [
+        "延迟3898s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false
+    },
+    {
+      "time": "2026-07-26T17:10:01.429Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "jin10",
+      "message": "金十快讯 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-26T17:05:01.192Z",
+      "type": "staleness",
+      "level": "warn",
+      "source": "jin10",
+      "message": "金十快讯: 采集循环卡住: 日志3364s无输出，可能page.goto挂起 (7分钟)",
+      "errors": [
+        "采集循环卡住: 日志3364s无输出，可能page.goto挂起",
+        "建议修复: 强制重启 jin10-scraper"
+      ],
+      "fix": "强制重启 jin10-scraper",
+      "resolved": true,
+      "resolvedAt": "2026-07-26T17:10:01.429Z",
+      "regressed": true
+    },
+    {
       "time": "2026-07-26T16:51:59.613Z",
       "type": "recovery",
       "level": "info",
@@ -541,6 +616,6 @@
       "regressed": true
     }
   ],
-  "updated": "2026-07-26T17:00:02.134Z",
-  "total": 42
+  "updated": "2026-07-26T18:55:01.438Z",
+  "total": 48
 }

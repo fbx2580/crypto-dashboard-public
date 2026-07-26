@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "s": "Water returning to Gatwick Airport after major outage",
+      "t": "2026-07-26T18:38:26.000Z",
+      "ts": 1785091106,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cdew2dnxlzzo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "盖特威克机场大停水后供水恢复",
+      "_ts": 1785091131026
+    },
+    {
+      "s": "2 weeks left for Clarity: State of Crypto",
+      "t": "2026-07-26T18:30:00.000Z",
+      "ts": 1785090600,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/07/26/2-weeks-left-for-clarity-state-of-crypto",
+      "s_cn": "距离澄清：加密货币现状还有 2 周时间",
+      "_ts": 1785090635790
+    },
+    {
+      "s": "CFTC issues second warning to prediction markets on cookie-cutter self-certifications",
+      "t": "2026-07-26T17:45:05.000Z",
+      "ts": 1785087905,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/cftc-issues-second-warning-to-prediction-markets-on-cookie-cutter-self-certifications?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "美国商品期货交易委员会（CFTC）就千篇一律的自我认证向预测市场发出第二次警告",
+      "_ts": 1785088143472
+    },
+    {
       "s": "Russia’s Sberbank to launch crypto trading infrastructure this year",
       "t": "2026-07-26T16:07:11.000Z",
       "ts": 1785082031,
@@ -778,6 +805,6 @@
       "s_cn": "中国吉利将通过新合资企业在西班牙福特工厂生产电动汽车"
     }
   ],
-  "updated": 1785085186110,
+  "updated": 1785092396866,
   "sources": 6
 }
