@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "s": "32.445 Billion XRP: Community Sets Record Straight on XRP Escrow",
+      "t": "2026-07-26T15:20:16.000Z",
+      "ts": 1785079216,
+      "src": "U.Today",
+      "link": "https://u.today/32445-billion-xrp-community-sets-record-straight-on-xrp-escrow",
+      "s_cn": "324.45 亿 XRP：社区刷新 XRP 托管记录",
+      "_ts": 1785080050419
+    },
+    {
+      "s": "Flare CEO Reveals XRPFi Roadmap: Will XRP Price Follow Market Expectations?",
+      "t": "2026-07-26T15:09:05.000Z",
+      "ts": 1785078545,
+      "src": "U.Today",
+      "link": "https://u.today/flare-ceo-reveals-xrpfi-roadmap-will-xrp-price-follow-market-expectations",
+      "s_cn": "Flare 首席执行官透露 XRPFi 路线图：XRP 价格会遵循市场预期吗？",
+      "_ts": 1785079408265
+    },
+    {
       "s": "Paramount and Warner Bros pause $110bn merger amid legal challenge",
       "t": "2026-07-24T21:49:25.000Z",
       "ts": 1784929765,
@@ -742,6 +760,6 @@
       "s_cn": "中国吉利将通过新合资企业在西班牙福特工厂生产电动汽车"
     }
   ],
-  "updated": 1785077999819,
+  "updated": 1785080086683,
   "sources": 6
 }

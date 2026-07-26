@@ -1,0 +1,54 @@
+{
+  "alerts": [
+    {
+      "time": "2026-07-26T15:55:43.166Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户 连续3次异常 (1893s未更新) | 验证: Etherscan 可达 ❌",
+      "errors": [
+        "API验证失败: Etherscan 可达不可达"
+      ],
+      "resolved": false,
+      "consecutiveFailures": 3
+    },
+    {
+      "time": "2026-07-26T15:55:43.166Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "whale",
+      "message": "鲸鱼转账 连续3次异常 (682s未更新) | 验证: Etherscan 区块号可达 ❌",
+      "errors": [
+        "API验证失败: Etherscan 区块号可达不可达"
+      ],
+      "resolved": false,
+      "consecutiveFailures": 3
+    },
+    {
+      "time": "2026-07-26T15:55:43.166Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "rss",
+      "message": "RSS新闻 连续3次异常 (1257s未更新) | 验证: CoinTelegraph RSS 可达 ✅",
+      "errors": [
+        "采集可能卡住: 文件1257s未更新但API可达"
+      ],
+      "resolved": false,
+      "consecutiveFailures": 3
+    },
+    {
+      "time": "2026-07-26T15:55:43.166Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "jin10",
+      "message": "金十快讯 连续3次异常 (1888s未更新) | 验证: jin10.com 可达 ✅",
+      "errors": [
+        "采集可能卡住: 文件1888s未更新但API可达"
+      ],
+      "resolved": false,
+      "consecutiveFailures": 3
+    }
+  ],
+  "updated": "2026-07-26T15:56:10.420Z",
+  "total": 4
+}

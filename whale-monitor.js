@@ -47,14 +47,15 @@ async function scanEthBlock() {
     const r = await axios.get(ETHERSCAN_V2 + '?chainid=1&module=proxy&action=eth_getBlockByNumber&tag=latest&boolean=true&apikey=' + ETHERSCAN_KEY, {timeout:8000});
     if (!r.data || !r.data.result) return txs;
     const block = r.data.result;
-    const ts = parseInt(block.timestamp, 16);
+    let ts = parseInt(block.timestamp, 16);
+    if (!ts || isNaN(ts)) ts = Math.floor(Date.now()/1000);
     for (const t of (block.transactions || [])) {
       const val = parseInt(t.value, 16) / 1e18;
       if (val > 800 && t.from && t.to) {
         txs.push({c:'ETH', val:parseFloat(val.toFixed(0)), hash:t.hash, ts, from:t.from, to:t.to, exFrom:getEx(t.from), exTo:getEx(t.to)});
       }
     }
-  } catch(e) {}
+  } catch(e) { console.error('[whale] ETH区块扫描失败:', e.message?.slice(0,60)||e); }
   return txs;
 }
 
@@ -92,6 +93,8 @@ function updateCache(fresh) {
     if (!seen.has(t.hash)) { old.unshift(t); seen.add(t.hash); }
   }
   fs.writeFileSync(CACHE_FILE, JSON.stringify({updated:Date.now(), transfers:old.slice(0,500)}, null, 2));
+  // P2: 按日归档
+  try { const { archive } = require('./archive-manager'); archive('whale', fresh, 'hash'); } catch(e) {}
   
   // 同步写 SQLite（主存储）
   try {

@@ -60,7 +60,7 @@ async function scanNew() {
       }
     }
   }
-  if (added > 0) fs.writeFileSync(FILE, JSON.stringify(data,null,2));
+  if (added > 0) { fs.writeFileSync(FILE, JSON.stringify(data,null,2)); try { const { archive } = require('./archive-manager'); archive('eth', data.whales.slice(-added), 'fullAddr'); } catch(e) {} }
   return added;
 }
 
@@ -81,7 +81,7 @@ async function checkBalance() {
     } catch(e) {}
     await new Promise(r=>setTimeout(r,30));
   }
-  if (changed) fs.writeFileSync(FILE, JSON.stringify(data,null,2));
+  if (changed) { fs.writeFileSync(FILE, JSON.stringify(data,null,2)); try { const { archive } = require('./archive-manager'); archive('eth', data.whales, 'fullAddr'); } catch(e) {} }
   return changed;
 }
 

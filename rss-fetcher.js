@@ -143,6 +143,8 @@ async function fetchNews() {
   const merged = { items: existingItems.slice(0, 500), updated: Date.now(), sources: successCount };
   fs.writeFileSync(path.join(DATA_DIR, 'latest.json'), JSON.stringify(merged, null, 2));
   fs.writeFileSync(FALLBACK_FILE, JSON.stringify(merged, null, 2));
+  // P2: 按日归档 — 用本次新抓的 items
+  try { const { archive } = require('./archive-manager'); archive('news', items, 's'); } catch(e) {}
   try { const ins = db.prepare('INSERT OR IGNORE INTO news_archive (source, title, content, url, ts) VALUES (?, ?, ?, ?, ?)'); const tx = db.transaction((list) => { for (const i of list) { try { ins.run('rss', i.s||'', i.c||i.desc||'', i.u||i.link||'', Math.floor(i.t||Date.now()/1000)); }catch(e){} } }); tx(items); } catch(e2) {}
 
   console.log(`[rss] ✅ ${items.length} articles from ${finalCount}/${SOURCES.length} sources`);

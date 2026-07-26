@@ -2,193 +2,145 @@
 <html lang="zh">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quant Research Lab</title>
+<title>监控面板</title>
 <style>
-:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#c9d1d9;--blue:#58a6ff;--green:#3fb950;--red:#f85149;--yellow:#d29922;--muted:#8b949e}
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--text);padding:20px}
-.w{max-width:1200px;margin:0 auto}
-.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
-h1{color:var(--blue);font-size:18px}.sub{color:var(--muted);font-size:11px}
-.tabs{display:flex;gap:4px;margin-bottom:16px;flex-wrap:wrap}
-.tab{padding:6px 14px;border:1px solid var(--border);border-radius:6px;font-size:12px;cursor:pointer;background:var(--card);color:var(--text);user-select:none}
-.tab.on{color:#fff;border-color:var(--blue);background:#1a2a3a}
-.panel{display:none}.panel.on{display:block}
-.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:14px}
-h2{color:#f0f6fc;font-size:14px;margin-bottom:8px}
-.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px}
-.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px}
-.st{text-align:center;padding:10px;background:var(--bg);border-radius:6px;border:1px solid #21262d}
-.st .v{font-size:20px;font-weight:bold;color:var(--blue)}.st .l{font-size:9px;color:var(--muted);margin-top:2px}.st.g .v{color:var(--green)}.st.r .v{color:var(--red)}.st.y .v{color:var(--yellow)}
-.row{display:flex;gap:14px;flex-wrap:wrap}.col{flex:1;min-width:300px}
-table{width:100%;border-collapse:collapse;font-size:11px}th,td{text-align:left;padding:4px 7px;border-bottom:1px solid #21262d}th{color:var(--muted);font-size:9px}
-.up{color:var(--green)}.down{color:var(--red)}.no{color:var(--muted)}
-.tag{display:inline-block;padding:1px 5px;border-radius:8px;font-size:8px}.tg-g{background:#1a3a2a;color:var(--green)}.tg-r{background:#3a1a1a;color:var(--red)}.tg-y{background:#3a2a1a;color:var(--yellow)}.tg-b{background:#1a2a3a;color:var(--blue)}
-.loading{color:var(--muted);padding:20px;text-align:center}.nodata{color:var(--muted);padding:10px;text-align:center;font-size:11px;font-style:italic}
-.refresh{font-size:10px;color:var(--blue);cursor:pointer;background:none;border:1px solid var(--border);padding:3px 10px;border-radius:4px}
-.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:3px}.ok{background:var(--green)}.bad{background:var(--red)}.warn{background:var(--yellow)}
-.src{font-size:8px;color:var(--muted);text-align:right;margin-top:6px}
-.ts{font-size:9px;color:var(--muted);text-align:right}
-.feed{max-height:400px;overflow-y:auto}
-.news-item{padding:3px 0;border-bottom:1px solid #21262d;font-size:11px}.news-item .time{color:var(--muted);font-size:10px}
+:root{--bg:#0a0f18;--card:#111827;--border:#1e293b;--text:#e2e8f0;--muted:#64748b;--blue:#60a5fa;--green:#4ade80;--red:#f87171;--yellow:#fbbf24;--cyan:#22d3ee}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--text);padding:10px;font-size:11px}
+.w{max-width:1300px;margin:0 auto}
+.top{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);margin-bottom:8px}
+.top h1{font-size:14px;color:var(--cyan)}.top .live{font-size:10px;color:var(--muted)}.top .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:4px;animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.g{display:grid;grid-template-columns:220px 1fr;gap:8px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:8px}
+.card h3{font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px}
+/* 进程 */
+.proc{display:flex;align-items:center;gap:6px;padding:5px 0;border-bottom:1px solid #1a2235}.proc:last-child{border:0}
+.proc .s{width:8px;height:8px;border-radius:50%;flex-shrink:0}.proc .s.ok{background:var(--green)}.proc .s.bad{background:var(--red);animation:pulse 1s infinite}
+.proc .info{flex:1}.proc .name{font-weight:bold}.proc .meta{font-size:9px;color:var(--muted)}
+/* 新鲜度 */
+.fbar{margin-bottom:4px}.fbar .label{display:flex;justify-content:space-between;font-size:10px}.fbar .label span:last-child{color:var(--muted)}
+.fbar .track{height:4px;background:#1e293b;border-radius:2px;margin:2px 0;overflow:hidden}
+.fbar .fill{height:100%;border-radius:2px;transition:width .5s}.fill.ok{background:var(--green)}.fill.warn{background:var(--yellow)}.fill.bad{background:var(--red)}
+/* 质量 */
+.qgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:4px}
+.qb{text-align:center;padding:5px;border-radius:4px;font-size:10px}.qb .n{font-size:9px;color:var(--muted)}.qb .v{font-size:16px;font-weight:bold}
+/* 告警 */
+.alert{font-size:10px;padding:3px 0;border-bottom:1px solid #1a2235}.alert:last-child{border:0}
+.alert.p0{border-left:2px solid var(--red);padding-left:6px}.alert.p1{border-left:2px solid var(--yellow);padding-left:6px}
+/* 数据量 */
+.dv{display:flex;gap:8px;flex-wrap:wrap}.dv-item{font-size:10px;padding:3px 6px;border-radius:3px;background:#1a2235}
+/* 右列 */
+.right{display:flex;flex-direction:column;gap:8px}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 </style>
 </head>
 <body>
 <div class="w">
 <div class="top">
-<div><h1>🔬 Quant Research Lab</h1><p class="sub" id="ut">加载中...</p></div>
-<button class="refresh" onclick="loadTab(currentTab)">刷新</button>
+<h1>🛡 实时监控</h1>
+<div class="live"><span class="dot"></span>5s 自刷新 · <span id="clock">--</span></div>
 </div>
 
-<div class="tabs">
-<div class="tab on" data-tab="overview">🌐 首页</div>
-<div class="tab" data-tab="market">🌐 市场环境</div>
-<div class="tab" data-tab="scanner">📊 资产扫描</div>
-<div class="tab" data-tab="funding">💰 资金</div>
-<div class="tab" data-tab="news">📰 新闻</div>
-<div class="tab" data-tab="alerts">⚡ 异动</div>
-<div class="tab" data-tab="datacenter">🗄 数据中心</div>
-</div>
+<div class="g">
+  <!-- 左列 -->
+  <div>
+    <div class="card"><h3>进程</h3><div id="procs">加载...</div></div>
+    <div class="card" style="margin-top:8px"><h3>告警</h3><div id="alerts">加载...</div></div>
+    <div class="card" style="margin-top:8px"><h3>数据量</h3><div class="dv" id="datavol">加载...</div></div>
+  </div>
 
-<div id="overview" class="panel on"></div>
-<div id="market" class="panel"></div>
-<div id="scanner" class="panel"></div>
-<div id="funding" class="panel"></div>
-<div id="news" class="panel"></div>
-<div id="alerts" class="panel"></div>
-<div id="datacenter" class="panel"></div>
-<div id="health"></div>
+  <!-- 右列 -->
+  <div class="right">
+    <div class="card"><h3>数据新鲜度</h3><div id="fresh">加载...</div></div>
+    <div class="card"><h3>数据质量</h3><div class="qgrid" id="quality">加载...</div></div>
+    <div class="card"><h3>数据源健康</h3><div id="health">加载...</div></div>
+    <div class="r2">
+      <div class="card"><h3>K线覆盖</h3><div id="kline">加载...</div></div>
+      <div class="card"><h3>归档</h3><div id="archive">加载...</div></div>
+    </div>
+  </div>
+</div>
 </div>
 
 <script>
-let currentTab='overview', cache={};
-const F=(v,d=null)=>v!=null&&!isNaN(v)?v:d;
-const P=(v,d=2)=>F(v)!==null?v.toFixed(d):null;
-const PC=(v)=>v!=null?(v*100).toFixed(2):null;
-const PF=(v,d=null)=>F(v)!==null?P(v,2)+'%':(d||null);
-const T=(v)=>v?v.slice(0,19):null;
+async function tick(){
+  const t0=performance.now();
+  try {
+    const [mon,dq,dc]=await Promise.all([
+      fetch('/api/monitor').then(r=>r.json()),
+      fetch('/api/data-quality').then(r=>r.json()),
+      fetch('/api/datacenter').then(r=>r.json()).catch(()=>({coverage:{},sources:[],archive:{}}))
+    ]);
+    const ms=Math.round(performance.now()-t0);
+    document.getElementById('clock').textContent=new Date().toLocaleTimeString()+` (${ms}ms)`;
 
-async function init(){
-  const [mkt,scan,news,alerts,deriv,status]=await Promise.all([
-    fetch('/api/market').then(r=>r.json()),
-    fetch('/api/scan').then(r=>r.json()),
-    fetch('/api/news').then(r=>r.json()),
-    fetch('/api/alerts').then(r=>r.json()),
-    fetch('/api/derivatives').then(r=>r.json()),
-    fetch('/api/status').then(r=>r.json())
-  ]);
-  cache={mkt,scan,news,alerts,deriv,status};
-  document.getElementById('ut').textContent='BTC $'+P(F(mkt.btc?.price),0)+' | '+new Date().toLocaleTimeString();
-  loadTab(currentTab);
-}
+    // ── 进程 ──
+    document.getElementById('procs').innerHTML=(mon.procs||[]).map(p=>{
+      const ok=p.status==='alive';
+      return `<div class="proc"><div class="s ${ok?'ok':'bad'}"></div><div class="info"><div class="name">${p.name}</div><div class="meta">${ok?'PID:'+p.pid+' ↑'+p.uptime:'❌ 挂了'}</div></div></div>`;
+    }).join('');
 
-async function loadTab(tab){
-  currentTab=tab;
-  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.tab===tab));
-  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.id===tab));
-  if(!cache.mkt){await init();return;}
-  const {mkt,scan,news,alerts,deriv,status}=cache;
-  const b=mkt.btc||{},eb=mkt.ethbtc||{},dom=mkt.dominance||{};
+    // ── 新鲜度 ──
+    document.getElementById('fresh').innerHTML=(mon.freshness||[]).map(f=>{
+      const max=f.status==='fresh'?30:f.status==='stale'?180:600;
+      const pct=Math.min(100,(f.delay||0)/max*100);
+      const cls=f.status==='fresh'?'ok':f.status==='stale'?'warn':'bad';
+      return `<div class="fbar"><div class="label"><span>${f.name}</span><span style="color:${f.status==='fresh'?'var(--green)':f.status==='stale'?'var(--yellow)':'var(--red)'}">${f.delay!=null?f.delay+'s':'缺'}</span></div><div class="track"><div class="fill ${cls}" style="width:${pct}%"></div></div></div>`;
+    }).join('');
 
-  if(tab==='overview'){
-    const tr=F(b.ret30d)>3?'BULL':F(b.ret30d)<-3?'BEAR':'SIDEWAYS';
-    document.getElementById('overview').innerHTML=
-    `<div class="row"><div class="col"><div class="card"><h2>🌐 Market Regime</h2><div class="g3">
-      <div class="st ${tr==='BULL'?'g':tr==='BEAR'?'r':'y'}"><div class="v">${tr}</div><div class="l">BTC 趋势</div></div>
-      <div class="st ${F(b.price)>F(b.ma200)?'g':'r'}"><div class="v">${F(b.price)>F(b.ma200)?'上方':'下方'}</div><div class="l">vs MA200</div></div>
-      <div class="st"><div class="v">${F(dom.btc)>60?'BTC主导':'中性'}</div><div class="l">山寨状态</div></div>
-      <div class="st ${F(dom.btc)>65?'r':'g'}"><div class="v">${F(dom.btc)>65?'高':'中'}</div><div class="l">风险等级</div></div>
-    </div><div class="ts">更新: ${T(mkt.updatedAt)||'—'}</div></div></div></div>
-    <div class="row"><div class="col"><div class="card"><h2>🪙 BTC</h2><div class="g2">
-      <div class="st"><div class="v">$${P(F(b.price),0)}</div><div class="l">价格</div></div>
-      <div class="st ${F(b.change24h)>0?'g':'r'}"><div class="v">${PF(b.change24h)||'—'}</div><div class="l">24h涨跌</div></div>
-      <div class="st"><div class="v">$${P(F(b.ma200),0)}</div><div class="l">MA200</div></div>
-      <div class="st ${F(b.ret30d)>0?'g':'r'}"><div class="v">${PF(b.ret30d)||'—'}</div><div class="l">30d</div></div>
-      <div class="st"><div class="v">${F(b.volatility)?P(b.volatility*100,0)+'%':'—'}</div><div class="l">波动率</div></div>
-      <div class="st"><div class="v">${F(b.volume24h)?'$'+P(b.volume24h/1e6,0)+'M':'—'}</div><div class="l">24h量</div></div>
-    </div><div class="src">来源: ${b.source||'Binance'} | ${T(b.updatedAt)||'—'}</div></div></div>
-    <div class="col"><div class="card"><h2>🏔 山寨</h2><div class="g2">
-      <div class="st"><div class="v">${P(F(dom.btc),1)}%</div><div class="l">BTC.D</div></div>
-      <div class="st"><div class="v">${P(F(eb.price),5)}</div><div class="l">ETH/BTC</div></div>
-      <div class="st"><div class="v">$${F(mkt.totalMC)?P(mkt.totalMC/1e12,2)+'T':'—'}</div><div class="l">总市值</div></div>
-      <div class="st"><div class="v">${mkt.total3?.status||'—'}</div><div class="l">TOTAL3</div></div>
-    </div><div class="src">BTC.D: CoinGecko | ETH/BTC: Binance</div></div></div></div>`;
-    document.getElementById('health').innerHTML=`<div class="card"><h2>💚 Data Health</h2><div style="display:flex;gap:16px;flex-wrap:wrap;font-size:11px">${(status.checks||[]).map(c=>`<div><span class="dot ${c.ok?'ok':'bad'}"></span> ${c.name}: ${c.ok?'正常':'⚠️'}</div>`).join('')}</div><div class="ts" style="margin-top:6px">Last Sync: ${new Date().toLocaleTimeString()}</div></div>`;
-  }
+    // ── 质量 ──
+    const checks=dq.checks||{};
+    const qNames={jin10:'金十',rss:'RSS',whale:'鲸鱼',eth:'ETH',alerts:'异动',market_snapshot:'快照',data_quality:'质量',alerts_log:'告警'};
+    document.getElementById('quality').innerHTML=Object.entries(checks).map(([k,v])=>{
+      const c=v.score>=80?'var(--green)':v.score>=50?'var(--yellow)':'var(--red)';
+      const name=qNames[k]||k;
+      const hint=v.verified?` title="${v.verifyResult||''}"`:'';
+      return `<div class="qb" style="border:1px solid #1e293b;cursor:help"${hint}><div class="v" style="color:${c}">${v.score}%</div><div class="n">${name}</div>${v.errors?.length?`<div style="font-size:7px;color:var(--red)">${v.errors.length}个问题</div>`:''}</div>`;
+    }).join('');
 
-  if(tab==='market'){
-    try{
-      const rg=await fetch('/api/regime').then(r=>r.json());
-      if(rg.error){document.getElementById('market').innerHTML='<p class="nodata">'+rg.error+'</p>';return;}
-      const bc=rg.btc||{},ac=rg.altcoin||{},rk=rg.risk||{};
-      const stColor=bc.state==='BULL'?'g':bc.state==='BEAR'?'r':'y';
-      document.getElementById('market').innerHTML=
-      '<div class="row"><div class="col"><div class="card"><h2>🪙 BTC 环境</h2><div class="g2">'+
-      '<div class="st"><div class="v">$'+P(F(bc.price),0)+'</div><div class="l">价格</div></div>'+
-      '<div class="st '+stColor+'"><div class="v">'+bc.state+'</div><div class="l">状态</div></div>'+
-      '<div class="st '+(bc.vsMA200?.class==='up'?'g':'r')+'"><div class="v">'+bc.vsMA200?.label+'</div><div class="l">MA200 '+bc.vsMA200?.distance+'</div></div>'+
-      '<div class="st '+(bc.trend?.class==='up'?'g':bc.trend?.class==='down'?'r':'y')+'"><div class="v">'+bc.trend?.label+'</div><div class="l">30d趋势</div></div>'+
-      '<div class="st '+(bc.volatility?.class==='low'?'g':bc.volatility?.class==='high'?'r':'y')+'"><div class="v">'+bc.volatility?.label+'</div><div class="l">波动 '+bc.volatility?.value+'</div></div>'+
-      '</div><div class="src">来源: '+rg.sources?.btc+' | 更新: '+T(rg.updatedAt)+'</div></div></div>'+
-      '<div class="col"><div class="card"><h2>🏔 山寨环境</h2><div class="g2">'+
-      '<div class="st '+(ac.state==='ALT_SEASON'?'g':ac.state==='BTC_SEASON'?'r':'y')+'"><div class="v">'+(ac.state==='BTC_SEASON'?'BTC主导':ac.state==='ALT_SEASON'?'山寨季':'中性')+'</div><div class="l">状态</div></div>'+
-      '<div class="st"><div class="v">'+P(F(ac.btcDominance),1)+'%</div><div class="l">BTC.D</div></div>'+
-      '<div class="st '+(ac.ethbtcTrend==='走强'?'g':'r')+'"><div class="v">'+ac.ethbtcTrend+'</div><div class="l">ETH/BTC 30d</div></div>'+
-      '<div class="st"><div class="v">'+(F(ac.totalMC)?'$'+P(ac.totalMC/1e12,2)+'T':'—')+'</div><div class="l">总市值</div></div>'+
-      '</div><div class="src">来源: '+rg.sources?.alt+' / '+rg.sources?.ethbtc+'</div></div></div></div>'+
-      '<div class="card"><h2>⚠️ 风险因素</h2><div class="g2"><div class="st '+(rk.level==='HIGH'?'r':rk.level==='MEDIUM'?'y':'g')+'"><div class="v">'+rk.level+'</div><div class="l">风险等级</div></div></div>'+
-      '<div style="font-size:11px;margin-top:8px;color:var(--muted)">'+((rk.factors||[]).length?rk.factors.map(f=>'• '+f).join('<br>'):'无明显风险因素')+'</div></div>';
-    }catch(e){document.getElementById('market').innerHTML='<p class="loading">加载失败</p>';}
-  }
+    // ── 告警 ──
+    const alerts=(dq.alerts||[]).filter(a=>!a.resolved);
+    document.getElementById('alerts').innerHTML=alerts.length
+      ? alerts.slice(0,5).map(a=>{
+        const cls=a.level==='critical'?'p0':'p1';
+        const errs=(a.errors||[]).filter(Boolean);
+        return `<div class="alert ${cls}"><div style="font-weight:bold">${a.level==='critical'?'🔴':'⚠️'} ${a.message}</div><div style="font-size:9px;color:var(--muted)">${new Date(a.time).toLocaleTimeString()}</div>${errs.length?`<div style="font-size:9px;color:var(--red);margin-top:3px;padding-left:8px">${errs.map(e=>'· '+e).join('<br>')}</div>`:''}</div>`;
+      }).join('')
+      : '<div style="color:var(--green);font-size:10px">✅ 无告警</div>';
 
-  if(tab==='scanner'){/* ... same scanner code ... */}
+    // ── 数据源健康 ──
+    document.getElementById('health').innerHTML=(dc.sources||[]).map(s=>
+      `<div style="display:flex;justify-content:space-between;padding:3px 0;font-size:10px;border-bottom:1px solid #1a2235"><span>${s.ok?'🟢':'🔴'} ${s.name}</span><span style="color:var(--muted)">${s.lastSync}</span></div>`
+    ).join('');
 
-  if(tab==='funding'){
-    const items=deriv.items||[],s=deriv.summary||{};
-    document.getElementById('funding').innerHTML='<div class="card"><h2>💰 资金费率</h2><div class="g2"><div class="st"><div class="v">'+PC(s.avgFunding)||'—'+'</div><div class="l">均费率</div></div><div class="st g"><div class="v">'+(s.positiveCount||0)+'</div><div class="l">正费率</div></div><div class="st r"><div class="v">'+(s.negativeCount||0)+'</div><div class="l">负费率</div></div><div class="st y"><div class="v">'+(s.extremeCount||0)+'</div><div class="l">极端>0.5%</div></div></div></div><div class="card"><h2>Top 合约</h2><table><tr><th>币种</th><th>价格</th><th>24h量</th><th>涨跌</th><th>费率</th></tr>'+items.map(c=>'<tr><td>'+c.symbol+'</td><td>$'+P(c.price,4)+'</td><td>$'+P(c.volume24h/1e6,0)+'M</td><td class="'+(c.change24h>0?'up':'down')+'">'+P(c.change24h,1)+'%</td><td>'+PC(c.fundingRate)||'—'+'</td></tr>').join('')+'</table></div>';
-  }
-  if(tab==='news'){
-    const items=news.items||[];
-    document.getElementById('news').innerHTML='<div class="card"><h2>📰 新闻</h2><div class="feed">'+(items.length?items.map(n=>'<div class="news-item"><span class="time">'+(n.time||'').slice(0,16)+'</span> '+n.title+'</div>').join(''):'<p class="nodata">暂无新闻</p>')+'</div></div>';
-  }
-  if(tab==='alerts'){
-    const items=alerts.items||[];
-    document.getElementById('alerts').innerHTML='<div class="card"><h2>⚡ 异动</h2>'+(items.length?('<table><tr><th>币种</th><th>时间</th><th>涨跌</th><th>等级</th></tr>'+items.map(a=>'<tr><td>'+(a.symbol||'—')+'</td><td>'+(a.time||'').slice(11,19)+'</td><td class="'+(a.change>0?'up':'down')+'">'+P(a.change,1)+'%</td><td><span class="tag '+(a.level==='大'?'tg-r':'tg-y')+'">'+a.level+'</span></td></tr>').join('')+'</table>'):'<p class="nodata">暂无异动</p>')+'</div>';
-  }
-  if(tab==='datacenter'){
-    try{
-      const [dc,dq]=await Promise.all([
-        fetch('/api/datacenter').then(r=>r.json()),
-        fetch('/api/data-quality').then(r=>r.json())
-      ]);
-      const srcs=(dc.sources||[]).map(s=>'<div><span class="dot '+(s.ok?'ok':'bad')+'"></span> <b>'+s.name+'</b>: '+(s.ok?'✅正常':'⚠️异常')+' | 频率:'+s.lastSync+' | '+s.volume+'</div>').join('');
-      const cv=dc.coverage||{};
-      const storage=(dc.storage||[]).map(s=>'<tr><td>'+s.dir+'</td><td>'+s.files+'</td><td>'+s.size+'</td><td>'+s.updated+'</td></tr>').join('');
-      const fields=Object.entries(dc.fields||{}).map(([k,v])=>'<div style="margin-bottom:8px"><b>'+k+':</b> <span style="color:var(--muted);font-size:10px">'+v.join(', ')+'</span></div>').join('');
-      const healthScore=()=>{const ok=dc.sources.filter(s=>s.ok).length;const total=dc.sources.length;const covPct=parseInt(cv.kline?.pct||'0');const avg=(ok/total*100+covPct)/2;return avg.toFixed(0)+'%';};
-      document.getElementById('datacenter').innerHTML=
-        // Data Quality
-        '<div class="card"><h2>💚 Data Quality</h2>'+
-        '<div class="g3">'+
-        '<div class="st '+(dq.overall_score>=80?'g':dq.overall_score>=60?'y':'r')+'"><div class="v">'+dq.overall_score+'%</div><div class="l">综合评分</div></div>'+
-        '<div class="st '+(dq.status==='healthy'?'g':'r')+'"><div class="v">'+dq.status?.toUpperCase()+'</div><div class="l">状态</div></div>'+
-        '</div>'+
-        '<div style="font-size:11px;margin-top:8px">'+
-        Object.entries(dq.checks||{}).map(([k,v])=>'<div style="margin:2px 0"><span style="color:'+(v.status==='ok'?'var(--green)':v.status==='warn'?'var(--yellow)':'var(--red)')+'">'+(v.status==='ok'?'✅':v.status==='warn'?'⚠️':'❌')+'</span> '+k+': '+v.score+'%'+(v.errors?.length?' <span style="color:var(--red);font-size:9px">('+v.errors.length+'个问题)</span>':'')+'</div>').join('')+
-        '</div></div>'+
-        // Data Sources
-        '<div class="card"><h2>📡 Data Sources</h2><div style="font-size:11px;line-height:1.8">'+srcs+'</div></div>'+
-        '<div class="card"><h2>📊 K-line Coverage</h2>'+
-          '<div class="g2"><div class="st"><div class="v">'+(cv.kline?.cached||0)+'</div><div class="l">已缓存</div></div><div class="st"><div class="v">'+(cv.kline?.target||528)+'</div><div class="l">目标</div></div><div class="st '+(parseInt(cv.kline?.pct)>70?'g':'y')+'"><div class="v">'+(cv.kline?.pct||'0%')+'</div><div class="l">覆盖率</div></div><div class="st"><div class="v">'+(cv.kline?.missing||0)+'</div><div class="l">缺失</div></div></div>'+
-          '<div class="ts" style="margin-top:8px">周期: '+((cv.periods||['1d']).join(', '))+' | 最早同步: '+(cv.oldestSync||'—')+'</div></div>'+
-        '<div class="card"><h2>💾 Storage</h2><table><tr><th>目录</th><th>文件数</th><th>大小</th><th>最新更新</th></tr>'+storage+'</table></div>'+
-        '<div class="card"><h2>📋 字段字典</h2>'+fields+'</div>'+
-        '<div class="card"><h2>💚 Data Health Score</h2><div style="text-align:center;font-size:32px;font-weight:bold;color:'+(parseInt(healthScore())>70?'var(--green)':'var(--yellow)')+'">'+healthScore()+'</div><div class="ts" style="text-align:center">API 可用性 + K线覆盖率</div></div>';
-    }catch(e){document.getElementById('datacenter').innerHTML='<p class="loading">加载失败</p>';}
+    // ── K线 ──
+    const cv=dc.coverage?.kline||{};
+    const kpct=parseInt(cv.pct)||0;
+    document.getElementById('kline').innerHTML=`
+      <div style="text-align:center;font-size:22px;font-weight:bold;color:${kpct>70?'var(--green)':kpct>40?'var(--yellow)':'var(--red)'}">${kpct}%</div>
+      <div style="text-align:center;font-size:10px;color:var(--muted)">${cv.cached||0} / ${cv.target||528} 币</div>
+    `;
+
+    // ── 归档 ──
+    const a=mon.archive||{};
+    document.getElementById('archive').innerHTML=Object.keys(a).length
+      ? Object.entries(a).slice(0,4).map(([k,v])=>`<div style="display:flex;justify-content:space-between;padding:2px 0;font-size:10px"><span style="color:var(--cyan)">${k}</span><span style="color:var(--muted)">${v.total}条 / ${v.files}天</span></div>`).join('')
+      : '<div style="color:var(--muted);font-size:10px">等待归档...</div>';
+
+    // ── 数据量（直播 + 归档）──
+    const vol=mon.volumes||{};
+    const arc=mon.archVolumes||{};
+    document.getElementById('datavol').innerHTML=
+      `<div class="dv-item">📰 金十 <b>${vol.jin10||'?'}</b>条${arc.news?' +📦'+arc.news+'':''}</div>`+
+      `<div class="dv-item">📡 RSS <b>${vol.rss||'?'}</b>条${arc.news?' +📦'+arc.news+'':''}</div>`+
+      `<div class="dv-item">🐋 鲸鱼 <b>${vol.whale||'?'}</b>条${arc.whale?' +📦'+arc.whale+'':''}</div>`+
+      `<div class="dv-item">💹 ETH <b>${vol.eth||'?'}</b>大户</div>`+
+      `<div class="dv-item">⚡ 异动 <b>${vol.alerts||'?'}</b>条${arc.alerts?' +📦'+arc.alerts+'':''}</div>`;
+
+  } catch(e) {
+    document.getElementById('procs').innerHTML='<span style="color:var(--red)">⚠️ API 不可达</span>';
   }
 }
-
-document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>loadTab(t.dataset.tab));
-init();
+tick(); setInterval(tick,5000);
 </script>
 </body>
 </html>

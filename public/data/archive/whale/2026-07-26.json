@@ -1,0 +1,28 @@
+{
+  "date": "2026-07-26",
+  "type": "whale",
+  "updated": 1785080655377,
+  "total": 2,
+  "records": [
+    {
+      "c": "USDT",
+      "val": 4500000,
+      "hash": "0xc3b62acb4b050360f68890c610c3c28a0298462f57239fb2e7de3c2dee91bdb5",
+      "ts": 1785080531,
+      "from": "0x0aaefe13c215fb23143a86b66d7a2a0e6f23ba09",
+      "to": "0x66f791456b82921cbc3f89a98c24ea21784973a1",
+      "exFrom": null,
+      "exTo": null
+    },
+    {
+      "c": "BTC",
+      "val": 28.24616,
+      "hash": "b8f573fb9ec7c9bae83a76e6003dc6ab288db36e979b4813dcbe586cc29a6932",
+      "ts": 1785079585,
+      "from": "bc1qgnerwnztlz7ne4seq0rdencmavl8xnm9ruuacf",
+      "to": "14Dp13hoQmyv2fXa2xaRT8dfuH3vakuLaK",
+      "exFrom": "",
+      "exTo": ""
+    }
+  ]
+}

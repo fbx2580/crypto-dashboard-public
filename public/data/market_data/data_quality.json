@@ -1,57 +1,86 @@
 {
-  "timestamp": "2026-07-26T14:55:02.081Z",
-  "overall_score": 93,
+  "timestamp": "2026-07-26T15:55:43.166Z",
+  "overall_score": 80,
   "status": "healthy",
   "checks": {
-    "btc": {
-      "status": "ok",
-      "score": 80,
+    "jin10": {
+      "status": "warn",
+      "score": 70,
       "errors": [
-        "BTC 数据超过60分钟未更新 (65分钟)"
+        "采集可能卡住: 文件1888s未更新但API可达"
       ],
-      "lastUpdate": "2026-07-26T13:50:32.077Z",
-      "delayMinutes": 65
+      "delay": 1888,
+      "verified": true,
+      "verifyResult": "jin10.com 可达 ✅"
     },
-    "kline": {
-      "status": "ok",
-      "score": 100,
-      "errors": [],
-      "lastUpdate": "2026-07-26T00:00:00.000Z",
-      "delayMinutes": 895,
-      "klineCount": 200
+    "rss": {
+      "status": "warn",
+      "score": 70,
+      "errors": [
+        "采集可能卡住: 文件1257s未更新但API可达"
+      ],
+      "delay": 1257,
+      "verified": true,
+      "verifyResult": "CoinTelegraph RSS 可达 ✅"
     },
-    "news": {
-      "status": "ok",
-      "score": 100,
-      "errors": [],
-      "lastUpdate": "20:48",
-      "delayMinutes": null
+    "whale": {
+      "status": "warn",
+      "score": 50,
+      "errors": [
+        "API验证失败: Etherscan 区块号可达不可达"
+      ],
+      "delay": 682,
+      "verified": true,
+      "verifyResult": "Etherscan 区块号可达 ❌"
+    },
+    "eth": {
+      "status": "warn",
+      "score": 50,
+      "errors": [
+        "API验证失败: Etherscan 可达不可达"
+      ],
+      "delay": 1893,
+      "verified": true,
+      "verifyResult": "Etherscan 可达 ❌"
     },
     "alerts": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "lastUpdate": "2026-07-26T14:53:04.254Z",
-      "delayMinutes": 2
+      "delay": 37,
+      "verified": false,
+      "verifyResult": null
     },
-    "whale": {
-      "status": "ok",
-      "score": 80,
-      "errors": [
-        "鲸鱼数据时间戳异常(epoch 1970)"
-      ],
-      "lastUpdate": null,
-      "delayMinutes": null
-    },
-    "api": {
+    "market_snapshot": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "latency": 44
+      "delay": 1519,
+      "verified": false,
+      "verifyResult": null
+    },
+    "data_quality": {
+      "status": "ok",
+      "score": 100,
+      "errors": [],
+      "delay": 41,
+      "verified": false,
+      "verifyResult": null
+    },
+    "alerts_log": {
+      "status": "ok",
+      "score": 100,
+      "errors": [],
+      "delay": 41,
+      "verified": false,
+      "verifyResult": null
     }
   },
+  "dataErrors": [],
   "errors": [
-    "[btc] BTC 数据超过60分钟未更新 (65分钟)",
-    "[whale] 鲸鱼数据时间戳异常(epoch 1970)"
+    "采集可能卡住: 文件1888s未更新但API可达",
+    "采集可能卡住: 文件1257s未更新但API可达",
+    "API验证失败: Etherscan 区块号可达不可达",
+    "API验证失败: Etherscan 可达不可达"
   ]
 }

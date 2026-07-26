@@ -101,22 +101,25 @@ async function scrapeJin10() {
 }
 
 if (require.main === module) {
-  console.log('[jin10] P0: 持续爬虫 (间隔1s, 复用浏览器) — 不可修改');
-  let browser, page;
+  console.log('[jin10] P0: 间隔1s, 复用浏览器 — 不可修改');
+  let browser, page, tick = 0;
   async function init() {
+    try { if (browser) await browser.close(); } catch(e) {}
+    browser = null; page = null;
     const { chromium } = require('playwright');
     browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
     page = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
-    console.log('[jin10] 浏览器已启动(复用模式)');
+    console.log('[jin10] 浏览器已启动');
   }
   async function loop() {
+    tick++;
     try {
-      if (!page) await init();
+      if (!page || tick % 100 === 0) await init(); // 每100轮重建避免泄漏
       await scrapeJin10WithPage(page);
     } catch(e) {
-      console.error('[jin10] 异常, 重建浏览器:', e.message);
-      try { if (browser) await browser.close(); } catch(e2) {}
+      console.error('[jin10] 崩溃,3秒后重建:', e.message?.slice(0,40));
       browser = null; page = null;
+      await new Promise(r => setTimeout(r, 3000));
     }
     setTimeout(loop, 1000);
   }
