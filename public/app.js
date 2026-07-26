@@ -666,7 +666,7 @@ function setupNews() {
       } else {
         const now = new Date();
         const pad2 = n => String(n).padStart(2, '0');
-        rss.slice().reverse().forEach(i => {
+        rss.sort((a,b) => new Date(b.t) - new Date(a.t)).reverse().forEach(i => {
           const key = i.s + (i.link || '');
           if (window._rssSeen.has(key)) return;
           window._rssSeen.add(key);
@@ -720,12 +720,12 @@ function init() {
   // Tier 3: 低频（恐惧指数 + 山寨季指数）—— 3分钟
   setInterval(() => { refreshIndicators(); refreshLlama(); }, 180000);
 
-  // 消息面：10秒刷新一次（实时新闻）
+  // P0: 消息面前端1秒刷新 — 不可修改
   setInterval(() => {
     if (document.getElementById('tabNews')?.classList.contains('active')) {
       setupNews();
     }
-  }, 10000);
+  }, 1000);
 
   // 巨鲸转账：无论哪个 tab 都 2 秒拉一次
   // 聪明地址分析：30秒刷新

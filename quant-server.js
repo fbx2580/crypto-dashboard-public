@@ -315,6 +315,15 @@ app.get('/api/regime/history', (req, res) => {
   } catch(e) { res.json({ history: [] }); }
 });
 
+// ═══ 数据质量 ═══
+app.get('/api/data-quality', (req, res) => {
+  try {
+    const f = path.join(MKT_DIR, 'data_quality.json');
+    if (!fs.existsSync(f)) return res.json({ error: '质量报告未生成' });
+    res.json(JSON.parse(fs.readFileSync(f, 'utf8')));
+  } catch(e) { res.json({ error: e.message }); }
+});
+
 app.listen(3002, '0.0.0.0', () => {
   console.log('📊 Quant Dashboard — Port 3002');
 });

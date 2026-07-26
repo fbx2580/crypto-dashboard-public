@@ -31,7 +31,7 @@ async function fetchTokenTxs(contract, decimals, minVal, chain) {
       for (const tx of r.data.result) {
         const val = parseFloat(tx.value) / Math.pow(10, decimals);
         if (val > minVal) {
-          txs.push({c:chain, val:parseFloat(val.toFixed(2)), hash:tx.hash, ts:parseInt(tx.timeStamp), from:tx.from, to:tx.to, exFrom:getEx(tx.from), exTo:getEx(tx.to)});
+          txs.push({c:chain, val:parseFloat(val.toFixed(2)), hash:tx.hash, ts:parseInt(tx.timeStamp)||Math.floor(Date.now()/1000), from:tx.from, to:tx.to, exFrom:getEx(tx.from), exTo:getEx(tx.to)});
         }
       }
     }

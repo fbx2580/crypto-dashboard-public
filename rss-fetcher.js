@@ -127,7 +127,7 @@ async function fetchNews() {
   const cnCount = items.filter(i => i.s_cn).length;
   console.log(`[rss] 🌐 ${cnCount}/${items.length} translated to Chinese`);
 
-  const successCount = SOURCES.length - (SOURCES.length - successCount);
+  const finalCount = SOURCES.length - (SOURCES.length - successCount);
 
   // ★ 合并新旧数据，不覆盖
   let existingItems = [];
@@ -145,8 +145,8 @@ async function fetchNews() {
   fs.writeFileSync(FALLBACK_FILE, JSON.stringify(merged, null, 2));
   try { const ins = db.prepare('INSERT OR IGNORE INTO news_archive (source, title, content, url, ts) VALUES (?, ?, ?, ?, ?)'); const tx = db.transaction((list) => { for (const i of list) { try { ins.run('rss', i.s||'', i.c||i.desc||'', i.u||i.link||'', Math.floor(i.t||Date.now()/1000)); }catch(e){} } }); tx(items); } catch(e2) {}
 
-  console.log(`[rss] ✅ ${items.length} articles from ${successCount}/${SOURCES.length} sources`);
-  return output;
+  console.log(`[rss] ✅ ${items.length} articles from ${finalCount}/${SOURCES.length} sources`);
+  return merged;
 }
 
 // 加载兜底缓存

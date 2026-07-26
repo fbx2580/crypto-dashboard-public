@@ -156,13 +156,33 @@ async function loadTab(tab){
   }
   if(tab==='datacenter'){
     try{
-      const dc=await fetch('/api/datacenter').then(r=>r.json());
+      const [dc,dq]=await Promise.all([
+        fetch('/api/datacenter').then(r=>r.json()),
+        fetch('/api/data-quality').then(r=>r.json())
+      ]);
       const srcs=(dc.sources||[]).map(s=>'<div><span class="dot '+(s.ok?'ok':'bad')+'"></span> <b>'+s.name+'</b>: '+(s.ok?'✅正常':'⚠️异常')+' | 频率:'+s.lastSync+' | '+s.volume+'</div>').join('');
       const cv=dc.coverage||{};
       const storage=(dc.storage||[]).map(s=>'<tr><td>'+s.dir+'</td><td>'+s.files+'</td><td>'+s.size+'</td><td>'+s.updated+'</td></tr>').join('');
       const fields=Object.entries(dc.fields||{}).map(([k,v])=>'<div style="margin-bottom:8px"><b>'+k+':</b> <span style="color:var(--muted);font-size:10px">'+v.join(', ')+'</span></div>').join('');
       const healthScore=()=>{const ok=dc.sources.filter(s=>s.ok).length;const total=dc.sources.length;const covPct=parseInt(cv.kline?.pct||'0');const avg=(ok/total*100+covPct)/2;return avg.toFixed(0)+'%';};
-      document.getElementById('datacenter').innerHTML='<div class="card"><h2>📡 Data Sources</h2><div style="font-size:11px;line-height:1.8">'+srcs+'</div></div><div class="card"><h2>📊 K-line Coverage</h2><div class="g2"><div class="st"><div class="v">'+(cv.kline?.cached||0)+'</div><div class="l">已缓存</div></div><div class="st"><div class="v">'+(cv.kline?.target||528)+'</div><div class="l">目标</div></div><div class="st '+(parseInt(cv.kline?.pct)>70?'g':'y')+'"><div class="v">'+(cv.kline?.pct||'0%')+'</div><div class="l">覆盖率</div></div><div class="st"><div class="v">'+(cv.kline?.missing||0)+'</div><div class="l">缺失</div></div></div><div class="ts" style="margin-top:8px">周期: '+((cv.periods||['1d']).join(', '))+' | 最早同步: '+(cv.oldestSync||'—')+'</div></div><div class="card"><h2>💾 Storage</h2><table><tr><th>目录</th><th>文件数</th><th>大小</th><th>最新更新</th></tr>'+storage+'</table></div><div class="card"><h2>📋 字段字典</h2>'+fields+'</div><div class="card"><h2>💚 Data Health Score</h2><div style="text-align:center;font-size:32px;font-weight:bold;color:'+(parseInt(healthScore())>70?'var(--green)':'var(--yellow)')+'">'+healthScore()+'</div><div class="ts" style="text-align:center">API 可用性 + K线覆盖率</div></div>';
+      document.getElementById('datacenter').innerHTML=
+        // Data Quality
+        '<div class="card"><h2>💚 Data Quality</h2>'+
+        '<div class="g3">'+
+        '<div class="st '+(dq.overall_score>=80?'g':dq.overall_score>=60?'y':'r')+'"><div class="v">'+dq.overall_score+'%</div><div class="l">综合评分</div></div>'+
+        '<div class="st '+(dq.status==='healthy'?'g':'r')+'"><div class="v">'+dq.status?.toUpperCase()+'</div><div class="l">状态</div></div>'+
+        '</div>'+
+        '<div style="font-size:11px;margin-top:8px">'+
+        Object.entries(dq.checks||{}).map(([k,v])=>'<div style="margin:2px 0"><span style="color:'+(v.status==='ok'?'var(--green)':v.status==='warn'?'var(--yellow)':'var(--red)')+'">'+(v.status==='ok'?'✅':v.status==='warn'?'⚠️':'❌')+'</span> '+k+': '+v.score+'%'+(v.errors?.length?' <span style="color:var(--red);font-size:9px">('+v.errors.length+'个问题)</span>':'')+'</div>').join('')+
+        '</div></div>'+
+        // Data Sources
+        '<div class="card"><h2>📡 Data Sources</h2><div style="font-size:11px;line-height:1.8">'+srcs+'</div></div>'+
+        '<div class="card"><h2>📊 K-line Coverage</h2>'+
+          '<div class="g2"><div class="st"><div class="v">'+(cv.kline?.cached||0)+'</div><div class="l">已缓存</div></div><div class="st"><div class="v">'+(cv.kline?.target||528)+'</div><div class="l">目标</div></div><div class="st '+(parseInt(cv.kline?.pct)>70?'g':'y')+'"><div class="v">'+(cv.kline?.pct||'0%')+'</div><div class="l">覆盖率</div></div><div class="st"><div class="v">'+(cv.kline?.missing||0)+'</div><div class="l">缺失</div></div></div>'+
+          '<div class="ts" style="margin-top:8px">周期: '+((cv.periods||['1d']).join(', '))+' | 最早同步: '+(cv.oldestSync||'—')+'</div></div>'+
+        '<div class="card"><h2>💾 Storage</h2><table><tr><th>目录</th><th>文件数</th><th>大小</th><th>最新更新</th></tr>'+storage+'</table></div>'+
+        '<div class="card"><h2>📋 字段字典</h2>'+fields+'</div>'+
+        '<div class="card"><h2>💚 Data Health Score</h2><div style="text-align:center;font-size:32px;font-weight:bold;color:'+(parseInt(healthScore())>70?'var(--green)':'var(--yellow)')+'">'+healthScore()+'</div><div class="ts" style="text-align:center">API 可用性 + K线覆盖率</div></div>';
     }catch(e){document.getElementById('datacenter').innerHTML='<p class="loading">加载失败</p>';}
   }
 }

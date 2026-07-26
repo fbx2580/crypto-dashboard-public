@@ -1,0 +1,65 @@
+{
+  "startedAt": "2026-07-26T14:00:02.285Z",
+  "totalFetched": 626,
+  "afterFilter": 600,
+  "success": 290,
+  "failed": 10,
+  "failures": [
+    {
+      "symbol": "SLX",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "BTW",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "RE",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "CAP",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "ARX",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "O",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "GRAM",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "MUB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "SOXLB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "QNTB",
+      "reason": "数据不足或K线拉取失败"
+    }
+  ],
+  "byRole": {
+    "趋势跟随": 23,
+    "观望": 173,
+    "反弹交易": 7,
+    "底部观察": 87
+  },
+  "marketSources": {
+    "spot": 100,
+    "futures": 526
+  },
+  "skipped": {
+    "lowVol": 26,
+    "noData": 0
+  },
+  "durationSec": "49.8",
+  "completedAt": "2026-07-26T14:00:52.040Z"
+}

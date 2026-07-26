@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-07-26T14:55:02.081Z",
+  "overall_score": 93,
+  "status": "healthy",
+  "checks": {
+    "btc": {
+      "status": "ok",
+      "score": 80,
+      "errors": [
+        "BTC 数据超过60分钟未更新 (65分钟)"
+      ],
+      "lastUpdate": "2026-07-26T13:50:32.077Z",
+      "delayMinutes": 65
+    },
+    "kline": {
+      "status": "ok",
+      "score": 100,
+      "errors": [],
+      "lastUpdate": "2026-07-26T00:00:00.000Z",
+      "delayMinutes": 895,
+      "klineCount": 200
+    },
+    "news": {
+      "status": "ok",
+      "score": 100,
+      "errors": [],
+      "lastUpdate": "20:48",
+      "delayMinutes": null
+    },
+    "alerts": {
+      "status": "ok",
+      "score": 100,
+      "errors": [],
+      "lastUpdate": "2026-07-26T14:53:04.254Z",
+      "delayMinutes": 2
+    },
+    "whale": {
+      "status": "ok",
+      "score": 80,
+      "errors": [
+        "鲸鱼数据时间戳异常(epoch 1970)"
+      ],
+      "lastUpdate": null,
+      "delayMinutes": null
+    },
+    "api": {
+      "status": "ok",
+      "score": 100,
+      "errors": [],
+      "latency": 44
+    }
+  },
+  "errors": [
+    "[btc] BTC 数据超过60分钟未更新 (65分钟)",
+    "[whale] 鲸鱼数据时间戳异常(epoch 1970)"
+  ]
+}

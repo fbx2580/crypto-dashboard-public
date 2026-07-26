@@ -1,6 +1,267 @@
 {
   "items": [
     {
+      "s": "Paramount and Warner Bros pause $110bn merger amid legal challenge",
+      "t": "2026-07-24T21:49:25.000Z",
+      "ts": 1784929765,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c8en74yz5e7o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "派拉蒙和华纳兄弟因法律挑战暂停 1100 亿美元的合并",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Warning shot or publicity stunt - how worried should we be about the OpenAI hack?",
+      "t": "2026-07-25T10:14:41.000Z",
+      "ts": 1784974481,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cd9w22n9e4go?at_medium=RSS&at_campaign=rss",
+      "s_cn": "警告镜头或宣传噱头——我们应该对 OpenAI 黑客攻击有多担心？",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "North Korea arrests hackers accused of laundering stolen funds from country's bank via crypto",
+      "t": "2026-07-25T15:46:05.000Z",
+      "ts": 1784994365,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/25/north-korea-arrests-hackers-accused-of-laundering-stolen-funds-from-country-s-bank-via-crypto",
+      "s_cn": "朝鲜逮捕了被指控通过加密货币从该国银行洗钱的黑客",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Wise to resubmit US bank charter application under GENIUS Act",
+      "t": "2026-07-25T16:10:00.000Z",
+      "ts": 1784995800,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/wise-resubmit-occ-charter-application-genius-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "明智地根据 GENIUS 法案重新提交美国银行牌照申请",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Russia’s largest bank Sberbank plans crypto trading infrastructure by December",
+      "t": "2026-07-25T16:59:36.000Z",
+      "ts": 1784998776,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/25/russia-s-largest-bank-sberbank-plans-crypto-trading-infrastructure-by-december",
+      "s_cn": "俄罗斯最大的银行 Sberbank 计划在 12 月之前建立加密货币交易基础设施",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Bitcoin advocacy group to join US State Department’s ‘digital freedom’ program",
+      "t": "2026-07-25T18:19:00.000Z",
+      "ts": 1785003540,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bitcoin-policy-institute-state-department-program?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "比特币倡导组织将加入美国国务院的“数字自由”计划",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Robinhood in talks with Crypto.com over prediction markets: WSJ",
+      "t": "2026-07-25T21:05:00.000Z",
+      "ts": 1785013500,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/robinhood-cryptocom-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Robinhood 与 Crypto.com 就预测市场进行谈判：《华尔街日报》",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Rental searches for pet friendly properties drop after law change",
+      "t": "2026-07-26T00:00:49.000Z",
+      "ts": 1785024049,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cj3gd312d8yo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "法律修改后，宠物友好型房产的出租搜索量下降",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Primark's new 'supermarket tactic' to woo customers in online price war",
+      "t": "2026-07-26T00:17:50.000Z",
+      "ts": 1785025070,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c4g3x4j8pgro?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Primark新“超市策略”在线上价格战中吸引顾客",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Binance ‘red teams’ its own staff every month to keep hackers out",
+      "t": "2026-07-26T02:01:00.000Z",
+      "ts": 1785031260,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/binance-red-teams-own-staff-every-month-to-keep-hackers-out?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "币安每个月都会对自己的员工进行“红队”以防止黑客入侵",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Crypto exchange BitMart to shut down after nine years, BMX token crashes 58%",
+      "t": "2026-07-26T06:59:51.000Z",
+      "ts": 1785049191,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/26/crypto-exchange-bitmart-to-shut-down-after-nine-years-bmx-token-crashes-58",
+      "s_cn": "加密货币交易所 BitMart 九年后关闭，BMX 代币暴跌 58%",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "BitMart to wind down exchange, end trading by Aug. 26",
+      "t": "2026-07-26T07:13:00.000Z",
+      "ts": 1785049980,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bitmart-wind-down-exchange-end-trading?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "BitMart将关闭交易所并于8月26日结束交易",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Shiba Inu surges 36% as South Korean traders fuel mystery rally",
+      "t": "2026-07-26T07:29:45.000Z",
+      "ts": 1785050985,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/26/shiba-inu-surges-36-as-south-korean-traders-fuel-mystery-rally",
+      "s_cn": "韩国贸易商推动神秘涨势，柴犬飙升 36%",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Top 10 Crypto Exchange by Trading Volume Suddenly Shuts Down",
+      "t": "2026-07-26T08:08:42.000Z",
+      "ts": 1785053322,
+      "src": "U.Today",
+      "link": "https://u.today/top-10-crypto-exchange-by-trading-volume-suddenly-shuts-down",
+      "s_cn": "交易量排名前十的加密货币交易所突然关闭",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "CZ: Crypto Investors Cannot Get Rich Without Knowing These Three Letters",
+      "t": "2026-07-26T08:52:39.000Z",
+      "ts": 1785055959,
+      "src": "U.Today",
+      "link": "https://u.today/cz-crypto-investors-cannot-get-rich-without-knowing-these-three-letters",
+      "s_cn": "CZ：加密货币投资者不知道这三个字母就无法致富",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Dogecoin (DOGE) Emerges as Only Top-20 Crypto With Rising Trading Volume",
+      "t": "2026-07-26T09:25:00.000Z",
+      "ts": 1785057900,
+      "src": "U.Today",
+      "link": "https://u.today/dogecoin-doge-emerges-as-only-top-20-crypto-with-rising-trading-volume",
+      "s_cn": "狗狗币 (DOGE) 成为唯一排名前 20 位且交易量不断上升的加密货币",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Bitcoin Crash: Strategy Says It's Ready for Worst-Case Scenario",
+      "t": "2026-07-26T09:45:32.000Z",
+      "ts": 1785059132,
+      "src": "U.Today",
+      "link": "https://u.today/bitcoin-crash-strategy-says-its-ready-for-worst-case-scenario",
+      "s_cn": "比特币崩盘：策略称已为最坏情况做好准备",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Europe's high regulatory bar could spark new crypto industry M&A wave",
+      "t": "2026-07-26T10:00:00.000Z",
+      "ts": 1785060000,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/07/26/europe-s-high-regulatory-bar-could-spark-new-crypto-industry-m-and-a-wave",
+      "s_cn": "欧洲的严格监管可能引发新的加密行业并购浪潮",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Forget Bitcoin? 3 Reasons Why Ethereum Is Ready to Steal the Spotlight in Summer 2026",
+      "t": "2026-07-26T10:15:30.000Z",
+      "ts": 1785060930,
+      "src": "U.Today",
+      "link": "https://u.today/forget-bitcoin-3-reasons-why-ethereum-is-ready-to-steal-the-spotlight-in-summer-2026",
+      "s_cn": "忘记比特币了吗？",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "South Korea’s largest bank to launch payment service on JPMorgan’s Kinexys",
+      "t": "2026-07-26T10:23:00.000Z",
+      "ts": 1785061380,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/south-korea-bank-payment-jpmorgans-kinexys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "韩国最大银行将在摩根大通的 Kinexys 上推出支付服务",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "2026 Crypto Graveyard: 99 Projects Officially Shut Down",
+      "t": "2026-07-26T10:32:00.000Z",
+      "ts": 1785061920,
+      "src": "U.Today",
+      "link": "https://u.today/2026-crypto-graveyard-99-projects-officially-shut-down",
+      "s_cn": "2026年加密墓地：99个项目正式关闭",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "+2 Trillion Shiba Inu (SHIB) in 24 Hours: Who Triggered the Enormous Inflow?",
+      "t": "2026-07-26T12:25:00.000Z",
+      "ts": 1785068700,
+      "src": "U.Today",
+      "link": "https://u.today/2-trillion-shiba-inu-shib-in-24-hours-who-triggered-the-enormous-inflow",
+      "s_cn": "24小时内+2万亿柴犬（SHIB）：谁引发了巨额资金流入？",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Bitcoin Not Facing Immediate Quantum Threat, Coinbase CEO Says",
+      "t": "2026-07-26T12:44:42.000Z",
+      "ts": 1785069882,
+      "src": "U.Today",
+      "link": "https://u.today/bitcoin-not-facing-immediate-quantum-threat-coinbase-ceo-says",
+      "s_cn": "Coinbase 首席执行官表示，比特币并未面临直接的量子威胁",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "U.S. regulator warns prediction markets against cutting corners in event contracts",
+      "t": "2026-07-26T13:00:00.000Z",
+      "ts": 1785070800,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/07/24/u-s-regulator-warns-prediction-markets-against-cutting-corners-in-event-contracts",
+      "s_cn": "美国监管机构警告预测市场不要在赛事合同中偷工减料",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Shiba Inu (SHIB) Enters Top 25 as $3.3 Billion Prediction Comes True; Hyperliquid Whales Bullish on XRP; AI Agents Opt for Bitcoin on Jack Dorsey's Slack Rival - Morning Crypto Report",
+      "t": "2026-07-26T13:02:59.000Z",
+      "ts": 1785070979,
+      "src": "U.Today",
+      "link": "https://u.today/shiba-inu-shib-enters-top-25-as-33-billion-prediction-comes-true-hyperliquid-whales-bullish-on-xrp",
+      "s_cn": "Shiba Inu (SHIB) 进入前 25 名，价值 33 亿美元的预测成真；",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Bitcoin OG selling eases as dormant BTC movement hits 4-year low: Galaxy",
+      "t": "2026-07-26T13:06:00.000Z",
+      "ts": 1785071160,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/bitcoin-og-dormant-btc-movement-thorn?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Galaxy 比特币 OG 抛售放缓，BTC 走势触及 4 年低点",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "'Momentum Building': Shiba Inu Veteran Reacts to 40% SHIB Price Surge",
+      "t": "2026-07-26T13:30:28.000Z",
+      "ts": 1785072628,
+      "src": "U.Today",
+      "link": "https://u.today/momentum-building-shiba-inu-veteran-reacts-to-40-shib-price-surge",
+      "s_cn": "“势头增强”：柴犬老手对 SHIB 价格飙升 40% 的反应",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Mira Murati’s Inkling AI Model Review: Best Open-Source Model in the West",
+      "t": "2026-07-26T14:01:03.000Z",
+      "ts": 1785074463,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/373884/review-inkling-mira-murati-first-open-source-ai",
+      "s_cn": "Mira Murati 的 Inkling AI 模型评论：西方最佳开源模型",
+      "_ts": 1785076045673
+    },
+    {
+      "s": "Gatwick Airport left without running water after major outage",
+      "t": "2026-07-26T14:22:26.000Z",
+      "ts": 1785075746,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cdew2dnxlzzo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "盖特威克机场在大面积停电后没有自来水",
+      "_ts": 1785076045673
+    },
+    {
       "s": "Dogecoin ETFs Go Quiet Again After Brief $345K Inflow Surge",
       "t": "2026-07-25T15:35:46.000Z",
       "ts": 1784993746,
@@ -481,5 +742,6 @@
       "s_cn": "中国吉利将通过新合资企业在西班牙福特工厂生产电动汽车"
     }
   ],
-  "updated": 1784994404097
+  "updated": 1785077999819,
+  "sources": 6
 }
