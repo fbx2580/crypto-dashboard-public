@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-07-29T01:10:01.696Z",
+  "date": "2026-07-29",
+  "btcState": "weak_bear",
+  "altState": "eth_leading",
+  "sentiment": "neutral",
+  "riskLevel": "medium",
+  "suggestedPosition": "30-50%",
+  "topGainer": "ON",
+  "topLoser": "BANK",
+  "eventsToday": 30
+}

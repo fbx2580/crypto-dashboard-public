@@ -1,0 +1,36 @@
+{
+  "total": 115,
+  "range": {
+    "from": "2026-07-24",
+    "to": "2026-07-29"
+  },
+  "summary": {
+    "pnl": "-89.1077",
+    "comm": "1.7641",
+    "net": "-90.8717"
+  },
+  "monthly": [
+    {
+      "month": "2026-07",
+      "pnl": "-89.1077",
+      "trades": 115
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "BZUSDT",
+      "pnl": "-1.5975",
+      "trades": 2
+    },
+    {
+      "symbol": "SKHYUSDT",
+      "pnl": "-9.8863",
+      "trades": 4
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "pnl": "-77.6239",
+      "trades": 109
+    }
+  ]
+}

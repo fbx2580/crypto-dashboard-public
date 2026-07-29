@@ -1,0 +1,426 @@
+{
+  "timestamp": "2026-07-28T01:10:01.207Z",
+  "date": "2026-07-28",
+  "marketState": {
+    "btc": {
+      "state": "weak_bear",
+      "price": 63464.9,
+      "vsMA200": "below",
+      "volatility": 0.31731633361096234
+    },
+    "altcoin": {
+      "state": "eth_leading",
+      "btcDominance": 56.40798947114929,
+      "ethbtcRet30d": 12.114086323295158
+    },
+    "sentiment": {
+      "state": "neutral",
+      "fundingAvg": -0.000042294289071680125,
+      "posRatio": 50.64629847238543
+    },
+    "riskLevel": "medium",
+    "suggestedPosition": "30-50%"
+  },
+  "topMovers": {
+    "gainers": [
+      {
+        "symbol": "COTI",
+        "change24h": 47.899,
+        "price": 0.010909,
+        "volume24h": 115219510.5053249
+      },
+      {
+        "symbol": "ON",
+        "change24h": 45.43,
+        "price": 0.18109,
+        "volume24h": 154957768.10495
+      },
+      {
+        "symbol": "AKE",
+        "change24h": 38.916,
+        "price": 0.0043689,
+        "volume24h": 636024866.2000802
+      },
+      {
+        "symbol": "BULLA",
+        "change24h": 24.097,
+        "price": 0.01409,
+        "volume24h": 12106602.180519
+      },
+      {
+        "symbol": "TAG",
+        "change24h": 22.711,
+        "price": 0.001367,
+        "volume24h": 26662574.9880978
+      },
+      {
+        "symbol": "IDOL",
+        "change24h": 12.89,
+        "price": 0.01699,
+        "volume24h": 16613285.77555
+      },
+      {
+        "symbol": "SOON",
+        "change24h": 12.402,
+        "price": 0.2293,
+        "volume24h": 49536283.2639
+      },
+      {
+        "symbol": "ZAMA",
+        "change24h": 11.813,
+        "price": 0.06105,
+        "volume24h": 75455988.34815
+      },
+      {
+        "symbol": "KAITO",
+        "change24h": 10.953,
+        "price": 1.2987,
+        "volume24h": 112546162.84129
+      },
+      {
+        "symbol": "KGEN",
+        "change24h": 10.874,
+        "price": 0.1978,
+        "volume24h": 4406699.81085
+      }
+    ],
+    "losers": [
+      {
+        "symbol": "ESP",
+        "change24h": -28.998,
+        "price": 0.0785,
+        "volume24h": 169778425.42241
+      },
+      {
+        "symbol": "EUL",
+        "change24h": -25.551,
+        "price": 1.5472,
+        "volume24h": 193187428.51696
+      },
+      {
+        "symbol": "BEAT",
+        "change24h": -25.391,
+        "price": 2.674,
+        "volume24h": 135779832.0462
+      },
+      {
+        "symbol": "SKYAI",
+        "change24h": -19.952,
+        "price": 0.02323,
+        "volume24h": 6790954.00898
+      },
+      {
+        "symbol": "UB",
+        "change24h": -19.77,
+        "price": 0.12065,
+        "volume24h": 32405160.59654
+      },
+      {
+        "symbol": "CHILLGUY",
+        "change24h": -19.685,
+        "price": 0.009898,
+        "volume24h": 5163032.224243
+      },
+      {
+        "symbol": "STORJ",
+        "change24h": -19.514,
+        "price": 0.05795,
+        "volume24h": 22120351.4246607
+      },
+      {
+        "symbol": "CROSS",
+        "change24h": -18.979,
+        "price": 0.08316,
+        "volume24h": 16916635.85388
+      },
+      {
+        "symbol": "DEXE",
+        "change24h": -18.69,
+        "price": 2.806,
+        "volume24h": 335724002.28396
+      },
+      {
+        "symbol": "SAFE",
+        "change24h": -15.226,
+        "price": 0.08947,
+        "volume24h": 27200338.98603
+      }
+    ],
+    "topVolume": [
+      {
+        "symbol": "BTC",
+        "volume24h": 9741630404.52,
+        "change24h": -2.663
+      },
+      {
+        "symbol": "ETH",
+        "volume24h": 9327521534.8,
+        "change24h": -3.49
+      },
+      {
+        "symbol": "BANK",
+        "volume24h": 1508727033.32113,
+        "change24h": -9.108
+      },
+      {
+        "symbol": "SOL",
+        "volume24h": 1300415978.0256,
+        "change24h": -3.705
+      },
+      {
+        "symbol": "AKE",
+        "volume24h": 636024866.2000802,
+        "change24h": 38.916
+      },
+      {
+        "symbol": "XRP",
+        "volume24h": 512657158.9908,
+        "change24h": -4.616
+      },
+      {
+        "symbol": "HYPE",
+        "volume24h": 448463119.25766,
+        "change24h": -5.705
+      },
+      {
+        "symbol": "ZEC",
+        "volume24h": 402752469.57,
+        "change24h": -6.064
+      },
+      {
+        "symbol": "DEXE",
+        "volume24h": 335724002.28396,
+        "change24h": -18.69
+      },
+      {
+        "symbol": "DOGE",
+        "volume24h": 317996497.93524,
+        "change24h": -4.371
+      }
+    ],
+    "extremeFunding": [
+      {
+        "symbol": "LA",
+        "fundingRate": -0.00923668,
+        "change24h": -15.121
+      }
+    ]
+  },
+  "events": [
+    {
+      "time": "22:59",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:59",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:56",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:56",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:56",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:54",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:54",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:53",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:53",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:51",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:51",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:48",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:48",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:44",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:44",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:44",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:43",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:43",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:43",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:40",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:40",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:39",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:39",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:39",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:39",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:35",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:35",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:34",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:34",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "22:34",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    }
+  ],
+  "eventsByCategory": {
+    "whale": 0,
+    "market": 0,
+    "news": 30
+  }
+}

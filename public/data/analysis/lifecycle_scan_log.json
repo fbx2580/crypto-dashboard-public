@@ -1,14 +1,10 @@
 {
-  "startedAt": "2026-07-26T14:00:02.285Z",
-  "totalFetched": 626,
-  "afterFilter": 600,
-  "success": 290,
-  "failed": 10,
+  "startedAt": "2026-07-29T14:00:01.948Z",
+  "totalFetched": 636,
+  "afterFilter": 624,
+  "success": 261,
+  "failed": 39,
   "failures": [
-    {
-      "symbol": "SLX",
-      "reason": "数据不足或K线拉取失败"
-    },
     {
       "symbol": "BTW",
       "reason": "数据不足或K线拉取失败"
@@ -18,23 +14,19 @@
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "CAP",
+      "symbol": "SPCXB",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "ARX",
+      "symbol": "SNXXB",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "O",
+      "symbol": "SLX",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "GRAM",
-      "reason": "数据不足或K线拉取失败"
-    },
-    {
-      "symbol": "MUB",
+      "symbol": "SNDKB",
       "reason": "数据不足或K线拉取失败"
     },
     {
@@ -42,24 +34,148 @@
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "QNTB",
+      "symbol": "SKHYB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "DATAIP",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "WDCB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "GLWB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "ATH",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "B2",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "AGT",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "VELVET",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "ZORA",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "IN",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "AIO",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "BAS",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "TAKE",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "PTB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "TRADOOR",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "RIVER",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "BLUAI",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "APR",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "CC",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "PIEVERSE",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "POWER",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "US",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "GUA",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "MAGMA",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "ELSA",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "龙虾",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "BSB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "BILL",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "PHAROS",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "ARX",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "CAP",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "GRAM",
       "reason": "数据不足或K线拉取失败"
     }
   ],
   "byRole": {
-    "趋势跟随": 23,
-    "观望": 173,
-    "反弹交易": 7,
-    "底部观察": 87
+    "观望": 104,
+    "趋势跟随": 20,
+    "底部观察": 134,
+    "反弹交易": 3
   },
   "marketSources": {
-    "spot": 100,
+    "spot": 110,
     "futures": 526
   },
   "skipped": {
-    "lowVol": 26,
+    "lowVol": 12,
     "noData": 0
   },
-  "durationSec": "49.8",
-  "completedAt": "2026-07-26T14:00:52.040Z"
+  "durationSec": "50.4",
+  "completedAt": "2026-07-29T14:00:52.360Z"
 }

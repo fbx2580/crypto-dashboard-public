@@ -1,0 +1,67 @@
+{
+  "totalTrades": 113,
+  "dateRange": {
+    "from": "2026-07-24",
+    "to": "2026-07-29"
+  },
+  "summary": {
+    "totalBuyVol": "2057.36",
+    "totalSellVol": "2393.29",
+    "totalCommission": "1.7106",
+    "totalRealizedPnl": "-88.5860",
+    "netCashflow": "-90.2967"
+  },
+  "monthlyPnl": [
+    {
+      "month": "2026-07",
+      "pnl": "-88.5860",
+      "trades": 113
+    }
+  ],
+  "dailyPnl": [
+    {
+      "date": "2026-07-24",
+      "pnl": "2.1552",
+      "trades": 26
+    },
+    {
+      "date": "2026-07-28",
+      "pnl": "-9.8863",
+      "trades": 8
+    },
+    {
+      "date": "2026-07-29",
+      "pnl": "-80.8549",
+      "trades": 79
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "BZUSDT",
+      "trades": 2,
+      "buyVol": "200.48",
+      "sellVol": "198.88",
+      "commission": "0.1597",
+      "pnl": "-1.5975",
+      "net": "-1.7572"
+    },
+    {
+      "symbol": "SKHYUSDT",
+      "trades": 4,
+      "buyVol": "499.45",
+      "sellVol": "489.56",
+      "commission": "0.3956",
+      "pnl": "-9.8863",
+      "net": "-10.2819"
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "trades": 107,
+      "buyVol": "1357.43",
+      "sellVol": "1704.85",
+      "commission": "1.1553",
+      "pnl": "-77.1022",
+      "net": "-78.2575"
+    }
+  ]
+}

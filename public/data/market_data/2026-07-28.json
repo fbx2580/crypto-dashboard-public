@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-07-28T01:00:02.317Z",
+  "date": "2026-07-28",
+  "btc": {
+    "symbol": "BTC",
+    "price": 63464.9,
+    "price_24h_ago": 63720.8,
+    "change24h": -2.496,
+    "volume24h": 9727375819.11,
+    "quoteVolume24h": 503498638.8494,
+    "high24h": 65722.5,
+    "low24h": 63439.1,
+    "updatedAt": "2026-07-28T01:00:02.507Z",
+    "source": "Binance FAPI",
+    "ma20": 64249.17067794682,
+    "ma60": 65426.37562680783,
+    "ma120": 67937.77884670287,
+    "ma200": 69492.39446305425,
+    "atr14": 1612.8345528542206,
+    "atrPct": 0.025413016531251456,
+    "volatility30d": 0.31731633361096234,
+    "rsi14": 42.03908031806695,
+    "athDistance": -35.194997350204886,
+    "lowDistance": 9.879567718054114,
+    "ret7d": -4.596196168508637,
+    "ret30d": 6.57378144825711,
+    "ret90d": -16.217843191872195
+  },
+  "eth": {
+    "symbol": "ETH",
+    "price": 1877.79,
+    "change24h": -0.7216723766019588,
+    "volume24h": 232707.149,
+    "quoteVolume24h": 438219792.06203,
+    "athDistance": -44.8320538696798,
+    "ret7d": -2.669375780727623,
+    "ret30d": 19.52071796830246
+  },
+  "ethbtc": {
+    "price": 0.02956,
+    "change24h": -0.33715441672285706,
+    "ret7d": 2.0154610712313614,
+    "ret30d": 12.114086323295158,
+    "ret90d": -0.5316643111918817,
+    "low52w": 0.02577,
+    "high52w": 0.035042
+  },
+  "coingecko": {
+    "totalMarketCap": 2257498734948.5923,
+    "totalVolume24h": 68075132110.32703,
+    "btcDominance": 56.40798947114929,
+    "ethDominance": 10.03429133329854,
+    "activeCoins": 17850,
+    "trendingCoins": [
+      "CSPR",
+      "COTI",
+      "PONS",
+      "PENGU",
+      "HYPE"
+    ]
+  },
+  "traditional": {
+    "nasdaq": {
+      "price": 24932.082,
+      "changePct": 0
+    },
+    "sp500": {
+      "price": 7413.18,
+      "changePct": 0
+    },
+    "gold": {
+      "price": 4060,
+      "changePct": 0
+    },
+    "oil": {
+      "price": 81.97,
+      "changePct": 0
+    }
+  },
+  "funding": {
+    "totalSymbols": 851,
+    "avgFunding": -0.000042294289071680125,
+    "positiveRatio": 50.64629847238543,
+    "negativeRatio": 22.91421856639248,
+    "extremeRatio": 0.23501762632197415
+  },
+  "meta": {
+    "version": "market-data-v1",
+    "source": "Binance FAPI + CoinGecko + Yahoo Finance"
+  }
+}

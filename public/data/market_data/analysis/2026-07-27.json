@@ -1,0 +1,426 @@
+{
+  "timestamp": "2026-07-27T01:10:01.971Z",
+  "date": "2026-07-27",
+  "marketState": {
+    "btc": {
+      "state": "weak_bear",
+      "price": 65106,
+      "vsMA200": "below",
+      "volatility": 0.3070102558907944
+    },
+    "altcoin": {
+      "state": "eth_leading",
+      "btcDominance": 56.46060493297343,
+      "ethbtcRet30d": 13.787312008550279
+    },
+    "sentiment": {
+      "state": "neutral",
+      "fundingAvg": 3.516273584905301e-7,
+      "posRatio": 61.08490566037735
+    },
+    "riskLevel": "medium",
+    "suggestedPosition": "30-50%"
+  },
+  "topMovers": {
+    "gainers": [
+      {
+        "symbol": "ESP",
+        "change24h": 46.903,
+        "price": 0.11028,
+        "volume24h": 223350233.92851
+      },
+      {
+        "symbol": "CROSS",
+        "change24h": 33.281,
+        "price": 0.10252,
+        "volume24h": 39556223.78268
+      },
+      {
+        "symbol": "SAFE",
+        "change24h": 28.184,
+        "price": 0.10588,
+        "volume24h": 19109427.72272
+      },
+      {
+        "symbol": "DIA",
+        "change24h": 23.723,
+        "price": 0.1356,
+        "volume24h": 135478035.9743
+      },
+      {
+        "symbol": "UB",
+        "change24h": 23.699,
+        "price": 0.15069,
+        "volume24h": 32146357.14792
+      },
+      {
+        "symbol": "SOON",
+        "change24h": 20.178,
+        "price": 0.2031,
+        "volume24h": 21111745.1683
+      },
+      {
+        "symbol": "4",
+        "change24h": 17.048,
+        "price": 0.009722,
+        "volume24h": 22489829.299435
+      },
+      {
+        "symbol": "B",
+        "change24h": 16.206,
+        "price": 0.185,
+        "volume24h": 10110227.9897
+      },
+      {
+        "symbol": "KAITO",
+        "change24h": 15.741,
+        "price": 1.1772,
+        "volume24h": 151614244.0746
+      },
+      {
+        "symbol": "PEOPLE",
+        "change24h": 15.503,
+        "price": 0.006519,
+        "volume24h": 18284581.841174
+      }
+    ],
+    "losers": [
+      {
+        "symbol": "ESPORTS",
+        "change24h": -49.559,
+        "price": 0.02917,
+        "volume24h": 308618171.21739
+      },
+      {
+        "symbol": "SYN",
+        "change24h": -18.764,
+        "price": 0.142,
+        "volume24h": 19636757.30021
+      },
+      {
+        "symbol": "STAR",
+        "change24h": -18.197,
+        "price": 0.10155,
+        "volume24h": 5328463.38229
+      },
+      {
+        "symbol": "RIF",
+        "change24h": -13.404,
+        "price": 0.08063,
+        "volume24h": 95638121.06221
+      },
+      {
+        "symbol": "DEXE",
+        "change24h": -13.281,
+        "price": 3.454,
+        "volume24h": 586975003.0235
+      },
+      {
+        "symbol": "RE",
+        "change24h": -11.264,
+        "price": 0.4845,
+        "volume24h": 50006245.7113
+      },
+      {
+        "symbol": "DODOX",
+        "change24h": -10.679,
+        "price": 0.016603,
+        "volume24h": 6710804.471399
+      },
+      {
+        "symbol": "Q",
+        "change24h": -10.477,
+        "price": 0.022431,
+        "volume24h": 22272704.981455
+      },
+      {
+        "symbol": "ALLO",
+        "change24h": -10.064,
+        "price": 0.32708,
+        "volume24h": 63737486.95089
+      },
+      {
+        "symbol": "VANRY",
+        "change24h": -9.637,
+        "price": 0.004088,
+        "volume24h": 22513429.63591
+      }
+    ],
+    "topVolume": [
+      {
+        "symbol": "ETH",
+        "volume24h": 5361683657.55,
+        "change24h": 3.527
+      },
+      {
+        "symbol": "BTC",
+        "volume24h": 4496262457.17,
+        "change24h": 1.09
+      },
+      {
+        "symbol": "SOL",
+        "volume24h": 774458239.8426,
+        "change24h": 2.195
+      },
+      {
+        "symbol": "EUL",
+        "volume24h": 754926603.88336,
+        "change24h": -7.659
+      },
+      {
+        "symbol": "BANK",
+        "volume24h": 727114999.96413,
+        "change24h": 1.411
+      },
+      {
+        "symbol": "1000SHIB",
+        "volume24h": 630847894.708738,
+        "change24h": 7.727
+      },
+      {
+        "symbol": "DEXE",
+        "volume24h": 586975003.0235,
+        "change24h": -13.281
+      },
+      {
+        "symbol": "1000PEPE",
+        "volume24h": 328320520.900297,
+        "change24h": 8.127
+      },
+      {
+        "symbol": "DOGE",
+        "volume24h": 326831915.4974,
+        "change24h": 1.786
+      },
+      {
+        "symbol": "ESPORTS",
+        "volume24h": 308618171.21739,
+        "change24h": -49.559
+      }
+    ],
+    "extremeFunding": [
+      {
+        "symbol": "VANRY",
+        "fundingRate": -0.01076682,
+        "change24h": -9.637
+      }
+    ]
+  },
+  "events": [
+    {
+      "time": "09:06",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "09:06",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "09:06",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "09:05",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "09:02",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "09:00",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "09:00",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "09:00",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "09:00",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:59",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:53",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:50",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:50",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:50",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:50",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:50",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:47",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:47",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:45",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:45",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:45",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:45",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:45",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:43",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:43",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:43",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:38",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:38",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:32",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    },
+    {
+      "time": "08:31",
+      "type": "news",
+      "title": "",
+      "source": "jin10",
+      "category": "news"
+    }
+  ],
+  "eventsByCategory": {
+    "whale": 0,
+    "market": 0,
+    "news": 30
+  }
+}

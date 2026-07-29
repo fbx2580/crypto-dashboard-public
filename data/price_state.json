@@ -1,31 +1,4 @@
 {
-  "lastPrices": {
-    "BTCUSDT": 63748.9,
-    "ETHUSDT": 1854.02
-  },
-  "lastCheck": 1784903175,
-  "history": {
-    "BTCUSDT": [
-      {
-        "ts": 1784903221035,
-        "price": 63723.9
-      }
-    ],
-    "ETHUSDT": [
-      {
-        "ts": 1784903221035,
-        "price": 1853.81
-      }
-    ]
-  },
-  "klineCache": {
-    "BTCUSDT": {
-      "price": 63827,
-      "time": 1784903757229
-    },
-    "ETHUSDT": {
-      "price": 1853.96,
-      "time": 1784903757229
-    }
-  }
+  "klines": {},
+  "stats": {}
 }

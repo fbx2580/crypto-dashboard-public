@@ -1,9 +1,45 @@
 {
   "date": "2026-07-26",
   "type": "news",
-  "updated": 1785091131030,
-  "total": 65,
+  "updated": 1785107590140,
+  "total": 69,
   "records": [
+    {
+      "s": "Would you choose £50,000 over the chance of £1m?",
+      "t": "2026-07-26T23:11:36.000Z",
+      "ts": 1785107496,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cn0njd4e2evo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "如果你选择 100 万英镑，你会选择 5 万英镑吗？",
+      "_ts": 1785107590130
+    },
+    {
+      "s": "WEMIX says attacker moved about $724,000 after contract breach",
+      "t": "2026-07-26T22:53:55.000Z",
+      "ts": 1785106435,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/wemix-attacker-moves-724k-contract-breach?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "WEMIX 称攻击者在违反合同后转移了约 724,000 美元",
+      "_ts": 1785106763019
+    },
+    {
+      "s": "Water returns to Gatwick Airport after major outage",
+      "t": "2026-07-26T21:15:21.000Z",
+      "ts": 1785100521,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cdew2dnxlzzo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "盖特威克机场大停水后供水恢复",
+      "_ts": 1785100542933
+    },
+    {
+      "s": "Fundstrat's Lee Spots Major Crypto Market Bottom Signal",
+      "t": "2026-07-26T18:57:47.000Z",
+      "ts": 1785092267,
+      "src": "U.Today",
+      "link": "https://u.today/fundstrats-lee-spots-major-crypto-market-bottom-signal",
+      "s_cn": "Fundstrat 的 Lee 发现了加密货币市场的主要底部信号",
+      "_ts": 1785092946679
+    },
     {
       "s": "Water returning to Gatwick Airport after major outage",
       "t": "2026-07-26T18:38:26.000Z",
