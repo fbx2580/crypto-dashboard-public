@@ -1,11 +1,10 @@
-// ─── 新闻模块（读 JSON，保全部特性） ───
+// ─── 新闻模块（读 JSON 快缓存，DB 只做持久化） ───
 const express = require('express');
 const router = express.Router();
 const path = require('path');
 const fs = require('fs');
 
 router.get('/', (req, res) => {
-  // 直接读 JSON，保持原始字段结构（t/s/body/imp/link/s_cn）
   let jin10 = [], rss = [];
   try {
     const d = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'public', 'data', 'news', 'jin10.json'), 'utf8'));

@@ -1,264 +1,264 @@
 {
-  "timestamp": "2026-07-29T01:05:12.571Z",
+  "timestamp": "2026-07-30T01:05:12.594Z",
   "summary": {
     "totalCoins": 528,
     "topByVolume": [
       {
         "symbol": "BTC",
-        "volume24h": 8999633028.74,
-        "change24h": 0.737
+        "volume24h": 11587826308.11,
+        "change24h": -0.273
       },
       {
         "symbol": "ETH",
-        "volume24h": 8756783882.4,
-        "change24h": 1.972
+        "volume24h": 9154308007.29,
+        "change24h": -0.783
       },
       {
         "symbol": "SOL",
-        "volume24h": 1295854789.5819,
-        "change24h": 0.068
+        "volume24h": 1329135108.2813,
+        "change24h": -0.298
       },
       {
         "symbol": "BANK",
-        "volume24h": 1170099436.20819,
-        "change24h": -38.71
+        "volume24h": 720223242.60011,
+        "change24h": -13.832
       },
       {
         "symbol": "COTI",
-        "volume24h": 536384579.8266478,
-        "change24h": 2.512
+        "volume24h": 642292394.4490277,
+        "change24h": 57.331
       },
       {
         "symbol": "XRP",
-        "volume24h": 534309994.1953,
-        "change24h": 1.916
+        "volume24h": 600394993.1022,
+        "change24h": -0.658
       },
       {
         "symbol": "ON",
-        "volume24h": 497407415.18243,
-        "change24h": 71.942
+        "volume24h": 436741759.22518,
+        "change24h": -1.901
       },
       {
         "symbol": "HYPE",
-        "volume24h": 444736851.02175,
-        "change24h": -2.087
+        "volume24h": 398243127.95859,
+        "change24h": -1.51
       },
       {
         "symbol": "ZEC",
-        "volume24h": 386333715.54,
-        "change24h": -2.249
+        "volume24h": 392557543.77,
+        "change24h": 0.248
       },
       {
-        "symbol": "AKE",
-        "volume24h": 325033576.4802531,
-        "change24h": -4.494
+        "symbol": "DOGE",
+        "volume24h": 256548303.34777,
+        "change24h": -1.042
       }
     ],
     "topByOI": [
       {
         "symbol": "BTC",
         "oi": 0,
-        "funding": 0.0001
+        "funding": 0.00009341
       },
       {
         "symbol": "ETH",
         "oi": 0,
-        "funding": 0.00004985
+        "funding": 0.0000358
       },
       {
         "symbol": "SOL",
         "oi": 0,
-        "funding": 0.00001653
+        "funding": 0.0000266
       },
       {
         "symbol": "BANK",
         "oi": 0,
-        "funding": -0.00047708
+        "funding": 0.00002232
       },
       {
         "symbol": "COTI",
         "oi": 0,
-        "funding": -0.00030967
+        "funding": -0.00014035
       },
       {
         "symbol": "XRP",
         "oi": 0,
-        "funding": 0.00008265
+        "funding": 0.00007181
       },
       {
         "symbol": "ON",
         "oi": 0,
-        "funding": 0.00053553
+        "funding": 0.00026165
       },
       {
         "symbol": "HYPE",
         "oi": 0,
-        "funding": 0.00005
+        "funding": -0.00002353
       },
       {
         "symbol": "ZEC",
         "oi": 0,
-        "funding": 0.00007466
+        "funding": 0.00004407
       },
       {
-        "symbol": "AKE",
+        "symbol": "DOGE",
         "oi": 0,
-        "funding": 0.00005
+        "funding": -0.00000359
       }
     ],
     "fundingSummary": {
-      "avgRate": -0.00004137914772727212,
-      "positiveCount": 403,
-      "negativeCount": 125,
+      "avgRate": -0.00003408679924242354,
+      "positiveCount": 407,
+      "negativeCount": 120,
       "extremeHigh": 0,
-      "extremeLow": 2
+      "extremeLow": 1
     },
     "oiSummary": {
       "totalOI": 0,
       "avgOI": 0
     },
-    "top100KlineAvailable": 100
+    "top100KlineAvailable": 99
   },
   "top100OI": [
     {
       "symbol": "BTC",
-      "price": 63956.3,
+      "price": 63800,
       "oi": 0,
-      "funding": 0.0001,
-      "change24h": 0.737
+      "funding": 0.00009341,
+      "change24h": -0.273
     },
     {
       "symbol": "ETH",
-      "price": 1916.49,
+      "price": 1902.22,
       "oi": 0,
-      "funding": 0.00004985,
-      "change24h": 1.972
+      "funding": 0.0000358,
+      "change24h": -0.783
     },
     {
       "symbol": "SOL",
-      "price": 73.72,
+      "price": 73.53,
       "oi": 0,
-      "funding": 0.00001653,
-      "change24h": 0.068
+      "funding": 0.0000266,
+      "change24h": -0.298
     },
     {
       "symbol": "BANK",
-      "price": 0.20371,
+      "price": 0.17654,
       "oi": 0,
-      "funding": -0.00047708,
-      "change24h": -38.71
+      "funding": 0.00002232,
+      "change24h": -13.832
     },
     {
       "symbol": "COTI",
-      "price": 0.011265,
+      "price": 0.018038,
       "oi": 0,
-      "funding": -0.00030967,
-      "change24h": 2.512
+      "funding": -0.00014035,
+      "change24h": 57.331
     },
     {
       "symbol": "XRP",
-      "price": 1.0796,
+      "price": 1.0727,
       "oi": 0,
-      "funding": 0.00008265,
-      "change24h": 1.916
+      "funding": 0.00007181,
+      "change24h": -0.658
     },
     {
       "symbol": "ON",
-      "price": 0.31223,
+      "price": 0.30547,
       "oi": 0,
-      "funding": 0.00053553,
-      "change24h": 71.942
+      "funding": 0.00026165,
+      "change24h": -1.901
     },
     {
       "symbol": "HYPE",
-      "price": 55.028,
+      "price": 54.256,
       "oi": 0,
-      "funding": 0.00005,
-      "change24h": -2.087
+      "funding": -0.00002353,
+      "change24h": -1.51
     },
     {
       "symbol": "ZEC",
-      "price": 466.71,
+      "price": 468.32,
       "oi": 0,
-      "funding": 0.00007466,
-      "change24h": -2.249
-    },
-    {
-      "symbol": "AKE",
-      "price": 0.0041887,
-      "oi": 0,
-      "funding": 0.00005,
-      "change24h": -4.494
-    },
-    {
-      "symbol": "DEXE",
-      "price": 2.922,
-      "oi": 0,
-      "funding": -0.00040514,
-      "change24h": 2.96
+      "funding": 0.00004407,
+      "change24h": 0.248
     },
     {
       "symbol": "DOGE",
-      "price": 0.07098,
+      "price": 0.0703,
       "oi": 0,
-      "funding": 0.0001,
-      "change24h": 1.516
+      "funding": -0.00000359,
+      "change24h": -1.042
+    },
+    {
+      "symbol": "AKE",
+      "price": 0.0040245,
+      "oi": 0,
+      "funding": 0.00021156,
+      "change24h": -3.448
     },
     {
       "symbol": "BNB",
-      "price": 572.64,
+      "price": 573.1,
       "oi": 0,
-      "funding": 0.00003873,
-      "change24h": 1.075
-    },
-    {
-      "symbol": "1000PEPE",
-      "price": 0.0027924,
-      "oi": 0,
-      "funding": -0.00010637,
-      "change24h": -0.122
+      "funding": 0.00007762,
+      "change24h": 0.065
     },
     {
       "symbol": "ADA",
       "price": 0.1627,
       "oi": 0,
-      "funding": 0.0001,
-      "change24h": 4.968
+      "funding": 0.00005692,
+      "change24h": -0.061
+    },
+    {
+      "symbol": "1000PEPE",
+      "price": 0.0027306,
+      "oi": 0,
+      "funding": -0.00001353,
+      "change24h": -2.262
+    },
+    {
+      "symbol": "PAXG",
+      "price": 4082,
+      "oi": 0,
+      "funding": -0.00003474,
+      "change24h": 1.77
+    },
+    {
+      "symbol": "UAI",
+      "price": 0.4787,
+      "oi": 0,
+      "funding": 0.00036233,
+      "change24h": 57.364
+    },
+    {
+      "symbol": "EUL",
+      "price": 1.5381,
+      "oi": 0,
+      "funding": -0.0024818,
+      "change24h": -1.844
     },
     {
       "symbol": "KAITO",
-      "price": 1.2273,
+      "price": 1.2465,
       "oi": 0,
-      "funding": -0.00005438,
-      "change24h": -5.658
-    },
-    {
-      "symbol": "PUMP",
-      "price": 0.00197,
-      "oi": 0,
-      "funding": 0.00003386,
-      "change24h": -4.6
+      "funding": -0.00013183,
+      "change24h": 1.366
     },
     {
       "symbol": "BEAT",
-      "price": 3.416,
+      "price": 3.893,
       "oi": 0,
-      "funding": 0.00005,
-      "change24h": 28.228
-    },
-    {
-      "symbol": "SOON",
-      "price": 0.2762,
-      "oi": 0,
-      "funding": 0.00010503,
-      "change24h": 20.296
+      "funding": 0.00005046,
+      "change24h": 14.03
     },
     {
       "symbol": "WLD",
-      "price": 0.3103,
+      "price": 0.3096,
       "oi": 0,
-      "funding": -0.00005384,
-      "change24h": -5.165
+      "funding": -0.00008574,
+      "change24h": -0.61
     }
   ]
 }

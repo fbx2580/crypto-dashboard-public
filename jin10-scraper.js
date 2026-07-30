@@ -151,7 +151,7 @@ if (require.main === module) {
             let e=[];try{e=JSON.parse(fs.readFileSync(f,'utf8')).items||[]}catch(e){}
             const es=new Set(e.map(i=>i.s));
             for(const i of items){if(!es.has(i.s)){e.unshift(i);es.add(i.s)}}
-            e.sort((a,b)=>{const ta=a.t||'',tb=b.t||'';return(parseInt(tb)*60+parseInt(tb.split(':')[1]||0))-(parseInt(ta)*60+parseInt(ta.split(':')[1]||0))});
+            e.sort((a,b)=>{const bj=(new Date().getUTCHours()+8)%24;const sk=x=>{let h=parseInt(x.t||'0'),m=parseInt((x.t||'0:0').split(':')[1]||0);if(h>bj)h-=24;return h*60+m};return sk(b)-sk(a)});
             fs.writeFileSync(f,JSON.stringify({items:e.slice(0,500),updated:Date.now(),source:'jin10-http'},null,2));
             console.log(`[jin10] HTTP降级 ✅ ${items.length} items`);
             crashCount = 0;
@@ -184,11 +184,16 @@ async function scrapeJin10WithPage(page) {
           if (/^\d{2}:\d{2}:\d{2}$/.test(line)) break;
           if (/^[火热沸爆]/.test(line)) continue;
           if (line.length < 5 || /^\d+(\.\d+)?%?$/.test(line)) continue;
-          if (['重要事件','查看更多','市场快讯','VIP快讯','分类','PLUS'].some(s => line.includes(s))) continue;
+          if (['重要事件','查看更多','市场快讯','VIP快讯','分类','PLUS','推荐阅读','换一批','阅读更多','登录后查看','立即登录'].some(s => line.includes(s))) continue;
           bodyLines.push(line);
         }
         if (bodyLines.length === 0) continue;
-        const title = bodyLines[0];
+        let title = bodyLines[0];
+        // ★ 清洗推广污染：金十页面body.innerText会把"推荐阅读"区域混入标题
+        title = title.replace(/\s*推荐阅读[\s\S]*$/, '').replace(/\s*换一批[\s\S]*$/, '').replace(/\s*阅读更多[\s\S]*$/, '').trim();
+        // 清洗后太短或纯推广→跳过
+        if (title.length < 8) continue;
+        if (/^(精选|VIP|PLUS|周[一二三四五六日])[\s\u4e00-\u9fff]*$/.test(title) && title.length < 30) continue;
         if (results.some(r => r.s === title)) continue;
         let isRed = false;
         const allEls = document.querySelectorAll('b, strong, span, div');
@@ -225,7 +230,7 @@ async function scrapeJin10WithPage(page) {
         }
       }
       // P0: 保持时间排序
-      existing.sort((a,b)=>{const ta=a.t||'',tb=b.t||'';return(parseInt(tb)*60+parseInt(tb.split(':')[1]||0))-(parseInt(ta)*60+parseInt(ta.split(':')[1]||0))});
+      existing.sort((a,b)=>{const bj=(new Date().getUTCHours()+8)%24;const sk=x=>{let h=parseInt(x.t||'0'),m=parseInt((x.t||'0:0').split(':')[1]||0);if(h>bj)h-=24;return h*60+m};return sk(b)-sk(a)});
       const merged = { items: existing.slice(0, 500), updated: Date.now(), source: 'jin10' };
       if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
       fs.writeFileSync(CACHE_FILE, JSON.stringify(merged, null, 2));

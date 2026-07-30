@@ -735,9 +735,9 @@ function init() {
     refreshAltcoinSignals();
   }, 2000);
 
-  // 终端启动动画 + 数据拉取，两边都完成才淡出
-  const bootDone = bootTerminal();
-  Promise.all([refreshAll(), bootDone]).then(() => {
+  // loading动画不等打字，refreshAll完成就消失
+  bootTerminal();
+  refreshAll().then(() => {
     const loader = document.getElementById('fullLoader');
     if (loader) {
       loader.classList.add('hidden');
@@ -751,8 +751,8 @@ function bootTerminal() {
   const body = document.getElementById('termBootBody');
   if (!body) return Promise.resolve();
 
-  const speed = 0.7 + Math.random() * 0.6;
-  const baseChar = Math.round(4 * speed);
+  const speed = 2.5 + Math.random() * 1.5;
+  const baseChar = Math.round(2 * speed);
   const jitter = () => Math.random() * 2 * speed;
 
   const lines = [

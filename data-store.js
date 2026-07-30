@@ -17,9 +17,9 @@ const DATA_DIR = path.join(__dirname, 'public', 'data');
 // ─── SQLite 写入器 ───
 const inserters = {
   // 金十快讯
-  jin10: db.prepare('INSERT OR IGNORE INTO news_archive (source, title, content, url, ts) VALUES (?, ?, ?, ?, ?)'),
+  jin10: db.prepare('INSERT OR IGNORE INTO news_archive (source, title, content, url, ts, news_time, imp) VALUES (?, ?, ?, ?, ?, ?, ?)'),
   // RSS 新闻
-  news: db.prepare('INSERT OR IGNORE INTO news_archive (source, title, content, url, ts) VALUES (?, ?, ?, ?, ?)'),
+  news: db.prepare('INSERT OR IGNORE INTO news_archive (source, title, content, url, ts, news_time, imp) VALUES (?, ?, ?, ?, ?, ?, ?)'),
   // 鲸鱼转账
   whale: db.prepare('INSERT OR IGNORE INTO whale_transfers (chain, value, hash, ts, from_addr, to_addr, ex_from, ex_to) VALUES (?, ?, ?, ?, ?, ?, ?, ?)'),
   // 异动告警 (实际schema: type, message, data, ts)
@@ -60,7 +60,9 @@ function save(type, records, idField, sortNewest) {
           const content = (r.body || r.desc || '').slice(0, 500);
           const url = (r.link || r.u || '').slice(0, 200);
           const src = (r.src || r.source || type).slice(0, 50);
-          inserter.run(src, title, content, url, ts);
+          const newsTime = (r.t || r.news_time || '').slice(0, 10);
+          const imp = r.imp ? 1 : 0;
+          console.log("[data-store] write jin10 t="+newsTime+" imp="+imp+" title="+title.slice(0,30)); inserter.run(src, title, content, url, ts, newsTime, imp);
           sqlCount++;
         } else if (type === 'whale') {
           inserter.run(
@@ -88,7 +90,7 @@ function save(type, records, idField, sortNewest) {
           );
           sqlCount++;
         }
-      } catch(e) { /* 唯一约束冲突静默跳过 */ }
+      } catch(e) { console.log('[data-store] insert failed:', e.message.slice(0,80)); }
     }
   }
 

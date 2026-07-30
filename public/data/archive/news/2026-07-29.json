@@ -1,9 +1,351 @@
 {
   "date": "2026-07-29",
   "type": "news",
-  "updated": 1785343493772,
-  "total": 144,
+  "updated": 1785366768620,
+  "total": 182,
   "records": [
+    {
+      "s": "Senators said to hatch idea to toughen Trump's concession on Clarity Act's crypto limits",
+      "t": "2026-07-29T23:12:04.000Z",
+      "ts": 1785366724,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/07/29/senators-said-to-strike-idea-to-toughen-trump-s-concession-on-clarity-act-s-crypto-limits",
+      "s_cn": "据说参议员们正在酝酿加强特朗普对《清晰法案》加密货币限制的让步",
+      "_ts": 1785366768612
+    },
+    {
+      "s": "Senators said to strike idea to toughen Trump's concession on Clarity Act's crypto limits",
+      "t": "2026-07-29T23:12:04.000Z",
+      "ts": 1785366724,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/07/29/senators-said-to-strike-idea-to-toughen-trump-s-concession-on-clarity-act-s-crypto-limits",
+      "s_cn": "据说参议员们将提出加强特朗普对《清晰法案》加密货币限制的让步的想法",
+      "_ts": 1785366746873
+    },
+    {
+      "s": "What happens here has a big impact on your money",
+      "t": "2026-07-29T16:00:24.000Z",
+      "ts": 1785340824,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/videos/ckg4jxwkn2lo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "这里发生的事情对你的钱有很大影响",
+      "_ts": 1785366283596
+    },
+    {
+      "s": "Interest rates expected to be held again by Bank of England",
+      "t": "2026-07-29T23:01:56.000Z",
+      "ts": 1785366116,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cp8e6m4rndgo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "预计英国央行将再次维持利率不变",
+      "_ts": 1785366283596
+    },
+    {
+      "s": "I dropped out of university and built five beauty businesses. Here's how I did it",
+      "t": "2026-07-29T23:02:18.000Z",
+      "ts": 1785366138,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c8jngmk93p9o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "我从大学退学，创办了五家美容企业。",
+      "_ts": 1785366283596
+    },
+    {
+      "s": "Microsoft Quietly Adds New Windows App That Wants to Scan Your Face",
+      "t": "2026-07-29T22:31:03.000Z",
+      "ts": 1785364263,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374688/microsoft-quietly-adds-windows-app-wants-scan-face-onedrive",
+      "s_cn": "微软悄悄添加了新的 Windows 应用程序来扫描你的脸部",
+      "_ts": 1785364297007
+    },
+    {
+      "s": "The Chinese robot army transforming the UK's retail industry",
+      "t": "2026-07-29T22:08:29.000Z",
+      "ts": 1785362909,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c0jl8v23qwgo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "中国机器人大军改变英国零售业",
+      "_ts": 1785363100950
+    },
+    {
+      "s": "Robinhood posts record quarter, but crypto revenue slides 38%",
+      "t": "2026-07-29T21:53:35.000Z",
+      "ts": 1785362015,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/robinhood-record-quarter-crypto-revenue-slides?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Robinhood 季度创纪录，但加密货币收入下滑 38%",
+      "_ts": 1785362756962
+    },
+    {
+      "s": "Robinhood Posts Best Quarter Ever as Prediction Market and Robinhood Chain Take Off",
+      "t": "2026-07-29T22:01:24.000Z",
+      "ts": 1785362484,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374693/robinhood-earnings-best-quarter-ever-crypto",
+      "s_cn": "随着预测市场和 Robinhood 链的起飞，Robinhood 发布了有史以来最好的季度业绩",
+      "_ts": 1785362541643
+    },
+    {
+      "s": "Binance.US to attempt prediction markets entry as CFTC-licensed entity, says CEO",
+      "t": "2026-07-29T21:52:27.000Z",
+      "ts": 1785361947,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/binance-us-prediction-markets-cftc-designated-contract-market?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "首席执行官表示，币安美国将尝试作为 CFTC 许可的实体进入预测市场",
+      "_ts": 1785362456041
+    },
+    {
+      "s": "Chipotle hikes same-store sales forecast, says cyclospora fears hit sales in late July",
+      "t": "2026-07-29T21:52:41.000Z",
+      "ts": 1785361961,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/29/chipotle-mexican-grill-cmg-q2-2026-earnings.html",
+      "s_cn": "Chipotle 上调同店销售预期，称环孢菌担忧影响了 7 月底的销售",
+      "_ts": 1785361973834
+    },
+    {
+      "s": "Carvana stock falls as auto retailer’s 2026 earnings guidance misses Wall Street’s expectations",
+      "t": "2026-07-29T21:47:05.000Z",
+      "ts": 1785361625,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/29/carvana-cvna-earnings-q2-2026.html",
+      "s_cn": "由于汽车零售商 2026 年盈利指引未达到华尔街预期，Carvana 股价下跌",
+      "_ts": 1785361639403
+    },
+    {
+      "s": "Meta shares fall as frustration grows over AI spending plans",
+      "t": "2026-07-29T21:29:17.000Z",
+      "ts": 1785360557,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/ckgd31l5yrdo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "随着人工智能支出计划的挫败感加剧，Meta 股价下跌",
+      "_ts": 1785360725344
+    },
+    {
+      "s": "Crypto entering biggest consolidation phase in history, says ARK analyst",
+      "t": "2026-07-29T20:40:38.000Z",
+      "ts": 1785357638,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/crypto-entering-biggest-consolidation-phase-in-history-says-ark-analyst?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "ARK 分析师表示，加密货币进入历史上最大的整合阶段",
+      "_ts": 1785358245839
+    },
+    {
+      "s": "Flock Cameras Face Growing Backlash as Privacy Concerns Reach Capitol Hill",
+      "t": "2026-07-29T20:46:03.000Z",
+      "ts": 1785357963,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374603/flock-cameras-backlash-privacy-concerns-capitol-hill",
+      "s_cn": "随着隐私问题触及国会山，群体摄像机面临越来越大的反对",
+      "_ts": 1785358029435
+    },
+    {
+      "s": "Carvana stock falls 15% as auto retailer's 2026 earnings guidance misses Wall Street's expectations",
+      "t": "2026-07-29T20:32:31.000Z",
+      "ts": 1785357151,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/29/carvana-cvna-earnings-q2-2026.html",
+      "s_cn": "由于汽车零售商 2026 年盈利指引未达到华尔街预期，Carvana 股价下跌 15%",
+      "_ts": 1785357664345
+    },
+    {
+      "s": "Robinhood slides 4% despite earnings beat as crypto revenue cools",
+      "t": "2026-07-29T20:40:43.000Z",
+      "ts": 1785357643,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/29/robinhood-slides-4-despite-earnings-beat-as-crypto-revenue-cools",
+      "s_cn": "尽管加密货币收入降温，盈利超出预期，但 Robinhood 仍下跌 4%",
+      "_ts": 1785357664345
+    },
+    {
+      "s": "'No magic wand' to tackle high prices, Fed boss says as US interest rates held",
+      "t": "2026-07-29T20:32:50.000Z",
+      "ts": 1785357170,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cy07wgqjv08o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "美联储主席表示，美国利率维持不变，“没有魔杖”可以解决高物价问题",
+      "_ts": 1785357200366
+    },
+    {
+      "s": "$592 Million Asset Manager Reveals New XRP ETF Position",
+      "t": "2026-07-29T20:18:06.000Z",
+      "ts": 1785356286,
+      "src": "U.Today",
+      "link": "https://u.today/592-million-asset-manager-reveals-new-xrp-etf-position",
+      "s_cn": "价值 5.92 亿美元的资产管理公司公布了新的 XRP ETF 头寸",
+      "_ts": 1785357016086
+    },
+    {
+      "s": "Tennessee county passes another ban on crypto operations",
+      "t": "2026-07-29T20:11:27.000Z",
+      "ts": 1785355887,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/tennessee-county-ban-crypto-operations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "田纳西州县通过了另一项加密货币运营禁令",
+      "_ts": 1785356446866
+    },
+    {
+      "s": "Starbucks stock jumps as coffee giant raises full-year outlook",
+      "t": "2026-07-29T20:15:57.000Z",
+      "ts": 1785356157,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/29/starbucks-sbux-q3-2026-earnings.html",
+      "s_cn": "咖啡巨头上调全年展望，星巴克股价上涨",
+      "_ts": 1785356174598
+    },
+    {
+      "s": "Chipotle hikes same-store sales forecast as diners return for burrito bowls",
+      "t": "2026-07-29T20:11:31.000Z",
+      "ts": 1785355891,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/29/chipotle-mexican-grill-cmg-q2-2026-earnings.html",
+      "s_cn": "随着食客回归墨西哥卷饼碗，Chipotle 上调同店销售预测",
+      "_ts": 1785355904533
+    },
+    {
+      "s": "Starbucks raises full-year outlook as same-store sales climb 7.9%",
+      "t": "2026-07-29T20:07:27.000Z",
+      "ts": 1785355647,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/29/starbucks-sbux-q3-2026-earnings.html",
+      "s_cn": "星巴克上调全年预期 同店销售额增长 7.9%",
+      "_ts": 1785355665372
+    },
+    {
+      "s": "There's a New Way to Protect Bitcoin From Future Quantum Attacks, Researchers Say",
+      "t": "2026-07-29T20:01:03.000Z",
+      "ts": 1785355263,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374651/new-research-bitcoin-wallet-quantum-attacks-safe",
+      "s_cn": "研究人员表示，有一种新方法可以保护比特币免受未来的量子攻击",
+      "_ts": 1785355305212
+    },
+    {
+      "s": "US prosecutors propose changes to CLARITY as voting window narrows: Report",
+      "t": "2026-07-29T19:43:29.000Z",
+      "ts": 1785354209,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/clarity-act-changes-law-enforcement-voting-narrows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "随着投票窗口缩小，美国检察官提议对 CLARITY 进行修改：报告",
+      "_ts": 1785354635247
+    },
+    {
+      "s": "Chipotle Mexican Grill is about to report earnings. Here's what to expect",
+      "t": "2026-07-29T19:40:01.000Z",
+      "ts": 1785354001,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/29/chipotle-mexican-grill-cmg-q2-2026-earnings.html",
+      "s_cn": "Chipotle Mexican Grill 即将公布收益。",
+      "_ts": 1785354019458
+    },
+    {
+      "s": "Starbucks is about to report earnings. Here's what to expect",
+      "t": "2026-07-29T19:35:01.000Z",
+      "ts": 1785353701,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/29/starbucks-sbux-q3-2026-earnings.html",
+      "s_cn": "星巴克即将公布财报。",
+      "_ts": 1785353724476
+    },
+    {
+      "s": "MoonPay's PayBox Puts a Crypto Wallet Inside Claude and ChatGPT—And Lets It Pay for Things",
+      "t": "2026-07-29T19:31:03.000Z",
+      "ts": 1785353463,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374687/moonpays-paybox-crypto-wallet-claude-chatgpt",
+      "s_cn": "MoonPay 的 PayBox 将加密钱包放入 Claude 和 ChatGPT 中，并让它支付费用",
+      "_ts": 1785353507451
+    },
+    {
+      "s": "Charities unable to pay staff after fraud alert",
+      "t": "2026-07-29T18:17:23.000Z",
+      "ts": 1785349043,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cz7dlelz711o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "欺诈警报后慈善机构无法向员工支付工资",
+      "_ts": 1785352379292
+    },
+    {
+      "s": "CEO of Quantum Giant Issues Bitcoin Warning",
+      "t": "2026-07-29T18:40:58.000Z",
+      "ts": 1785350458,
+      "src": "U.Today",
+      "link": "https://u.today/ceo-of-quantum-giant-issues-bitcoin-warning",
+      "s_cn": "量子巨头首席执行官发出比特币警告",
+      "_ts": 1785351312661
+    },
+    {
+      "s": "Bitcoin, Ethereum Wobble as Fed Holds Rates Steady",
+      "t": "2026-07-29T18:43:45.000Z",
+      "ts": 1785350625,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374672/bitcoin-ethereum-price-fed-holds-rates-steady",
+      "s_cn": "美联储维持利率稳定，比特币、以太坊波动",
+      "_ts": 1785350668250
+    },
+    {
+      "s": "Hims and Hers shares fall 10% as FTC sues company over data, billing practices",
+      "t": "2026-07-29T18:24:09.000Z",
+      "ts": 1785349449,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/29/hims-and-hers-ftc-lawsuit-stock.html",
+      "s_cn": "FTC 就数据和计费行为起诉 Hims 和 Hers 公司，股价下跌 10%",
+      "_ts": 1785349494351
+    },
+    {
+      "s": "US interest rates held for fifth time in a row",
+      "t": "2026-07-29T18:02:02.000Z",
+      "ts": 1785348122,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cy07wgqjv08o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "美国连续第五次维持利率不变",
+      "_ts": 1785348260891
+    },
+    {
+      "s": "Fed holds rates steady, extending pause as markets await Kevin Warsh's policy roadmap",
+      "t": "2026-07-29T17:58:33.000Z",
+      "ts": 1785347913,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/29/fomc-hold-fed-holds-rates-steady-extending-pause-as-markets-await-warsh-s-policy-roadmap",
+      "s_cn": "美联储维持利率稳定，因市场等待凯文·沃什的政策路线图而延长暂停时间",
+      "_ts": 1785348053736
+    },
+    {
+      "s": "As crypto perpetual futures boom, Ethereum’s role is shifting",
+      "t": "2026-07-29T18:00:00.000Z",
+      "ts": 1785348000,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/07/29/as-crypto-perpetual-futures-boom-ethereum-s-role-is-shifting",
+      "s_cn": "随着加密货币永续期货的繁荣，以太坊的角色正在发生变化",
+      "_ts": 1785348042776
+    },
+    {
+      "s": "Ethereum Price Stalls as Fed Rate Decision Looms",
+      "t": "2026-07-29T17:18:49.000Z",
+      "ts": 1785345529,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374653/ethereum-price-stalls-fed-rate-decision",
+      "s_cn": "随着美联储利率决定的临近，以太坊价格停滞不前",
+      "_ts": 1785345604359
+    },
+    {
+      "s": "Bitcoin price wedged into ‘most divided’ FOMC as Iran war spikes oil prices 8%",
+      "t": "2026-07-29T17:06:55.000Z",
+      "ts": 1785344815,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/bitcoin-price-wedged-into-most-divided-fomc-as-iran-war-spikes-oil-prices?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "伊朗战争导致油价飙升 8%，比特币价格陷入“分歧最大”的联邦公开市场委员会 (FOMC)",
+      "_ts": 1785345313613
+    },
+    {
+      "s": "Binance launches regulated gold, silver options through ADGM exchange",
+      "t": "2026-07-29T17:09:24.000Z",
+      "ts": 1785344964,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/binance-launches-regulated-gold-silver-options-through-adgm-exchange?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "币安通过 ADGM 交易所推出受监管的黄金、白银期权",
+      "_ts": 1785345313613
+    },
     {
       "s": "What is Zcash (ZEC)? The Privacy Coin Using Zero-Knowledge Proofs",
       "t": "2026-07-29T16:43:52.000Z",
