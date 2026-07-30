@@ -1,4637 +1,4693 @@
 {
-  "scan_time": "2026-07-30T02:00:04.705Z",
+  "scan_time": "2026-07-30T14:00:04.190Z",
   "binance_symbols_total": 636,
   "ticker_success_count": 636,
-  "liquidity_pass_count": 630,
-  "lifecycle_analyzed_count": 241,
-  "lifecycle_skipped_count": 330,
+  "liquidity_pass_count": 634,
+  "lifecycle_analyzed_count": 196,
+  "lifecycle_skipped_count": 334,
   "skipped_symbols": [
     {
-      "symbol": "BEB",
+      "symbol": "ORCLB",
       "priorityScore": 13,
-      "volume24h": 234912.83044,
-      "change24h": -5.194,
+      "volume24h": 420209.5272,
+      "change24h": 6.558,
       "reason": "优先级13分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "XTZ",
       "priorityScore": 10,
-      "volume24h": 1542199.72558,
-      "change24h": 1.419,
+      "volume24h": 1248149.69779,
+      "change24h": 0.532,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "IOTA",
+      "symbol": "ONT",
       "priorityScore": 10,
-      "volume24h": 3068191.586099,
-      "change24h": 0.339,
+      "volume24h": 1508812.082891,
+      "change24h": -0.845,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "VET",
+      "symbol": "NEO",
       "priorityScore": 10,
-      "volume24h": 3216788.034611,
-      "change24h": 0.465,
+      "volume24h": 3522611.358,
+      "change24h": -1.56,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "QTUM",
       "priorityScore": 10,
-      "volume24h": 1772688.8093,
-      "change24h": -0.721,
+      "volume24h": 1510762.83529,
+      "change24h": -0.232,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "IOST",
       "priorityScore": 10,
-      "volume24h": 1891493.5304602,
-      "change24h": -1.828,
+      "volume24h": 1485394.2597081,
+      "change24h": 0.973,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "THETA",
       "priorityScore": 10,
-      "volume24h": 3694052.0129,
-      "change24h": -0.948,
+      "volume24h": 3170654.6372,
+      "change24h": 0.479,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ZRX",
+      "symbol": "COMP",
       "priorityScore": 10,
-      "volume24h": 1167614.416,
-      "change24h": -1.258,
+      "volume24h": 2248678.33,
+      "change24h": 1.598,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SNX",
       "priorityScore": 10,
-      "volume24h": 5636783.96635,
-      "change24h": 1.094,
+      "volume24h": 4535760.91392,
+      "change24h": 0.527,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "YFI",
       "priorityScore": 10,
-      "volume24h": 2136130.3,
-      "change24h": -0.605,
+      "volume24h": 2147956.9,
+      "change24h": 0.755,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TRB",
       "priorityScore": 10,
-      "volume24h": 3354417.306,
-      "change24h": -0.332,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "RUNE",
-      "priorityScore": 10,
-      "volume24h": 3210624.9686,
-      "change24h": 0.663,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SUSHI",
-      "priorityScore": 10,
-      "volume24h": 2011862.3884,
-      "change24h": -0.657,
+      "volume24h": 2751050.327,
+      "change24h": -0.48,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "EGLD",
       "priorityScore": 10,
-      "volume24h": 3787878.909,
-      "change24h": -0.253,
+      "volume24h": 2324601.331,
+      "change24h": -1.725,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "BEL",
+      "symbol": "ENJ",
       "priorityScore": 10,
-      "volume24h": 1332127.80502,
-      "change24h": 0.17,
+      "volume24h": 1703565.66858,
+      "change24h": 1.337,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "KSM",
+      "priorityScore": 10,
+      "volume24h": 1430822.61,
+      "change24h": 1.714,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "AXS",
       "priorityScore": 10,
-      "volume24h": 6536371.045,
-      "change24h": -0.484,
+      "volume24h": 5031010.681,
+      "change24h": 0.98,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ZEN",
       "priorityScore": 10,
-      "volume24h": 3456387.04,
-      "change24h": -1.335,
+      "volume24h": 3485616.969,
+      "change24h": -0.26,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SKL",
       "priorityScore": 10,
-      "volume24h": 4175812.695201,
-      "change24h": -1.189,
+      "volume24h": 3371167.572687,
+      "change24h": -0.979,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GRT",
       "priorityScore": 10,
-      "volume24h": 2895561.74158,
-      "change24h": 1.073,
+      "volume24h": 2770644.6813,
+      "change24h": 0.539,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "1INCH",
+      "priorityScore": 10,
+      "volume24h": 1802780.65036,
+      "change24h": 1.215,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SAND",
       "priorityScore": 10,
-      "volume24h": 6746286.77935,
-      "change24h": -1.117,
+      "volume24h": 5505741.89821,
+      "change24h": 0.17,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "RVN",
+      "symbol": "ANKR",
       "priorityScore": 10,
-      "volume24h": 1332227.645415,
-      "change24h": 0.46,
+      "volume24h": 1111570.250913,
+      "change24h": 1.471,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CHR",
+      "symbol": "ALICE",
       "priorityScore": 10,
-      "volume24h": 1118207.98809,
-      "change24h": 1.97,
+      "volume24h": 1488183.79436,
+      "change24h": -0.175,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MANA",
+      "symbol": "MTL",
       "priorityScore": 10,
-      "volume24h": 4327351.89242,
-      "change24h": 1.504,
+      "volume24h": 749904.0009,
+      "change24h": 3.744,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "HOT",
+      "symbol": "GTC",
       "priorityScore": 10,
-      "volume24h": 1449575.8603393,
-      "change24h": -0.406,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "OGN",
-      "priorityScore": 10,
-      "volume24h": 6767350.77301,
-      "change24h": 1.894,
+      "volume24h": 1486741.331081,
+      "change24h": -1.175,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BTCDOM",
       "priorityScore": 10,
-      "volume24h": 2099034.1,
-      "change24h": 0.275,
+      "volume24h": 1815147.3,
+      "change24h": -0.783,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "IOTX",
+      "symbol": "MASK",
       "priorityScore": 10,
-      "volume24h": 1257236.293838,
-      "change24h": -0.993,
+      "volume24h": 1800599.5365,
+      "change24h": 1.404,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "1000XEC",
+      "symbol": "DYDX",
       "priorityScore": 10,
-      "volume24h": 8108705.654441,
-      "change24h": -0.707,
+      "volume24h": 6653962.02286,
+      "change24h": -1.707,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GALA",
       "priorityScore": 10,
-      "volume24h": 8116660.076754,
-      "change24h": -0.055,
+      "volume24h": 6956134.660241,
+      "change24h": -0.556,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "CELO",
       "priorityScore": 10,
-      "volume24h": 2990818.594085,
-      "change24h": 1.017,
+      "volume24h": 2988736.543399,
+      "change24h": 2,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "AR",
       "priorityScore": 10,
-      "volume24h": 4077162.968,
-      "change24h": -1.75,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ARPA",
-      "priorityScore": 10,
-      "volume24h": 1232152.250382,
-      "change24h": 0.358,
+      "volume24h": 2887898.733,
+      "change24h": 0.29,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ENS",
       "priorityScore": 10,
-      "volume24h": 3820789.999,
-      "change24h": -0.833,
+      "volume24h": 3213678.23,
+      "change24h": 0.868,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ROSE",
       "priorityScore": 10,
-      "volume24h": 3599656.436497,
-      "change24h": 0.264,
+      "volume24h": 2654494.413624,
+      "change24h": 0.385,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "DUSK",
       "priorityScore": 10,
-      "volume24h": 1549232.41145,
-      "change24h": -0.68,
+      "volume24h": 1140454.56245,
+      "change24h": 0.893,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "IMX",
+      "priorityScore": 10,
+      "volume24h": 2227258.3817,
+      "change24h": 0.636,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "API3",
       "priorityScore": 10,
-      "volume24h": 3549715.1778,
-      "change24h": 1.691,
+      "volume24h": 2804056.2101,
+      "change24h": 1.689,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "GMT",
+      "priorityScore": 10,
+      "volume24h": 2220854.077028,
+      "change24h": 0.108,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "JASMY",
       "priorityScore": 10,
-      "volume24h": 3080299.00876,
-      "change24h": 0.677,
+      "volume24h": 2090849.985658,
+      "change24h": 0.904,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "STG",
       "priorityScore": 10,
-      "volume24h": 2725423.0368,
-      "change24h": -0.082,
+      "volume24h": 2452337.8149,
+      "change24h": 1.595,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SPELL",
       "priorityScore": 10,
-      "volume24h": 1284905.8425062,
-      "change24h": -1.006,
+      "volume24h": 1116081.5273252,
+      "change24h": -0.382,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "1000LUNC",
       "priorityScore": 10,
-      "volume24h": 6232121.74664,
-      "change24h": 0.08,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "LUNA2",
-      "priorityScore": 10,
-      "volume24h": 1828485.36854,
-      "change24h": 0.468,
+      "volume24h": 5261052.45913,
+      "change24h": -0.219,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "QNT",
       "priorityScore": 10,
-      "volume24h": 2821391.233,
-      "change24h": 1.415,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "MAGIC",
-      "priorityScore": 10,
-      "volume24h": 1092468.505929,
-      "change24h": -1.854,
+      "volume24h": 2888543.259,
+      "change24h": 1.731,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "T",
       "priorityScore": 10,
-      "volume24h": 4259446.677943,
-      "change24h": -1.214,
+      "volume24h": 4067647.669205,
+      "change24h": -1.785,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MINA",
       "priorityScore": 10,
-      "volume24h": 1238484.67263,
-      "change24h": -1.624,
+      "volume24h": 1206016.49678,
+      "change24h": 0.543,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CFX",
+      "symbol": "SSV",
       "priorityScore": 10,
-      "volume24h": 4060673.66312,
-      "change24h": -0.779,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "STX",
-      "priorityScore": 10,
-      "volume24h": 6000182.825,
-      "change24h": -0.295,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CKB",
-      "priorityScore": 10,
-      "volume24h": 797462.900762,
-      "change24h": -2.358,
+      "volume24h": 2603855.42087,
+      "change24h": 1.632,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ID",
       "priorityScore": 10,
-      "volume24h": 3478097.29308,
-      "change24h": -0.543,
+      "volume24h": 3184394.75076,
+      "change24h": -0.436,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "JOE",
+      "symbol": "TLM",
       "priorityScore": 10,
-      "volume24h": 679763.10668,
-      "change24h": -4.509,
+      "volume24h": 7210348.689033,
+      "change24h": -1.628,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "1000FLOKI",
       "priorityScore": 10,
-      "volume24h": 5450917.50767,
-      "change24h": -1.017,
+      "volume24h": 4770148.37062,
+      "change24h": -1.162,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "NMR",
+      "symbol": "UMA",
       "priorityScore": 10,
-      "volume24h": 1056184.9783,
-      "change24h": -1.611,
+      "volume24h": 2599557.6606,
+      "change24h": 0.148,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MAV",
+      "symbol": "XVG",
       "priorityScore": 10,
-      "volume24h": 697254.16252,
-      "change24h": -2.418,
+      "volume24h": 1328061.192066,
+      "change24h": 0.742,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PENDLE",
       "priorityScore": 10,
-      "volume24h": 9583332.7414,
-      "change24h": -1.749,
+      "volume24h": 9276574.0188,
+      "change24h": 0.77,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ARKM",
+      "priorityScore": 10,
+      "volume24h": 2079311.0644,
+      "change24h": -1.142,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "YGG",
       "priorityScore": 10,
-      "volume24h": 2362347.08961,
-      "change24h": -1.026,
+      "volume24h": 2317736.58445,
+      "change24h": 1.564,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "BNT",
+      "symbol": "SEI",
       "priorityScore": 10,
-      "volume24h": 501805.1194,
-      "change24h": -2.892,
+      "volume24h": 8911536.43616,
+      "change24h": 0.451,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "CYBER",
+      "priorityScore": 10,
+      "volume24h": 817422.85453,
+      "change24h": 2.105,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ARK",
+      "priorityScore": 10,
+      "volume24h": 761167.6285,
+      "change24h": 2.03,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BICO",
+      "priorityScore": 10,
+      "volume24h": 1411975.33034,
+      "change24h": -0.171,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BIGTIME",
+      "priorityScore": 10,
+      "volume24h": 1533565.296214,
+      "change24h": 0.83,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "WAXP",
+      "priorityScore": 10,
+      "volume24h": 685212.472647,
+      "change24h": 4.538,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BSV",
       "priorityScore": 10,
-      "volume24h": 1302547.184,
-      "change24h": -1.716,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "POLYX",
-      "priorityScore": 10,
-      "volume24h": 761332.55845,
-      "change24h": -2.532,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CAKE",
-      "priorityScore": 10,
-      "volume24h": 4114954.5318,
-      "change24h": 0.318,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "MEME",
-      "priorityScore": 10,
-      "volume24h": 1931940.8234142,
+      "volume24h": 1150351.192,
       "change24h": -0.16,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "GAS",
+      "priorityScore": 10,
+      "volume24h": 994901.8503,
+      "change24h": 2.595,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "POWR",
+      "priorityScore": 10,
+      "volume24h": 1323753.33754,
+      "change24h": 1.824,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "TWT",
+      "priorityScore": 10,
+      "volume24h": 2917074.4418,
+      "change24h": -0.137,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "STEEM",
+      "priorityScore": 10,
+      "volume24h": 747149.70832,
+      "change24h": 2.325,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "KAS",
       "priorityScore": 10,
-      "volume24h": 1935992.49745,
-      "change24h": -0.65,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "BEAMX",
-      "priorityScore": 10,
-      "volume24h": 717307.122675,
-      "change24h": -2.156,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "PYTH",
-      "priorityScore": 10,
-      "volume24h": 4644167.88089,
-      "change24h": -0.421,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ONG",
-      "priorityScore": 10,
-      "volume24h": 766834.51765,
-      "change24h": -3.177,
+      "volume24h": 2060208.54255,
+      "change24h": -0.253,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "1000SATS",
       "priorityScore": 10,
-      "volume24h": 1398205.722834,
-      "change24h": -0.769,
+      "volume24h": 1298634.05035407,
+      "change24h": 0.667,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "1000RATS",
       "priorityScore": 10,
-      "volume24h": 1509063.75837,
-      "change24h": -0.294,
+      "volume24h": 1071147.36283,
+      "change24h": -1.453,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ACE",
+      "symbol": "XAI",
       "priorityScore": 10,
-      "volume24h": 6243376.418814,
-      "change24h": 1.039,
+      "volume24h": 1556649.73296,
+      "change24h": 0.016,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MANTA",
       "priorityScore": 10,
-      "volume24h": 1690504.122777,
-      "change24h": 0.34,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "LSK",
-      "priorityScore": 10,
-      "volume24h": 633715.0619,
-      "change24h": -2.575,
+      "volume24h": 1517322.869975,
+      "change24h": -1.282,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ALT",
       "priorityScore": 10,
-      "volume24h": 1567799.155768,
-      "change24h": -0.537,
+      "volume24h": 1318492.665505,
+      "change24h": 1.509,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "RONIN",
+      "symbol": "DYM",
       "priorityScore": 10,
-      "volume24h": 886897.897562,
-      "change24h": -2.567,
+      "volume24h": 1931752.773978,
+      "change24h": 0.916,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "PIXEL",
+      "priorityScore": 10,
+      "volume24h": 2170581.746192,
+      "change24h": 1.175,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "PORTAL",
+      "priorityScore": 10,
+      "volume24h": 1791910.213663,
+      "change24h": 0.308,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "AEVO",
+      "priorityScore": 10,
+      "volume24h": 1038684.92111,
+      "change24h": 1.256,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "W",
+      "priorityScore": 10,
+      "volume24h": 3031229.353147,
+      "change24h": -0.356,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TNSR",
       "priorityScore": 10,
-      "volume24h": 2409667.813421,
-      "change24h": 1.638,
+      "volume24h": 1557758.295163,
+      "change24h": -0.647,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SAGA",
       "priorityScore": 10,
-      "volume24h": 2580418.736663,
-      "change24h": -0.406,
+      "volume24h": 2365326.150975,
+      "change24h": 0.164,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "NOT",
       "priorityScore": 10,
-      "volume24h": 2611815.4382423,
-      "change24h": -0.27,
+      "volume24h": 2274848.8275656,
+      "change24h": 1.304,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TURBO",
       "priorityScore": 10,
-      "volume24h": 2882088.7232847,
-      "change24h": 0.433,
+      "volume24h": 2581479.4825656,
+      "change24h": 1.088,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "LISTA",
+      "symbol": "IO",
       "priorityScore": 10,
-      "volume24h": 986741.53824,
-      "change24h": 4.009,
+      "volume24h": 2243044.80164,
+      "change24h": -0.152,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "MEW",
+      "priorityScore": 10,
+      "volume24h": 589275.1639809,
+      "change24h": 2.417,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BANANA",
       "priorityScore": 10,
-      "volume24h": 1288709.7781,
-      "change24h": -0.607,
+      "volume24h": 1113444.9219,
+      "change24h": -0.318,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "RARE",
       "priorityScore": 10,
-      "volume24h": 898958.88619,
-      "change24h": -2.246,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "G",
-      "priorityScore": 10,
-      "volume24h": 1070765.885927,
-      "change24h": 1.605,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SYN",
-      "priorityScore": 10,
-      "volume24h": 9060033.22134,
-      "change24h": -1.813,
+      "volume24h": 856075.54527,
+      "change24h": 2.203,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "POPCAT",
       "priorityScore": 10,
-      "volume24h": 1441063.55786,
-      "change24h": 1.391,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "DOGS",
-      "priorityScore": 10,
-      "volume24h": 1639492.45404899,
-      "change24h": -1.388,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "FLUX",
-      "priorityScore": 10,
-      "volume24h": 921964.8792,
-      "change24h": -2.256,
+      "volume24h": 1443595.41248,
+      "change24h": 1.844,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "POL",
       "priorityScore": 10,
-      "volume24h": 6655163.15782,
-      "change24h": 1.582,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "1MBABYDOGE",
-      "priorityScore": 10,
-      "volume24h": 1095270.4306482,
-      "change24h": 0.744,
+      "volume24h": 6890418.46808,
+      "change24h": -1.265,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "NEIRO",
       "priorityScore": 10,
-      "volume24h": 3738100.093213,
-      "change24h": -0.358,
+      "volume24h": 3356956.80701384,
+      "change24h": 0.635,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "FIDA",
+      "priorityScore": 10,
+      "volume24h": 1592468.89088,
+      "change24h": 0.925,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "CATI",
+      "priorityScore": 10,
+      "volume24h": 1162516.72576,
+      "change24h": 1.281,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "HMSTR",
       "priorityScore": 10,
-      "volume24h": 2517742.7502698,
-      "change24h": 0.478,
+      "volume24h": 2052351.2242108,
+      "change24h": -1.019,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "EIGEN",
+      "priorityScore": 10,
+      "volume24h": 8228219.65922,
+      "change24h": 0.717,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "1000CAT",
       "priorityScore": 10,
-      "volume24h": 636933.875211,
-      "change24h": 2.817,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SCR",
-      "priorityScore": 10,
-      "volume24h": 858990.9763,
-      "change24h": -2.334,
+      "volume24h": 888060.963606,
+      "change24h": 4.613,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MOODENG",
       "priorityScore": 10,
-      "volume24h": 2125826.50197,
-      "change24h": -0.431,
+      "volume24h": 1730171.65277,
+      "change24h": 1.547,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "1000000MOG",
+      "symbol": "GRASS",
       "priorityScore": 10,
-      "volume24h": 693526.62913,
-      "change24h": -2.344,
+      "volume24h": 4139944.97363,
+      "change24h": -1.586,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "DRIFT",
       "priorityScore": 10,
-      "volume24h": 1278092.75265,
-      "change24h": -0.704,
+      "volume24h": 1200090.30889,
+      "change24h": 1.606,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ACT",
       "priorityScore": 10,
-      "volume24h": 1513022.759354,
-      "change24h": -0.363,
+      "volume24h": 1290551.491199,
+      "change24h": -1.879,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "BAN",
+      "symbol": "PNUT",
       "priorityScore": 10,
-      "volume24h": 793058.33952,
-      "change24h": -3.656,
+      "volume24h": 3685387.16272,
+      "change24h": 0.667,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AKT",
+      "symbol": "SCRT",
       "priorityScore": 10,
-      "volume24h": 1516681.4055,
-      "change24h": -0.572,
+      "volume24h": 765615.40147,
+      "change24h": -3.713,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "1000CHEEMS",
+      "priorityScore": 10,
+      "volume24h": 1125260.8536012,
+      "change24h": 0.798,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "THE",
       "priorityScore": 10,
-      "volume24h": 1617142.366123,
-      "change24h": -0.853,
+      "volume24h": 1620774.845095,
+      "change24h": 1.653,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "KAIA",
+      "symbol": "MORPHO",
       "priorityScore": 10,
-      "volume24h": 1872002.03263,
-      "change24h": -1.855,
+      "volume24h": 5680538.24258,
+      "change24h": 1.097,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ACX",
+      "priorityScore": 10,
+      "volume24h": 885767.023057,
+      "change24h": 3.572,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ORCA",
       "priorityScore": 10,
-      "volume24h": 2103808.4159,
-      "change24h": 0,
+      "volume24h": 1603593.9268,
+      "change24h": 1.748,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "MOVE",
+      "priorityScore": 10,
+      "volume24h": 2674412.40318,
+      "change24h": -0.634,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "RAYSOL",
       "priorityScore": 10,
-      "volume24h": 1204595.60219,
-      "change24h": 0.484,
+      "volume24h": 904868.52528,
+      "change24h": 2.105,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ME",
       "priorityScore": 10,
-      "volume24h": 1167324.324564,
-      "change24h": -0.707,
+      "volume24h": 1218963.895564,
+      "change24h": 1.21,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "VELODROME",
+      "priorityScore": 10,
+      "volume24h": 621274.52468,
+      "change24h": 3.631,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MOCA",
       "priorityScore": 10,
-      "volume24h": 764054.5713,
-      "change24h": -4.066,
+      "volume24h": 563943.370184,
+      "change24h": 2.13,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "LUMIA",
+      "priorityScore": 10,
+      "volume24h": 2473323.669356,
+      "change24h": 0.253,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "USUAL",
+      "priorityScore": 10,
+      "volume24h": 1174320.048426,
+      "change24h": 1.476,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "AIXBT",
       "priorityScore": 10,
-      "volume24h": 1851213.43731,
-      "change24h": -0.823,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CGPT",
-      "priorityScore": 10,
-      "volume24h": 801371.30629,
-      "change24h": 2.928,
+      "volume24h": 1490676.44571,
+      "change24h": 1.374,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PHA",
       "priorityScore": 10,
-      "volume24h": 1359540.77396,
-      "change24h": -0.444,
+      "volume24h": 1156447.7776,
+      "change24h": 0.345,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GRIFFAIN",
       "priorityScore": 10,
-      "volume24h": 781330.444026,
-      "change24h": -2.917,
+      "volume24h": 822306.552741,
+      "change24h": 2.424,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "BIO",
+      "symbol": "SONIC",
       "priorityScore": 10,
-      "volume24h": 4513371.73693,
-      "change24h": -0.217,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ALCH",
-      "priorityScore": 10,
-      "volume24h": 896724.82716,
-      "change24h": 3.485,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SWARMS",
-      "priorityScore": 10,
-      "volume24h": 1328784.969828,
-      "change24h": 0.288,
+      "volume24h": 919361.874058,
+      "change24h": 3.366,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "S",
       "priorityScore": 10,
-      "volume24h": 1740885.00778,
-      "change24h": -0.794,
+      "volume24h": 1744675.83542,
+      "change24h": 0.379,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SOLV",
+      "symbol": "ARC",
       "priorityScore": 10,
-      "volume24h": 1297589.126916,
-      "change24h": -0.345,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "MELANIA",
-      "priorityScore": 10,
-      "volume24h": 1266240.175489,
-      "change24h": 1.549,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "VTHO",
-      "priorityScore": 10,
-      "volume24h": 714391.1608878,
-      "change24h": -2.461,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ANIME",
-      "priorityScore": 10,
-      "volume24h": 743748.74731,
-      "change24h": -2.598,
+      "volume24h": 1787393.94728,
+      "change24h": -1.095,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PIPPIN",
       "priorityScore": 10,
-      "volume24h": 3252777.90449,
-      "change24h": -0.826,
+      "volume24h": 2788190.81567,
+      "change24h": 1.625,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BERA",
+      "priorityScore": 10,
+      "volume24h": 5612008.63272,
+      "change24h": -1.227,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "HEI",
+      "priorityScore": 10,
+      "volume24h": 3391805.908601,
+      "change24h": -0.743,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GPS",
       "priorityScore": 10,
-      "volume24h": 1910560.209598,
-      "change24h": 0.884,
+      "volume24h": 1514858.108452,
+      "change24h": 1.302,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "TUT",
+      "symbol": "SHELL",
       "priorityScore": 10,
-      "volume24h": 2220916.52706,
-      "change24h": 0.554,
+      "volume24h": 1169025.65995,
+      "change24h": -0.437,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "FORM",
+      "priorityScore": 10,
+      "volume24h": 2013858.96081,
+      "change24h": 0.749,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BROCCOLIF3B",
       "priorityScore": 10,
-      "volume24h": 2238823.722612,
-      "change24h": 0.036,
+      "volume24h": 1910955.597196,
+      "change24h": 0.108,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "SIREN",
+      "priorityScore": 10,
+      "volume24h": 6061798.79193,
+      "change24h": 1.193,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BANANAS31",
+      "priorityScore": 10,
+      "volume24h": 1017047.436353,
+      "change24h": 1.686,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PLUME",
       "priorityScore": 10,
-      "volume24h": 4547664.60036,
-      "change24h": 1.007,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "NIL",
-      "priorityScore": 10,
-      "volume24h": 5455617.155352,
-      "change24h": -1.367,
+      "volume24h": 3238122.90711,
+      "change24h": -0.835,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PARTI",
       "priorityScore": 10,
-      "volume24h": 2952068.05321,
-      "change24h": -0.987,
+      "volume24h": 2406092.65667,
+      "change24h": 0.905,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "JELLYJELLY",
+      "priorityScore": 10,
+      "volume24h": 2342786.45174,
+      "change24h": 1.039,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GUN",
       "priorityScore": 10,
-      "volume24h": 1788167.794806,
-      "change24h": -1.261,
+      "volume24h": 1277444.687698,
+      "change24h": 0.989,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "BABY",
+      "symbol": "ATH",
       "priorityScore": 10,
-      "volume24h": 1983450.3767,
-      "change24h": -0.791,
+      "volume24h": 1944342.167643,
+      "change24h": 0.129,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "FHE",
+      "symbol": "PROMPT",
       "priorityScore": 10,
-      "volume24h": 818089.04441,
-      "change24h": -2.077,
+      "volume24h": 831331.567,
+      "change24h": 2.896,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "DEEP",
+      "symbol": "WCT",
       "priorityScore": 10,
-      "volume24h": 1024814.63199,
-      "change24h": -1.46,
+      "volume24h": 1140721.27259,
+      "change24h": 1.26,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "INIT",
+      "priorityScore": 10,
+      "volume24h": 677097.01971,
+      "change24h": 2.648,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "HYPER",
+      "priorityScore": 10,
+      "volume24h": 1195919.17906,
+      "change24h": 1.549,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "JST",
       "priorityScore": 10,
-      "volume24h": 2615849.80691,
-      "change24h": -0.93,
+      "volume24h": 2871803.889,
+      "change24h": 0.732,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "PUNDIX",
+      "symbol": "SIGN",
       "priorityScore": 10,
-      "volume24h": 2095826.13141,
-      "change24h": -0.065,
+      "volume24h": 1408529.338849,
+      "change24h": 0.169,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "DOLO",
+      "symbol": "HAEDAL",
       "priorityScore": 10,
-      "volume24h": 567987.71487,
-      "change24h": -2.418,
+      "volume24h": 688531.43261,
+      "change24h": 3.784,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SYRUP",
+      "symbol": "SXT",
       "priorityScore": 10,
-      "volume24h": 5284641.78376,
-      "change24h": 0.328,
+      "volume24h": 3225721.197774,
+      "change24h": 1.889,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AGT",
+      "symbol": "NXPC",
       "priorityScore": 10,
-      "volume24h": 1918238.921309,
-      "change24h": -0.638,
+      "volume24h": 1328219.1172,
+      "change24h": -0.16,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "A",
+      "symbol": "AWE",
       "priorityScore": 10,
-      "volume24h": 1787548.64581,
-      "change24h": -1.637,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SOPH",
-      "priorityScore": 10,
-      "volume24h": 848308.77452,
-      "change24h": -2.166,
+      "volume24h": 1021482.29314,
+      "change24h": 0.79,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "RESOLV",
       "priorityScore": 10,
-      "volume24h": 1662374.88858,
-      "change24h": -0.254,
+      "volume24h": 1625660.76327,
+      "change24h": -1.899,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TAIKO",
       "priorityScore": 10,
-      "volume24h": 1943498.73071,
-      "change24h": 1.741,
+      "volume24h": 1619279.20731,
+      "change24h": 1.87,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SQD",
+      "symbol": "PUMPBTC",
       "priorityScore": 10,
-      "volume24h": 955041.6959,
-      "change24h": 3.402,
+      "volume24h": 754163.71719,
+      "change24h": 2.455,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MYX",
+      "symbol": "SPK",
       "priorityScore": 10,
-      "volume24h": 2421752.9549,
-      "change24h": 0.951,
+      "volume24h": 1324421.32333,
+      "change24h": 1.603,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "H",
+      "symbol": "F",
       "priorityScore": 10,
-      "volume24h": 5237228.03483,
-      "change24h": -1.641,
+      "volume24h": 1028380.63588,
+      "change24h": 0.448,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "NEWT",
+      "priorityScore": 10,
+      "volume24h": 819108.9354,
+      "change24h": 2.565,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SAHARA",
       "priorityScore": 10,
-      "volume24h": 4494347.97986,
-      "change24h": -1.299,
+      "volume24h": 4331471.845158,
+      "change24h": 1.163,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ICNT",
+      "symbol": "IDOL",
       "priorityScore": 10,
-      "volume24h": 791839.1282,
-      "change24h": -3.939,
+      "volume24h": 2762014.11729,
+      "change24h": -1.209,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "M",
+      "symbol": "AIN",
       "priorityScore": 10,
-      "volume24h": 1465374.8428,
-      "change24h": 1.478,
+      "volume24h": 688626.03422,
+      "change24h": 3.928,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CROSS",
+      "symbol": "C",
       "priorityScore": 10,
-      "volume24h": 1645881.9132,
-      "change24h": -0.289,
+      "volume24h": 529816.22908,
+      "change24h": 2.49,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "TAC",
+      "symbol": "SLP",
       "priorityScore": 10,
-      "volume24h": 1729461.538679,
-      "change24h": 1.904,
+      "volume24h": 805352.0926944,
+      "change24h": 3.192,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ZORA",
       "priorityScore": 10,
-      "volume24h": 1354667.090944,
-      "change24h": -1.092,
+      "volume24h": 1267790.4177,
+      "change24h": -0.406,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TREE",
       "priorityScore": 10,
-      "volume24h": 1695761.8118,
-      "change24h": -0.028,
+      "volume24h": 1523081.81386,
+      "change24h": 0.506,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PLAY",
       "priorityScore": 10,
-      "volume24h": 1517818.33015,
-      "change24h": -1.474,
+      "volume24h": 1504949.02722,
+      "change24h": -1.462,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "NAORIS",
       "priorityScore": 10,
-      "volume24h": 802994.41506,
-      "change24h": 2.654,
+      "volume24h": 801293.78201,
+      "change24h": 2.849,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TOWNS",
       "priorityScore": 10,
-      "volume24h": 1951835.091704,
-      "change24h": -0.392,
+      "volume24h": 1560641.570069,
+      "change24h": 0.552,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "IN",
+      "priorityScore": 10,
+      "volume24h": 1860449.98426,
+      "change24h": 1.355,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "CARV",
+      "priorityScore": 10,
+      "volume24h": 778578.22393,
+      "change24h": 2.446,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "AIO",
+      "priorityScore": 10,
+      "volume24h": 2434420.5704,
+      "change24h": 0.585,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "USELESS",
       "priorityScore": 10,
-      "volume24h": 4063669.10605,
-      "change24h": 0.574,
+      "volume24h": 4624483.01339,
+      "change24h": 1.346,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SAPIEN",
       "priorityScore": 10,
-      "volume24h": 1482448.70057,
-      "change24h": 0.464,
+      "volume24h": 1310423.12802,
+      "change24h": -1.821,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "SOMI",
+      "priorityScore": 10,
+      "volume24h": 824944.3767,
+      "change24h": 2.029,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BAS",
       "priorityScore": 10,
-      "volume24h": 877500.196807,
-      "change24h": -2.648,
+      "volume24h": 1529978.87167,
+      "change24h": 1.375,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MITO",
       "priorityScore": 10,
-      "volume24h": 1018182.34777,
-      "change24h": -1.032,
+      "volume24h": 1029673.13269,
+      "change24h": -0.499,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "Q",
+      "symbol": "HEMI",
       "priorityScore": 10,
-      "volume24h": 3610597.892154,
-      "change24h": 0.581,
+      "volume24h": 4312195.616722,
+      "change24h": 1.187,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ARIA",
+      "symbol": "LINEA",
       "priorityScore": 10,
-      "volume24h": 771520.22711,
-      "change24h": -2.329,
+      "volume24h": 2295920.582727,
+      "change24h": -0.927,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "FLOCK",
+      "symbol": "PTB",
       "priorityScore": 10,
-      "volume24h": 1247665.89524,
-      "change24h": -1.361,
+      "volume24h": 3344969.341077,
+      "change24h": -0.297,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "OPEN",
+      "priorityScore": 10,
+      "volume24h": 9598030.2635,
+      "change24h": 0.615,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SKY",
       "priorityScore": 10,
-      "volume24h": 5957771.66131,
-      "change24h": 0.278,
+      "volume24h": 5294206.03879,
+      "change24h": -1.099,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AVNT",
+      "symbol": "XPIN",
       "priorityScore": 10,
-      "volume24h": 2533363.0474,
-      "change24h": -0.357,
+      "volume24h": 2043477.635141,
+      "change24h": 1.433,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ZKC",
       "priorityScore": 10,
-      "volume24h": 1444547.90947,
-      "change24h": -1.069,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "TOSHI",
-      "priorityScore": 10,
-      "volume24h": 1147246.1725666,
-      "change24h": -1.063,
+      "volume24h": 1325236.42427,
+      "change24h": -1.857,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "STBL",
       "priorityScore": 10,
-      "volume24h": 1466649.10003,
-      "change24h": -0.805,
+      "volume24h": 1226418.12016,
+      "change24h": 0.088,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BARD",
       "priorityScore": 10,
-      "volume24h": 3304620.1653,
-      "change24h": -0.44,
+      "volume24h": 2325981.887,
+      "change24h": -0.87,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TRADOOR",
       "priorityScore": 10,
-      "volume24h": 1960518.5184,
-      "change24h": 1.77,
+      "volume24h": 2092205.3448,
+      "change24h": -0.157,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "COAI",
       "priorityScore": 10,
-      "volume24h": 4032057.4174,
-      "change24h": 0.296,
+      "volume24h": 2984771.7069,
+      "change24h": 0.575,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "MIRA",
+      "priorityScore": 10,
+      "volume24h": 9330592.14776,
+      "change24h": 0.047,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ORDER",
       "priorityScore": 10,
-      "volume24h": 992223.98973,
-      "change24h": -2.102,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "EDEN",
-      "priorityScore": 10,
-      "volume24h": 4424610.33015,
-      "change24h": 0.283,
+      "volume24h": 888197.2488,
+      "change24h": 2.207,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "NOM",
       "priorityScore": 10,
-      "volume24h": 1660516.609576,
-      "change24h": -0.554,
+      "volume24h": 1557757.693632,
+      "change24h": 0,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "2Z",
+      "priorityScore": 10,
+      "volume24h": 1072071.98611,
+      "change24h": 0.053,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "LYN",
       "priorityScore": 10,
-      "volume24h": 1080142.97743,
-      "change24h": 0.058,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "GIGGLE",
-      "priorityScore": 10,
-      "volume24h": 3477366.5824,
-      "change24h": -0.974,
+      "volume24h": 1053461.33544,
+      "change24h": 0.441,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MON",
       "priorityScore": 10,
-      "volume24h": 3149314.005,
-      "change24h": 0.431,
+      "volume24h": 3293878.64151,
+      "change24h": 1.95,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "YB",
+      "priorityScore": 10,
+      "volume24h": 1459984.85855,
+      "change24h": 0.891,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ENSO",
+      "priorityScore": 10,
+      "volume24h": 4388670.98647,
+      "change24h": -1.335,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "CLO",
       "priorityScore": 10,
-      "volume24h": 8527189.87704,
-      "change24h": 1.721,
+      "volume24h": 8930484.92523,
+      "change24h": 1.771,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ZBT",
+      "priorityScore": 10,
+      "volume24h": 4565106.95111,
+      "change24h": -1.15,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "币安人生",
       "priorityScore": 10,
-      "volume24h": 4957683.66086,
-      "change24h": 0.447,
+      "volume24h": 3874217.82737,
+      "change24h": 0.747,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "APR",
+      "symbol": "BLUAI",
       "priorityScore": 10,
-      "volume24h": 1722865.8889,
-      "change24h": 1.229,
+      "volume24h": 1702475.073641,
+      "change24h": -0.156,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MMT",
+      "symbol": "KITE",
       "priorityScore": 10,
-      "volume24h": 9740721.9373,
-      "change24h": 1.118,
+      "volume24h": 7994127.35502,
+      "change24h": -0.676,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "FOLKS",
+      "symbol": "AT",
       "priorityScore": 10,
-      "volume24h": 1829805.2916,
-      "change24h": 1.085,
+      "volume24h": 587145.41612,
+      "change24h": 3.194,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "STABLE",
+      "symbol": "TRUST",
       "priorityScore": 10,
-      "volume24h": 2197041.109296,
-      "change24h": -1.12,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "JCT",
-      "priorityScore": 10,
-      "volume24h": 3313402.673892,
-      "change24h": -1.022,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CLANKER",
-      "priorityScore": 10,
-      "volume24h": 896839.4249,
-      "change24h": -3.231,
+      "volume24h": 901006.0819,
+      "change24h": 2.122,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PIEVERSE",
       "priorityScore": 10,
-      "volume24h": 4426583.732,
-      "change24h": 0.379,
+      "volume24h": 3667720.1155,
+      "change24h": -1.168,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "POWER",
+      "symbol": "IRYS",
       "priorityScore": 10,
-      "volume24h": 1288000.37599,
-      "change24h": -0.422,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ZKP",
-      "priorityScore": 10,
-      "volume24h": 1520632.01115,
-      "change24h": -0.184,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "GUA",
-      "priorityScore": 10,
-      "volume24h": 1046553.3805,
-      "change24h": -1.703,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "BREV",
-      "priorityScore": 10,
-      "volume24h": 1169727.6091,
-      "change24h": -1.342,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "COLLECT",
-      "priorityScore": 10,
-      "volume24h": 2388270.10922,
-      "change24h": -1.03,
+      "volume24h": 4322975.1771,
+      "change24h": -1.52,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MAGMA",
       "priorityScore": 10,
-      "volume24h": 1671663.63251,
-      "change24h": 0.202,
+      "volume24h": 1588305.65354,
+      "change24h": 0.454,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "FOGO",
       "priorityScore": 10,
-      "volume24h": 1119945.17979,
-      "change24h": -0.729,
+      "volume24h": 1261749.332797,
+      "change24h": 1.193,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CHIP",
+      "symbol": "SPORTFUN",
       "priorityScore": 10,
-      "volume24h": 7484573.21657,
-      "change24h": 0.281,
+      "volume24h": 2286539.74161,
+      "change24h": 0.922,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ACU",
+      "priorityScore": 10,
+      "volume24h": 1273987.44479,
+      "change24h": 1.119,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ELSA",
+      "priorityScore": 10,
+      "volume24h": 3795203.31397,
+      "change24h": 0.546,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "SKR",
+      "priorityScore": 10,
+      "volume24h": 537346.967115,
+      "change24h": 3.317,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "SPACE",
+      "priorityScore": 10,
+      "volume24h": 1417914.442546,
+      "change24h": 1.433,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "FIGHT",
+      "priorityScore": 10,
+      "volume24h": 688499.33391,
+      "change24h": 2.857,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "MEGA",
+      "priorityScore": 10,
+      "volume24h": 4486221.18495,
+      "change24h": 1.72,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "TRIA",
+      "priorityScore": 10,
+      "volume24h": 4124157.113591,
+      "change24h": 1.85,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "OPN",
+      "priorityScore": 10,
+      "volume24h": 5717048.68997,
+      "change24h": -0.321,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "MANTRA",
+      "priorityScore": 10,
+      "volume24h": 2652933.095535,
+      "change24h": -0.544,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "龙虾",
+      "priorityScore": 10,
+      "volume24h": 2725302.834087,
+      "change24h": 0.701,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "EDGE",
+      "priorityScore": 10,
+      "volume24h": 4585474.8641,
+      "change24h": 1.278,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BSB",
+      "priorityScore": 10,
+      "volume24h": 8535211.90994,
+      "change24h": 0.008,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BASED",
+      "priorityScore": 10,
+      "volume24h": 4973106.0784,
+      "change24h": 0.842,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "GENIUS",
+      "priorityScore": 10,
+      "volume24h": 2174529.4976,
+      "change24h": -1.891,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "OPG",
       "priorityScore": 10,
-      "volume24h": 3534441.2507,
-      "change24h": 1.489,
+      "volume24h": 2676387.1712,
+      "change24h": 0.536,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AIGENSYN",
+      "symbol": "PHAROS",
       "priorityScore": 10,
-      "volume24h": 3335747.01618,
-      "change24h": 1.29,
+      "volume24h": 4472727.6384,
+      "change24h": 0.811,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "CTR",
       "priorityScore": 10,
-      "volume24h": 589791.029958,
-      "change24h": 2.895,
+      "volume24h": 469079.850859,
+      "change24h": 2.648,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ZEST",
       "priorityScore": 10,
-      "volume24h": 3645435.29128,
-      "change24h": 1.573,
+      "volume24h": 1693880.78569,
+      "change24h": 1.096,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "O",
+      "priorityScore": 10,
+      "volume24h": 4816448.0652,
+      "change24h": 1.638,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "GRAM",
+      "priorityScore": 10,
+      "volume24h": 8888662.1862,
+      "change24h": 0.782,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "DATAIP",
+      "priorityScore": 10,
+      "volume24h": 1660176.62,
+      "change24h": 0.314,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "WIN",
       "priorityScore": 10,
-      "volume24h": 244903.5942044,
-      "change24h": -2.952,
+      "volume24h": 102749.47347683,
+      "change24h": 3.374,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "FTT",
+      "symbol": "LUNA",
       "priorityScore": 10,
-      "volume24h": 162491.080306,
-      "change24h": -4.778,
+      "volume24h": 553245.361424,
+      "change24h": 3.96,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MBL",
+      "symbol": "ATM",
       "priorityScore": 10,
-      "volume24h": 264828.117299,
-      "change24h": -3.623,
+      "volume24h": 1462868.96884,
+      "change24h": 1.64,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SC",
+      "symbol": "RAY",
       "priorityScore": 10,
-      "volume24h": 108380.340388,
-      "change24h": -2.703,
+      "volume24h": 304532.20988,
+      "change24h": 2.083,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "DCR",
+      "symbol": "REQ",
       "priorityScore": 10,
-      "volume24h": 494646.08947,
-      "change24h": 2.336,
+      "volume24h": 282056.4748,
+      "change24h": -2.119,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AUDIO",
+      "symbol": "XEC",
       "priorityScore": 10,
-      "volume24h": 196968.34791,
-      "change24h": -2.176,
+      "volume24h": 694817.31456608,
+      "change24h": -3.247,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SHIB",
+      "symbol": "GLMR",
       "priorityScore": 10,
-      "volume24h": 9797475.52641843,
-      "change24h": 1.302,
+      "volume24h": 395102.9855395,
+      "change24h": 2.455,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "PORTO",
+      "symbol": "XNO",
       "priorityScore": 10,
-      "volume24h": 229137.75385,
-      "change24h": 2.511,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AMP",
-      "priorityScore": 10,
-      "volume24h": 310295.817395,
-      "change24h": -3.912,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "NEXO",
-      "priorityScore": 10,
-      "volume24h": 454695.27842,
-      "change24h": 2.483,
+      "volume24h": 272751.46721,
+      "change24h": -2.2,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "LUNC",
       "priorityScore": 10,
-      "volume24h": 1409334.78065288,
-      "change24h": 0.08,
+      "volume24h": 1221945.36832589,
+      "change24h": -0.219,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "WBTC",
       "priorityScore": 10,
-      "volume24h": 1732478.591686,
-      "change24h": 0.887,
+      "volume24h": 2029423.0911419,
+      "change24h": 0.635,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "PIVX",
+      "symbol": "FLOKI",
       "priorityScore": 10,
-      "volume24h": 137527.2327,
-      "change24h": -2.077,
+      "volume24h": 1260155.98757675,
+      "change24h": -1.255,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BONK",
       "priorityScore": 10,
-      "volume24h": 2744942.85544472,
-      "change24h": -1.333,
+      "volume24h": 1844147.41224498,
+      "change24h": 0,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "AI",
       "priorityScore": 10,
-      "volume24h": 158793.59455,
-      "change24h": -2.174,
+      "volume24h": 230172.08495,
+      "change24h": -2.717,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CRCLB",
+      "symbol": "EURI",
       "priorityScore": 10,
-      "volume24h": 7323758.4533,
-      "change24h": -1.797,
+      "volume24h": 1105681.98002,
+      "change24h": 1.123,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "NVDAB",
       "priorityScore": 10,
-      "volume24h": 1508233.21337,
-      "change24h": -1.234,
+      "volume24h": 1205919.47938,
+      "change24h": 0.976,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TSLAB",
       "priorityScore": 10,
-      "volume24h": 1405526.57686,
-      "change24h": -1.278,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AMDB",
-      "priorityScore": 10,
-      "volume24h": 1846868.70426,
-      "change24h": -1.529,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "INTCB",
-      "priorityScore": 10,
-      "volume24h": 1874147.33674,
-      "change24h": -1.174,
+      "volume24h": 1388291.52377,
+      "change24h": 0.284,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MSTRB",
       "priorityScore": 10,
-      "volume24h": 1564655.1366,
-      "change24h": -1.114,
+      "volume24h": 1661902.28136,
+      "change24h": -0.654,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "QQQB",
       "priorityScore": 10,
-      "volume24h": 4317135.44556,
-      "change24h": -0.527,
+      "volume24h": 4911316.55493,
+      "change24h": 1.287,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "COINB",
       "priorityScore": 10,
-      "volume24h": 511275.06744,
-      "change24h": -3.286,
+      "volume24h": 597846.87107,
+      "change24h": -2.67,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GLWB",
       "priorityScore": 10,
-      "volume24h": 691028.51277,
-      "change24h": 4.07,
+      "volume24h": 715910.69709,
+      "change24h": 4.097,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "HOODB",
+      "symbol": "ARMB",
       "priorityScore": 10,
-      "volume24h": 713159.65274,
-      "change24h": -2.503,
+      "volume24h": 1241541.89137,
+      "change24h": 1.173,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MRVLB",
+      "symbol": "AVGOB",
       "priorityScore": 10,
-      "volume24h": 959236.2397,
-      "change24h": -2.115,
+      "volume24h": 214107.21196,
+      "change24h": 2.024,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "NOKB",
+      "symbol": "IBMB",
       "priorityScore": 10,
-      "volume24h": 183834.7667,
-      "change24h": -2.283,
+      "volume24h": 209547.6856,
+      "change24h": -2.135,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "RKLBB",
+      "symbol": "TSMB",
       "priorityScore": 10,
-      "volume24h": 132651.7169,
-      "change24h": -3.526,
+      "volume24h": 335895.97316,
+      "change24h": 4.296,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "INTWB",
+      "symbol": "QNTB",
       "priorityScore": 10,
-      "volume24h": 357942.4671,
-      "change24h": -3.239,
+      "volume24h": 111487.0938,
+      "change24h": 2.613,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MVLLB",
+      "symbol": "AAPLB",
       "priorityScore": 10,
-      "volume24h": 576295.0465,
-      "change24h": -4.811,
+      "volume24h": 518439.30404,
+      "change24h": -3.025,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SNXXB",
+      "symbol": "FLNCB",
       "priorityScore": 10,
-      "volume24h": 9602430.7462,
-      "change24h": -1.887,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "TQQQB",
-      "priorityScore": 10,
-      "volume24h": 1354091.6143,
-      "change24h": -1.646,
+      "volume24h": 119740.3774,
+      "change24h": 4.344,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SMHB",
       "priorityScore": 10,
-      "volume24h": 108023.08012,
-      "change24h": -2.632,
+      "volume24h": 135202.22292,
+      "change24h": 3.28,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BNT",
+      "priorityScore": 8,
+      "volume24h": 465632.4368,
+      "change24h": -0.474,
+      "reason": "优先级8分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "TOSHI",
+      "priorityScore": 8,
+      "volume24h": 817872.2130429,
+      "change24h": 1.959,
+      "reason": "优先级8分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "AMATB",
+      "priorityScore": 8,
+      "volume24h": 90265.83146,
+      "change24h": 9.607,
+      "reason": "优先级8分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "DELLB",
+      "priorityScore": 8,
+      "volume24h": 89897.69546,
+      "change24h": 6.282,
+      "reason": "优先级8分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "KNC",
       "priorityScore": 5,
-      "volume24h": 758549.8762,
-      "change24h": -0.764,
+      "volume24h": 761784.2765,
+      "change24h": 1.644,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "BAND",
+      "symbol": "ZRX",
       "priorityScore": 5,
-      "volume24h": 661440.7487,
-      "change24h": -1.622,
+      "volume24h": 937972.1503,
+      "change24h": 1.535,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "RLC",
+      "symbol": "C98",
       "priorityScore": 5,
-      "volume24h": 743355.4576,
-      "change24h": -1.566,
+      "volume24h": 848497.87983,
+      "change24h": 1.932,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ICX",
+      "symbol": "ARPA",
       "priorityScore": 5,
-      "volume24h": 765459.47981,
-      "change24h": -0.611,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SFP",
-      "priorityScore": 5,
-      "volume24h": 787894.6044,
-      "change24h": 0.441,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CELR",
-      "priorityScore": 5,
-      "volume24h": 697798.36112,
-      "change24h": -1.647,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "MTL",
-      "priorityScore": 5,
-      "volume24h": 631032.1268,
-      "change24h": -0.243,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CTSI",
-      "priorityScore": 5,
-      "volume24h": 555892.56954,
-      "change24h": -1.774,
+      "volume24h": 880256.520141,
+      "change24h": 0.321,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "WOO",
       "priorityScore": 5,
-      "volume24h": 798674.48359,
-      "change24h": -1.795,
+      "volume24h": 899907.15188,
+      "change24h": 0.519,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ASTR",
       "priorityScore": 5,
-      "volume24h": 576130.529292,
-      "change24h": -1.7,
+      "volume24h": 642895.232589,
+      "change24h": 1.851,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "CKB",
+      "priorityScore": 5,
+      "volume24h": 762334.689242,
+      "change24h": 0.362,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "JOE",
+      "priorityScore": 5,
+      "volume24h": 691706.26093,
+      "change24h": -1.828,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "XVS",
       "priorityScore": 5,
-      "volume24h": 666903.3959,
-      "change24h": 1.903,
+      "volume24h": 683989.0913,
+      "change24h": -0.886,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CYBER",
+      "symbol": "MAV",
       "priorityScore": 5,
-      "volume24h": 869926.80606,
-      "change24h": -1.642,
+      "volume24h": 762880.63761,
+      "change24h": 1.111,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ARK",
+      "symbol": "POLYX",
       "priorityScore": 5,
-      "volume24h": 752018.2,
-      "change24h": -1.566,
+      "volume24h": 638783.83421,
+      "change24h": 0.887,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "WAXP",
+      "symbol": "BEAMX",
       "priorityScore": 5,
-      "volume24h": 604892.21072,
-      "change24h": -1.867,
+      "volume24h": 836341.92498,
+      "change24h": 1.655,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "STEEM",
+      "symbol": "ONG",
       "priorityScore": 5,
-      "volume24h": 772527.20009,
-      "change24h": -1.547,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ILV",
-      "priorityScore": 5,
-      "volume24h": 660411.5403,
-      "change24h": 0.289,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SUPER",
-      "priorityScore": 5,
-      "volume24h": 826808.0473,
-      "change24h": -0.243,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ETHW",
-      "priorityScore": 5,
-      "volume24h": 471178.229,
-      "change24h": -1.625,
+      "volume24h": 630551.17053,
+      "change24h": 1.786,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MOVR",
       "priorityScore": 5,
-      "volume24h": 779371.90609,
-      "change24h": -1.455,
+      "volume24h": 977613.77059,
+      "change24h": 1.215,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "LSK",
+      "priorityScore": 5,
+      "volume24h": 519015.1122,
+      "change24h": 1.146,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "RONIN",
+      "priorityScore": 5,
+      "volume24h": 898884.733757,
+      "change24h": 1.124,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "AXL",
       "priorityScore": 5,
-      "volume24h": 857342.394432,
-      "change24h": -1.747,
+      "volume24h": 628356.265787,
+      "change24h": 0.592,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "METIS",
       "priorityScore": 5,
-      "volume24h": 807933.5407,
-      "change24h": -1.284,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AEVO",
-      "priorityScore": 5,
-      "volume24h": 854566.481698,
-      "change24h": -1.205,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "MEW",
-      "priorityScore": 5,
-      "volume24h": 637000.1401694,
-      "change24h": -1.988,
+      "volume24h": 767508.3309,
+      "change24h": 0.485,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SUN",
       "priorityScore": 5,
-      "volume24h": 541816.219327,
-      "change24h": 0.292,
+      "volume24h": 673083.851084,
+      "change24h": 1.168,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "FLUX",
+      "priorityScore": 5,
+      "volume24h": 938663.49571,
+      "change24h": 1.226,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "RPL",
       "priorityScore": 5,
-      "volume24h": 651862.5525,
-      "change24h": -0.508,
+      "volume24h": 669557.1246,
+      "change24h": 0.959,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "SCR",
+      "priorityScore": 5,
+      "volume24h": 904335.51763,
+      "change24h": 0.788,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GOAT",
       "priorityScore": 5,
-      "volume24h": 818924.22732,
-      "change24h": -0.4,
+      "volume24h": 508327.39961,
+      "change24h": 1.301,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SANTOS",
+      "symbol": "COW",
       "priorityScore": 5,
-      "volume24h": 578107.88407,
-      "change24h": 0.148,
+      "volume24h": 725684.1055,
+      "change24h": -1.43,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "CETUS",
       "priorityScore": 5,
-      "volume24h": 432027.95187,
-      "change24h": 0.115,
+      "volume24h": 575699.30912,
+      "change24h": 1.912,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ACX",
+      "symbol": "1000000MOG",
       "priorityScore": 5,
-      "volume24h": 612275.187492,
-      "change24h": -1.913,
+      "volume24h": 634345.63289,
+      "change24h": -0.298,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BAN",
+      "priorityScore": 5,
+      "volume24h": 861355.80685,
+      "change24h": -0.671,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "AVA",
       "priorityScore": 5,
-      "volume24h": 467627.66136,
-      "change24h": -0.198,
+      "volume24h": 669534.74233,
+      "change24h": 1.987,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "VELODROME",
+      "symbol": "KMNO",
       "priorityScore": 5,
-      "volume24h": 571233.89042,
-      "change24h": -1.409,
+      "volume24h": 908604.39676,
+      "change24h": 0.836,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "HIVE",
       "priorityScore": 5,
-      "volume24h": 935660.22882,
-      "change24h": -0.9,
+      "volume24h": 814704.57947,
+      "change24h": 1.556,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SONIC",
+      "symbol": "AVAAI",
       "priorityScore": 5,
-      "volume24h": 398378.151774,
-      "change24h": -1.812,
+      "volume24h": 945387.37871,
+      "change24h": -0.683,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "MELANIA",
+      "priorityScore": 5,
+      "volume24h": 818112.569601,
+      "change24h": 1.516,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "VTHO",
+      "priorityScore": 5,
+      "volume24h": 682190.1227519,
+      "change24h": 1.218,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ANIME",
+      "priorityScore": 5,
+      "volume24h": 750806.126877,
+      "change24h": 0.739,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "RED",
       "priorityScore": 5,
-      "volume24h": 840984.9769,
-      "change24h": -0.879,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "VIC",
-      "priorityScore": 5,
-      "volume24h": 992509.13778,
-      "change24h": -1.693,
+      "volume24h": 859949.5526,
+      "change24h": 1.461,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BMT",
       "priorityScore": 5,
-      "volume24h": 716732.15241,
-      "change24h": -1.416,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "BROCCOLI714",
-      "priorityScore": 5,
-      "volume24h": 860269.11692,
-      "change24h": -0.903,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "BANANAS31",
-      "priorityScore": 5,
-      "volume24h": 990094.109235,
-      "change24h": 1.788,
+      "volume24h": 757690.91516,
+      "change24h": 1.795,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BR",
       "priorityScore": 5,
-      "volume24h": 617464.25254,
-      "change24h": 0.941,
+      "volume24h": 799768.98047,
+      "change24h": 1.948,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MAVIA",
       "priorityScore": 5,
-      "volume24h": 782402.21031,
-      "change24h": -0.93,
+      "volume24h": 702247.42321,
+      "change24h": -1.006,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "PROMPT",
+      "symbol": "DEEP",
       "priorityScore": 5,
-      "volume24h": 552980.51782,
-      "change24h": -1.545,
+      "volume24h": 943210.02878,
+      "change24h": 0.932,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "INIT",
+      "symbol": "DOLO",
       "priorityScore": 5,
-      "volume24h": 720315.43307,
-      "change24h": -1.498,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CTK",
-      "priorityScore": 5,
-      "volume24h": 452164.1122,
-      "change24h": -1.196,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AIOT",
-      "priorityScore": 5,
-      "volume24h": 899113.60773,
-      "change24h": -1.295,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "HAEDAL",
-      "priorityScore": 5,
-      "volume24h": 604645.43315,
-      "change24h": 0.276,
+      "volume24h": 544590.08541,
+      "change24h": 1.603,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ASR",
       "priorityScore": 5,
-      "volume24h": 535564.2172,
-      "change24h": -0.724,
+      "volume24h": 638367.3735,
+      "change24h": 1.818,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ALPINE",
       "priorityScore": 5,
-      "volume24h": 828327.92481,
-      "change24h": 1.664,
+      "volume24h": 861570.88178,
+      "change24h": 1.629,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CVC",
+      "symbol": "DOOD",
       "priorityScore": 5,
-      "volume24h": 506063.70591,
-      "change24h": -1.153,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AWE",
-      "priorityScore": 5,
-      "volume24h": 867286.56773,
-      "change24h": 0.901,
+      "volume24h": 900253.680546,
+      "change24h": -0.305,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MERL",
       "priorityScore": 5,
-      "volume24h": 879460.07091,
-      "change24h": -0.519,
+      "volume24h": 755338.00547,
+      "change24h": 0.583,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "1000000BOB",
+      "symbol": "SQD",
       "priorityScore": 5,
-      "volume24h": 263938.23686,
-      "change24h": 0,
+      "volume24h": 732747.14918,
+      "change24h": 1.972,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "PUMPBTC",
+      "symbol": "ICNT",
       "priorityScore": 5,
-      "volume24h": 685713.42009,
-      "change24h": -1.354,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AIN",
-      "priorityScore": 5,
-      "volume24h": 687988.60872,
-      "change24h": -1.64,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "C",
-      "priorityScore": 5,
-      "volume24h": 573245.97087,
-      "change24h": -1.136,
+      "volume24h": 800826.6439,
+      "change24h": 0.144,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TA",
       "priorityScore": 5,
-      "volume24h": 631430.50996,
-      "change24h": 0.855,
+      "volume24h": 745141.06242,
+      "change24h": 1.859,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "CVX",
       "priorityScore": 5,
-      "volume24h": 974973.2108,
-      "change24h": 0.297,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SLP",
-      "priorityScore": 5,
-      "volume24h": 440133.5475546,
-      "change24h": -0.844,
+      "volume24h": 920426.1546,
+      "change24h": 0.826,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ALL",
       "priorityScore": 5,
-      "volume24h": 583985.0352,
-      "change24h": -0.607,
+      "volume24h": 450779.477,
+      "change24h": 0.788,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "XNY",
+      "symbol": "RECALL",
       "priorityScore": 5,
-      "volume24h": 651576.436651,
-      "change24h": 0,
+      "volume24h": 694714.52546,
+      "change24h": -1.954,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "FLUID",
+      "symbol": "CLANKER",
       "priorityScore": 5,
-      "volume24h": 624656.9789,
-      "change24h": 0.367,
+      "volume24h": 922690.28,
+      "change24h": -1.153,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "TRUTH",
+      "symbol": "AZTEC",
       "priorityScore": 5,
-      "volume24h": 806009.731384,
-      "change24h": 1.944,
+      "volume24h": 852277.65467,
+      "change24h": -0.683,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AT",
+      "symbol": "FTT",
       "priorityScore": 5,
-      "volume24h": 675475.9734,
-      "change24h": 1.503,
+      "volume24h": 103435.103565,
+      "change24h": 0.873,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "TRUST",
+      "symbol": "MBL",
       "priorityScore": 5,
-      "volume24h": 825623.855,
-      "change24h": -0.747,
+      "volume24h": 249336.963718,
+      "change24h": 0.901,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SPORTFUN",
+      "symbol": "AUDIO",
       "priorityScore": 5,
-      "volume24h": 585320.26751,
-      "change24h": -1.051,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ACU",
-      "priorityScore": 5,
-      "volume24h": 466587.90432,
-      "change24h": -1.744,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SKR",
-      "priorityScore": 5,
-      "volume24h": 546276.119464,
-      "change24h": -0.381,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "FIGHT",
-      "priorityScore": 5,
-      "volume24h": 458877.526713,
-      "change24h": -0.226,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "TFUEL",
-      "priorityScore": 5,
-      "volume24h": 77245.67091,
-      "change24h": -2.527,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "DGB",
-      "priorityScore": 5,
-      "volume24h": 505786.60957,
-      "change24h": -1.72,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "LUNA",
-      "priorityScore": 5,
-      "volume24h": 429776.614126,
-      "change24h": 0.493,
+      "volume24h": 193063.636762,
+      "change24h": -0.405,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "STRAX",
       "priorityScore": 5,
-      "volume24h": 265960.42076,
-      "change24h": -0.117,
+      "volume24h": 217432.65228,
+      "change24h": 0.824,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "JUV",
       "priorityScore": 5,
-      "volume24h": 381258.03454,
-      "change24h": -0.326,
+      "volume24h": 257097.16309,
+      "change24h": -1.294,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PSG",
       "priorityScore": 5,
-      "volume24h": 257890.82635,
-      "change24h": -0.417,
+      "volume24h": 161250.11645,
+      "change24h": 0.207,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ACM",
       "priorityScore": 5,
-      "volume24h": 156213.4463,
+      "volume24h": 199152.7527,
       "change24h": 0,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "TKO",
+      "priorityScore": 5,
+      "volume24h": 93105.22368,
+      "change24h": 2.059,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BAR",
       "priorityScore": 5,
-      "volume24h": 213786.29127,
-      "change24h": 0,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "RAY",
-      "priorityScore": 5,
-      "volume24h": 477588.10867,
-      "change24h": 0.517,
+      "volume24h": 208128.1188,
+      "change24h": 0.379,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "QUICK",
       "priorityScore": 5,
-      "volume24h": 194330.09887,
-      "change24h": -1.405,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "REQ",
-      "priorityScore": 5,
-      "volume24h": 337298.3757,
-      "change24h": -1.351,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "XEC",
-      "priorityScore": 5,
-      "volume24h": 862953.93797793,
-      "change24h": -0.84,
+      "volume24h": 59182.51227,
+      "change24h": 2.577,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "RAD",
       "priorityScore": 5,
-      "volume24h": 120121.3272,
-      "change24h": -1.456,
+      "volume24h": 115582.5804,
+      "change24h": 0,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "LAZIO",
       "priorityScore": 5,
-      "volume24h": 127302.87878,
-      "change24h": -1.471,
+      "volume24h": 163675.35445,
+      "change24h": 0.593,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ADX",
       "priorityScore": 5,
-      "volume24h": 206641.2077,
-      "change24h": 0,
+      "volume24h": 456408.7268,
+      "change24h": 0.558,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "CITY",
       "priorityScore": 5,
-      "volume24h": 247237.39136,
-      "change24h": -0.554,
+      "volume24h": 195805.89524,
+      "change24h": 0.557,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "QI",
+      "symbol": "PORTO",
       "priorityScore": 5,
-      "volume24h": 592626.154608,
-      "change24h": 1.63,
+      "volume24h": 544374.44251,
+      "change24h": 1.144,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "AMP",
+      "priorityScore": 5,
+      "volume24h": 320962.491939,
+      "change24h": -1.97,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PYR",
       "priorityScore": 5,
-      "volume24h": 572333.168534,
-      "change24h": 1.389,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "GLMR",
-      "priorityScore": 5,
-      "volume24h": 323578.8200106,
-      "change24h": 0.676,
+      "volume24h": 486686.737806,
+      "change24h": 0,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BTTC",
       "priorityScore": 5,
-      "volume24h": 133021.93598102,
+      "volume24h": 128793.99837511,
       "change24h": 0,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "NEXO",
+      "priorityScore": 5,
+      "volume24h": 357953.82423,
+      "change24h": -0.677,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "OSMO",
       "priorityScore": 5,
-      "volume24h": 150538.197005,
-      "change24h": -1.455,
+      "volume24h": 159568.793903,
+      "change24h": 1.476,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "FLOKI",
+      "symbol": "QKC",
       "priorityScore": 5,
-      "volume24h": 846387.35777734,
-      "change24h": -0.968,
+      "volume24h": 55505.090427,
+      "change24h": 2.94,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "WBETH",
       "priorityScore": 5,
-      "volume24h": 499385.995335,
-      "change24h": 0.508,
+      "volume24h": 444281.436764,
+      "change24h": 1.04,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "IQ",
+      "symbol": "PIVX",
       "priorityScore": 5,
-      "volume24h": 58768.871835,
-      "change24h": -4.79,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "EURI",
-      "priorityScore": 5,
-      "volume24h": 954664.30521,
-      "change24h": 0.544,
+      "volume24h": 181081.5699,
+      "change24h": -1.78,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BNSOL",
       "priorityScore": 5,
-      "volume24h": 367644.6635,
-      "change24h": 1.095,
+      "volume24h": 404354.8052,
+      "change24h": 1.695,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "KGST",
       "priorityScore": 5,
-      "volume24h": 522238.830777,
+      "volume24h": 117372.539009,
       "change24h": 0.009,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "LITEB",
-      "priorityScore": 5,
-      "volume24h": 426826.86517,
-      "change24h": -1.688,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PLTRB",
       "priorityScore": 5,
-      "volume24h": 166358.48152,
-      "change24h": 0.464,
+      "volume24h": 242988.65744,
+      "change24h": -0.665,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GOOGLB",
       "priorityScore": 5,
-      "volume24h": 901918.77289,
-      "change24h": 1.846,
+      "volume24h": 670899.51891,
+      "change24h": -0.171,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SPYB",
       "priorityScore": 5,
-      "volume24h": 394081.76003,
-      "change24h": -0.85,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AVGOB",
-      "priorityScore": 5,
-      "volume24h": 166232.60059,
-      "change24h": -0.546,
+      "volume24h": 520929.72014,
+      "change24h": 0.07,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BABAB",
       "priorityScore": 5,
-      "volume24h": 224283.87258,
-      "change24h": -1.958,
+      "volume24h": 138946.95061,
+      "change24h": -1.241,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "IBMB",
+      "symbol": "RKLBB",
       "priorityScore": 5,
-      "volume24h": 300647.21558,
-      "change24h": 1.182,
+      "volume24h": 251351.6759,
+      "change24h": 1.639,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "TSMB",
+      "symbol": "AMZNB",
       "priorityScore": 5,
-      "volume24h": 386572.70086,
-      "change24h": -0.982,
+      "volume24h": 71071.62005,
+      "change24h": 2.731,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ORCLB",
-      "priorityScore": 5,
-      "volume24h": 171894.82316,
-      "change24h": -0.117,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AMATB",
-      "priorityScore": 5,
-      "volume24h": 51917.01417,
-      "change24h": -2.195,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "FLNCB",
-      "priorityScore": 5,
-      "volume24h": 58110.1925,
-      "change24h": -3.17,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "TKO",
+      "symbol": "TFUEL",
       "priorityScore": 0,
-      "volume24h": 64218.81026,
-      "change24h": -0.682,
+      "volume24h": 63348.23612,
+      "change24h": 0.136,
+      "reason": "优先级0分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "SC",
+      "priorityScore": 0,
+      "volume24h": 69935.377907,
+      "change24h": 1.603,
       "reason": "优先级0分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GNO",
       "priorityScore": 0,
-      "volume24h": 78165.44636,
-      "change24h": 0.729,
+      "volume24h": 80951.89016,
+      "change24h": 1.52,
       "reason": "优先级0分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "QKC",
+      "symbol": "GNS",
       "priorityScore": 0,
-      "volume24h": 56248.540764,
-      "change24h": 0.921,
+      "volume24h": 67663.97336,
+      "change24h": 1.636,
       "reason": "优先级0分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AAPLB",
+      "symbol": "IQ",
       "priorityScore": 0,
-      "volume24h": 94094.84405,
-      "change24h": -0.291,
+      "volume24h": 51316.864292,
+      "change24h": -0.299,
       "reason": "优先级0分，低于当前扫描阈值（前300名入选）"
     }
   ],
   "unscanned_symbols": [
     {
-      "symbol": "BEB",
+      "symbol": "ORCLB",
       "priorityScore": 13,
-      "volume24h": 234912.83044,
-      "change24h": -5.194,
+      "volume24h": 420209.5272,
+      "change24h": 6.558,
       "reason": "优先级13分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "XTZ",
       "priorityScore": 10,
-      "volume24h": 1542199.72558,
-      "change24h": 1.419,
+      "volume24h": 1248149.69779,
+      "change24h": 0.532,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "IOTA",
+      "symbol": "ONT",
       "priorityScore": 10,
-      "volume24h": 3068191.586099,
-      "change24h": 0.339,
+      "volume24h": 1508812.082891,
+      "change24h": -0.845,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "VET",
+      "symbol": "NEO",
       "priorityScore": 10,
-      "volume24h": 3216788.034611,
-      "change24h": 0.465,
+      "volume24h": 3522611.358,
+      "change24h": -1.56,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "QTUM",
       "priorityScore": 10,
-      "volume24h": 1772688.8093,
-      "change24h": -0.721,
+      "volume24h": 1510762.83529,
+      "change24h": -0.232,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "IOST",
       "priorityScore": 10,
-      "volume24h": 1891493.5304602,
-      "change24h": -1.828,
+      "volume24h": 1485394.2597081,
+      "change24h": 0.973,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "THETA",
       "priorityScore": 10,
-      "volume24h": 3694052.0129,
-      "change24h": -0.948,
+      "volume24h": 3170654.6372,
+      "change24h": 0.479,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ZRX",
+      "symbol": "COMP",
       "priorityScore": 10,
-      "volume24h": 1167614.416,
-      "change24h": -1.258,
+      "volume24h": 2248678.33,
+      "change24h": 1.598,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SNX",
       "priorityScore": 10,
-      "volume24h": 5636783.96635,
-      "change24h": 1.094,
+      "volume24h": 4535760.91392,
+      "change24h": 0.527,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "YFI",
       "priorityScore": 10,
-      "volume24h": 2136130.3,
-      "change24h": -0.605,
+      "volume24h": 2147956.9,
+      "change24h": 0.755,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TRB",
       "priorityScore": 10,
-      "volume24h": 3354417.306,
-      "change24h": -0.332,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "RUNE",
-      "priorityScore": 10,
-      "volume24h": 3210624.9686,
-      "change24h": 0.663,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SUSHI",
-      "priorityScore": 10,
-      "volume24h": 2011862.3884,
-      "change24h": -0.657,
+      "volume24h": 2751050.327,
+      "change24h": -0.48,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "EGLD",
       "priorityScore": 10,
-      "volume24h": 3787878.909,
-      "change24h": -0.253,
+      "volume24h": 2324601.331,
+      "change24h": -1.725,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "BEL",
+      "symbol": "ENJ",
       "priorityScore": 10,
-      "volume24h": 1332127.80502,
-      "change24h": 0.17,
+      "volume24h": 1703565.66858,
+      "change24h": 1.337,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "KSM",
+      "priorityScore": 10,
+      "volume24h": 1430822.61,
+      "change24h": 1.714,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "AXS",
       "priorityScore": 10,
-      "volume24h": 6536371.045,
-      "change24h": -0.484,
+      "volume24h": 5031010.681,
+      "change24h": 0.98,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ZEN",
       "priorityScore": 10,
-      "volume24h": 3456387.04,
-      "change24h": -1.335,
+      "volume24h": 3485616.969,
+      "change24h": -0.26,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SKL",
       "priorityScore": 10,
-      "volume24h": 4175812.695201,
-      "change24h": -1.189,
+      "volume24h": 3371167.572687,
+      "change24h": -0.979,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GRT",
       "priorityScore": 10,
-      "volume24h": 2895561.74158,
-      "change24h": 1.073,
+      "volume24h": 2770644.6813,
+      "change24h": 0.539,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "1INCH",
+      "priorityScore": 10,
+      "volume24h": 1802780.65036,
+      "change24h": 1.215,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SAND",
       "priorityScore": 10,
-      "volume24h": 6746286.77935,
-      "change24h": -1.117,
+      "volume24h": 5505741.89821,
+      "change24h": 0.17,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "RVN",
+      "symbol": "ANKR",
       "priorityScore": 10,
-      "volume24h": 1332227.645415,
-      "change24h": 0.46,
+      "volume24h": 1111570.250913,
+      "change24h": 1.471,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CHR",
+      "symbol": "ALICE",
       "priorityScore": 10,
-      "volume24h": 1118207.98809,
-      "change24h": 1.97,
+      "volume24h": 1488183.79436,
+      "change24h": -0.175,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MANA",
+      "symbol": "MTL",
       "priorityScore": 10,
-      "volume24h": 4327351.89242,
-      "change24h": 1.504,
+      "volume24h": 749904.0009,
+      "change24h": 3.744,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "HOT",
+      "symbol": "GTC",
       "priorityScore": 10,
-      "volume24h": 1449575.8603393,
-      "change24h": -0.406,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "OGN",
-      "priorityScore": 10,
-      "volume24h": 6767350.77301,
-      "change24h": 1.894,
+      "volume24h": 1486741.331081,
+      "change24h": -1.175,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BTCDOM",
       "priorityScore": 10,
-      "volume24h": 2099034.1,
-      "change24h": 0.275,
+      "volume24h": 1815147.3,
+      "change24h": -0.783,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "IOTX",
+      "symbol": "MASK",
       "priorityScore": 10,
-      "volume24h": 1257236.293838,
-      "change24h": -0.993,
+      "volume24h": 1800599.5365,
+      "change24h": 1.404,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "1000XEC",
+      "symbol": "DYDX",
       "priorityScore": 10,
-      "volume24h": 8108705.654441,
-      "change24h": -0.707,
+      "volume24h": 6653962.02286,
+      "change24h": -1.707,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GALA",
       "priorityScore": 10,
-      "volume24h": 8116660.076754,
-      "change24h": -0.055,
+      "volume24h": 6956134.660241,
+      "change24h": -0.556,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "CELO",
       "priorityScore": 10,
-      "volume24h": 2990818.594085,
-      "change24h": 1.017,
+      "volume24h": 2988736.543399,
+      "change24h": 2,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "AR",
       "priorityScore": 10,
-      "volume24h": 4077162.968,
-      "change24h": -1.75,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ARPA",
-      "priorityScore": 10,
-      "volume24h": 1232152.250382,
-      "change24h": 0.358,
+      "volume24h": 2887898.733,
+      "change24h": 0.29,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ENS",
       "priorityScore": 10,
-      "volume24h": 3820789.999,
-      "change24h": -0.833,
+      "volume24h": 3213678.23,
+      "change24h": 0.868,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ROSE",
       "priorityScore": 10,
-      "volume24h": 3599656.436497,
-      "change24h": 0.264,
+      "volume24h": 2654494.413624,
+      "change24h": 0.385,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "DUSK",
       "priorityScore": 10,
-      "volume24h": 1549232.41145,
-      "change24h": -0.68,
+      "volume24h": 1140454.56245,
+      "change24h": 0.893,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "IMX",
+      "priorityScore": 10,
+      "volume24h": 2227258.3817,
+      "change24h": 0.636,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "API3",
       "priorityScore": 10,
-      "volume24h": 3549715.1778,
-      "change24h": 1.691,
+      "volume24h": 2804056.2101,
+      "change24h": 1.689,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "GMT",
+      "priorityScore": 10,
+      "volume24h": 2220854.077028,
+      "change24h": 0.108,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "JASMY",
       "priorityScore": 10,
-      "volume24h": 3080299.00876,
-      "change24h": 0.677,
+      "volume24h": 2090849.985658,
+      "change24h": 0.904,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "STG",
       "priorityScore": 10,
-      "volume24h": 2725423.0368,
-      "change24h": -0.082,
+      "volume24h": 2452337.8149,
+      "change24h": 1.595,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SPELL",
       "priorityScore": 10,
-      "volume24h": 1284905.8425062,
-      "change24h": -1.006,
+      "volume24h": 1116081.5273252,
+      "change24h": -0.382,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "1000LUNC",
       "priorityScore": 10,
-      "volume24h": 6232121.74664,
-      "change24h": 0.08,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "LUNA2",
-      "priorityScore": 10,
-      "volume24h": 1828485.36854,
-      "change24h": 0.468,
+      "volume24h": 5261052.45913,
+      "change24h": -0.219,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "QNT",
       "priorityScore": 10,
-      "volume24h": 2821391.233,
-      "change24h": 1.415,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "MAGIC",
-      "priorityScore": 10,
-      "volume24h": 1092468.505929,
-      "change24h": -1.854,
+      "volume24h": 2888543.259,
+      "change24h": 1.731,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "T",
       "priorityScore": 10,
-      "volume24h": 4259446.677943,
-      "change24h": -1.214,
+      "volume24h": 4067647.669205,
+      "change24h": -1.785,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MINA",
       "priorityScore": 10,
-      "volume24h": 1238484.67263,
-      "change24h": -1.624,
+      "volume24h": 1206016.49678,
+      "change24h": 0.543,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CFX",
+      "symbol": "SSV",
       "priorityScore": 10,
-      "volume24h": 4060673.66312,
-      "change24h": -0.779,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "STX",
-      "priorityScore": 10,
-      "volume24h": 6000182.825,
-      "change24h": -0.295,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CKB",
-      "priorityScore": 10,
-      "volume24h": 797462.900762,
-      "change24h": -2.358,
+      "volume24h": 2603855.42087,
+      "change24h": 1.632,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ID",
       "priorityScore": 10,
-      "volume24h": 3478097.29308,
-      "change24h": -0.543,
+      "volume24h": 3184394.75076,
+      "change24h": -0.436,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "JOE",
+      "symbol": "TLM",
       "priorityScore": 10,
-      "volume24h": 679763.10668,
-      "change24h": -4.509,
+      "volume24h": 7210348.689033,
+      "change24h": -1.628,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "1000FLOKI",
       "priorityScore": 10,
-      "volume24h": 5450917.50767,
-      "change24h": -1.017,
+      "volume24h": 4770148.37062,
+      "change24h": -1.162,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "NMR",
+      "symbol": "UMA",
       "priorityScore": 10,
-      "volume24h": 1056184.9783,
-      "change24h": -1.611,
+      "volume24h": 2599557.6606,
+      "change24h": 0.148,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MAV",
+      "symbol": "XVG",
       "priorityScore": 10,
-      "volume24h": 697254.16252,
-      "change24h": -2.418,
+      "volume24h": 1328061.192066,
+      "change24h": 0.742,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PENDLE",
       "priorityScore": 10,
-      "volume24h": 9583332.7414,
-      "change24h": -1.749,
+      "volume24h": 9276574.0188,
+      "change24h": 0.77,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ARKM",
+      "priorityScore": 10,
+      "volume24h": 2079311.0644,
+      "change24h": -1.142,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "YGG",
       "priorityScore": 10,
-      "volume24h": 2362347.08961,
-      "change24h": -1.026,
+      "volume24h": 2317736.58445,
+      "change24h": 1.564,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "BNT",
+      "symbol": "SEI",
       "priorityScore": 10,
-      "volume24h": 501805.1194,
-      "change24h": -2.892,
+      "volume24h": 8911536.43616,
+      "change24h": 0.451,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "CYBER",
+      "priorityScore": 10,
+      "volume24h": 817422.85453,
+      "change24h": 2.105,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ARK",
+      "priorityScore": 10,
+      "volume24h": 761167.6285,
+      "change24h": 2.03,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BICO",
+      "priorityScore": 10,
+      "volume24h": 1411975.33034,
+      "change24h": -0.171,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BIGTIME",
+      "priorityScore": 10,
+      "volume24h": 1533565.296214,
+      "change24h": 0.83,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "WAXP",
+      "priorityScore": 10,
+      "volume24h": 685212.472647,
+      "change24h": 4.538,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BSV",
       "priorityScore": 10,
-      "volume24h": 1302547.184,
-      "change24h": -1.716,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "POLYX",
-      "priorityScore": 10,
-      "volume24h": 761332.55845,
-      "change24h": -2.532,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CAKE",
-      "priorityScore": 10,
-      "volume24h": 4114954.5318,
-      "change24h": 0.318,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "MEME",
-      "priorityScore": 10,
-      "volume24h": 1931940.8234142,
+      "volume24h": 1150351.192,
       "change24h": -0.16,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "GAS",
+      "priorityScore": 10,
+      "volume24h": 994901.8503,
+      "change24h": 2.595,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "POWR",
+      "priorityScore": 10,
+      "volume24h": 1323753.33754,
+      "change24h": 1.824,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "TWT",
+      "priorityScore": 10,
+      "volume24h": 2917074.4418,
+      "change24h": -0.137,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "STEEM",
+      "priorityScore": 10,
+      "volume24h": 747149.70832,
+      "change24h": 2.325,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "KAS",
       "priorityScore": 10,
-      "volume24h": 1935992.49745,
-      "change24h": -0.65,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "BEAMX",
-      "priorityScore": 10,
-      "volume24h": 717307.122675,
-      "change24h": -2.156,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "PYTH",
-      "priorityScore": 10,
-      "volume24h": 4644167.88089,
-      "change24h": -0.421,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ONG",
-      "priorityScore": 10,
-      "volume24h": 766834.51765,
-      "change24h": -3.177,
+      "volume24h": 2060208.54255,
+      "change24h": -0.253,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "1000SATS",
       "priorityScore": 10,
-      "volume24h": 1398205.722834,
-      "change24h": -0.769,
+      "volume24h": 1298634.05035407,
+      "change24h": 0.667,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "1000RATS",
       "priorityScore": 10,
-      "volume24h": 1509063.75837,
-      "change24h": -0.294,
+      "volume24h": 1071147.36283,
+      "change24h": -1.453,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ACE",
+      "symbol": "XAI",
       "priorityScore": 10,
-      "volume24h": 6243376.418814,
-      "change24h": 1.039,
+      "volume24h": 1556649.73296,
+      "change24h": 0.016,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MANTA",
       "priorityScore": 10,
-      "volume24h": 1690504.122777,
-      "change24h": 0.34,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "LSK",
-      "priorityScore": 10,
-      "volume24h": 633715.0619,
-      "change24h": -2.575,
+      "volume24h": 1517322.869975,
+      "change24h": -1.282,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ALT",
       "priorityScore": 10,
-      "volume24h": 1567799.155768,
-      "change24h": -0.537,
+      "volume24h": 1318492.665505,
+      "change24h": 1.509,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "RONIN",
+      "symbol": "DYM",
       "priorityScore": 10,
-      "volume24h": 886897.897562,
-      "change24h": -2.567,
+      "volume24h": 1931752.773978,
+      "change24h": 0.916,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "PIXEL",
+      "priorityScore": 10,
+      "volume24h": 2170581.746192,
+      "change24h": 1.175,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "PORTAL",
+      "priorityScore": 10,
+      "volume24h": 1791910.213663,
+      "change24h": 0.308,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "AEVO",
+      "priorityScore": 10,
+      "volume24h": 1038684.92111,
+      "change24h": 1.256,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "W",
+      "priorityScore": 10,
+      "volume24h": 3031229.353147,
+      "change24h": -0.356,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TNSR",
       "priorityScore": 10,
-      "volume24h": 2409667.813421,
-      "change24h": 1.638,
+      "volume24h": 1557758.295163,
+      "change24h": -0.647,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SAGA",
       "priorityScore": 10,
-      "volume24h": 2580418.736663,
-      "change24h": -0.406,
+      "volume24h": 2365326.150975,
+      "change24h": 0.164,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "NOT",
       "priorityScore": 10,
-      "volume24h": 2611815.4382423,
-      "change24h": -0.27,
+      "volume24h": 2274848.8275656,
+      "change24h": 1.304,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TURBO",
       "priorityScore": 10,
-      "volume24h": 2882088.7232847,
-      "change24h": 0.433,
+      "volume24h": 2581479.4825656,
+      "change24h": 1.088,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "LISTA",
+      "symbol": "IO",
       "priorityScore": 10,
-      "volume24h": 986741.53824,
-      "change24h": 4.009,
+      "volume24h": 2243044.80164,
+      "change24h": -0.152,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "MEW",
+      "priorityScore": 10,
+      "volume24h": 589275.1639809,
+      "change24h": 2.417,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BANANA",
       "priorityScore": 10,
-      "volume24h": 1288709.7781,
-      "change24h": -0.607,
+      "volume24h": 1113444.9219,
+      "change24h": -0.318,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "RARE",
       "priorityScore": 10,
-      "volume24h": 898958.88619,
-      "change24h": -2.246,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "G",
-      "priorityScore": 10,
-      "volume24h": 1070765.885927,
-      "change24h": 1.605,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SYN",
-      "priorityScore": 10,
-      "volume24h": 9060033.22134,
-      "change24h": -1.813,
+      "volume24h": 856075.54527,
+      "change24h": 2.203,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "POPCAT",
       "priorityScore": 10,
-      "volume24h": 1441063.55786,
-      "change24h": 1.391,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "DOGS",
-      "priorityScore": 10,
-      "volume24h": 1639492.45404899,
-      "change24h": -1.388,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "FLUX",
-      "priorityScore": 10,
-      "volume24h": 921964.8792,
-      "change24h": -2.256,
+      "volume24h": 1443595.41248,
+      "change24h": 1.844,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "POL",
       "priorityScore": 10,
-      "volume24h": 6655163.15782,
-      "change24h": 1.582,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "1MBABYDOGE",
-      "priorityScore": 10,
-      "volume24h": 1095270.4306482,
-      "change24h": 0.744,
+      "volume24h": 6890418.46808,
+      "change24h": -1.265,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "NEIRO",
       "priorityScore": 10,
-      "volume24h": 3738100.093213,
-      "change24h": -0.358,
+      "volume24h": 3356956.80701384,
+      "change24h": 0.635,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "FIDA",
+      "priorityScore": 10,
+      "volume24h": 1592468.89088,
+      "change24h": 0.925,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "CATI",
+      "priorityScore": 10,
+      "volume24h": 1162516.72576,
+      "change24h": 1.281,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "HMSTR",
       "priorityScore": 10,
-      "volume24h": 2517742.7502698,
-      "change24h": 0.478,
+      "volume24h": 2052351.2242108,
+      "change24h": -1.019,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "EIGEN",
+      "priorityScore": 10,
+      "volume24h": 8228219.65922,
+      "change24h": 0.717,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "1000CAT",
       "priorityScore": 10,
-      "volume24h": 636933.875211,
-      "change24h": 2.817,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SCR",
-      "priorityScore": 10,
-      "volume24h": 858990.9763,
-      "change24h": -2.334,
+      "volume24h": 888060.963606,
+      "change24h": 4.613,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MOODENG",
       "priorityScore": 10,
-      "volume24h": 2125826.50197,
-      "change24h": -0.431,
+      "volume24h": 1730171.65277,
+      "change24h": 1.547,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "1000000MOG",
+      "symbol": "GRASS",
       "priorityScore": 10,
-      "volume24h": 693526.62913,
-      "change24h": -2.344,
+      "volume24h": 4139944.97363,
+      "change24h": -1.586,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "DRIFT",
       "priorityScore": 10,
-      "volume24h": 1278092.75265,
-      "change24h": -0.704,
+      "volume24h": 1200090.30889,
+      "change24h": 1.606,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ACT",
       "priorityScore": 10,
-      "volume24h": 1513022.759354,
-      "change24h": -0.363,
+      "volume24h": 1290551.491199,
+      "change24h": -1.879,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "BAN",
+      "symbol": "PNUT",
       "priorityScore": 10,
-      "volume24h": 793058.33952,
-      "change24h": -3.656,
+      "volume24h": 3685387.16272,
+      "change24h": 0.667,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AKT",
+      "symbol": "SCRT",
       "priorityScore": 10,
-      "volume24h": 1516681.4055,
-      "change24h": -0.572,
+      "volume24h": 765615.40147,
+      "change24h": -3.713,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "1000CHEEMS",
+      "priorityScore": 10,
+      "volume24h": 1125260.8536012,
+      "change24h": 0.798,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "THE",
       "priorityScore": 10,
-      "volume24h": 1617142.366123,
-      "change24h": -0.853,
+      "volume24h": 1620774.845095,
+      "change24h": 1.653,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "KAIA",
+      "symbol": "MORPHO",
       "priorityScore": 10,
-      "volume24h": 1872002.03263,
-      "change24h": -1.855,
+      "volume24h": 5680538.24258,
+      "change24h": 1.097,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ACX",
+      "priorityScore": 10,
+      "volume24h": 885767.023057,
+      "change24h": 3.572,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ORCA",
       "priorityScore": 10,
-      "volume24h": 2103808.4159,
-      "change24h": 0,
+      "volume24h": 1603593.9268,
+      "change24h": 1.748,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "MOVE",
+      "priorityScore": 10,
+      "volume24h": 2674412.40318,
+      "change24h": -0.634,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "RAYSOL",
       "priorityScore": 10,
-      "volume24h": 1204595.60219,
-      "change24h": 0.484,
+      "volume24h": 904868.52528,
+      "change24h": 2.105,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ME",
       "priorityScore": 10,
-      "volume24h": 1167324.324564,
-      "change24h": -0.707,
+      "volume24h": 1218963.895564,
+      "change24h": 1.21,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "VELODROME",
+      "priorityScore": 10,
+      "volume24h": 621274.52468,
+      "change24h": 3.631,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MOCA",
       "priorityScore": 10,
-      "volume24h": 764054.5713,
-      "change24h": -4.066,
+      "volume24h": 563943.370184,
+      "change24h": 2.13,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "LUMIA",
+      "priorityScore": 10,
+      "volume24h": 2473323.669356,
+      "change24h": 0.253,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "USUAL",
+      "priorityScore": 10,
+      "volume24h": 1174320.048426,
+      "change24h": 1.476,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "AIXBT",
       "priorityScore": 10,
-      "volume24h": 1851213.43731,
-      "change24h": -0.823,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CGPT",
-      "priorityScore": 10,
-      "volume24h": 801371.30629,
-      "change24h": 2.928,
+      "volume24h": 1490676.44571,
+      "change24h": 1.374,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PHA",
       "priorityScore": 10,
-      "volume24h": 1359540.77396,
-      "change24h": -0.444,
+      "volume24h": 1156447.7776,
+      "change24h": 0.345,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GRIFFAIN",
       "priorityScore": 10,
-      "volume24h": 781330.444026,
-      "change24h": -2.917,
+      "volume24h": 822306.552741,
+      "change24h": 2.424,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "BIO",
+      "symbol": "SONIC",
       "priorityScore": 10,
-      "volume24h": 4513371.73693,
-      "change24h": -0.217,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ALCH",
-      "priorityScore": 10,
-      "volume24h": 896724.82716,
-      "change24h": 3.485,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SWARMS",
-      "priorityScore": 10,
-      "volume24h": 1328784.969828,
-      "change24h": 0.288,
+      "volume24h": 919361.874058,
+      "change24h": 3.366,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "S",
       "priorityScore": 10,
-      "volume24h": 1740885.00778,
-      "change24h": -0.794,
+      "volume24h": 1744675.83542,
+      "change24h": 0.379,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SOLV",
+      "symbol": "ARC",
       "priorityScore": 10,
-      "volume24h": 1297589.126916,
-      "change24h": -0.345,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "MELANIA",
-      "priorityScore": 10,
-      "volume24h": 1266240.175489,
-      "change24h": 1.549,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "VTHO",
-      "priorityScore": 10,
-      "volume24h": 714391.1608878,
-      "change24h": -2.461,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ANIME",
-      "priorityScore": 10,
-      "volume24h": 743748.74731,
-      "change24h": -2.598,
+      "volume24h": 1787393.94728,
+      "change24h": -1.095,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PIPPIN",
       "priorityScore": 10,
-      "volume24h": 3252777.90449,
-      "change24h": -0.826,
+      "volume24h": 2788190.81567,
+      "change24h": 1.625,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BERA",
+      "priorityScore": 10,
+      "volume24h": 5612008.63272,
+      "change24h": -1.227,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "HEI",
+      "priorityScore": 10,
+      "volume24h": 3391805.908601,
+      "change24h": -0.743,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GPS",
       "priorityScore": 10,
-      "volume24h": 1910560.209598,
-      "change24h": 0.884,
+      "volume24h": 1514858.108452,
+      "change24h": 1.302,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "TUT",
+      "symbol": "SHELL",
       "priorityScore": 10,
-      "volume24h": 2220916.52706,
-      "change24h": 0.554,
+      "volume24h": 1169025.65995,
+      "change24h": -0.437,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "FORM",
+      "priorityScore": 10,
+      "volume24h": 2013858.96081,
+      "change24h": 0.749,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BROCCOLIF3B",
       "priorityScore": 10,
-      "volume24h": 2238823.722612,
-      "change24h": 0.036,
+      "volume24h": 1910955.597196,
+      "change24h": 0.108,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "SIREN",
+      "priorityScore": 10,
+      "volume24h": 6061798.79193,
+      "change24h": 1.193,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BANANAS31",
+      "priorityScore": 10,
+      "volume24h": 1017047.436353,
+      "change24h": 1.686,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PLUME",
       "priorityScore": 10,
-      "volume24h": 4547664.60036,
-      "change24h": 1.007,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "NIL",
-      "priorityScore": 10,
-      "volume24h": 5455617.155352,
-      "change24h": -1.367,
+      "volume24h": 3238122.90711,
+      "change24h": -0.835,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PARTI",
       "priorityScore": 10,
-      "volume24h": 2952068.05321,
-      "change24h": -0.987,
+      "volume24h": 2406092.65667,
+      "change24h": 0.905,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "JELLYJELLY",
+      "priorityScore": 10,
+      "volume24h": 2342786.45174,
+      "change24h": 1.039,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GUN",
       "priorityScore": 10,
-      "volume24h": 1788167.794806,
-      "change24h": -1.261,
+      "volume24h": 1277444.687698,
+      "change24h": 0.989,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "BABY",
+      "symbol": "ATH",
       "priorityScore": 10,
-      "volume24h": 1983450.3767,
-      "change24h": -0.791,
+      "volume24h": 1944342.167643,
+      "change24h": 0.129,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "FHE",
+      "symbol": "PROMPT",
       "priorityScore": 10,
-      "volume24h": 818089.04441,
-      "change24h": -2.077,
+      "volume24h": 831331.567,
+      "change24h": 2.896,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "DEEP",
+      "symbol": "WCT",
       "priorityScore": 10,
-      "volume24h": 1024814.63199,
-      "change24h": -1.46,
+      "volume24h": 1140721.27259,
+      "change24h": 1.26,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "INIT",
+      "priorityScore": 10,
+      "volume24h": 677097.01971,
+      "change24h": 2.648,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "HYPER",
+      "priorityScore": 10,
+      "volume24h": 1195919.17906,
+      "change24h": 1.549,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "JST",
       "priorityScore": 10,
-      "volume24h": 2615849.80691,
-      "change24h": -0.93,
+      "volume24h": 2871803.889,
+      "change24h": 0.732,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "PUNDIX",
+      "symbol": "SIGN",
       "priorityScore": 10,
-      "volume24h": 2095826.13141,
-      "change24h": -0.065,
+      "volume24h": 1408529.338849,
+      "change24h": 0.169,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "DOLO",
+      "symbol": "HAEDAL",
       "priorityScore": 10,
-      "volume24h": 567987.71487,
-      "change24h": -2.418,
+      "volume24h": 688531.43261,
+      "change24h": 3.784,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SYRUP",
+      "symbol": "SXT",
       "priorityScore": 10,
-      "volume24h": 5284641.78376,
-      "change24h": 0.328,
+      "volume24h": 3225721.197774,
+      "change24h": 1.889,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AGT",
+      "symbol": "NXPC",
       "priorityScore": 10,
-      "volume24h": 1918238.921309,
-      "change24h": -0.638,
+      "volume24h": 1328219.1172,
+      "change24h": -0.16,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "A",
+      "symbol": "AWE",
       "priorityScore": 10,
-      "volume24h": 1787548.64581,
-      "change24h": -1.637,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SOPH",
-      "priorityScore": 10,
-      "volume24h": 848308.77452,
-      "change24h": -2.166,
+      "volume24h": 1021482.29314,
+      "change24h": 0.79,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "RESOLV",
       "priorityScore": 10,
-      "volume24h": 1662374.88858,
-      "change24h": -0.254,
+      "volume24h": 1625660.76327,
+      "change24h": -1.899,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TAIKO",
       "priorityScore": 10,
-      "volume24h": 1943498.73071,
-      "change24h": 1.741,
+      "volume24h": 1619279.20731,
+      "change24h": 1.87,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SQD",
+      "symbol": "PUMPBTC",
       "priorityScore": 10,
-      "volume24h": 955041.6959,
-      "change24h": 3.402,
+      "volume24h": 754163.71719,
+      "change24h": 2.455,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MYX",
+      "symbol": "SPK",
       "priorityScore": 10,
-      "volume24h": 2421752.9549,
-      "change24h": 0.951,
+      "volume24h": 1324421.32333,
+      "change24h": 1.603,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "H",
+      "symbol": "F",
       "priorityScore": 10,
-      "volume24h": 5237228.03483,
-      "change24h": -1.641,
+      "volume24h": 1028380.63588,
+      "change24h": 0.448,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "NEWT",
+      "priorityScore": 10,
+      "volume24h": 819108.9354,
+      "change24h": 2.565,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SAHARA",
       "priorityScore": 10,
-      "volume24h": 4494347.97986,
-      "change24h": -1.299,
+      "volume24h": 4331471.845158,
+      "change24h": 1.163,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ICNT",
+      "symbol": "IDOL",
       "priorityScore": 10,
-      "volume24h": 791839.1282,
-      "change24h": -3.939,
+      "volume24h": 2762014.11729,
+      "change24h": -1.209,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "M",
+      "symbol": "AIN",
       "priorityScore": 10,
-      "volume24h": 1465374.8428,
-      "change24h": 1.478,
+      "volume24h": 688626.03422,
+      "change24h": 3.928,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CROSS",
+      "symbol": "C",
       "priorityScore": 10,
-      "volume24h": 1645881.9132,
-      "change24h": -0.289,
+      "volume24h": 529816.22908,
+      "change24h": 2.49,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "TAC",
+      "symbol": "SLP",
       "priorityScore": 10,
-      "volume24h": 1729461.538679,
-      "change24h": 1.904,
+      "volume24h": 805352.0926944,
+      "change24h": 3.192,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ZORA",
       "priorityScore": 10,
-      "volume24h": 1354667.090944,
-      "change24h": -1.092,
+      "volume24h": 1267790.4177,
+      "change24h": -0.406,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TREE",
       "priorityScore": 10,
-      "volume24h": 1695761.8118,
-      "change24h": -0.028,
+      "volume24h": 1523081.81386,
+      "change24h": 0.506,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PLAY",
       "priorityScore": 10,
-      "volume24h": 1517818.33015,
-      "change24h": -1.474,
+      "volume24h": 1504949.02722,
+      "change24h": -1.462,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "NAORIS",
       "priorityScore": 10,
-      "volume24h": 802994.41506,
-      "change24h": 2.654,
+      "volume24h": 801293.78201,
+      "change24h": 2.849,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TOWNS",
       "priorityScore": 10,
-      "volume24h": 1951835.091704,
-      "change24h": -0.392,
+      "volume24h": 1560641.570069,
+      "change24h": 0.552,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "IN",
+      "priorityScore": 10,
+      "volume24h": 1860449.98426,
+      "change24h": 1.355,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "CARV",
+      "priorityScore": 10,
+      "volume24h": 778578.22393,
+      "change24h": 2.446,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "AIO",
+      "priorityScore": 10,
+      "volume24h": 2434420.5704,
+      "change24h": 0.585,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "USELESS",
       "priorityScore": 10,
-      "volume24h": 4063669.10605,
-      "change24h": 0.574,
+      "volume24h": 4624483.01339,
+      "change24h": 1.346,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SAPIEN",
       "priorityScore": 10,
-      "volume24h": 1482448.70057,
-      "change24h": 0.464,
+      "volume24h": 1310423.12802,
+      "change24h": -1.821,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "SOMI",
+      "priorityScore": 10,
+      "volume24h": 824944.3767,
+      "change24h": 2.029,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BAS",
       "priorityScore": 10,
-      "volume24h": 877500.196807,
-      "change24h": -2.648,
+      "volume24h": 1529978.87167,
+      "change24h": 1.375,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MITO",
       "priorityScore": 10,
-      "volume24h": 1018182.34777,
-      "change24h": -1.032,
+      "volume24h": 1029673.13269,
+      "change24h": -0.499,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "Q",
+      "symbol": "HEMI",
       "priorityScore": 10,
-      "volume24h": 3610597.892154,
-      "change24h": 0.581,
+      "volume24h": 4312195.616722,
+      "change24h": 1.187,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ARIA",
+      "symbol": "LINEA",
       "priorityScore": 10,
-      "volume24h": 771520.22711,
-      "change24h": -2.329,
+      "volume24h": 2295920.582727,
+      "change24h": -0.927,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "FLOCK",
+      "symbol": "PTB",
       "priorityScore": 10,
-      "volume24h": 1247665.89524,
-      "change24h": -1.361,
+      "volume24h": 3344969.341077,
+      "change24h": -0.297,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "OPEN",
+      "priorityScore": 10,
+      "volume24h": 9598030.2635,
+      "change24h": 0.615,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SKY",
       "priorityScore": 10,
-      "volume24h": 5957771.66131,
-      "change24h": 0.278,
+      "volume24h": 5294206.03879,
+      "change24h": -1.099,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AVNT",
+      "symbol": "XPIN",
       "priorityScore": 10,
-      "volume24h": 2533363.0474,
-      "change24h": -0.357,
+      "volume24h": 2043477.635141,
+      "change24h": 1.433,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ZKC",
       "priorityScore": 10,
-      "volume24h": 1444547.90947,
-      "change24h": -1.069,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "TOSHI",
-      "priorityScore": 10,
-      "volume24h": 1147246.1725666,
-      "change24h": -1.063,
+      "volume24h": 1325236.42427,
+      "change24h": -1.857,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "STBL",
       "priorityScore": 10,
-      "volume24h": 1466649.10003,
-      "change24h": -0.805,
+      "volume24h": 1226418.12016,
+      "change24h": 0.088,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BARD",
       "priorityScore": 10,
-      "volume24h": 3304620.1653,
-      "change24h": -0.44,
+      "volume24h": 2325981.887,
+      "change24h": -0.87,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TRADOOR",
       "priorityScore": 10,
-      "volume24h": 1960518.5184,
-      "change24h": 1.77,
+      "volume24h": 2092205.3448,
+      "change24h": -0.157,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "COAI",
       "priorityScore": 10,
-      "volume24h": 4032057.4174,
-      "change24h": 0.296,
+      "volume24h": 2984771.7069,
+      "change24h": 0.575,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "MIRA",
+      "priorityScore": 10,
+      "volume24h": 9330592.14776,
+      "change24h": 0.047,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ORDER",
       "priorityScore": 10,
-      "volume24h": 992223.98973,
-      "change24h": -2.102,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "EDEN",
-      "priorityScore": 10,
-      "volume24h": 4424610.33015,
-      "change24h": 0.283,
+      "volume24h": 888197.2488,
+      "change24h": 2.207,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "NOM",
       "priorityScore": 10,
-      "volume24h": 1660516.609576,
-      "change24h": -0.554,
+      "volume24h": 1557757.693632,
+      "change24h": 0,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "2Z",
+      "priorityScore": 10,
+      "volume24h": 1072071.98611,
+      "change24h": 0.053,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "LYN",
       "priorityScore": 10,
-      "volume24h": 1080142.97743,
-      "change24h": 0.058,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "GIGGLE",
-      "priorityScore": 10,
-      "volume24h": 3477366.5824,
-      "change24h": -0.974,
+      "volume24h": 1053461.33544,
+      "change24h": 0.441,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MON",
       "priorityScore": 10,
-      "volume24h": 3149314.005,
-      "change24h": 0.431,
+      "volume24h": 3293878.64151,
+      "change24h": 1.95,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "YB",
+      "priorityScore": 10,
+      "volume24h": 1459984.85855,
+      "change24h": 0.891,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ENSO",
+      "priorityScore": 10,
+      "volume24h": 4388670.98647,
+      "change24h": -1.335,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "CLO",
       "priorityScore": 10,
-      "volume24h": 8527189.87704,
-      "change24h": 1.721,
+      "volume24h": 8930484.92523,
+      "change24h": 1.771,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ZBT",
+      "priorityScore": 10,
+      "volume24h": 4565106.95111,
+      "change24h": -1.15,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "币安人生",
       "priorityScore": 10,
-      "volume24h": 4957683.66086,
-      "change24h": 0.447,
+      "volume24h": 3874217.82737,
+      "change24h": 0.747,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "APR",
+      "symbol": "BLUAI",
       "priorityScore": 10,
-      "volume24h": 1722865.8889,
-      "change24h": 1.229,
+      "volume24h": 1702475.073641,
+      "change24h": -0.156,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MMT",
+      "symbol": "KITE",
       "priorityScore": 10,
-      "volume24h": 9740721.9373,
-      "change24h": 1.118,
+      "volume24h": 7994127.35502,
+      "change24h": -0.676,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "FOLKS",
+      "symbol": "AT",
       "priorityScore": 10,
-      "volume24h": 1829805.2916,
-      "change24h": 1.085,
+      "volume24h": 587145.41612,
+      "change24h": 3.194,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "STABLE",
+      "symbol": "TRUST",
       "priorityScore": 10,
-      "volume24h": 2197041.109296,
-      "change24h": -1.12,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "JCT",
-      "priorityScore": 10,
-      "volume24h": 3313402.673892,
-      "change24h": -1.022,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CLANKER",
-      "priorityScore": 10,
-      "volume24h": 896839.4249,
-      "change24h": -3.231,
+      "volume24h": 901006.0819,
+      "change24h": 2.122,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PIEVERSE",
       "priorityScore": 10,
-      "volume24h": 4426583.732,
-      "change24h": 0.379,
+      "volume24h": 3667720.1155,
+      "change24h": -1.168,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "POWER",
+      "symbol": "IRYS",
       "priorityScore": 10,
-      "volume24h": 1288000.37599,
-      "change24h": -0.422,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ZKP",
-      "priorityScore": 10,
-      "volume24h": 1520632.01115,
-      "change24h": -0.184,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "GUA",
-      "priorityScore": 10,
-      "volume24h": 1046553.3805,
-      "change24h": -1.703,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "BREV",
-      "priorityScore": 10,
-      "volume24h": 1169727.6091,
-      "change24h": -1.342,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "COLLECT",
-      "priorityScore": 10,
-      "volume24h": 2388270.10922,
-      "change24h": -1.03,
+      "volume24h": 4322975.1771,
+      "change24h": -1.52,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MAGMA",
       "priorityScore": 10,
-      "volume24h": 1671663.63251,
-      "change24h": 0.202,
+      "volume24h": 1588305.65354,
+      "change24h": 0.454,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "FOGO",
       "priorityScore": 10,
-      "volume24h": 1119945.17979,
-      "change24h": -0.729,
+      "volume24h": 1261749.332797,
+      "change24h": 1.193,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CHIP",
+      "symbol": "SPORTFUN",
       "priorityScore": 10,
-      "volume24h": 7484573.21657,
-      "change24h": 0.281,
+      "volume24h": 2286539.74161,
+      "change24h": 0.922,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ACU",
+      "priorityScore": 10,
+      "volume24h": 1273987.44479,
+      "change24h": 1.119,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ELSA",
+      "priorityScore": 10,
+      "volume24h": 3795203.31397,
+      "change24h": 0.546,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "SKR",
+      "priorityScore": 10,
+      "volume24h": 537346.967115,
+      "change24h": 3.317,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "SPACE",
+      "priorityScore": 10,
+      "volume24h": 1417914.442546,
+      "change24h": 1.433,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "FIGHT",
+      "priorityScore": 10,
+      "volume24h": 688499.33391,
+      "change24h": 2.857,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "MEGA",
+      "priorityScore": 10,
+      "volume24h": 4486221.18495,
+      "change24h": 1.72,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "TRIA",
+      "priorityScore": 10,
+      "volume24h": 4124157.113591,
+      "change24h": 1.85,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "OPN",
+      "priorityScore": 10,
+      "volume24h": 5717048.68997,
+      "change24h": -0.321,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "MANTRA",
+      "priorityScore": 10,
+      "volume24h": 2652933.095535,
+      "change24h": -0.544,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "龙虾",
+      "priorityScore": 10,
+      "volume24h": 2725302.834087,
+      "change24h": 0.701,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "EDGE",
+      "priorityScore": 10,
+      "volume24h": 4585474.8641,
+      "change24h": 1.278,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BSB",
+      "priorityScore": 10,
+      "volume24h": 8535211.90994,
+      "change24h": 0.008,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BASED",
+      "priorityScore": 10,
+      "volume24h": 4973106.0784,
+      "change24h": 0.842,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "GENIUS",
+      "priorityScore": 10,
+      "volume24h": 2174529.4976,
+      "change24h": -1.891,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "OPG",
       "priorityScore": 10,
-      "volume24h": 3534441.2507,
-      "change24h": 1.489,
+      "volume24h": 2676387.1712,
+      "change24h": 0.536,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AIGENSYN",
+      "symbol": "PHAROS",
       "priorityScore": 10,
-      "volume24h": 3335747.01618,
-      "change24h": 1.29,
+      "volume24h": 4472727.6384,
+      "change24h": 0.811,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "CTR",
       "priorityScore": 10,
-      "volume24h": 589791.029958,
-      "change24h": 2.895,
+      "volume24h": 469079.850859,
+      "change24h": 2.648,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ZEST",
       "priorityScore": 10,
-      "volume24h": 3645435.29128,
-      "change24h": 1.573,
+      "volume24h": 1693880.78569,
+      "change24h": 1.096,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "O",
+      "priorityScore": 10,
+      "volume24h": 4816448.0652,
+      "change24h": 1.638,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "GRAM",
+      "priorityScore": 10,
+      "volume24h": 8888662.1862,
+      "change24h": 0.782,
+      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "DATAIP",
+      "priorityScore": 10,
+      "volume24h": 1660176.62,
+      "change24h": 0.314,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "WIN",
       "priorityScore": 10,
-      "volume24h": 244903.5942044,
-      "change24h": -2.952,
+      "volume24h": 102749.47347683,
+      "change24h": 3.374,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "FTT",
+      "symbol": "LUNA",
       "priorityScore": 10,
-      "volume24h": 162491.080306,
-      "change24h": -4.778,
+      "volume24h": 553245.361424,
+      "change24h": 3.96,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MBL",
+      "symbol": "ATM",
       "priorityScore": 10,
-      "volume24h": 264828.117299,
-      "change24h": -3.623,
+      "volume24h": 1462868.96884,
+      "change24h": 1.64,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SC",
+      "symbol": "RAY",
       "priorityScore": 10,
-      "volume24h": 108380.340388,
-      "change24h": -2.703,
+      "volume24h": 304532.20988,
+      "change24h": 2.083,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "DCR",
+      "symbol": "REQ",
       "priorityScore": 10,
-      "volume24h": 494646.08947,
-      "change24h": 2.336,
+      "volume24h": 282056.4748,
+      "change24h": -2.119,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AUDIO",
+      "symbol": "XEC",
       "priorityScore": 10,
-      "volume24h": 196968.34791,
-      "change24h": -2.176,
+      "volume24h": 694817.31456608,
+      "change24h": -3.247,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SHIB",
+      "symbol": "GLMR",
       "priorityScore": 10,
-      "volume24h": 9797475.52641843,
-      "change24h": 1.302,
+      "volume24h": 395102.9855395,
+      "change24h": 2.455,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "PORTO",
+      "symbol": "XNO",
       "priorityScore": 10,
-      "volume24h": 229137.75385,
-      "change24h": 2.511,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AMP",
-      "priorityScore": 10,
-      "volume24h": 310295.817395,
-      "change24h": -3.912,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "NEXO",
-      "priorityScore": 10,
-      "volume24h": 454695.27842,
-      "change24h": 2.483,
+      "volume24h": 272751.46721,
+      "change24h": -2.2,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "LUNC",
       "priorityScore": 10,
-      "volume24h": 1409334.78065288,
-      "change24h": 0.08,
+      "volume24h": 1221945.36832589,
+      "change24h": -0.219,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "WBTC",
       "priorityScore": 10,
-      "volume24h": 1732478.591686,
-      "change24h": 0.887,
+      "volume24h": 2029423.0911419,
+      "change24h": 0.635,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "PIVX",
+      "symbol": "FLOKI",
       "priorityScore": 10,
-      "volume24h": 137527.2327,
-      "change24h": -2.077,
+      "volume24h": 1260155.98757675,
+      "change24h": -1.255,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BONK",
       "priorityScore": 10,
-      "volume24h": 2744942.85544472,
-      "change24h": -1.333,
+      "volume24h": 1844147.41224498,
+      "change24h": 0,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "AI",
       "priorityScore": 10,
-      "volume24h": 158793.59455,
-      "change24h": -2.174,
+      "volume24h": 230172.08495,
+      "change24h": -2.717,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CRCLB",
+      "symbol": "EURI",
       "priorityScore": 10,
-      "volume24h": 7323758.4533,
-      "change24h": -1.797,
+      "volume24h": 1105681.98002,
+      "change24h": 1.123,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "NVDAB",
       "priorityScore": 10,
-      "volume24h": 1508233.21337,
-      "change24h": -1.234,
+      "volume24h": 1205919.47938,
+      "change24h": 0.976,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TSLAB",
       "priorityScore": 10,
-      "volume24h": 1405526.57686,
-      "change24h": -1.278,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AMDB",
-      "priorityScore": 10,
-      "volume24h": 1846868.70426,
-      "change24h": -1.529,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "INTCB",
-      "priorityScore": 10,
-      "volume24h": 1874147.33674,
-      "change24h": -1.174,
+      "volume24h": 1388291.52377,
+      "change24h": 0.284,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MSTRB",
       "priorityScore": 10,
-      "volume24h": 1564655.1366,
-      "change24h": -1.114,
+      "volume24h": 1661902.28136,
+      "change24h": -0.654,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "QQQB",
       "priorityScore": 10,
-      "volume24h": 4317135.44556,
-      "change24h": -0.527,
+      "volume24h": 4911316.55493,
+      "change24h": 1.287,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "COINB",
       "priorityScore": 10,
-      "volume24h": 511275.06744,
-      "change24h": -3.286,
+      "volume24h": 597846.87107,
+      "change24h": -2.67,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GLWB",
       "priorityScore": 10,
-      "volume24h": 691028.51277,
-      "change24h": 4.07,
+      "volume24h": 715910.69709,
+      "change24h": 4.097,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "HOODB",
+      "symbol": "ARMB",
       "priorityScore": 10,
-      "volume24h": 713159.65274,
-      "change24h": -2.503,
+      "volume24h": 1241541.89137,
+      "change24h": 1.173,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MRVLB",
+      "symbol": "AVGOB",
       "priorityScore": 10,
-      "volume24h": 959236.2397,
-      "change24h": -2.115,
+      "volume24h": 214107.21196,
+      "change24h": 2.024,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "NOKB",
+      "symbol": "IBMB",
       "priorityScore": 10,
-      "volume24h": 183834.7667,
-      "change24h": -2.283,
+      "volume24h": 209547.6856,
+      "change24h": -2.135,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "RKLBB",
+      "symbol": "TSMB",
       "priorityScore": 10,
-      "volume24h": 132651.7169,
-      "change24h": -3.526,
+      "volume24h": 335895.97316,
+      "change24h": 4.296,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "INTWB",
+      "symbol": "QNTB",
       "priorityScore": 10,
-      "volume24h": 357942.4671,
-      "change24h": -3.239,
+      "volume24h": 111487.0938,
+      "change24h": 2.613,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "MVLLB",
+      "symbol": "AAPLB",
       "priorityScore": 10,
-      "volume24h": 576295.0465,
-      "change24h": -4.811,
+      "volume24h": 518439.30404,
+      "change24h": -3.025,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SNXXB",
+      "symbol": "FLNCB",
       "priorityScore": 10,
-      "volume24h": 9602430.7462,
-      "change24h": -1.887,
-      "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "TQQQB",
-      "priorityScore": 10,
-      "volume24h": 1354091.6143,
-      "change24h": -1.646,
+      "volume24h": 119740.3774,
+      "change24h": 4.344,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SMHB",
       "priorityScore": 10,
-      "volume24h": 108023.08012,
-      "change24h": -2.632,
+      "volume24h": 135202.22292,
+      "change24h": 3.28,
       "reason": "优先级10分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BNT",
+      "priorityScore": 8,
+      "volume24h": 465632.4368,
+      "change24h": -0.474,
+      "reason": "优先级8分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "TOSHI",
+      "priorityScore": 8,
+      "volume24h": 817872.2130429,
+      "change24h": 1.959,
+      "reason": "优先级8分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "AMATB",
+      "priorityScore": 8,
+      "volume24h": 90265.83146,
+      "change24h": 9.607,
+      "reason": "优先级8分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "DELLB",
+      "priorityScore": 8,
+      "volume24h": 89897.69546,
+      "change24h": 6.282,
+      "reason": "优先级8分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "KNC",
       "priorityScore": 5,
-      "volume24h": 758549.8762,
-      "change24h": -0.764,
+      "volume24h": 761784.2765,
+      "change24h": 1.644,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "BAND",
+      "symbol": "ZRX",
       "priorityScore": 5,
-      "volume24h": 661440.7487,
-      "change24h": -1.622,
+      "volume24h": 937972.1503,
+      "change24h": 1.535,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "RLC",
+      "symbol": "C98",
       "priorityScore": 5,
-      "volume24h": 743355.4576,
-      "change24h": -1.566,
+      "volume24h": 848497.87983,
+      "change24h": 1.932,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ICX",
+      "symbol": "ARPA",
       "priorityScore": 5,
-      "volume24h": 765459.47981,
-      "change24h": -0.611,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SFP",
-      "priorityScore": 5,
-      "volume24h": 787894.6044,
-      "change24h": 0.441,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CELR",
-      "priorityScore": 5,
-      "volume24h": 697798.36112,
-      "change24h": -1.647,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "MTL",
-      "priorityScore": 5,
-      "volume24h": 631032.1268,
-      "change24h": -0.243,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CTSI",
-      "priorityScore": 5,
-      "volume24h": 555892.56954,
-      "change24h": -1.774,
+      "volume24h": 880256.520141,
+      "change24h": 0.321,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "WOO",
       "priorityScore": 5,
-      "volume24h": 798674.48359,
-      "change24h": -1.795,
+      "volume24h": 899907.15188,
+      "change24h": 0.519,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ASTR",
       "priorityScore": 5,
-      "volume24h": 576130.529292,
-      "change24h": -1.7,
+      "volume24h": 642895.232589,
+      "change24h": 1.851,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "CKB",
+      "priorityScore": 5,
+      "volume24h": 762334.689242,
+      "change24h": 0.362,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "JOE",
+      "priorityScore": 5,
+      "volume24h": 691706.26093,
+      "change24h": -1.828,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "XVS",
       "priorityScore": 5,
-      "volume24h": 666903.3959,
-      "change24h": 1.903,
+      "volume24h": 683989.0913,
+      "change24h": -0.886,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CYBER",
+      "symbol": "MAV",
       "priorityScore": 5,
-      "volume24h": 869926.80606,
-      "change24h": -1.642,
+      "volume24h": 762880.63761,
+      "change24h": 1.111,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ARK",
+      "symbol": "POLYX",
       "priorityScore": 5,
-      "volume24h": 752018.2,
-      "change24h": -1.566,
+      "volume24h": 638783.83421,
+      "change24h": 0.887,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "WAXP",
+      "symbol": "BEAMX",
       "priorityScore": 5,
-      "volume24h": 604892.21072,
-      "change24h": -1.867,
+      "volume24h": 836341.92498,
+      "change24h": 1.655,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "STEEM",
+      "symbol": "ONG",
       "priorityScore": 5,
-      "volume24h": 772527.20009,
-      "change24h": -1.547,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ILV",
-      "priorityScore": 5,
-      "volume24h": 660411.5403,
-      "change24h": 0.289,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SUPER",
-      "priorityScore": 5,
-      "volume24h": 826808.0473,
-      "change24h": -0.243,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ETHW",
-      "priorityScore": 5,
-      "volume24h": 471178.229,
-      "change24h": -1.625,
+      "volume24h": 630551.17053,
+      "change24h": 1.786,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MOVR",
       "priorityScore": 5,
-      "volume24h": 779371.90609,
-      "change24h": -1.455,
+      "volume24h": 977613.77059,
+      "change24h": 1.215,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "LSK",
+      "priorityScore": 5,
+      "volume24h": 519015.1122,
+      "change24h": 1.146,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "RONIN",
+      "priorityScore": 5,
+      "volume24h": 898884.733757,
+      "change24h": 1.124,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "AXL",
       "priorityScore": 5,
-      "volume24h": 857342.394432,
-      "change24h": -1.747,
+      "volume24h": 628356.265787,
+      "change24h": 0.592,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "METIS",
       "priorityScore": 5,
-      "volume24h": 807933.5407,
-      "change24h": -1.284,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AEVO",
-      "priorityScore": 5,
-      "volume24h": 854566.481698,
-      "change24h": -1.205,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "MEW",
-      "priorityScore": 5,
-      "volume24h": 637000.1401694,
-      "change24h": -1.988,
+      "volume24h": 767508.3309,
+      "change24h": 0.485,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SUN",
       "priorityScore": 5,
-      "volume24h": 541816.219327,
-      "change24h": 0.292,
+      "volume24h": 673083.851084,
+      "change24h": 1.168,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "FLUX",
+      "priorityScore": 5,
+      "volume24h": 938663.49571,
+      "change24h": 1.226,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "RPL",
       "priorityScore": 5,
-      "volume24h": 651862.5525,
-      "change24h": -0.508,
+      "volume24h": 669557.1246,
+      "change24h": 0.959,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "SCR",
+      "priorityScore": 5,
+      "volume24h": 904335.51763,
+      "change24h": 0.788,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GOAT",
       "priorityScore": 5,
-      "volume24h": 818924.22732,
-      "change24h": -0.4,
+      "volume24h": 508327.39961,
+      "change24h": 1.301,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SANTOS",
+      "symbol": "COW",
       "priorityScore": 5,
-      "volume24h": 578107.88407,
-      "change24h": 0.148,
+      "volume24h": 725684.1055,
+      "change24h": -1.43,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "CETUS",
       "priorityScore": 5,
-      "volume24h": 432027.95187,
-      "change24h": 0.115,
+      "volume24h": 575699.30912,
+      "change24h": 1.912,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ACX",
+      "symbol": "1000000MOG",
       "priorityScore": 5,
-      "volume24h": 612275.187492,
-      "change24h": -1.913,
+      "volume24h": 634345.63289,
+      "change24h": -0.298,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "BAN",
+      "priorityScore": 5,
+      "volume24h": 861355.80685,
+      "change24h": -0.671,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "AVA",
       "priorityScore": 5,
-      "volume24h": 467627.66136,
-      "change24h": -0.198,
+      "volume24h": 669534.74233,
+      "change24h": 1.987,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "VELODROME",
+      "symbol": "KMNO",
       "priorityScore": 5,
-      "volume24h": 571233.89042,
-      "change24h": -1.409,
+      "volume24h": 908604.39676,
+      "change24h": 0.836,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "HIVE",
       "priorityScore": 5,
-      "volume24h": 935660.22882,
-      "change24h": -0.9,
+      "volume24h": 814704.57947,
+      "change24h": 1.556,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SONIC",
+      "symbol": "AVAAI",
       "priorityScore": 5,
-      "volume24h": 398378.151774,
-      "change24h": -1.812,
+      "volume24h": 945387.37871,
+      "change24h": -0.683,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "MELANIA",
+      "priorityScore": 5,
+      "volume24h": 818112.569601,
+      "change24h": 1.516,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "VTHO",
+      "priorityScore": 5,
+      "volume24h": 682190.1227519,
+      "change24h": 1.218,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "ANIME",
+      "priorityScore": 5,
+      "volume24h": 750806.126877,
+      "change24h": 0.739,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "RED",
       "priorityScore": 5,
-      "volume24h": 840984.9769,
-      "change24h": -0.879,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "VIC",
-      "priorityScore": 5,
-      "volume24h": 992509.13778,
-      "change24h": -1.693,
+      "volume24h": 859949.5526,
+      "change24h": 1.461,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BMT",
       "priorityScore": 5,
-      "volume24h": 716732.15241,
-      "change24h": -1.416,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "BROCCOLI714",
-      "priorityScore": 5,
-      "volume24h": 860269.11692,
-      "change24h": -0.903,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "BANANAS31",
-      "priorityScore": 5,
-      "volume24h": 990094.109235,
-      "change24h": 1.788,
+      "volume24h": 757690.91516,
+      "change24h": 1.795,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BR",
       "priorityScore": 5,
-      "volume24h": 617464.25254,
-      "change24h": 0.941,
+      "volume24h": 799768.98047,
+      "change24h": 1.948,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MAVIA",
       "priorityScore": 5,
-      "volume24h": 782402.21031,
-      "change24h": -0.93,
+      "volume24h": 702247.42321,
+      "change24h": -1.006,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "PROMPT",
+      "symbol": "DEEP",
       "priorityScore": 5,
-      "volume24h": 552980.51782,
-      "change24h": -1.545,
+      "volume24h": 943210.02878,
+      "change24h": 0.932,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "INIT",
+      "symbol": "DOLO",
       "priorityScore": 5,
-      "volume24h": 720315.43307,
-      "change24h": -1.498,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "CTK",
-      "priorityScore": 5,
-      "volume24h": 452164.1122,
-      "change24h": -1.196,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AIOT",
-      "priorityScore": 5,
-      "volume24h": 899113.60773,
-      "change24h": -1.295,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "HAEDAL",
-      "priorityScore": 5,
-      "volume24h": 604645.43315,
-      "change24h": 0.276,
+      "volume24h": 544590.08541,
+      "change24h": 1.603,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ASR",
       "priorityScore": 5,
-      "volume24h": 535564.2172,
-      "change24h": -0.724,
+      "volume24h": 638367.3735,
+      "change24h": 1.818,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ALPINE",
       "priorityScore": 5,
-      "volume24h": 828327.92481,
-      "change24h": 1.664,
+      "volume24h": 861570.88178,
+      "change24h": 1.629,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "CVC",
+      "symbol": "DOOD",
       "priorityScore": 5,
-      "volume24h": 506063.70591,
-      "change24h": -1.153,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AWE",
-      "priorityScore": 5,
-      "volume24h": 867286.56773,
-      "change24h": 0.901,
+      "volume24h": 900253.680546,
+      "change24h": -0.305,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "MERL",
       "priorityScore": 5,
-      "volume24h": 879460.07091,
-      "change24h": -0.519,
+      "volume24h": 755338.00547,
+      "change24h": 0.583,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "1000000BOB",
+      "symbol": "SQD",
       "priorityScore": 5,
-      "volume24h": 263938.23686,
-      "change24h": 0,
+      "volume24h": 732747.14918,
+      "change24h": 1.972,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "PUMPBTC",
+      "symbol": "ICNT",
       "priorityScore": 5,
-      "volume24h": 685713.42009,
-      "change24h": -1.354,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AIN",
-      "priorityScore": 5,
-      "volume24h": 687988.60872,
-      "change24h": -1.64,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "C",
-      "priorityScore": 5,
-      "volume24h": 573245.97087,
-      "change24h": -1.136,
+      "volume24h": 800826.6439,
+      "change24h": 0.144,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "TA",
       "priorityScore": 5,
-      "volume24h": 631430.50996,
-      "change24h": 0.855,
+      "volume24h": 745141.06242,
+      "change24h": 1.859,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "CVX",
       "priorityScore": 5,
-      "volume24h": 974973.2108,
-      "change24h": 0.297,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SLP",
-      "priorityScore": 5,
-      "volume24h": 440133.5475546,
-      "change24h": -0.844,
+      "volume24h": 920426.1546,
+      "change24h": 0.826,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ALL",
       "priorityScore": 5,
-      "volume24h": 583985.0352,
-      "change24h": -0.607,
+      "volume24h": 450779.477,
+      "change24h": 0.788,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "XNY",
+      "symbol": "RECALL",
       "priorityScore": 5,
-      "volume24h": 651576.436651,
-      "change24h": 0,
+      "volume24h": 694714.52546,
+      "change24h": -1.954,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "FLUID",
+      "symbol": "CLANKER",
       "priorityScore": 5,
-      "volume24h": 624656.9789,
-      "change24h": 0.367,
+      "volume24h": 922690.28,
+      "change24h": -1.153,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "TRUTH",
+      "symbol": "AZTEC",
       "priorityScore": 5,
-      "volume24h": 806009.731384,
-      "change24h": 1.944,
+      "volume24h": 852277.65467,
+      "change24h": -0.683,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AT",
+      "symbol": "FTT",
       "priorityScore": 5,
-      "volume24h": 675475.9734,
-      "change24h": 1.503,
+      "volume24h": 103435.103565,
+      "change24h": 0.873,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "TRUST",
+      "symbol": "MBL",
       "priorityScore": 5,
-      "volume24h": 825623.855,
-      "change24h": -0.747,
+      "volume24h": 249336.963718,
+      "change24h": 0.901,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "SPORTFUN",
+      "symbol": "AUDIO",
       "priorityScore": 5,
-      "volume24h": 585320.26751,
-      "change24h": -1.051,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "ACU",
-      "priorityScore": 5,
-      "volume24h": 466587.90432,
-      "change24h": -1.744,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "SKR",
-      "priorityScore": 5,
-      "volume24h": 546276.119464,
-      "change24h": -0.381,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "FIGHT",
-      "priorityScore": 5,
-      "volume24h": 458877.526713,
-      "change24h": -0.226,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "TFUEL",
-      "priorityScore": 5,
-      "volume24h": 77245.67091,
-      "change24h": -2.527,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "DGB",
-      "priorityScore": 5,
-      "volume24h": 505786.60957,
-      "change24h": -1.72,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "LUNA",
-      "priorityScore": 5,
-      "volume24h": 429776.614126,
-      "change24h": 0.493,
+      "volume24h": 193063.636762,
+      "change24h": -0.405,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "STRAX",
       "priorityScore": 5,
-      "volume24h": 265960.42076,
-      "change24h": -0.117,
+      "volume24h": 217432.65228,
+      "change24h": 0.824,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "JUV",
       "priorityScore": 5,
-      "volume24h": 381258.03454,
-      "change24h": -0.326,
+      "volume24h": 257097.16309,
+      "change24h": -1.294,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PSG",
       "priorityScore": 5,
-      "volume24h": 257890.82635,
-      "change24h": -0.417,
+      "volume24h": 161250.11645,
+      "change24h": 0.207,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ACM",
       "priorityScore": 5,
-      "volume24h": 156213.4463,
+      "volume24h": 199152.7527,
       "change24h": 0,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "TKO",
+      "priorityScore": 5,
+      "volume24h": 93105.22368,
+      "change24h": 2.059,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BAR",
       "priorityScore": 5,
-      "volume24h": 213786.29127,
-      "change24h": 0,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "RAY",
-      "priorityScore": 5,
-      "volume24h": 477588.10867,
-      "change24h": 0.517,
+      "volume24h": 208128.1188,
+      "change24h": 0.379,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "QUICK",
       "priorityScore": 5,
-      "volume24h": 194330.09887,
-      "change24h": -1.405,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "REQ",
-      "priorityScore": 5,
-      "volume24h": 337298.3757,
-      "change24h": -1.351,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "XEC",
-      "priorityScore": 5,
-      "volume24h": 862953.93797793,
-      "change24h": -0.84,
+      "volume24h": 59182.51227,
+      "change24h": 2.577,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "RAD",
       "priorityScore": 5,
-      "volume24h": 120121.3272,
-      "change24h": -1.456,
+      "volume24h": 115582.5804,
+      "change24h": 0,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "LAZIO",
       "priorityScore": 5,
-      "volume24h": 127302.87878,
-      "change24h": -1.471,
+      "volume24h": 163675.35445,
+      "change24h": 0.593,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "ADX",
       "priorityScore": 5,
-      "volume24h": 206641.2077,
-      "change24h": 0,
+      "volume24h": 456408.7268,
+      "change24h": 0.558,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "CITY",
       "priorityScore": 5,
-      "volume24h": 247237.39136,
-      "change24h": -0.554,
+      "volume24h": 195805.89524,
+      "change24h": 0.557,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "QI",
+      "symbol": "PORTO",
       "priorityScore": 5,
-      "volume24h": 592626.154608,
-      "change24h": 1.63,
+      "volume24h": 544374.44251,
+      "change24h": 1.144,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "AMP",
+      "priorityScore": 5,
+      "volume24h": 320962.491939,
+      "change24h": -1.97,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PYR",
       "priorityScore": 5,
-      "volume24h": 572333.168534,
-      "change24h": 1.389,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "GLMR",
-      "priorityScore": 5,
-      "volume24h": 323578.8200106,
-      "change24h": 0.676,
+      "volume24h": 486686.737806,
+      "change24h": 0,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BTTC",
       "priorityScore": 5,
-      "volume24h": 133021.93598102,
+      "volume24h": 128793.99837511,
       "change24h": 0,
+      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "NEXO",
+      "priorityScore": 5,
+      "volume24h": 357953.82423,
+      "change24h": -0.677,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "OSMO",
       "priorityScore": 5,
-      "volume24h": 150538.197005,
-      "change24h": -1.455,
+      "volume24h": 159568.793903,
+      "change24h": 1.476,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "FLOKI",
+      "symbol": "QKC",
       "priorityScore": 5,
-      "volume24h": 846387.35777734,
-      "change24h": -0.968,
+      "volume24h": 55505.090427,
+      "change24h": 2.94,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "WBETH",
       "priorityScore": 5,
-      "volume24h": 499385.995335,
-      "change24h": 0.508,
+      "volume24h": 444281.436764,
+      "change24h": 1.04,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "IQ",
+      "symbol": "PIVX",
       "priorityScore": 5,
-      "volume24h": 58768.871835,
-      "change24h": -4.79,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "EURI",
-      "priorityScore": 5,
-      "volume24h": 954664.30521,
-      "change24h": 0.544,
+      "volume24h": 181081.5699,
+      "change24h": -1.78,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BNSOL",
       "priorityScore": 5,
-      "volume24h": 367644.6635,
-      "change24h": 1.095,
+      "volume24h": 404354.8052,
+      "change24h": 1.695,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "KGST",
       "priorityScore": 5,
-      "volume24h": 522238.830777,
+      "volume24h": 117372.539009,
       "change24h": 0.009,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "LITEB",
-      "priorityScore": 5,
-      "volume24h": 426826.86517,
-      "change24h": -1.688,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "PLTRB",
       "priorityScore": 5,
-      "volume24h": 166358.48152,
-      "change24h": 0.464,
+      "volume24h": 242988.65744,
+      "change24h": -0.665,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GOOGLB",
       "priorityScore": 5,
-      "volume24h": 901918.77289,
-      "change24h": 1.846,
+      "volume24h": 670899.51891,
+      "change24h": -0.171,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "SPYB",
       "priorityScore": 5,
-      "volume24h": 394081.76003,
-      "change24h": -0.85,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AVGOB",
-      "priorityScore": 5,
-      "volume24h": 166232.60059,
-      "change24h": -0.546,
+      "volume24h": 520929.72014,
+      "change24h": 0.07,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "BABAB",
       "priorityScore": 5,
-      "volume24h": 224283.87258,
-      "change24h": -1.958,
+      "volume24h": 138946.95061,
+      "change24h": -1.241,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "IBMB",
+      "symbol": "RKLBB",
       "priorityScore": 5,
-      "volume24h": 300647.21558,
-      "change24h": 1.182,
+      "volume24h": 251351.6759,
+      "change24h": 1.639,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "TSMB",
+      "symbol": "AMZNB",
       "priorityScore": 5,
-      "volume24h": 386572.70086,
-      "change24h": -0.982,
+      "volume24h": 71071.62005,
+      "change24h": 2.731,
       "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "ORCLB",
-      "priorityScore": 5,
-      "volume24h": 171894.82316,
-      "change24h": -0.117,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "AMATB",
-      "priorityScore": 5,
-      "volume24h": 51917.01417,
-      "change24h": -2.195,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "FLNCB",
-      "priorityScore": 5,
-      "volume24h": 58110.1925,
-      "change24h": -3.17,
-      "reason": "优先级5分，低于当前扫描阈值（前300名入选）"
-    },
-    {
-      "symbol": "TKO",
+      "symbol": "TFUEL",
       "priorityScore": 0,
-      "volume24h": 64218.81026,
-      "change24h": -0.682,
+      "volume24h": 63348.23612,
+      "change24h": 0.136,
+      "reason": "优先级0分，低于当前扫描阈值（前300名入选）"
+    },
+    {
+      "symbol": "SC",
+      "priorityScore": 0,
+      "volume24h": 69935.377907,
+      "change24h": 1.603,
       "reason": "优先级0分，低于当前扫描阈值（前300名入选）"
     },
     {
       "symbol": "GNO",
       "priorityScore": 0,
-      "volume24h": 78165.44636,
-      "change24h": 0.729,
+      "volume24h": 80951.89016,
+      "change24h": 1.52,
       "reason": "优先级0分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "QKC",
+      "symbol": "GNS",
       "priorityScore": 0,
-      "volume24h": 56248.540764,
-      "change24h": 0.921,
+      "volume24h": 67663.97336,
+      "change24h": 1.636,
       "reason": "优先级0分，低于当前扫描阈值（前300名入选）"
     },
     {
-      "symbol": "AAPLB",
+      "symbol": "IQ",
       "priorityScore": 0,
-      "volume24h": 94094.84405,
-      "change24h": -0.291,
+      "volume24h": 51316.864292,
+      "change24h": -0.299,
       "reason": "优先级0分，低于当前扫描阈值（前300名入选）"
     }
   ],
-  "liquidity_bypassed": 6,
+  "liquidity_bypassed": 2,
   "skipped_by_liquidity": {
-    "lowVol": 6,
+    "lowVol": 2,
     "noData": 0
   }
 }

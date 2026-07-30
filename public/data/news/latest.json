@@ -1,6 +1,96 @@
 {
   "items": [
     {
+      "s": "Jeep maker Stellantis swings to profit on rising demand in North America; shares fall 5%",
+      "t": "2026-07-30T08:20:50.000Z",
+      "ts": 1785399650,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/stellantis-q2-earnings-autos-jeep.html",
+      "s_cn": "吉普车制造商 Stellantis 因北美需求增长而扭亏为盈；",
+      "_ts": 1785423645963
+    },
+    {
+      "s": "How NBCUniversal's deal with YouTube could jumpstart the next chapter of the streaming wars",
+      "t": "2026-07-30T14:55:17.000Z",
+      "ts": 1785423317,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/nbcuniversal-youtube-deal-streaming-wars.html",
+      "s_cn": "NBCUniversal 与 YouTube 的交易如何推动流媒体战争的下一章",
+      "_ts": 1785423600683
+    },
+    {
+      "s": "CME's Duffy warns an overlooked tax risk looms over U.S. perpetual futures",
+      "t": "2026-07-30T14:33:02.000Z",
+      "ts": 1785421982,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/07/30/cme-s-duffy-warns-an-overlooked-tax-risk-looms-over-u-s-perpetual-futures",
+      "s_cn": "芝商所 (CME) 达菲 (Duffy) 警告美国永续期货面临被忽视的税务风险",
+      "_ts": 1785422083876
+    },
+    {
+      "s": "The economics behind Aave proposal to ditch 6 chains that earn loose change in revenue",
+      "t": "2026-07-30T14:25:41.000Z",
+      "ts": 1785421541,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/07/30/the-economics-behind-the-aave-proposal-to-ditch-6-chains-that-earn-chump-change",
+      "s_cn": "Aave 提议放弃 6 家赚取宽松收入的连锁店背后的经济学",
+      "_ts": 1785421571404
+    },
+    {
+      "s": "Wealth managers face a new challenger: Their clients’ AI chatbots",
+      "t": "2026-07-30T14:25:15.000Z",
+      "ts": 1785421515,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/wealth-managers-ai-chatbots.html",
+      "s_cn": "财富管理机构面临新的挑战：客户的人工智能聊天机器人",
+      "_ts": 1785421540259
+    },
+    {
+      "s": "US economic growth sees surprise slowdown in second quarter",
+      "t": "2026-07-30T14:24:41.000Z",
+      "ts": 1785421481,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cd0xvrmlx2eo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "美国第二季度经济增长意外放缓",
+      "_ts": 1785421516292
+    },
+    {
+      "s": "Ferrari CEO says he 'would not change anything' about polarizing Luce EV debut",
+      "t": "2026-07-30T14:22:24.000Z",
+      "ts": 1785421344,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/ferrari-ceo-luce-ev-debut.html",
+      "s_cn": "法拉利首席执行官表示，他“不会改变任何关于 Luce EV 首次亮相的两极分化”",
+      "_ts": 1785421388903
+    },
+    {
+      "s": "South Korean crypto trading surges amid stock market plunge",
+      "t": "2026-07-30T14:10:31.000Z",
+      "ts": 1785420631,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/south-korean-crypto-trading-surges-amid-stock-market-plunge?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "韩国加密货币交易因股市暴跌而激增",
+      "_ts": 1785421086030
+    },
+    {
+      "s": "Hundreds of jobs to go at Jaguar Land Rover",
+      "t": "2026-07-30T13:47:03.000Z",
+      "ts": 1785419223,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cq6dmjv1jpdo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "捷豹路虎将裁减数百个工作岗位",
+      "_ts": 1785420654807
+    },
+    {
+      "s": "JPMorgan says fading Clarity Act odds weigh on crypto outlook",
+      "t": "2026-07-30T14:06:14.000Z",
+      "ts": 1785420374,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/07/30/jpmorgan-says-fading-clarity-act-odds-weigh-on-crypto-outlook",
+      "s_cn": "摩根大通表示，《清晰法案》的可能性逐渐减弱，对加密货币前景构成压力",
+      "_ts": 1785420388676
+    },
+    {
       "s": "2.96 Billion SHIB Burned in Biggest Weekly Burn of Year",
       "t": "2026-07-30T13:45:11.000Z",
       "ts": 1785419111,
@@ -4381,88 +4471,8 @@
       "src": "BBC Business",
       "link": "https://www.bbc.co.uk/news/articles/cvgjenp4680o?at_medium=RSS&at_campaign=rss",
       "s_cn": "特朗普发誓要调查欧盟对美国科技公司的罚款"
-    },
-    {
-      "s": "House passes bill on lawmakers using insider information for stock trading",
-      "t": "2026-07-24T20:05:50.000Z",
-      "ts": 1784923550,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/news/house-bill-lawmakers-insider-information-stock-trading?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "众议院通过立法者利用内幕信息进行股票交易的法案"
-    },
-    {
-      "s": "CDC says massive cyclospora outbreak is now in nine states",
-      "t": "2026-07-24T19:53:01.000Z",
-      "ts": 1784922781,
-      "src": "CNBC",
-      "link": "https://www.cnbc.com/2026/07/24/cyclospora-cdc-says-outbreak-is-in-nine-states.html",
-      "s_cn": "疾病预防控制中心称大规模环孢子虫疫情目前已在九个州爆发"
-    },
-    {
-      "s": "Samsung Wallet Will Add Stablecoin Support, Including USDC",
-      "t": "2026-07-24T19:30:01.000Z",
-      "ts": 1784921401,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374324/samsung-wallet-stablecoin-support-usdc",
-      "s_cn": "三星钱包将添加稳定币支持，包括 USDC"
-    },
-    {
-      "s": "Claude Opus 5 Outscores Fable 5 on Most Benchmarks—At Half the Price",
-      "t": "2026-07-24T18:28:43.000Z",
-      "ts": 1784917723,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374305/claude-opus-5-outscores-fable-5-most-benchmarks-half-price",
-      "s_cn": "《Claude Opus 5》在大多数基准测试中的得分均超过《神鬼寓言 5》——价格仅为《神鬼寓言 5》的一半"
-    },
-    {
-      "s": "Clarity Act on the Ropes as Ethics Fight and Shrinking Calendar Threaten Passage",
-      "t": "2026-07-24T17:50:26.000Z",
-      "ts": 1784915426,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374300/clarity-act-ethics-fight-shrinking-calendar-threaten-passage",
-      "s_cn": "由于道德斗争和缩小的日历威胁通过，《清晰法案》陷入困境"
-    },
-    {
-      "s": "Poolin, Once One of Bitcoin's Biggest Mining Pools, Files for Bankruptcy",
-      "t": "2026-07-24T17:44:48.000Z",
-      "ts": 1784915088,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374289/poolin-bitcoin-biggest-mining-pools-files-bankruptcy",
-      "s_cn": "曾经是比特币最大矿池之一的币印矿池申请破产"
-    },
-    {
-      "s": "Crypto advocacy groups support CLARITY passage as ethics rules face pushback",
-      "t": "2026-07-24T16:55:14.000Z",
-      "ts": 1784912114,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/news/crypto-advocacy-groups-support-clarity-act-pushback-ethics-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "由于道德规则面临阻力，加密货币倡导团体支持 CLARITY 通过"
-    },
-    {
-      "s": "Nvidia, Meta, and Microsoft Tell Washington: Don't Kill Open-Source AI",
-      "t": "2026-07-24T16:34:25.000Z",
-      "ts": 1784910865,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374282/nvidia-meta-microsoft-washington-dont-kill-open-source-ai",
-      "s_cn": "Nvidia、Meta 和微软告诉华盛顿：不要扼杀开源人工智能"
-    },
-    {
-      "s": "Strategy Overhauls Bitcoin Metrics, Debuting 'Net Bitcoin Per Share'",
-      "t": "2026-07-24T16:21:52.000Z",
-      "ts": 1784910112,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374281/strategy-overhauls-bitcoin-metrics-debuting-net-bitcoin-per-share",
-      "s_cn": "策略彻底改革比特币指标，首次推出“每股净比特币”"
-    },
-    {
-      "s": "Bitcoin ETFs Shed $225M, Snapping Seven-Day Inflow Streak as Iran Tensions Spook Markets",
-      "t": "2026-07-24T16:17:37.000Z",
-      "ts": 1784909857,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374260/bitcoin-etfs-shed-225m-snapping-inflow-streak-iran-tensions",
-      "s_cn": "伊朗紧张局势扰乱市场，比特币 ETF 损失 2.25 亿美元，结束了连续 7 天的资金流入"
     }
   ],
-  "updated": 1785420047258,
+  "updated": 1785423687252,
   "sources": 6
 }

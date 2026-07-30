@@ -62,7 +62,7 @@ function save(type, records, idField, sortNewest) {
           const src = (r.src || r.source || type).slice(0, 50);
           const newsTime = (r.t || r.news_time || '').slice(0, 10);
           const imp = r.imp ? 1 : 0;
-          console.log("[data-store] write jin10 t="+newsTime+" imp="+imp+" title="+title.slice(0,30)); inserter.run(src, title, content, url, ts, newsTime, imp);
+          inserter.run(src, title, content, url, ts, newsTime, imp);
           sqlCount++;
         } else if (type === 'whale') {
           inserter.run(
@@ -90,7 +90,7 @@ function save(type, records, idField, sortNewest) {
           );
           sqlCount++;
         }
-      } catch(e) { console.log('[data-store] insert failed:', e.message.slice(0,80)); }
+      } catch(e) { /* 唯一约束冲突静默跳过 */ }
     }
   }
 

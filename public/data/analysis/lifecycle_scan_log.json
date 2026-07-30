@@ -1,24 +1,20 @@
 {
-  "startedAt": "2026-07-30T02:00:01.538Z",
+  "startedAt": "2026-07-30T14:00:02.160Z",
   "totalFetched": 636,
-  "afterFilter": 630,
-  "success": 241,
-  "failed": 59,
+  "afterFilter": 634,
+  "success": 196,
+  "failed": 104,
   "failures": [
     {
-      "symbol": "BTW",
+      "symbol": "KOMA",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "RE",
+      "symbol": "ON",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "SKHYB",
-      "reason": "数据不足或K线拉取失败"
-    },
-    {
-      "symbol": "KORUB",
+      "symbol": "ESPORTS",
       "reason": "数据不足或K线拉取失败"
     },
     {
@@ -26,15 +22,23 @@
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "GRAM",
+      "symbol": "UAI",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "MUB",
+      "symbol": "GWEI",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "EWYB",
+      "symbol": "PRL",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "RE",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "SNDKB",
       "reason": "数据不足或K线拉取失败"
     },
     {
@@ -42,7 +46,11 @@
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "ARX",
+      "symbol": "KORUB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "HYPE",
       "reason": "数据不足或K线拉取失败"
     },
     {
@@ -50,11 +58,39 @@
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "QCOMB",
+      "symbol": "SNXXB",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "MUUB",
+      "symbol": "UB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "LAB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "SLX",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "SKHYB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "Q",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "TAKE",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "MSFTB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "WDCB",
       "reason": "数据不足或K线拉取失败"
     },
     {
@@ -62,11 +98,167 @@
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "CHILLGUY",
+      "symbol": "1000SHIB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "1000PEPE",
       "reason": "数据不足或K线拉取失败"
     },
     {
       "symbol": "AERO",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "VVV",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "SOON",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "BULLA",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "BEAT",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "MUB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "CRCLB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "SPCXB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "BEB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "AKT",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "ALCH",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "SWARMS",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "SKYAI",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "AGT",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "1000000BOB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "CROSS",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "TAC",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "TAG",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "XNY",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "BTR",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "FLUID",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "4",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "AIA",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "ARX",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "AMDB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "INTCB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "METAB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "DRAMB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "QCOMB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "LITEB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "CRWVB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "INTWB",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "1000XEC",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "LUNA2",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "DODOX",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "ZETA",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "BRETT",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "SAFE",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "CHILLGUY",
       "reason": "数据不足或K线拉取失败"
     },
     {
@@ -78,39 +270,35 @@
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "ZEREBRO",
+      "symbol": "AIOT",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "AVAAI",
+      "symbol": "B",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "VVV",
+      "symbol": "MYX",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "SIREN",
+      "symbol": "H",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "JELLYJELLY",
+      "symbol": "VELVET",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "ATH",
+      "symbol": "ARIA",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "DOOD",
+      "symbol": "FLOCK",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "IN",
-      "reason": "数据不足或K线拉取失败"
-    },
-    {
-      "symbol": "XPIN",
+      "symbol": "BLESS",
       "reason": "数据不足或K线拉取失败"
     },
     {
@@ -126,11 +314,15 @@
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "KGEN",
+      "symbol": "TRUTH",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "4",
+      "symbol": "EVAA",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "KGEN",
       "reason": "数据不足或K线拉取失败"
     },
     {
@@ -142,7 +334,15 @@
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "IRYS",
+      "symbol": "FOLKS",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "STABLE",
+      "reason": "数据不足或K线拉取失败"
+    },
+    {
+      "symbol": "POWER",
       "reason": "数据不足或K线拉取失败"
     },
     {
@@ -150,75 +350,55 @@
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "AIA",
+      "symbol": "US",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "ELSA",
+      "symbol": "RAVE",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "SPACE",
+      "symbol": "GUA",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "TRIA",
+      "symbol": "COLLECT",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "AZTEC",
+      "symbol": "我踏马来了",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "EDGE",
+      "symbol": "BIRB",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "BASED",
+      "symbol": "BTW",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "BILL",
+      "symbol": "EWYB",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "O",
+      "symbol": "HOODB",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "DATAIP",
+      "symbol": "MRVLB",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "SNDKB",
+      "symbol": "MUUB",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "SPCXB",
+      "symbol": "TQQQB",
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "DRAMB",
-      "reason": "数据不足或K线拉取失败"
-    },
-    {
-      "symbol": "WDCB",
-      "reason": "数据不足或K线拉取失败"
-    },
-    {
-      "symbol": "KOMA",
-      "reason": "数据不足或K线拉取失败"
-    },
-    {
-      "symbol": "CARV",
-      "reason": "数据不足或K线拉取失败"
-    },
-    {
-      "symbol": "METAB",
-      "reason": "数据不足或K线拉取失败"
-    },
-    {
-      "symbol": "MSFTB",
+      "symbol": "ETHW",
       "reason": "数据不足或K线拉取失败"
     },
     {
@@ -230,7 +410,7 @@
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "ARMB",
+      "symbol": "NOKB",
       "reason": "数据不足或K线拉取失败"
     },
     {
@@ -238,24 +418,24 @@
       "reason": "数据不足或K线拉取失败"
     },
     {
-      "symbol": "CRWVB",
+      "symbol": "MVLLB",
       "reason": "数据不足或K线拉取失败"
     }
   ],
   "byRole": {
-    "趋势跟随": 18,
-    "观望": 100,
-    "反弹交易": 2,
-    "底部观察": 121
+    "趋势跟随": 12,
+    "观望": 91,
+    "反弹交易": 5,
+    "底部观察": 88
   },
   "marketSources": {
     "spot": 110,
     "futures": 526
   },
   "skipped": {
-    "lowVol": 6,
+    "lowVol": 2,
     "noData": 0
   },
-  "durationSec": "52.0",
-  "completedAt": "2026-07-30T02:00:53.515Z"
+  "durationSec": "55.1",
+  "completedAt": "2026-07-30T14:00:57.230Z"
 }

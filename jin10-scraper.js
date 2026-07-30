@@ -12,7 +12,7 @@ const FALLBACK_FILE = path.join(DATA_DIR, 'jin10_fallback.json');
 async function scrapeJin10() {
   let browser;
   try {
-    browser = await chromium.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    browser = await chromium.launch({ headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-cache"] });
     const page = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
     await page.goto('https://www.jin10.com', { waitUntil: 'domcontentloaded', timeout: 20000 });
     await page.waitForTimeout(6000);
@@ -107,7 +107,7 @@ if (require.main === module) {
     try { if (browser) await browser.close(); } catch(e) {}
     browser = null; page = null;
     const { chromium } = require('playwright');
-    browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
+    browser = await chromium.launch({ headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-cache"] });
     page = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
     console.log('[jin10] 浏览器已启动');
   }
@@ -225,12 +225,13 @@ async function scrapeJin10WithPage(page) {
       const seen = new Set(existing.map(i => i.s));
       for (const item of items) {
         if (!seen.has(item.s)) {
+          item._ts = Date.now(); // ★ 采集时间戳，解决金十只有HH:MM没日期的排序问题
           existing.unshift(item);
           seen.add(item.s);
         }
       }
-      // P0: 保持时间排序
-      existing.sort((a,b)=>{const bj=(new Date().getUTCHours()+8)%24;const sk=x=>{let h=parseInt(x.t||'0'),m=parseInt((x.t||'0:0').split(':')[1]||0);if(h>bj)h-=24;return h*60+m};return sk(b)-sk(a)});
+      // 按_ts降序（新采集的在前，跨天自动正确）
+      existing.sort((a,b)=>(b._ts||0)-(a._ts||0));
       const merged = { items: existing.slice(0, 500), updated: Date.now(), source: 'jin10' };
       if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
       fs.writeFileSync(CACHE_FILE, JSON.stringify(merged, null, 2));
