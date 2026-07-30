@@ -1,9 +1,153 @@
 {
   "date": "2026-07-30",
   "type": "news",
-  "updated": 1785423645991,
-  "total": 139,
+  "updated": 1785429937729,
+  "total": 155,
   "records": [
+    {
+      "s": "Your 'Sexual Wellness' Pills Order Info From Hims Got Shared With Meta, Says FTC",
+      "t": "2026-07-30T16:44:11.000Z",
+      "ts": 1785429851,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374736/ftc-sues-hims-hers-sexual-wellness-health-data-sharing-meta",
+      "s_cn": "FTC 称，您从他那里订购的“性健康”药丸信息已与 Meta 共享",
+      "_ts": 1785429937696
+    },
+    {
+      "s": "Round 2 for Shiba Inu Coin? Korea's Crypto Exchange Suddenly Re-Organizes 864 Billion SHIB",
+      "t": "2026-07-30T16:24:30.000Z",
+      "ts": 1785428670,
+      "src": "U.Today",
+      "link": "https://u.today/round-2-for-shiba-inu-coin-koreas-crypto-exchange-suddenly-re-organizes-864-billion-shib",
+      "s_cn": "柴犬硬币第二轮？",
+      "_ts": 1785429446130
+    },
+    {
+      "s": "Cathie Wood's Ark Invest Sells Bitmine While Adding to Coinbase and Circle Holdings",
+      "t": "2026-07-30T16:35:26.000Z",
+      "ts": 1785429326,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374738/cathie-wood-ark-invest-sells-bitmine-adds-coinbase-circle",
+      "s_cn": "Cathie Wood 的 Ark Invest 出售 Bitmine，同时增持 Coinbase 和 Circle Holdings",
+      "_ts": 1785429385288
+    },
+    {
+      "s": "Bitcoin stable as Fed fave PCE inflation sees first monthly drop in six years",
+      "t": "2026-07-30T16:17:29.000Z",
+      "ts": 1785428249,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/bitcoin-crypto-stable-as-us-pce-inflation-sees-first-monthly-drop-in-six-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "美联储青睐个人消费支出通胀六年来首次月度下降，比特币稳定",
+      "_ts": 1785428892601
+    },
+    {
+      "s": "Hyperscale Data sells 100 BTC to fund Michigan AI data center",
+      "t": "2026-07-30T15:53:16.000Z",
+      "ts": 1785426796,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/hyperscale-data-taps-bitcoin-treasury-btc-backed-credit-to-fund-ai-data-center?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Hyperscale Data 出售 100 BTC 资助密歇根人工智能数据中心",
+      "_ts": 1785427692766
+    },
+    {
+      "s": "XRP Ledger Validator Warns of Scammers as First Lending Protocol Eyes Launch",
+      "t": "2026-07-30T15:55:08.000Z",
+      "ts": 1785426908,
+      "src": "U.Today",
+      "link": "https://u.today/xrp-ledger-validator-warns-of-scammers-as-first-lending-protocol-eyes-launch",
+      "s_cn": "XRP 账本验证器警告诈骗者，第一个借贷协议即将推出",
+      "_ts": 1785427640551
+    },
+    {
+      "s": "How NBCUniversal's deal with YouTube could jump-start the next chapter of the streaming wars",
+      "t": "2026-07-30T16:06:38.000Z",
+      "ts": 1785427598,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/nbcuniversal-youtube-deal-streaming-wars.html",
+      "s_cn": "NBCUniversal 与 YouTube 的交易如何开启流媒体战争的新篇章",
+      "_ts": 1785427616929
+    },
+    {
+      "s": "Ondo Finance weighs acquisition worth up to $500 million",
+      "t": "2026-07-30T16:04:16.000Z",
+      "ts": 1785427456,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/29/ondo-finance-weighs-acquisition-worth-up-to-usd500-million",
+      "s_cn": "Ondo Finance 考虑收购价值高达 5 亿美元的交易",
+      "_ts": 1785427480612
+    },
+    {
+      "s": "Tokenized gold passes DeFi stress test, but less than 2% is used as collateral",
+      "t": "2026-07-30T15:48:37.000Z",
+      "ts": 1785426517,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/tokenized-gold-defi-stress-test-collateral-adoption-redstone?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "代币化黄金通过 DeFi 压力测试，但用作抵押品的比例不足 2%",
+      "_ts": 1785427087987
+    },
+    {
+      "s": "Elon Musk's xAI Sues Minnesota to Kill the US's First AI Nudification Law",
+      "t": "2026-07-30T15:42:17.000Z",
+      "ts": 1785426137,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374728/elon-musk-xai-sues-minnesota-ai-nudification-law",
+      "s_cn": "埃隆·马斯克 (Elon Musk) 的 xAI 起诉明尼苏达州废除美国首部人工智能裸体法",
+      "_ts": 1785426187583
+    },
+    {
+      "s": "16.1 Million Cardano (ADA) Exploit: SecondFi Urges Hacker to Return Stolen Funds",
+      "t": "2026-07-30T15:12:30.000Z",
+      "ts": 1785424350,
+      "src": "U.Today",
+      "link": "https://u.today/161-million-cardano-ada-exploit-secondfi-urges-hacker-to-return-stolen-funds",
+      "s_cn": "1610 万卡尔达诺 (ADA) 漏洞：SecondFi 敦促黑客归还被盗资金",
+      "_ts": 1785425234830
+    },
+    {
+      "s": "Australia Sues Telegram for $38M Over ‘Pro-Terror’ Videos",
+      "t": "2026-07-30T15:22:50.000Z",
+      "ts": 1785424970,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374725/australia-sues-telegram-for-38m-over-pro-terror-videos",
+      "s_cn": "澳大利亚就“支持恐怖分子”视频起诉 Telegram，索赔 3800 万美元",
+      "_ts": 1785425048995
+    },
+    {
+      "s": "Fake staking site drains $8.5 million in XRP from dozens of investors promising easy yield",
+      "t": "2026-07-30T13:35:51.000Z",
+      "ts": 1785418551,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/30/fake-staking-site-drains-usd8-5-million-in-xrp-from-dozens-of-investors-promising-easy-yield",
+      "s_cn": "虚假质押网站从数十名承诺轻松收益的投资者那里吸走了 850 万美元的 XRP",
+      "_ts": 1785423828724
+    },
+    {
+      "s": "Crypto for Advisors: Is the Clarity Act dead?",
+      "t": "2026-07-30T15:00:49.000Z",
+      "ts": 1785423649,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/07/30/crypto-for-advisors-is-the-clarity-act-dead",
+      "s_cn": "顾问的加密货币：《清晰法案》已经死了吗？",
+      "_ts": 1785423747101
+    },
+    {
+      "s": "$500 Million USDT Leaves Binance in One Shot as Bitcoin Price Recovers to $65,000",
+      "t": "2026-07-30T14:48:15.000Z",
+      "ts": 1785422895,
+      "src": "U.Today",
+      "link": "https://u.today/500-million-usdt-leaves-binance-in-one-shot-as-bitcoin-price-recovers-to-65000",
+      "s_cn": "比特币价格回升至 65,000 美元，币安一举跌破 5 亿美元 USDT",
+      "_ts": 1785423733584
+    },
+    {
+      "s": "Jeep maker Stellantis swings to profit on rising demand in North America",
+      "t": "2026-07-30T15:01:41.000Z",
+      "ts": 1785423701,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/stellantis-q2-earnings-autos-jeep.html",
+      "s_cn": "吉普车制造商 Stellantis 因北美需求增长而扭亏为盈",
+      "_ts": 1785423722599
+    },
     {
       "s": "Jeep maker Stellantis swings to profit on rising demand in North America; shares fall 5%",
       "t": "2026-07-30T08:20:50.000Z",

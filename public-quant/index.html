@@ -105,7 +105,13 @@ async function tick(){
       ? alerts.slice(0,5).map(a=>{
         const cls=a.level==='critical'?'p0':'p1';
         const errs=(a.errors||[]).filter(Boolean);
-        return `<div class="alert ${cls}"><div style="font-weight:bold">${a.level==='critical'?'🔴':'⚠️'} ${a.message}</div><div style="font-size:9px;color:var(--muted)">${new Date(a.time).toLocaleTimeString()}</div>${errs.length?`<div style="font-size:9px;color:var(--red);margin-top:3px;padding-left:8px">${errs.map(e=>'· '+e).join('<br>')}</div>`:''}</div>`;
+        const fixHtml=a.fix?`<div style="font-size:9px;color:var(--accent);margin-top:3px;padding-left:8px">💡 ${a.fix}</div>`:'';
+        return `<div class="alert ${cls}">
+          <div style="font-weight:bold">${a.level==='critical'?'🔴':'⚠️'} ${a.message}</div>
+          <div style="font-size:9px;color:var(--muted)">${new Date(a.time).toLocaleTimeString()}</div>
+          ${errs.length?`<div style="font-size:9px;color:var(--red);margin-top:3px;padding-left:8px">${errs.map(e=>'· '+e).join('<br>')}</div>`:''}
+          ${fixHtml}
+        </div>`;
       }).join('')
       : '<div style="color:var(--green);font-size:10px">✅ 无告警</div>';
 

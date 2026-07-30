@@ -215,6 +215,14 @@ async function main() {
   try { alertLog = JSON.parse(fs.readFileSync(alertFile, 'utf8')).alerts || []; } catch(e) {}
 
   const newAlerts = [];
+  const COOLDOWN_MS = 30 * 60 * 1000; // 30分钟冷却：同源告警不重复刷
+  // 计算每个source最后一次告警的时间
+  const lastAlertTime = {};
+  for (const a of alertLog) {
+    if (!lastAlertTime[a.source] || new Date(a.time) > new Date(lastAlertTime[a.source])) {
+      lastAlertTime[a.source] = a.time;
+    }
+  }
   const sdef = Object.fromEntries(SOURCES.map(s => [s.id, s]));
   for (const r of results) {
     if (r.status === 'ok') {
@@ -231,7 +239,8 @@ async function main() {
       const diag = r.diagnosis || {};
       // 去重
       const existing = alertLog.find(a => !a.resolved && a.source === r.id);
-      if (!existing) {
+      const sinceLast = lastAlertTime[r.id] ? Date.now() - new Date(lastAlertTime[r.id]).getTime() : COOLDOWN_MS + 1;
+      if (!existing && sinceLast > COOLDOWN_MS) {
         newAlerts.push({
           time: timestamp, type: 'staleness',
           level: r.status === 'error' ? 'critical' : 'warn',
@@ -248,11 +257,13 @@ async function main() {
       const diag = r.diagnosis || {};
       // 去重：同一 source 已有相同活跃告警就不再重复创建
       const existing = alertLog.find(a => !a.resolved && a.source === r.id);
+      const sinceLast = lastAlertTime[r.id] ? Date.now() - new Date(lastAlertTime[r.id]).getTime() : COOLDOWN_MS + 1;
       if (existing && existing.message && existing.message.slice(0,20) === diag.detail?.slice(0,20)) {
         existing.updatedAt = timestamp;
         existing.consecutiveFailures = state[r.id];
         continue;
       }
+      if (sinceLast <= COOLDOWN_MS) continue;
       newAlerts.push({
         time: timestamp, type: 'confirmed_failure',
         level: r.status === 'error' ? 'critical' : 'warn',

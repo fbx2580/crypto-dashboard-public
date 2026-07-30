@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-07-30T15:00:01.591Z",
-  "overall_score": 88,
+  "timestamp": "2026-07-30T17:00:01.742Z",
+  "overall_score": 83,
   "status": "healthy",
   "checks": {
     "jin10": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 1,
+      "delay": 0,
       "diagnosis": null
     },
     "rss": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 1,
+      "delay": 14,
       "diagnosis": null
     },
     "whale": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 5,
+      "delay": 6,
       "diagnosis": null
     },
     "eth": {
@@ -31,7 +31,7 @@
         "Alchemy不可达: Request failed with status code 429",
         "建议修复: 检查Alchemy API Key或网络"
       ],
-      "delay": 204927,
+      "delay": 212127,
       "diagnosis": {
         "ok": false,
         "detail": "Alchemy不可达: Request failed with status code 429",
@@ -39,23 +39,24 @@
       }
     },
     "alerts": {
-      "status": "warn",
-      "score": 70,
+      "status": "error",
+      "score": 30,
       "errors": [
-        "延迟338398s但诊断通过: Binance API正常"
+        "Binance API不可达",
+        "建议修复: 检查Binance网络"
       ],
-      "delay": 338398,
+      "delay": 345599,
       "diagnosis": {
-        "ok": true,
-        "detail": "Binance API正常",
-        "fix": ""
+        "ok": false,
+        "detail": "Binance API不可达",
+        "fix": "检查Binance网络"
       }
     },
     "market_snapshot": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 50394,
+      "delay": 57594,
       "diagnosis": null
     },
     "data_quality": {
@@ -77,6 +78,7 @@
   "errors": [
     "Alchemy不可达: Request failed with status code 429",
     "建议修复: 检查Alchemy API Key或网络",
-    "延迟338398s但诊断通过: Binance API正常"
+    "Binance API不可达",
+    "建议修复: 检查Binance网络"
   ]
 }
