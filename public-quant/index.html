@@ -31,6 +31,25 @@
 /* 右列 */
 .right{display:flex;flex-direction:column;gap:8px}
 .r2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+/* ★ 响应式：手机/平板 ★ */
+@media screen and (max-width:768px){
+  body{padding:6px;font-size:12px}
+  .w{max-width:100%}
+  .g{grid-template-columns:1fr}
+  .qgrid{grid-template-columns:repeat(3,1fr)}
+  .r2{grid-template-columns:1fr}
+  .top h1{font-size:13px}
+  .card h3{font-size:12px}
+  .dv-item{font-size:11px;margin:2px 0}
+  .alert{font-size:11px}
+  .proc .name{font-size:11px}
+  .qb .v{font-size:14px}
+}
+@media screen and (max-width:480px){
+  .qgrid{grid-template-columns:repeat(2,1fr)}
+  .qb .v{font-size:13px}
+  .top{flex-direction:column;align-items:flex-start;gap:4px}
+}
 </style>
 </head>
 <body>
@@ -143,7 +162,6 @@ async function tick(){
       {name:'RSS',live:vol.rss,arch:arc.news||0,total:db._rss_db||(vol.rss||0)+(arc.news||0),today:db._rss_today||0,type:'覆盖式📂DB'},
       {name:'鲸鱼',live:vol.whale,arch:arc.whale||0,total:db.whale_transfers||(vol.whale||0)+(arc.whale||0),today:db._whale_today||0,type:'覆盖式📂DB'},
       {name:'ETH',live:vol.eth,arch:0,total:db.addresses||vol.eth,today:db._eth_today||0,type:'覆盖式📂DB'},
-      {name:'异动',live:vol.alerts,arch:arc.alerts||0,total:db.alerts||(vol.alerts||0)+(arc.alerts||0),today:db._alerts_today||0,type:'覆盖式📂DB'},
     ];
     document.getElementById('datavol').innerHTML=items.map(i=>
       `<div class="dv-item">${i.name} <b>${i.total||'?'}</b>条 <span style="color:var(--cyan);font-size:8px">+${i.today}今日</span> <span style="font-size:7px;color:var(--muted)">${i.type}</span></div>`

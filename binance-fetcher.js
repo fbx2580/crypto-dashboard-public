@@ -10,7 +10,7 @@ try { apiMon.wrapAxios(axios); } catch(e){}
 const fs = require('fs');
 const path = require('path');
 
-const FUTURES_BASE = 'https://api.binance.com';
+const FUTURES_BASE = 'https://fapi.binance.com';
 
 const DATA_DIR = path.join(__dirname, 'public', 'data', 'binance');
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
@@ -33,7 +33,7 @@ const INTERVALS = {
 let cachedPerps = null;
 async function getPerpetualSymbols() {
   if (cachedPerps) return cachedPerps;
-  const res = await axios.get(`${FUTURES_BASE}/api/v3/exchangeInfo`, { timeout: 10000 });
+  const res = await axios.get(`${FUTURES_BASE}/fapi/v1/exchangeInfo`, { timeout: 10000 });
   cachedPerps = res.data.symbols
     .filter(s => (s.contractType === 'PERPETUAL' || s.contractType === 'TRADIFI_PERPETUAL') && s.status === 'TRADING')
     .map(s => s.symbol);
@@ -46,7 +46,7 @@ async function fetchAndSaveKlines(symbol, interval = '1h', limit = 100) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
   try {
-    const res = await axios.get(`${FUTURES_BASE}/api/v3/klines`, {
+    const res = await axios.get(`${FUTURES_BASE}/fapi/v1/klines`, {
       params: { symbol, interval, limit },
       timeout: 10000,
     });
@@ -92,7 +92,7 @@ function mergeCandles(existing, incoming) {
 // ─── 全量永续 ticker ───
 async function getAllPerpTickers() {
   try {
-    const res = await axios.get(`${FUTURES_BASE}/api/v3/ticker/24hr`, { timeout: 10000 });
+    const res = await axios.get(`${FUTURES_BASE}/fapi/v1/ticker/24hr`, { timeout: 10000 });
     return res.data.map(t => ({
       symbol: t.symbol,
       price: parseFloat(t.lastPrice),
@@ -112,7 +112,7 @@ async function getAllPerpTickers() {
 // ─── 资金费率 ───
 async function getFundingRates(symbols) {
   try {
-    const res = await axios.get(`${FUTURES_BASE}/api/v3/premiumIndex`, { timeout: 10000 });
+    const res = await axios.get(`${FUTURES_BASE}/fapi/v1/premiumIndex`, { timeout: 10000 });
     const data = res.data;
     const result = {};
     for (const d of data) {
@@ -133,7 +133,7 @@ async function getFundingRates(symbols) {
 // ─── 持仓量 ───
 async function getOpenInterest(symbol) {
   try {
-    const res = await axios.get(`${FUTURES_BASE}/api/v3/openInterest`, {
+    const res = await axios.get(`${FUTURES_BASE}/fapi/v1/openInterest`, {
       params: { symbol },
       timeout: 10000,
     });
@@ -216,7 +216,7 @@ async function fetchHistorical(symbol, interval = '1h', days = 30) {
 
   while (allCandles.length < days * (24 * 60 / parseInt(interval))) {
     try {
-      const res = await axios.get(`${FUTURES_BASE}/api/v3/klines`, {
+      const res = await axios.get(`${FUTURES_BASE}/fapi/v1/klines`, {
         params: { symbol, interval, endTime, limit },
         timeout: 10000,
       });

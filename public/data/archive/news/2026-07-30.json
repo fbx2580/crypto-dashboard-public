@@ -1,9 +1,117 @@
 {
   "date": "2026-07-30",
   "type": "news",
-  "updated": 1785429937729,
-  "total": 155,
+  "updated": 1785434376543,
+  "total": 167,
   "records": [
+    {
+      "s": "Jersey Mike's stock falls 3% in public market debut after pricing shares at $23",
+      "t": "2026-07-30T17:59:19.000Z",
+      "ts": 1785434359,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/jersey-mikes-ipo-jmke-starts-trading-on-the-new-york-stock-exchange.html",
+      "s_cn": "Jersey Mike 的股价在公开市场首次亮相后下跌 3%，定价为 23 美元",
+      "_ts": 1785434376528
+    },
+    {
+      "s": "Aviva Investors launches tokenized fund after Central Bank of Ireland approval",
+      "t": "2026-07-30T17:38:13.000Z",
+      "ts": 1785433093,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/aviva-investors-tokenized-fund-central-bank-ireland-xrp-ledger?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "爱尔兰央行批准后，Aviva Investors 推出代币化基金",
+      "_ts": 1785433397464
+    },
+    {
+      "s": "Zcash Receives Major Mining Expansion Through Fortitude",
+      "t": "2026-07-30T17:25:25.000Z",
+      "ts": 1785432325,
+      "src": "U.Today",
+      "link": "https://u.today/zcash-receives-major-mining-expansion-through-fortitude",
+      "s_cn": "Zcash 通过坚韧获得重大采矿扩张",
+      "_ts": 1785433342250
+    },
+    {
+      "s": "Retailer Reformation opens flat in NYSE debut as CEO says company is 'ready to scale'",
+      "t": "2026-07-30T17:39:21.000Z",
+      "ts": 1785433161,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/reformation-ipo-public-nyse-listing.html",
+      "s_cn": "Retail Reform 在纽约证券交易所首次亮相，首席执行官表示公司“已准备好扩大规模”",
+      "_ts": 1785433193760
+    },
+    {
+      "s": "British Airways flight called mayday on approach to Heathrow",
+      "t": "2026-07-30T17:34:26.000Z",
+      "ts": 1785432866,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cn8n1knkkz9o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "英国航空航班在接近希思罗机场时呼叫求救",
+      "_ts": 1785433008510
+    },
+    {
+      "s": "Bitcoin Quantum Threat Inches Closer as IBM Claims 'Trusted Quantum Advantage'",
+      "t": "2026-07-30T17:36:03.000Z",
+      "ts": 1785432963,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374753/bitcoin-quantum-threat-ibm-claims-trusted-quantum-advantage",
+      "s_cn": "IBM 声称拥有“值得信赖的量子优势”，比特币量子威胁日益逼近",
+      "_ts": 1785433008510
+    },
+    {
+      "s": "Global banks test tokenized money for cross-border payments in $1 million BIS pilot",
+      "t": "2026-07-30T17:34:03.000Z",
+      "ts": 1785432843,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/30/global-banks-test-tokenized-money-for-cross-border-payments-in-usd1-million-bis-pilot",
+      "s_cn": "全球银行在 100 万美元的 BIS 试点中测试用于跨境支付的代币化货币",
+      "_ts": 1785432861547
+    },
+    {
+      "s": "UEFA threatens World Cup boycott over FIFA private equity investment plan",
+      "t": "2026-07-30T17:30:06.000Z",
+      "ts": 1785432606,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/uefa-threatens-world-cup-boycott-over-fifa-investment-plan.html",
+      "s_cn": "欧足联威胁抵制世界杯 国际足联私募股权投资计划",
+      "_ts": 1785432623072
+    },
+    {
+      "s": "Jersey Mike's stock falls 2% in public market debut after pricing shares at $23",
+      "t": "2026-07-30T17:13:19.000Z",
+      "ts": 1785431599,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/jersey-mikes-ipo-jmke-starts-trading-on-the-new-york-stock-exchange.html",
+      "s_cn": "Jersey Mike 的股价在公开市场首次亮相时下跌 2%，其股价定价为 23 美元",
+      "_ts": 1785431624542
+    },
+    {
+      "s": "Retailer Reformation opens flat in market debut after pricing IPO at $15",
+      "t": "2026-07-30T16:58:41.000Z",
+      "ts": 1785430721,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/reformation-ipo-public-nyse-listing.html",
+      "s_cn": "Retail Reformation 首次公开募股定价为 15 美元，首日开盘持平",
+      "_ts": 1785431550586
+    },
+    {
+      "s": "Jersey Mike's starts trading at $21 per share in public debut after pricing at $23",
+      "t": "2026-07-30T17:08:38.000Z",
+      "ts": 1785431318,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/jersey-mikes-ipo-jmke-starts-trading-on-the-new-york-stock-exchange.html",
+      "s_cn": "Jersey Mike's 在首次公开募股时以每股 21 美元的价格开始交易，此前定价为 23 美元",
+      "_ts": 1785431550586
+    },
+    {
+      "s": "Canadian crypto ownership increases to 25%: Ontario survey",
+      "t": "2026-07-30T17:03:17.000Z",
+      "ts": 1785430997,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/canadians-ownership-crypto-osc-survey?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "加拿大加密货币所有权增加至 25%：安大略省调查",
+      "_ts": 1785431308902
+    },
     {
       "s": "Your 'Sexual Wellness' Pills Order Info From Hims Got Shared With Meta, Says FTC",
       "t": "2026-07-30T16:44:11.000Z",

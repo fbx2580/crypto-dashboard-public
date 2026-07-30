@@ -1,6 +1,74 @@
 {
   "alerts": [
     {
+      "time": "2026-07-30T17:50:01.256Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": false,
+      "consecutiveFailures": 705
+    },
+    {
+      "time": "2026-07-30T17:30:01.966Z",
+      "type": "recovery",
+      "level": "info",
+      "source": "alerts",
+      "message": "异动数据 已恢复",
+      "errors": [],
+      "resolved": true
+    },
+    {
+      "time": "2026-07-30T17:05:02.087Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "alerts",
+      "message": "异动数据: Binance API不可达",
+      "errors": [
+        "Binance API不可达",
+        "建议修复: 检查Binance网络"
+      ],
+      "fix": "检查Binance网络",
+      "resolved": true,
+      "consecutiveFailures": 1140,
+      "resolvedAt": "2026-07-30T17:30:01.966Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-30T17:05:02.087Z",
+      "type": "staleness",
+      "level": "critical",
+      "source": "alerts",
+      "message": "异动数据: Binance API不可达 (5765分钟)",
+      "errors": [
+        "Binance API不可达",
+        "建议修复: 检查Binance网络"
+      ],
+      "fix": "检查Binance网络",
+      "resolved": true,
+      "resolvedAt": "2026-07-30T17:30:01.966Z",
+      "regressed": true
+    },
+    {
+      "time": "2026-07-30T17:05:02.087Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": false,
+      "consecutiveFailures": 696
+    },
+    {
       "time": "2026-07-30T16:30:02.090Z",
       "type": "confirmed_failure",
       "level": "critical",
@@ -29,6 +97,6 @@
       "consecutiveFailures": 687
     }
   ],
-  "updated": 1785430854006,
-  "total": 2
+  "updated": "2026-07-30T18:00:01.465Z",
+  "total": 7
 }

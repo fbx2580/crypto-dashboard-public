@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-07-30T17:00:01.742Z",
-  "overall_score": 83,
+  "timestamp": "2026-07-30T18:00:01.465Z",
+  "overall_score": 91,
   "status": "healthy",
   "checks": {
     "jin10": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 0,
+      "delay": 1,
       "diagnosis": null
     },
     "rss": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 14,
+      "delay": 7,
       "diagnosis": null
     },
     "whale": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 6,
+      "delay": 2,
       "diagnosis": null
     },
     "eth": {
@@ -31,7 +31,7 @@
         "Alchemy不可达: Request failed with status code 429",
         "建议修复: 检查Alchemy API Key或网络"
       ],
-      "delay": 212127,
+      "delay": 215727,
       "diagnosis": {
         "ok": false,
         "detail": "Alchemy不可达: Request failed with status code 429",
@@ -39,46 +39,37 @@
       }
     },
     "alerts": {
-      "status": "error",
-      "score": 30,
-      "errors": [
-        "Binance API不可达",
-        "建议修复: 检查Binance网络"
-      ],
-      "delay": 345599,
-      "diagnosis": {
-        "ok": false,
-        "detail": "Binance API不可达",
-        "fix": "检查Binance网络"
-      }
+      "status": "ok",
+      "score": 100,
+      "errors": [],
+      "delay": 2015,
+      "diagnosis": null
     },
     "market_snapshot": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 57594,
+      "delay": 61194,
       "diagnosis": null
     },
     "data_quality": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 300,
+      "delay": 299,
       "diagnosis": null
     },
     "alerts_log": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 300,
+      "delay": 299,
       "diagnosis": null
     }
   },
   "dataErrors": [],
   "errors": [
     "Alchemy不可达: Request failed with status code 429",
-    "建议修复: 检查Alchemy API Key或网络",
-    "Binance API不可达",
-    "建议修复: 检查Binance网络"
+    "建议修复: 检查Alchemy API Key或网络"
   ]
 }
