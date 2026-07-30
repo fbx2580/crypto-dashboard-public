@@ -30,3 +30,5 @@ public/data/snapshots.db
 *.bak
 *.tar.gz
 .server_pid_checked
+data/dashboard.db*
+data/*.db*

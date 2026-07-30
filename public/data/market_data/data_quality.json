@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-30T18:00:01.465Z",
+  "timestamp": "2026-07-30T18:15:01.288Z",
   "overall_score": 91,
   "status": "healthy",
   "checks": {
@@ -14,14 +14,14 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 7,
+      "delay": 0,
       "diagnosis": null
     },
     "whale": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 2,
+      "delay": 10,
       "diagnosis": null
     },
     "eth": {
@@ -31,7 +31,7 @@
         "Alchemy不可达: Request failed with status code 429",
         "建议修复: 检查Alchemy API Key或网络"
       ],
-      "delay": 215727,
+      "delay": 216627,
       "diagnosis": {
         "ok": false,
         "detail": "Alchemy不可达: Request failed with status code 429",
@@ -42,14 +42,14 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 2015,
+      "delay": 2915,
       "diagnosis": null
     },
     "market_snapshot": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 61194,
+      "delay": 62094,
       "diagnosis": null
     },
     "data_quality": {
