@@ -139,38 +139,39 @@ async function refreshTickers() {
       return;
     }
     
-    // 首次加载：创建 DOM
+    // 首次加载
     if (!bar.querySelector('.ticker-item')) {
       bar.innerHTML = majors.map(t => {
         const chg = parseFloat(t.change24h) || 0;
         const cls = chg >= 0 ? 'up' : 'down';
         const sign = chg >= 0 ? '+' : '';
         const a = analysisMap[t.symbol.replace('USDT','')] || {};
-        const badge = a.level ? '<span style="font-size:9px;color:var(--' + (a.cl||'text-dim') + ');margin-left:4px;">' + (a.color||'') + ' ' + (a.level||'') + (a.depthRatio ? (a.depthRatio >= 1 ? ' · 挂买 ' + Math.round(a.depthRatio/(1+a.depthRatio)*100) + '%' : ' · 挂卖 ' + Math.round(1/(1+a.depthRatio)*100) + '%') : '') + '</span>' : '';
+        const badge = a.level ? ' <span style="font-size:9px;color:var(--' + (a.cl||'text-dim') + ');">' + (a.color||'') + ' ' + (a.level||'') + (a.depthRatio ? (a.depthRatio >= 1 ? ' · 多军 ' + Math.round(a.depthRatio/(1+a.depthRatio)*100) + '%' : '') : '') + (a.depthRatio && a.depthRatio < 1 ? ' · 空军 ' + Math.round(1/(1+a.depthRatio)*100) + '%' : '') + '</span>' : '';
         return '<div class="ticker-item" data-sym="' + t.symbol + '">' +
-          '<div style="display:flex;justify-content:space-between;align-items:center;">' +
-          '<span class="ticker-symbol">' + t.symbol.replace('USDT','') + '</span>' +
-          '<span class="ticker-price">$' + fmt.price(t.price) + '</span>' +
-          '<span class="ticker-change ' + cls + '">' + sign + chg.toFixed(2) + '%</span></div>' +
-          (a.level ? '<div style="font-size:9px;margin-top:2px;">' + '<span style="color:var(--' + (a.cl||'text-dim') + ');">' + (a.color||'') + ' ' + (a.level||'') + '</span>' + (a.depthRatio ? '<span style="color:var(--green);"> · ' + (a.depthRatio >= 1 ? '多军 ' + Math.round(a.depthRatio/(1+a.depthRatio)*100) + '%' : '') + '</span>' : '') + (a.depthRatio && a.depthRatio < 1 ? '<span style="color:var(--red);"> · 空军 ' + Math.round(1/(1+a.depthRatio)*100) + '%</span>' : '') + '</div>' : '') +
-          '</div>';
+          '<span class="ticker-symbol">' + t.symbol.replace('USDT','') + badge + '</span>' +
+          '<span class="ticker-change ' + cls + '">' + sign + chg.toFixed(2) + '%</span>' +
+          '<span class="ticker-price" style="color:var(--text-dim);font-size:10px">$' + fmt.price(t.price) + '</span></div>';
       }).join('');
       return;
     }
     
-    // 后续更新：只改 textContent，不动 DOM
+    // 按 data-sym 匹配更新
+    const symMap = {};
+    for (const t of majors) symMap[t.symbol] = t;
     const items = bar.querySelectorAll('.ticker-item');
-    const len = Math.min(items.length, majors.length);
-    for (let i = 0; i < len; i++) {
-      const t = majors[i];
-      const item = items[i];
-      item.querySelector('.ticker-price').textContent = '$' + fmt.price(t.price);
+    for (const item of items) {
+      const sym = item.dataset.sym;
+      const t = symMap[sym];
+      if (!t) continue;
       const chg = parseFloat(t.change24h) || 0;
       const cls = chg >= 0 ? 'up' : 'down';
       const sign = chg >= 0 ? '+' : '';
-      const chgEl = item.querySelector('.ticker-change');
-      chgEl.textContent = sign + chg.toFixed(2) + '%';
-      chgEl.className = 'ticker-change ' + cls;
+      const a = analysisMap[sym.replace('USDT','')] || {};
+      const badge = a.level ? ' <span style="font-size:9px;color:var(--' + (a.cl||'text-dim') + ');">' + (a.color||'') + ' ' + (a.level||'') + (a.depthRatio ? (a.depthRatio >= 1 ? ' · 多军 ' + Math.round(a.depthRatio/(1+a.depthRatio)*100) + '%' : '') : '') + (a.depthRatio && a.depthRatio < 1 ? ' · 空军 ' + Math.round(1/(1+a.depthRatio)*100) + '%' : '') + '</span>' : '';
+      item.querySelector('.ticker-symbol').innerHTML = sym.replace('USDT','') + badge;
+      item.querySelector('.ticker-change').textContent = sign + chg.toFixed(2) + '%';
+      item.querySelector('.ticker-change').className = 'ticker-change ' + cls;
+      item.querySelector('.ticker-price').textContent = '$' + fmt.price(t.price);
     }
   } catch(e) {}
 }

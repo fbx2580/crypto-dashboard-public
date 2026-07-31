@@ -1,7 +1,20 @@
 {
   "alerts": [
     {
-      "time": "2026-07-30T17:50:01.256Z",
+      "time": "2026-07-31T01:45:01.900Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟29916s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 84
+    },
+    {
+      "time": "2026-07-31T01:35:01.950Z",
       "type": "confirmed_failure",
       "level": "critical",
       "source": "eth",
@@ -12,7 +25,382 @@
       ],
       "fix": "检查Alchemy API Key或网络",
       "resolved": false,
-      "consecutiveFailures": 705
+      "consecutiveFailures": 792
+    },
+    {
+      "time": "2026-07-31T01:15:01.700Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟28115s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 78
+    },
+    {
+      "time": "2026-07-31T01:05:01.538Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": false,
+      "consecutiveFailures": 786
+    },
+    {
+      "time": "2026-07-31T00:45:01.430Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟26315s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 72
+    },
+    {
+      "time": "2026-07-31T00:35:01.476Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": false,
+      "consecutiveFailures": 780
+    },
+    {
+      "time": "2026-07-31T00:15:01.599Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟24515s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 66
+    },
+    {
+      "time": "2026-07-31T00:05:01.591Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": false,
+      "consecutiveFailures": 774
+    },
+    {
+      "time": "2026-07-30T23:45:01.199Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟22715s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 60,
+      "resolvedAt": "2026-07-31T01:45:01.900Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T23:35:01.778Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": true,
+      "consecutiveFailures": 768,
+      "resolvedAt": "2026-07-31T01:35:01.950Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T23:05:01.359Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": true,
+      "consecutiveFailures": 762,
+      "resolvedAt": "2026-07-31T01:05:01.538Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T23:00:01.911Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟20016s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 51,
+      "resolvedAt": "2026-07-31T01:00:01.987Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T22:35:01.604Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": true,
+      "consecutiveFailures": 756,
+      "resolvedAt": "2026-07-31T00:35:01.476Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T22:30:02.112Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟18216s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 45,
+      "resolvedAt": "2026-07-31T00:30:01.966Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T21:50:01.523Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": true,
+      "consecutiveFailures": 747,
+      "resolvedAt": "2026-07-30T23:50:01.632Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T21:45:02.116Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟15516s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 36,
+      "resolvedAt": "2026-07-30T23:50:01.632Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T21:20:01.640Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": true,
+      "consecutiveFailures": 741,
+      "resolvedAt": "2026-07-30T23:25:01.841Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T21:15:02.160Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟13716s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 30,
+      "resolvedAt": "2026-07-30T23:20:01.207Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T20:35:01.827Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": true,
+      "consecutiveFailures": 732,
+      "resolvedAt": "2026-07-30T22:35:01.604Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T20:30:02.292Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟11016s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 21,
+      "resolvedAt": "2026-07-30T22:30:02.112Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T20:00:01.677Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟9215s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 15,
+      "resolvedAt": "2026-07-30T22:00:01.670Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T19:50:01.604Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": true,
+      "consecutiveFailures": 723,
+      "resolvedAt": "2026-07-30T21:50:01.523Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T19:30:01.654Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟7415s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 9,
+      "resolvedAt": "2026-07-30T21:30:01.618Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T19:20:01.721Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": true,
+      "consecutiveFailures": 717,
+      "resolvedAt": "2026-07-30T21:20:01.640Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T18:50:01.799Z",
+      "type": "staleness",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常 (84分钟)",
+      "errors": [
+        "延迟5015s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "resolvedAt": "2026-07-30T20:50:02.122Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T18:50:01.799Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": true,
+      "consecutiveFailures": 711,
+      "resolvedAt": "2026-07-30T20:50:02.122Z",
+      "expired": true
+    },
+    {
+      "time": "2026-07-30T17:50:01.256Z",
+      "type": "confirmed_failure",
+      "level": "critical",
+      "source": "eth",
+      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "fix": "检查Alchemy API Key或网络",
+      "resolved": true,
+      "consecutiveFailures": 705,
+      "resolvedAt": "2026-07-30T19:50:01.604Z",
+      "expired": true
     },
     {
       "time": "2026-07-30T17:30:01.966Z",
@@ -65,8 +453,10 @@
         "建议修复: 检查Alchemy API Key或网络"
       ],
       "fix": "检查Alchemy API Key或网络",
-      "resolved": false,
-      "consecutiveFailures": 696
+      "resolved": true,
+      "consecutiveFailures": 696,
+      "resolvedAt": "2026-07-30T19:05:02.174Z",
+      "expired": true
     },
     {
       "time": "2026-07-30T16:30:02.090Z",
@@ -79,8 +469,10 @@
         "建议修复: 检查Alchemy API Key或网络"
       ],
       "fix": "检查Alchemy API Key或网络",
-      "resolved": false,
-      "consecutiveFailures": 690
+      "resolved": true,
+      "consecutiveFailures": 690,
+      "resolvedAt": "2026-07-30T18:50:01.799Z",
+      "expired": true
     },
     {
       "time": "2026-07-30T16:15:02.243Z",
@@ -93,10 +485,12 @@
         "建议修复: 检查Alchemy API Key或网络"
       ],
       "fix": "检查Alchemy API Key或网络",
-      "resolved": false,
-      "consecutiveFailures": 687
+      "resolved": true,
+      "consecutiveFailures": 687,
+      "resolvedAt": "2026-07-30T18:50:01.799Z",
+      "expired": true
     }
   ],
-  "updated": "2026-07-30T18:15:01.288Z",
-  "total": 7
+  "updated": "2026-07-31T01:55:01.728Z",
+  "total": 33
 }

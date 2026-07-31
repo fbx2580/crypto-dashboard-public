@@ -1,9 +1,243 @@
 {
   "date": "2026-07-30",
   "type": "news",
-  "updated": 1785434376543,
-  "total": 167,
+  "updated": 1785452950229,
+  "total": 193,
   "records": [
+    {
+      "s": "'I pay £580 a month to live in a disused care home': Property guardians show us around",
+      "t": "2026-07-30T23:05:41.000Z",
+      "ts": 1785452741,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cj4kvge1pyvo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "“我每月支付 580 英镑住在废弃的护理院”：财产监护人带我们参观",
+      "_ts": 1785452950217
+    },
+    {
+      "s": "Thames Water boss says leakage targets 'not realistic'",
+      "t": "2026-07-30T23:06:37.000Z",
+      "ts": 1785452797,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c04kd3gl1gpo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "泰晤士水务公司老板表示泄漏目标“不现实”",
+      "_ts": 1785452950217
+    },
+    {
+      "s": "Apple warns of future 'supply constraints' for Mac, iPhone, iPad",
+      "t": "2026-07-30T23:02:13.000Z",
+      "ts": 1785452533,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c204nw64xwno?at_medium=RSS&at_campaign=rss",
+      "s_cn": "苹果警告 Mac、iPhone、iPad 未来将出现“供应限制”",
+      "_ts": 1785452764570
+    },
+    {
+      "s": "India wants to join the strawberry superpowers",
+      "t": "2026-07-30T22:04:09.000Z",
+      "ts": 1785449049,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c8x274xxxpwo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "印度欲加入草莓超级大国行列",
+      "_ts": 1785449621900
+    },
+    {
+      "s": "US Senators sent revised ethics rules to White House for CLARITY Act: Report",
+      "t": "2026-07-30T21:54:38.000Z",
+      "ts": 1785448478,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/us-senators-revised-ethics-rules-white-house-clarity-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "美国参议员向白宫提交了修订后的道德规则，以明确法案：报告",
+      "_ts": 1785448719281
+    },
+    {
+      "s": "Strategy posts $8.2B Q2 loss as Bitcoin slump drives unrealized losses",
+      "t": "2026-07-30T21:36:39.000Z",
+      "ts": 1785447399,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/strategy-reports-q2-2026-loss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "由于比特币暴跌导致未实现损失，该策略第二季度亏损 8.2B 美元",
+      "_ts": 1785447832306
+    },
+    {
+      "s": "Andy Burnham to give regional mayors share of income tax",
+      "t": "2026-07-30T21:32:09.000Z",
+      "ts": 1785447129,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c4g3eyg60e0o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "安迪·伯纳姆 (Andy Burnham) 将为地区市长提供所得税份额",
+      "_ts": 1785447404336
+    },
+    {
+      "s": "Burnham says he told Trump UK will be pragmatic about North Sea oil",
+      "t": "2026-07-30T16:19:08.000Z",
+      "ts": 1785428348,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c70gr75xzg5o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "伯纳姆表示，他告诉特朗普英国将在北海石油问题上采取务实态度",
+      "_ts": 1785446646844
+    },
+    {
+      "s": "Coinbase Misses on Q2 Earnings as Crypto Trading Activity Slows",
+      "t": "2026-07-30T21:19:12.000Z",
+      "ts": 1785446352,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374761/coinbase-misses-q2-earnings-crypto-trading-activity-slows",
+      "s_cn": "由于加密货币交易活动放缓，Coinbase 第二季度收益未达预期",
+      "_ts": 1785446386690
+    },
+    {
+      "s": "World Cup generated $20B in blockchain prediction market volume: Chainalysis",
+      "t": "2026-07-30T21:04:59.000Z",
+      "ts": 1785445499,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/world-cup-generated-20b-prediction-market-volume-chainalysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "世界杯在区块链预测市场规模中产生了 200 亿美元：Chainaanalysis",
+      "_ts": 1785446014899
+    },
+    {
+      "s": "Strategy books $8.2 billion Q2 loss on bitcoin price decline",
+      "t": "2026-07-30T20:32:13.000Z",
+      "ts": 1785443533,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/30/strategy-books-usd8-2-billion-second-quarter-loss-on-bitcoin-price-decline",
+      "s_cn": "由于比特币价格下跌，该策略第二季度亏损 82 亿美元",
+      "_ts": 1785445161483
+    },
+    {
+      "s": "Coinbase Q2 profit misses estimates despite record crypto market share",
+      "t": "2026-07-30T20:47:27.000Z",
+      "ts": 1785444447,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/coinbase-q2-earnings-record-crypto-market-share?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "尽管加密货币市场份额创历史新高，Coinbase 第二季度利润仍低于预期",
+      "_ts": 1785444827777
+    },
+    {
+      "s": "'The Odyssey' extends stay in 70 mm Imax theaters as shows sell out weeks in advance",
+      "t": "2026-07-30T20:51:02.000Z",
+      "ts": 1785444662,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/the-odyssey-70mm-imax-run-extended-until-september.html",
+      "s_cn": "《奥德赛》延长在 70 毫米 Imax 影院的停留时间，演出提前几周售完",
+      "_ts": 1785444679364
+    },
+    {
+      "s": "Strategy books $8.2 billion second quarter loss on bitcoin price decline",
+      "t": "2026-07-30T20:32:13.000Z",
+      "ts": 1785443533,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/30/strategy-books-usd8-2-billion-second-quarter-loss-on-bitcoin-price-decline",
+      "s_cn": "由于比特币价格下跌，该公司第二季度亏损 82 亿美元",
+      "_ts": 1785443551995
+    },
+    {
+      "s": "Coinbase sinks 5% after missing second quarter revenue estimates",
+      "t": "2026-07-30T20:18:33.000Z",
+      "ts": 1785442713,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/30/coinbase-sinks-5-after-missing-q2-revenue-estimates",
+      "s_cn": "Coinbase 因第二季度营收未达到预期而下跌 5%",
+      "_ts": 1785442739150
+    },
+    {
+      "s": "Crypto Is for Crooks, Dem Senator Says",
+      "t": "2026-07-30T20:00:32.000Z",
+      "ts": 1785441632,
+      "src": "U.Today",
+      "link": "https://u.today/crypto-is-for-crooks-dem-senator-says",
+      "s_cn": "民主党参议员称加密货币是骗子的",
+      "_ts": 1785442370617
+    },
+    {
+      "s": "Rivian reduces 2026 spending plans, narrows earnings guidance",
+      "t": "2026-07-30T20:06:59.000Z",
+      "ts": 1785442019,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/rivian-rivn-q2-2026-earnings.html",
+      "s_cn": "Rivian 减少 2026 年支出计划，缩小盈利指引",
+      "_ts": 1785442184897
+    },
+    {
+      "s": "Jersey Mike's stock falls 6% in public market debut after pricing shares at $23",
+      "t": "2026-07-30T20:09:13.000Z",
+      "ts": 1785442153,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/jersey-mikes-ipo-jmke-starts-trading-on-the-new-york-stock-exchange.html",
+      "s_cn": "Jersey Mike 的股价在公开市场首次亮相后下跌 6%，定价为 23 美元",
+      "_ts": 1785442184897
+    },
+    {
+      "s": "Retailer Reformation closes flat in NYSE debut as CEO says company is 'ready to scale'",
+      "t": "2026-07-30T20:07:48.000Z",
+      "ts": 1785442068,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/reformation-ipo-public-nyse-listing.html",
+      "s_cn": "Retailer Reformation 在纽交所首秀收盘持平，首席执行官表示公司“已准备好扩大规模”",
+      "_ts": 1785442092057
+    },
+    {
+      "s": "Telegram’s Pavel Durov responds to Russia’s terrorism designation",
+      "t": "2026-07-30T19:54:06.000Z",
+      "ts": 1785441246,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/pavel-durov-responds-russia-terrorism-designation-cites-mass-surveillance-censorship?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Telegram 的帕维尔·杜罗夫 (Pavel Durov) 对俄罗斯被认定为恐怖主义做出回应",
+      "_ts": 1785441511084
+    },
+    {
+      "s": "Senator Schumer proposes agency to address corruption, including Trump’s crypto ventures",
+      "t": "2026-07-30T19:45:52.000Z",
+      "ts": 1785440752,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/senate-government-agency-donald-trump-cryptocurrency-ventures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "参议员舒默提议成立机构解决腐败问题，包括特朗普的加密货币企业",
+      "_ts": 1785441214071
+    },
+    {
+      "s": "Jersey Mike's stock falls 7% in public market debut after pricing shares at $23",
+      "t": "2026-07-30T19:39:14.000Z",
+      "ts": 1785440354,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/jersey-mikes-ipo-jmke-starts-trading-on-the-new-york-stock-exchange.html",
+      "s_cn": "Jersey Mike 股价在公开市场首秀下跌 7%，定价为 23 美元",
+      "_ts": 1785440384659
+    },
+    {
+      "s": "Treasury Secretary Invokes Bitcoin Creator Satoshi Nakamoto in Plea for Clarity Act",
+      "t": "2026-07-30T19:32:19.000Z",
+      "ts": 1785439939,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374758/treasury-secretary-bitcoin-satoshi-nakamoto-clarity-act",
+      "s_cn": "财政部长在《澄清法案》中援引比特币创造者中本聪的观点",
+      "_ts": 1785440014717
+    },
+    {
+      "s": "'The Odyssey' extends stay in 70mm IMAX theaters as shows sell out weeks in advance",
+      "t": "2026-07-30T19:24:10.000Z",
+      "ts": 1785439450,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/the-odyssey-70mm-imax-run-extended-until-september.html",
+      "s_cn": "《奥德赛》延长在 70 毫米 IMAX 影院的停留时间，演出提前几周售完",
+      "_ts": 1785439644040
+    },
+    {
+      "s": "Researchers Tried Letting AI Do Science. It Failed",
+      "t": "2026-07-30T19:13:46.000Z",
+      "ts": 1785438826,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374755/researchers-tried-letting-ai-do-science-it-failed",
+      "s_cn": "研究人员尝试让人工智能做科学。",
+      "_ts": 1785438868610
+    },
+    {
+      "s": "New Stablecoin Backed by BlackRock and Visa to Launch on Ethereum",
+      "t": "2026-07-30T18:41:58.000Z",
+      "ts": 1785436918,
+      "src": "U.Today",
+      "link": "https://u.today/new-stablecoin-backed-by-blackrock-and-visa-to-launch-on-ethereum",
+      "s_cn": "由贝莱德和 Visa 支持的新稳定币将在以太坊上推出",
+      "_ts": 1785437563075
+    },
     {
       "s": "Jersey Mike's stock falls 3% in public market debut after pricing shares at $23",
       "t": "2026-07-30T17:59:19.000Z",
