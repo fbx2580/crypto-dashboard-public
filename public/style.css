@@ -267,7 +267,7 @@ html, body {
 /* ─── Market Overview ─── */
 .market-overview {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
   margin-bottom: var(--gap);
   padding: 0;
@@ -298,7 +298,7 @@ html, body {
 .mo-change.down { color: var(--red); }
 
 @media (min-width: 480px) {
-  .market-overview { grid-template-columns: repeat(4, 1fr); gap: var(--gap); }
+  .market-overview { grid-template-columns: repeat(6, 1fr); gap: var(--gap); }
   .mo-item { padding: 10px 14px; }
   .mo-value { font-size: 15px; }
 }
@@ -663,15 +663,55 @@ input:focus, select:focus { border-color: var(--accent); }
   100% { opacity: 1; transform: translateX(0); }
 }
 
-/* ───折叠屏适配 ─── */
-@media (max-width: 400px) {
-  .header { flex-wrap: wrap; }
-  .header-right { width: 100%; justify-content: flex-end; }
-  .market-overview { grid-template-columns: 1fr 1fr; }
-  .chart-container { height: 220px; }
+/* ─── 手机端适配 ─── */
+@media (max-width: 480px) {
+  .app { padding: 2px; width: 100%; max-width: 100vw; }
+  .header { padding: 6px 8px; margin-bottom: 4px; flex-wrap: wrap; width: 100%; }
+  .header-right { width: 100%; justify-content: space-between; margin-top: 4px; }
+  .logo { font-size: 14px; }
+  .tabs { width: 100%; }
+
+  /* 大看板卡片：铺满 */
+  .market-overview { grid-template-columns: repeat(3, 1fr); gap: 2px; width: 100%; }
+  .mo-item { padding: 6px 6px; }
+  .mo-label { font-size: 9px; }
+  .mo-value { font-size: 12px; }
+  .mo-change { font-size: 10px; }
+
+  /* Tab 导航：均分铺满 */
+  .tab { font-size: 11px; padding: 6px 4px; flex: 1; min-width: 0; }
+
+  /* K线图 */
+  .chart-container { height: 240px; width: 100%; }
+  .chart-controls { flex-wrap: wrap; gap: 3px; }
+  .chart-controls .btn, .chart-controls .btn-sm { font-size: 10px; padding: 3px 6px; }
+
+  /* 排行 + 信号：铺满全宽 */
+  .rank-row { flex-direction: column; gap: 4px; width: 100%; }
+  .rank-box { flex: 1; width: 100%; }
+  .signal-layout { height: auto; min-height: 0; width: 100%; }
+  .signal-body { font-size: 11px; max-height: 50vh; overflow-y: auto; }
+  .jin10-head { padding: 5px 6px; font-size: 11px; }
+  .jin10-time { font-size: 10px; min-width: 30px; }
+
+  /* 后门 */
+  .backdoor { width: 100%; max-width: 100vw; right: 0; bottom: 0; border-radius: var(--radius) var(--radius) 0 0; left: 0; }
+  .backdoor-msgs { height: 200px; }
+  .backdoor-input { font-size: 11px; padding: 8px; }
+  .backdoor-send { padding: 8px 12px; }
+
+  /* 指标环 */
+  .indicator-ring { width: 44px; height: 44px; }
+  .indicator-bar { width: 100%; justify-content: center; }
 }
-@media (max-width: 300px) {
-  .app { padding: 4px; }
+
+@media (max-width: 400px) {
+  .market-overview { grid-template-columns: repeat(2, 1fr); gap: 2px; }
+  .mo-item { padding: 5px 6px; }
+  .mo-value { font-size: 12px; }
+  .chart-container { height: 200px; }
+  .tab { font-size: 10px; padding: 5px 6px; min-width: 48px; }
+  .backdoor-msgs { height: 160px; }
 }
 
 /* ─── 聚合样式修复 ─── */

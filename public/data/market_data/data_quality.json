@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-02T16:55:01.710Z",
+  "timestamp": "2026-08-02T17:55:01.696Z",
   "overall_score": 93,
   "status": "healthy",
   "checks": {
@@ -7,7 +7,7 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 0,
+      "delay": 1,
       "diagnosis": null
     },
     "rss": {
@@ -21,23 +21,23 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 24,
+      "delay": 3,
       "diagnosis": null
     },
     "eth": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 104,
+      "delay": 67,
       "diagnosis": null
     },
     "alerts": {
       "status": "warn",
       "score": 70,
       "errors": [
-        "延迟6949s但诊断通过: Binance API正常"
+        "延迟10549s但诊断通过: Binance API正常"
       ],
-      "delay": 6949,
+      "delay": 10549,
       "diagnosis": {
         "ok": true,
         "detail": "Binance API正常",
@@ -48,9 +48,9 @@
       "status": "warn",
       "score": 70,
       "errors": [
-        "延迟316494s但诊断通过: Binance正常"
+        "延迟320094s但诊断通过: Binance正常"
       ],
-      "delay": 316494,
+      "delay": 320094,
       "diagnosis": {
         "ok": true,
         "detail": "Binance正常",
@@ -74,7 +74,7 @@
   },
   "dataErrors": [],
   "errors": [
-    "延迟6949s但诊断通过: Binance API正常",
-    "延迟316494s但诊断通过: Binance正常"
+    "延迟10549s但诊断通过: Binance API正常",
+    "延迟320094s但诊断通过: Binance正常"
   ]
 }

@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "s": "Coldcard Bitcoin Exploit Balloons to $88 Million as Attackers Keep Draining Wallets",
+      "t": "2026-08-02T17:18:51.000Z",
+      "ts": 1785691131,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374817/coldcard-bitcoin-exploit-88-million-attackers-draining-wallets",
+      "s_cn": "随着攻击者不断耗尽钱包，Coldcard 比特币暴涨至 8800 万美元",
+      "_ts": 1785691205874
+    },
+    {
+      "s": "Why a DeFi platform ditched its consumer app to become the secret backend for tech giants",
+      "t": "2026-08-02T17:00:00.000Z",
+      "ts": 1785690000,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/web3/2026/08/02/why-a-defi-platform-ditched-its-consumer-app-to-become-the-secret-backend-for-tech-giants",
+      "s_cn": "为什么 DeFi 平台放弃其消费者应用程序而成为科技巨头的秘密后端",
+      "_ts": 1785690029732
+    },
+    {
       "s": "The future of crypto payments won't include on-ramps or bridges, Fun CEO says",
       "t": "2026-08-02T16:00:00.000Z",
       "ts": 1785686400,
@@ -4480,26 +4498,8 @@
       "link": "https://www.cnbc.com/2026/07/28/boeing-ba-2q-2026-earnings.html",
       "s_cn": "由于空军一号成本影响业绩，波音公司亏损额超出预期",
       "_ts": 1785238398165
-    },
-    {
-      "s": "Zcash Miner Fortitude Powers Up Nebraska Facility as It Eyes Public Listing",
-      "t": "2026-07-28T11:31:03.000Z",
-      "ts": 1785238263,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374491/zcash-miner-fortitude-nebraska-mining-facility",
-      "s_cn": "Zcash Miner Fortitude 为内布拉斯加州工厂提供电力，因为它着眼于公开上市",
-      "_ts": 1785238332413
-    },
-    {
-      "s": "Myanmar Approves Death Penalty for Forced Scam Labor, Life for Crypto Fraud",
-      "t": "2026-07-28T11:29:21.000Z",
-      "ts": 1785238161,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374519/myanmar-approves-death-penalty-for-forced-scam-labor-life-for-crypto-fraud",
-      "s_cn": "缅甸批准对强迫诈骗劳动判处死刑，对加密货币欺诈判处终身监禁",
-      "_ts": 1785238201441
     }
   ],
-  "updated": 1785690001283,
+  "updated": 1785693601214,
   "sources": 6
 }

@@ -81,16 +81,15 @@ async function refreshIndicators() {
     const a = d.altSeason || {};
     if (f.value != null) {
       document.getElementById("fngRing").setAttribute("stroke-dasharray", f.value + ", " + (100-f.value));
-      document.getElementById("fngValue").textContent = f.value;
+      const label = f.label || '';
+      document.getElementById("fngValue").textContent = f.value + (label ? ' - ' + label : '');
       document.getElementById("fngLabel").textContent = (f.value >= 50 ? "😊" : "😨") + " 恐惧";
-      document.getElementById("fngValue").textContent = f.value + " - " + (f.label || "");
     }
     if (a.value != null) {
       document.getElementById("altRing").setAttribute("stroke-dasharray", a.value + ", " + (100-a.value));
+      const aLabel = a.label || (a.value >= 50 ? '山寨季' : '比特季');
       document.getElementById("altValue").textContent = a.value;
-      document.getElementById("altRing").style.stroke = a.value >= 50 ? "var(--green)" : "var(--accent)";
-      document.getElementById("altLabel").textContent = a.value >= 50 ? "🟢 山寨季" : "🔵 比特季";
-      document.getElementById("altValue").textContent = a.value + "/100";
+      document.getElementById("altLabel").textContent = (a.value >= 75 ? "🟢" : a.value < 25 ? "🔵" : "🟡") + " " + aLabel;
     }
   } catch(e) {}
 }
@@ -116,6 +115,8 @@ async function refreshMarket() {
     if (sh) setItem('moA01', sh.price.toFixed(0), sh.changePercent);
     if (data.nasdaq) setItem('moNasdaq', `$${data.nasdaq.price.toLocaleString('en', {minimumFractionDigits:0})}`, data.nasdaq.changePercent);
     if (data.sp500) setItem('moSp500', `$${data.sp500.price.toLocaleString('en', {minimumFractionDigits:0})}`, data.sp500.changePercent);
+    if (data.oil) setItem('moOil', `$${data.oil.price.toFixed(2)}`, data.oil.changePercent);
+    if (data.gold) setItem('moGold', `$${data.gold.price.toFixed(1)}`, data.gold.changePercent);
   } catch(e) {}
 }
 
@@ -177,7 +178,7 @@ async function refreshTickers() {
 }
 
 // 美股存储类（币安 TradFi 永续合约代码）
-const STORAGE_STOCKS = ['NVDABUSDT','AMDBUSDT','INTCBUSDT','MUBUSDT','WDCBUSDT','DRAMBUSDT','SKHYBUSDT','SNDKBUSDT','STXUSDT','SKHYNIXUSDT'];
+const STORAGE_STOCKS = ['NVDAUSDT','AMDUSDT','INTCUSDT','MUUSDT','WDCUSDT','SKHYNIXUSDT','SKHYUSDT','SNDKUSDT','STXUSDT','DRAMUSDT'];
 
 // ─── 秒级 BTC 价格刷新（无缓存，带跳动指示）───
 async function tickBtcPrice() {

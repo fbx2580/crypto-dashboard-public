@@ -1,9 +1,27 @@
 {
   "date": "2026-08-02",
   "type": "news",
-  "updated": 1785686445895,
-  "total": 86,
+  "updated": 1785691205897,
+  "total": 88,
   "records": [
+    {
+      "s": "Coldcard Bitcoin Exploit Balloons to $88 Million as Attackers Keep Draining Wallets",
+      "t": "2026-08-02T17:18:51.000Z",
+      "ts": 1785691131,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374817/coldcard-bitcoin-exploit-88-million-attackers-draining-wallets",
+      "s_cn": "随着攻击者不断耗尽钱包，Coldcard 比特币暴涨至 8800 万美元",
+      "_ts": 1785691205874
+    },
+    {
+      "s": "Why a DeFi platform ditched its consumer app to become the secret backend for tech giants",
+      "t": "2026-08-02T17:00:00.000Z",
+      "ts": 1785690000,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/web3/2026/08/02/why-a-defi-platform-ditched-its-consumer-app-to-become-the-secret-backend-for-tech-giants",
+      "s_cn": "为什么 DeFi 平台放弃其消费者应用程序而成为科技巨头的秘密后端",
+      "_ts": 1785690029732
+    },
     {
       "s": "The future of crypto payments won't include on-ramps or bridges, Fun CEO says",
       "t": "2026-08-02T16:00:00.000Z",

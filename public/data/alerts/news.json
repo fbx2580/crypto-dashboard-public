@@ -1,6 +1,22 @@
 {
-  "updated": 1785686607868,
+  "updated": 1785691295627,
   "alerts": [
+    {
+      "ts": 1785691131,
+      "detected": 1785691295627,
+      "src": "Decrypt",
+      "title": "随着攻击者不断耗尽钱包，Coldcard 比特币暴涨至 8800 万美元",
+      "orig": "Coldcard Bitcoin Exploit Balloons to $88 Million as Attackers Keep Draining Wallets",
+      "link": "https://decrypt.co/374817/coldcard-bitcoin-exploit-88-million-attackers-draining-wallets"
+    },
+    {
+      "ts": 1785690000,
+      "detected": 1785690029747,
+      "src": "CoinDesk",
+      "title": "为什么 DeFi 平台放弃其消费者应用程序而成为科技巨头的秘密后端",
+      "orig": "Why a DeFi platform ditched its consumer app to become the secret backend for tech giants",
+      "link": "https://www.coindesk.com/web3/2026/08/02/why-a-defi-platform-ditched-its-consumer-app-to-become-the-secret-backend-for-tech-giants"
+    },
     {
       "ts": 1785686400,
       "detected": 1785686607868,
@@ -384,22 +400,6 @@
       "title": "量子路线图将推动比特币走高：查尔斯·爱德华兹",
       "orig": "A quantum roadmap would push Bitcoin much higher: Charles Edwards",
       "link": "https://cointelegraph.com/magazine/bitcoins-biggest-bull-catalyst-may-come-from-fixing-its-biggest-risk-edwards?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1784899982,
-      "detected": 1784900042432,
-      "src": "BBC Business",
-      "title": "即使我们中的一个人赚得多，我们也会平分钱",
-      "orig": "We split money equally even when one of us earned a lot more",
-      "link": "https://www.bbc.co.uk/news/articles/cz05rdn1n80o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1784898052,
-      "detected": 1784898962565,
-      "src": "U.Today",
-      "title": "币安将三种加密代币列入退市观察：谁受到了影响？",
-      "orig": "Binance Adds Three Crypto Tokens to Delisting Watch: Who's Affected?",
-      "link": "https://u.today/binance-adds-three-crypto-tokens-to-delisting-watch-whos-affected"
     }
   ]
 }

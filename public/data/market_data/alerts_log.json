@@ -1,6 +1,58 @@
 {
   "alerts": [
     {
+      "time": "2026-08-02T17:55:01.696Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟10549s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 24
+    },
+    {
+      "time": "2026-08-02T17:45:02.172Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "market_snapshot",
+      "message": "市场快照: Binance正常",
+      "errors": [
+        "延迟319495s但诊断通过: Binance正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 765
+    },
+    {
+      "time": "2026-08-02T17:10:02.180Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟7849s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 15
+    },
+    {
+      "time": "2026-08-02T17:00:02.114Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "market_snapshot",
+      "message": "市场快照: Binance正常",
+      "errors": [
+        "延迟316795s但诊断通过: Binance正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 756
+    },
+    {
       "time": "2026-08-02T16:40:01.253Z",
       "type": "confirmed_failure",
       "level": "warn",
@@ -57,8 +109,10 @@
         "延迟312294s但诊断通过: Binance正常"
       ],
       "fix": "",
-      "resolved": false,
-      "consecutiveFailures": 741
+      "resolved": true,
+      "consecutiveFailures": 741,
+      "resolvedAt": "2026-08-02T17:45:02.172Z",
+      "expired": true
     },
     {
       "time": "2026-08-02T15:45:01.345Z",
@@ -84,8 +138,10 @@
         "延迟310494s但诊断通过: Binance正常"
       ],
       "fix": "",
-      "resolved": false,
-      "consecutiveFailures": 735
+      "resolved": true,
+      "consecutiveFailures": 735,
+      "resolvedAt": "2026-08-02T17:15:01.456Z",
+      "expired": true
     },
     {
       "time": "2026-08-02T15:00:02.174Z",
@@ -2864,69 +2920,8 @@
       "consecutiveFailures": 987,
       "resolvedAt": "2026-07-31T19:50:02.124Z",
       "expired": true
-    },
-    {
-      "time": "2026-07-31T17:30:01.909Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟145794s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 186,
-      "resolvedAt": "2026-07-31T19:30:02.240Z",
-      "expired": true
-    },
-    {
-      "time": "2026-07-31T17:30:01.909Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟86616s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 273,
-      "resolvedAt": "2026-07-31T19:30:02.240Z",
-      "expired": true
-    },
-    {
-      "time": "2026-07-31T17:20:01.216Z",
-      "type": "confirmed_failure",
-      "level": "critical",
-      "source": "eth",
-      "message": "ETH大户: Alchemy不可达: Request failed with status code 429",
-      "errors": [
-        "Alchemy不可达: Request failed with status code 429",
-        "建议修复: 检查Alchemy API Key或网络"
-      ],
-      "fix": "检查Alchemy API Key或网络",
-      "resolved": true,
-      "consecutiveFailures": 981,
-      "resolvedAt": "2026-07-31T19:20:01.669Z",
-      "expired": true
-    },
-    {
-      "time": "2026-07-31T16:45:02.094Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟143095s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 177,
-      "resolvedAt": "2026-07-31T18:45:01.622Z",
-      "expired": true
     }
   ],
-  "updated": "2026-08-02T16:55:01.710Z",
+  "updated": "2026-08-02T17:55:01.696Z",
   "total": 200
 }
