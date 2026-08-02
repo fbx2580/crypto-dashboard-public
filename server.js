@@ -33,12 +33,29 @@ app.use('/api/defi', require('./modules/defi'));
 app.get('/api/whale/transfers', (req, res) => {
   // 主存储：SQLite（whale-monitor 实时写入）
   const chain = req.query.chain;
+  const limit = Math.min(parseInt(req.query.limit) || 50, 200);
+  const before = parseInt(req.query.before) || 0;   // 翻页：拿比这个 ts 更早的
+  const after = parseInt(req.query.after) || 0;      // 增量：拿比这个 ts 更新的
+
   try {
     let rows;
-    if (chain) rows = db.prepare('SELECT * FROM whale_transfers WHERE chain = ? ORDER BY ts DESC ').all(chain.toUpperCase());
-    else rows = db.prepare('SELECT * FROM whale_transfers ORDER BY ts DESC ').all();
+    if (after) {
+      // 增量轮询：只要新数据
+      rows = db.prepare('SELECT * FROM whale_transfers WHERE ts > ? ORDER BY ts DESC LIMIT ?').all(after, limit);
+    } else if (before) {
+      // 翻页：加载更早的历史
+      const where = chain ? 'WHERE chain = ? AND ts < ?' : 'WHERE ts < ?';
+      const params = chain ? [chain.toUpperCase(), before] : [before];
+      rows = db.prepare(`SELECT * FROM whale_transfers ${where} ORDER BY ts DESC LIMIT ?`).all(...params, limit + 1);
+    } else if (chain) {
+      rows = db.prepare('SELECT * FROM whale_transfers WHERE chain = ? ORDER BY ts DESC LIMIT ?').all(chain.toUpperCase(), limit + 1);
+    } else {
+      rows = db.prepare('SELECT * FROM whale_transfers ORDER BY ts DESC LIMIT ?').all(limit + 1);
+    }
     if (rows.length > 0) {
-      return res.json({ updated: Date.now(), transfers: rows.map(r => ({
+      const hasMore = rows.length > limit;
+      if (hasMore) rows = rows.slice(0, limit);
+      return res.json({ updated: Date.now(), hasMore, transfers: rows.map(r => ({
         c: r.chain, val: r.value, hash: r.hash, ts: r.ts,
         from: r.from_addr, to: r.to_addr,
         exFrom: r.ex_from, exTo: r.ex_to
@@ -48,9 +65,17 @@ app.get('/api/whale/transfers', (req, res) => {
   // 降级：读 JSON 文件
   const whaleFile = path.join(DATA_DIR, 'whale', 'transfers.json');
   try {
-    if (fs.existsSync(whaleFile)) return res.json(JSON.parse(fs.readFileSync(whaleFile, 'utf8')));
+    if (fs.existsSync(whaleFile)) {
+      const data = JSON.parse(fs.readFileSync(whaleFile, 'utf8'));
+      const transfers = data.transfers || [];
+      let filtered = transfers;
+      if (after) filtered = transfers.filter(t => t.ts > after);
+      else if (before) filtered = transfers.filter(t => t.ts < before);
+      const sliced = filtered.slice(0, limit);
+      return res.json({ updated: Date.now(), hasMore: filtered.length > limit, transfers: sliced });
+    }
   } catch(e) {}
-  res.json({ updated: Date.now(), transfers: [] });
+  res.json({ updated: Date.now(), hasMore: false, transfers: [] });
 });
 
 app.get('/api/whale/addresses', (req, res) => {

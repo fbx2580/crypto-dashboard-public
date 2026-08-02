@@ -144,7 +144,9 @@ async function generateReply(uid) {
   const recent = (data.messages || []).slice(-20);
   const knowledge = getKnowledge();
 
-  const model = selectModel(msg);
+  // 根据最后一条用户消息选择模型
+  const lastMsg = (data.messages || []).filter(m => m.role === 'user').slice(-1)[0]?.text || '';
+  const model = selectModel(lastMsg);
   logModelUsage(model, uid);
   const res = await axios.post('https://api.deepseek.com/chat/completions', {
     model: model,

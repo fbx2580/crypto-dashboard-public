@@ -48,6 +48,40 @@
   --orange: #bd561d;
 }
 
+/* 白色主题 — 后门AI样式覆盖 */
+[data-theme="white"] .backdoor {
+  border-color: var(--border);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  background: var(--bg);
+}
+[data-theme="white"] .backdoor-header {
+  border-bottom-color: var(--border);
+}
+[data-theme="white"] .bd-msg.user {
+  background: var(--accent);
+  color: #ffffff;
+}
+[data-theme="white"] .bd-msg.assistant {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+[data-theme="white"] .backdoor-input-line {
+  border-top-color: var(--border);
+}
+[data-theme="white"] .backdoor-input {
+  border-color: var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+[data-theme="white"] .backdoor-input::placeholder {
+  color: var(--text-dim);
+}
+[data-theme="white"] .backdoor-send {
+  border-color: var(--border);
+  color: var(--accent);
+}
+
 html, body {
   font-family: var(--font);
   background: var(--bg);

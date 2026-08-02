@@ -1,9 +1,54 @@
 {
   "date": "2026-08-02",
   "type": "news",
-  "updated": 1785680672074,
-  "total": 81,
+  "updated": 1785686445895,
+  "total": 86,
   "records": [
+    {
+      "s": "The future of crypto payments won't include on-ramps or bridges, Fun CEO says",
+      "t": "2026-08-02T16:00:00.000Z",
+      "ts": 1785686400,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/02/the-future-of-crypto-payments-won-t-include-on-ramps-or-bridges-fun-ceo-says",
+      "s_cn": "Fun 首席执行官表示，加密支付的未来不会包括入口匝道或桥梁",
+      "_ts": 1785686445879
+    },
+    {
+      "s": "Why $89 Million Coldcard Drain Is Bullish for Bitcoin ETFs, Bloomberg Analyst Explains",
+      "t": "2026-08-02T15:20:15.000Z",
+      "ts": 1785684015,
+      "src": "U.Today",
+      "link": "https://u.today/why-89-million-coldcard-drain-is-bullish-for-bitcoin-etfs-bloomberg-analyst-explains",
+      "s_cn": "彭博社分析师解释为何 Coldcard 流失 8900 万美元对比特币 ETF 有利",
+      "_ts": 1785684872612
+    },
+    {
+      "s": "Strategy leaves preferred STRC dividend at 12% as price still below par",
+      "t": "2026-08-02T15:23:33.000Z",
+      "ts": 1785684213,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/strategy-leaves-preferred-strc-dividend-at-12-price-still-below-par?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "由于价格仍低于面值，战略将优先 STRC 股息维持在 12%",
+      "_ts": 1785684563338
+    },
+    {
+      "s": "Urgent XRPL Update: Ripple Director Urges Node Operators to Install Critical Fix",
+      "t": "2026-08-02T14:45:56.000Z",
+      "ts": 1785681956,
+      "src": "U.Today",
+      "link": "https://u.today/urgent-xrpl-update-ripple-director-urges-node-operators-to-install-critical-fix",
+      "s_cn": "紧急 XRPL 更新：Ripple 总监敦促节点运营商安装关键修复程序",
+      "_ts": 1785683669611
+    },
+    {
+      "s": "What’s the Deal With Meta’s ‘Pervert Glasses’?",
+      "t": "2026-08-02T15:01:03.000Z",
+      "ts": 1785682863,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374808/whats-the-deal-with-meta-pervert-glasses",
+      "s_cn": "Meta 的“变态眼镜”是怎么回事？",
+      "_ts": 1785682901808
+    },
     {
       "s": "4 Trillion SHIB in 24 Hours: Who Is Readying Shiba Inu Coin for $0.000005 Breakout?",
       "t": "2026-08-02T14:10:15.000Z",

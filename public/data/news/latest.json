@@ -1,6 +1,51 @@
 {
   "items": [
     {
+      "s": "The future of crypto payments won't include on-ramps or bridges, Fun CEO says",
+      "t": "2026-08-02T16:00:00.000Z",
+      "ts": 1785686400,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/02/the-future-of-crypto-payments-won-t-include-on-ramps-or-bridges-fun-ceo-says",
+      "s_cn": "Fun 首席执行官表示，加密支付的未来不会包括入口匝道或桥梁",
+      "_ts": 1785686445879
+    },
+    {
+      "s": "Why $89 Million Coldcard Drain Is Bullish for Bitcoin ETFs, Bloomberg Analyst Explains",
+      "t": "2026-08-02T15:20:15.000Z",
+      "ts": 1785684015,
+      "src": "U.Today",
+      "link": "https://u.today/why-89-million-coldcard-drain-is-bullish-for-bitcoin-etfs-bloomberg-analyst-explains",
+      "s_cn": "彭博社分析师解释为何 Coldcard 流失 8900 万美元对比特币 ETF 有利",
+      "_ts": 1785684872612
+    },
+    {
+      "s": "Strategy leaves preferred STRC dividend at 12% as price still below par",
+      "t": "2026-08-02T15:23:33.000Z",
+      "ts": 1785684213,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/strategy-leaves-preferred-strc-dividend-at-12-price-still-below-par?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "由于价格仍低于面值，战略将优先 STRC 股息维持在 12%",
+      "_ts": 1785684563338
+    },
+    {
+      "s": "Urgent XRPL Update: Ripple Director Urges Node Operators to Install Critical Fix",
+      "t": "2026-08-02T14:45:56.000Z",
+      "ts": 1785681956,
+      "src": "U.Today",
+      "link": "https://u.today/urgent-xrpl-update-ripple-director-urges-node-operators-to-install-critical-fix",
+      "s_cn": "紧急 XRPL 更新：Ripple 总监敦促节点运营商安装关键修复程序",
+      "_ts": 1785683669611
+    },
+    {
+      "s": "What’s the Deal With Meta’s ‘Pervert Glasses’?",
+      "t": "2026-08-02T15:01:03.000Z",
+      "ts": 1785682863,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374808/whats-the-deal-with-meta-pervert-glasses",
+      "s_cn": "Meta 的“变态眼镜”是怎么回事？",
+      "_ts": 1785682901808
+    },
+    {
       "s": "4 Trillion SHIB in 24 Hours: Who Is Readying Shiba Inu Coin for $0.000005 Breakout?",
       "t": "2026-08-02T14:10:15.000Z",
       "ts": 1785679815,
@@ -4453,53 +4498,8 @@
       "link": "https://decrypt.co/374519/myanmar-approves-death-penalty-for-forced-scam-labor-life-for-crypto-fraud",
       "s_cn": "缅甸批准对强迫诈骗劳动判处死刑，对加密货币欺诈判处终身监禁",
       "_ts": 1785238201441
-    },
-    {
-      "s": "UPS beats earnings expectations, raises full-year guidance",
-      "t": "2026-07-28T10:27:36.000Z",
-      "ts": 1785234456,
-      "src": "CNBC",
-      "link": "https://www.cnbc.com/2026/07/28/ups-ups-q2-2026-earnings.html",
-      "s_cn": "UPS 超出盈利预期并上调全年指引",
-      "_ts": 1785237807826
-    },
-    {
-      "s": "Ripple Developer Clears Up Misconception About XRP Ledger Feature Usage",
-      "t": "2026-07-28T10:45:23.000Z",
-      "ts": 1785235523,
-      "src": "U.Today",
-      "link": "https://u.today/ripple-developer-clears-up-misconception-about-xrp-ledger-feature-usage",
-      "s_cn": "Ripple 开发者澄清了关于 XRP 账本功能使用的误解",
-      "_ts": 1785237587765
-    },
-    {
-      "s": "Bitcoin drops as South Korean stocks tumble, Senate shelves crypto Clarity Act",
-      "t": "2026-07-28T11:09:16.000Z",
-      "ts": 1785236956,
-      "src": "CoinDesk",
-      "link": "https://www.coindesk.com/markets/2026/07/28/bitcoin-drops-as-south-korean-stocks-tumble-senate-shelves-crypto-clarity-act",
-      "s_cn": "随着韩国股市暴跌，比特币下跌，参议院搁置加密货币清晰度法案",
-      "_ts": 1785237016486
-    },
-    {
-      "s": "What you wear can help you get a job - here's how",
-      "t": "2026-07-28T11:07:13.000Z",
-      "ts": 1785236833,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/c80neg5rd81o?at_medium=RSS&at_campaign=rss",
-      "s_cn": "你的着装可以帮助你找到工作 - 方法如下",
-      "_ts": 1785236852989
-    },
-    {
-      "s": "1inch opens Aqua liquidity protocol across 13 chains",
-      "t": "2026-07-28T11:00:00.000Z",
-      "ts": 1785236400,
-      "src": "CoinDesk",
-      "link": "https://www.coindesk.com/web3/2026/07/27/1inch-opens-aqua-liquidity-protocol-across-13-chains",
-      "s_cn": "1inch开放跨13条链的Aqua流动性协议",
-      "_ts": 1785236439450
     }
   ],
-  "updated": 1785682798219,
+  "updated": 1785690001283,
   "sources": 6
 }

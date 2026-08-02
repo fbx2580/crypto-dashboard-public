@@ -426,11 +426,15 @@ function setupChartMore() {
   });
 }
 
+// ─── 分页状态（替代无限 Set，上限 200 条 DOM）───
+const MAX_DOM = 200;
+let _whaleState = { items: [], hasMore: true, latestTs: 0, oldestTs: 0, filter: 'all', loading: false };
+let _jin10State = { items: [], hasMore: true, latestId: '', oldestId: '', loading: false };
+let _rssState = { items: [], hasMore: true, latestId: '', oldestId: '', loading: false };
+
 let _newsVersion = 0;
 
 // ─── 币圈强信号 ───
-window._whaleTxs = [];
-window._whaleHashes = new Set();
 function dirLabel(t) {
   const fEx = t.exFrom || '';
   const tEx = t.exTo || '';
@@ -439,54 +443,141 @@ function dirLabel(t) {
   if (tEx) return '钱包 → ' + tEx;
   return '钱包 → 钱包';
 }
+function renderWhaleItem(t, isNew) {
+  const newClass = isNew ? ' class="whale-new"' : '';
+  const colors = {USDC:'#22c55e', BTC:'#f7931a', USDT:'#16a34a', ETH:'#627eea'};
+  const col = colors[t.c] || 'var(--accent)';
+  const vs = t.c === 'BTC' ? t.val.toFixed(2) + ' BTC' : t.c === 'ETH' ? t.val.toFixed(0) + ' ETH' : t.c === 'SOL' ? t.val.toFixed(0) + ' SOL' : '$' + Number(t.val).toLocaleString();
+  const fAddr = (t.from||'').slice(0,8)+'...';
+  const tAddr = (t.to||'').slice(0,8)+'...';
+  const fEx = t.exFrom ? '['+t.exFrom+']' : '';
+  const tEx = t.exTo ? '['+t.exTo+']' : '';
+  const dir = dirLabel(t);
+  const tm = t.ts ? new Date(t.ts*1000).toLocaleString('zh-CN',{hour:'2-digit',minute:'2-digit',second:'2-digit'}) : '';
+  const explorer = t.c === 'BTC' ? 'https://blockchain.info/tx/' : 'https://etherscan.io/tx/';
+  const div = document.createElement('div');
+  div.innerHTML = '<div style="font-size:12px;padding:6px 0;border-bottom:1px solid var(--border);font-family:monospace;">' +
+    '<div style="display:flex;justify-content:space-between;">' +
+      '<span style="color:' + col + ';font-weight:700;">' + t.c + '</span>' +
+      '<span style="font-weight:700;">' + vs + '</span>' +
+      '<span style="color:var(--text-dim);font-size:10px;">' + tm + '</span>' +
+      '<a href="' + explorer + t.hash + '" target="_blank" style="color:var(--accent);font-size:10px;text-decoration:none;">🔗</a>' +
+    '</div>' +
+    '<div style="color:var(--text-dim);font-size:10px;margin-top:2px;">' +
+      fEx + fAddr + ' → ' + tEx + tAddr + ' <span style="color:var(--text-dim);font-size:9px;">' + dir + '</span>' +
+    '</div>' +
+  '</div>';
+  if (newClass) div.firstChild.className += newClass;
+  return div.firstChild;
+}
+
 function applyWhaleFilter() {
   const sel = document.getElementById('whaleFilter');
-  const f = sel ? sel.value : 'all';
-  const txs = window._whaleTxs || [];
+  const f = sel ? sel.value : _whaleState.filter;
+  _whaleState.filter = f;
+  const items = _whaleState.items;
+  const filtered = f === 'all' ? items : f === 'USDT/C' ? items.filter(t => t.c === 'USDT' || t.c === 'USDC') : items.filter(t => t.c === f);
   const el = document.getElementById('whaleTransfers');
   if (!el) return;
-  const show = f === 'all' ? txs : f === 'USDT/C' ? txs.filter(t => t.c === 'USDT' || t.c === 'USDC') : txs.filter(t => t.c === f);
-  el.innerHTML = !show.length ? '<div style="color:var(--text-dim);padding:10px;">暂无数据</div>' : show.map(t => {
-    const isNew = !window._whaleHashes.has(t.hash);
-    if (isNew) window._whaleHashes.add(t.hash);
-    const newClass = isNew ? ' class="whale-new"' : '';
-    const colors = {USDC:'#22c55e', BTC:'#f7931a', USDT:'#16a34a', ETH:'#627eea'};
-    const col = colors[t.c] || 'var(--accent)';
-    const vs = t.c === 'BTC' ? t.val.toFixed(2) + ' BTC' : t.c === 'ETH' ? t.val.toFixed(0) + ' ETH' : t.c === 'SOL' ? t.val.toFixed(0) + ' SOL' : '$' + Number(t.val).toLocaleString();
-    const fAddr = (t.from||'').slice(0,8)+'...';
-    const tAddr = (t.to||'').slice(0,8)+'...';
-    const fEx = t.exFrom ? '['+t.exFrom+']' : '';
-    const tEx = t.exTo ? '['+t.exTo+']' : '';
-    const dir = dirLabel(t);
-    const tm = t.ts ? new Date(t.ts*1000).toLocaleString('zh-CN',{hour:'2-digit',minute:'2-digit',second:'2-digit'}) : '';
-    const explorer = t.c === 'BTC' ? 'https://blockchain.info/tx/' : 'https://etherscan.io/tx/';
-    return '<div' + newClass + ' style="font-size:12px;padding:6px 0;border-bottom:1px solid var(--border);font-family:monospace;">' +
-      '<div style="display:flex;justify-content:space-between;">' +
-        '<span style="color:' + col + ';font-weight:700;">' + t.c + '</span>' +
-        '<span style="font-weight:700;">' + vs + '</span>' +
-        '<span style="color:var(--text-dim);font-size:10px;">' + tm + '</span>' +
-        '<a href="' + explorer + t.hash + '" target="_blank" style="color:var(--accent);font-size:10px;text-decoration:none;">🔗</a>' +
-      '</div>' +
-      '<div style="color:var(--text-dim);font-size:10px;margin-top:2px;">' +
-        fEx + fAddr + ' → ' + tEx + tAddr + ' <span style="color:var(--text-dim);font-size:9px;">' + dir + '</span>' +
-      '</div>' +
-    '</div>';
-  }).join('');
+
+  // 全量重建（filter 切换时）
+  el.innerHTML = '';
+  if (!filtered.length) {
+    el.innerHTML = '<div style="color:var(--text-dim);padding:10px;">暂无数据</div>';
+    return;
+  }
+  const show = filtered.slice(0, MAX_DOM);
+  show.forEach(t => el.appendChild(renderWhaleItem(t, false)));
+
+  // 翻页提示
+  if (_whaleState.hasMore && filtered.length >= MAX_DOM) {
+    const hint = document.createElement('div');
+    hint.id = 'whaleLoadMore';
+    hint.style.cssText = 'text-align:center;padding:8px;color:var(--text-dim);cursor:pointer;font-size:11px;';
+    hint.textContent = '▼ 下拉加载更多';
+    hint.onclick = () => loadMoreWhales();
+    el.appendChild(hint);
+  }
 }
 
 let _altcoinData = null;
 
+async function loadMoreWhales() {
+  if (_whaleState.loading || !_whaleState.hasMore) return;
+  _whaleState.loading = true;
+  const hint = document.getElementById('whaleLoadMore');
+  if (hint) hint.textContent = '加载中...';
+  try {
+    const url = `/api/whale/transfers?limit=50&before=${_whaleState.oldestTs}`;
+    const resp = await fetch(url);
+    if (!resp.ok) return;
+    const data = await resp.json();
+    const newItems = data.transfers || [];
+    if (newItems.length) {
+      _whaleState.items = _whaleState.items.concat(newItems);
+      _whaleState.oldestTs = newItems[newItems.length - 1].ts;
+      _whaleState.hasMore = data.hasMore !== false;
+      if (_whaleState.items.length > MAX_DOM * 2) {
+        _whaleState.items = _whaleState.items.slice(-MAX_DOM * 2);
+      }
+      applyWhaleFilter();
+    } else {
+      _whaleState.hasMore = false;
+      if (hint) hint.textContent = '— 已加载全部 —';
+    }
+  } catch(e) {}
+  _whaleState.loading = false;
+}
+
 async function refreshAltcoinSignals() {
   try {
-    const [walletRes, whaleRes] = await Promise.all([
-      fetch('/api/wallets'),
-      fetch('/api/whale/transfers'),
-    ]);
+    // 钱包数据不变
+    const walletRes = await fetch('/api/wallets');
     const walletData = walletRes.ok ? await walletRes.json() : { wallets: [] };
-    const whaleData = whaleRes.ok ? await whaleRes.json() : { transfers: [] };
-    window._whaleTxs = whaleData.transfers || [];
-    applyWhaleFilter();
     renderWallets(walletData);
+
+    // 巨鲸：首次全量 or 增量轮询
+    let url;
+    if (_whaleState.latestTs) {
+      url = `/api/whale/transfers?limit=20&after=${_whaleState.latestTs}`;
+    } else {
+      url = '/api/whale/transfers?limit=50';
+    }
+    const whaleRes = await fetch(url);
+    if (!whaleRes.ok) return;
+    const whaleData = await whaleRes.json();
+    const newItems = whaleData.transfers || [];
+
+    if (newItems.length) {
+      if (_whaleState.latestTs) {
+        // 增量：新数据插到前面
+        _whaleState.items = newItems.concat(_whaleState.items);
+        _whaleState.latestTs = newItems[0].ts;
+        // 只在当前 filter 匹配时插 DOM，避免全量重建
+        const f = _whaleState.filter;
+        const el = document.getElementById('whaleTransfers');
+        if (el && el.firstChild && el.firstChild.className !== '') {
+          const matched = f === 'all' ? newItems : f === 'USDT/C' ? newItems.filter(t => t.c === 'USDT' || t.c === 'USDC') : newItems.filter(t => t.c === f);
+          matched.slice(0, 10).reverse().forEach(t => {
+            el.insertBefore(renderWhaleItem(t, true), el.firstChild);
+          });
+        }
+        // DOM 上限裁剪
+        while (el && el.children.length > MAX_DOM) {
+          const loadMore = document.getElementById('whaleLoadMore');
+          const last = loadMore ? loadMore.previousSibling : el.lastChild;
+          if (last && last !== loadMore) last.remove();
+          else break;
+        }
+      } else {
+        // 首次加载
+        _whaleState.items = newItems;
+        _whaleState.latestTs = newItems[0]?.ts || 0;
+        _whaleState.oldestTs = newItems[newItems.length - 1]?.ts || 0;
+        _whaleState.hasMore = whaleData.hasMore !== false;
+        applyWhaleFilter();
+      }
+    }
   } catch(e) {}
 }
 
@@ -624,72 +715,224 @@ function setupViews() {
 }
 
 // ─── News: 分类页面导航 + 下拉刷新 ───
-// ─── 消息面：重建版 — 只展示真实 RSS 数据，零伪造 ───
-window._jin10Seen = new Set();
-window._rssSeen = new Set();
+// ─── 消息面：分页 + 增量轮询 ───
+function renderJin10Item(i) {
+  const hasBody = i.body && i.body.length > 5;
+  const imp = i.imp ? ' imp' : '';
+  const div = document.createElement('div');
+  div.className = 'jin10-item' + imp + ' whale-new';
+  if (hasBody) div.onclick = function(){this.classList.toggle('expanded');};
+  div.innerHTML = '<div class="jin10-head"><span class="jin10-time">' + i.t + '</span><span class="jin10-text">' + i.s + '</span>' + (hasBody ? '<span class="jin10-arrow">▾</span>' : '') + '</div>' + (hasBody ? '<div class="jin10-body">' + i.body + '</div>' : '');
+  return div;
+}
+
+function renderRssItem(i, now) {
+  const pad2 = n => String(n).padStart(2, '0');
+  const pub = new Date(i.t);
+  let ts;
+  if (pub.toDateString() === now.toDateString()) ts = pad2(pub.getHours()) + ':' + pad2(pub.getMinutes());
+  else {
+    const y = new Date(now); y.setDate(y.getDate()-1);
+    ts = pub.toDateString() === y.toDateString() ? '昨天 ' + pad2(pub.getHours()) + ':' + pad2(pub.getMinutes()) : pad2(pub.getMonth()+1) + '-' + pad2(pub.getDate()) + ' ' + pad2(pub.getHours()) + ':' + pad2(pub.getMinutes());
+  }
+  const title = i.s_cn || i.s;
+  const link = i.link || '';
+  const hasLink = link.length > 5;
+  const div = document.createElement('div');
+  div.className = 'jin10-item whale-new';
+  if (hasLink) div.onclick = function(){this.classList.toggle('expanded');};
+  div.innerHTML = '<div class="jin10-head"><span class="jin10-time">' + ts + '</span><span class="jin10-text">' + title + '</span>' + (hasLink ? '<span class="jin10-arrow">▾</span>' : '') + '</div>' + (hasLink ? '<div class="jin10-body"><a href="' + link + '" target="_blank" style="color:var(--accent);text-decoration:underline;font-size:12px;">查看原文 ↗</a></div>' : '');
+  return div;
+}
+
 function setupNews() {
-  fetch('/api/news').then(r => r.json()).then(data => {
-    const jin10 = data?.jin10 || [];
-    const rss = data?.rss || [];
+  // 首次加载：拉最新 30 条
+  Promise.all([
+    fetch('/api/news/jin10?limit=30').then(r => r.json()),
+    fetch('/api/news/rss?limit=30').then(r => r.json()),
+  ]).then(([jin10Data, rssData]) => {
+    const jin10 = jin10Data.items || [];
+    const rss = rssData.items || [];
 
-    // 金十模块 — 仅追加新条目
-    const jin10Body = document.getElementById('jin10Body');
-    const jin10Count = document.getElementById('jin10Count');
-    if (jin10Count) jin10Count.textContent = '(' + jin10.length + ')';
-    if (jin10Body) {
-      if (!jin10.length) {
-        if (!jin10Body.children.length) jin10Body.innerHTML = '<div class="sig-loading">暂无快讯</div>';
-      } else {
-        let newCount = 0;
-        jin10.slice().reverse().forEach(i => {
-          const key = i.t + i.s;
-          if (window._jin10Seen.has(key)) return;
-          window._jin10Seen.add(key);
-          newCount++;
-          const hasBody = i.body && i.body.length > 5;
-          const imp = i.imp ? ' imp' : '';
-          const div = document.createElement('div');
-          div.className = 'jin10-item' + imp + ' whale-new';
-          if (hasBody) div.onclick = function(){this.classList.toggle('expanded');};
-          div.innerHTML = '<div class="jin10-head"><span class="jin10-time">' + i.t + '</span><span class="jin10-text">' + i.s + '</span>' + (hasBody ? '<span class="jin10-arrow">▾</span>' : '') + '</div>' + (hasBody ? '<div class="jin10-body">' + i.body + '</div>' : '');
-          jin10Body.insertBefore(div, jin10Body.firstChild);
-        });
-      }
+    if (jin10.length) {
+      _jin10State.items = jin10;
+      _jin10State.latestId = jin10[0].t + jin10[0].s;
+      _jin10State.oldestId = jin10[jin10.length - 1].t + jin10[jin10.length - 1].s;
+      _jin10State.hasMore = jin10Data.hasMore !== false;
+    }
+    if (rss.length) {
+      _rssState.items = rss;
+      _rssState.latestId = rss[0].s + (rss[0].link || '');
+      _rssState.oldestId = rss[rss.length - 1].s + (rss[rss.length - 1].link || '');
+      _rssState.hasMore = rssData.hasMore !== false;
     }
 
-    // RSS 模块 — 仅追加新条目
-    const rssBody = document.getElementById('rssBody');
-    const rssCount = document.getElementById('rssCount');
-    if (rssCount) rssCount.textContent = '(' + rss.length + ')';
-    if (rssBody) {
-      if (!rss.length) {
-        if (!rssBody.children.length) rssBody.innerHTML = '<div class="sig-loading">暂无新闻</div>';
-      } else {
-        const now = new Date();
-        const pad2 = n => String(n).padStart(2, '0');
-        rss.sort((a,b) => new Date(b.t) - new Date(a.t)).reverse().forEach(i => {
-          const key = i.s + (i.link || '');
-          if (window._rssSeen.has(key)) return;
-          window._rssSeen.add(key);
-          const pub = new Date(i.t);
-          let ts;
-          if (pub.toDateString() === now.toDateString()) ts = pad2(pub.getHours()) + ':' + pad2(pub.getMinutes());
-          else {
-            const y = new Date(now); y.setDate(y.getDate()-1);
-            ts = pub.toDateString() === y.toDateString() ? '昨天 ' + pad2(pub.getHours()) + ':' + pad2(pub.getMinutes()) : pad2(pub.getMonth()+1) + '-' + pad2(pub.getDate()) + ' ' + pad2(pub.getHours()) + ':' + pad2(pub.getMinutes());
-          }
-          const title = i.s_cn || i.s;
-          const link = i.link || '';
-          const hasLink = link.length > 5;
-          const div = document.createElement('div');
-          div.className = 'jin10-item whale-new';
-          if (hasLink) div.onclick = function(){this.classList.toggle('expanded');};
-          div.innerHTML = '<div class="jin10-head"><span class="jin10-time">' + ts + '</span><span class="jin10-text">' + title + '</span>' + (hasLink ? '<span class="jin10-arrow">▾</span>' : '') + '</div>' + (hasLink ? '<div class="jin10-body"><a href="' + link + '" target="_blank" style="color:var(--accent);text-decoration:underline;font-size:12px;">查看原文 ↗</a></div>' : '');
-          rssBody.insertBefore(div, rssBody.firstChild);
-        });
-      }
-    }
+    // 渲染
+    renderNewsLists();
   }).catch(() => {});
+}
+
+function renderNewsLists() {
+  const now = new Date();
+
+  // 金十
+  const jin10Body = document.getElementById('jin10Body');
+  const jin10Count = document.getElementById('jin10Count');
+  if (jin10Count) jin10Count.textContent = '(' + _jin10State.items.length + ')';
+  if (jin10Body) {
+    if (!_jin10State.items.length) {
+      jin10Body.innerHTML = '<div class="sig-loading">暂无快讯</div>';
+    } else {
+      jin10Body.innerHTML = '';
+      _jin10State.items.slice(0, MAX_DOM).forEach(i => {
+        jin10Body.appendChild(renderJin10Item(i));
+      });
+      if (_jin10State.hasMore) {
+        const hint = document.createElement('div');
+        hint.id = 'jin10LoadMore';
+        hint.style.cssText = 'text-align:center;padding:6px;color:var(--text-dim);cursor:pointer;font-size:10px;';
+        hint.textContent = '▼ 加载更多';
+        hint.onclick = loadMoreJin10;
+        jin10Body.appendChild(hint);
+      }
+    }
+  }
+
+  // RSS
+  const rssBody = document.getElementById('rssBody');
+  const rssCount = document.getElementById('rssCount');
+  if (rssCount) rssCount.textContent = '(' + _rssState.items.length + ')';
+  if (rssBody) {
+    if (!_rssState.items.length) {
+      rssBody.innerHTML = '<div class="sig-loading">暂无新闻</div>';
+    } else {
+      rssBody.innerHTML = '';
+      _rssState.items.slice(0, MAX_DOM).forEach(i => {
+        rssBody.appendChild(renderRssItem(i, now));
+      });
+      if (_rssState.hasMore) {
+        const hint = document.createElement('div');
+        hint.id = 'rssLoadMore';
+        hint.style.cssText = 'text-align:center;padding:6px;color:var(--text-dim);cursor:pointer;font-size:10px;';
+        hint.textContent = '▼ 加载更多';
+        hint.onclick = loadMoreRss;
+        rssBody.appendChild(hint);
+      }
+    }
+  }
+}
+
+async function checkNewsIncremental() {
+  // 增量轮询：只拿新数据
+  const fetches = [];
+  if (_jin10State.latestId) {
+    fetches.push(fetch('/api/news/jin10?limit=5&after=' + encodeURIComponent(_jin10State.latestId)).then(r => r.json()).then(d => ({ type:'jin10', data:d })));
+  }
+  if (_rssState.latestId) {
+    fetches.push(fetch('/api/news/rss?limit=5&after=' + encodeURIComponent(_rssState.latestId)).then(r => r.json()).then(d => ({ type:'rss', data:d })));
+  }
+  if (!fetches.length) return;
+
+  const results = await Promise.all(fetches).catch(() => []);
+  for (const r of results) {
+    if (!r) continue;
+    const items = r.data.items || [];
+    if (!items.length) continue;
+
+    if (r.type === 'jin10') {
+      _jin10State.items = items.concat(_jin10State.items);
+      _jin10State.latestId = items[0].t + items[0].s;
+      if (_jin10State.items.length > MAX_DOM * 2) _jin10State.items = _jin10State.items.slice(0, MAX_DOM * 2);
+      const body = document.getElementById('jin10Body');
+      if (body && body.firstChild) {
+        const countEl = document.getElementById('jin10Count');
+        if (countEl) countEl.textContent = '(' + _jin10State.items.length + ')';
+        items.slice(0, 10).reverse().forEach(i => {
+          body.insertBefore(renderJin10Item(i), body.firstChild);
+        });
+        while (body.children.length > MAX_DOM) {
+          const loadMore = document.getElementById('jin10LoadMore');
+          const last = loadMore ? loadMore.previousSibling : body.lastChild;
+          if (last && last !== loadMore) last.remove();
+          else break;
+        }
+      }
+    } else {
+      _rssState.items = items.concat(_rssState.items);
+      _rssState.latestId = items[0].s + (items[0].link || '');
+      if (_rssState.items.length > MAX_DOM * 2) _rssState.items = _rssState.items.slice(0, MAX_DOM * 2);
+      const body = document.getElementById('rssBody');
+      if (body && body.firstChild) {
+        const countEl = document.getElementById('rssCount');
+        if (countEl) countEl.textContent = '(' + _rssState.items.length + ')';
+        const now = new Date();
+        items.slice(0, 10).reverse().forEach(i => {
+          body.insertBefore(renderRssItem(i, now), body.firstChild);
+        });
+        while (body.children.length > MAX_DOM) {
+          const loadMore = document.getElementById('rssLoadMore');
+          const last = loadMore ? loadMore.previousSibling : body.lastChild;
+          if (last && last !== loadMore) last.remove();
+          else break;
+        }
+      }
+    }
+  }
+}
+
+async function loadMoreJin10() {
+  if (_jin10State.loading || !_jin10State.hasMore) return;
+  _jin10State.loading = true;
+  const hint = document.getElementById('jin10LoadMore');
+  if (hint) hint.textContent = '加载中...';
+  try {
+    const resp = await fetch('/api/news/jin10?limit=30&before=' + encodeURIComponent(_jin10State.oldestId));
+    const data = await resp.json();
+    const items = data.items || [];
+    if (items.length) {
+      _jin10State.items = _jin10State.items.concat(items);
+      _jin10State.oldestId = items[items.length - 1].t + items[items.length - 1].s;
+      _jin10State.hasMore = data.hasMore !== false;
+      const body = document.getElementById('jin10Body');
+      if (body) {
+        if (hint) hint.remove();
+        items.forEach(i => body.appendChild(renderJin10Item(i)));
+        if (_jin10State.hasMore) body.appendChild(hint);
+      }
+    } else {
+      _jin10State.hasMore = false;
+      if (hint) hint.textContent = '— 已加载全部 —';
+    }
+  } catch(e) {}
+  _jin10State.loading = false;
+}
+
+async function loadMoreRss() {
+  if (_rssState.loading || !_rssState.hasMore) return;
+  _rssState.loading = true;
+  const hint = document.getElementById('rssLoadMore');
+  if (hint) hint.textContent = '加载中...';
+  try {
+    const resp = await fetch('/api/news/rss?limit=30&before=' + encodeURIComponent(_rssState.oldestId));
+    const data = await resp.json();
+    const items = data.items || [];
+    if (items.length) {
+      _rssState.items = _rssState.items.concat(items);
+      _rssState.oldestId = items[items.length - 1].s + (items[items.length - 1].link || '');
+      _rssState.hasMore = data.hasMore !== false;
+      const now = new Date();
+      const body = document.getElementById('rssBody');
+      if (body) {
+        if (hint) hint.remove();
+        items.forEach(i => body.appendChild(renderRssItem(i, now)));
+        if (_rssState.hasMore) body.appendChild(hint);
+      }
+    } else {
+      _rssState.hasMore = false;
+      if (hint) hint.textContent = '— 已加载全部 —';
+    }
+  } catch(e) {}
+  _rssState.loading = false;
 }
 
 // ─── Init ───
@@ -709,42 +952,39 @@ function init() {
   if (candleBtn) candleBtn.addEventListener('click', () => { candleBtn.classList.add('active'); areaBtn.classList.remove('active'); State.chartType = 'candle'; loadChart(); });
 
   // —— 分级别刷新 ——
-  // Tier 0: 秒级（BTC大盘 + K线最新蜡烛）—— 1秒
-  setInterval(() => { tickBtcPrice(); tickChart(); }, 1000);
+  // Tier 0: BTC大盘 + K线最新蜡烛 —— 3秒（隧道高延迟，1秒太频）
+  setInterval(() => { tickBtcPrice(); tickChart(); }, 3000);
 
   // Tier 1: 大盘（纳指/标普/上证 + 主流排行）—— 5秒
   setInterval(() => { refreshMarket(); refreshTickers(); }, 5000);
 
-  // Tier 2: 存储股 + 强信号—— 5秒
-  setInterval(() => { refreshAnomalies(); refreshAltcoinSignals(); }, 2000);
+  // Tier 2: 存储股 + 巨鲸强信号 —— 3秒
+  setInterval(() => { refreshAnomalies(); refreshAltcoinSignals(); }, 3000);
 
   // Tier 3: 低频（恐惧指数 + 山寨季指数）—— 3分钟
   setInterval(() => { refreshIndicators(); refreshLlama(); }, 180000);
 
-  // P0: 消息面前端1秒刷新 — 不可修改
+  // 消息面 —— 增量轮询（3秒一次，只拉新数据）
   setInterval(() => {
-    if (document.getElementById('tabNews')?.classList.contains('active')) {
-      setupNews();
-    }
-  }, 1000);
+    checkNewsIncremental();
+  }, 3000);
 
-  // 巨鲸转账：无论哪个 tab 都 2 秒拉一次
   // 聪明地址分析：30秒刷新
   refreshAddressAnalysis();
   setInterval(refreshAddressAnalysis, 30000);
-  setInterval(() => {
-    refreshAltcoinSignals();
-  }, 2000);
 
-  // loading动画不等打字，refreshAll完成就消失
-  bootTerminal();
-  refreshAll().then(() => {
-    const loader = document.getElementById('fullLoader');
-    if (loader) {
-      loader.classList.add('hidden');
-      setTimeout(() => { if (loader.parentNode) loader.remove(); }, 500);
-    }
+  // loading动画播完就关页面，不等数据返回
+  bootTerminal().then(() => {
+    setTimeout(() => {
+      const loader = document.getElementById('fullLoader');
+      if (loader) {
+        loader.classList.add('hidden');
+        setTimeout(() => { if (loader.parentNode) loader.remove(); }, 500);
+      }
+    }, 500);
   });
+  // 数据异步加载，不阻塞页面渲染
+  refreshAll();
 }
 
 // ─── 终端启动动画（返回 Promise，完成后 resolve）───
