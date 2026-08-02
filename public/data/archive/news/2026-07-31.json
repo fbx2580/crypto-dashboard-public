@@ -1,9 +1,954 @@
 {
   "date": "2026-07-31",
   "type": "news",
-  "updated": 1785462817770,
-  "total": 65,
+  "updated": 1785535829994,
+  "total": 170,
   "records": [
+    {
+      "s": "Snapchat joins other popular platforms in fight against 'AI slop'",
+      "t": "2026-07-31T21:57:59.000Z",
+      "ts": 1785535079,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c77g6dm5pr8o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Snapchat 与其他流行平台一起对抗“人工智能滥用”",
+      "_ts": 1785535829980
+    },
+    {
+      "s": "Bitcoin holds monthly gain, faces 'choppy' August as 'forced-selling' exhausted, analysts say",
+      "t": "2026-07-31T20:50:58.000Z",
+      "ts": 1785531058,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-holds-onto-july-gain-as-forced-selling-fuel-was-already-spent-analysts-say",
+      "s_cn": "分析师表示，比特币保持月度上涨，但由于“强制抛售”耗尽，八月将面临“波动”",
+      "_ts": 1785531724310
+    },
+    {
+      "s": "Bitcoin holds July gain as 'forced-selling fuel was already spent,' analysts say",
+      "t": "2026-07-31T20:50:58.000Z",
+      "ts": 1785531058,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-holds-onto-july-gain-as-forced-selling-fuel-was-already-spent-analysts-say",
+      "s_cn": "分析师称，比特币保持七月涨幅，因为“强制抛售燃料已经用完”",
+      "_ts": 1785531130479
+    },
+    {
+      "s": "Bitcoin holds July gain, eye  as 'forced-selling fuel was already spent,' analysts say",
+      "t": "2026-07-31T20:50:58.000Z",
+      "ts": 1785531058,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-holds-onto-july-gain-as-forced-selling-fuel-was-already-spent-analysts-say",
+      "s_cn": "分析师称，比特币保持七月涨幅，因为“强制抛售燃料已经用完”",
+      "_ts": 1785531075310
+    },
+    {
+      "s": "Google Yanks Google Earth AI Image Tool a Day After Launch Over Deepfake Fears",
+      "t": "2026-07-31T20:32:50.000Z",
+      "ts": 1785529970,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374805/google-yanks-google-earth-ai-image-tool-deepfake-fears",
+      "s_cn": "由于担心 Deepfake，谷歌在推出 Google Earth 人工智能图像工具后一天就将其撤下",
+      "_ts": 1785530024275
+    },
+    {
+      "s": "Bank of Italy finds no consistent cost advantage for stablecoin remittances",
+      "t": "2026-07-31T20:10:21.000Z",
+      "ts": 1785528621,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bank-of-italy-study-no-stablecoin-remittance-cost-advantages?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "意大利央行发现稳定币汇款没有持续的成本优势",
+      "_ts": 1785529248058
+    },
+    {
+      "s": "Democrats Hate Crypto More Than Oil Companies and Data Centers, Poll Shows",
+      "t": "2026-07-31T19:52:54.000Z",
+      "ts": 1785527574,
+      "src": "U.Today",
+      "link": "https://u.today/democrats-hate-crypto-more-than-oil-companies-and-data-centers-poll-shows",
+      "s_cn": "民意调查显示，民主党人比石油公司和数据中心更讨厌加密货币",
+      "_ts": 1785528916304
+    },
+    {
+      "s": "AI Music Company Suno Loses Copyright Case in Germany",
+      "t": "2026-07-31T20:03:22.000Z",
+      "ts": 1785528202,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374802/suno-ai-music-copyright-case-germany",
+      "s_cn": "AI音乐公司Suno在德国版权诉讼中败诉",
+      "_ts": 1785528269736
+    },
+    {
+      "s": "US Is Banning Foreign Robots—Even Roombas",
+      "t": "2026-07-31T19:43:24.000Z",
+      "ts": 1785527004,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374799/fcc-bans-foreign-humanoid-robots-china-roombas",
+      "s_cn": "美国禁止外国机器人——甚至 Roomba",
+      "_ts": 1785527066247
+    },
+    {
+      "s": "Pump.fun laid off workers before they received millions in PUMP tokens: Report",
+      "t": "2026-07-31T19:16:19.000Z",
+      "ts": 1785525379,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/pump-fun-employees-fired-tokens-vest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Pump.fun 在工人收到数百万 PUMP 代币之前就解雇了他们：报告",
+      "_ts": 1785525937368
+    },
+    {
+      "s": "Tether posts $1.5 billion operating profit in Q2 as reserve buffer falls by half",
+      "t": "2026-07-31T18:24:55.000Z",
+      "ts": 1785522295,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/31/tether-posts-usd1-5-billion-operating-profit-in-q2-as-reserve-buffer-falls-by-half",
+      "s_cn": "由于准备金缓冲减少一半，Tether 第二季度营业利润达 15 亿美元",
+      "_ts": 1785522321168
+    },
+    {
+      "s": "Fintech broker Clear Street offers investors pre-IPO access to $188 billion AI giant Databricks",
+      "t": "2026-07-31T18:20:01.000Z",
+      "ts": 1785522001,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/clear-street-pre-ipo-platform-databricks.html",
+      "s_cn": "金融科技经纪商 Clear Street 为投资者提供 IPO 前投资 1,880 亿美元人工智能巨头 Databricks 的机会",
+      "_ts": 1785522008964
+    },
+    {
+      "s": "AI firms must answer for rogue bots, says boss of hacked company",
+      "t": "2026-07-31T18:10:28.000Z",
+      "ts": 1785521428,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cr7k49xjzzeo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "被黑公司老板表示，人工智能公司必须对流氓机器人负责",
+      "_ts": 1785521934919
+    },
+    {
+      "s": "The good and the bad of perps, according to crypto traders",
+      "t": "2026-07-31T17:53:59.000Z",
+      "ts": 1785520439,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/31/the-good-and-the-bad-of-perps-according-to-crypto-traders",
+      "s_cn": "加密货币交易员表示，犯罪分子的好与坏",
+      "_ts": 1785520471295
+    },
+    {
+      "s": "Japanese Giant SBI Weighs In on XRP Price",
+      "t": "2026-07-31T17:34:50.000Z",
+      "ts": 1785519290,
+      "src": "U.Today",
+      "link": "https://u.today/japanese-giant-sbi-weighs-in-on-xrp-price",
+      "s_cn": "日本巨头 SBI 关注 XRP 价格",
+      "_ts": 1785520194201
+    },
+    {
+      "s": "‘Spider-Man: Brand New Day’ sets domestic box office preview record with $72 million",
+      "t": "2026-07-31T17:46:45.000Z",
+      "ts": 1785520005,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/spider-man-brand-new-day-box-office-preview-sales.html",
+      "s_cn": "《蜘蛛侠：崭新的一天》以 7200 万美元创下国内预映票房纪录",
+      "_ts": 1785520046450
+    },
+    {
+      "s": "Tether Reports $1.5B Q2 Profit as USDT Supply Grows, Gold Holdings Rise",
+      "t": "2026-07-31T17:10:49.000Z",
+      "ts": 1785517849,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374796/tether-reports-1-5b-q2-profit-usdt-supply-grows",
+      "s_cn": "随着 USDT 供应量的增长和黄金持有量的增加，Tether 第二季度利润为 1.5 亿美元",
+      "_ts": 1785517902669
+    },
+    {
+      "s": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
+      "t": "2026-07-31T17:07:30.000Z",
+      "ts": 1785517650,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
+      "s_cn": "Coldcard 的 3800 万美元（迄今为止）漏洞动摇了人们对自我托管的信心，可能会促使投资者转向 ETF",
+      "_ts": 1785517677952
+    },
+    {
+      "s": "Ex-FTX users report funds being released in $900M distribution round",
+      "t": "2026-07-31T16:56:31.000Z",
+      "ts": 1785516991,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/ftx-users-funds-released-fifth-distribution-round?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "前 FTX 用户报告称资金已在 9 亿美元的分配轮中释放",
+      "_ts": 1785517529554
+    },
+    {
+      "s": "How Ripple Plans to Re-Engineer XRP: Top Exec Breaks Down 5 Key Incoming Amendments",
+      "t": "2026-07-31T16:42:45.000Z",
+      "ts": 1785516165,
+      "src": "U.Today",
+      "link": "https://u.today/how-ripple-plans-to-re-engineer-xrp-top-exec-breaks-down-5-key-incoming-amendments",
+      "s_cn": "Ripple 计划如何重新设计 XRP：最高执行官详细剖析即将到来的 5 项关键修正案",
+      "_ts": 1785516900161
+    },
+    {
+      "s": "Tether earns $1.5B in Q2 as US Treasury holdings fuel profits",
+      "t": "2026-07-31T16:25:47.000Z",
+      "ts": 1785515147,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/tether-q2-profit-us-treasury-holdings-usdt-supply?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "由于持有美国国债推动利润，Tether 第二季度盈利 1.5B 美元",
+      "_ts": 1785515727811
+    },
+    {
+      "s": "Bybit adds tokenized Nvidia, Apple, Tesla stocks as loan collateral",
+      "t": "2026-07-31T16:23:21.000Z",
+      "ts": 1785515001,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bybit-tokenized-stocks-collateral-margin-loans?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Bybit 添加代币化的 Nvidia、Apple、Tesla 股票作为贷款抵押品",
+      "_ts": 1785515420102
+    },
+    {
+      "s": "GM to launch proprietary in-vehicle AI system later this year",
+      "t": "2026-07-31T16:25:29.000Z",
+      "ts": 1785515129,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/gm-in-vehicle-ai-system.html",
+      "s_cn": "通用汽车将于今年晚些时候推出专有的车载人工智能系统",
+      "_ts": 1785515153216
+    },
+    {
+      "s": "US Treasury yields rise as TIPS challenge the inflation narrative",
+      "t": "2026-07-31T16:14:19.000Z",
+      "ts": 1785514459,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/us-treasury-yields-rise-as-tips-challenge-the-inflation-narrative?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "由于TIPS挑战通胀叙事，美国国债收益率上升",
+      "_ts": 1785514824124
+    },
+    {
+      "s": "24.38 Million Shiba Inu Gone Amid 3,607% Surge in Burn Rate",
+      "t": "2026-07-31T16:03:03.000Z",
+      "ts": 1785513783,
+      "src": "U.Today",
+      "link": "https://u.today/2438-million-shiba-inu-gone-amid-3607-surge-in-burn-rate",
+      "s_cn": "烧伤率激增3,607%，2438万只柴犬消失",
+      "_ts": 1785514494386
+    },
+    {
+      "s": "Bitcoin price sinks to 2-week lows as US stocks fail to copy Asia rebound",
+      "t": "2026-07-31T15:57:03.000Z",
+      "ts": 1785513423,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/bitcoin-two-week-lows-us-stocks-fail-copy-asia-rebound?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "由于美国股市未能复制亚洲反弹，比特币价格跌至两周低点",
+      "_ts": 1785513919763
+    },
+    {
+      "s": "FIFA tests the limits of private equity in sports with World Cup subsidiary sale",
+      "t": "2026-07-31T16:00:11.000Z",
+      "ts": 1785513611,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/fifa-world-cup-private-equity-sports.html",
+      "s_cn": "国际足联通过出售世界杯子公司来测试私募股权在体育领域的极限",
+      "_ts": 1785513652456
+    },
+    {
+      "s": "Quantum computing nears commercial breakthrough, IBM CEO says",
+      "t": "2026-07-31T15:39:30.000Z",
+      "ts": 1785512370,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/quantum-computing-nears-commercial-breakthrough-ibm-ceo-says",
+      "s_cn": "IBM首席执行官表示量子计算接近商业突破",
+      "_ts": 1785512483584
+    },
+    {
+      "s": "Former Barclays CEO Urges Wall Street to Back Key Crypto Bill",
+      "t": "2026-07-31T15:22:53.000Z",
+      "ts": 1785511373,
+      "src": "U.Today",
+      "link": "https://u.today/former-barclays-ceo-urges-wall-street-to-back-key-crypto-bill",
+      "s_cn": "巴克莱前首席执行官敦促华尔街支持关键的加密货币法案",
+      "_ts": 1785512091573
+    },
+    {
+      "s": "Circle Lands New York Trust Charter as Stablecoin Issuer Expands Regulatory Footprint",
+      "t": "2026-07-31T15:32:02.000Z",
+      "ts": 1785511922,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374791/circle-new-york-trust-charter-stablecoin-issuer",
+      "s_cn": "随着稳定币发行人扩大监管范围，Circle 获得纽约信托宪章",
+      "_ts": 1785512009667
+    },
+    {
+      "s": "Budget to be held in October, Healey announces",
+      "t": "2026-07-31T15:14:20.000Z",
+      "ts": 1785510860,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cjd4yz35x8go?at_medium=RSS&at_campaign=rss",
+      "s_cn": "希利宣布预算将于十月举行",
+      "_ts": 1785511105985
+    },
+    {
+      "s": "Cardano Founder Charles Hoskinson Joins Elite Lineup for Major Blockchain Event",
+      "t": "2026-07-31T14:55:30.000Z",
+      "ts": 1785509730,
+      "src": "U.Today",
+      "link": "https://u.today/cardano-founder-charles-hoskinson-joins-elite-lineup-for-major-blockchain-event",
+      "s_cn": "Cardano 创始人 Charles Hoskinson 加入精英阵容参加重大区块链活动",
+      "_ts": 1785510554721
+    },
+    {
+      "s": "US Treasury Sanctions Iranian Firms Taking Bitcoin for Hormuz Passage",
+      "t": "2026-07-31T15:05:43.000Z",
+      "ts": 1785510343,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374789/us-treasury-sanctions-iranian-firms-taking-bitcoin-for-hormuz-passage",
+      "s_cn": "美国财政部制裁伊朗公司通过霍尔木兹海峡获取比特币",
+      "_ts": 1785510428832
+    },
+    {
+      "s": "XDC AI and the Rise of Agentic Finance: When AI Agents Learn to Pay",
+      "t": "2026-07-31T15:01:04.000Z",
+      "ts": 1785510064,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374741/xdc-ai-and-the-rise-of-agentic-finance-when-ai-agents-learn-to-pay",
+      "s_cn": "XDC AI 和代理金融的兴起：当 AI 代理学会付款时",
+      "_ts": 1785510125146
+    },
+    {
+      "s": "Crypto faces 3 barriers to next bull run, STS Digital CEO says",
+      "t": "2026-07-31T15:00:00.000Z",
+      "ts": 1785510000,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/crypto-faces-3-barriers-to-next-bull-run-sts-digital-ceo-says",
+      "s_cn": "STS Digital 首席执行官表示，加密货币面临下一轮牛市的 3 个障碍",
+      "_ts": 1785510065956
+    },
+    {
+      "s": "How Leopold Aschenbrenner built a $45 billion AI hedge fund — and lost most of it in days",
+      "t": "2026-07-31T14:44:44.000Z",
+      "ts": 1785509084,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/leopold-aschenbrenner-situational-awareness-fund-fire-sale.html",
+      "s_cn": "Leopold Aschenbrenner 如何建立了 450 亿美元的人工智能对冲基金，并在几天内损失了大部分资金",
+      "_ts": 1785509196876
+    },
+    {
+      "s": "Circle Catches Up With Ripple, Secures New York Trust Charter for USDC Stablecoin",
+      "t": "2026-07-31T14:30:30.000Z",
+      "ts": 1785508230,
+      "src": "U.Today",
+      "link": "https://u.today/circle-catches-up-with-ripple-secures-new-york-trust-charter-for-usdc-stablecoin",
+      "s_cn": "Circle 赶上 Ripple，获得 USDC 稳定币纽约信托宪章",
+      "_ts": 1785509051371
+    },
+    {
+      "s": "Healey announces his first Budget will be on 28 October",
+      "t": "2026-07-31T14:26:48.000Z",
+      "ts": 1785508008,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cjd4yz35x8go?at_medium=RSS&at_campaign=rss",
+      "s_cn": "希利宣布他的第一份预算案将于 10 月 28 日公布",
+      "_ts": 1785508321527
+    },
+    {
+      "s": "AMLBot launches AI Tracer for self-service blockchain investigations",
+      "t": "2026-07-31T13:59:56.000Z",
+      "ts": 1785506396,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/crypto-forensics-firm-launches-ai-tracing-service-track-your-stolen-coins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "AMLBot 推出用于自助区块链调查的 AI Tracer",
+      "_ts": 1785507321172
+    },
+    {
+      "s": "ECB says digital euro app will exceed EU accessibility standards",
+      "t": "2026-07-31T14:05:25.000Z",
+      "ts": 1785506725,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/ecb-digital-euros-accessibility-payment-providers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "欧洲央行表示数字欧元应用程序将超越欧盟无障碍标准",
+      "_ts": 1785507321172
+    },
+    {
+      "s": "AI Company Sues Town for Trying to Block Data Center Near National Park",
+      "t": "2026-07-31T14:01:03.000Z",
+      "ts": 1785506463,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374764/ai-company-sues-town-data-center-national-park",
+      "s_cn": "人工智能公司起诉小镇试图封锁国家公园附近的数据中心",
+      "_ts": 1785506498047
+    },
+    {
+      "s": "Circle secures New York trust charter as crypto regulatory push accelerates",
+      "t": "2026-07-31T13:35:17.000Z",
+      "ts": 1785504917,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
+      "s_cn": "随着加密货币监管的加速推进，Circle 获得了纽约信托宪章",
+      "_ts": 1785506366450
+    },
+    {
+      "s": "Claude Hacked Three Companies in Internal Testing: Anthropic",
+      "t": "2026-07-31T13:47:54.000Z",
+      "ts": 1785505674,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374784/claude-hacked-three-companies-in-internal-testing-anthropic",
+      "s_cn": "克劳德在内部测试中黑了三家公司：Anthropic",
+      "_ts": 1785505716564
+    },
+    {
+      "s": "Circle receives New York trust charter for subsidiary",
+      "t": "2026-07-31T13:27:10.000Z",
+      "ts": 1785504430,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/circle-receives-new-york-trust-charter-for-subsidiary?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Circle 获得子公司纽约信托章程",
+      "_ts": 1785505206336
+    },
+    {
+      "s": "GM to launch its own in-vehicle AI system later this year",
+      "t": "2026-07-31T13:39:28.000Z",
+      "ts": 1785505168,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/gm-in-vehicle-ai-system.html",
+      "s_cn": "通用汽车将于今年晚些时候推出自己的车载人工智能系统",
+      "_ts": 1785505187484
+    },
+    {
+      "s": "11% Up? Shiba Inu (SHIB) Surprise Rally Could End 2-Month Losing Streak",
+      "t": "2026-07-31T13:15:25.000Z",
+      "ts": 1785503725,
+      "src": "U.Today",
+      "link": "https://u.today/11-up-shiba-inu-shib-surprise-rally-could-end-2-month-losing-streak",
+      "s_cn": "上涨11%？",
+      "_ts": 1785505150063
+    },
+    {
+      "s": "More consumer companies are staying private for longer, avoiding the IPO road",
+      "t": "2026-07-31T11:30:01.000Z",
+      "ts": 1785497401,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/private-consumer-companies-ipo.html",
+      "s_cn": "越来越多的消费品公司保持私有状态的时间更长，避免走IPO之路",
+      "_ts": 1785504099650
+    },
+    {
+      "s": "GM to launch new in-vehicle AI system later this year",
+      "t": "2026-07-31T13:20:52.000Z",
+      "ts": 1785504052,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/gm-in-vehicle-ai-system.html",
+      "s_cn": "通用汽车将于今年晚些时候推出新的车载人工智能系统",
+      "_ts": 1785504099650
+    },
+    {
+      "s": "Coinbase's weak quarter leaves Wall Street split on timing of a recovery",
+      "t": "2026-07-31T13:20:45.000Z",
+      "ts": 1785504045,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/coinbase-s-weak-quarter-leaves-wall-street-split-on-timing-of-a-recovery",
+      "s_cn": "Coinbase 季度疲软让华尔街对于复苏时机存在分歧",
+      "_ts": 1785504061920
+    },
+    {
+      "s": "BOJ intervenes to defend yen near 160, holds rates steady",
+      "t": "2026-07-31T13:13:46.000Z",
+      "ts": 1785503626,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/boj-intervenes-to-defend-yen-near-160-holds-rates-steady?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "日本央行干预日元160附近并维持利率稳定",
+      "_ts": 1785504005821
+    },
+    {
+      "s": "Bitcoin's Worst Month Is About to Start, Price History Predicts",
+      "t": "2026-07-31T12:57:15.000Z",
+      "ts": 1785502635,
+      "src": "U.Today",
+      "link": "https://u.today/bitcoins-worst-month-is-about-to-start-price-history-predicts",
+      "s_cn": "价格历史预测，比特币最糟糕的一个月即将开始",
+      "_ts": 1785503331817
+    },
+    {
+      "s": "​Traders brace for an August crypto pull-back as protection against $60,000 bitcoin dip becomes top trade",
+      "t": "2026-07-31T11:36:45.000Z",
+      "ts": 1785497805,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/31/bitcoin-usd60-000-put-leads-the-pack-as-mood-swings-bearish-for-august",
+      "s_cn": "交易员们准备迎接 8 月份的加密货币回调，因为防范比特币跌幅 60,000 美元成为首要交易",
+      "_ts": 1785503070719
+    },
+    {
+      "s": "RWA perps will outpace tokenization",
+      "t": "2026-07-31T13:00:00.000Z",
+      "ts": 1785502800,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/opinion/2026/07/31/rwa-perps-will-outpace-tokenization",
+      "s_cn": "RWA Perps 将超过代币化",
+      "_ts": 1785502848455
+    },
+    {
+      "s": "XRP Ledger Prints New Peak: 200,000 Users Threshold Is Near",
+      "t": "2026-07-31T12:34:00.000Z",
+      "ts": 1785501240,
+      "src": "U.Today",
+      "link": "https://u.today/xrp-ledger-prints-new-peak-200000-users-threshold-is-near",
+      "s_cn": "XRP Ledger打印新峰值：20万用户门槛已近",
+      "_ts": 1785502143945
+    },
+    {
+      "s": "Passenger on British Airways mayday flight describes fear and shout of 'I don't want to die'",
+      "t": "2026-07-31T12:19:20.000Z",
+      "ts": 1785500360,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cn9n2v3lwr0o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "英国航空求救航班上的乘客描述了恐惧并大喊“我不想死”",
+      "_ts": 1785501993832
+    },
+    {
+      "s": "Live updates: 'Worst hit in Bitcoin history' – longtime Bitcoiners react to Coincard flaw",
+      "t": "2026-07-31T07:46:10.000Z",
+      "ts": 1785483970,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/live-updates-bitcoin-steady-as-japan-holds-rates-at-1-keeping-the-yen-carry-trade-alive",
+      "s_cn": "实时更新：“比特币历史上最严重的打击”——长期比特币爱好者对 Coincard 缺陷的反应",
+      "_ts": 1785501899681
+    },
+    {
+      "s": "Dubai-based crypto exchange tied to $4 billion Iran sanctioned-evasion network",
+      "t": "2026-07-31T12:28:02.000Z",
+      "ts": 1785500882,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/31/dubai-based-crypto-exchange-tied-to-usd4-billion-iran-sanctioned-evasion-network-reuters",
+      "s_cn": "迪拜加密货币交易所与价值 40 亿美元的伊朗制裁逃税网络挂钩",
+      "_ts": 1785500910874
+    },
+    {
+      "s": "'I don't want to die': Passenger describes terror on British Airways mayday flight",
+      "t": "2026-07-31T12:19:20.000Z",
+      "ts": 1785500360,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cn9n2v3lwr0o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "“我不想死”：乘客描述英国航空求救航班上的恐怖",
+      "_ts": 1785500539696
+    },
+    {
+      "s": "Morning Minute: Coinbase Posts Surprise Loss as Crypto Trading Dries Up",
+      "t": "2026-07-31T12:11:17.000Z",
+      "ts": 1785499877,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374781/morning-minute-coinbase-posts-surprise-loss-as-crypto-trading-dries-up",
+      "s_cn": "早间分钟：随着加密货币交易枯竭，Coinbase 出现意外亏损",
+      "_ts": 1785499929963
+    },
+    {
+      "s": "World Cup bets smash records as prediction markets hit $20 billion in volume",
+      "t": "2026-07-31T12:00:26.000Z",
+      "ts": 1785499226,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/world-cup-bets-smash-records-as-prediction-markets-hit-usd20-billion-in-volume",
+      "s_cn": "预测市场规模突破 200 亿美元，世界杯投注打破纪录",
+      "_ts": 1785499485327
+    },
+    {
+      "s": "U.S. sanctions Iran-linked bitcoin insurance scheme for Strait of Hormuz ships",
+      "t": "2026-07-31T11:58:33.000Z",
+      "ts": 1785499113,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/07/31/u-s-sanctions-iran-linked-bitcoin-insurance-scheme-for-strait-of-hormuz-ships",
+      "s_cn": "美国制裁霍尔木兹海峡船只与伊朗相关的比特币保险计划",
+      "_ts": 1785499133628
+    },
+    {
+      "s": "Citadel buys bulk of Situational Awareness stock portfolio after AI rout: Reports",
+      "t": "2026-07-31T11:35:33.000Z",
+      "ts": 1785497733,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/citadel-situational-awareness-stock-portfolio-ai-rout-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "AI 溃败后，Citadel 购买了大部分态势感知股票投资组合：报告",
+      "_ts": 1785498300944
+    },
+    {
+      "s": "BlackRock Extends Bitcoin Buy With Another $183 Million",
+      "t": "2026-07-31T11:24:32.000Z",
+      "ts": 1785497072,
+      "src": "U.Today",
+      "link": "https://u.today/blackrock-extends-bitcoin-buy-with-another-183-million",
+      "s_cn": "贝莱德追加 1.83 亿美元购买比特币",
+      "_ts": 1785497928557
+    },
+    {
+      "s": "Bitcoin $60,000 put leads the pack as mood swings bearish for August",
+      "t": "2026-07-31T11:36:45.000Z",
+      "ts": 1785497805,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/daybook-us/2026/07/31/bitcoin-usd60-000-put-leads-the-pack-as-mood-swings-bearish-for-august",
+      "s_cn": "8 月份情绪波动看跌，比特币 60,000 美元看跌期权领跑",
+      "_ts": 1785497834669
+    },
+    {
+      "s": "Live updates: Bitcoin slides back below $64,000 as Nasdaq continues rally",
+      "t": "2026-07-31T07:46:10.000Z",
+      "ts": 1785483970,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/live-updates-bitcoin-steady-as-japan-holds-rates-at-1-keeping-the-yen-carry-trade-alive",
+      "s_cn": "实时更新：随着纳斯达克继续上涨，比特币跌回 64,000 美元以下",
+      "_ts": 1785497090323
+    },
+    {
+      "s": "UK petrol prices hit highest level since Iran war began",
+      "t": "2026-07-31T11:19:23.000Z",
+      "ts": 1785496763,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "英国汽油价格创伊朗战争爆发以来最高水平",
+      "_ts": 1785496884439
+    },
+    {
+      "s": "RLUSD's Next Big Move? Google and Mastercard Integration Fuel AI Payments",
+      "t": "2026-07-31T10:45:12.000Z",
+      "ts": 1785494712,
+      "src": "U.Today",
+      "link": "https://u.today/rlusds-next-big-move-google-and-mastercard-integration-fuel-ai-payments",
+      "s_cn": "RLUSD 的下一个大动作？",
+      "_ts": 1785496734955
+    },
+    {
+      "s": "Crypto Kiosk Scams Cost Texans $57M as Lawmakers Weigh a Ban",
+      "t": "2026-07-31T11:13:58.000Z",
+      "ts": 1785496438,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374778/crypto-kiosk-scams-cost-texans-57m-as-lawmakers-weigh-a-ban",
+      "s_cn": "立法者权衡禁令，加密货币亭诈骗使德克萨斯人损失 5700 万美元",
+      "_ts": 1785496511461
+    },
+    {
+      "s": "Major bitcoin wallet flaw drains $38 million worth of BTC in 25-minute sweep",
+      "t": "2026-07-31T05:12:55.000Z",
+      "ts": 1785474775,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep",
+      "s_cn": "比特币钱包重大缺陷在 25 分钟内耗尽了价值 3800 万美元的 BTC",
+      "_ts": 1785496400908
+    },
+    {
+      "s": "Bitcoin, ether fall, equities rally with broader crypto market on track for best month in a year",
+      "t": "2026-07-31T11:07:52.000Z",
+      "ts": 1785496072,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-ether-fall-equities-rally-with-broader-crypto-market-on-track-for-best-month-in-a-year",
+      "s_cn": "比特币、以太坊下跌，股市上涨，加密货币市场有望创一年来最佳月份",
+      "_ts": 1785496101506
+    },
+    {
+      "s": "BIS Project Agorá settles $1 million in tokenized cross-border payment trials",
+      "t": "2026-07-31T11:02:24.000Z",
+      "ts": 1785495744,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bis-project-agor-tokenized-cross-border-payment-trials?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "BIS Project Agorá 在代币化跨境支付试验中达成 100 万美元和解",
+      "_ts": 1785495896376
+    },
+    {
+      "s": "Binance Coin (BNB) Adds 65% in Volume: Is Binance Gaining Traction?",
+      "t": "2026-07-31T10:30:00.000Z",
+      "ts": 1785493800,
+      "src": "U.Today",
+      "link": "https://u.today/binance-coin-bnb-adds-65-in-volume-is-binance-gaining-traction",
+      "s_cn": "币安币 (BNB) 交易量增加 65%：币安币是否正在获得吸引力？",
+      "_ts": 1785494634320
+    },
+    {
+      "s": "Satoshi Candidate Peter Todd Warns No Bitcoin Is Safe on Singlesig After $38 Million Coldcard Drain",
+      "t": "2026-07-31T10:10:30.000Z",
+      "ts": 1785492630,
+      "src": "U.Today",
+      "link": "https://u.today/satoshi-candidate-peter-todd-warns-no-bitcoin-is-safe-on-singlesig-after-38-million-coldcard-drain",
+      "s_cn": "中本聪候选人 Peter Todd 警告称，在 Coldcard 损失 3800 万美元后，单签名比特币并不安全",
+      "_ts": 1785493427035
+    },
+    {
+      "s": "New York AG Seeks $36B From Kalshi Over 'Illegal Gambling'",
+      "t": "2026-07-31T10:12:16.000Z",
+      "ts": 1785492736,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374775/new-york-ag-seeks-36b-from-kalshi-over-illegal-gambling",
+      "s_cn": "New York AG 因“非法赌博”向 Kalshi 寻求 36B 美元",
+      "_ts": 1785492830870
+    },
+    {
+      "s": "New York sues Kalshi over alleged illegal gambling operation",
+      "t": "2026-07-31T10:05:01.000Z",
+      "ts": 1785492301,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/new-york-sues-kalshi-gambling-operation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "纽约州起诉卡尔希涉嫌非法赌博活动",
+      "_ts": 1785492589326
+    },
+    {
+      "s": "Coinbase sinks 5% after missing second-quarter revenue estimates",
+      "t": "2026-07-30T20:18:33.000Z",
+      "ts": 1785442713,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/30/coinbase-sinks-5-after-missing-q2-revenue-estimates",
+      "s_cn": "Coinbase第二季度营收未达预期，股价下跌 5%",
+      "_ts": 1785492033167
+    },
+    {
+      "s": "New York sues Kalshi, alleges it offers a gambling platform 'plain and simple'",
+      "t": "2026-07-31T09:55:47.000Z",
+      "ts": 1785491747,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/07/31/new-york-sues-kalshi-alleges-it-offers-a-gambling-platform-plain-and-simple",
+      "s_cn": "纽约起诉 Kalshi，称其提供“简单明了”的赌博平台",
+      "_ts": 1785491771060
+    },
+    {
+      "s": "Biggest XRP Treasury Reveals 50% Top-Manager Bonuses Ahead of Nasdaq Listing",
+      "t": "2026-07-31T09:17:15.000Z",
+      "ts": 1785489435,
+      "src": "U.Today",
+      "link": "https://u.today/biggest-xrp-treasury-reveals-50-top-manager-bonuses-ahead-of-nasdaq-listing",
+      "s_cn": "最大的 XRP 金库在纳斯达克上市前透露 50% 的高管奖金",
+      "_ts": 1785490140692
+    },
+    {
+      "s": "Aave weighs closing 6 V3 blockchain markets, offboarding 50 low-use reserves",
+      "t": "2026-07-31T08:57:53.000Z",
+      "ts": 1785488273,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/aave-weighs-closing-6-v3-blockchain-markets-offboarding-50-low-use-reserves?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Aave 考虑关闭 6 个 V3 区块链市场，并淘汰 50 个低使用储备",
+      "_ts": 1785488672680
+    },
+    {
+      "s": "Anthropic's Claude AI escapes to hack into three organisations",
+      "t": "2026-07-31T09:03:37.000Z",
+      "ts": 1785488617,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cz7dl7w8y7po?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Anthropic 的 Claude AI 成功入侵三个组织",
+      "_ts": 1785488654217
+    },
+    {
+      "s": "$38M in Bitcoin Drained by Coldcard Key Flaw Its Maker Thinks AI Found",
+      "t": "2026-07-31T09:02:01.000Z",
+      "ts": 1785488521,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374766/38m-in-bitcoin-drained-by-coldcard-key-flaw-its-maker-thinks-ai-found",
+      "s_cn": "Coldcard 关键缺陷导致比特币损失 3800 万美元，其制造商认为是 AI 发现的",
+      "_ts": 1785488598067
+    },
+    {
+      "s": "Quantum Solutions, Hyperscale Data tap crypto treasuries to fund AI data centers",
+      "t": "2026-07-31T08:57:02.000Z",
+      "ts": 1785488222,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/31/quantum-solutions-hyperscale-data-tap-crypto-treasuries-to-fund-ai-data-centers",
+      "s_cn": "Quantum Solutions、Hyperscale Data 利用加密货币资金为人工智能数据中心提供资金",
+      "_ts": 1785488245417
+    },
+    {
+      "s": "RWA perpetual futures volume nears Bitcoin on Hyperliquid, Binance",
+      "t": "2026-07-31T08:29:51.000Z",
+      "ts": 1785486591,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/rwa-perpetual-futures-bitcoin-hyperliquid-binance?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Hyperliquid、Binance 上的 RWA 永续期货交易量接近比特币",
+      "_ts": 1785486869819
+    },
+    {
+      "s": "Bitcoin’s calm is back and so is the setup for a volatility explosion",
+      "t": "2026-07-31T08:30:31.000Z",
+      "ts": 1785486631,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-s-calm-is-back-and-so-is-the-setup-for-a-volatility-explosion",
+      "s_cn": "比特币回归平静，波动性爆炸的准备也随之而来",
+      "_ts": 1785486665752
+    },
+    {
+      "s": "Friday Is the Worst Day for Crypto and Bitcoin (BTC): Long-Term Data Shows",
+      "t": "2026-07-31T08:00:00.000Z",
+      "ts": 1785484800,
+      "src": "U.Today",
+      "link": "https://u.today/friday-is-the-worst-day-for-crypto-and-bitcoin-btc-long-term-data-shows",
+      "s_cn": "周五是加密货币和比特币（BTC）最糟糕的一天：长期数据显示",
+      "_ts": 1785485644086
+    },
+    {
+      "s": "Coinbase Stock Gets Hammered Yet Again",
+      "t": "2026-07-31T07:47:09.000Z",
+      "ts": 1785484029,
+      "src": "U.Today",
+      "link": "https://u.today/coinbase-stock-gets-hammered-yet-again",
+      "s_cn": "Coinbase 股票再次遭受重创",
+      "_ts": 1785484731631
+    },
+    {
+      "s": "BP puts North Sea business up for sale",
+      "t": "2026-07-31T07:48:47.000Z",
+      "ts": 1785484127,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c62q7w003lro?at_medium=RSS&at_campaign=rss",
+      "s_cn": "英国石油公司 (BP) 出售北海业务",
+      "_ts": 1785484251043
+    },
+    {
+      "s": "Live updates: Bitcoin steady as Japan holds rates at 1%, keeping the yen carry trade alive",
+      "t": "2026-07-31T07:46:10.000Z",
+      "ts": 1785483970,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/live-updates-bitcoin-steady-as-japan-holds-rates-at-1-keeping-the-yen-carry-trade-alive",
+      "s_cn": "实时更新：日本将利率维持在 1%，比特币保持稳定，日元套利交易保持活力",
+      "_ts": 1785483990418
+    },
+    {
+      "s": "Sainsbury's agrees to sell Argos for £120m",
+      "t": "2026-07-31T07:10:19.000Z",
+      "ts": 1785481819,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cpw9yrl4p2qo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Sainsbury's 同意以 1.2 亿英镑出售 Argos",
+      "_ts": 1785481865374
+    },
+    {
+      "s": "Sainsbury's to sell Argos for £120m",
+      "t": "2026-07-31T06:50:41.000Z",
+      "ts": 1785480641,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cpw9yrl4p2qo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Sainsbury’s 以 1.2 亿英镑出售 Argos",
+      "_ts": 1785480744785
+    },
+    {
+      "s": "Anthropic's Claude AI escapes tests to hack three organisations",
+      "t": "2026-07-31T04:31:30.000Z",
+      "ts": 1785472290,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cz7dl7w8y7po?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Anthropic 的 Claude AI 逃脱了攻击三个组织的测试",
+      "_ts": 1785480589855
+    },
+    {
+      "s": "Amazon and Apple just told us more about their AI plans - here are three things we learned",
+      "t": "2026-07-31T01:31:50.000Z",
+      "ts": 1785461510,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cp87m46g392o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "亚马逊和苹果刚刚告诉我们更多有关他们的人工智能计划的信息 - 以下是我们了解到的三件事",
+      "_ts": 1785480570918
+    },
+    {
+      "s": "Bitcoin ETFs post $233M inflows, pushing week back into the green",
+      "t": "2026-07-31T06:46:23.000Z",
+      "ts": 1785480383,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/bitcoin-etfs-inflows-week-back-green?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "比特币 ETF 流入 2.33 亿美元，推动本周重回绿色",
+      "_ts": 1785480570918
+    },
+    {
+      "s": "Anthropic's Claude AI escapes tests to hack 3 organisations",
+      "t": "2026-07-31T04:31:30.000Z",
+      "ts": 1785472290,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cz7dl7w8y7po?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Anthropic 的 Claude AI 成功逃脱了对 3 个组织进行黑客攻击的测试",
+      "_ts": 1785479311601
+    },
+    {
+      "s": "Amazon and Apple just told us more about their AI plans - here are 3 things we learned",
+      "t": "2026-07-31T01:31:50.000Z",
+      "ts": 1785461510,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cp87m46g392o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "亚马逊和苹果刚刚告诉我们更多有关他们的人工智能计划的信息 - 以下是我们了解到的三件事",
+      "_ts": 1785478898110
+    },
+    {
+      "s": "South Korean shares soar after chip stock rout",
+      "t": "2026-07-31T06:03:20.000Z",
+      "ts": 1785477800,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c4gdzlzprv1o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "芯片股暴跌后韩国股市飙升",
+      "_ts": 1785477843604
+    },
+    {
+      "s": "Bitcoin flat near $64,000 as Kospi's record 17% surge leaves crypto untouched",
+      "t": "2026-07-31T05:43:39.000Z",
+      "ts": 1785476619,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-flat-near-usd64-000-as-kospi-s-record-17-surge-leaves-crypto-untouched",
+      "s_cn": "比特币持平于 64,000 美元附近，Kospi 创纪录的 17% 飙升使加密货币未受影响",
+      "_ts": 1785476656137
+    },
+    {
+      "s": "Bitcoin Wallets at Risk After Critical Coldcard Security Bugs Get Exposed",
+      "t": "2026-07-31T05:32:43.000Z",
+      "ts": 1785475963,
+      "src": "U.Today",
+      "link": "https://u.today/bitcoin-wallets-at-risk-after-critical-coldcard-security-bugs-are-exposed",
+      "s_cn": "关键冷卡安全漏洞曝光后，比特币钱包面临风险",
+      "_ts": 1785476619103
+    },
+    {
+      "s": "South Korean shares surge after chip stock rout",
+      "t": "2026-07-31T05:32:47.000Z",
+      "ts": 1785475967,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c4gdzlzprv1o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "芯片股暴跌后韩国股市飙升",
+      "_ts": 1785476192818
+    },
+    {
+      "s": "US senators sent revised ethics rules to White House for CLARITY Act: Report",
+      "t": "2026-07-30T21:54:38.000Z",
+      "ts": 1785448478,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/us-senators-revised-ethics-rules-white-house-clarity-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "美国参议员向白宫提交了修订后的道德规则，以促进清晰度法案：报告",
+      "_ts": 1785476062908
+    },
+    {
+      "s": "Major bitcoin wallet flaw drains 594 BTC in 25-minute sweep",
+      "t": "2026-07-31T05:12:55.000Z",
+      "ts": 1785474775,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep",
+      "s_cn": "比特币钱包重大缺陷在 25 分钟内耗尽了 594 BTC",
+      "_ts": 1785474867400
+    },
+    {
+      "s": "Crypto’s next altseason may have fewer winners: Wintermute",
+      "t": "2026-07-31T04:46:14.000Z",
+      "ts": 1785473174,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/crypto-next-altseason-fewer-winners-wintermute?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "加密货币的下一个山寨季节可能会有更少的赢家：Wintermute",
+      "_ts": 1785473657314
+    },
+    {
+      "s": "Anthropic says Claude AI hacked three organisations during cyber tests",
+      "t": "2026-07-31T01:31:14.000Z",
+      "ts": 1785461474,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cz7dl7w8y7po?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Anthropic 表示 Claude AI 在网络测试期间入侵了三个组织",
+      "_ts": 1785471100731
+    },
+    {
+      "s": "Coldcard issues Mk3 warning as experts examine $38M Bitcoin wallet drain",
+      "t": "2026-07-31T02:38:09.000Z",
+      "ts": 1785465489,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/coldcard-mk3-warning-594-btc-sweep?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Coldcard 发出 Mk3 警告，专家检查 3800 万美元比特币钱包流失",
+      "_ts": 1785465854000
+    },
+    {
+      "s": "Anthropic says Claude AI hacked three firms during cyber tests",
+      "t": "2026-07-31T01:31:14.000Z",
+      "ts": 1785461474,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cz7dl7w8y7po?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Anthropic 表示 Claude AI 在网络测试期间入侵了三家公司",
+      "_ts": 1785463770256
+    },
     {
       "s": "Three things we learned about AI from Big Tech earnings",
       "t": "2026-07-31T01:31:50.000Z",

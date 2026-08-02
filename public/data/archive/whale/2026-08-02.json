@@ -1,6 +1,9 @@
 {
-  "updated": 1785682802048,
-  "transfers": [
+  "date": "2026-08-02",
+  "type": "whale",
+  "updated": 1785682798316,
+  "total": 513,
+  "records": [
     {
       "c": "USDT",
       "val": 15013954.13,
@@ -4998,6 +5001,136 @@
       "ts": 1785629111,
       "from": "0x3e55d70ad00e0a1d6aca921b574d5a7c8cd0ef0f",
       "to": "0x100ae042ef0ea159ecc3513e9a378ff21f3829ba",
+      "exFrom": null,
+      "exTo": null
+    },
+    {
+      "c": "USDC",
+      "val": 300000000,
+      "hash": "0xfc3119397fce1dccfa079fe4d7b802ffb835815771e2b9920ddeaa8ece5f4747",
+      "ts": 1785629111,
+      "from": "0x31173ed183e5a9450c3671018ec4d770c8a8bf18",
+      "to": "0x688cc76d3b009d805ab6b4d0a1cbd228131b5cbf",
+      "exFrom": null,
+      "exTo": null
+    },
+    {
+      "c": "USDC",
+      "val": 5169997.7,
+      "hash": "0x866ef38e9548656e057df4be7c5d8d3fa05eb820016a11e9dd7cf118c431b550",
+      "ts": 1785629063,
+      "from": "0x92872b97d89b54646d036e3afd2bccb84d8e3ca1",
+      "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "exFrom": null,
+      "exTo": null
+    },
+    {
+      "c": "USDT",
+      "val": 7999997.85,
+      "hash": "0xc1c7c32cc1d1cfb6d6ee2c2f093b34a47039362609a30849045c9ff8a07e672d",
+      "ts": 1785629063,
+      "from": "0x77134cbc06cb00b66f4c7e623d5fdbf6777635ec",
+      "to": "0x14681e4e26f1b5b5774ae3b7f694ff08bbbeb65c",
+      "exFrom": null,
+      "exTo": null
+    },
+    {
+      "c": "USDT",
+      "val": 1786985.03,
+      "hash": "0x9379b2e239dd9bf6fa8cd88d719dc4b49e95b01f26eb097c943d3c3e15bbfb41",
+      "ts": 1785629051,
+      "from": "0x66bac5bafb0f5c686ca1e39ae5fad84857a8056d",
+      "to": "0x217e42ceb2eae9ecb788fdf0e31c806c531760a3",
+      "exFrom": null,
+      "exTo": null
+    },
+    {
+      "c": "USDC",
+      "val": 2096363.92,
+      "hash": "0xed7d51bc558b7e4c16f8e3fdfe967fa77cc0a25dcd7de23d8acf0aa6e6699033",
+      "ts": 1785629039,
+      "from": "0xbeefff209270748ddd194831b3fa287a5386f5bc",
+      "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "exFrom": null,
+      "exTo": null
+    },
+    {
+      "c": "USDC",
+      "val": 9109995.01,
+      "hash": "0x237390d4fd42e0d0fc3db018e64f4e300c390dbdd6a91bacc0227c950481b372",
+      "ts": 1785629039,
+      "from": "0x1009d8f1a84dcefee3a2b26d48a6f68e812e22ec",
+      "to": "0x3e55d70ad00e0a1d6aca921b574d5a7c8cd0ef0f",
+      "exFrom": null,
+      "exTo": null
+    },
+    {
+      "c": "USDC",
+      "val": 481777771.78,
+      "hash": "0xf4452f263a9b1bb6b19b2f442b9c279be336b71d38a3a6beeb959b64690a4e3a",
+      "ts": 1785629015,
+      "from": "0xf1edbf98dda764ec51de3776371f0f7d6f6156a8",
+      "to": "0x31173ed183e5a9450c3671018ec4d770c8a8bf18",
+      "exFrom": null,
+      "exTo": null
+    },
+    {
+      "c": "USDT",
+      "val": 1786985.03,
+      "hash": "0x1765a701b37a8cf04918d09a8dacda324ff0ccd97360b5e52319157458e31505",
+      "ts": 1785628979,
+      "from": "0x21a31ee1afc51d94c2efccaa2092ad1028285549",
+      "to": "0x66bac5bafb0f5c686ca1e39ae5fad84857a8056d",
+      "exFrom": null,
+      "exTo": null
+    },
+    {
+      "c": "USDT",
+      "val": 1990000,
+      "hash": "0x66f7190fa91f31e337e6cbd8f8ab31191b1ec5fa382d6813b44410b2caec895d",
+      "ts": 1785628883,
+      "from": "0x1368487bccee27421c5b4a90a437dbb8e8ea11ce",
+      "to": "0x19c8ed6602ce31a51f2c9c28bd923847739f6175",
+      "exFrom": null,
+      "exTo": null
+    },
+    {
+      "c": "USDC",
+      "val": 5850533.43,
+      "hash": "0x7ad71d014191b30a0a525efbb5c4c345332a9bdf7505188dffb0ef1dcbad87f1",
+      "ts": 1785628847,
+      "from": "0x05ff6964d21e5dae3b1010d5ae0465b3c450f381",
+      "to": "0x2744dfd9898f0babbc570cc594bbbc84b487a22b",
+      "exFrom": null,
+      "exTo": null
+    },
+    {
+      "c": "USDC",
+      "val": 2000000,
+      "hash": "0xae510613777305d915ef4e188f21ddffebbba757f7539ade5ffafc38f648a4a8",
+      "ts": 1785628823,
+      "from": "0x55fe002aeff02f77364de339a1292923a15844b8",
+      "to": "0x0000000000000000000000000000000000000000",
+      "exFrom": null,
+      "exTo": null
+    },
+    {
+      "c": "BTC",
+      "val": 28.06257,
+      "hash": "0217aab368283df09f344393046b3e194bde13001e4a35e863226ab6e4ffdec9",
+      "ts": 1785628310,
+      "from": "bc1p2ws3jd3krrplhs2r8z7pfv8dyydy2mh0y0ejqj4eesqv4cx4c6xq6x5yjg",
+      "to": "bc1qccqmqg0798eclsx5sgjl300nwaz2gsej02p2qh",
+      "exFrom": "",
+      "exTo": ""
+    },
+    {
+      "c": "USDC",
+      "val": 2000000,
+      "hash": "0x11bc74be6b155075b2ccfe3c2f0567a3c2036c47e2f691eaee3fe050415bfbde",
+      "ts": 1785628775,
+      "from": "0xe99698026aab044aa5e4c31a77f991e0004d0e02",
+      "to": "0x55fe002aeff02f77364de339a1292923a15844b8",
       "exFrom": null,
       "exTo": null
     }

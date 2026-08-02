@@ -6,7 +6,7 @@ LOG="/tmp/supervisor.log"
 log() { echo "[$(date '+%H:%M:%S')] $1" >> "$LOG"; }
 
 # 保活列表
-PROCS="whale-monitor.js binance-fetcher.js jin10-scraper.js rss-fetcher.js monitor.js"
+PROCS="whale-monitor.js binance-fetcher.js jin10-scraper.js rss-fetcher.js monitor.js price-alert.js source-monitor.js"
 
 # server.js 单独管（需要传 cwd）
 check_server() {

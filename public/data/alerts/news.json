@@ -1,6 +1,38 @@
 {
-  "updated": 1784994404098,
+  "updated": 1785682647965,
   "alerts": [
+    {
+      "ts": 1785675600,
+      "detected": 1785682647965,
+      "src": "CoinDesk",
+      "title": "反向桥梁：加密货币与华尔街利用perps相遇",
+      "orig": "The reverse bridge: Crypto meets Wall Street using perps",
+      "link": "https://www.coindesk.com/business/2026/08/02/the-reverse-bridge-crypto-meets-wall-street-using-perps"
+    },
+    {
+      "ts": 1785678075,
+      "detected": 1785682647965,
+      "src": "U.Today",
+      "title": "“比特币驱动力已投入”：塞勒用标志性的牛市预告弥补了 82 亿美元的损失",
+      "orig": "'Bitcoin Drive Engaged': Saylor Answers $8.2 Billion Loss with Signature Bull Teaser",
+      "link": "https://u.today/bitcoin-drive-engaged-saylor-answers-82-billion-loss-with-signature-bull-teaser"
+    },
+    {
+      "ts": 1785678928,
+      "detected": 1785682647965,
+      "src": "U.Today",
+      "title": "狗狗币贡献者向 Coldcard 钱包用户发出严重警告",
+      "orig": "Dogecoin Contributor Issues Critical Warning to Coldcard Wallet Users",
+      "link": "https://u.today/dogecoin-contributor-issues-critical-warning-to-coldcard-wallet-users"
+    },
+    {
+      "ts": 1785679815,
+      "detected": 1785682647965,
+      "src": "U.Today",
+      "title": "24 小时内 4 万亿 SHIB：谁准备让柴犬币突破 0.000005 美元？",
+      "orig": "4 Trillion SHIB in 24 Hours: Who Is Readying Shiba Inu Coin for $0.000005 Breakout?",
+      "link": "https://u.today/4-trillion-shib-in-24-hours-who-is-readying-shiba-inu-coin-for-0000005-breakout"
+    },
     {
       "ts": 1784993746,
       "detected": 1784994404098,
@@ -368,38 +400,6 @@
       "title": "观看：又一天，特朗普征收更多关税——但它们有效吗？",
       "orig": "Watch: Another day, more Trump tariffs - but are they working?",
       "link": "https://www.bbc.co.uk/news/videos/c5yw2xgnv2jo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1784894382,
-      "detected": 1784894640194,
-      "src": "CoinTelegraph",
-      "title": "Odos 协议将关闭，允许用户在 7 月 30 日之前提取资产",
-      "orig": "Odos Protocol to shut down, gives users until July 30 to withdraw assets",
-      "link": "https://cointelegraph.com/news/odos-protocol-shut-down-4-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1784894286,
-      "detected": 1784894459704,
-      "src": "CoinDesk",
-      "title": "欧盟第 21 日针对俄罗斯 120B 美元加密网络实施大规模制裁",
-      "orig": "EU hits Russia with massive 21st sanctions package targeting $120B crypto network",
-      "link": "https://www.coindesk.com/policy/2026/07/24/eu-hits-russia-with-massive-21st-sanctions-package-targeting-usd120b-crypto-network"
-    },
-    {
-      "ts": 1784893746,
-      "detected": 1784894099700,
-      "src": "CoinDesk",
-      "title": "加密货币做市商 B2C2 与多个潜在买家举行销售谈判",
-      "orig": "Crypto market maker B2C2 held sale talks with multiple potential buyers",
-      "link": "https://www.coindesk.com/business/2026/06/29/crypto-market-maker-b2c2-held-sale-talks-with-multiple-potential-buyers"
-    },
-    {
-      "ts": 1784893352,
-      "detected": 1784893739643,
-      "src": "CoinTelegraph",
-      "title": "RWA 成为 Hyperliquid 最大的交易类别",
-      "orig": "RWAs become Hyperliquid’s largest trading category",
-      "link": "https://cointelegraph.com/news/hyperliquid-rwa-volume-crypto-trading-first-time?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
     }
   ]
 }

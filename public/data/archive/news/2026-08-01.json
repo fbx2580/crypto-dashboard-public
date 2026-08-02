@@ -1,0 +1,794 @@
+{
+  "date": "2026-08-01",
+  "type": "news",
+  "updated": 1785621815764,
+  "total": 94,
+  "records": [
+    {
+      "s": "Strategy holds STRC dividend at 12%",
+      "t": "2026-08-01T22:01:57.000Z",
+      "ts": 1785621717,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/01/strategy-holds-strc-dividend-at-12",
+      "s_cn": "Strategy 维持 STRC 股息为 12%",
+      "_ts": 1785621815742
+    },
+    {
+      "s": "Onchain, in court: What happened in crypto legal news this week",
+      "t": "2026-08-01T21:14:39.000Z",
+      "ts": 1785618879,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/on-chain-in-court-crypto-legal-news4?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "链上法庭：本周加密法律新闻中发生了什么",
+      "_ts": 1785619379019
+    },
+    {
+      "s": "Bitcoin cold-wallet attack spreads to 4,500 addresses as losses near $89 million",
+      "t": "2026-08-01T20:10:54.000Z",
+      "ts": 1785615054,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/02/bitcoin-cold-wallet-attack-spreads-to-4-500-addresses-as-losses-near-usd89-million",
+      "s_cn": "比特币冷钱包攻击蔓延至 4,500 个地址，损失近 8900 万美元",
+      "_ts": 1785615097601
+    },
+    {
+      "s": "Minnesota crypto ATM ban goes into effect after reported $1M losses",
+      "t": "2026-08-01T18:07:17.000Z",
+      "ts": 1785607637,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/minnesota-crypto-atm-ban-losses-scams?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "明尼苏达州加密 ATM 禁令在报告损失 100 万美元后生效",
+      "_ts": 1785608248213
+    },
+    {
+      "s": "Tokenized stock trading surged 288% in July, but one QQQ token drove most of it",
+      "t": "2026-08-01T16:51:35.000Z",
+      "ts": 1785603095,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/01/tokenized-stock-trading-surged-288-in-july-but-one-qqq-token-drove-most-of-it",
+      "s_cn": "7 月份代币化股票交易量飙升 288%，但 QQQ 代币推动了大部分交易",
+      "_ts": 1785603137406
+    },
+    {
+      "s": "CZ Warns Bitcoin Holders After $70 Million Wallet Exploit: 'Nothing Is 100%'",
+      "t": "2026-08-01T16:01:17.000Z",
+      "ts": 1785600077,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374810/cz-warns-bitcoin-holders-70-million-coldcard-wallet-exploit",
+      "s_cn": "CZ 在 7000 万美元钱包被利用后警告比特币持有者：“没有什么是 100% 的”",
+      "_ts": 1785600193722
+    },
+    {
+      "s": "CZ Warns Bitcoin Holders After $70 Million Wallet Exploit: 'Nothing is 100%'",
+      "t": "2026-08-01T16:01:17.000Z",
+      "ts": 1785600077,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374810/cz-warns-bitcoin-holders-70-million-coldcard-wallet-exploit",
+      "s_cn": "CZ 在 7000 万美元钱包被利用后警告比特币持有者：“没有什么是 100% 的”",
+      "_ts": 1785600135698
+    },
+    {
+      "s": "Bank of Italy research suggests stablecoins aren't necessarily cheaper for remittances",
+      "t": "2026-08-01T16:00:00.000Z",
+      "ts": 1785600000,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/01/bank-of-italy-research-suggests-stablecoins-aren-t-necessarily-cheaper-for-remittances",
+      "s_cn": "意大利银行的研究表明，稳定币的汇款并不一定更便宜",
+      "_ts": 1785600056260
+    },
+    {
+      "s": "Crypto PAC pours another $1M into Michigan House race",
+      "t": "2026-08-01T15:44:02.000Z",
+      "ts": 1785599042,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/crypto-pac-michigan-thanedar-mckinney?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Crypto PAC 又向密歇根州众议院竞选投入 100 万美元",
+      "_ts": 1785599555117
+    },
+    {
+      "s": "August Starts Hot: Dogecoin Spot Flows Up 116%, Is DOGE Rally Next?",
+      "t": "2026-08-01T15:21:48.000Z",
+      "ts": 1785597708,
+      "src": "U.Today",
+      "link": "https://u.today/august-starts-hot-dogecoin-spot-flows-up-116-is-doge-rally-next",
+      "s_cn": "八月火热开启：狗狗币现货流量上涨116%，接下来是狗狗币反弹吗？",
+      "_ts": 1785599534616
+    },
+    {
+      "s": "Bitcoin mining difficulty shrinks 14% from this year's high as plunging revenues force operators to pivot",
+      "t": "2026-08-01T15:51:10.000Z",
+      "ts": 1785599470,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/01/bitcoin-mining-difficulty-shrinks-14-from-this-year-s-high-as-plunging-revenues-force-operators-to-pivot",
+      "s_cn": "由于收入锐减迫使运营商转向，比特币挖矿难度较今年高点下降了 14%",
+      "_ts": 1785599513683
+    },
+    {
+      "s": "SEC to review Nasdaq bitcoin options approval after CME challenge",
+      "t": "2026-08-01T15:48:27.000Z",
+      "ts": 1785599307,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/08/01/sec-to-review-nasdaq-bitcoin-options-approval-after-cme-challenge",
+      "s_cn": "在芝商所挑战后，美国证券交易委员会将审查纳斯达克比特币期权的批准",
+      "_ts": 1785599348686
+    },
+    {
+      "s": "'Nothing Is 100%,' Binance's CZ Reacts as $70 Million Coldcard Exploit Stirs Panic",
+      "t": "2026-08-01T15:11:47.000Z",
+      "ts": 1785597107,
+      "src": "U.Today",
+      "link": "https://u.today/nothing-is-100-binances-cz-reacts-as-70-million-coldcard-exploit-stirs-panic",
+      "s_cn": "价值 7000 万美元的 Coldcard 漏洞引发恐慌，币安 CZ 回应称“没有什么是 100%”",
+      "_ts": 1785597728314
+    },
+    {
+      "s": "Cardano Enters Dijkstra Era, Here Are Major Developments",
+      "t": "2026-08-01T15:00:00.000Z",
+      "ts": 1785596400,
+      "src": "U.Today",
+      "link": "https://u.today/cardano-enters-dijkstra-era-here-are-major-developments",
+      "s_cn": "卡尔达诺进入 Dijkstra 时代，主要进展如下",
+      "_ts": 1785597427132
+    },
+    {
+      "s": "The More Americans Know About AI, the Less They Like It: Gallup",
+      "t": "2026-08-01T15:01:09.000Z",
+      "ts": 1785596469,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374794/more-americans-know-about-ai-less-they-like-gallup",
+      "s_cn": "盖洛普：美国人对人工智能了解越多，他们就越不喜欢它",
+      "_ts": 1785596531361
+    },
+    {
+      "s": "Bitcoin Bullish Sentiment Falls to Historic Low: Here Is Why",
+      "t": "2026-08-01T14:32:14.000Z",
+      "ts": 1785594734,
+      "src": "U.Today",
+      "link": "https://u.today/bitcoin-bullish-sentiment-falls-to-historic-low-here-is-why",
+      "s_cn": "比特币看涨情绪跌至历史低点：原因如下",
+      "_ts": 1785595622840
+    },
+    {
+      "s": "Ripple CTO Emeritus Hints He Is Still Deeply Involved With XRP",
+      "t": "2026-08-01T13:10:37.000Z",
+      "ts": 1785589837,
+      "src": "U.Today",
+      "link": "https://u.today/ripple-cto-emeritus-hints-he-is-still-deeply-involved-with-xrp",
+      "s_cn": "Ripple 荣誉 CTO 暗示他仍深度参与 XRP",
+      "_ts": 1785594123083
+    },
+    {
+      "s": "Everyone has the perps convergence backwards",
+      "t": "2026-08-01T13:00:00.000Z",
+      "ts": 1785589200,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/opinion/2026/08/01/everyone-has-the-perps-convergence-backwards",
+      "s_cn": "每个人都有倒退的perps收敛",
+      "_ts": 1785589259766
+    },
+    {
+      "s": "Solana Foundation's new CISO warns AI is making crypto scams more convincing",
+      "t": "2026-08-01T13:00:00.000Z",
+      "ts": 1785589200,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/07/31/solana-foundation-s-new-ciso-warns-ai-is-making-crypto-scams-more-convincing",
+      "s_cn": "Solana 基金会的新 CISO 警告人工智能正在使加密货币诈骗更具说服力",
+      "_ts": 1785589241196
+    },
+    {
+      "s": "XRP Ledger Rolls Out Major Upgrade to Fix Manifest Flood Issue",
+      "t": "2026-08-01T12:40:33.000Z",
+      "ts": 1785588033,
+      "src": "U.Today",
+      "link": "https://u.today/xrp-ledger-rolls-out-major-upgrade-to-fix-manifest-flood-issue",
+      "s_cn": "XRP Ledger 推出重大升级以解决明显的洪水问题",
+      "_ts": 1785588721099
+    },
+    {
+      "s": "Faisal Islam: Four reasons why Fifa's World Cup plan never stacked up",
+      "t": "2026-08-01T12:41:17.000Z",
+      "ts": 1785588077,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/clyvd8363wlo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "费萨尔·伊斯兰：国际足联世界杯计划从未实现的四个原因",
+      "_ts": 1785588364831
+    },
+    {
+      "s": "SHIB Community Marks Shiba Inu's 6th Birthday: What's Ahead?",
+      "t": "2026-08-01T12:00:42.000Z",
+      "ts": 1785585642,
+      "src": "U.Today",
+      "link": "https://u.today/shib-community-marks-shiba-inus-6th-birthday-whats-ahead",
+      "s_cn": "SHIB 社区庆祝柴犬六岁生日：未来会怎样？",
+      "_ts": 1785587521821
+    },
+    {
+      "s": "To keep growing, incoming Best Buy CEO says he first wants to go smaller",
+      "t": "2026-08-01T12:00:01.000Z",
+      "ts": 1785585601,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/01/best-buy-ceo-jason-bonfig-smaller-stores.html",
+      "s_cn": "为了保持增长，即将上任的百思买首席执行官表示，他首先要缩小规模",
+      "_ts": 1785585619802
+    },
+    {
+      "s": "Ripple Announcement Scam Flagged by XRPL Foundation Director, Issues Warning",
+      "t": "2026-08-01T10:30:46.000Z",
+      "ts": 1785580246,
+      "src": "U.Today",
+      "link": "https://u.today/ripple-announcement-scam-flagged-by-xrpl-foundation-director-issues-warning",
+      "s_cn": "XRPL 基金会总监标记 Ripple 公告骗局并发出警告",
+      "_ts": 1785583005679
+    },
+    {
+      "s": "Russia expands crypto mining ban to Moscow through 2032",
+      "t": "2026-08-01T10:23:41.000Z",
+      "ts": 1785579821,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/russia-expands-crypto-mining-ban-moscow-2032?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "俄罗斯将加密货币挖矿禁令扩大到莫斯科直至 2032 年",
+      "_ts": 1785580310087
+    },
+    {
+      "s": "Coldcard Bitcoin loss estimate rises to $70M after Galaxy analysis",
+      "t": "2026-08-01T09:23:56.000Z",
+      "ts": 1785576236,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/coldcard-bitcoin-loss-estimate-70-million-galaxy-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Galaxy 分析后，Coldcard 比特币损失预估升至 7000 万美元",
+      "_ts": 1785576710241
+    },
+    {
+      "s": "Binance founder CZ calls for wallet diversification after $70 million Coldcard exploit",
+      "t": "2026-08-01T09:01:08.000Z",
+      "ts": 1785574868,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/01/binance-founder-cz-says-diversify-your-wallets-following-usd70-million-coldcard-exploit",
+      "s_cn": "币安创始人 CZ 在 Coldcard 漏洞利用后呼吁钱包多元化",
+      "_ts": 1785574893176
+    },
+    {
+      "s": "Stick to spending limits, PM and chancellor tell ministers in joint memo",
+      "t": "2026-08-01T07:48:01.000Z",
+      "ts": 1785570481,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cjd4yz35x8go?at_medium=RSS&at_campaign=rss",
+      "s_cn": "总理和财政大臣在联合备忘录中告诉部长们，坚持支出限制",
+      "_ts": 1785570510314
+    },
+    {
+      "s": "Bitcoin ETFs end July in the green despite late-month selling",
+      "t": "2026-08-01T07:23:07.000Z",
+      "ts": 1785568987,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/bitcoin-etfs-july-green-despite-late-month-selling?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "尽管月末出现抛售，比特币 ETF 7 月仍录得上涨",
+      "_ts": 1785569207312
+    },
+    {
+      "s": "XRP Ledger upgrade brings back features once pulled over critical bugs",
+      "t": "2026-08-01T06:09:51.000Z",
+      "ts": 1785564591,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/01/xrp-ledger-upgrade-brings-back-features-once-pulled-over-critical-bugs",
+      "s_cn": "XRP Ledger 升级恢复了曾经解决严重错误的功能",
+      "_ts": 1785564685426
+    },
+    {
+      "s": "How bitcoin cold wallets lost $70 million in an attack that never touched the devices",
+      "t": "2026-08-01T05:55:46.000Z",
+      "ts": 1785563746,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/01/how-bitcoin-cold-wallets-lost-usd70-million-in-an-attack-that-never-touched-the-devices",
+      "s_cn": "比特币冷钱包如何在从未触及设备的攻击中损失 7000 万美元",
+      "_ts": 1785563792447
+    },
+    {
+      "s": "Four Years of Red: Why XRP Finally Has Bull Chance This August",
+      "t": "2026-08-01T04:00:00.000Z",
+      "ts": 1785556800,
+      "src": "U.Today",
+      "link": "https://u.today/four-years-of-red-why-xrp-finally-has-bull-chance-this-august",
+      "s_cn": "四年的红色：为什么 XRP 今年 8 月终于迎来牛市机会",
+      "_ts": 1785557468560
+    },
+    {
+      "s": "-2.3 Billion SHIB Burned in 24 Hours as Shiba Inu Enters Smooth Acceleration Period",
+      "t": "2026-08-01T03:00:00.000Z",
+      "ts": 1785553200,
+      "src": "U.Today",
+      "link": "https://u.today/23-billion-shib-burned-in-24-hours-as-shiba-inu-enters-smooth-acceleration-period",
+      "s_cn": "24小时销毁-23亿SHIB 柴犬进入平稳加速期",
+      "_ts": 1785553855698
+    },
+    {
+      "s": "Dogecoin (DOGE), Zcash (ZEC), Cardano (ADA) and Solana (SOL) Price Analysis For August 1: Outsiders Enter the Stage",
+      "t": "2026-08-01T00:01:00.000Z",
+      "ts": 1785542460,
+      "src": "U.Today",
+      "link": "https://u.today/dogecoin-doge-zcash-zec-cardano-ada-and-solana-sol-price-analysis-for-august-1-outsiders-enter-the",
+      "s_cn": "狗狗币 (DOGE)、Zcash (ZEC)、卡尔达诺 (ADA) 和 Solana (SOL) 8 月 1 日价格分析：局外人入场",
+      "_ts": 1785543335807
+    },
+    {
+      "s": "UEFA threatens World Cup boycott over FIFA private equity investment plan",
+      "t": "2026-07-30T19:59:12.000Z",
+      "ts": 1785441552,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/uefa-threatens-world-cup-boycott-over-fifa-investment-plan.html",
+      "s_cn": "欧足联威胁抵制世界杯 国际足联私募股权投资计划"
+    },
+    {
+      "s": "Jersey Mike's stock falls 6% in public market debut after pricing shares at $23",
+      "t": "2026-07-30T20:13:00.000Z",
+      "ts": 1785442380,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/jersey-mikes-ipo-jmke-starts-trading-on-the-new-york-stock-exchange.html",
+      "s_cn": "Jersey Mike 的股价在公开市场首次亮相后下跌 6%，定价为 23 美元"
+    },
+    {
+      "s": "'The Odyssey' extends stay in 70 mm Imax theaters as shows sell out weeks in advance",
+      "t": "2026-07-30T20:51:02.000Z",
+      "ts": 1785444662,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/the-odyssey-70mm-imax-run-extended-until-september.html",
+      "s_cn": "《奥德赛》延长在 70 毫米 Imax 影院的停留时间，演出提前几周售完"
+    },
+    {
+      "s": "Rivian reduces 2026 spending plans, narrows earnings guidance",
+      "t": "2026-07-30T21:19:16.000Z",
+      "ts": 1785446356,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/30/rivian-rivn-q2-2026-earnings.html",
+      "s_cn": "Rivian 减少 2026 年支出计划，缩小盈利指引"
+    },
+    {
+      "s": "India wants to join the strawberry superpowers",
+      "t": "2026-07-30T22:04:09.000Z",
+      "ts": 1785449049,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c8x274xxxpwo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "印度欲加入草莓超级大国行列"
+    },
+    {
+      "s": "'I pay £580 a month to live in a disused care home': Property guardians show us around",
+      "t": "2026-07-30T23:05:41.000Z",
+      "ts": 1785452741,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cj4kvge1pyvo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "“我每月支付 580 英镑住在废弃的护理院”：财产监护人带我们参观"
+    },
+    {
+      "s": "Thames Water boss says leakage targets 'not realistic'",
+      "t": "2026-07-30T23:06:37.000Z",
+      "ts": 1785452797,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c04kd3gl1gpo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "泰晤士水务公司老板表示泄漏目标“不现实”"
+    },
+    {
+      "s": "UK petrol prices hit highest level since Iran war began",
+      "t": "2026-07-31T11:19:23.000Z",
+      "ts": 1785496763,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "英国汽油价格创伊朗战争爆发以来最高水平"
+    },
+    {
+      "s": "More consumer companies are staying private for longer, avoiding the IPO road",
+      "t": "2026-07-31T11:30:01.000Z",
+      "ts": 1785497401,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/private-consumer-companies-ipo.html",
+      "s_cn": "越来越多的消费品公司保持私有状态的时间更长，避免走IPO之路"
+    },
+    {
+      "s": "Morning Minute: Coinbase Posts Surprise Loss as Crypto Trading Dries Up",
+      "t": "2026-07-31T12:11:17.000Z",
+      "ts": 1785499877,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374781/morning-minute-coinbase-posts-surprise-loss-as-crypto-trading-dries-up",
+      "s_cn": "早间分钟：随着加密货币交易枯竭，Coinbase 出现意外亏损"
+    },
+    {
+      "s": "Passenger on British Airways mayday flight describes fear and shout of 'I don't want to die'",
+      "t": "2026-07-31T12:19:20.000Z",
+      "ts": 1785500360,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cn9n2v3lwr0o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "英国航空求救航班上的乘客描述了恐惧并大喊“我不想死”"
+    },
+    {
+      "s": "Dubai-based crypto exchange tied to $4 billion Iran sanctioned-evasion network",
+      "t": "2026-07-31T12:28:02.000Z",
+      "ts": 1785500882,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/31/dubai-based-crypto-exchange-tied-to-usd4-billion-iran-sanctioned-evasion-network-reuters",
+      "s_cn": "迪拜加密货币交易所与价值 40 亿美元的伊朗制裁逃税网络挂钩"
+    },
+    {
+      "s": "XRP Ledger Prints New Peak: 200,000 Users Threshold Is Near",
+      "t": "2026-07-31T12:34:00.000Z",
+      "ts": 1785501240,
+      "src": "U.Today",
+      "link": "https://u.today/xrp-ledger-prints-new-peak-200000-users-threshold-is-near",
+      "s_cn": "XRP Ledger打印新峰值：20万用户门槛已近"
+    },
+    {
+      "s": "Sainsbury's agrees to sell Argos for £120m",
+      "t": "2026-07-31T12:42:22.000Z",
+      "ts": 1785501742,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cpw9yrl4p2qo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Sainsbury's 同意以 1.2 亿英镑出售 Argos"
+    },
+    {
+      "s": "Bitcoin's Worst Month Is About to Start, Price History Predicts",
+      "t": "2026-07-31T12:57:15.000Z",
+      "ts": 1785502635,
+      "src": "U.Today",
+      "link": "https://u.today/bitcoins-worst-month-is-about-to-start-price-history-predicts",
+      "s_cn": "价格历史预测，比特币最糟糕的一个月即将开始"
+    },
+    {
+      "s": "RWA perps will outpace tokenization",
+      "t": "2026-07-31T13:00:00.000Z",
+      "ts": 1785502800,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/opinion/2026/07/31/rwa-perps-will-outpace-tokenization",
+      "s_cn": "RWA Perps 将超过代币化"
+    },
+    {
+      "s": "11% Up? Shiba Inu (SHIB) Surprise Rally Could End 2-Month Losing Streak",
+      "t": "2026-07-31T13:15:25.000Z",
+      "ts": 1785503725,
+      "src": "U.Today",
+      "link": "https://u.today/11-up-shiba-inu-shib-surprise-rally-could-end-2-month-losing-streak",
+      "s_cn": "上涨11%？"
+    },
+    {
+      "s": "Coinbase's weak quarter leaves Wall Street split on timing of a recovery",
+      "t": "2026-07-31T13:20:45.000Z",
+      "ts": 1785504045,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/coinbase-s-weak-quarter-leaves-wall-street-split-on-timing-of-a-recovery",
+      "s_cn": "Coinbase 季度疲软让华尔街对于复苏时机存在分歧"
+    },
+    {
+      "s": "Circle secures New York trust charter as crypto regulatory push accelerates",
+      "t": "2026-07-31T13:35:17.000Z",
+      "ts": 1785504917,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
+      "s_cn": "随着加密货币监管的加速推进，Circle 获得了纽约信托宪章"
+    },
+    {
+      "s": "Claude Hacked Three Companies in Internal Testing: Anthropic",
+      "t": "2026-07-31T13:47:54.000Z",
+      "ts": 1785505674,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374784/claude-hacked-three-companies-in-internal-testing-anthropic",
+      "s_cn": "克劳德在内部测试中黑了三家公司：Anthropic"
+    },
+    {
+      "s": "AMLBot launches AI Tracer for self-service blockchain investigations",
+      "t": "2026-07-31T13:59:56.000Z",
+      "ts": 1785506396,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/crypto-forensics-firm-launches-ai-tracing-service-track-your-stolen-coins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "AMLBot 推出用于自助区块链调查的 AI Tracer"
+    },
+    {
+      "s": "AI Company Sues Town for Trying to Block Data Center Near National Park",
+      "t": "2026-07-31T14:01:03.000Z",
+      "ts": 1785506463,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374764/ai-company-sues-town-data-center-national-park",
+      "s_cn": "人工智能公司起诉小镇试图封锁国家公园附近的数据中心"
+    },
+    {
+      "s": "ECB says digital euro app will exceed EU accessibility standards",
+      "t": "2026-07-31T14:05:25.000Z",
+      "ts": 1785506725,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/ecb-digital-euros-accessibility-payment-providers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "欧洲央行表示数字欧元应用程序将超越欧盟无障碍标准"
+    },
+    {
+      "s": "Circle Catches Up With Ripple, Secures New York Trust Charter for USDC Stablecoin",
+      "t": "2026-07-31T14:30:30.000Z",
+      "ts": 1785508230,
+      "src": "U.Today",
+      "link": "https://u.today/circle-catches-up-with-ripple-secures-new-york-trust-charter-for-usdc-stablecoin",
+      "s_cn": "Circle 赶上 Ripple，获得 USDC 稳定币纽约信托宪章"
+    },
+    {
+      "s": "Cardano Founder Charles Hoskinson Joins Elite Lineup for Major Blockchain Event",
+      "t": "2026-07-31T14:55:30.000Z",
+      "ts": 1785509730,
+      "src": "U.Today",
+      "link": "https://u.today/cardano-founder-charles-hoskinson-joins-elite-lineup-for-major-blockchain-event",
+      "s_cn": "Cardano 创始人 Charles Hoskinson 加入精英阵容参加重大区块链活动"
+    },
+    {
+      "s": "Crypto faces 3 barriers to next bull run, STS Digital CEO says",
+      "t": "2026-07-31T15:00:00.000Z",
+      "ts": 1785510000,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/crypto-faces-3-barriers-to-next-bull-run-sts-digital-ceo-says",
+      "s_cn": "STS Digital 首席执行官表示，加密货币面临下一轮牛市的 3 个障碍"
+    },
+    {
+      "s": "XDC AI and the Rise of Agentic Finance: When AI Agents Learn to Pay",
+      "t": "2026-07-31T15:01:04.000Z",
+      "ts": 1785510064,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374741/xdc-ai-and-the-rise-of-agentic-finance-when-ai-agents-learn-to-pay",
+      "s_cn": "XDC AI 和代理金融的兴起：当 AI 代理学会付款时"
+    },
+    {
+      "s": "US Treasury Sanctions Iranian Firms Taking Bitcoin for Hormuz Passage",
+      "t": "2026-07-31T15:05:43.000Z",
+      "ts": 1785510343,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374789/us-treasury-sanctions-iranian-firms-taking-bitcoin-for-hormuz-passage",
+      "s_cn": "美国财政部制裁伊朗公司通过霍尔木兹海峡获取比特币"
+    },
+    {
+      "s": "Former Barclays CEO Urges Wall Street to Back Key Crypto Bill",
+      "t": "2026-07-31T15:22:53.000Z",
+      "ts": 1785511373,
+      "src": "U.Today",
+      "link": "https://u.today/former-barclays-ceo-urges-wall-street-to-back-key-crypto-bill",
+      "s_cn": "巴克莱前首席执行官敦促华尔街支持关键的加密货币法案"
+    },
+    {
+      "s": "Circle Lands New York Trust Charter as Stablecoin Issuer Expands Regulatory Footprint",
+      "t": "2026-07-31T15:32:02.000Z",
+      "ts": 1785511922,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374791/circle-new-york-trust-charter-stablecoin-issuer",
+      "s_cn": "随着稳定币发行人扩大监管范围，Circle 获得纽约信托宪章"
+    },
+    {
+      "s": "BP puts North Sea business up for sale",
+      "t": "2026-07-31T15:36:21.000Z",
+      "ts": 1785512181,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c62q7w003lro?at_medium=RSS&at_campaign=rss",
+      "s_cn": "英国石油公司 (BP) 出售北海业务"
+    },
+    {
+      "s": "Quantum computing nears commercial breakthrough, IBM CEO says",
+      "t": "2026-07-31T15:39:30.000Z",
+      "ts": 1785512370,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/quantum-computing-nears-commercial-breakthrough-ibm-ceo-says",
+      "s_cn": "IBM首席执行官表示量子计算接近商业突破"
+    },
+    {
+      "s": "Bitcoin price sinks to 2-week lows as US stocks fail to copy Asia rebound",
+      "t": "2026-07-31T15:57:03.000Z",
+      "ts": 1785513423,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/bitcoin-two-week-lows-us-stocks-fail-copy-asia-rebound?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "由于美国股市未能复制亚洲反弹，比特币价格跌至两周低点"
+    },
+    {
+      "s": "Budget to be held in October, Healey announces",
+      "t": "2026-07-31T15:58:42.000Z",
+      "ts": 1785513522,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cjd4yz35x8go?at_medium=RSS&at_campaign=rss",
+      "s_cn": "希利宣布预算将于十月举行"
+    },
+    {
+      "s": "24.38 Million Shiba Inu Gone Amid 3,607% Surge in Burn Rate",
+      "t": "2026-07-31T16:03:03.000Z",
+      "ts": 1785513783,
+      "src": "U.Today",
+      "link": "https://u.today/2438-million-shiba-inu-gone-amid-3607-surge-in-burn-rate",
+      "s_cn": "烧伤率激增3,607%，2438万只柴犬消失"
+    },
+    {
+      "s": "US Treasury yields rise as TIPS challenge the inflation narrative",
+      "t": "2026-07-31T16:14:19.000Z",
+      "ts": 1785514459,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/us-treasury-yields-rise-as-tips-challenge-the-inflation-narrative?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "由于TIPS挑战通胀叙事，美国国债收益率上升"
+    },
+    {
+      "s": "Bybit adds tokenized Nvidia, Apple, Tesla stocks as loan collateral",
+      "t": "2026-07-31T16:23:21.000Z",
+      "ts": 1785515001,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bybit-tokenized-stocks-collateral-margin-loans?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Bybit 添加代币化的 Nvidia、Apple、Tesla 股票作为贷款抵押品"
+    },
+    {
+      "s": "Tether earns $1.5B in Q2 as US Treasury holdings fuel profits",
+      "t": "2026-07-31T16:25:47.000Z",
+      "ts": 1785515147,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/tether-q2-profit-us-treasury-holdings-usdt-supply?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "由于持有美国国债推动利润，Tether 第二季度盈利 1.5B 美元"
+    },
+    {
+      "s": "How Ripple Plans to Re-Engineer XRP: Top Exec Breaks Down 5 Key Incoming Amendments",
+      "t": "2026-07-31T16:42:45.000Z",
+      "ts": 1785516165,
+      "src": "U.Today",
+      "link": "https://u.today/how-ripple-plans-to-re-engineer-xrp-top-exec-breaks-down-5-key-incoming-amendments",
+      "s_cn": "Ripple 计划如何重新设计 XRP：最高执行官详细剖析即将到来的 5 项关键修正案"
+    },
+    {
+      "s": "Ex-FTX users report funds being released in $900M distribution round",
+      "t": "2026-07-31T16:56:31.000Z",
+      "ts": 1785516991,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/ftx-users-funds-released-fifth-distribution-round?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "前 FTX 用户报告称资金已在 9 亿美元的分配轮中释放"
+    },
+    {
+      "s": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
+      "t": "2026-07-31T17:07:30.000Z",
+      "ts": 1785517650,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
+      "s_cn": "Coldcard 的 3800 万美元（迄今为止）漏洞动摇了人们对自我托管的信心，可能会促使投资者转向 ETF"
+    },
+    {
+      "s": "Tether Reports $1.5B Q2 Profit as USDT Supply Grows, Gold Holdings Rise",
+      "t": "2026-07-31T17:10:49.000Z",
+      "ts": 1785517849,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374796/tether-reports-1-5b-q2-profit-usdt-supply-grows",
+      "s_cn": "随着 USDT 供应量的增长和黄金持有量的增加，Tether 第二季度利润为 1.5 亿美元"
+    },
+    {
+      "s": "Japanese Giant SBI Weighs In on XRP Price",
+      "t": "2026-07-31T17:34:50.000Z",
+      "ts": 1785519290,
+      "src": "U.Today",
+      "link": "https://u.today/japanese-giant-sbi-weighs-in-on-xrp-price",
+      "s_cn": "日本巨头 SBI 关注 XRP 价格"
+    },
+    {
+      "s": "The good and the bad of perps, according to crypto traders",
+      "t": "2026-07-31T17:53:59.000Z",
+      "ts": 1785520439,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/31/the-good-and-the-bad-of-perps-according-to-crypto-traders",
+      "s_cn": "加密货币交易员表示，犯罪分子的好与坏"
+    },
+    {
+      "s": "Here’s what happened in crypto today",
+      "t": "2026-07-31T18:09:51.000Z",
+      "ts": 1785521391,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "这是今天加密货币领域发生的事情"
+    },
+    {
+      "s": "AI firms must answer for rogue bots, says boss of hacked company",
+      "t": "2026-07-31T18:10:28.000Z",
+      "ts": 1785521428,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cr7k49xjzzeo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "被黑公司老板表示，人工智能公司必须对流氓机器人负责"
+    },
+    {
+      "s": "GM to launch proprietary in-vehicle AI system later this year",
+      "t": "2026-07-31T18:13:39.000Z",
+      "ts": 1785521619,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/gm-in-vehicle-ai-system.html",
+      "s_cn": "通用汽车将于今年晚些时候推出专有的车载人工智能系统"
+    },
+    {
+      "s": "Tether posts $1.5 billion operating profit in Q2 as reserve buffer falls by half",
+      "t": "2026-07-31T18:24:55.000Z",
+      "ts": 1785522295,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/07/31/tether-posts-usd1-5-billion-operating-profit-in-q2-as-reserve-buffer-falls-by-half",
+      "s_cn": "由于准备金缓冲减少一半，Tether 第二季度营业利润达 15 亿美元"
+    },
+    {
+      "s": "Pump.fun laid off workers before they received millions in PUMP tokens: Report",
+      "t": "2026-07-31T19:16:19.000Z",
+      "ts": 1785525379,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/pump-fun-employees-fired-tokens-vest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Pump.fun 在工人收到数百万 PUMP 代币之前就解雇了他们：报告"
+    },
+    {
+      "s": "US Is Banning Foreign Robots—Even Roombas",
+      "t": "2026-07-31T19:43:24.000Z",
+      "ts": 1785527004,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374799/fcc-bans-foreign-humanoid-robots-china-roombas",
+      "s_cn": "美国禁止外国机器人——甚至 Roomba"
+    },
+    {
+      "s": "Democrats Hate Crypto More Than Oil Companies and Data Centers, Poll Shows",
+      "t": "2026-07-31T19:52:54.000Z",
+      "ts": 1785527574,
+      "src": "U.Today",
+      "link": "https://u.today/democrats-hate-crypto-more-than-oil-companies-and-data-centers-poll-shows",
+      "s_cn": "民意调查显示，民主党人比石油公司和数据中心更讨厌加密货币"
+    },
+    {
+      "s": "AI Music Company Suno Loses Copyright Case in Germany",
+      "t": "2026-07-31T20:03:22.000Z",
+      "ts": 1785528202,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374802/suno-ai-music-copyright-case-germany",
+      "s_cn": "AI音乐公司Suno在德国版权诉讼中败诉"
+    },
+    {
+      "s": "Bank of Italy finds no consistent cost advantage for stablecoin remittances",
+      "t": "2026-07-31T20:10:21.000Z",
+      "ts": 1785528621,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bank-of-italy-study-no-stablecoin-remittance-cost-advantages?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "意大利央行发现稳定币汇款没有持续的成本优势"
+    },
+    {
+      "s": "How Leopold Aschenbrenner built a $45 billion AI hedge fund — and lost most of it in days",
+      "t": "2026-07-31T20:19:03.000Z",
+      "ts": 1785529143,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/leopold-aschenbrenner-situational-awareness-fund-fire-sale.html",
+      "s_cn": "Leopold Aschenbrenner 如何建立了 450 亿美元的人工智能对冲基金，并在几天内损失了大部分资金"
+    },
+    {
+      "s": "Google Yanks Google Earth AI Image Tool a Day After Launch Over Deepfake Fears",
+      "t": "2026-07-31T20:32:50.000Z",
+      "ts": 1785529970,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374805/google-yanks-google-earth-ai-image-tool-deepfake-fears",
+      "s_cn": "由于担心 Deepfake，谷歌在推出 Google Earth 人工智能图像工具后一天就将其撤下"
+    },
+    {
+      "s": "FIFA tests the limits of private equity in sports with World Cup subsidiary sale",
+      "t": "2026-07-31T20:40:51.000Z",
+      "ts": 1785530451,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/fifa-world-cup-private-equity-sports.html",
+      "s_cn": "国际足联通过出售世界杯子公司来测试私募股权在体育领域的极限"
+    },
+    {
+      "s": "Bitcoin holds monthly gain, faces 'choppy' August as 'forced-selling' exhausted, analysts say",
+      "t": "2026-07-31T20:50:58.000Z",
+      "ts": 1785531058,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/07/31/bitcoin-holds-onto-july-gain-as-forced-selling-fuel-was-already-spent-analysts-say",
+      "s_cn": "分析师表示，比特币保持月度上涨，但由于“强制抛售”耗尽，八月将面临“波动”"
+    },
+    {
+      "s": "‘Spider-Man: Brand New Day’ sets domestic box office preview record with $72 million",
+      "t": "2026-07-31T21:06:36.000Z",
+      "ts": 1785531996,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/spider-man-brand-new-day-box-office-preview-sales.html",
+      "s_cn": "《蜘蛛侠：崭新的一天》以 7200 万美元创下国内预映票房纪录"
+    },
+    {
+      "s": "Fintech broker Clear Street offers investors pre-IPO access to $188 billion AI giant Databricks",
+      "t": "2026-07-31T21:49:40.000Z",
+      "ts": 1785534580,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/clear-street-pre-ipo-platform-databricks.html",
+      "s_cn": "金融科技经纪商 Clear Street 为投资者提供 IPO 前投资 1,880 亿美元人工智能巨头 Databricks 的机会"
+    },
+    {
+      "s": "Snapchat joins other popular platforms in fight against 'AI slop'",
+      "t": "2026-07-31T21:57:59.000Z",
+      "ts": 1785535079,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c77g6dm5pr8o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Snapchat 与其他流行平台一起对抗“人工智能滥用”"
+    }
+  ]
+}
