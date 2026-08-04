@@ -1,9 +1,387 @@
 {
   "date": "2026-08-04",
   "type": "news",
-  "updated": 1785830385031,
-  "total": 64,
+  "updated": 1785847772941,
+  "total": 106,
   "records": [
+    {
+      "s": "Texas electric grid moratorium won’t have big impact on BTC miners: Bernstein",
+      "t": "2026-08-04T12:37:59.000Z",
+      "ts": 1785847079,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/texas-electric-grid-moratorim-btc-miners-bernstein?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "伯恩斯坦：德克萨斯州电网暂停不会对比特币矿工产生重大影响",
+      "_ts": 1785847772932
+    },
+    {
+      "s": "Tether Gold reserves rise 9.5% as gold posts worst quarter in 13 years",
+      "t": "2026-08-04T12:30:07.000Z",
+      "ts": 1785846607,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/tether-gold-rise-q2-sharpest-quarterly-gold-correction?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Tether 黄金储备增长 9.5%，金价录得 13 年来最差季度表现",
+      "_ts": 1785847179730
+    },
+    {
+      "s": "Morning Minute: Saylor Sells Bitcoin Again",
+      "t": "2026-08-04T12:33:21.000Z",
+      "ts": 1785846801,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374897/morning-minute-saylor-sells-bitcoin-again",
+      "s_cn": "早间分钟：塞勒再次出售比特币",
+      "_ts": 1785846840509
+    },
+    {
+      "s": "BNY to add crypto staking to digital asset custody platform",
+      "t": "2026-08-04T12:30:00.000Z",
+      "ts": 1785846600,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/04/bny-to-add-crypto-staking-to-digital-asset-custody-platform",
+      "s_cn": "纽约银行将在数字资产托管平台上添加加密货币质押",
+      "_ts": 1785846634828
+    },
+    {
+      "s": "Coldcard urges users to move bitcoin as exploit is still in progress",
+      "t": "2026-08-04T12:00:25.000Z",
+      "ts": 1785844825,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/04/coldcard-urges-users-to-move-bitcoin-as-active-wallet-exploit-continues",
+      "s_cn": "Coldcard 敦促用户转移比特币，因为漏洞仍在进行中",
+      "_ts": 1785845570084
+    },
+    {
+      "s": "Italy’s biggest bank triples staked Ether ETF holdings while cutting IBIT shares",
+      "t": "2026-08-04T11:55:19.000Z",
+      "ts": 1785844519,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/intesa-sanpaolo-bank-staked-ether-etf-ibit-shares?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "意大利最大银行将 ETH ETF 持有量增加两倍，同时削减 IBIT 股票",
+      "_ts": 1785845072604
+    },
+    {
+      "s": "Half a Trillion Shiba Inu (SHIB) Is Out: Price Effect",
+      "t": "2026-08-04T11:50:00.000Z",
+      "ts": 1785844200,
+      "src": "U.Today",
+      "link": "https://u.today/half-a-trillion-shiba-inu-shib-is-out-price-effect",
+      "s_cn": "半万亿柴犬（SHIB）已出局：价格效应",
+      "_ts": 1785845037113
+    },
+    {
+      "s": "Coldcard urges users to move bitcoin as active wallet exploit continues",
+      "t": "2026-08-04T12:00:25.000Z",
+      "ts": 1785844825,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/04/coldcard-urges-users-to-move-bitcoin-as-active-wallet-exploit-continues",
+      "s_cn": "Coldcard 敦促用户转移比特币，因为活跃的钱包漏洞仍在继续",
+      "_ts": 1785844854783
+    },
+    {
+      "s": "Live updates: Bitcoin stuck in tight range as risk assets rise on Iran deal hopes",
+      "t": "2026-08-04T08:41:00.000Z",
+      "ts": 1785832860,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/04/live-updates-bitcoin-at-usd63-600-as-rare-us-japan-yen-action-tests-carry-trade-fears",
+      "s_cn": "实时更新：随着伊朗协议希望带来的风险资产上涨，比特币陷入窄幅波动",
+      "_ts": 1785844381719
+    },
+    {
+      "s": "BlackRock Tokenizes $311B of European Money Market Funds With JP Morgan's Kinexys",
+      "t": "2026-08-04T11:40:44.000Z",
+      "ts": 1785843644,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374894/blackrock-tokenizes-311b-of-european-money-market-funds-with-jp-morgans-kinexys",
+      "s_cn": "BlackRock 通过摩根大通的 Kinexys 对 311B 美元的欧洲货币市场基金进行代币化",
+      "_ts": 1785843727336
+    },
+    {
+      "s": "Pfizer tops estimates, hikes low end of revenue guidance on strength of Eliquis, other drugs",
+      "t": "2026-08-04T11:38:55.000Z",
+      "ts": 1785843535,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/04/pfizer-pfe-earnings-q2-2026.html",
+      "s_cn": "辉瑞（Pfizer）因 Eliquis 和其他药物的强劲表现而上调了收入指引的低端，超出了预期",
+      "_ts": 1785843558398
+    },
+    {
+      "s": "BlackRock Pumps Bitcoin Stash With $111 Million",
+      "t": "2026-08-04T11:23:18.000Z",
+      "ts": 1785842598,
+      "src": "U.Today",
+      "link": "https://u.today/blackrock-pumps-bitcoin-stash-with-111-million",
+      "s_cn": "贝莱德 (BlackRock) 斥资 1.11 亿美元囤积比特币",
+      "_ts": 1785843243047
+    },
+    {
+      "s": "The bitcoin market has plenty of reasons to freak out, yet calm pervades",
+      "t": "2026-08-04T11:23:33.000Z",
+      "ts": 1785842613,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/04/the-bitcoin-market-has-plenty-of-reasons-to-freak-out-yet-calm-pervades",
+      "s_cn": "比特币市场有很多理由让人惊慌，但总体平静",
+      "_ts": 1785842649417
+    },
+    {
+      "s": "'Not One Satoshi': Michael Saylor's Bitcoin Claim Triggers Peter Schiff's Response",
+      "t": "2026-08-04T10:30:01.000Z",
+      "ts": 1785839401,
+      "src": "U.Today",
+      "link": "https://u.today/not-one-satoshi-michael-saylors-bitcoin-claim-triggers-peter-schiffs-response",
+      "s_cn": "“不是一个中本聪”：迈克尔·塞勒的比特币主张引发了彼得·希夫的回应",
+      "_ts": 1785842637538
+    },
+    {
+      "s": "McDonald's names company veteran Skye Anderson as its U.S. president as growth in its largest market slows",
+      "t": "2026-08-04T11:01:01.000Z",
+      "ts": 1785841261,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/04/mcdonalds-skye-anderson-us-president.html",
+      "s_cn": "麦当劳任命公司资深人士斯凯·安德森为美国总裁，因为其最大市场的增长放缓",
+      "_ts": 1785842043690
+    },
+    {
+      "s": "McDonald's earnings beat estimates, chain announces new U.S. head to accelerate growth",
+      "t": "2026-08-04T11:09:33.000Z",
+      "ts": 1785841773,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/04/mcdonalds-mcd-q2-2026-earnings.html",
+      "s_cn": "麦当劳盈利超出预期，连锁店宣布新任美国负责人以加速增长",
+      "_ts": 1785842043690
+    },
+    {
+      "s": "Pfizer tops quarterly estimates, hikes low end of revenue guidance on strength of non-Covid products",
+      "t": "2026-08-04T11:13:24.000Z",
+      "ts": 1785842004,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/04/pfizer-pfe-earnings-q2-2026.html",
+      "s_cn": "辉瑞（Pfizer）超出季度预期，因非新冠产品的实力上调了收入指引的低端",
+      "_ts": 1785842043690
+    },
+    {
+      "s": "South African lawmakers propose draft rules on cross-border crypto transactions",
+      "t": "2026-08-04T10:59:41.000Z",
+      "ts": 1785841181,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/08/04/south-african-lawmakers-propose-draft-rules-on-cross-border-crypto-transactions",
+      "s_cn": "南非立法者提出跨境加密交易规则草案",
+      "_ts": 1785841207772
+    },
+    {
+      "s": "Jim Cramer plans to sell his Bitcoin over quantum fears as BTC rises 1.6%",
+      "t": "2026-08-04T10:47:39.000Z",
+      "ts": 1785840459,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/jim-cramer-sell-bitcoin-quantum-fears-btc-rises?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "比特币上涨 1.6%，吉姆·克莱默 (Jim Cramer) 计划因量子担忧而出售其比特币",
+      "_ts": 1785840868980
+    },
+    {
+      "s": "Hardware Wallet Firms Warn of Phishing Surge as Coldcard Losses Near $130M",
+      "t": "2026-08-04T10:52:57.000Z",
+      "ts": 1785840777,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374891/hardware-wallet-firms-warn-of-phishing-surge-as-coldcard-losses-near-130m",
+      "s_cn": "Coldcard 损失近 1.3 亿美元，硬件钱包公司警告网络钓鱼激增",
+      "_ts": 1785840820562
+    },
+    {
+      "s": "Bitcoin rises toward $64,000 as Coldcard exploit, Strategy sales recede. ADA advances",
+      "t": "2026-08-04T10:51:11.000Z",
+      "ts": 1785840671,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/04/bitcoin-rises-toward-usd64-000-as-coldcard-exploit-strategy-sales-recede-ada-advances",
+      "s_cn": "随着 Coldcard 的利用和策略销售的减少，比特币价格上涨至 64,000 美元。",
+      "_ts": 1785840711176
+    },
+    {
+      "s": "Zinc dresses and ice creams - how to survive a heatwave wedding",
+      "t": "2026-08-03T23:20:15.000Z",
+      "ts": 1785799215,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cgr7qrdx4qwo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "锌连衣裙和冰淇淋 - 如何在热浪婚礼中生存",
+      "_ts": 1785840432732
+    },
+    {
+      "s": "Merck hikes revenue outlook as new drug sales grow, but cuts profit guidance due to deal charges",
+      "t": "2026-08-04T10:34:21.000Z",
+      "ts": 1785839661,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/04/merck-mrk-earnings-q2-2026.html",
+      "s_cn": "随着新药销售增长，默克上调收入预期，但因交易费用而下调利润指引",
+      "_ts": 1785839754761
+    },
+    {
+      "s": "Why Trump Media's sale of fast access to market-moving social posts is controversial",
+      "t": "2026-08-04T10:34:45.000Z",
+      "ts": 1785839685,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c4gdkl9zn8wo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "为什么特朗普媒体出售快速访问影响市场的社交帖子的做法引起争议",
+      "_ts": 1785839718998
+    },
+    {
+      "s": "Former FBI supervisor admits guilt in $1M crypto theft",
+      "t": "2026-08-04T10:30:56.000Z",
+      "ts": 1785839456,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/former-fbi-supervisor-charged-1m-crypto-theft?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "前 FBI 主管承认盗窃 100 万美元加密货币有罪",
+      "_ts": 1785839657942
+    },
+    {
+      "s": "Apple issues new challenge against UK order for access to private user data",
+      "t": "2026-08-04T10:22:40.000Z",
+      "ts": 1785838960,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cvg0kk3ek2vo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "苹果对英国访问私人用户数据的命令提出新挑战",
+      "_ts": 1785839197458
+    },
+    {
+      "s": "Cardano (ADA) Adds 33% in Volume Over Last 24 Hours, Securing Recovery Foundation",
+      "t": "2026-08-04T10:05:00.000Z",
+      "ts": 1785837900,
+      "src": "U.Today",
+      "link": "https://u.today/cardano-ada-adds-33-in-volume-over-last-24-hours-securing-recovery-foundation",
+      "s_cn": "卡尔达诺 (ADA) 交易量在过去 24 小时内增加了 33%，确保了复苏基础",
+      "_ts": 1785838725688
+    },
+    {
+      "s": "BP's $5.7bn profit highest since 2022 as Iran war pushes up oil price",
+      "t": "2026-08-04T10:07:05.000Z",
+      "ts": 1785838025,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cg5l11m02j3o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "伊朗战争推高油价 BP利润创2022年以来最高57亿美元",
+      "_ts": 1785838059937
+    },
+    {
+      "s": "BlackRock debuts tokenized access to $311 billion of money market funds in Europe",
+      "t": "2026-08-04T10:03:24.000Z",
+      "ts": 1785837804,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/04/blackrock-debuts-tokenized-access-to-usd311-billion-of-money-market-funds-in-europe",
+      "s_cn": "贝莱德首次在欧洲推出 3110 亿美元货币市场基金的代币化访问",
+      "_ts": 1785837830146
+    },
+    {
+      "s": "Strategy’s STRC retakes $90 after 24% rebound from June closing low",
+      "t": "2026-08-04T09:42:36.000Z",
+      "ts": 1785836556,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/strategy-strc-stock-above-90-june-recovery?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Strategy 的 STRC 从 6 月收盘低点反弹 24% 后重拾 90 美元",
+      "_ts": 1785837261090
+    },
+    {
+      "s": "First U.S. spot bitcoin ETF to close as inflows dwindle, investors chase AI returns",
+      "t": "2026-08-04T09:54:02.000Z",
+      "ts": 1785837242,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/04/first-u-s-spot-bitcoin-etf-to-close-as-inflows-dwindle-investors-chase-ai-returns",
+      "s_cn": "随着资金流入减少，美国首个现货比特币 ETF 关闭，投资者追逐人工智能回报",
+      "_ts": 1785837261090
+    },
+    {
+      "s": "Ripple President Longs Breaks Down Why New Investments Are Response to Bank Pivot Toward XRP Ledger",
+      "t": "2026-08-04T08:46:05.000Z",
+      "ts": 1785833165,
+      "src": "U.Today",
+      "link": "https://u.today/ripple-president-longs-breaks-down-why-new-investments-are-response-to-bank-pivot-toward-xrp-ledger",
+      "s_cn": "Ripple 总裁多头剖析为何新投资是对银行转向 XRP Ledger 的回应",
+      "_ts": 1785836922709
+    },
+    {
+      "s": "Five Convicted of Imprisoning Crypto Millionaires in London 'Torture' Ordeal",
+      "t": "2026-08-04T09:46:24.000Z",
+      "ts": 1785836784,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374889/five-convicted-of-imprisoning-crypto-millionaires-in-london-torture-ordeal",
+      "s_cn": "五名因在伦敦遭受“酷刑”折磨而监禁加密货币百万富翁的人被定罪",
+      "_ts": 1785836849035
+    },
+    {
+      "s": "What is Trump Media's Truth API and why is it controversial?",
+      "t": "2026-08-04T09:40:47.000Z",
+      "ts": 1785836447,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c4gdkl9zn8wo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Trump Media 的 Truth API 是什么？为什么它存在争议？",
+      "_ts": 1785836667285
+    },
+    {
+      "s": "US yen intervention puts Bitcoin, risk assets on notice for liquidity flux",
+      "t": "2026-08-04T09:20:17.000Z",
+      "ts": 1785835217,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/us-yen-intervention-puts-bitcoin-risk-assets-on-notice-for-liquidity-flux?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "美元干预使比特币和风险资产受到流动性变化的关注",
+      "_ts": 1785835758708
+    },
+    {
+      "s": "BP profits highest in four years as Iran war pushes up oil price",
+      "t": "2026-08-04T09:04:46.000Z",
+      "ts": 1785834286,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cg5l11m02j3o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "伊朗战争推高油价，英国石油公司利润创四年新高",
+      "_ts": 1785834499812
+    },
+    {
+      "s": "Billion-Dollar XRP Ledger Demand Fuels What Ripple President Labels as Banking 'Light Switch Flip'",
+      "t": "2026-08-04T08:46:05.000Z",
+      "ts": 1785833165,
+      "src": "U.Today",
+      "link": "https://u.today/billion-dollar-xrp-ledger-demand-fuels-what-ripple-president-labels-as-banking-light-switch-flip",
+      "s_cn": "数十亿美元的 XRP 账本需求推动了 Ripple 总裁所说的银行业“灯开关翻转”",
+      "_ts": 1785833919757
+    },
+    {
+      "s": "Live updates: Bitcoin at $63,600 as rare US-Japan yen action tests carry-trade fears",
+      "t": "2026-08-04T08:41:00.000Z",
+      "ts": 1785832860,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/04/live-updates-bitcoin-at-usd63-600-as-rare-us-japan-yen-action-tests-carry-trade-fears",
+      "s_cn": "实时更新：比特币价格为 63,600 美元，罕见的美日日元走势测试套利交易担忧",
+      "_ts": 1785832877381
+    },
+    {
+      "s": "Apple briefly removes Telegram from App Store, Gram rebounds",
+      "t": "2026-08-04T08:03:03.000Z",
+      "ts": 1785830583,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/apple-telegram-app-store-gram-rebounds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "苹果短暂从 App Store 下架 Telegram，Gram 反弹",
+      "_ts": 1785831547942
+    },
+    {
+      "s": "Ledger CTO: Multisig Not Always the Right Answer",
+      "t": "2026-08-04T07:59:21.000Z",
+      "ts": 1785830361,
+      "src": "U.Today",
+      "link": "https://u.today/ledger-cto-multisig-not-always-the-right-answer",
+      "s_cn": "Ledger 首席技术官：多重签名并不总是正确的答案",
+      "_ts": 1785831219546
+    },
+    {
+      "s": "XRP Risks Losing $1 Threshold Again: Will It Hold in Next 7 Days?",
+      "t": "2026-08-04T07:50:00.000Z",
+      "ts": 1785829800,
+      "src": "U.Today",
+      "link": "https://u.today/xrp-risks-losing-1-threshold-again-will-it-hold-in-next-7-days",
+      "s_cn": "XRP 面临再次失去 1 美元门槛的风险：未来 7 天内能否守住？",
+      "_ts": 1785830615134
+    },
+    {
+      "s": "Why Jim Cramer’s quantum panic isn’t rattling bitcoin as price holds steady around $64,000",
+      "t": "2026-08-04T07:53:18.000Z",
+      "ts": 1785829998,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/04/why-jim-cramer-s-quantum-panic-isn-t-rattling-bitcoin-as-price-holds-steady-around-usd64-000",
+      "s_cn": "为什么吉姆·克莱默（Jim Cramer）的量子恐慌并没有扰乱比特币，因为价格稳定在 64,000 美元左右",
+      "_ts": 1785830615134
+    },
     {
       "s": "Bhutan's GMC puts part of its bitcoin treasury to work after 10,000 BTC pledge",
       "t": "2026-08-04T07:56:11.000Z",

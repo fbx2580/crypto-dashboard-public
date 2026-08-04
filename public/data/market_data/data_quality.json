@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-04T07:55:02.046Z",
+  "timestamp": "2026-08-04T12:55:02.194Z",
   "overall_score": 89,
   "status": "healthy",
   "checks": {
@@ -7,14 +7,14 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 0,
+      "delay": 2,
       "diagnosis": null
     },
     "rss": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 8,
+      "delay": 2,
       "diagnosis": null
     },
     "whale": {
@@ -28,12 +28,12 @@
       "status": "warn",
       "score": 70,
       "errors": [
-        "延迟66783s但诊断通过: Alchemy正常，区块25680186"
+        "延迟84783s但诊断通过: Alchemy正常，区块25681683"
       ],
-      "delay": 66783,
+      "delay": 84783,
       "diagnosis": {
         "ok": true,
-        "detail": "Alchemy正常，区块25680186",
+        "detail": "Alchemy正常，区块25681683",
         "fix": ""
       }
     },
@@ -41,9 +41,9 @@
       "status": "warn",
       "score": 70,
       "errors": [
-        "延迟147349s但诊断通过: Binance API正常"
+        "延迟165349s但诊断通过: Binance API正常"
       ],
-      "delay": 147349,
+      "delay": 165349,
       "diagnosis": {
         "ok": true,
         "detail": "Binance API正常",
@@ -54,9 +54,9 @@
       "status": "warn",
       "score": 70,
       "errors": [
-        "延迟456895s但诊断通过: Binance正常"
+        "延迟474895s但诊断通过: Binance正常"
       ],
-      "delay": 456895,
+      "delay": 474895,
       "diagnosis": {
         "ok": true,
         "detail": "Binance正常",
@@ -80,8 +80,8 @@
   },
   "dataErrors": [],
   "errors": [
-    "延迟66783s但诊断通过: Alchemy正常，区块25680186",
-    "延迟147349s但诊断通过: Binance API正常",
-    "延迟456895s但诊断通过: Binance正常"
+    "延迟84783s但诊断通过: Alchemy正常，区块25681683",
+    "延迟165349s但诊断通过: Binance API正常",
+    "延迟474895s但诊断通过: Binance正常"
   ]
 }

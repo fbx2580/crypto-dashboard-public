@@ -1,6 +1,374 @@
 {
   "alerts": [
     {
+      "time": "2026-08-04T12:50:02.061Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "market_snapshot",
+      "message": "市场快照: Binance正常",
+      "errors": [
+        "延迟474595s但诊断通过: Binance正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 1068
+    },
+    {
+      "time": "2026-08-04T12:45:02.137Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟164749s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 324
+    },
+    {
+      "time": "2026-08-04T12:40:02.006Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25681607",
+      "errors": [
+        "延迟83883s但诊断通过: Alchemy正常，区块25681607"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 66
+    },
+    {
+      "time": "2026-08-04T12:20:02.027Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "market_snapshot",
+      "message": "市场快照: Binance正常",
+      "errors": [
+        "延迟472794s但诊断通过: Binance正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 1062
+    },
+    {
+      "time": "2026-08-04T12:15:01.552Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟162949s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 318
+    },
+    {
+      "time": "2026-08-04T12:10:01.704Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25681458",
+      "errors": [
+        "延迟82083s但诊断通过: Alchemy正常，区块25681458"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 60
+    },
+    {
+      "time": "2026-08-04T11:45:01.998Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟161149s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 312
+    },
+    {
+      "time": "2026-08-04T11:40:01.381Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25681309",
+      "errors": [
+        "延迟80282s但诊断通过: Alchemy正常，区块25681309"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 54
+    },
+    {
+      "time": "2026-08-04T11:35:01.929Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "market_snapshot",
+      "message": "市场快照: Binance正常",
+      "errors": [
+        "延迟470094s但诊断通过: Binance正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 1053
+    },
+    {
+      "time": "2026-08-04T11:15:01.452Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟159348s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 306
+    },
+    {
+      "time": "2026-08-04T11:05:01.298Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "market_snapshot",
+      "message": "市场快照: Binance正常",
+      "errors": [
+        "延迟468294s但诊断通过: Binance正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 1047
+    },
+    {
+      "time": "2026-08-04T10:55:01.908Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25681085",
+      "errors": [
+        "延迟77583s但诊断通过: Alchemy正常，区块25681085"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 45,
+      "resolvedAt": "2026-08-04T12:55:02.194Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T10:45:01.695Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟157549s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 300,
+      "resolvedAt": "2026-08-04T12:45:02.137Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T10:25:01.188Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25680935",
+      "errors": [
+        "延迟75782s但诊断通过: Alchemy正常，区块25680935"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 39,
+      "resolvedAt": "2026-08-04T12:25:01.813Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T10:20:01.775Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "market_snapshot",
+      "message": "市场快照: Binance正常",
+      "errors": [
+        "延迟465594s但诊断通过: Binance正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 1038,
+      "resolvedAt": "2026-08-04T12:20:02.027Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T10:15:02.253Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟155749s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 294,
+      "resolvedAt": "2026-08-04T12:20:02.027Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T09:50:01.500Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "market_snapshot",
+      "message": "市场快照: Binance正常",
+      "errors": [
+        "延迟463794s但诊断通过: Binance正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 1032,
+      "resolvedAt": "2026-08-04T11:50:01.485Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T09:45:01.789Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟153949s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 288,
+      "resolvedAt": "2026-08-04T11:45:01.998Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T09:40:01.980Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25680710",
+      "errors": [
+        "延迟73083s但诊断通过: Alchemy正常，区块25680710"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 30,
+      "resolvedAt": "2026-08-04T11:45:01.998Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T09:20:01.803Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "market_snapshot",
+      "message": "市场快照: Binance正常",
+      "errors": [
+        "延迟461994s但诊断通过: Binance正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 1026,
+      "resolvedAt": "2026-08-04T11:20:01.987Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T09:15:01.262Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟152148s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 282,
+      "resolvedAt": "2026-08-04T11:15:01.452Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T09:10:01.844Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25680560",
+      "errors": [
+        "延迟71283s但诊断通过: Alchemy正常，区块25680560"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 24,
+      "resolvedAt": "2026-08-04T11:10:02.041Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T08:50:01.166Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "market_snapshot",
+      "message": "市场快照: Binance正常",
+      "errors": [
+        "延迟460194s但诊断通过: Binance正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 1020,
+      "resolvedAt": "2026-08-04T10:50:01.455Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T08:40:01.151Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25680410",
+      "errors": [
+        "延迟69482s但诊断通过: Alchemy正常，区块25680410"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 18,
+      "resolvedAt": "2026-08-04T10:40:01.257Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T08:30:02.177Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟149449s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 273,
+      "resolvedAt": "2026-08-04T10:30:02.293Z",
+      "expired": true
+    },
+    {
+      "time": "2026-08-04T08:05:02.002Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "market_snapshot",
+      "message": "市场快照: Binance正常",
+      "errors": [
+        "延迟457494s但诊断通过: Binance正常"
+      ],
+      "fix": "",
+      "resolved": true,
+      "consecutiveFailures": 1011,
+      "resolvedAt": "2026-08-04T10:10:01.649Z",
+      "expired": true
+    },
+    {
       "time": "2026-08-04T07:55:02.046Z",
       "type": "confirmed_failure",
       "level": "warn",
@@ -10,8 +378,10 @@
         "延迟66783s但诊断通过: Alchemy正常，区块25680186"
       ],
       "fix": "",
-      "resolved": false,
-      "consecutiveFailures": 9
+      "resolved": true,
+      "consecutiveFailures": 9,
+      "resolvedAt": "2026-08-04T09:55:02.159Z",
+      "expired": true
     },
     {
       "time": "2026-08-04T07:45:02.109Z",
@@ -23,8 +393,10 @@
         "延迟146749s但诊断通过: Binance API正常"
       ],
       "fix": "",
-      "resolved": false,
-      "consecutiveFailures": 264
+      "resolved": true,
+      "consecutiveFailures": 264,
+      "resolvedAt": "2026-08-04T09:45:01.789Z",
+      "expired": true
     },
     {
       "time": "2026-08-04T07:20:02.214Z",
@@ -36,8 +408,10 @@
         "延迟454795s但诊断通过: Binance正常"
       ],
       "fix": "",
-      "resolved": false,
-      "consecutiveFailures": 1002
+      "resolved": true,
+      "consecutiveFailures": 1002,
+      "resolvedAt": "2026-08-04T09:25:01.356Z",
+      "expired": true
     },
     {
       "time": "2026-08-04T07:20:02.214Z",
@@ -49,7 +423,9 @@
         "延迟454795s但诊断通过: Binance正常"
       ],
       "fix": "",
-      "resolved": false
+      "resolved": true,
+      "resolvedAt": "2026-08-04T09:25:01.356Z",
+      "expired": true
     },
     {
       "time": "2026-08-04T07:20:02.214Z",
@@ -107,8 +483,10 @@
         "延迟144949s但诊断通过: Binance API正常"
       ],
       "fix": "",
-      "resolved": false,
-      "consecutiveFailures": 258
+      "resolved": true,
+      "consecutiveFailures": 258,
+      "resolvedAt": "2026-08-04T09:20:01.803Z",
+      "expired": true
     },
     {
       "time": "2026-08-04T07:15:02.357Z",
@@ -120,7 +498,9 @@
         "延迟64383s但诊断通过: Alchemy正常，区块25679987"
       ],
       "fix": "",
-      "resolved": false
+      "resolved": true,
+      "resolvedAt": "2026-08-04T09:20:01.803Z",
+      "expired": true
     },
     {
       "time": "2026-08-03T13:15:01.962Z",
@@ -2525,385 +2905,8 @@
       "consecutiveFailures": 483,
       "resolvedAt": "2026-08-01T20:15:02.165Z",
       "expired": true
-    },
-    {
-      "time": "2026-08-01T18:15:02.135Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟175716s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 570,
-      "resolvedAt": "2026-08-01T20:15:02.165Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T17:45:02.141Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟233095s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 477,
-      "resolvedAt": "2026-08-01T19:50:01.979Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T17:45:02.141Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟173916s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 564,
-      "resolvedAt": "2026-08-01T19:50:01.979Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T17:00:01.682Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟230394s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 468,
-      "resolvedAt": "2026-08-01T19:00:02.289Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T17:00:01.682Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟171215s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 555,
-      "resolvedAt": "2026-08-01T19:00:02.289Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T16:30:02.164Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟228595s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 462,
-      "resolvedAt": "2026-08-01T18:35:01.319Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T16:30:02.164Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟169416s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 549,
-      "resolvedAt": "2026-08-01T18:35:01.319Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T16:00:02.111Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟226795s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 456,
-      "resolvedAt": "2026-08-01T18:00:02.076Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T16:00:02.111Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟167616s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 543,
-      "resolvedAt": "2026-08-01T18:00:02.076Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T15:55:01.654Z",
-      "type": "recovery",
-      "level": "info",
-      "source": "whale",
-      "message": "鲸鱼转账 已恢复",
-      "errors": [],
-      "resolved": true
-    },
-    {
-      "time": "2026-08-01T15:50:01.733Z",
-      "type": "staleness",
-      "level": "warn",
-      "source": "whale",
-      "message": "鲸鱼转账: Etherscan V2正常，但V1失败 (5分钟)",
-      "errors": [
-        "延迟309s但诊断通过: Etherscan V2正常，但V1失败"
-      ],
-      "fix": "切换whale-monitor到V2 API",
-      "resolved": true,
-      "resolvedAt": "2026-08-01T15:55:01.654Z",
-      "regressed": true
-    },
-    {
-      "time": "2026-08-01T15:30:01.787Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟224994s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 450,
-      "resolvedAt": "2026-08-01T17:35:01.615Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T15:30:01.787Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟165815s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 537,
-      "resolvedAt": "2026-08-01T17:35:01.615Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T15:00:01.885Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟223194s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 444,
-      "resolvedAt": "2026-08-01T17:00:01.682Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T15:00:01.885Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟164015s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 531,
-      "resolvedAt": "2026-08-01T17:00:01.682Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T14:30:01.375Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟221394s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 438,
-      "resolvedAt": "2026-08-01T16:30:02.164Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T14:30:01.375Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟162215s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 525,
-      "resolvedAt": "2026-08-01T16:30:02.164Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T14:00:01.815Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟219594s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 432,
-      "resolvedAt": "2026-08-01T16:00:02.111Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T14:00:01.815Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟160415s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 519,
-      "resolvedAt": "2026-08-01T16:00:02.111Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T13:15:02.101Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟216895s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 423,
-      "resolvedAt": "2026-08-01T15:15:01.465Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T13:15:02.101Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟157716s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 510,
-      "resolvedAt": "2026-08-01T15:15:01.465Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T12:45:02.055Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟215095s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 417,
-      "resolvedAt": "2026-08-01T14:50:01.702Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T12:45:02.055Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟155916s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 504,
-      "resolvedAt": "2026-08-01T14:50:01.702Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T12:00:01.841Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟212394s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 408,
-      "resolvedAt": "2026-08-01T14:00:01.815Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T12:00:01.841Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟153215s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 495,
-      "resolvedAt": "2026-08-01T14:00:01.815Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-01T11:55:01.324Z",
-      "type": "recovery",
-      "level": "info",
-      "source": "whale",
-      "message": "鲸鱼转账 已恢复",
-      "errors": [],
-      "resolved": true
     }
   ],
-  "updated": "2026-08-04T07:55:02.046Z",
+  "updated": "2026-08-04T12:55:02.194Z",
   "total": 200
 }
