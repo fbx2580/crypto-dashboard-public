@@ -1,405 +1,405 @@
 {
-  "updated": 1785691295627,
+  "updated": 1785830139002,
   "alerts": [
     {
-      "ts": 1785691131,
-      "detected": 1785691295627,
-      "src": "Decrypt",
-      "title": "随着攻击者不断耗尽钱包，Coldcard 比特币暴涨至 8800 万美元",
-      "orig": "Coldcard Bitcoin Exploit Balloons to $88 Million as Attackers Keep Draining Wallets",
-      "link": "https://decrypt.co/374817/coldcard-bitcoin-exploit-88-million-attackers-draining-wallets"
-    },
-    {
-      "ts": 1785690000,
-      "detected": 1785690029747,
-      "src": "CoinDesk",
-      "title": "为什么 DeFi 平台放弃其消费者应用程序而成为科技巨头的秘密后端",
-      "orig": "Why a DeFi platform ditched its consumer app to become the secret backend for tech giants",
-      "link": "https://www.coindesk.com/web3/2026/08/02/why-a-defi-platform-ditched-its-consumer-app-to-become-the-secret-backend-for-tech-giants"
-    },
-    {
-      "ts": 1785686400,
-      "detected": 1785686607868,
-      "src": "CoinDesk",
-      "title": "Fun 首席执行官表示，加密支付的未来不会包括入口匝道或桥梁",
-      "orig": "The future of crypto payments won't include on-ramps or bridges, Fun CEO says",
-      "link": "https://www.coindesk.com/tech/2026/08/02/the-future-of-crypto-payments-won-t-include-on-ramps-or-bridges-fun-ceo-says"
-    },
-    {
-      "ts": 1785684015,
-      "detected": 1785684989082,
-      "src": "U.Today",
-      "title": "彭博社分析师解释为何 Coldcard 流失 8900 万美元对比特币 ETF 有利",
-      "orig": "Why $89 Million Coldcard Drain Is Bullish for Bitcoin ETFs, Bloomberg Analyst Explains",
-      "link": "https://u.today/why-89-million-coldcard-drain-is-bullish-for-bitcoin-etfs-bloomberg-analyst-explains"
-    },
-    {
-      "ts": 1785684213,
-      "detected": 1785684628106,
+      "ts": 1785829762,
+      "detected": 1785830139002,
       "src": "CoinTelegraph",
-      "title": "由于价格仍低于面值，战略将优先 STRC 股息维持在 12%",
-      "orig": "Strategy leaves preferred STRC dividend at 12% as price still below par",
-      "link": "https://cointelegraph.com/news/strategy-leaves-preferred-strc-dividend-at-12-price-still-below-par?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      "title": "纽约法官驳回 CFTC 停止对 Kalshi 采取执法行动的动议",
+      "orig": "NY judge denies CFTC motion to halt enforcement action against Kalshi",
+      "link": "https://cointelegraph.com/news/ny-judge-denies-cftc-motion-enforcement-kalshi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
     },
     {
-      "ts": 1785681956,
-      "detected": 1785683728188,
-      "src": "U.Today",
-      "title": "紧急 XRPL 更新：Ripple 总监敦促节点运营商安装关键修复程序",
-      "orig": "Urgent XRPL Update: Ripple Director Urges Node Operators to Install Critical Fix",
-      "link": "https://u.today/urgent-xrpl-update-ripple-director-urges-node-operators-to-install-critical-fix"
-    },
-    {
-      "ts": 1785678075,
-      "detected": 1785683548206,
-      "src": "U.Today",
-      "title": "“比特币驱动力已投入”：塞勒用标志性的牛市预告弥补了 82 亿美元的损失",
-      "orig": "'Bitcoin Drive Engaged': Saylor Answers $8.2 Billion Loss with Signature Bull Teaser",
-      "link": "https://u.today/bitcoin-drive-engaged-saylor-answers-82-billion-loss-with-signature-bull-teaser"
-    },
-    {
-      "ts": 1785678928,
-      "detected": 1785683368201,
-      "src": "U.Today",
-      "title": "狗狗币贡献者向 Coldcard 钱包用户发出严重警告",
-      "orig": "Dogecoin Contributor Issues Critical Warning to Coldcard Wallet Users",
-      "link": "https://u.today/dogecoin-contributor-issues-critical-warning-to-coldcard-wallet-users"
-    },
-    {
-      "ts": 1785679815,
-      "detected": 1785683187995,
-      "src": "U.Today",
-      "title": "24 小时内 4 万亿 SHIB：谁准备让柴犬币突破 0.000005 美元？",
-      "orig": "4 Trillion SHIB in 24 Hours: Who Is Readying Shiba Inu Coin for $0.000005 Breakout?",
-      "link": "https://u.today/4-trillion-shib-in-24-hours-who-is-readying-shiba-inu-coin-for-0000005-breakout"
-    },
-    {
-      "ts": 1785682863,
-      "detected": 1785683008169,
-      "src": "Decrypt",
-      "title": "Meta 的“变态眼镜”是怎么回事？",
-      "orig": "What’s the Deal With Meta’s ‘Pervert Glasses’?",
-      "link": "https://decrypt.co/374808/whats-the-deal-with-meta-pervert-glasses"
-    },
-    {
-      "ts": 1785675600,
-      "detected": 1785682647965,
-      "src": "CoinDesk",
-      "title": "反向桥梁：加密货币与华尔街利用perps相遇",
-      "orig": "The reverse bridge: Crypto meets Wall Street using perps",
-      "link": "https://www.coindesk.com/business/2026/08/02/the-reverse-bridge-crypto-meets-wall-street-using-perps"
-    },
-    {
-      "ts": 1785678075,
-      "detected": 1785682647965,
-      "src": "U.Today",
-      "title": "“比特币驱动力已投入”：塞勒用标志性的牛市预告弥补了 82 亿美元的损失",
-      "orig": "'Bitcoin Drive Engaged': Saylor Answers $8.2 Billion Loss with Signature Bull Teaser",
-      "link": "https://u.today/bitcoin-drive-engaged-saylor-answers-82-billion-loss-with-signature-bull-teaser"
-    },
-    {
-      "ts": 1785678928,
-      "detected": 1785682647965,
-      "src": "U.Today",
-      "title": "狗狗币贡献者向 Coldcard 钱包用户发出严重警告",
-      "orig": "Dogecoin Contributor Issues Critical Warning to Coldcard Wallet Users",
-      "link": "https://u.today/dogecoin-contributor-issues-critical-warning-to-coldcard-wallet-users"
-    },
-    {
-      "ts": 1785679815,
-      "detected": 1785682647965,
-      "src": "U.Today",
-      "title": "24 小时内 4 万亿 SHIB：谁准备让柴犬币突破 0.000005 美元？",
-      "orig": "4 Trillion SHIB in 24 Hours: Who Is Readying Shiba Inu Coin for $0.000005 Breakout?",
-      "link": "https://u.today/4-trillion-shib-in-24-hours-who-is-readying-shiba-inu-coin-for-0000005-breakout"
-    },
-    {
-      "ts": 1784993746,
-      "detected": 1784994404098,
-      "src": "U.Today",
-      "title": "狗狗币 ETF 在短暂的 34.5 万美元资金流入激增后再次陷入沉寂",
-      "orig": "Dogecoin ETFs Go Quiet Again After Brief $345K Inflow Surge",
-      "link": "https://u.today/dogecoin-etfs-go-quiet-again-after-brief-345k-inflow-surge"
-    },
-    {
-      "ts": 1784992672,
-      "detected": 1784993502997,
-      "src": "U.Today",
-      "title": "“前富豪的新定义”，币安 CZ 对埃隆·马斯克退出亿万富翁俱乐部的反应",
-      "orig": "'New Definition of Pre-Rich,' Binance's CZ Reacts as Elon Musk Exits Trillionaire Club",
-      "link": "https://u.today/new-definition-of-pre-rich-binances-cz-reacts-as-elon-musk-exits-trillionaire-club"
-    },
-    {
-      "ts": 1784989847,
-      "detected": 1784990621799,
-      "src": "U.Today",
-      "title": "卡尔达诺创始人抨击方舟投资总监对批评的偏见",
-      "orig": "Cardano Founder Blasts Ark Invest Director's Bias Over Criticism",
-      "link": "https://u.today/cardano-founder-blasts-ark-invest-directors-bias-over-criticism"
-    },
-    {
-      "ts": 1784984400,
-      "detected": 1784989901727,
-      "src": "CoinDesk",
-      "title": "通过代币化使天气衍生品民主化可能是加密货币最重要的现实用例",
-      "orig": "Democratizing weather derivatives through tokenization could be crypto's most important real-world use case",
-      "link": "https://www.coindesk.com/opinion/2026/07/25/democratizing-weather-derivatives-through-tokenization-could-be-crypto-s-most-important-real-world-use-case"
-    },
-    {
-      "ts": 1784985258,
-      "detected": 1784989901727,
-      "src": "CoinTelegraph",
-      "title": "朝鲜逮捕了与加密货币洗钱有关的银行黑客团伙：报告",
-      "orig": "North Korea arrests bank hacking ring tied to crypto laundering: Report",
-      "link": "https://cointelegraph.com/news/north-korea-bank-hacking-ring-crypto-laundering-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1784988063,
-      "detected": 1784989901727,
-      "src": "Decrypt",
-      "title": "什么是人工智能终止开关以及为什么美国立法者想要一个？",
-      "orig": "What Is an AI Kill Switch and Why Do US Lawmakers Want One?",
-      "link": "https://decrypt.co/374332/what-is-ai-kill-switch-openai-hack-hugging-face"
-    },
-    {
-      "ts": 1784989094,
-      "detected": 1784989901727,
-      "src": "U.Today",
-      "title": "XRP 多头因 2,205% 的清算失衡而震惊",
-      "orig": "XRP Bulls Stunned by 2,205% Liquidation Imbalance",
-      "link": "https://u.today/xrp-bulls-stunned-by-2205-liquidation-imbalance"
-    },
-    {
-      "ts": 1784989126,
-      "detected": 1784989901727,
-      "src": "U.Today",
-      "title": "Coinbase 的 CLO 询问参议院是否也希望通过“执法部门希望通过明确性”",
-      "orig": "'Law Enforcement Wants CLARITY Passed,' Coinbase's CLO Asks if Senate Wants the Same",
-      "link": "https://u.today/law-enforcement-wants-clarity-passed-coinbases-clo-asks-if-senate-wants-the-same"
-    },
-    {
-      "ts": 1784918115,
-      "detected": 1784918410350,
+      "ts": 1785822385,
+      "detected": 1785829418625,
       "src": "BBC Business",
-      "title": "特朗普发誓要调查欧盟对美国科技公司的罚款",
-      "orig": "Trump vows to investigate EU over fining of US tech companies",
-      "link": "https://www.bbc.co.uk/news/articles/cvgjenp4680o?at_medium=RSS&at_campaign=rss"
+      "title": "热浪会让你的食品店变得更贵吗？",
+      "orig": "Could heatwaves make your food shop more expensive?",
+      "link": "https://www.bbc.co.uk/news/articles/cp879d2n3yno?at_medium=RSS&at_campaign=rss"
     },
     {
-      "ts": 1784917723,
-      "detected": 1784917870069,
-      "src": "Decrypt",
-      "title": "《Claude Opus 5》在大多数基准测试中的得分均超过《神鬼寓言 5》——价格仅为《神鬼寓言 5》的一半",
-      "orig": "Claude Opus 5 Outscores Fable 5 on Most Benchmarks—At Half the Price",
-      "link": "https://decrypt.co/374305/claude-opus-5-outscores-fable-5-most-benchmarks-half-price"
-    },
-    {
-      "ts": 1784915426,
-      "detected": 1784915529084,
-      "src": "Decrypt",
-      "title": "由于道德斗争和缩小的日历威胁通过，《清晰法案》陷入困境",
-      "orig": "Clarity Act on the Ropes as Ethics Fight and Shrinking Calendar Threaten Passage",
-      "link": "https://decrypt.co/374300/clarity-act-ethics-fight-shrinking-calendar-threaten-passage"
-    },
-    {
-      "ts": 1784915088,
-      "detected": 1784915168871,
-      "src": "Decrypt",
-      "title": "曾经是比特币最大矿池之一的币印矿池申请破产",
-      "orig": "Poolin, Once One of Bitcoin's Biggest Mining Pools, Files for Bankruptcy",
-      "link": "https://decrypt.co/374289/poolin-bitcoin-biggest-mining-pools-files-bankruptcy"
-    },
-    {
-      "ts": 1784914669,
-      "detected": 1784914808835,
-      "src": "CNBC",
-      "title": "穆迪表示“前所未有”的人工智能支出威胁着亚马逊、Meta、Alphabet 等公司的信用质量",
-      "orig": "Moody's says 'unprecedented' AI spending threatens credit quality of Amazon, Meta, Alphabet and others",
-      "link": "https://www.cnbc.com/2026/07/24/moodys-ai-spending-credit-quality-amazon-meta-alphabet.html"
-    },
-    {
-      "ts": 1784913692,
-      "detected": 1784914449094,
-      "src": "U.Today",
-      "title": "顶级加密游说者表示澄清法案仍有希望",
-      "orig": "Top Crypto Lobbyist Says There Is Still Hope for Clarity Act",
-      "link": "https://u.today/top-crypto-lobbyist-says-there-is-still-hope-for-clarity-act"
-    },
-    {
-      "ts": 1784912114,
-      "detected": 1784912647956,
+      "ts": 1785828332,
+      "detected": 1785828699322,
       "src": "CoinTelegraph",
-      "title": "由于道德规则面临阻力，加密货币倡导团体支持 CLARITY 通过",
-      "orig": "Crypto advocacy groups support CLARITY passage as ethics rules face pushback",
-      "link": "https://cointelegraph.com/news/crypto-advocacy-groups-support-clarity-act-pushback-ethics-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      "title": "尼日利亚为数字资产平台制定加密货币征税规则",
+      "orig": "Nigeria sets crypto tax collection rules for digital asset platforms",
+      "link": "https://cointelegraph.com/news/nigeria-crypto-tax-rules-digital-asset-platforms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
     },
     {
-      "ts": 1784910800,
-      "detected": 1784911570009,
-      "src": "U.Today",
-      "title": "比特币 LTH 累积量创六年新高",
-      "orig": "Bitcoin's LTH Accumulation Hits Six-Year High",
-      "link": "https://u.today/bitcoins-lth-accumulation-hits-six-year-high"
-    },
-    {
-      "ts": 1784910865,
-      "detected": 1784911029350,
-      "src": "Decrypt",
-      "title": "Nvidia、Meta 和微软告诉华盛顿：不要扼杀开源人工智能",
-      "orig": "Nvidia, Meta, and Microsoft Tell Washington: Don't Kill Open-Source AI",
-      "link": "https://decrypt.co/374282/nvidia-meta-microsoft-washington-dont-kill-open-source-ai"
-    },
-    {
-      "ts": 1784910112,
-      "detected": 1784910308903,
-      "src": "Decrypt",
-      "title": "策略彻底改革比特币指标，首次推出“每股净比特币”",
-      "orig": "Strategy Overhauls Bitcoin Metrics, Debuting 'Net Bitcoin Per Share'",
-      "link": "https://decrypt.co/374281/strategy-overhauls-bitcoin-metrics-debuting-net-bitcoin-per-share"
-    },
-    {
-      "ts": 1784909857,
-      "detected": 1784909948495,
-      "src": "Decrypt",
-      "title": "伊朗紧张局势扰乱市场，比特币 ETF 损失 2.25 亿美元，结束了连续 7 天的资金流入",
-      "orig": "Bitcoin ETFs Shed $225M, Snapping Seven-Day Inflow Streak as Iran Tensions Spook Markets",
-      "link": "https://decrypt.co/374260/bitcoin-etfs-shed-225m-snapping-inflow-streak-iran-tensions"
-    },
-    {
-      "ts": 1784909070,
-      "detected": 1784909768475,
-      "src": "CoinTelegraph",
-      "title": "互联网自由基金会称印度 BitChat GitHub 下架令“违宪”",
-      "orig": "Internet Freedom Foundation calls India’s BitChat GitHub takedown order ‘unconstitutional’",
-      "link": "https://cointelegraph.com/news/internet-freedom-foundation-calls-indias-bitchat-github-takedown-order-unconstitutional?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1784909587,
-      "detected": 1784909768475,
-      "src": "CNBC",
-      "title": "疾病预防控制中心称大规模环孢子虫疫情目前已在九个州爆发",
-      "orig": "CDC says massive cyclospora outbreak is now in nine states",
-      "link": "https://www.cnbc.com/2026/07/24/cyclospora-cdc-says-outbreak-is-in-nine-states.html"
-    },
-    {
-      "ts": 1784907495,
-      "detected": 1784908148015,
-      "src": "U.Today",
-      "title": "上涨 105%：Strategy 首席执行官透露，贝莱德 (BlackRock) 和 VanEck 推动的比特币购买量激增 7.56 亿美元",
-      "orig": "Up 105%: Strategy CEO Discloses $756 Million Surge Behind Bitcoin Purchases Fueled by BlackRock and VanEck",
-      "link": "https://u.today/up-105-strategy-ceo-discloses-756-million-surge-behind-bitcoin-purchases-fueled-by-blackrock-and"
-    },
-    {
-      "ts": 1784906157,
-      "detected": 1784906706854,
-      "src": "CoinTelegraph",
-      "title": "Crypto Biz：人工智能到加密货币的轮换正在进行中吗？",
-      "orig": "Crypto Biz: Is the AI-to-crypto rotation underway?",
-      "link": "https://cointelegraph.com/news/crypto-biz-ai-to-crypto-rotation-bitcoin-etf-inflows-clarity-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1784905773,
-      "detected": 1784906346871,
-      "src": "CoinTelegraph",
-      "title": "世界基金会在 Pantera 主导下筹集了 5250 万美元资金，用于扩大 World ID 基础设施",
-      "orig": "World Foundation raises $52.5M in Pantera-led funding to expand World ID infrastructure",
-      "link": "https://cointelegraph.com/news/world-foundation-funding-led-by-pantera-world-id-infrastructure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1784905306,
-      "detected": 1784905444805,
-      "src": "CoinDesk",
-      "title": "白宫：参议院民主党应该接受他们在特朗普加密货币限制方面取得的胜利",
-      "orig": "Senate Dems should accept the victory they won on Trump's crypto limits: White House",
-      "link": "https://www.coindesk.com/policy/2026/07/24/senate-dems-should-accept-the-victory-they-won-on-trump-s-crypto-limits-white-house"
-    },
-    {
-      "ts": 1784905076,
-      "detected": 1784905266268,
-      "src": "Decrypt",
-      "title": "世界基金会筹集 5250 万美元用于扩展 Sam Altman 的“人类证明”ID",
-      "orig": "World Foundation Raises $52.5M to Scale Sam Altman’s ‘Proof of Human’ ID",
-      "link": "https://decrypt.co/374216/world-foundation-raises-52-5m-to-scale-sam-altmans-proof-of-human-id"
-    },
-    {
-      "ts": 1784905200,
-      "detected": 1784905266268,
-      "src": "CoinDesk",
-      "title": "Sam Altman 支持的 World Network 获得 5250 万美元新资金，用于打击在线 AI 深度造假",
-      "orig": "Sam Altman-backed World Network secures $52.5 million in fresh funding to fight online AI deepfakes",
-      "link": "https://www.coindesk.com/business/2026/07/24/sam-altman-backed-world-network-secures-fresh-funding-to-fight-online-ai-deepfakes"
-    },
-    {
-      "ts": 1784903283,
-      "detected": 1784904005274,
-      "src": "CoinTelegraph",
-      "title": "由于美国债券收益率飙升提高了美联储加息的可能性，比特币跌至 6.4 万美元以下",
-      "orig": "Bitcoin falls under $64K as surging US bond yields boost Fed rate-hike odds",
-      "link": "https://cointelegraph.com/markets/bitcoin-falls-under-64k-us-bond-yields-fed-rate-hike-odds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1784903776,
-      "detected": 1784904005274,
-      "src": "CoinDesk",
-      "title": "机构加密货币交易平台 LMAX 正在探索出售、IPO",
-      "orig": "Institutional crypto trading platform LMAX is exploring sale, IPO",
-      "link": "https://www.coindesk.com/business/2026/05/22/institutional-crypto-trading-platform-lmax-is-exploring-sale-ipo"
-    },
-    {
-      "ts": 1784902897,
-      "detected": 1784902923805,
-      "src": "Decrypt",
-      "title": "欧盟在英国制裁俄罗斯后两个月对孙宇晨的 HTX 实施制裁",
-      "orig": "EU Names Justin Sun's HTX in Russia Sanctions, Two Months After UK",
-      "link": "https://decrypt.co/374245/eu-names-justin-suns-htx-in-russia-sanctions-two-months-after-uk"
-    },
-    {
-      "ts": 1784901975,
-      "detected": 1784902743787,
-      "src": "U.Today",
-      "title": "柴犬币鲸打破 8 个月的沉默，悄然吸收币安上的 SHIB",
-      "orig": "Shiba Inu Coin Whale Breaks 8-Month Silence to Quietly Absorb SHIB on Binance",
-      "link": "https://u.today/shiba-inu-coin-whale-breaks-8-month-silence-to-quietly-absorb-shib-on-binance"
-    },
-    {
-      "ts": 1784901627,
-      "detected": 1784902564131,
-      "src": "U.Today",
-      "title": "卡尔达诺现货流量在几小时内下跌 1917.11%，市场信号？",
-      "orig": "Cardano Spot Flows Drop 1917.11% in Matter of Hours, Market Signal?",
-      "link": "https://u.today/cardano-spot-flows-drop-191711-in-matter-of-hours-market-signal"
-    },
-    {
-      "ts": 1784901746,
-      "detected": 1784901843019,
+      "ts": 1785827495,
+      "detected": 1785827617865,
       "src": "BBC Business",
-      "title": "费萨尔·伊斯兰：英国的特朗普贸易协议看起来不再是世界一流的",
-      "orig": "Faisal Islam: The UK's Trump trade deal no longer looks world-beating",
-      "link": "https://www.bbc.co.uk/news/articles/c9v4ymwddwgo?at_medium=RSS&at_campaign=rss"
+      "title": "美国各州提起诉讼，要求阻止特朗普对数十个国家征收关税",
+      "orig": "US states sue to block Trump tariffs impacting dozens of countries",
+      "link": "https://www.bbc.co.uk/news/articles/cy4kp8jd0ppo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "ts": 1784900760,
-      "detected": 1784901663714,
-      "src": "U.Today",
-      "title": "日本比特币 ETF 的潜力：为什么 184 亿美元的目标并不过分",
-      "orig": "Japan's Bitcoin ETF Potential: Why an $18.4 Billion Target Is Not an Overstatement",
-      "link": "https://u.today/japans-bitcoin-etf-potential-why-an-184-billion-target-is-not-an-overstatement"
+      "ts": 1785823940,
+      "detected": 1785827617865,
+      "src": "CoinDesk",
+      "title": "XRP 持有者现在可以通过 2.8 亿美元的借贷池在以太坊上借入 RLUSD",
+      "orig": "XRP holders can now borrow RLUSD on Ethereum through $280 million lending pool",
+      "link": "https://www.coindesk.com/markets/2026/08/04/flare-s-wrapped-xrp-wins-approval-in-a-usd280-million-rlusd-lending-vault"
     },
     {
-      "ts": 1784899934,
-      "detected": 1784900762883,
-      "src": "U.Today",
-      "title": "1.45 亿只柴犬网络流量闪烁看涨信号",
-      "orig": "145 Million Shiba Inu Netflow Flashes Bullish Signal",
-      "link": "https://u.today/145-million-shiba-inu-netflow-flashes-bullish-signal"
-    },
-    {
-      "ts": 1784899800,
-      "detected": 1784900402753,
+      "ts": 1785823223,
+      "detected": 1785827617865,
       "src": "CoinTelegraph",
-      "title": "量子路线图将推动比特币走高：查尔斯·爱德华兹",
-      "orig": "A quantum roadmap would push Bitcoin much higher: Charles Edwards",
-      "link": "https://cointelegraph.com/magazine/bitcoins-biggest-bull-catalyst-may-come-from-fixing-its-biggest-risk-edwards?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      "title": "加密货币公司仍在寻求前沿人工智能接入；",
+      "orig": "Crypto firms still seeking frontier AI access; only select few have it",
+      "link": "https://cointelegraph.com/news/few-crypto-firms-have-access-to-frontier-ai-as-cyber-threats-escalate?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785822122,
+      "detected": 1785827617865,
+      "src": "U.Today",
+      "title": "Uber 早期投资者敦促出售比特币换取 Solana",
+      "orig": "Early Uber Investor Urges Selling Bitcoin for Solana",
+      "link": "https://u.today/early-uber-investor-urges-selling-bitcoin-for-solana"
+    },
+    {
+      "ts": 1785821958,
+      "detected": 1785827617865,
+      "src": "CoinDesk",
+      "title": "Solana 的一项新提案旨在将每日 SOL 销毁额从 47,000 美元增加到 650,000 美元",
+      "orig": "A new Solana proposal aims to ramp up daily SOL Burns from $47,000 to $650,000",
+      "link": "https://www.coindesk.com/tech/2026/08/04/a-new-solana-proposal-would-take-daily-sol-burns-from-usd47-000-to-usd650-000"
+    },
+    {
+      "ts": 1785820873,
+      "detected": 1785827617865,
+      "src": "CoinDesk",
+      "title": "随着交易员回顾 Strategy 的 BTC 销售和 Coldcard 横扫，比特币接近 64,000 美元",
+      "orig": "Bitcoin nears $64,000 as traders look past Strategy's BTC sales and Coldcard sweeps",
+      "link": "https://www.coindesk.com/markets/2026/08/04/bitcoin-nears-usd64-000-as-traders-look-past-the-fourth-coldcard-sweep"
+    },
+    {
+      "ts": 1785762946,
+      "detected": 1785763146561,
+      "src": "CoinDesk",
+      "title": "贝莱德通过基于区块链的新货币市场产品扩大代币化现金",
+      "orig": "BlackRock expands tokenized cash with new blockchain-based money market offerings",
+      "link": "https://www.coindesk.com/business/2026/08/03/blackrock-expands-tokenized-cash-with-new-blockchain-based-money-market-offerings"
+    },
+    {
+      "ts": 1785762679,
+      "detected": 1785762786181,
+      "src": "Decrypt",
+      "title": "早间分钟：Coldcard 比特币黑客攻击造成的潜在损失接近 1.14 亿美元",
+      "orig": "Morning Minute: The Coldcard Bitcoin Hack Nears $114 Million in Potential Losses",
+      "link": "https://decrypt.co/374830/morning-minute-the-coldcard-bitcoin-hack-nears-114-million-in-potential-losses"
+    },
+    {
+      "ts": 1785762110,
+      "detected": 1785762246205,
+      "src": "CNBC",
+      "title": "美国人准备好拥抱微型“汽车”了吗？",
+      "orig": "Are Americans ready to embrace tiny 'cars'? These companies think so",
+      "link": "https://www.cnbc.com/2026/08/03/electric-lsv-stellantis-fiat-toppolino.html"
+    },
+    {
+      "ts": 1785761601,
+      "detected": 1785761705333,
+      "src": "CoinDesk",
+      "title": "Tom Lee 的 Bitmine 购买了更多以太币，增加了上周的股票回购",
+      "orig": "Tom Lee's Bitmine bought more ether, added to stock buyback last week",
+      "link": "https://www.coindesk.com/business/2026/08/03/bitmine-bought-more-ether-added-to-stock-buyback-last-week"
+    },
+    {
+      "ts": 1785761069,
+      "detected": 1785761165294,
+      "src": "Decrypt",
+      "title": "随着美元储备达到 4B 美元，Strategy 出售了 1.05 亿美元的比特币",
+      "orig": "Strategy Sells $105M in Bitcoin as Dollar Reserve Hits $4B",
+      "link": "https://decrypt.co/374831/strategy-sells-105m-in-bitcoin-as-dollar-reserve-hits-4b"
+    },
+    {
+      "ts": 1785760027,
+      "detected": 1785760984792,
+      "src": "CoinTelegraph",
+      "title": "Strategy 出售 1,638 比特币以资助股息和 STRC 回购",
+      "orig": "Strategy sells 1,638 Bitcoin to fund dividends and STRC repurchases",
+      "link": "https://cointelegraph.com/news/strategy-sells-bitcoin-dividend-strc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785759999,
+      "detected": 1785760984792,
+      "src": "U.Today",
+      "title": "Strategy 出售价值 1.02 亿美元的比特币",
+      "orig": "Strategy Sells $102 Million Worth of Bitcoin",
+      "link": "https://u.today/strategy-sells-102-million-worth-of-bitcoin"
+    },
+    {
+      "ts": 1785759679,
+      "detected": 1785760444563,
+      "src": "CoinTelegraph",
+      "title": "Bithumb 调整内部控制，设定 2028 年 IPO 时间表",
+      "orig": "Bithumb sets 2028 IPO timetable as it overhauls internal controls",
+      "link": "https://cointelegraph.com/news/bithumb-ipo-timetable-internal-controls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785758862,
+      "detected": 1785759545280,
+      "src": "CoinTelegraph",
+      "title": "伯恩斯坦：澄清法案失败可能导致加密货币估值下降",
+      "orig": "CLARITY Act failure could send crypto valuations lower: Bernstein",
+      "link": "https://cointelegraph.com/news/clarity-act-failure-crypto-valuations-lower-bernstein?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785755700,
+      "detected": 1785759545280,
+      "src": "U.Today",
+      "title": "2510 亿只柴犬 (SHIB) 流入：投资者会撤离吗？",
+      "orig": "251 Billion Shiba Inu (SHIB) Inflows: Are Investors Going Away?",
+      "link": "https://u.today/251-billion-shiba-inu-shib-inflows-are-investors-going-away"
+    },
+    {
+      "ts": 1785759430,
+      "detected": 1785759545280,
+      "src": "CoinDesk",
+      "title": "Strategy上周又出售了1.05亿美元的比特币，回购了8120万美元的STRC",
+      "orig": "Strategy sold another $105 million of bitcoin last week, repurchased $81.2 million of STRC",
+      "link": "https://www.coindesk.com/markets/2026/08/03/strategy-sold-another-usd105-million-of-bitcoin-last-week-repurchased-usd81-2-million-of-strc"
+    },
+    {
+      "ts": 1785752963,
+      "detected": 1785759183834,
+      "src": "CoinDesk",
+      "title": "实时更新：策略出售更多比特币；",
+      "orig": "Live updates: Strategy sells more bitcoin; price falls to $62,400",
+      "link": "https://www.coindesk.com/business/2026/08/03/live-updates-traders-say-bitcoin-sell-off-from-usd65-000-points-to-thin-volume-not-panic-selling"
+    },
+    {
+      "ts": 1785758621,
+      "detected": 1785758643781,
+      "src": "CoinDesk",
+      "title": "Bitget 将退出日本，年底前关闭所有剩余仓位",
+      "orig": "Bitget set to exit Japan, close all remaining positions by year-end",
+      "link": "https://www.coindesk.com/policy/2026/08/03/bitget-set-to-exit-japan-close-all-remaining-positions-by-year-end"
+    },
+    {
+      "ts": 1785753668,
+      "detected": 1785757923589,
+      "src": "CoinDesk",
+      "title": "经过重大内部重组后，Bithumb 现在的目标是 2028 年 IPO",
+      "orig": "Bithumb now targets 2028 IPO after major internal restructuring",
+      "link": "https://www.coindesk.com/business/2026/08/03/bithumb-now-targets-2028-ip-after-major-internal-restructuring"
+    },
+    {
+      "ts": 1785757209,
+      "detected": 1785757923589,
+      "src": "CoinTelegraph",
+      "title": "特朗普的美国比特币报告比特币产量创历史新高，第二季度亏损收窄",
+      "orig": "Trumps’ American Bitcoin reports record BTC output, narrower Q2 loss",
+      "link": "https://cointelegraph.com/news/trumps-american-bitcoin-output-narrower-q2-loss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785756606,
+      "detected": 1785757383226,
+      "src": "U.Today",
+      "title": "投资 ZILO 和 Licuido 后，XRPL 从 Ripple 中获得重大提振",
+      "orig": "XRPL Gains Major Boost From Ripple Following Investments in ZILO and Licuido",
+      "link": "https://u.today/xrpl-gains-major-boost-from-ripple-following-investments-in-zilo-and-licuido"
+    },
+    {
+      "ts": 1785755911,
+      "detected": 1785755942353,
+      "src": "CoinDesk",
+      "title": "Coldcard 硬件钱包耗尽市场人气，比特币矿工单人净赚 20 万美元",
+      "orig": "Solo Bitcoin miner nets $200,000 as Coldcard hardware wallet drains rocks sentiment",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/03/solo-bitcoin-miner-nets-usd200-000-as-coldcard-hardware-wallet-drains-rocks-sentiment"
+    },
+    {
+      "ts": 1785755279,
+      "detected": 1785755402033,
+      "src": "Decrypt",
+      "title": "韩国交易所 Bithumb 计划 2028 年 IPO",
+      "orig": "South Korean Exchange Bithumb Targets 2028 IPO",
+      "link": "https://decrypt.co/374823/south-korean-exchange-bithumb-targets-2028-ipo"
+    },
+    {
+      "ts": 1785754716,
+      "detected": 1785755222380,
+      "src": "CoinTelegraph",
+      "title": "Ripple投资Zilo和Licuido，助力代币化资本市场推进",
+      "orig": "Ripple invests in Zilo and Licuido to assist tokenized capital markets push",
+      "link": "https://cointelegraph.com/news/ripple-invests-zilo-licuido-tokenized-capital-markets-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785753000,
+      "detected": 1785755222380,
+      "src": "U.Today",
+      "title": "又一个比特币崩溃电话？",
+      "orig": "Another Bitcoin Crash Call? Dogecoin Cofounder Responds With 'Sigh'",
+      "link": "https://u.today/another-bitcoin-crash-call-dogecoin-cofounder-responds-with-sigh"
+    },
+    {
+      "ts": 1785754297,
+      "detected": 1785754321974,
+      "src": "CoinDesk",
+      "title": "Coldcard 漏洞利用进入第五天，比特币、以太币下跌",
+      "orig": "Bitcoin, ether decline as Coldcard exploit enters a fifth day",
+      "link": "https://www.coindesk.com/markets/2026/08/03/bitcoin-ether-decline-as-coldcard-exploit-enters-a-fifth-day"
+    },
+    {
+      "ts": 1785752732,
+      "detected": 1785753781290,
+      "src": "CoinTelegraph",
+      "title": "10x Research：比特币可能在 8 月找到熊市底部",
+      "orig": "Bitcoin may find bear market bottom in August: 10x Research",
+      "link": "https://cointelegraph.com/markets/bitcoin-find-bear-market-bottom-august-10x-research?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785753668,
+      "detected": 1785753781290,
+      "src": "CoinDesk",
+      "title": "经过重大内部重组后，Bithumb 现在的目标是 2028 年 IP",
+      "orig": "Bithumb now targets 2028 IP after major internal restructuring",
+      "link": "https://www.coindesk.com/business/2026/08/03/bithumb-now-targets-2028-ip-after-major-internal-restructuring"
+    },
+    {
+      "ts": 1785752327,
+      "detected": 1785753241162,
+      "src": "U.Today",
+      "title": "币安将下架这六种代币",
+      "orig": "Binance to Delist These Six Tokens",
+      "link": "https://u.today/binance-to-delist-these-six-tokens"
+    },
+    {
+      "ts": 1785752963,
+      "detected": 1785753060896,
+      "src": "CoinDesk",
+      "title": "实时更新：交易员称比特币从 65,000 美元跌至成交量清淡，而非恐慌性抛售",
+      "orig": "Live updates: Traders say bitcoin sell-off from $65,000 points to thin volume, not panic selling",
+      "link": "https://www.coindesk.com/business/2026/08/03/live-updates-traders-say-bitcoin-sell-off-from-usd65-000-points-to-thin-volume-not-panic-selling"
+    },
+    {
+      "ts": 1785752030,
+      "detected": 1785752161327,
+      "src": "CoinDesk",
+      "title": "比特币期货收益率暴跌：一度超过20%，现在低于国债",
+      "orig": "The bitcoin futures yield collapse: Once over 20%, now less than Treasury notes",
+      "link": "https://www.coindesk.com/markets/2026/08/03/the-bitcoin-futures-yield-collapse-once-over-20-now-less-than-treasury-notes"
+    },
+    {
+      "ts": 1785752137,
+      "detected": 1785752161327,
+      "src": "Decrypt",
+      "title": "由于小额比特币转账激增，Coldcard 损失近 1.14 亿美元",
+      "orig": "Coldcard Losses Near $114M as Small Bitcoin Transfers Spike",
+      "link": "https://decrypt.co/374820/coldcard-losses-near-114m-as-small-bitcoin-transfers-spike"
+    },
+    {
+      "ts": 1785750605,
+      "detected": 1785751439998,
+      "src": "U.Today",
+      "title": "早期比特币开发解释了为什么在 8800 万美元的 Coldcard 漏洞之后自我托管仍然优越",
+      "orig": "Early Bitcoin Dev Explains Why Self-Custody Is Still Superior After $88 Million Coldcard Bug",
+      "link": "https://u.today/early-bitcoin-dev-explains-why-self-custody-is-still-superior-after-88-million-coldcard-bug"
+    },
+    {
+      "ts": 1785750936,
+      "detected": 1785751080013,
+      "src": "BBC Business",
+      "title": "获得第一笔抵押贷款可能比您想象的更容易 - 这就是原因",
+      "orig": "It may be easier to get your first mortgage than you think - here's why",
+      "link": "https://www.bbc.co.uk/news/articles/cp3rkzpl7ngo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1785750180,
+      "detected": 1785751080013,
+      "src": "U.Today",
+      "title": "从10亿跌至90%：XRP账本进入逆转",
+      "orig": "From 1 Billion to 90% Drop: XRP Ledger Enters Reversal",
+      "link": "https://u.today/from-1-billion-to-90-drop-xrp-ledger-enters-reversal"
+    },
+    {
+      "ts": 1785749933,
+      "detected": 1785750359353,
+      "src": "CoinDesk",
+      "title": "Robinhood 在新监管制度启动前赢得英国加密货币注册",
+      "orig": "Robinhood wins UK crypto registration before new regulatory regime kicks off",
+      "link": "https://www.coindesk.com/policy/2026/08/03/robinhood-wins-uk-crypto-registration-before-new-regulatory-regime-kicks-off"
+    },
+    {
+      "ts": 1785748305,
+      "detected": 1785749279481,
+      "src": "U.Today",
+      "title": "XRP Ledger 联合创建者揭示了比特币冷存储的“核公文包”策略",
+      "orig": "XRP Ledger Co-Creator Reveals 'Nuclear Briefcase' Strategy for Bitcoin Cold Storage",
+      "link": "https://u.today/xrp-ledger-co-creator-reveals-nuclear-briefcase-strategy-for-bitcoin-cold-storage"
+    },
+    {
+      "ts": 1785748478,
+      "detected": 1785748919006,
+      "src": "CoinTelegraph",
+      "title": "HashKey 获得摩根大通批准开设客户资金账户",
+      "orig": "HashKey receives JPMorgan approval to open client money account",
+      "link": "https://cointelegraph.com/news/hashkey-jpmorgan-client-money-account?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785747099,
+      "detected": 1785748378451,
+      "src": "CoinDesk",
+      "title": "第四次扫荡可能出现，冷卡钱包损失可能接近 1.14 亿美元",
+      "orig": "Coldcard wallet losses may near $114 million as possible fourth sweep emerges",
+      "link": "https://www.coindesk.com/tech/2026/08/03/coldcard-wallet-losses-may-near-usd114-million-as-possible-fourth-sweep-emerges"
+    },
+    {
+      "ts": 1785745500,
+      "detected": 1785746219458,
+      "src": "U.Today",
+      "title": "“这只会变得更糟”：著名比特币评论家警告人工智能和量子对比特币的危险",
+      "orig": "'This Will Only Get Worse': Famous Bitcoin Critic Warns of AI and Quantum Danger for BTC",
+      "link": "https://u.today/this-will-only-get-worse-famous-bitcoin-critic-warns-of-ai-and-quantum-danger-for-btc"
+    },
+    {
+      "ts": 1785745283,
+      "detected": 1785745859195,
+      "src": "CoinTelegraph",
+      "title": "Bitget退出日本，12月31日后平仓剩余头寸",
+      "orig": "Bitget to exit Japan, close remaining positions after Dec. 31",
+      "link": "https://cointelegraph.com/news/bitget-exit-japan-account-restrictions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785744988,
+      "detected": 1785745139056,
+      "src": "CoinDesk",
+      "title": "美国就业、Circle、Galaxy、美国比特币收益：加密货币周展望",
+      "orig": "U.S. Jobs, Circle, Galaxy, American Bitcoin earnings: Crypto Week Ahead",
+      "link": "https://www.coindesk.com/markets/2026/08/03/u-s-jobs-circle-galaxy-american-bitcoin-earnings-crypto-week-ahead"
+    },
+    {
+      "ts": 1785741356,
+      "detected": 1785742077250,
+      "src": "CoinTelegraph",
+      "title": "加密货币资金公司 ZeroStack 警告称，损失 8250 万美元，存在生存风险",
+      "orig": "Crypto treasury firm ZeroStack warns of survival risk amid $82.5M loss",
+      "link": "https://cointelegraph.com/news/zerostack-survival-risk-82m-crypto-loss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785737738,
+      "detected": 1785737935622,
+      "src": "CoinDesk",
+      "title": "尽管伊朗协议有望达成，但由于 Coldcard 损失扰乱市场，比特币仍跌破 63,000 美元",
+      "orig": "Bitcoin slips under $63,000 despite Iran deal hopes as Coldcard losses rattle market",
+      "link": "https://www.coindesk.com/markets/2026/08/03/bitcoin-slips-under-usd63-000-despite-iran-deal-hopes-as-coldcard-losses-rattle-market"
+    },
+    {
+      "ts": 1785736935,
+      "detected": 1785737935622,
+      "src": "U.Today",
+      "title": "克劳德在八分钟内发现价值 1 亿美元的比特币漏洞",
+      "orig": "Claude Identifies $100 Million Bitcoin Vulnerability in Eight Minutes",
+      "link": "https://u.today/claude-identifies-100-million-bitcoin-vulnerability-in-eight-minutes"
+    },
+    {
+      "ts": 1785736680,
+      "detected": 1785737213338,
+      "src": "CoinTelegraph",
+      "title": "比特币触及 6.2 万美元，Coinbase 溢价连续 77 天负值",
+      "orig": "Bitcoin hits $62K while Coinbase premium hits 77-day negative streak",
+      "link": "https://cointelegraph.com/markets/bitcoin-hits-62k-while-coinbase-premium-hits-77-day-negative-streak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
     }
   ]
 }

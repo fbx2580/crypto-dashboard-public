@@ -502,28 +502,79 @@ html, body {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
-.indicator-item {
+/* 指标分隔线 */
+.ind-sep {
+  width: 1px;
+  min-height: 40px;
+  background: var(--border);
+  flex-shrink: 0;
+  align-self: stretch;
+  margin: 4px 4px;
+}
+
+/* 统一指标文本卡片 */
+.ind-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 8px;
-  flex: 1;
+  justify-content: center;
+  gap: 2px;
+  min-width: 72px;
+  padding: 6px 10px;
+  flex-shrink: 0;
+}
+.ind-card-label {
+  font-size: 10px;
+  color: var(--text-dim);
+  white-space: nowrap;
+  font-weight: 500;
+}
+.ind-card-val {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+  font-family: var(--font-mono);
+  line-height: 1.2;
+}
+.ind-card-sub {
+  font-size: 10px;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.ind-card-sub.up { color: var(--green); }
+.ind-card-sub.down { color: var(--red); }
+
+/* 综合总结卡片（加粗分隔线 + 大字体 + 背景突出） */
+.ind-summary {
+  min-width: 96px;
+  padding: 8px 14px;
+  background: var(--surface2);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+.ind-summary .ind-card-val {
+  font-size: 24px;
+}
+.ind-summary .ind-card-sub {
+  font-size: 11px;
+  font-weight: 600;
 }
 
-.indicator-ring { width: 64px; height: 64px; flex-shrink: 0; }
-.ring-bg { fill: none; stroke: var(--surface3); stroke-width: 2.8; }
-.ring-fill { fill: none; stroke: var(--accent); stroke-width: 2.8; stroke-linecap: round; transition: stroke-dasharray 0.5s; }
-#fngRing { stroke: var(--yellow); }
-#altRing { stroke: var(--green); }
-.ring-text { fill: var(--text); font-size: 6px; text-anchor: middle; font-weight: 700; font-family: var(--font); }
-
-.indicator-label { display: flex; flex-direction: column; gap: 0; }
-.ind-label-top { font-size: 11px; color: var(--text-dim); }
-.ind-label-bot { font-size: 14px; font-weight: 700; color: var(--text); }
+@media (max-width: 768px) {
+  .indicator-bar { flex-wrap: wrap; row-gap: 6px; justify-content: center; }
+  .ind-sep { display: none; }
+  .ind-card-val { font-size: 16px; }
+  .ind-card { min-width: 60px; padding: 4px 6px; }
+}
 
 @media (max-width: 480px) {
-  .indicator-ring { width: 48px; height: 48px; }
+  .indicator-bar { width: 100%; justify-content: center; }
+  .ind-card-val { font-size: 14px; }
 }
 
 /* ─── 金十快讯 ─── */

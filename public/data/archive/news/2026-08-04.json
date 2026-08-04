@@ -1,0 +1,574 @@
+{
+  "date": "2026-08-04",
+  "type": "news",
+  "updated": 1785830385031,
+  "total": 64,
+  "records": [
+    {
+      "s": "Bhutan's GMC puts part of its bitcoin treasury to work after 10,000 BTC pledge",
+      "t": "2026-08-04T07:56:11.000Z",
+      "ts": 1785830171,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/04/bhutan-s-gmc-puts-part-of-its-bitcoin-treasury-to-work-after-10-000-btc-pledge",
+      "s_cn": "不丹 GMC 在承诺 10,000 枚比特币后启用部分比特币金库",
+      "_ts": 1785830385025
+    },
+    {
+      "s": "NY judge denies CFTC motion to halt enforcement action against Kalshi",
+      "t": "2026-08-04T07:49:22.000Z",
+      "ts": 1785829762,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/ny-judge-denies-cftc-motion-enforcement-kalshi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "纽约法官驳回 CFTC 停止对 Kalshi 采取执法行动的动议",
+      "_ts": 1785830045788
+    },
+    {
+      "s": "Could heatwaves make your food shop more expensive?",
+      "t": "2026-08-04T05:46:25.000Z",
+      "ts": 1785822385,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cp879d2n3yno?at_medium=RSS&at_campaign=rss",
+      "s_cn": "热浪会让你的食品店变得更贵吗？",
+      "_ts": 1785829283908
+    },
+    {
+      "s": "Nigeria sets crypto tax collection rules for digital asset platforms",
+      "t": "2026-08-04T07:25:32.000Z",
+      "ts": 1785828332,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/nigeria-crypto-tax-rules-digital-asset-platforms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "尼日利亚为数字资产平台制定加密货币征税规则",
+      "_ts": 1785828545072
+    },
+    {
+      "s": "How Leopold Aschenbrenner built a $45 billion AI hedge fund — and lost most of it in days",
+      "t": "2026-07-31T20:19:03.000Z",
+      "ts": 1785529143,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/07/31/leopold-aschenbrenner-situational-awareness-fund-fire-sale.html",
+      "s_cn": "Leopold Aschenbrenner 如何建立了 450 亿美元的人工智能对冲基金，并在几天内损失了大部分资金"
+    },
+    {
+      "s": "To keep growing, incoming Best Buy CEO says he first wants to go smaller",
+      "t": "2026-08-01T12:00:01.000Z",
+      "ts": 1785585601,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/01/best-buy-ceo-jason-bonfig-smaller-stores.html",
+      "s_cn": "为了保持增长，即将上任的百思买首席执行官表示，他首先要缩小规模"
+    },
+    {
+      "s": "Why flights are so expensive and will likely stay that way",
+      "t": "2026-08-02T12:00:01.000Z",
+      "ts": 1785672001,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/02/flights-are-getting-even-more-expensive-as-fuel-prices-rise.html",
+      "s_cn": "为什么航班如此昂贵并且很可能会保持这种状态"
+    },
+    {
+      "s": "New Spider-Man film sees second-biggest ever global opening weekend",
+      "t": "2026-08-03T04:10:16.000Z",
+      "ts": 1785730216,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c3w052le2elo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "新蜘蛛侠电影迎来有史以来第二大的全球首映周末"
+    },
+    {
+      "s": "It may be easier to get your first mortgage than you think - here's why",
+      "t": "2026-08-03T09:55:36.000Z",
+      "ts": 1785750936,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cp3rkzpl7ngo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "获得第一笔抵押贷款可能比您想象的更容易 - 这就是原因"
+    },
+    {
+      "s": "Xbox Series X price hiked by £170 due to rising memory chip costs",
+      "t": "2026-08-03T11:18:10.000Z",
+      "ts": 1785755890,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/czjlvrd9e43o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "由于内存芯片成本上涨，Xbox Series X 价格上涨 170 英镑",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Almost £200,000 of fuel stolen from UK forecourts every day since Iran war began",
+      "t": "2026-08-03T11:49:41.000Z",
+      "ts": 1785757781,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cy8mrrlkjppo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "自伊朗战争开始以来，英国前院每天有近 20 万英镑的燃料被盗"
+    },
+    {
+      "s": "Morning Minute: The Coldcard Bitcoin Hack Nears $114 Million in Potential Losses",
+      "t": "2026-08-03T13:11:19.000Z",
+      "ts": 1785762679,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374830/morning-minute-the-coldcard-bitcoin-hack-nears-114-million-in-potential-losses",
+      "s_cn": "早间分钟：Coldcard 比特币黑客攻击造成的潜在损失接近 1.14 亿美元"
+    },
+    {
+      "s": "BlackRock expands tokenized cash with new blockchain-based money market offerings",
+      "t": "2026-08-03T13:15:46.000Z",
+      "ts": 1785762946,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/03/blackrock-expands-tokenized-cash-with-new-blockchain-based-money-market-offerings",
+      "s_cn": "贝莱德通过基于区块链的新货币市场产品扩大代币化现金"
+    },
+    {
+      "s": "184 Billion Bitcoin (BTC) Mystery: Why Self-Proclaimed Satoshi Craig Wright Is Digging Up 2010 History",
+      "t": "2026-08-03T13:20:45.000Z",
+      "ts": 1785763245,
+      "src": "U.Today",
+      "link": "https://u.today/184-billion-bitcoin-btc-mystery-why-self-proclaimed-satoshi-craig-wright-is-digging-up-2010-history",
+      "s_cn": "1840 亿比特币 (BTC) 之谜：为何自称中本聪的克雷格·怀特 (Satoshi Craig Wright) 正在挖掘 2010 年历史",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "99% Liquidation Imbalance: Cardano (ADA) Price Bounce Traps $1 Million in Short Positions",
+      "t": "2026-08-03T13:35:30.000Z",
+      "ts": 1785764130,
+      "src": "U.Today",
+      "link": "https://u.today/99-liquidation-imbalance-cardano-ada-price-bounce-traps-1-million-in-short-positions",
+      "s_cn": "99% 清算失衡：卡尔达诺 (ADA) 价格反弹导致 100 万美元空头头寸陷入困境",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Bernstein sees another leg lower for crypto markets if Clarity Act stalls",
+      "t": "2026-08-03T13:49:40.000Z",
+      "ts": 1785764980,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/08/03/bernstein-sees-another-leg-lower-for-crypto-markets-if-clarity-act-stalls",
+      "s_cn": "伯恩斯坦认为，如果《澄清法案》停滞不前，加密货币市场将再次走低",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "XRP Phishing Alert Issued: Why It Matters",
+      "t": "2026-08-03T13:55:02.000Z",
+      "ts": 1785765302,
+      "src": "U.Today",
+      "link": "https://u.today/xrp-phishing-alert-issued-why-it-matters",
+      "s_cn": "发布 XRP 网络钓鱼警报：为何重要",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Circle slides after Morgan Stanley downgrade, cut in price target",
+      "t": "2026-08-03T13:59:50.000Z",
+      "ts": 1785765590,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/03/circle-internet-slides-after-morgan-stanley-downgrade-cut-in-price-target",
+      "s_cn": "摩根士丹利下调评级并下调目标价后，Circle 股价下滑",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "U.S.-Japan intervention revives yen carry trade fears for bitcoin",
+      "t": "2026-08-03T14:46:08.000Z",
+      "ts": 1785768368,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/03/u-s-japan-intervention-revives-yen-carry-trade-fears-for-bitcoin",
+      "s_cn": "美日干预重燃日元套利交易对比特币的担忧",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "BlackRock Forced to Liquidate $122 Million in Bitcoin as Clients Cut 45% Losses",
+      "t": "2026-08-03T15:15:05.000Z",
+      "ts": 1785770105,
+      "src": "U.Today",
+      "link": "https://u.today/blackrock-forced-to-liquidate-122-million-in-bitcoin-as-clients-cut-45-losses",
+      "s_cn": "客户损失 45%，贝莱德被迫清算 1.22 亿美元比特币",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Trump-linked American Bitcoin president Matt Prusak departs for Giga Energy",
+      "t": "2026-08-03T15:24:45.000Z",
+      "ts": 1785770685,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/03/trump-linked-american-bitcoin-president-matt-prusak-departs-for-giga-energy",
+      "s_cn": "与特朗普有关联的美国比特币总裁马特·普鲁萨克 (Matt Prusak) 离职前往 Giga Energy",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Tom Lee’s Bitmine Buys More Ethereum, Adds to Stock Buyback",
+      "t": "2026-08-03T15:31:43.000Z",
+      "ts": 1785771103,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374836/tom-lee-bitmine-buys-more-ethereum-adds-stock-buyback",
+      "s_cn": "Tom Lee 的 Bitmine 购买更多以太坊，加大股票回购力度",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Worst Thing to Happen to Bitcoin Named by Canadian Billionaire",
+      "t": "2026-08-03T15:45:01.000Z",
+      "ts": 1785771901,
+      "src": "U.Today",
+      "link": "https://u.today/worst-thing-to-happen-to-bitcoin-named-by-canadian-billionaire",
+      "s_cn": "加拿大亿万富翁称比特币发生的最糟糕的事情",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Michael Saylor Tops Cash Reserves Again With $250 Million",
+      "t": "2026-08-03T15:45:22.000Z",
+      "ts": 1785771922,
+      "src": "U.Today",
+      "link": "https://u.today/michael-saylor-tops-cash-reserves-again-with-250-million",
+      "s_cn": "迈克尔·塞勒 (Michael Saylor) 现金储备达 2.5 亿美元，再次位居榜首",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "'Spider-Man: Brand New Day' beats out 'Avengers: Endgame' for highest domestic opening ever",
+      "t": "2026-08-03T15:46:27.000Z",
+      "ts": 1785771987,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/03/spider-man-brand-new-day-debut-360m-highest-domestic-opening-ever.html",
+      "s_cn": "《蜘蛛侠：全新一天》击败《复仇者联盟：终局之战》，创下国内首映票房最高纪录",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Threat to oil tankers in Middle East  worst since start of Iran war, analysts say",
+      "t": "2026-08-03T15:57:27.000Z",
+      "ts": 1785772647,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cjrv0dy2e90o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "分析人士称，中东油轮面临的威胁是伊朗战争爆发以来最严重的",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Mastercard Completes Acquisition of Ripple Partner BVNK: Stablecoin Market Is Key Reason Why",
+      "t": "2026-08-03T16:18:15.000Z",
+      "ts": 1785773895,
+      "src": "U.Today",
+      "link": "https://u.today/mastercard-completes-acquisition-of-ripple-partner-bvnk-stablecoin-market-is-key-reason-why",
+      "s_cn": "万事达卡完成对 Ripple 合作伙伴 BVNK 的收购：稳定币市场是关键原因",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Trump Family’s American Bitcoin Tops 8,000 BTC After Record Mining Quarter",
+      "t": "2026-08-03T16:29:15.000Z",
+      "ts": 1785774555,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374850/trump-american-bitcoin-8000-btc-record-mining-quarter",
+      "s_cn": "特朗普家族的美国比特币在创纪录的采矿季度后突破 8,000 BTC",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Visa to buy cybersecurity firm BioCatch for $2.4 billion amid surge in AI-powered scams",
+      "t": "2026-08-03T16:44:25.000Z",
+      "ts": 1785775465,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/03/visa-buys-biocatch-fraud-detection.html",
+      "s_cn": "由于人工智能诈骗激增，Visa 将以 24 亿美元收购网络安全公司 BioCatch",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Are Americans ready to embrace tiny 'cars'? These companies think so",
+      "t": "2026-08-03T16:57:42.000Z",
+      "ts": 1785776262,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/03/electric-lsv-stellantis-fiat-toppolino.html",
+      "s_cn": "美国人准备好拥抱微型“汽车”了吗？"
+    },
+    {
+      "s": "Solo Bitcoin Miner Hits Jackpot, Scoring $200K BTC Reward",
+      "t": "2026-08-03T17:12:08.000Z",
+      "ts": 1785777128,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374859/solo-bitcoin-miner-hits-jackpot-scoring-200k-btc-reward",
+      "s_cn": "独立比特币矿工中大奖，获得 20 万美元 BTC 奖励",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Crypto Privacy Tools Serve ‘Essential Protective Functions’: Report by ChangeNOW, CoinRabbit",
+      "t": "2026-08-03T17:31:03.000Z",
+      "ts": 1785778263,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374838/crypto-privacy-tools-serve-essential-protective-functions-report-by-changenow-coinrabbit",
+      "s_cn": "加密隐私工具提供“基本保护功能”：ChangeNOW、CoinRabbit 的报告",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "XRP Holders Can Now Borrow Ripple's RLUSD on Ethereum Without Selling Their Crypto",
+      "t": "2026-08-03T17:51:03.000Z",
+      "ts": 1785779463,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374862/xrp-holders-borrow-ripple-rlusd-ethereum-without-selling",
+      "s_cn": "XRP 持有者现在可以在以太坊上借用 Ripple 的 RLUSD，而无需出售其加密货币",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Michigan confirms first two deaths in cyclospora outbreak",
+      "t": "2026-08-03T18:32:42.000Z",
+      "ts": 1785781962,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/03/cyclospora-outbreak-first-two-deaths-reported-in-michigan.html",
+      "s_cn": "密歇根州确认环孢子虫爆发中首批两人死亡",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "More tech millionaires are using donor-advised funds for tax savings and giving",
+      "t": "2026-08-03T18:56:51.000Z",
+      "ts": 1785783411,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/03/tech-millionaires-donor-advised-funds-tax-savings-giving.html",
+      "s_cn": "越来越多的科技百万富翁正在使用捐赠者建议的资金来节税和捐赠",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "BlackRock Launches Tokenized Money Market Funds on Solana, Ethereum",
+      "t": "2026-08-03T19:17:37.000Z",
+      "ts": 1785784657,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374865/blackrock-tokenized-money-market-funds-solana-ethereum",
+      "s_cn": "贝莱德在 Solana 和以太坊上推出代币化货币市场基金",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "FalconX cuts 10% of workforce amid prolonged crypto market slump: Report",
+      "t": "2026-08-03T19:44:48.000Z",
+      "ts": 1785786288,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/falconx-workforce-reduction-amid-crypto-market-slump-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "报告称，由于加密货币市场长期低迷，FalconX 裁员 10%",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Legendary Trader Brandt on Bitcoin: Bull Market 'Not Urgent'",
+      "t": "2026-08-03T19:59:41.000Z",
+      "ts": 1785787181,
+      "src": "U.Today",
+      "link": "https://u.today/legendary-trader-brandt-on-bitcoin-bull-market-not-urgent",
+      "s_cn": "传奇交易员布兰特谈比特币：牛市“并不紧急”",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "FAA clears smallest Boeing 737 Max to fly after years of delays",
+      "t": "2026-08-03T20:09:19.000Z",
+      "ts": 1785787759,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/03/faa-boeing-737-max-certification.html",
+      "s_cn": "延误多年后，美国联邦航空管理局 (FAA) 批准最小的波音 737 Max 复飞",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Bessent’s top crypto adviser Tyler Williams exits US Treasury: Report",
+      "t": "2026-08-03T20:29:47.000Z",
+      "ts": 1785788987,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bessent-top-crypto-adviser-tyler-williams-leaves-us-treasury-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Bessent 的顶级加密货币顾问泰勒·威廉姆斯 (Tyler Williams) 退出美国财政部：报告",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "What Is an Air-Gapped Bitcoin Wallet? Why the Coldcard Exploit Changes the Conversation About Offline Security",
+      "t": "2026-08-03T20:39:33.000Z",
+      "ts": 1785789573,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374868/what-is-air-gapped-bitcoin-wallet-coldcard-exploit-security",
+      "s_cn": "什么是气隙比特币钱包？",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Former FBI Agent Charged With Stealing Nearly $1 Million in Crypto and Using ChatGPT for Investment Advice",
+      "t": "2026-08-03T21:17:06.000Z",
+      "ts": 1785791826,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374871/former-fbi-agent-charged-stealing-crypto-using-chatgpt-advice",
+      "s_cn": "前 FBI 特工被控盗窃近 100 万美元的加密货币并利用 ChatGPT 提供投资建议",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Larry Berg named next Major League Soccer commissioner",
+      "t": "2026-08-03T22:10:13.000Z",
+      "ts": 1785795013,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/03/larry-berg-major-league-soccer-commissioner.html",
+      "s_cn": "拉里·伯格被任命为美国职业足球大联盟下一任专员",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto",
+      "t": "2026-08-03T22:17:59.000Z",
+      "ts": 1785795479,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/08/03/u-s-fbi-intelligence-agent-arrested-in-connection-with-theft-of-usd1-million-in-crypto",
+      "s_cn": "美国 FBI 情报特工因盗窃 100 万美元加密货币被捕",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Marmot Researchers Turn to OnlyFans for Funding—And There Are Meme Coins Too",
+      "t": "2026-08-03T22:29:02.000Z",
+      "ts": 1785796142,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374874/marmot-researchers-onlyfans-memecoins-solana-onlymarms",
+      "s_cn": "Marmot 研究人员向 OnlyFans 寻求资助，而且还有 Meme 币",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Heatwaves are changing summer weddings - here's how to plan for one",
+      "t": "2026-08-03T23:20:15.000Z",
+      "ts": 1785799215,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cgr7qrdx4qwo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "热浪正在改变夏季婚礼 - 以下是如何规划一场婚礼",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Tokenomics: Why making AI pay is tricky",
+      "t": "2026-08-03T23:21:10.000Z",
+      "ts": 1785799270,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c872r52x7jgo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "代币经济学：为什么让人工智能付费很棘手",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Half-price rail travel extended to 18-year-olds",
+      "t": "2026-08-03T23:34:13.000Z",
+      "ts": 1785800053,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cy0jyln07r7o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "铁路旅行半价扩大到18岁",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Can Shiba Inu (SHIB) Break 100-Day Resistance? XRP Reaches Recovery Ceiling, Fears Around Bitcoin (BTC) Arise: Crypto Market Review",
+      "t": "2026-08-04T00:01:00.000Z",
+      "ts": 1785801660,
+      "src": "U.Today",
+      "link": "https://u.today/can-shiba-inu-shib-break-100-day-resistance-xrp-reaches-recovery-ceiling-fears-around-bitcoin-btc",
+      "s_cn": "柴犬 (SHIB) 能否突破 100 日阻力位？",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Boltz pauses service after wave of AI-assisted hacking attempts",
+      "t": "2026-08-04T00:03:47.000Z",
+      "ts": 1785801827,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/boltz-pauses-service-after-wave-of-ai-assisted-hacking-attempts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "在人工智能辅助黑客攻击浪潮过后，Boltz 暂停了服务",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Why is Trump Media selling early access to Trump's Truth Social posts?",
+      "t": "2026-08-04T00:17:48.000Z",
+      "ts": 1785802668,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/videos/c74g0q8eey9o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "为什么特朗普媒体出售对特朗普真相社交帖子的早期访问权？",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Caleb & Brown expands to UK, betting on untapped crypto demand",
+      "t": "2026-08-04T00:51:32.000Z",
+      "ts": 1785804692,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/caleb-brown-expands-to-uk-betting-on-untapped-crypto-demand?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Caleb & Brown 扩张至英国，押注未开发的加密货币需求",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Malaysia Blockchain Week’s OnlyFans scandal, lonely heart scammed for $3.3M: Asia Express",
+      "t": "2026-08-04T02:03:26.000Z",
+      "ts": 1785809006,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/magazine/hong-kong-lonely-heart-scammed-out-of-33m-in-crypto-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "马来西亚区块链周的 OnlyFans 丑闻，孤独的心被骗 330 万美元：亚洲快报",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Mastercard completes $1.8B BVNK acquisition in stablecoin push",
+      "t": "2026-08-04T02:58:51.000Z",
+      "ts": 1785812331,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/mastercard-completes-bvnk-acquisition-stablecoin-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "万事达卡完成 $1.8B BVNK 收购，推动稳定币发展",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Bitmine adds $19.6M in ETH, repurchases 4.5M shares",
+      "t": "2026-08-04T03:52:56.000Z",
+      "ts": 1785815576,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bitmine-buys-10399-eth-repurchases-4-5-million-shares?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Bitmine 增持 1960 万美元 ETH，回购 450 万股股票",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Coldcard Bitcoin theft tops $100M across 3 confirmed attack waves: Galaxy",
+      "t": "2026-08-04T04:47:13.000Z",
+      "ts": 1785818833,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/coldcard-bitcoin-theft-100-million-three-waves?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Coldcard 比特币盗窃额在 3 次已确认的攻击浪潮中突破 1 亿美元：Galaxy",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "A bitcoin wallet dormant since 2013 moved $31 million, and it's not the only one",
+      "t": "2026-08-04T04:48:40.000Z",
+      "ts": 1785818920,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/04/a-bitcoin-wallet-dormant-since-2013-moved-usd31-million-and-it-s-not-the-only-one",
+      "s_cn": "一个自 2013 年以来一直处于休眠状态的比特币钱包转移了 3100 万美元，而且它并不是唯一一个",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Bitcoin nears $64,000 as traders look past Strategy's BTC sales and Coldcard sweeps",
+      "t": "2026-08-04T05:21:13.000Z",
+      "ts": 1785820873,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/04/bitcoin-nears-usd64-000-as-traders-look-past-the-fourth-coldcard-sweep",
+      "s_cn": "随着交易员回顾 Strategy 的 BTC 销售和 Coldcard 横扫，比特币接近 64,000 美元",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "A new Solana proposal aims to ramp up daily SOL Burns from $47,000 to $650,000",
+      "t": "2026-08-04T05:39:18.000Z",
+      "ts": 1785821958,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/04/a-new-solana-proposal-would-take-daily-sol-burns-from-usd47-000-to-usd650-000",
+      "s_cn": "Solana 的一项新提案旨在将每日 SOL 销毁额从 47,000 美元增加到 650,000 美元",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Early Uber Investor Urges Selling Bitcoin for Solana",
+      "t": "2026-08-04T05:42:02.000Z",
+      "ts": 1785822122,
+      "src": "U.Today",
+      "link": "https://u.today/early-uber-investor-urges-selling-bitcoin-for-solana",
+      "s_cn": "Uber 早期投资者敦促出售比特币换取 Solana",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Crypto firms still seeking frontier AI access; only select few have it",
+      "t": "2026-08-04T06:00:23.000Z",
+      "ts": 1785823223,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/few-crypto-firms-have-access-to-frontier-ai-as-cyber-threats-escalate?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "加密货币公司仍在寻求前沿人工智能接入；",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "XRP holders can now borrow RLUSD on Ethereum through $280 million lending pool",
+      "t": "2026-08-04T06:12:20.000Z",
+      "ts": 1785823940,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/04/flare-s-wrapped-xrp-wins-approval-in-a-usd280-million-rlusd-lending-vault",
+      "s_cn": "XRP 持有者现在可以通过 2.8 亿美元的借贷池在以太坊上借入 RLUSD",
+      "_ts": 1785827617212
+    },
+    {
+      "s": "Here’s what happened in crypto today",
+      "t": "2026-08-04T06:18:03.000Z",
+      "ts": 1785824283,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "这是今天加密货币领域发生的事情"
+    },
+    {
+      "s": "US states sue to block Trump tariffs impacting dozens of countries",
+      "t": "2026-08-04T07:11:35.000Z",
+      "ts": 1785827495,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cy4kp8jd0ppo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "美国各州提起诉讼，要求阻止特朗普对数十个国家征收关税",
+      "_ts": 1785827617212
+    }
+  ]
+}

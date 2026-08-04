@@ -79,19 +79,152 @@ async function refreshIndicators() {
     const d = await (await fetch("/api/market/indicators")).json();
     const f = d.fear || {};
     const a = d.altSeason || {};
+    const ls = d.longShort || {};
+    const vix = d.vix || {};
+    const dxy = d.dxy || {};
+    const cvd = d.cvd || {};
+
+    // 辅助：BTC方向标签
+    const B = (score) => { // score: 2=强多 1=偏多 0=中性 -1=偏空 -2=强空
+      if (score >= 2) return { t: '🟢 利多BTC', c: 'up' };
+      if (score >= 1) return { t: '🟢 偏多BTC', c: 'up' };
+      if (score <= -2) return { t: '🔴 利空BTC', c: 'down' };
+      if (score <= -1) return { t: '🔴 偏空BTC', c: 'down' };
+      return { t: '⚪ 中性', c: '' };
+    };
+
+    // 恐惧贪婪 → 别人恐惧我贪婪（越低越利多）
     if (f.value != null) {
-      document.getElementById("fngRing").setAttribute("stroke-dasharray", f.value + ", " + (100-f.value));
-      const label = f.label || '';
-      document.getElementById("fngValue").textContent = f.value + (label ? ' - ' + label : '');
-      document.getElementById("fngLabel").textContent = (f.value >= 50 ? "😊" : "😨") + " 恐惧";
+      document.getElementById("fngVal").textContent = f.value;
+      let score = 0;
+      if (f.value <= 20) score = 2;
+      else if (f.value <= 40) score = 1;
+      else if (f.value <= 55) score = 0;
+      else if (f.value <= 75) score = -1;
+      else score = -2;
+      const s = B(score);
+      const fngEl = document.getElementById("fngSub");
+      fngEl.textContent = (f.label || '') + ' | ' + s.t;
+      fngEl.className = 'ind-card-sub ' + s.c;
+    }
+    // 山寨季 → 越低越利多BTC（比特季=BTC吸血山寨）
+    if (a.value != null) {
+      document.getElementById("altVal").textContent = a.value;
+      const aLabel = a.label || (a.value >= 75 ? '山寨季' : a.value < 25 ? '比特季' : '中性');
+      let score = 0;
+      if (a.value <= 20) score = 2;
+      else if (a.value <= 40) score = 1;
+      else if (a.value <= 60) score = 0;
+      else if (a.value <= 80) score = -1;
+      else score = -2;
+      const s = B(score);
+      const altEl = document.getElementById("altSub");
+      altEl.textContent = aLabel + ' | ' + s.t;
+      altEl.className = 'ind-card-sub ' + s.c;
+    }
+    // 多空比 → 散户越多多=越利空（反向指标）
+    if (ls.longPct != null) {
+      document.getElementById("lsVal").textContent = ls.longPct.toFixed(0) + '%多';
+      const pct = ls.longPct;
+      let score = 0;
+      if (pct <= 35) score = 2;
+      else if (pct <= 45) score = 1;
+      else if (pct <= 55) score = 0;
+      else if (pct <= 70) score = -1;
+      else score = -2;
+      const s = B(score);
+      const lsEl = document.getElementById("lsSub");
+      lsEl.textContent = '比' + ls.ratio.toFixed(2) + ' | ' + s.t;
+      lsEl.className = 'ind-card-sub ' + s.c;
+    }
+    // VIX → 越低越利多（低波动=风险偏好）
+    if (vix.value != null) {
+      document.getElementById("vixVal").textContent = vix.value.toFixed(1);
+      const v = vix.value;
+      let score = 0;
+      if (v <= 13) score = 2;
+      else if (v <= 20) score = 1;
+      else if (v <= 28) score = 0;
+      else if (v <= 35) score = -1;
+      else score = -2;
+      const s = B(score);
+      const vixEl = document.getElementById("vixSub");
+      const chgSign = vix.change >= 0 ? '+' : '';
+      vixEl.textContent = chgSign + vix.change + '% | ' + s.t;
+      vixEl.className = 'ind-card-sub ' + s.c;
+    }
+    // DXY → 越低越利多（弱美元=BTC涨）
+    if (dxy.value != null) {
+      document.getElementById("dxyVal").textContent = dxy.value.toFixed(1);
+      const v = dxy.value;
+      let score = 0;
+      if (v <= 98) score = 2;
+      else if (v <= 102) score = 1;
+      else if (v <= 106) score = 0;
+      else score = -1;
+      const s = B(score);
+      const dxyEl = document.getElementById("dxySub");
+      const chgSign = dxy.change >= 0 ? '+' : '';
+      dxyEl.textContent = chgSign + dxy.change + '% | ' + s.t;
+      dxyEl.className = 'ind-card-sub ' + s.c;
+    }
+    // CVD → 正=主动买利多，负=主动卖利空
+    if (cvd.value != null) {
+      document.getElementById("cvdVal").textContent = (cvd.value >= 0 ? '+' : '') + cvd.value.toFixed(0);
+      const v = cvd.value;
+      let score = 0;
+      if (v >= 2000) score = 2;
+      else if (v >= 300) score = 1;
+      else if (v > -300) score = 0;
+      else if (v > -2000) score = -1;
+      else score = -2;
+      const s = B(score);
+      const cvdEl = document.getElementById("cvdSub");
+      cvdEl.textContent = cvd.netPct + '% ' + cvd.period + ' | ' + s.t;
+      cvdEl.className = 'ind-card-sub ' + s.c;
+    }
+
+    // ─── 综合总结 ───
+    const scores = [];
+    if (f.value != null) {
+      scores.push(f.value <= 20 ? 2 : f.value <= 40 ? 1 : f.value <= 55 ? 0 : f.value <= 75 ? -1 : -2);
     }
     if (a.value != null) {
-      document.getElementById("altRing").setAttribute("stroke-dasharray", a.value + ", " + (100-a.value));
-      const aLabel = a.label || (a.value >= 50 ? '山寨季' : '比特季');
-      document.getElementById("altValue").textContent = a.value;
-      document.getElementById("altLabel").textContent = (a.value >= 75 ? "🟢" : a.value < 25 ? "🔵" : "🟡") + " " + aLabel;
+      scores.push(a.value <= 20 ? 2 : a.value <= 40 ? 1 : a.value <= 60 ? 0 : a.value <= 80 ? -1 : -2);
     }
-  } catch(e) {}
+    if (ls.longPct != null) {
+      const p = ls.longPct;
+      scores.push(p <= 35 ? 2 : p <= 45 ? 1 : p <= 55 ? 0 : p <= 70 ? -1 : -2);
+    }
+    if (vix.value != null) {
+      const v = vix.value;
+      scores.push(v <= 13 ? 2 : v <= 20 ? 1 : v <= 28 ? 0 : v <= 35 ? -1 : -2);
+    }
+    if (dxy.value != null) {
+      const d = dxy.value;
+      scores.push(d <= 98 ? 2 : d <= 102 ? 1 : d <= 106 ? 0 : -1);
+    }
+    if (cvd.value != null) {
+      const cv = cvd.value;
+      scores.push(cv >= 2000 ? 2 : cv >= 300 ? 1 : cv > -300 ? 0 : cv > -2000 ? -1 : -2);
+    }
+    const total = scores.reduce((a,b) => a+b, 0);
+    const bulls = scores.filter(s => s > 0).length;
+    const bears = scores.filter(s => s < 0).length;
+    const neuts = scores.filter(s => s === 0).length;
+
+    let conclusion, sumCls;
+    if (total >= 4) { conclusion = '🟢 强烈看多'; sumCls = 'up'; }
+    else if (total >= 2) { conclusion = '🟢 偏多'; sumCls = 'up'; }
+    else if (total >= -1) { conclusion = '⚪ 分歧中'; sumCls = ''; }
+    else if (total >= -4) { conclusion = '🔴 偏空'; sumCls = 'down'; }
+    else { conclusion = '🔴 强烈看空'; sumCls = 'down'; }
+
+    document.getElementById("sumVal").textContent = conclusion;
+    document.getElementById("sumVal").style.color = sumCls === 'up' ? 'var(--green)' : sumCls === 'down' ? 'var(--red)' : 'var(--yellow)';
+    document.getElementById("sumSub").textContent = bulls + '看多 ' + bears + '看空 ' + neuts + '中性';
+    document.getElementById("sumSub").className = 'ind-card-sub ' + sumCls;
+  } catch(e) { console.error('indicators', e); }
 }
 
 async function refreshMarket() {

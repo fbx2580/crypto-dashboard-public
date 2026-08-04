@@ -1,9 +1,45 @@
 {
   "date": "2026-08-02",
   "type": "news",
-  "updated": 1785691205897,
-  "total": 88,
+  "updated": 1785714599894,
+  "total": 92,
   "records": [
+    {
+      "s": "Coldcard exploit sparks Bitcoin flight, ‘bullish’ crypto consolidation: Hodler’s Digest, August 2",
+      "t": "2026-08-02T23:44:04.000Z",
+      "ts": 1785714244,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/magazine/coldcard-exploit-sparks-bitcoin-flight-clarity-act-no-vote-or-no-vote-hodlers-digest-august-2?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Coldcard 漏洞引发比特币飞行，“看涨”加密货币整合：Hodler’s Digest，8 月 2 日",
+      "_ts": 1785714599883
+    },
+    {
+      "s": "The change that may help you get a mortgage as a first-time buyer",
+      "t": "2026-08-02T23:16:32.000Z",
+      "ts": 1785712592,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cp3rkzpl7ngo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "这项改变可能会帮助您作为首次购房者获得抵押贷款",
+      "_ts": 1785712748331
+    },
+    {
+      "s": "XRP ETFs Buck the Trend with Decent Inflows",
+      "t": "2026-08-02T19:11:14.000Z",
+      "ts": 1785697874,
+      "src": "U.Today",
+      "link": "https://u.today/xrp-etfs-buck-the-trend-with-decent-inflows",
+      "s_cn": "XRP ETF 逆势而上，资金大量流入",
+      "_ts": 1785698693351
+    },
+    {
+      "s": "Counting down the days: State of Crypto",
+      "t": "2026-08-02T18:30:00.000Z",
+      "ts": 1785695400,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/08/02/counting-down-the-days-state-of-crypto",
+      "s_cn": "倒计时：加密货币现状",
+      "_ts": 1785695432235
+    },
     {
       "s": "Coldcard Bitcoin Exploit Balloons to $88 Million as Attackers Keep Draining Wallets",
       "t": "2026-08-02T17:18:51.000Z",
