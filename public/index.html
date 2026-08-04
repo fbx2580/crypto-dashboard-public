@@ -36,7 +36,7 @@
     <!-- Tabs -->
     <div class="tabs" id="tabBar">
       <button class="tab active" data-tab="trade">📈 大看板</button>
-      <button class="tab" data-tab="news">📰 消息面</button>
+      <button class="tab" data-tab="news">📰 市场情绪</button>
       <button class="tab" data-tab="altcoin">🕵️ 链上侦探</button>
       <button class="tab" data-tab="defi">🦙 DeFi</button>
     </div>
@@ -145,19 +145,34 @@
     <!-- DefiLlama 全链收益排行 -->
             </div><!-- /tabTrade -->
 
-    <!-- Tab: 消息面 -->
+    <!-- Tab: 市场情绪 -->
     <div class="tab-content" id="tabNews">
+      <div class="sub-tabs" style="display:flex;gap:4px;padding:8px 14px;background:var(--surface);border-bottom:1px solid var(--border);">
+        <button class="sub-tab active" onclick="switchSentimentTab(this, 'sentNews')" style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:4px;padding:4px 12px;cursor:pointer;font-size:12px;font-family:var(--font);">📰 新闻方向</button>
+        <button class="sub-tab" onclick="switchSentimentTab(this, 'sentSocial')" style="background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:4px;padding:4px 12px;cursor:pointer;font-size:12px;font-family:var(--font);">💬 社媒情绪</button>
+      </div>
       <div class="signal-layout">
-        <div class="signal-section">
-          <div class="signal-header">🔴 金十快讯 <span class="sig-count" id="jin10Count"></span> <span style="font-size:9px;color:var(--text-dim);font-weight:400;">来源 金十数据</span></div>
-          <div class="signal-body signal-scroll" id="jin10Body">
-            <div class="sig-loading"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+        <!-- 新闻方向子Tab -->
+        <div class="sub-tab-content active" id="sentNews">
+          <div class="signal-section" style="flex:0 0 auto;max-height:45vh;display:flex;flex-direction:column;">
+            <div class="signal-header">🔴 金十快讯 <span class="sig-count" id="jin10Count"></span> <span style="font-size:9px;color:var(--text-dim);font-weight:400;">来源 金十数据</span></div>
+            <div class="signal-body signal-scroll" id="jin10Body">
+              <div class="sig-loading"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+            </div>
+          </div>
+          <div class="signal-section" style="flex:0 0 auto;max-height:45vh;display:flex;flex-direction:column;">
+            <div class="signal-header">📡 墙外新闻 <span class="sig-count" id="rssCount"></span> <span style="font-size:9px;color:var(--text-dim);font-weight:400;">来源 RSS聚合</span></div>
+            <div class="signal-body signal-scroll" id="rssBody">
+              <div class="sig-loading"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+            </div>
           </div>
         </div>
-        <div class="signal-section">
-          <div class="signal-header">📡 墙外新闻 <span class="sig-count" id="rssCount"></span> <span style="font-size:9px;color:var(--text-dim);font-weight:400;">来源 RSS聚合</span></div>
-          <div class="signal-body signal-scroll" id="rssBody">
-            <div class="sig-loading"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+        <!-- 社媒情绪子Tab -->
+        <div class="sub-tab-content" id="sentSocial" style="display:none;">
+          <div style="padding:40px;text-align:center;color:var(--text-dim);">
+            <div style="font-size:48px;margin-bottom:16px;">🚧</div>
+            <div style="font-size:14px;">社媒情绪模块正在建设中</div>
+            <div style="font-size:12px;margin-top:8px;">Reddit · Twitter · Telegram 数据即将接入</div>
           </div>
         </div>
       </div>

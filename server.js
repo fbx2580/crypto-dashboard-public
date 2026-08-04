@@ -27,6 +27,7 @@ app.use('/api/wallets', require('./modules/wallet'));
 app.use('/api/bd', require('./modules/bd'));
 app.use('/api/config', require('./modules/config'));
 app.use('/api/defi', require('./modules/defi'));
+app.use('/api/alpha-beta', require('./modules/alpha-beta'));
 
 
 // ═══ 旧接口兼容（直接映射到模块路由） ═══

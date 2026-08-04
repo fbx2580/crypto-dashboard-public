@@ -214,11 +214,11 @@ async function refreshIndicators() {
     const neuts = scores.filter(s => s === 0).length;
 
     let conclusion, sumCls;
-    if (total >= 4) { conclusion = '🟢 强烈看多'; sumCls = 'up'; }
-    else if (total >= 2) { conclusion = '🟢 偏多'; sumCls = 'up'; }
+    if (total >= 4) { conclusion = '🔴 市场过热'; sumCls = 'down'; }
+    else if (total >= 2) { conclusion = '🟡 偏贪婪'; sumCls = 'down'; }
     else if (total >= -1) { conclusion = '⚪ 分歧中'; sumCls = ''; }
-    else if (total >= -4) { conclusion = '🔴 偏空'; sumCls = 'down'; }
-    else { conclusion = '🔴 强烈看空'; sumCls = 'down'; }
+    else if (total >= -4) { conclusion = '🟡 偏恐慌'; sumCls = 'up'; }
+    else { conclusion = '🟢 极度恐慌'; sumCls = 'up'; }
 
     document.getElementById("sumVal").textContent = conclusion;
     document.getElementById("sumVal").style.color = sumCls === 'up' ? 'var(--green)' : sumCls === 'down' ? 'var(--red)' : 'var(--yellow)';
@@ -256,17 +256,21 @@ async function refreshMarket() {
 // ─── 主流币排行（谁更硬谁更软）───
 async function refreshTickers() {
   try {
-    const [resp, analysisResp] = await Promise.all([
+    const [resp, analysisResp, abResp] = await Promise.all([
       fetch('/api/binance/signals'),
-      fetch('/api/market/coin-analysis')
+      fetch('/api/market/coin-analysis'),
+      fetch('/api/alpha-beta')
     ]);
     if (!resp.ok) return;
     const data = await resp.json();
     const analysis = analysisResp.ok ? await analysisResp.json() : { coins: [] };
+    const abData = abResp.ok ? await abResp.json() : { results: [] };
     const analysisMap = {};
+    const abMap = {};
     for (const c of (analysis.coins || [])) analysisMap[c.symbol] = c;
+    for (const r of (abData.results || [])) abMap[r.symbol] = r;
     
-    const majors = (data.majors || []).filter(t => ['BTCUSDT','ETHUSDT','SOLUSDT','XRPUSDT','BNBUSDT','DOTUSDT'].includes(t.symbol)).sort((a, b) => b.change24h - a.change24h);
+    const majors = (data.majors || []).filter(t => ['BTCUSDT','ETHUSDT','SOLUSDT','XRPUSDT','BNBUSDT','DOGEUSDT','ADAUSDT','AVAXUSDT','LINKUSDT','DOTUSDT','TRXUSDT','LTCUSDT','BCHUSDT','XLMUSDT','HBARUSDT','SHIBUSDT','NEARUSDT','ATOMUSDT','UNIUSDT','FILUSDT','APTUSDT','SUIUSDT','INJUSDT','OPUSDT','ARBUSDT','TIAUSDT','ETCUSDT'].includes(t.symbol)).sort((a, b) => b.change24h - a.change24h);
     const bar = document.getElementById('tickerBar');
     if (!majors?.length) {
       if (!bar.querySelector('.ticker-item')) bar.innerHTML = '<span class="ticker-loading">等待数据...</span>';
@@ -280,7 +284,9 @@ async function refreshTickers() {
         const cls = chg >= 0 ? 'up' : 'down';
         const sign = chg >= 0 ? '+' : '';
         const a = analysisMap[t.symbol.replace('USDT','')] || {};
-        const badge = a.level ? ' <span style="font-size:9px;color:var(--' + (a.cl||'text-dim') + ');">' + (a.color||'') + ' ' + (a.level||'') + (a.depthRatio ? (a.depthRatio >= 1 ? ' · 多军 ' + Math.round(a.depthRatio/(1+a.depthRatio)*100) + '%' : '') : '') + (a.depthRatio && a.depthRatio < 1 ? ' · 空军 ' + Math.round(1/(1+a.depthRatio)*100) + '%' : '') + '</span>' : '';
+        const abData = abMap[t.symbol.replace('USDT','')];
+        const ab = abData ? abData.signal : '';
+        const badge = ab ? ' <span style="font-size:9px;color:var(--text-dim);">' + ab + '</span>' : '';
         return '<div class="ticker-item" data-sym="' + t.symbol + '">' +
           '<span class="ticker-symbol">' + t.symbol.replace('USDT','') + badge + '</span>' +
           '<span class="ticker-change ' + cls + '">' + sign + chg.toFixed(2) + '%</span>' +
@@ -311,7 +317,7 @@ async function refreshTickers() {
 }
 
 // 美股存储类（币安 TradFi 永续合约代码）
-const STORAGE_STOCKS = ['NVDAUSDT','AMDUSDT','INTCUSDT','MUUSDT','WDCUSDT','SKHYNIXUSDT','SKHYUSDT','SNDKUSDT','STXUSDT','DRAMUSDT'];
+const STORAGE_STOCKS = ['NVDAUSDT','AMDUSDT','INTCUSDT','MUUSDT','WDCUSDT','SKHYNIXUSDT','SKHYUSDT','SNDKUSDT','DRAMUSDT'];
 
 // ─── 秒级 BTC 价格刷新（无缓存，带跳动指示）───
 async function tickBtcPrice() {
@@ -730,6 +736,14 @@ async function refreshAll() {
   } catch(e) {}
   await loadChart().catch(e => console.error('loadChart', e));
   document.getElementById('headerStatus').textContent = '已连接';
+}
+
+// ─── 市场情绪子Tab切换 ───
+function switchSentimentTab(btn, tabId) {
+  document.querySelectorAll('.sub-tab').forEach(b => { b.style.background = 'var(--surface2)'; b.style.color = 'var(--text)'; });
+  btn.style.background = 'var(--accent)'; btn.style.color = '#fff';
+  document.querySelectorAll('.sub-tab-content').forEach(c => c.style.display = 'none');
+  document.getElementById(tabId).style.display = '';
 }
 
 // ─── Tab Switching ───

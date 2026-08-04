@@ -1,6 +1,62 @@
 {
-  "updated": 1785862013831,
+  "updated": 1785866335661,
   "alerts": [
+    {
+      "ts": 1785866040,
+      "detected": 1785866335660,
+      "src": "CNBC",
+      "title": "Chipotle库存下跌，可能与明尼苏达州沙门氏菌爆发有关",
+      "orig": "Chipotle stock falls on potential link to salmonella outbreak in Minnesota",
+      "link": "https://www.cnbc.com/2026/08/04/chipotle-stock-falls-salmonella-outbreak-minnesota.html"
+    },
+    {
+      "ts": 1785866123,
+      "detected": 1785866155879,
+      "src": "CoinDesk",
+      "title": "美元开盘令 Circle 的股票感到不安，但其主要支持者仍然支持 USDC",
+      "orig": "Open USD rattled Circle's stock, but its key backers still support USDC",
+      "link": "https://www.coindesk.com/business/2026/08/03/open-usd-rattled-circle-s-stock-but-its-key-backers-still-support-usdc"
+    },
+    {
+      "ts": 1785861534,
+      "detected": 1785865255089,
+      "src": "CoinTelegraph",
+      "title": "随着霍尔木兹海峡重新开放时间表将标准普尔 500 指数推向 70 美元历史新高，比特币价格上涨至 6.4 万美元",
+      "orig": "Bitcoin coils at $64K as Hormuz reopening timeline sends S&P 500 to $70T record",
+      "link": "https://cointelegraph.com/markets/bitcoin-coils-as-hormuz-reopening-time-line-sends-sp-500-to-new-record-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785864615,
+      "detected": 1785864715298,
+      "src": "CNBC",
+      "title": "指引令投资者失望后诺和诺德股价下跌",
+      "orig": "Novo Nordisk shares slide after guidance disappoints investors",
+      "link": "https://www.cnbc.com/2026/08/04/novo-nordisk-releases-earnings-and-guidance.html"
+    },
+    {
+      "ts": 1785863653,
+      "detected": 1785864174830,
+      "src": "CoinDesk",
+      "title": "分析师表示，三星有望成为主要的稳定币分销商",
+      "orig": "Samsung is poised to become a dominant stablecoin distributor, analysts say",
+      "link": "https://www.coindesk.com/business/2026/08/04/samsung-is-poised-to-become-a-dominant-stablecoin-distributor-analysts-say"
+    },
+    {
+      "ts": 1785863809,
+      "detected": 1785863994394,
+      "src": "Decrypt",
+      "title": "阿里巴巴刚刚免费赠送了其最好的人工智能模型，几乎与 Claude 和 ChatGPT 相匹配",
+      "orig": "Alibaba Just Gave Away Its Best AI Model For Free, Almost Matching Claude and ChatGPT",
+      "link": "https://decrypt.co/374906/alibaba-best-ai-model-qwen-free-claude-chatgpt"
+    },
+    {
+      "ts": 1785863044,
+      "detected": 1785863814668,
+      "src": "U.Today",
+      "title": "尽管赔率暴跌，Coinbase 对清晰的通道持乐观态度",
+      "orig": "Coinbase Optimistic About Clarity Passage Despite Plunging Odds",
+      "link": "https://u.today/coinbase-optimistic-about-clarity-passage-despite-plunging-odds"
+    },
     {
       "ts": 1785861826,
       "detected": 1785862013831,
@@ -344,62 +400,6 @@
       "title": "麦当劳盈利超出预期，连锁店宣布新任美国负责人以加速增长",
       "orig": "McDonald's earnings beat estimates, chain announces new U.S. head to accelerate growth",
       "link": "https://www.cnbc.com/2026/08/04/mcdonalds-mcd-q2-2026-earnings.html"
-    },
-    {
-      "ts": 1785841261,
-      "detected": 1785842203393,
-      "src": "CNBC",
-      "title": "麦当劳任命公司资深人士斯凯·安德森为美国总裁，因为其最大市场的增长放缓",
-      "orig": "McDonald's names company veteran Skye Anderson as its U.S. president as growth in its largest market slows",
-      "link": "https://www.cnbc.com/2026/08/04/mcdonalds-skye-anderson-us-president.html"
-    },
-    {
-      "ts": 1785841181,
-      "detected": 1785841303026,
-      "src": "CoinDesk",
-      "title": "南非立法者提出跨境加密交易规则草案",
-      "orig": "South African lawmakers propose draft rules on cross-border crypto transactions",
-      "link": "https://www.coindesk.com/policy/2026/08/04/south-african-lawmakers-propose-draft-rules-on-cross-border-crypto-transactions"
-    },
-    {
-      "ts": 1785840777,
-      "detected": 1785840942691,
-      "src": "Decrypt",
-      "title": "Coldcard 损失近 1.3 亿美元，硬件钱包公司警告网络钓鱼激增",
-      "orig": "Hardware Wallet Firms Warn of Phishing Surge as Coldcard Losses Near $130M",
-      "link": "https://decrypt.co/374891/hardware-wallet-firms-warn-of-phishing-surge-as-coldcard-losses-near-130m"
-    },
-    {
-      "ts": 1785840459,
-      "detected": 1785840942691,
-      "src": "CoinTelegraph",
-      "title": "比特币上涨 1.6%，吉姆·克莱默 (Jim Cramer) 计划因量子担忧而出售其比特币",
-      "orig": "Jim Cramer plans to sell his Bitcoin over quantum fears as BTC rises 1.6%",
-      "link": "https://cointelegraph.com/markets/jim-cramer-sell-bitcoin-quantum-fears-btc-rises?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785840671,
-      "detected": 1785840762508,
-      "src": "CoinDesk",
-      "title": "随着 Coldcard 的利用和策略销售的减少，比特币价格上涨至 64,000 美元。",
-      "orig": "Bitcoin rises toward $64,000 as Coldcard exploit, Strategy sales recede. ADA advances",
-      "link": "https://www.coindesk.com/markets/2026/08/04/bitcoin-rises-toward-usd64-000-as-coldcard-exploit-strategy-sales-recede-ada-advances"
-    },
-    {
-      "ts": 1785839685,
-      "detected": 1785839862243,
-      "src": "BBC Business",
-      "title": "为什么特朗普媒体出售快速访问影响市场的社交帖子的做法引起争议",
-      "orig": "Why Trump Media's sale of fast access to market-moving social posts is controversial",
-      "link": "https://www.bbc.co.uk/news/articles/c4gdkl9zn8wo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785839661,
-      "detected": 1785839862243,
-      "src": "CNBC",
-      "title": "随着新药销售增长，默克上调收入预期，但因交易费用而下调利润指引",
-      "orig": "Merck hikes revenue outlook as new drug sales grow, but cuts profit guidance due to deal charges",
-      "link": "https://www.cnbc.com/2026/08/04/merck-mrk-earnings-q2-2026.html"
     }
   ]
 }

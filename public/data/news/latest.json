@@ -1,6 +1,69 @@
 {
   "items": [
     {
+      "s": "Chipotle stock falls on potential link to salmonella outbreak in Minnesota",
+      "t": "2026-08-04T17:54:00.000Z",
+      "ts": 1785866040,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/04/chipotle-stock-falls-salmonella-outbreak-minnesota.html",
+      "s_cn": "Chipotle库存下跌，可能与明尼苏达州沙门氏菌爆发有关",
+      "_ts": 1785866231535
+    },
+    {
+      "s": "Open USD rattled Circle's stock, but its key backers still support USDC",
+      "t": "2026-08-04T17:55:23.000Z",
+      "ts": 1785866123,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/03/open-usd-rattled-circle-s-stock-but-its-key-backers-still-support-usdc",
+      "s_cn": "美元开盘令 Circle 的股票感到不安，但其主要支持者仍然支持 USDC",
+      "_ts": 1785866146869
+    },
+    {
+      "s": "Bitcoin coils at $64K as Hormuz reopening timeline sends S&P 500 to $70T record",
+      "t": "2026-08-04T16:38:54.000Z",
+      "ts": 1785861534,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/bitcoin-coils-as-hormuz-reopening-time-line-sends-sp-500-to-new-record-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "随着霍尔木兹海峡重新开放时间表将标准普尔 500 指数推向 70 美元历史新高，比特币价格上涨至 6.4 万美元",
+      "_ts": 1785865196112
+    },
+    {
+      "s": "Novo Nordisk shares slide after guidance disappoints investors",
+      "t": "2026-08-04T17:30:15.000Z",
+      "ts": 1785864615,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/04/novo-nordisk-releases-earnings-and-guidance.html",
+      "s_cn": "指引令投资者失望后诺和诺德股价下跌",
+      "_ts": 1785864715289
+    },
+    {
+      "s": "Samsung is poised to become a dominant stablecoin distributor, analysts say",
+      "t": "2026-08-04T17:14:13.000Z",
+      "ts": 1785863653,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/04/samsung-is-poised-to-become-a-dominant-stablecoin-distributor-analysts-say",
+      "s_cn": "分析师表示，三星有望成为主要的稳定币分销商",
+      "_ts": 1785864138764
+    },
+    {
+      "s": "Alibaba Just Gave Away Its Best AI Model For Free, Almost Matching Claude and ChatGPT",
+      "t": "2026-08-04T17:16:49.000Z",
+      "ts": 1785863809,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374906/alibaba-best-ai-model-qwen-free-claude-chatgpt",
+      "s_cn": "阿里巴巴刚刚免费赠送了其最好的人工智能模型，几乎与 Claude 和 ChatGPT 相匹配",
+      "_ts": 1785863859446
+    },
+    {
+      "s": "Coinbase Optimistic About Clarity Passage Despite Plunging Odds",
+      "t": "2026-08-04T17:04:04.000Z",
+      "ts": 1785863044,
+      "src": "U.Today",
+      "link": "https://u.today/coinbase-optimistic-about-clarity-passage-despite-plunging-odds",
+      "s_cn": "尽管赔率暴跌，Coinbase 对清晰的通道持乐观态度",
+      "_ts": 1785863677771
+    },
+    {
       "s": "Hashdex to Shut Down Bitcoin ETF After Struggling to Gain Assets",
       "t": "2026-08-04T16:43:46.000Z",
       "ts": 1785861826,
@@ -2143,6 +2206,6 @@
       "_ts": 1785715504325
     }
   ],
-  "updated": 1785862791970,
+  "updated": 1785866401293,
   "sources": 6
 }
