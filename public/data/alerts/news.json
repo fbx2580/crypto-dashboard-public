@@ -1,6 +1,230 @@
 {
-  "updated": 1785847786301,
+  "updated": 1785862013831,
   "alerts": [
+    {
+      "ts": 1785861826,
+      "detected": 1785862013831,
+      "src": "Decrypt",
+      "title": "Hashdex 在努力获取资产后将关闭比特币 ETF",
+      "orig": "Hashdex to Shut Down Bitcoin ETF After Struggling to Gain Assets",
+      "link": "https://decrypt.co/374903/hashdex-shut-down-bitcoin-etf"
+    },
+    {
+      "ts": 1785860519,
+      "detected": 1785860574773,
+      "src": "CoinDesk",
+      "title": "当沃伦要求美国证券交易委员会调查他时，《澄清法案》在特朗普道德问题上闲置",
+      "orig": "Clarity Act sits idle over Trump ethics question as Warren asks SEC to investigate him",
+      "link": "https://www.coindesk.com/policy/2026/08/04/clarity-act-sits-idle-over-trump-ethics-question-as-warren-asks-sec-to-investigate-him"
+    },
+    {
+      "ts": 1785858855,
+      "detected": 1785859494396,
+      "src": "U.Today",
+      "title": "Hyperliquid 在现实世界资产交易中创下 40 亿美元的历史新高",
+      "orig": "Hyperliquid Scores New $4 Billion All-Time High in Real-World Asset Trading",
+      "link": "https://u.today/hyperliquid-scores-new-4-billion-all-time-high-in-real-world-asset-trading"
+    },
+    {
+      "ts": 1785858620,
+      "detected": 1785859314950,
+      "src": "CoinTelegraph",
+      "title": "Bitdeer 通过长期 $4.7B 数据中心租赁扩展人工智能基础设施",
+      "orig": "Bitdeer expands AI infrastructure with long-term $4.7B data center lease",
+      "link": "https://cointelegraph.com/news/bitdeer-ai-data-center-lease-norway?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785858425,
+      "detected": 1785858595043,
+      "src": "CoinDesk",
+      "title": "富国银行加入摩根大通和花旗的行列，参与华尔街结算轨道代币化的竞赛",
+      "orig": "Wells Fargo joins JPMorgan and Citi in the race to tokenize Wall Street’s settlement rails",
+      "link": "https://www.coindesk.com/business/2026/08/04/wells-fargo-to-offer-tokenized-deposits-for-24-7-corporate-payments"
+    },
+    {
+      "ts": 1785858120,
+      "detected": 1785858233838,
+      "src": "CNBC",
+      "title": "宝洁公司首席执行官告诉 CNBC，将以 38 亿美元收购补充剂品牌 Thorne",
+      "orig": "Procter & Gamble will acquire supplements brand Thorne for $3.8 billion, CEO tells CNBC",
+      "link": "https://www.cnbc.com/2026/08/04/procter-gamble-will-acquire-supplements-brand-thorne.html"
+    },
+    {
+      "ts": 1785857396,
+      "detected": 1785857873286,
+      "src": "CNBC",
+      "title": "宝洁公司首席执行官告诉 CNBC，它将收购补充剂品牌 Thorne",
+      "orig": "Procter & Gamble will acquire supplements brand Thorne, CEO tells CNBC",
+      "link": "https://www.cnbc.com/2026/08/04/procter-gamble-will-acquire-supplements-brand-thorne.html"
+    },
+    {
+      "ts": 1785855496,
+      "detected": 1785856072632,
+      "src": "BBC Business",
+      "title": "霍尔木兹海峡重新开放的希望导致油价下跌",
+      "orig": "Oil prices fall on hopes Strait of Hormuz could reopen",
+      "link": "https://www.bbc.co.uk/news/articles/cpw9v0gnzxwo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1785855496,
+      "detected": 1785855892434,
+      "src": "BBC Business",
+      "title": "美国官员提高与伊朗达成协议的希望，油价下跌",
+      "orig": "Oil prices fall as US officials raise hopes of a deal with Iran",
+      "link": "https://www.bbc.co.uk/news/articles/cpw9v0gnzxwo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1785854673,
+      "detected": 1785855712924,
+      "src": "U.Today",
+      "title": "XRP Ledger 注意到，随着 Ripple 推动更多采用，RWA 持有者激增 25%",
+      "orig": "XRP Ledger Notes 25% RWA Holders Surge as Ripple Pushes for More Adoption",
+      "link": "https://u.today/xrp-ledger-notes-25-rwa-holders-surge-as-ripple-pushes-for-more-adoption"
+    },
+    {
+      "ts": 1785854579,
+      "detected": 1785855352255,
+      "src": "U.Today",
+      "title": "“加密之王”Barry Silbert 分享 Zcash (ZEC) 挖矿的巨大权力里程碑",
+      "orig": "'Crypto King' Barry Silbert Shares Huge Power Milestone for Zcash (ZEC) Mining",
+      "link": "https://u.today/crypto-king-barry-silbert-shares-huge-power-milestone-for-zcash-zec-mining"
+    },
+    {
+      "ts": 1785854737,
+      "detected": 1785855171991,
+      "src": "CNBC",
+      "title": "为什么福特认为 7 月份美国销量下降 10.2% 仍然是一个“好”月份",
+      "orig": "Why Ford believes its 10.2% July U.S. sales decline was still a 'good' month",
+      "link": "https://www.cnbc.com/2026/08/04/ford-july-sales-decline.html"
+    },
+    {
+      "ts": 1785854973,
+      "detected": 1785854991861,
+      "src": "CoinDesk",
+      "title": "比特币 63,000 美元区域成为买家的关键战场：Glassnode",
+      "orig": "Bitcoin’s $63,000 zone emerges as key battleground for buyers: Glassnode",
+      "link": "https://www.coindesk.com/markets/2026/08/04/bitcoin-s-usd63-000-zone-emerges-as-key-battleground-for-buyers-glassnode"
+    },
+    {
+      "ts": 1785854329,
+      "detected": 1785854811706,
+      "src": "CoinTelegraph",
+      "title": "Galaxy 至少有 15 名攻击者利用了 Coldcard 漏洞",
+      "orig": "At least 15 attackers exploited Coldcard vulnerability: Galaxy",
+      "link": "https://cointelegraph.com/news/15-attackers-exploited-coldcard-vulnerability-galaxy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785854303,
+      "detected": 1785854451552,
+      "src": "CoinDesk",
+      "title": "随着预测市场领域的竞争加剧，Polymarket 的估值目标为 200 亿美元",
+      "orig": "Polymarket targets $20 billion valuation as competition heats up in prediction market sector",
+      "link": "https://www.coindesk.com/markets/2026/08/04/polymarket-targets-usd20-billion-valuation-as-competition-heats-up-in-prediction-markets"
+    },
+    {
+      "ts": 1785853550,
+      "detected": 1785853731299,
+      "src": "CoinDesk",
+      "title": "由于加密货币价格暴跌，联合圣保罗银行第二季度将 IBIT 持股削减 94％，将以太 ETF 持有量增加两倍",
+      "orig": "Intesa Sanpaolo slashed IBIT stake by 94% in 2Q, tripled ether ETF holding as crypto prices slumped",
+      "link": "https://www.coindesk.com/business/2026/08/04/intesa-sanpaolo-slashed-ibit-stake-by-94-in-2q-tripled-ether-etf-holding-as-crypto-prices-slumped"
+    },
+    {
+      "ts": 1785852012,
+      "detected": 1785853011157,
+      "src": "U.Today",
+      "title": "一天铸造 1.33 亿美元 RLUSD：Ripple 在激增的情况下增加了稳定币供应",
+      "orig": "$133 Million RLUSD Minted in a Day: Ripple Ramps Up Stablecoin Supply Amid Surge",
+      "link": "https://u.today/133-million-rlusd-minted-in-a-day-ripple-ramps-up-stablecoin-supply-amid-surge"
+    },
+    {
+      "ts": 1785852000,
+      "detected": 1785852109324,
+      "src": "CoinDesk",
+      "title": "随着股市竞赛的升温，Dinari 为美国投资者带来了代币化的美国股票",
+      "orig": "Dinari brings tokenized U.S. stocks to American investors as equity race heats up",
+      "link": "https://www.coindesk.com/business/2026/08/04/dinari-brings-tokenized-u-s-stocks-to-american-investors-as-equity-race-heats-up"
+    },
+    {
+      "ts": 1785851538,
+      "detected": 1785851568405,
+      "src": "CNBC",
+      "title": "麦当劳宣布其最大市场的新负责人，称其美国业务出现下滑",
+      "orig": "McDonald's says its U.S. business is falling short as it announces new head of its largest market",
+      "link": "https://www.cnbc.com/2026/08/04/mcdonalds-mcd-q2-2026-earnings.html"
+    },
+    {
+      "ts": 1785850566,
+      "detected": 1785850667775,
+      "src": "Decrypt",
+      "title": "Apple 的 AI Slop 问题导致价值 20 万美元的 macOS 漏洞未被报告",
+      "orig": "Apple's AI Slop Problem Left a $200K macOS Exploit Unreported",
+      "link": "https://decrypt.co/374900/apples-ai-slop-problem-left-a-200k-macos-exploit-unreported"
+    },
+    {
+      "ts": 1785850200,
+      "detected": 1785850488371,
+      "src": "CoinTelegraph",
+      "title": "对不起大家，比特币将跌至 43,500 美元：Michael Terpin",
+      "orig": "Sorry everyone, Bitcoin is headed down to $43,500: Michael Terpin",
+      "link": "https://cointelegraph.com/magazine/bitcoin-to-go-down-into-the-40s-before-next-bull-run-michael-terpin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785849108,
+      "detected": 1785849947412,
+      "src": "U.Today",
+      "title": "币安重组：四个现货交易对将于今年八月被移除",
+      "orig": "Binance Shake-Up: Four Spot Trading Pairs Face Removal This August",
+      "link": "https://u.today/binance-shake-up-four-spot-trading-pairs-face-removal-this-august"
+    },
+    {
+      "ts": 1785849398,
+      "detected": 1785849587229,
+      "src": "CNBC",
+      "title": "房地产游戏：外国人购买的美国房产越来越少，但豪华住宅建筑商仍然吸引着他们",
+      "orig": "Property Play: Foreigners are buying fewer U.S. properties, but luxury homebuilders still draw them in",
+      "link": "https://www.cnbc.com/2026/08/04/foreign-buyers-us-properties.html"
+    },
+    {
+      "ts": 1785846334,
+      "detected": 1785849407487,
+      "src": "BBC Business",
+      "title": "活动人士对盖特威克机场扩建提出上诉被驳回",
+      "orig": "Campaigners denied appeal over Gatwick expansion",
+      "link": "https://www.bbc.co.uk/news/articles/cjwx9y7dd27o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1785849301,
+      "detected": 1785849407487,
+      "src": "CNBC",
+      "title": "外国人购买美国房产的数量减少，但豪华住宅建筑商仍然吸引他们",
+      "orig": "Foreigners are buying fewer U.S. properties, but luxury homebuilders still draw them in",
+      "link": "https://www.cnbc.com/2026/08/04/foreign-buyers-us-properties.html"
+    },
+    {
+      "ts": 1785848115,
+      "detected": 1785849046999,
+      "src": "U.Today",
+      "title": "Telegram 应用商店事件后 GRAM 代币遭受重创；",
+      "orig": "GRAM Token Whipsaws After Telegram App Store Incident; XRP Holders Unlock New RLUSD Utility; Bitcoin Now Deeply Undervalued: CryptoQuant — Morning Crypto Report",
+      "link": "https://u.today/gram-token-whipsaws-after-telegram-app-store-incident-xrp-holders-unlock-new-rlusd-utility-bitcoin"
+    },
+    {
+      "ts": 1785848400,
+      "detected": 1785848506845,
+      "src": "CoinDesk",
+      "title": "随着《澄清法案》的摇摇欲坠，神秘组织在华盛顿广告中大肆攻击加密货币",
+      "orig": "As Clarity Act teeters, mystery group hammers away at crypto in Washington ads",
+      "link": "https://www.coindesk.com/policy/2026/08/03/as-clarity-act-teeters-mystery-group-hammers-away-at-crypto-in-washington-ads"
+    },
+    {
+      "ts": 1785848400,
+      "detected": 1785848506845,
+      "src": "CoinDesk",
+      "title": "BitGo 的 WBTC 举措使 LayerZero 到 Chainlink 的总价值接近 150 亿美元",
+      "orig": "BitGo’s WBTC move pushes LayerZero-to-Chainlink tally near $15 billion",
+      "link": "https://www.coindesk.com/business/2026/08/04/bitgo-s-wbtc-move-pushes-layerzero-to-chainlink-tally-near-usd15-billion"
+    },
     {
       "ts": 1785847079,
       "detected": 1785847786300,
@@ -176,230 +400,6 @@
       "title": "随着新药销售增长，默克上调收入预期，但因交易费用而下调利润指引",
       "orig": "Merck hikes revenue outlook as new drug sales grow, but cuts profit guidance due to deal charges",
       "link": "https://www.cnbc.com/2026/08/04/merck-mrk-earnings-q2-2026.html"
-    },
-    {
-      "ts": 1785839456,
-      "detected": 1785839681881,
-      "src": "CoinTelegraph",
-      "title": "前 FBI 主管承认盗窃 100 万美元加密货币有罪",
-      "orig": "Former FBI supervisor admits guilt in $1M crypto theft",
-      "link": "https://cointelegraph.com/news/former-fbi-supervisor-charged-1m-crypto-theft?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785838960,
-      "detected": 1785839321472,
-      "src": "BBC Business",
-      "title": "苹果对英国访问私人用户数据的命令提出新挑战",
-      "orig": "Apple issues new challenge against UK order for access to private user data",
-      "link": "https://www.bbc.co.uk/news/articles/cvg0kk3ek2vo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785837900,
-      "detected": 1785838781452,
-      "src": "U.Today",
-      "title": "卡尔达诺 (ADA) 交易量在过去 24 小时内增加了 33%，确保了复苏基础",
-      "orig": "Cardano (ADA) Adds 33% in Volume Over Last 24 Hours, Securing Recovery Foundation",
-      "link": "https://u.today/cardano-ada-adds-33-in-volume-over-last-24-hours-securing-recovery-foundation"
-    },
-    {
-      "ts": 1785838025,
-      "detected": 1785838060974,
-      "src": "BBC Business",
-      "title": "伊朗战争推高油价 BP利润创2022年以来最高57亿美元",
-      "orig": "BP's $5.7bn profit highest since 2022 as Iran war pushes up oil price",
-      "link": "https://www.bbc.co.uk/news/articles/cg5l11m02j3o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785837804,
-      "detected": 1785837881172,
-      "src": "CoinDesk",
-      "title": "贝莱德首次在欧洲推出 3110 亿美元货币市场基金的代币化访问",
-      "orig": "BlackRock debuts tokenized access to $311 billion of money market funds in Europe",
-      "link": "https://www.coindesk.com/business/2026/08/04/blackrock-debuts-tokenized-access-to-usd311-billion-of-money-market-funds-in-europe"
-    },
-    {
-      "ts": 1785837242,
-      "detected": 1785837340599,
-      "src": "CoinDesk",
-      "title": "随着资金流入减少，美国首个现货比特币 ETF 关闭，投资者追逐人工智能回报",
-      "orig": "First U.S. spot bitcoin ETF to close as inflows dwindle, investors chase AI returns",
-      "link": "https://www.coindesk.com/business/2026/08/04/first-u-s-spot-bitcoin-etf-to-close-as-inflows-dwindle-investors-chase-ai-returns"
-    },
-    {
-      "ts": 1785836556,
-      "detected": 1785837340599,
-      "src": "CoinTelegraph",
-      "title": "Strategy 的 STRC 从 6 月收盘低点反弹 24% 后重拾 90 美元",
-      "orig": "Strategy’s STRC retakes $90 after 24% rebound from June closing low",
-      "link": "https://cointelegraph.com/markets/strategy-strc-stock-above-90-june-recovery?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785836784,
-      "detected": 1785836980866,
-      "src": "Decrypt",
-      "title": "五名因在伦敦遭受“酷刑”折磨而监禁加密货币百万富翁的人被定罪",
-      "orig": "Five Convicted of Imprisoning Crypto Millionaires in London 'Torture' Ordeal",
-      "link": "https://decrypt.co/374889/five-convicted-of-imprisoning-crypto-millionaires-in-london-torture-ordeal"
-    },
-    {
-      "ts": 1785833165,
-      "detected": 1785836980866,
-      "src": "U.Today",
-      "title": "Ripple 总裁多头剖析为何新投资是对银行转向 XRP Ledger 的回应",
-      "orig": "Ripple President Longs Breaks Down Why New Investments Are Response to Bank Pivot Toward XRP Ledger",
-      "link": "https://u.today/ripple-president-longs-breaks-down-why-new-investments-are-response-to-bank-pivot-toward-xrp-ledger"
-    },
-    {
-      "ts": 1785836447,
-      "detected": 1785836800383,
-      "src": "BBC Business",
-      "title": "Trump Media 的 Truth API 是什么？为什么它存在争议？",
-      "orig": "What is Trump Media's Truth API and why is it controversial?",
-      "link": "https://www.bbc.co.uk/news/articles/c4gdkl9zn8wo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785835217,
-      "detected": 1785835899938,
-      "src": "CoinTelegraph",
-      "title": "美元干预使比特币和风险资产受到流动性变化的关注",
-      "orig": "US yen intervention puts Bitcoin, risk assets on notice for liquidity flux",
-      "link": "https://cointelegraph.com/markets/us-yen-intervention-puts-bitcoin-risk-assets-on-notice-for-liquidity-flux?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785834286,
-      "detected": 1785834639453,
-      "src": "BBC Business",
-      "title": "伊朗战争推高油价，英国石油公司利润创四年新高",
-      "orig": "BP profits highest in four years as Iran war pushes up oil price",
-      "link": "https://www.bbc.co.uk/news/articles/cg5l11m02j3o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785833165,
-      "detected": 1785833919981,
-      "src": "U.Today",
-      "title": "数十亿美元的 XRP 账本需求推动了 Ripple 总裁所说的银行业“灯开关翻转”",
-      "orig": "Billion-Dollar XRP Ledger Demand Fuels What Ripple President Labels as Banking 'Light Switch Flip'",
-      "link": "https://u.today/billion-dollar-xrp-ledger-demand-fuels-what-ripple-president-labels-as-banking-light-switch-flip"
-    },
-    {
-      "ts": 1785832860,
-      "detected": 1785833019426,
-      "src": "CoinDesk",
-      "title": "实时更新：比特币价格为 63,600 美元，罕见的美日日元走势测试套利交易担忧",
-      "orig": "Live updates: Bitcoin at $63,600 as rare US-Japan yen action tests carry-trade fears",
-      "link": "https://www.coindesk.com/business/2026/08/04/live-updates-bitcoin-at-usd63-600-as-rare-us-japan-yen-action-tests-carry-trade-fears"
-    },
-    {
-      "ts": 1785830583,
-      "detected": 1785831579469,
-      "src": "CoinTelegraph",
-      "title": "苹果短暂从 App Store 下架 Telegram，Gram 反弹",
-      "orig": "Apple briefly removes Telegram from App Store, Gram rebounds",
-      "link": "https://cointelegraph.com/news/apple-telegram-app-store-gram-rebounds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785830361,
-      "detected": 1785831219555,
-      "src": "U.Today",
-      "title": "Ledger 首席技术官：多重签名并不总是正确的答案",
-      "orig": "Ledger CTO: Multisig Not Always the Right Answer",
-      "link": "https://u.today/ledger-cto-multisig-not-always-the-right-answer"
-    },
-    {
-      "ts": 1785829998,
-      "detected": 1785830679447,
-      "src": "CoinDesk",
-      "title": "为什么吉姆·克莱默（Jim Cramer）的量子恐慌并没有扰乱比特币，因为价格稳定在 64,000 美元左右",
-      "orig": "Why Jim Cramer’s quantum panic isn’t rattling bitcoin as price holds steady around $64,000",
-      "link": "https://www.coindesk.com/markets/2026/08/04/why-jim-cramer-s-quantum-panic-isn-t-rattling-bitcoin-as-price-holds-steady-around-usd64-000"
-    },
-    {
-      "ts": 1785829800,
-      "detected": 1785830679447,
-      "src": "U.Today",
-      "title": "XRP 面临再次失去 1 美元门槛的风险：未来 7 天内能否守住？",
-      "orig": "XRP Risks Losing $1 Threshold Again: Will It Hold in Next 7 Days?",
-      "link": "https://u.today/xrp-risks-losing-1-threshold-again-will-it-hold-in-next-7-days"
-    },
-    {
-      "ts": 1785830171,
-      "detected": 1785830499479,
-      "src": "CoinDesk",
-      "title": "不丹 GMC 在承诺 10,000 枚比特币后启用部分比特币金库",
-      "orig": "Bhutan's GMC puts part of its bitcoin treasury to work after 10,000 BTC pledge",
-      "link": "https://www.coindesk.com/markets/2026/08/04/bhutan-s-gmc-puts-part-of-its-bitcoin-treasury-to-work-after-10-000-btc-pledge"
-    },
-    {
-      "ts": 1785829762,
-      "detected": 1785830139002,
-      "src": "CoinTelegraph",
-      "title": "纽约法官驳回 CFTC 停止对 Kalshi 采取执法行动的动议",
-      "orig": "NY judge denies CFTC motion to halt enforcement action against Kalshi",
-      "link": "https://cointelegraph.com/news/ny-judge-denies-cftc-motion-enforcement-kalshi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785822385,
-      "detected": 1785829418625,
-      "src": "BBC Business",
-      "title": "热浪会让你的食品店变得更贵吗？",
-      "orig": "Could heatwaves make your food shop more expensive?",
-      "link": "https://www.bbc.co.uk/news/articles/cp879d2n3yno?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785828332,
-      "detected": 1785828699322,
-      "src": "CoinTelegraph",
-      "title": "尼日利亚为数字资产平台制定加密货币征税规则",
-      "orig": "Nigeria sets crypto tax collection rules for digital asset platforms",
-      "link": "https://cointelegraph.com/news/nigeria-crypto-tax-rules-digital-asset-platforms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785827495,
-      "detected": 1785827617865,
-      "src": "BBC Business",
-      "title": "美国各州提起诉讼，要求阻止特朗普对数十个国家征收关税",
-      "orig": "US states sue to block Trump tariffs impacting dozens of countries",
-      "link": "https://www.bbc.co.uk/news/articles/cy4kp8jd0ppo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785823940,
-      "detected": 1785827617865,
-      "src": "CoinDesk",
-      "title": "XRP 持有者现在可以通过 2.8 亿美元的借贷池在以太坊上借入 RLUSD",
-      "orig": "XRP holders can now borrow RLUSD on Ethereum through $280 million lending pool",
-      "link": "https://www.coindesk.com/markets/2026/08/04/flare-s-wrapped-xrp-wins-approval-in-a-usd280-million-rlusd-lending-vault"
-    },
-    {
-      "ts": 1785823223,
-      "detected": 1785827617865,
-      "src": "CoinTelegraph",
-      "title": "加密货币公司仍在寻求前沿人工智能接入；",
-      "orig": "Crypto firms still seeking frontier AI access; only select few have it",
-      "link": "https://cointelegraph.com/news/few-crypto-firms-have-access-to-frontier-ai-as-cyber-threats-escalate?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785822122,
-      "detected": 1785827617865,
-      "src": "U.Today",
-      "title": "Uber 早期投资者敦促出售比特币换取 Solana",
-      "orig": "Early Uber Investor Urges Selling Bitcoin for Solana",
-      "link": "https://u.today/early-uber-investor-urges-selling-bitcoin-for-solana"
-    },
-    {
-      "ts": 1785821958,
-      "detected": 1785827617865,
-      "src": "CoinDesk",
-      "title": "Solana 的一项新提案旨在将每日 SOL 销毁额从 47,000 美元增加到 650,000 美元",
-      "orig": "A new Solana proposal aims to ramp up daily SOL Burns from $47,000 to $650,000",
-      "link": "https://www.coindesk.com/tech/2026/08/04/a-new-solana-proposal-would-take-daily-sol-burns-from-usd47-000-to-usd650-000"
-    },
-    {
-      "ts": 1785820873,
-      "detected": 1785827617865,
-      "src": "CoinDesk",
-      "title": "随着交易员回顾 Strategy 的 BTC 销售和 Coldcard 横扫，比特币接近 64,000 美元",
-      "orig": "Bitcoin nears $64,000 as traders look past Strategy's BTC sales and Coldcard sweeps",
-      "link": "https://www.coindesk.com/markets/2026/08/04/bitcoin-nears-usd64-000-as-traders-look-past-the-fourth-coldcard-sweep"
     }
   ]
 }

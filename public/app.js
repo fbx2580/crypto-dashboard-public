@@ -668,7 +668,7 @@ async function refreshAltcoinSignals() {
     // 钱包数据不变
     const walletRes = await fetch('/api/wallets');
     const walletData = walletRes.ok ? await walletRes.json() : { wallets: [] };
-    renderWallets(walletData);
+    try { if (typeof renderWallets === 'function') renderWallets(walletData); } catch(e) {}
 
     // 巨鲸：首次全量 or 增量轮询
     let url;
