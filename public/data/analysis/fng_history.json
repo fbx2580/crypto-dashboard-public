@@ -15471,6 +15471,11 @@
       "date": "2026-08-04",
       "value": 25,
       "label": "Extreme Fear"
+    },
+    {
+      "date": "2026-08-05",
+      "value": 27,
+      "label": "Fear"
     }
   ]
 }

@@ -1,9 +1,207 @@
 {
   "date": "2026-08-04",
   "type": "news",
-  "updated": 1785866231544,
-  "total": 141,
+  "updated": 1785885966992,
+  "total": 163,
   "records": [
+    {
+      "s": "'I feel like I dug my own grave': The workers caught in the AI transition",
+      "t": "2026-08-04T22:10:00.000Z",
+      "ts": 1785881400,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cgr7nxve05go?at_medium=RSS&at_campaign=rss",
+      "s_cn": "“我感觉就像我挖了自己的坟墓”：陷入人工智能转型的工人",
+      "_ts": 1785885966983
+    },
+    {
+      "s": "Saudi-led group completes $55bn purchase of gaming giant EA",
+      "t": "2026-08-04T23:09:44.000Z",
+      "ts": 1785884984,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cjejyl34345o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "沙特领导的集团以 550 亿美元完成对游戏巨头 EA 的收购",
+      "_ts": 1785885966983
+    },
+    {
+      "s": "Fashion brand Jaded has ad banned for 'glamourising smoking'",
+      "t": "2026-08-04T23:20:12.000Z",
+      "ts": 1785885612,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cly843vd3jmo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "时尚品牌 Jaded 因“美化吸烟”而被禁广告",
+      "_ts": 1785885966983
+    },
+    {
+      "s": "The cost of being single – and how friends are teaming up to beat it",
+      "t": "2026-08-04T23:21:08.000Z",
+      "ts": 1785885668,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cly7dqprlnvo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "单身的代价——以及朋友们如何联合起来克服单身",
+      "_ts": 1785885966983
+    },
+    {
+      "s": "Could tech replace firefighters in the battle against wildfires?",
+      "t": "2026-08-04T23:21:47.000Z",
+      "ts": 1785885707,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c62enveg1dpo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "科技能否取代消防员对抗野火？",
+      "_ts": 1785885966983
+    },
+    {
+      "s": "This Bitcoin Bridge Shut Itself Down Because AI Was Finding Bugs Too Fast",
+      "t": "2026-08-04T22:46:03.000Z",
+      "ts": 1785883563,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374933/bitcoin-bridge-shuts-down-ai-finding-bugs-too-fast",
+      "s_cn": "这座比特币桥因人工智能发现漏洞速度太快而自行关闭",
+      "_ts": 1785883625299
+    },
+    {
+      "s": "AI Enthusiast Bugs His Toddler's Sleepover and Feeds It to Claude—The Internet Bugs Back",
+      "t": "2026-08-04T22:16:03.000Z",
+      "ts": 1785881763,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374930/ai-enthusiast-bugged-toddler-sleepover-claude",
+      "s_cn": "人工智能爱好者在他蹒跚学步的孩子过夜时窃听并将其喂给克劳德——互联网又回来了",
+      "_ts": 1785881802865
+    },
+    {
+      "s": "OpenAI Dumps Apple Employees' Text Messages to Fight Trade Secret Suit",
+      "t": "2026-08-04T21:46:03.000Z",
+      "ts": 1785879963,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374928/openai-emails-text-messages-apple-trade-secrets-lawsuit",
+      "s_cn": "OpenAI 转存苹果员工短信以应对商业秘密诉讼",
+      "_ts": 1785879995933
+    },
+    {
+      "s": "Ledger Says Coldcard Exploit Shows Bitcoin Wallet Security Must Adapt to AI",
+      "t": "2026-08-04T21:16:03.000Z",
+      "ts": 1785878163,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374914/ledger-coldcard-exploit-bitcoin-wallet-security-ai",
+      "s_cn": "Ledger 称 Coldcard 漏洞表明比特币钱包安全必须适应人工智能",
+      "_ts": 1785878200226
+    },
+    {
+      "s": "Former SEC Boss Behind Ripple Lawsuit Sworn In as Intelligence Chief",
+      "t": "2026-08-04T20:41:55.000Z",
+      "ts": 1785876115,
+      "src": "U.Today",
+      "link": "https://u.today/former-sec-boss-behind-ripple-lawsuit-sworn-in-as-intelligence-chief",
+      "s_cn": "Ripple 诉讼背后的前 SEC 老板宣誓就任情报主管",
+      "_ts": 1785876890439
+    },
+    {
+      "s": "Jim Cramer Is Selling His Bitcoin Over Quantum Threat—Crypto Twitter Is Thrilled",
+      "t": "2026-08-04T20:45:18.000Z",
+      "ts": 1785876318,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374923/jim-cramer-selling-bitcoin-quantum-computing-threat",
+      "s_cn": "吉姆·克莱默（Jim Cramer）因量子威胁而出售他的比特币——加密推特很兴奋",
+      "_ts": 1785876380463
+    },
+    {
+      "s": "Lucid begins 'operational reset' as CEO says EV maker will delay midsize vehicle",
+      "t": "2026-08-04T20:36:43.000Z",
+      "ts": 1785875803,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/04/lucid-group-lcid-earnings-q2-2026.html",
+      "s_cn": "Lucid 开始“运营重置”，首席执行官表示电动汽车制造商将推迟中型汽车生产",
+      "_ts": 1785875822470
+    },
+    {
+      "s": "Police Have Arrested 37 Americans Over AI Data Center Protests This Year",
+      "t": "2026-08-04T20:30:52.000Z",
+      "ts": 1785875452,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374921/ai-data-center-protest-arrests",
+      "s_cn": "今年，警方因人工智能数据中心抗议活动逮捕了 37 名美国人",
+      "_ts": 1785875482435
+    },
+    {
+      "s": "SpaceX tops Wall Street revenue forecast, posts $540 million loss on bitcoin holdings",
+      "t": "2026-08-04T20:26:21.000Z",
+      "ts": 1785875181,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/04/spacex-tops-wall-street-revenue-forecast-posts-usd540-million-decline-on-bitcoin-holding-value",
+      "s_cn": "SpaceX 营收超过华尔街预期，因持有比特币而亏损 5.4 亿美元",
+      "_ts": 1785875215451
+    },
+    {
+      "s": "SpaceX tops Wall Street revenue forecast, posts $540 million decline on bitcoin holding value",
+      "t": "2026-08-04T20:26:21.000Z",
+      "ts": 1785875181,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/04/spacex-tops-wall-street-revenue-forecast-posts-usd540-million-decline-on-bitcoin-holding-value",
+      "s_cn": "SpaceX 营收超过华尔街预期，比特币持有价值下降 5.4 亿美元",
+      "_ts": 1785875203012
+    },
+    {
+      "s": "Lucid misses second-quarter expectations as EV maker conducts 'operational reset'",
+      "t": "2026-08-04T20:05:27.000Z",
+      "ts": 1785873927,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/04/lucid-group-lcid-earnings-q2-2026.html",
+      "s_cn": "Lucid 未达到第二季度预期，电动汽车制造商进行“运营重置”",
+      "_ts": 1785874025299
+    },
+    {
+      "s": "US, UK reaffirm support for stablecoins, tokenization in joint financial regulation talks",
+      "t": "2026-08-04T19:58:48.000Z",
+      "ts": 1785873528,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/us-uk-deepen-crypto-regulatory-cooperation-genius-act-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "美国、英国在联合金融监管谈判中重申对稳定币和代币化的支持",
+      "_ts": 1785873915538
+    },
+    {
+      "s": "Paramount Skydance raises full-year profit guidance, remains 'confident' about WBD merger",
+      "t": "2026-08-04T20:02:26.000Z",
+      "ts": 1785873746,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/04/paramount-skydance-psky-earnings-q2-2026.html",
+      "s_cn": "派拉蒙 Skydance 上调全年利润指引，对 WBD 合并仍“充满信心”",
+      "_ts": 1785873793591
+    },
+    {
+      "s": "XRP Ledger Goes Cross-Chain",
+      "t": "2026-08-04T19:03:35.000Z",
+      "ts": 1785870215,
+      "src": "U.Today",
+      "link": "https://u.today/xrp-ledger-goes-cross-chain",
+      "s_cn": "XRP 账本走向跨链",
+      "_ts": 1785870880244
+    },
+    {
+      "s": "Coldcard Bitcoin Exploit Explained: Entropy, How Keys Are Generated, and Why Bits Matter",
+      "t": "2026-08-04T19:11:36.000Z",
+      "ts": 1785870696,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374916/coldcard-bitcoin-exploit-explained-entropy-keys-bits",
+      "s_cn": "Coldcard 比特币漏洞解释：熵、密钥如何生成以及比特为何重要",
+      "_ts": 1785870783037
+    },
+    {
+      "s": "Solana Proposal Would Increase Daily SOL Burns More Than 10-Fold",
+      "t": "2026-08-04T18:46:11.000Z",
+      "ts": 1785869171,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/374915/solana-proposal-increase-daily-sol-burns-10-fold",
+      "s_cn": "Solana 提案将使每日 SOL 销毁量增加 10 倍以上",
+      "_ts": 1785869217531
+    },
+    {
+      "s": "BNY to offer institutional crypto staking through Galaxy partnership",
+      "t": "2026-08-04T17:10:04.000Z",
+      "ts": 1785863404,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bny-galaxy-institutional-crypto-staking-custody?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "纽约银行将通过 Galaxy 合作伙伴关系提供机构加密货币质押",
+      "_ts": 1785867596562
+    },
     {
       "s": "Chipotle stock falls on potential link to salmonella outbreak in Minnesota",
       "t": "2026-08-04T17:54:00.000Z",

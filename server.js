@@ -136,7 +136,7 @@ app.get('/api/smart-alerts', (req, res) => { res.json({ alerts: [] }); });
 app.get('/api/market/coin-analysis', async (req, res) => {
   try {
     const axios = require('axios');
-    const symbols = ['BTCUSDT','ETHUSDT','SOLUSDT','XRPUSDT','BNBUSDT','DOTUSDT','MUUSDT','SKHYNIXUSDT','SNDKUSDT','WDCUSDT'];
+    const symbols = ['BTCUSDT','ETHUSDT','SOLUSDT','XRPUSDT','BNBUSDT','DOGEUSDT','ADAUSDT','AVAXUSDT','LINKUSDT','DOTUSDT','TRXUSDT','LTCUSDT','BCHUSDT','XLMUSDT','HBARUSDT','SHIBUSDT','NEARUSDT','ATOMUSDT','UNIUSDT','FILUSDT','APTUSDT','SUIUSDT','INJUSDT','OPUSDT','ARBUSDT','TIAUSDT','ETCUSDT'];
     const axios2 = require('axios');
     const results = [];
     for (const sym of symbols) {
