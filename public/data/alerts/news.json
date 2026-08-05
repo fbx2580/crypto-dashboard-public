@@ -1,6 +1,30 @@
 {
-  "updated": 1785889028056,
+  "updated": 1785901093664,
   "alerts": [
+    {
+      "ts": 1785901047,
+      "detected": 1785901093664,
+      "src": "BBC Business",
+      "title": "特朗普表示，如果油价下跌，霍尔木兹海峡不尽快开放，伊朗将受到“严重打击”",
+      "orig": "Trump says Iran will be 'hit very hard' if Hormuz Strait not open soon as oil prices fall",
+      "link": "https://www.bbc.co.uk/news/articles/cpw9v0gnzxwo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1785897007,
+      "detected": 1785897491854,
+      "src": "CoinTelegraph",
+      "title": "以太坊研究人员希望控制质押，批评者称这可能适得其反",
+      "orig": "Ethereum researchers want to rein in staking, critics say it could backfire",
+      "link": "https://cointelegraph.com/news/ethereum-researchers-want-to-rein-in-staking-critics-say-it-could-backfire?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1785897001,
+      "detected": 1785897132057,
+      "src": "CNBC",
+      "title": "尽管与美国地缘政治紧张，通用汽车与中国汽车制造商仍将合资企业延长20年",
+      "orig": "GM, Chinese automaker extend joint venture for 20 years despite geopolitical tensions with U.S.",
+      "link": "https://www.cnbc.com/2026/08/04/gm-chinese-automaker-extend-tie-up-amid-geopolitical-tensions-with-us.html"
+    },
     {
       "ts": 1785888060,
       "detected": 1785889028054,
@@ -376,30 +400,6 @@
       "title": "由于加密货币价格暴跌，联合圣保罗银行第二季度将 IBIT 持股削减 94％，将以太 ETF 持有量增加两倍",
       "orig": "Intesa Sanpaolo slashed IBIT stake by 94% in 2Q, tripled ether ETF holding as crypto prices slumped",
       "link": "https://www.coindesk.com/business/2026/08/04/intesa-sanpaolo-slashed-ibit-stake-by-94-in-2q-tripled-ether-etf-holding-as-crypto-prices-slumped"
-    },
-    {
-      "ts": 1785852012,
-      "detected": 1785853011157,
-      "src": "U.Today",
-      "title": "一天铸造 1.33 亿美元 RLUSD：Ripple 在激增的情况下增加了稳定币供应",
-      "orig": "$133 Million RLUSD Minted in a Day: Ripple Ramps Up Stablecoin Supply Amid Surge",
-      "link": "https://u.today/133-million-rlusd-minted-in-a-day-ripple-ramps-up-stablecoin-supply-amid-surge"
-    },
-    {
-      "ts": 1785852000,
-      "detected": 1785852109324,
-      "src": "CoinDesk",
-      "title": "随着股市竞赛的升温，Dinari 为美国投资者带来了代币化的美国股票",
-      "orig": "Dinari brings tokenized U.S. stocks to American investors as equity race heats up",
-      "link": "https://www.coindesk.com/business/2026/08/04/dinari-brings-tokenized-u-s-stocks-to-american-investors-as-equity-race-heats-up"
-    },
-    {
-      "ts": 1785851538,
-      "detected": 1785851568405,
-      "src": "CNBC",
-      "title": "麦当劳宣布其最大市场的新负责人，称其美国业务出现下滑",
-      "orig": "McDonald's says its U.S. business is falling short as it announces new head of its largest market",
-      "link": "https://www.cnbc.com/2026/08/04/mcdonalds-mcd-q2-2026-earnings.html"
     }
   ]
 }

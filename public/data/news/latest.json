@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "s": "Trump says Iran will be 'hit very hard' if Hormuz Strait not open soon as oil prices fall",
+      "t": "2026-08-05T03:37:27.000Z",
+      "ts": 1785901047,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cpw9v0gnzxwo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "特朗普表示，如果油价下跌，霍尔木兹海峡不尽快开放，伊朗将受到“严重打击”",
+      "_ts": 1785901072761
+    },
+    {
+      "s": "Ethereum researchers want to rein in staking, critics say it could backfire",
+      "t": "2026-08-05T02:30:07.000Z",
+      "ts": 1785897007,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/ethereum-researchers-want-to-rein-in-staking-critics-say-it-could-backfire?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "以太坊研究人员希望控制质押，批评者称这可能适得其反",
+      "_ts": 1785897344918
+    },
+    {
+      "s": "GM, Chinese automaker extend joint venture for 20 years despite geopolitical tensions with U.S.",
+      "t": "2026-08-05T02:30:01.000Z",
+      "ts": 1785897001,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/04/gm-chinese-automaker-extend-tie-up-amid-geopolitical-tensions-with-us.html",
+      "s_cn": "尽管与美国地缘政治紧张，通用汽车与中国汽车制造商仍将合资企业延长20年",
+      "_ts": 1785897029382
+    },
+    {
       "s": "Dogecoin (DOGE), XRP, Hyperliquid (HYPE) and Bitcoin (BTC) Price Analysis For August 5: Market's Attempt to Regain Relevancy",
       "t": "2026-08-05T00:01:00.000Z",
       "ts": 1785888060,
@@ -2422,6 +2449,6 @@
       "_ts": 1785715504325
     }
   ],
-  "updated": 1785895196411,
+  "updated": 1785902396145,
   "sources": 6
 }

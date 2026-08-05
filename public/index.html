@@ -134,7 +134,7 @@
       </div>
       <div class="rank-box" id="anomaliesBar">
         <div class="rank-title">💾 存储</div>
-        <div class="rank-body anomalies-scroll" id="anomaliesScroll">
+        <div class="rank-body anomalies-scroll" id="anomaliesScroll" style="max-height:200px;overflow-y:auto;">
           <span class="anomalies-loading">扫描中...</span>
         </div>
       </div>
@@ -254,5 +254,19 @@
 
   <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
   <script src="app.js?v=1785894154"></script>
+<script>setTimeout(function(){var e=document.getElementById('anomaliesScroll');var d=document.getElementById('storageDebug');if(d)d.textContent=(e?(e.querySelectorAll('.ticker-item').length||'空')+'个item,innerHTML长'+e.innerHTML.length:'容器丢了');},8000);</script>
+<div id="storageDebug" style="position:fixed;bottom:0;left:0;background:red;color:#fff;font-size:10px;padding:2px 4px;">storage debug</div>
+
+<script>
+// 强制渲染存储板块——如果refreshAnomalies没生效就手动触发
+setTimeout(() => {
+  const scroll = document.getElementById("anomaliesScroll");
+  if (scroll && !scroll.querySelector(".ticker-item")) {
+    console.log("手动触发存储渲染");
+    scroll.innerHTML = "<span class="ticker-loading">手动加载中...</span>";
+  }
+}, 6000);
+</script>
+
 </body>
 </html>
