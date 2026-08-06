@@ -92,7 +92,7 @@ router.get('/overview', async (req, res) => {
 
 // 恐惧贪婪 + 山寨季 + 多空比 + 爆仓 + VIX + DXY + CVD
 router.get('/indicators', async (req, res) => {
-  const result = { fear: null, altSeason: null, fngHistory: null, longShort: null, liquidation: null, vix: null, dxy: null, cvd: null };
+  const result = { fear: null, altSeason: null, fngHistory: null, longShort: null, liquidation: null, vix: null, dxy: null, cvd: null, sentiment: null };
 
   // Warp 代理（币安 FAPI 在国内被墙）
   let warpAgent = null;
@@ -277,6 +277,42 @@ router.get('/indicators', async (req, res) => {
         period: recent.length + 'h',
         label: cvd > 500 ? '🟢 主动买' : cvd < -500 ? '🔴 主动卖' : '⚪ 均衡',
         candles: recent.length
+      };
+    } catch(e) {}
+  })());
+
+  // 8. 新闻情绪（基于自有新闻数据）
+  promises.push((async () => {
+    try {
+      const db = require('../db');
+      const ts = Math.floor(Date.now()/1000) - 86400;
+      const rows = db.prepare('SELECT title FROM news_archive WHERE ts > ? ORDER BY ts DESC LIMIT 200').all(ts);
+      const bullish = ['bull','bullish','surge','pump','moon','rally','breakout','buy','long','bottom','accumulate','green','rise','gain','新高','拉升','反弹','抄底','起飞','暴涨','利好','突破','创新高','大涨','看多','做多','净流入','增持','买入','涨超','飙升','猛涨'];
+      const bearish = ['bear','bearish','dump','crash','sell','short','resistance','top','correction','red','drop','fear','暴跌','崩盘','大跌','做空','砸盘','回调','看空','利空','跌超','跌穿','跳水','闪崩','衰退','危机','违规','被黑','被盗','跑路'];
+      const topics = {};
+      let bullCount = 0, bearCount = 0, neutralCount = 0;
+      for (const r of rows) {
+        const title = (r.title || '').toLowerCase();
+        let isBull = false, isBear = false;
+        for (const w of bullish) { if (title.includes(w)) { isBull = true; break; } }
+        for (const w of bearish) { if (title.includes(w)) { isBear = true; break; } }
+        if (isBull && isBear) neutralCount++;
+        else if (isBull) bullCount++;
+        else if (isBear) bearCount++;
+        else neutralCount++;
+        const words = (r.title || '').match(/[\u4e00-\u9fff]{2,4}|[A-Z]{3,6}/g) || [];
+        for (const w of words) {
+          const skip = ['USDT','USDC','BTC','ETH','SOL','XRP','THE','AND','FOR','THAT','THIS','WITH','FROM','WILL','HAVE','BEEN','SAID','MORE','INTO','OVER','AFTER','WHEN','ALSO','JUST','SOME','WHAT','LIKE','THEY','YOUR','THEIR','WOULD','COULD','WHICH','THERE','OTHER'];
+          if (!skip.includes(w)) topics[w] = (topics[w] || 0) + 1;
+        }
+      }
+      const total = bullCount + bearCount + neutralCount;
+      const score = total > 0 ? ((bullCount * 10 + neutralCount * 5) / total) : 0;
+      result.sentiment = {
+        score: Math.round(score * 100) / 100,
+        label: score >= 6.5 ? '🟢 偏多' : score >= 4.5 ? '⚪ 中性' : '🔴 偏空',
+        bullCount, bearCount, neutralCount, total,
+        topTopics: Object.entries(topics).sort((a,b) => b[1]-a[1]).slice(0,8).map(([k]) => k)
       };
     } catch(e) {}
   })());

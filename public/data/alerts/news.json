@@ -1,6 +1,30 @@
 {
-  "updated": 1786024638030,
+  "updated": 1786027519670,
   "alerts": [
+    {
+      "ts": 1786026600,
+      "detected": 1786027519669,
+      "src": "U.Today",
+      "title": "新的 XRP 账本功能面临社区压力测试：下一个 XRPL 更新准备好放弃了吗？",
+      "orig": "New XRP Ledger Features Face Community Stress Test: Is Next XRPL Update Ready to Drop?",
+      "link": "https://u.today/new-xrp-ledger-features-face-community-stress-test-is-next-xrpl-update-ready-to-drop"
+    },
+    {
+      "ts": 1786027453,
+      "detected": 1786027519669,
+      "src": "CNBC",
+      "title": "Versant 上调 2026 年平台和广告势头展望后股价飙升 10%",
+      "orig": "Versant shares surge 10% after company raises 2026 outlook on platforms, advertising momentum",
+      "link": "https://www.cnbc.com/2026/08/06/versant-vsnt-earnings-q2-2026.html"
+    },
+    {
+      "ts": 1786026067,
+      "detected": 1786026258883,
+      "src": "BBC Business",
+      "title": "易捷航空同意美国公司以 57 亿英镑收购",
+      "orig": "EasyJet agrees to £5.7bn takeover by US firm",
+      "link": "https://www.bbc.co.uk/news/articles/cjejzjpy98wo?at_medium=RSS&at_campaign=rss"
+    },
     {
       "ts": 1786024464,
       "detected": 1786024638030,
@@ -376,30 +400,6 @@
       "title": "成千上万的年轻人错过了他们不知道的金钱",
       "orig": "Thousands of young people missing out on money they don't know about",
       "link": "https://www.bbc.co.uk/news/articles/c1d1z376k4ko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1786007943,
-      "detected": 1786008067924,
-      "src": "CoinDesk",
-      "title": "NFT 初创公司创始人被指控滥用 1000 万美元融资资金",
-      "orig": "NFT startup founder charged with misusing funds from $10 million fundraising",
-      "link": "https://www.coindesk.com/policy/2026/08/06/nft-startup-founder-charged-with-misusing-funds-from-usd10-million-fundraising"
-    },
-    {
-      "ts": 1786005883,
-      "detected": 1786006627141,
-      "src": "CoinTelegraph",
-      "title": "日元稳定币发行人 JPYC 的 B 轮融资达到 3800 万美元",
-      "orig": "Yen stablecoin issuer JPYC’s Series B reaches $38M",
-      "link": "https://cointelegraph.com/news/jpyc-series-b-funding-az-com?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786004700,
-      "detected": 1786005548496,
-      "src": "U.Today",
-      "title": "Zcash 宣布 8 月 25 日进行 1,000,000 名 ZEC 持币者投票：NU7 即将更新",
-      "orig": "Zcash Announces 1,000,000 ZEC Coinholder Vote on August 25: Upcoming NU7 Update",
-      "link": "https://u.today/zcash-announces-1000000-zec-coinholder-vote-on-august-25-upcoming-nu7-update"
     }
   ]
 }

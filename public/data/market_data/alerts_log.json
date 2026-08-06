@@ -1,6 +1,58 @@
 {
   "alerts": [
     {
+      "time": "2026-08-06T14:30:01.891Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟343849s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 921
+    },
+    {
+      "time": "2026-08-06T14:30:01.891Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25696517",
+      "errors": [
+        "延迟25013s但诊断通过: Alchemy正常，区块25696517"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 72
+    },
+    {
+      "time": "2026-08-06T14:00:01.573Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "alerts",
+      "message": "异动数据: Binance API正常",
+      "errors": [
+        "延迟342049s但诊断通过: Binance API正常"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 915
+    },
+    {
+      "time": "2026-08-06T14:00:01.573Z",
+      "type": "confirmed_failure",
+      "level": "warn",
+      "source": "eth",
+      "message": "ETH大户: Alchemy正常，区块25696367",
+      "errors": [
+        "延迟23213s但诊断通过: Alchemy正常，区块25696367"
+      ],
+      "fix": "",
+      "resolved": false,
+      "consecutiveFailures": 66
+    },
+    {
       "time": "2026-08-06T13:30:01.753Z",
       "type": "confirmed_failure",
       "level": "warn",
@@ -62,8 +114,10 @@
         "延迟336649s但诊断通过: Binance API正常"
       ],
       "fix": "",
-      "resolved": false,
-      "consecutiveFailures": 897
+      "resolved": true,
+      "consecutiveFailures": 897,
+      "resolvedAt": "2026-08-06T14:30:01.891Z",
+      "expired": true
     },
     {
       "time": "2026-08-06T12:30:02.047Z",
@@ -75,8 +129,10 @@
         "延迟17813s但诊断通过: Alchemy正常，区块25695917"
       ],
       "fix": "",
-      "resolved": false,
-      "consecutiveFailures": 48
+      "resolved": true,
+      "consecutiveFailures": 48,
+      "resolvedAt": "2026-08-06T14:30:01.891Z",
+      "expired": true
     },
     {
       "time": "2026-08-06T11:45:02.196Z",
@@ -2914,68 +2970,8 @@
       "consecutiveFailures": 189,
       "resolvedAt": "2026-08-05T01:00:02.078Z",
       "expired": true
-    },
-    {
-      "time": "2026-08-04T22:45:01.718Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟200749s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 444,
-      "resolvedAt": "2026-08-05T00:50:01.781Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-04T22:35:01.771Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "market_snapshot",
-      "message": "市场快照: Binance正常",
-      "errors": [
-        "延迟509694s但诊断通过: Binance正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 1185,
-      "resolvedAt": "2026-08-05T00:35:02.326Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-04T22:25:01.831Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "eth",
-      "message": "ETH大户: Alchemy正常，区块25684526",
-      "errors": [
-        "延迟118983s但诊断通过: Alchemy正常，区块25684526"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 183,
-      "resolvedAt": "2026-08-05T00:25:01.975Z",
-      "expired": true
-    },
-    {
-      "time": "2026-08-04T22:00:02.115Z",
-      "type": "confirmed_failure",
-      "level": "warn",
-      "source": "alerts",
-      "message": "异动数据: Binance API正常",
-      "errors": [
-        "延迟198049s但诊断通过: Binance API正常"
-      ],
-      "fix": "",
-      "resolved": true,
-      "consecutiveFailures": 435,
-      "resolvedAt": "2026-08-05T00:00:02.000Z",
-      "expired": true
     }
   ],
-  "updated": "2026-08-06T13:55:01.929Z",
+  "updated": "2026-08-06T14:55:01.191Z",
   "total": 200
 }

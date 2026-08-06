@@ -1,9 +1,54 @@
 {
   "date": "2026-08-06",
   "type": "news",
-  "updated": 1786024631734,
-  "total": 143,
+  "updated": 1786027467537,
+  "total": 148,
   "records": [
+    {
+      "s": "Versant shares surge 10% after company raises 2026 outlook on platforms, advertising momentum",
+      "t": "2026-08-06T14:44:13.000Z",
+      "ts": 1786027453,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/versant-vsnt-earnings-q2-2026.html",
+      "s_cn": "Versant 上调 2026 年平台和广告势头展望后股价飙升 10%",
+      "_ts": 1786027467524
+    },
+    {
+      "s": "New XRP Ledger Features Face Community Stress Test: Is Next XRPL Update Ready to Drop?",
+      "t": "2026-08-06T14:30:00.000Z",
+      "ts": 1786026600,
+      "src": "U.Today",
+      "link": "https://u.today/new-xrp-ledger-features-face-community-stress-test-is-next-xrpl-update-ready-to-drop",
+      "s_cn": "新的 XRP 账本功能面临社区压力测试：下一个 XRPL 更新准备好放弃了吗？",
+      "_ts": 1786027367700
+    },
+    {
+      "s": "EasyJet agrees to £5.7bn takeover by US firm",
+      "t": "2026-08-06T14:21:07.000Z",
+      "ts": 1786026067,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cjejzjpy98wo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "易捷航空同意美国公司以 57 亿英镑收购",
+      "_ts": 1786026146575
+    },
+    {
+      "s": "S&P 500 added all of crypto's $2 trillion market cap in a month while bitcoin barely moved. Here's why",
+      "t": "2026-08-06T06:10:43.000Z",
+      "ts": 1785996643,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/06/s-and-p-500-has-added-crypto-s-usd2-trillion-market-cap-this-month-bitcoin-is-not-impressed-here-s-why",
+      "s_cn": "标准普尔 500 指数在一个月内增加了加密货币 2 万亿美元的全部市值，而比特币几乎没有变化。",
+      "_ts": 1786025437170
+    },
+    {
+      "s": "Live updates: BTC holding just above $64,000 ahead of Friday's key jobs data",
+      "t": "2026-08-06T07:26:23.000Z",
+      "ts": 1786001183,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive",
+      "s_cn": "实时更新：在周五关键就业数据公布之前，BTC 维持在 64,000 美元上方",
+      "_ts": 1786025113447
+    },
     {
       "s": "Step App winds down after four years as FITFI token sinks",
       "t": "2026-08-06T13:52:36.000Z",
