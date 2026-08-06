@@ -40,15 +40,21 @@ router.get('/overview', async (req, res) => {
       }
     } catch(e) {}
 
-    let nasdaq = null, sp500 = null, oil = null, gold = null, dxy = null, cny = null, hsi = null, tnx = null;
+    let nasdaq = null, sp500 = null, oil = null, gold = null, dxy = null, cny = null, hsi = null, tnx = null, sox = null;
     try {
-      const [nasRes, spRes, dxyRes, hsiRes, tnxRes, cnyRes, oilRes, goldRes] = await Promise.all([
-        axios.get('https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
-        axios.get('https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
-        axios.get('https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
-        axios.get('https://query1.finance.yahoo.com/v8/finance/chart/%5EHSI', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
-        axios.get('https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
-        axios.get('https://query1.finance.yahoo.com/v8/finance/chart/CNY%3DX?range=1d&interval=1d', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
+      const yfetch = url => axios.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 });
+      const delay = ms => new Promise(r => setTimeout(r, ms));
+      
+      // 顺序拉避免 Yahoo 418 限流
+      const nasRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC'); await delay(500);
+      const spRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC'); await delay(500);
+      const dxyRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB'); await delay(500);
+      const hsiRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5EHSI'); await delay(500);
+      const tnxRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX'); await delay(500);
+      const soxRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5ESOX'); await delay(500);
+      const cnyRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/CNY%3DX?range=1d&interval=1d'); await delay(500);
+      // 币安这两个不互斥，并行拉
+      const [oilRes, goldRes] = await Promise.all([
         axios.get('https://fapi.binance.com/fapi/v1/ticker/24hr?symbol=BZUSDT', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
         axios.get('https://fapi.binance.com/fapi/v1/ticker/24hr?symbol=XAUUSDT', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
       ]);
@@ -58,6 +64,7 @@ router.get('/overview', async (req, res) => {
       const hsiMeta = hsiRes.data.chart.result[0].meta;
       const tnxMeta = tnxRes.data.chart.result[0].meta;
       const cnyMeta = cnyRes.data.chart.result[0].meta;
+      const soxMeta = soxRes.data.chart.result[0].meta;
       const pc = m => m.previousClose || m.chartPreviousClose;
       nasdaq = { price: nasMeta.regularMarketPrice, changePercent: (nasMeta.regularMarketPrice / pc(nasMeta) - 1) * 100 };
       sp500 = { price: spMeta.regularMarketPrice, changePercent: (spMeta.regularMarketPrice / pc(spMeta) - 1) * 100 };
@@ -65,6 +72,7 @@ router.get('/overview', async (req, res) => {
       hsi = { price: hsiMeta.regularMarketPrice, changePercent: (hsiMeta.regularMarketPrice / pc(hsiMeta) - 1) * 100 };
       tnx = { price: tnxMeta.regularMarketPrice, changePercent: (tnxMeta.regularMarketPrice / pc(tnxMeta) - 1) * 100 };
       cny = { price: cnyMeta.regularMarketPrice, changePercent: (cnyMeta.regularMarketPrice / pc(cnyMeta) - 1) * 100 };
+      sox = { price: soxMeta.regularMarketPrice, changePercent: (soxMeta.regularMarketPrice / pc(soxMeta) - 1) * 100 };
       // 石油 + 黄金 → 币安永续合约 BZUSDT / XAUUSDT
       const oilData = oilRes.data;
       oil = { price: parseFloat(oilData.lastPrice), changePercent: parseFloat(oilData.priceChangePercent) };
@@ -78,7 +86,7 @@ router.get('/overview', async (req, res) => {
       if (btc) btcPrice = btc.price;
     }
 
-    const result = { crypto: { changePercent: totalCryptoChg, btcPrice }, aShares, nasdaq, sp500, dxy, cny, hsi, tnx, oil, gold };
+    const result = { crypto: { changePercent: totalCryptoChg, btcPrice }, aShares, nasdaq, sp500, dxy, cny, hsi, tnx, sox, oil, gold };
     marketCache = { data: result, time: Date.now() };
     res.json(result);
   } catch (err) {

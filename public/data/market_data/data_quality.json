@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-06T14:55:01.191Z",
+  "timestamp": "2026-08-06T15:55:01.486Z",
   "overall_score": 88,
   "status": "healthy",
   "checks": {
@@ -14,26 +14,26 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 5,
+      "delay": 10,
       "diagnosis": null
     },
     "whale": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 1,
+      "delay": 2,
       "diagnosis": null
     },
     "eth": {
       "status": "warn",
       "score": 70,
       "errors": [
-        "延迟26512s但诊断通过: Alchemy正常，区块25696642"
+        "延迟30113s但诊断通过: Alchemy正常，区块25696942"
       ],
-      "delay": 26512,
+      "delay": 30113,
       "diagnosis": {
         "ok": true,
-        "detail": "Alchemy正常，区块25696642",
+        "detail": "Alchemy正常，区块25696942",
         "fix": ""
       }
     },
@@ -44,7 +44,7 @@
         "Binance API不可达",
         "建议修复: 检查Binance网络"
       ],
-      "delay": 345348,
+      "delay": 348948,
       "diagnosis": {
         "ok": false,
         "detail": "Binance API不可达",
@@ -55,7 +55,7 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 27658,
+      "delay": 31258,
       "diagnosis": null
     },
     "data_quality": {
@@ -75,7 +75,7 @@
   },
   "dataErrors": [],
   "errors": [
-    "延迟26512s但诊断通过: Alchemy正常，区块25696642",
+    "延迟30113s但诊断通过: Alchemy正常，区块25696942",
     "Binance API不可达",
     "建议修复: 检查Binance网络"
   ]

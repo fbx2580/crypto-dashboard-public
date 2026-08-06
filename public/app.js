@@ -254,6 +254,7 @@ async function refreshMarket() {
     if (data.cny) setItem('moCny', data.cny.price, data.cny.changePercent);
     if (data.hsi) setItem('moHsi', `$${data.hsi.price.toLocaleString('en',{minimumFractionDigits:0})}`, data.hsi.changePercent);
     if (data.tnx) setItem('moTnx', data.tnx.price.toFixed(2) + '%', data.tnx.changePercent);
+    if (data.sox) setItem('moSox', data.sox.price >= 1000 ? (data.sox.price/1000).toFixed(2) + 'K' : data.sox.price.toFixed(0), data.sox.changePercent);
   } catch(e) {}
 }
 
@@ -293,6 +294,7 @@ async function refreshTickers() {
 
 // 美股存储类（币安 TradFi 永续合约代码）
 const STORAGE_STOCKS = ['NVDAUSDT','AMDUSDT','INTCUSDT','MUUSDT','WDCUSDT','SKHYNIXUSDT','SKHYUSDT','SNDKUSDT','DRAMUSDT'];
+const OPTICAL_STOCKS = ['COHRUSDT','LITEUSDT','CIENUSDT','AAOIUSDT','GLWUSDT','FLEXUSDT'];
 
 // ─── 秒级 BTC 价格刷新（无缓存，带跳动指示）───
 async function tickBtcPrice() {
@@ -435,6 +437,33 @@ async function refreshAnomalies() {
       if (mcEl) mcEl.textContent = mc; else { const el = item.querySelector('.ticker-price'); if (el) { const span = document.createElement('span'); span.className = 'ticker-mktcap'; span.style.cssText = 'color:var(--cyan);font-size:9px'; span.textContent = mc; el.before(span); } }
       item.querySelector('.ticker-price').textContent = '$' + fmt.price(t.price);
     }
+  } catch(e) {}
+}
+
+// ─── 光模块股票排行 ───
+async function refreshOptical() {
+  try {
+    const resp = await fetch('/api/binance/signals');
+    if (!resp.ok) return;
+    const data = await resp.json();
+    const all = data.altcoins || [];
+    const fmtMktCap = v => v >= 1e12 ? '$' + (v/1e12).toFixed(1) + 'T' : v >= 1e9 ? '$' + (v/1e9).toFixed(1) + 'B' : v >= 1e6 ? '$' + (v/1e6).toFixed(0) + 'M' : '';
+    const stocks = (all || []).filter(t => OPTICAL_STOCKS.includes(t.symbol))
+      .sort((a, b) => b.change24h - a.change24h);
+    const scroll = document.getElementById('opticalScroll');
+    if (!stocks?.length) {
+      if (!scroll.querySelector('.ticker-item')) scroll.innerHTML = '<span class="ticker-loading">等待数据...</span>';
+      return;
+    }
+    scroll.innerHTML = stocks.map(t => {
+      const chg = parseFloat(t.change24h) || 0;
+      const cls = chg >= 0 ? 'up' : 'down';
+      const sign = chg >= 0 ? '+' : '';
+      return '<div class="ticker-item" data-sym="' + t.symbol + '">' +
+        '<span class="ticker-symbol">' + t.symbol.replace('USDT','') + '</span>' +
+        '<span class="ticker-change ' + cls + '">' + sign + chg.toFixed(2) + '%</span>' +
+        '<span class="ticker-price" style="color:var(--text-dim);font-size:10px">$' + fmt.price(t.price) + '</span></div>';
+    }).join('');
   } catch(e) {}
 }
 
@@ -735,6 +764,7 @@ async function refreshAll() {
       refreshMarket().catch(e => console.error('market', e)),
       refreshTickers().catch(e => console.error('tickers', e)),
       refreshAnomalies().catch(e => console.error('anomalies', e)),
+      refreshOptical().catch(e => console.error('optical', e)),
       refreshIndicators().catch(e => console.error('indicators', e)),
       refreshLlama().catch(e => console.error('llama', e)),
       refreshAltcoinSignals().catch(e => console.error('altcoin', e)),
@@ -1113,7 +1143,7 @@ function init() {
   setInterval(() => { refreshMarket(); refreshTickers(); }, 5000);
 
   // Tier 2: 存储股 + 巨鲸强信号 —— 3秒
-  setInterval(() => { refreshAnomalies(); refreshAltcoinSignals(); }, 3000);
+  setInterval(() => { refreshAnomalies(); refreshOptical(); refreshAltcoinSignals(); }, 3000);
 
   // Tier 3: 低频（恐惧指数 + 山寨季指数）—— 3分钟
   setInterval(() => { refreshIndicators(); refreshLlama(); }, 180000);

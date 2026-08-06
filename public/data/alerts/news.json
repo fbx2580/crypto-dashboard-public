@@ -1,6 +1,38 @@
 {
-  "updated": 1786027519670,
+  "updated": 1786031301871,
   "alerts": [
+    {
+      "ts": 1786030385,
+      "detected": 1786031301870,
+      "src": "U.Today",
+      "title": "该 XRP ETF 下跌 95%",
+      "orig": "This XRP ETF Is Down 95%",
+      "link": "https://u.today/this-xrp-etf-is-down-95"
+    },
+    {
+      "ts": 1786028655,
+      "detected": 1786029500403,
+      "src": "U.Today",
+      "title": "Coldcard 钱包漏洞动摇自我托管信托，比特币 ETF 价值 6.2 亿美元",
+      "orig": "Bitcoin ETFs Bag $620 Million as Coldcard Wallet Exploit Shakes Self-Custody Trust",
+      "link": "https://u.today/bitcoin-etfs-bag-620-million-as-coldcard-wallet-exploit-shakes-self-custody-trust"
+    },
+    {
+      "ts": 1786028847,
+      "detected": 1786029318623,
+      "src": "CNBC",
+      "title": "福克斯广告和流媒体服务 Tubi 受益于世界杯",
+      "orig": "Fox advertising, streaming service Tubi get boost from World Cup",
+      "link": "https://www.cnbc.com/2026/08/06/fox-advertising-streaming-service-tubi-get-boost-from-world-cup.html"
+    },
+    {
+      "ts": 1786028820,
+      "detected": 1786028958299,
+      "src": "CoinDesk",
+      "title": "顾问的加密货币：欧洲的加密货币规则，美国预览",
+      "orig": "Crypto for Advisors: Europe's crypto rules, U.S. Preview",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/08/06/crypto-for-advisors-europe-s-crypto-rules-u-s-preview"
+    },
     {
       "ts": 1786026600,
       "detected": 1786027519669,
@@ -368,38 +400,6 @@
       "title": "俄罗斯总统签署加密法，核心规则将于 2026 年生效",
       "orig": "Russian president signs crypto law, core rules take effect in 2026",
       "link": "https://cointelegraph.com/news/putin-signs-crypto-law-core-rules-take-effect-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786009414,
-      "detected": 1786009508406,
-      "src": "Decrypt",
-      "title": "比特币人工智能安全审计记录了 390 个项目的 4,962 项调查结果",
-      "orig": "Bitcoin AI Security Audit Files 4,962 Findings Across 390 Projects",
-      "link": "https://decrypt.co/375029/bitcoin-ai-security-audit-files-4962-findings-across-390-projects"
-    },
-    {
-      "ts": 1786008500,
-      "detected": 1786009328417,
-      "src": "CoinTelegraph",
-      "title": "随着代币化资产获得吸引力，RWA 逆袭 DeFi 放缓：CoinShares",
-      "orig": "RWAs buck DeFi slowdown as tokenized assets gain traction: CoinShares",
-      "link": "https://cointelegraph.com/news/rwa-buck-defi-slowdown-tokenization-coinshares?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786008390,
-      "detected": 1786009148175,
-      "src": "U.Today",
-      "title": "随着市场完全扭转 Jim Cramer 的“量子恐慌”，比特币重回 65,000 美元",
-      "orig": "Bitcoin Reclaims $65,000 as Market Completely Reverses Jim Cramer's 'Quantum Scare'",
-      "link": "https://u.today/bitcoin-reclaims-65000-as-market-completely-reverses-jim-cramers-quantum-scare"
-    },
-    {
-      "ts": 1786007403,
-      "detected": 1786008248046,
-      "src": "BBC Business",
-      "title": "成千上万的年轻人错过了他们不知道的金钱",
-      "orig": "Thousands of young people missing out on money they don't know about",
-      "link": "https://www.bbc.co.uk/news/articles/c1d1z376k4ko?at_medium=RSS&at_campaign=rss"
     }
   ]
 }

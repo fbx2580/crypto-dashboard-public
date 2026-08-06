@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "s": "This XRP ETF Is Down 95%",
+      "t": "2026-08-06T15:33:05.000Z",
+      "ts": 1786030385,
+      "src": "U.Today",
+      "link": "https://u.today/this-xrp-etf-is-down-95",
+      "s_cn": "该 XRP ETF 下跌 95%",
+      "_ts": 1786031269539
+    },
+    {
+      "s": "Bitcoin ETFs Bag $620 Million as Coldcard Wallet Exploit Shakes Self-Custody Trust",
+      "t": "2026-08-06T15:04:15.000Z",
+      "ts": 1786028655,
+      "src": "U.Today",
+      "link": "https://u.today/bitcoin-etfs-bag-620-million-as-coldcard-wallet-exploit-shakes-self-custody-trust",
+      "s_cn": "Coldcard 钱包漏洞动摇自我托管信托，比特币 ETF 价值 6.2 亿美元",
+      "_ts": 1786029472740
+    },
+    {
+      "s": "Fox advertising, streaming service Tubi get boost from World Cup",
+      "t": "2026-08-06T15:07:27.000Z",
+      "ts": 1786028847,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/fox-advertising-streaming-service-tubi-get-boost-from-world-cup.html",
+      "s_cn": "福克斯广告和流媒体服务 Tubi 受益于世界杯",
+      "_ts": 1786029168151
+    },
+    {
+      "s": "Crypto for Advisors: Europe's crypto rules, U.S. Preview",
+      "t": "2026-08-06T15:07:00.000Z",
+      "ts": 1786028820,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/08/06/crypto-for-advisors-europe-s-crypto-rules-u-s-preview",
+      "s_cn": "顾问的加密货币：欧洲的加密货币规则，美国预览",
+      "_ts": 1786028843881
+    },
+    {
       "s": "Versant shares surge 10% after company raises 2026 outlook on platforms, advertising momentum",
       "t": "2026-08-06T14:44:13.000Z",
       "ts": 1786027453,
@@ -4339,6 +4375,6 @@
       "_ts": 1785715504325
     }
   ],
-  "updated": 1786028395517,
+  "updated": 1786032001209,
   "sources": 6
 }
