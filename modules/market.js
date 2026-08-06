@@ -45,14 +45,20 @@ router.get('/overview', async (req, res) => {
       const yfetch = url => axios.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 });
       const delay = ms => new Promise(r => setTimeout(r, ms));
       
-      // 顺序拉避免 Yahoo 418 限流
-      const nasRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC'); await delay(500);
-      const spRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC'); await delay(500);
-      const dxyRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB'); await delay(500);
-      const hsiRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5EHSI'); await delay(500);
-      const tnxRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX'); await delay(500);
-      const soxRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5ESOX'); await delay(500);
-      const cnyRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/CNY%3DX?range=1d&interval=1d'); await delay(500);
+      // 每批2个，间隔500ms 避免 Yahoo 418
+      const [nasRes, spRes] = await Promise.all([
+        yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC'),
+        yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC'),
+      ]); await delay(500);
+      const [dxyRes, hsiRes] = await Promise.all([
+        yfetch('https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB'),
+        yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5EHSI'),
+      ]); await delay(500);
+      const [tnxRes, soxRes] = await Promise.all([
+        yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX'),
+        yfetch('https://query1.finance.yahoo.com/v8/finance/chart/%5ESOX'),
+      ]); await delay(500);
+      const cnyRes = await yfetch('https://query1.finance.yahoo.com/v8/finance/chart/CNY%3DX?range=1d&interval=1d');
       // 币安这两个不互斥，并行拉
       const [oilRes, goldRes] = await Promise.all([
         axios.get('https://fapi.binance.com/fapi/v1/ticker/24hr?symbol=BZUSDT', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
@@ -78,7 +84,7 @@ router.get('/overview', async (req, res) => {
       oil = { price: parseFloat(oilData.lastPrice), changePercent: parseFloat(oilData.priceChangePercent) };
       const goldData = goldRes.data;
       gold = { price: parseFloat(goldData.lastPrice), changePercent: parseFloat(goldData.priceChangePercent) };
-    } catch(e) {}
+    } catch(e) { console.error('[overview] Yahoo fetch error:', e.message, e.response?.status); }
 
     let btcPrice = null;
     if (majors.length > 0) {

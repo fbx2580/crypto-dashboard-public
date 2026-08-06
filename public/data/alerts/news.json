@@ -1,6 +1,70 @@
 {
-  "updated": 1786031301871,
+  "updated": 1786034903481,
   "alerts": [
+    {
+      "ts": 1786034553,
+      "detected": 1786034903481,
+      "src": "CoinTelegraph",
+      "title": "比特币矿工的人工智能转向失去了华尔街的惊叹因素",
+      "orig": "Bitcoin miners’ AI pivot loses Wall Street’s wow factor",
+      "link": "https://cointelegraph.com/news/bitcoin-miners-ai-infrastructure-deals-wall-street-reaction?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786033815,
+      "detected": 1786034721539,
+      "src": "U.Today",
+      "title": "如何拯救你的狗狗币：DOGE 领先分析硬件钱包的相关风险",
+      "orig": "How to Save Your Dogecoin: DOGE Lead Breaks Down Relevant Risks of Hardware Wallets",
+      "link": "https://u.today/how-to-save-your-dogecoin-doge-lead-breaks-down-relevant-risks-of-hardware-wallets"
+    },
+    {
+      "ts": 1786033458,
+      "detected": 1786034003170,
+      "src": "CoinTelegraph",
+      "title": "美国 PMI 数据带来新的“滞胀”警告，比特币价格跌破 6.5 万美元",
+      "orig": "Bitcoin price coils under $65K as US PMI data brings new ‘stagflation’ warning",
+      "link": "https://cointelegraph.com/markets/bitcoin-price-compresses-as-us-pmi-data-brings-new-stagflation-warning?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786032397,
+      "detected": 1786034003170,
+      "src": "U.Today",
+      "title": "随着价格重新测试 1.04 美元，XRP ETF 进入红色区域",
+      "orig": "XRP ETFs Enter Red Zone as Price Retests $1.04",
+      "link": "https://u.today/xrp-etfs-enter-red-zone-as-price-retests-104"
+    },
+    {
+      "ts": 1786033616,
+      "detected": 1786033823105,
+      "src": "Decrypt",
+      "title": "MetaMask 推出用于自主加密货币交易的自我托管人工智能钱包",
+      "orig": "MetaMask Launches Self-Custodial AI Wallet for Autonomous Crypto Trading",
+      "link": "https://decrypt.co/375044/metamask-self-custodial-ai-wallet-autonomous-crypto-trading"
+    },
+    {
+      "ts": 1786033179,
+      "detected": 1786033282935,
+      "src": "Decrypt",
+      "title": "DuckDuckGo 的 Meta-Trolling“Normal F***ing 太阳镜”不到一周就卖光了",
+      "orig": "DuckDuckGo’s Meta-Trolling 'Normal F***ing Sunglasses' Sell Out in Under a Week",
+      "link": "https://decrypt.co/375037/duckduckgos-meta-trolling-normal-fing-sunglasses-sell-out-in-under-a-week"
+    },
+    {
+      "ts": 1786032604,
+      "detected": 1786032740593,
+      "src": "CoinDesk",
+      "title": "Tether 将代币化业务扩展到沙特阿拉伯，从房地产开始",
+      "orig": "Tether expands tokenization business into Saudi Arabia, starting with real estate",
+      "link": "https://www.coindesk.com/business/2026/08/06/tether-expands-tokenization-business-into-saudi-arabia-starting-with-real-estate"
+    },
+    {
+      "ts": 1786031974,
+      "detected": 1786032382043,
+      "src": "BBC Business",
+      "title": "先是 OpenAI，现在是 Meta——为什么 AI 黑客攻击不断发生？",
+      "orig": "First OpenAI, now Meta - why do AI hacks keep happening?",
+      "link": "https://www.bbc.co.uk/news/articles/cp30989ee1wo?at_medium=RSS&at_campaign=rss"
+    },
     {
       "ts": 1786030385,
       "detected": 1786031301870,
@@ -336,70 +400,6 @@
       "title": "Peloton 在“具有里程碑意义”的财政年度首次实现年度净利润",
       "orig": "Peloton delivers first annual net profit ever in 'landmark' financial year",
       "link": "https://www.cnbc.com/2026/08/06/peloton-pton-q4-2026-earnings.html"
-    },
-    {
-      "ts": 1786013589,
-      "detected": 1786013650442,
-      "src": "CoinDesk",
-      "title": "JPYC 获 3800 万美元 B 轮融资，由日本大型物流公司 AZ-COM Maruwa 领投",
-      "orig": "JPYC raises $38 million Series B led by major Japanese logistics firm AZ-COM Maruwa",
-      "link": "https://www.coindesk.com/business/2026/08/06/jpyc-raises-usd38-million-series-b-led-by-major-japanese-logistics-firm-az-com-maruwa"
-    },
-    {
-      "ts": 1786012909,
-      "detected": 1786013290806,
-      "src": "CoinTelegraph",
-      "title": "态势感知在几近崩溃后以 4 亿美元投资回归：报告",
-      "orig": "Situational Awareness returns with $400M investment after nearly collapsing: Report",
-      "link": "https://cointelegraph.com/markets/situational-awareness-400m-investment-nearly-collapsing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786012987,
-      "detected": 1786013110718,
-      "src": "CoinDesk",
-      "title": "交易者寻求最大代币的安全，比特币、以太币受益",
-      "orig": "Bitcoin, ether benefit as traders seek safety of largest tokens",
-      "link": "https://www.coindesk.com/markets/2026/08/06/bitcoin-ether-benefit-as-traders-seek-safety-of-largest-tokens"
-    },
-    {
-      "ts": 1786012323,
-      "detected": 1786012570270,
-      "src": "CNBC",
-      "title": "汉堡王美国业务飙升，餐厅品牌国际公司盈利超预期",
-      "orig": "Restaurant Brands International earnings beat as Burger King's U.S. business soars",
-      "link": "https://www.cnbc.com/2026/08/06/restaurant-brands-international-q2-2026-earnings.html"
-    },
-    {
-      "ts": 1786011600,
-      "detected": 1786012389838,
-      "src": "U.Today",
-      "title": "24 小时比特币 (BTC) 清算图：对流动性有何期待",
-      "orig": "24-Hour Bitcoin (BTC) Liquidation Map: What to Expect From Liquidity",
-      "link": "https://u.today/24-hour-bitcoin-btc-liquidation-map-what-to-expect-from-liquidity"
-    },
-    {
-      "ts": 1786011363,
-      "detected": 1786012209876,
-      "src": "U.Today",
-      "title": "欧盟监管机构对加密货币冒充诈骗激增发出警报",
-      "orig": "EU Regulators Sound Alarm Over Surge in Crypto Impersonation Scams",
-      "link": "https://u.today/eu-regulators-sound-alarm-over-surge-in-crypto-impersonation-scams"
-    },
-    {
-      "ts": 1786004282,
-      "detected": 1786011129468,
-      "src": "BBC Business",
-      "title": "印度航空新任首席执行官面临财务和安全动荡",
-      "orig": "Air India's new CEO faces financial and safety turbulence",
-      "link": "https://www.bbc.co.uk/news/articles/c9987kkrnl5o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1786009134,
-      "detected": 1786009688508,
-      "src": "CoinTelegraph",
-      "title": "俄罗斯总统签署加密法，核心规则将于 2026 年生效",
-      "orig": "Russian president signs crypto law, core rules take effect in 2026",
-      "link": "https://cointelegraph.com/news/putin-signs-crypto-law-core-rules-take-effect-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
     }
   ]
 }

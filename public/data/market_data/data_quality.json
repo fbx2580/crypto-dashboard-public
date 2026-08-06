@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-06T15:55:01.486Z",
-  "overall_score": 88,
+  "timestamp": "2026-08-06T16:55:01.690Z",
+  "overall_score": 93,
   "status": "healthy",
   "checks": {
     "jin10": {
@@ -14,69 +14,67 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 10,
+      "delay": 7,
       "diagnosis": null
     },
     "whale": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 2,
+      "delay": 1,
       "diagnosis": null
     },
     "eth": {
       "status": "warn",
       "score": 70,
       "errors": [
-        "延迟30113s但诊断通过: Alchemy正常，区块25696942"
+        "延迟33713s但诊断通过: Alchemy正常，区块25697240"
       ],
-      "delay": 30113,
+      "delay": 33713,
       "diagnosis": {
         "ok": true,
-        "detail": "Alchemy正常，区块25696942",
+        "detail": "Alchemy正常，区块25697240",
         "fix": ""
       }
     },
     "alerts": {
-      "status": "error",
-      "score": 30,
+      "status": "warn",
+      "score": 70,
       "errors": [
-        "Binance API不可达",
-        "建议修复: 检查Binance网络"
+        "延迟352549s但诊断通过: Binance API正常"
       ],
-      "delay": 348948,
+      "delay": 352549,
       "diagnosis": {
-        "ok": false,
-        "detail": "Binance API不可达",
-        "fix": "检查Binance网络"
+        "ok": true,
+        "detail": "Binance API正常",
+        "fix": ""
       }
     },
     "market_snapshot": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 31258,
+      "delay": 34858,
       "diagnosis": null
     },
     "data_quality": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 299,
+      "delay": 300,
       "diagnosis": null
     },
     "alerts_log": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 299,
+      "delay": 300,
       "diagnosis": null
     }
   },
   "dataErrors": [],
   "errors": [
-    "延迟30113s但诊断通过: Alchemy正常，区块25696942",
-    "Binance API不可达",
-    "建议修复: 检查Binance网络"
+    "延迟33713s但诊断通过: Alchemy正常，区块25697240",
+    "延迟352549s但诊断通过: Binance API正常"
   ]
 }

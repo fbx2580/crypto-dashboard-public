@@ -1,6 +1,78 @@
 {
   "items": [
     {
+      "s": "Bitcoin miners’ AI pivot loses Wall Street’s wow factor",
+      "t": "2026-08-06T16:42:33.000Z",
+      "ts": 1786034553,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bitcoin-miners-ai-infrastructure-deals-wall-street-reaction?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "比特币矿工的人工智能转向失去了华尔街的惊叹因素",
+      "_ts": 1786034847786
+    },
+    {
+      "s": "How to Save Your Dogecoin: DOGE Lead Breaks Down Relevant Risks of Hardware Wallets",
+      "t": "2026-08-06T16:30:15.000Z",
+      "ts": 1786033815,
+      "src": "U.Today",
+      "link": "https://u.today/how-to-save-your-dogecoin-doge-lead-breaks-down-relevant-risks-of-hardware-wallets",
+      "s_cn": "如何拯救你的狗狗币：DOGE 领先分析硬件钱包的相关风险",
+      "_ts": 1786034576439
+    },
+    {
+      "s": "XRP ETFs Enter Red Zone as Price Retests $1.04",
+      "t": "2026-08-06T16:06:37.000Z",
+      "ts": 1786032397,
+      "src": "U.Today",
+      "link": "https://u.today/xrp-etfs-enter-red-zone-as-price-retests-104",
+      "s_cn": "随着价格重新测试 1.04 美元，XRP ETF 进入红色区域",
+      "_ts": 1786033983184
+    },
+    {
+      "s": "Bitcoin price coils under $65K as US PMI data brings new ‘stagflation’ warning",
+      "t": "2026-08-06T16:24:18.000Z",
+      "ts": 1786033458,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/bitcoin-price-compresses-as-us-pmi-data-brings-new-stagflation-warning?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "美国 PMI 数据带来新的“滞胀”警告，比特币价格跌破 6.5 万美元",
+      "_ts": 1786033938943
+    },
+    {
+      "s": "MetaMask Launches Self-Custodial AI Wallet for Autonomous Crypto Trading",
+      "t": "2026-08-06T16:26:56.000Z",
+      "ts": 1786033616,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375044/metamask-self-custodial-ai-wallet-autonomous-crypto-trading",
+      "s_cn": "MetaMask 推出用于自主加密货币交易的自我托管人工智能钱包",
+      "_ts": 1786033678150
+    },
+    {
+      "s": "DuckDuckGo’s Meta-Trolling 'Normal F***ing Sunglasses' Sell Out in Under a Week",
+      "t": "2026-08-06T16:19:39.000Z",
+      "ts": 1786033179,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375037/duckduckgos-meta-trolling-normal-fing-sunglasses-sell-out-in-under-a-week",
+      "s_cn": "DuckDuckGo 的 Meta-Trolling“Normal F***ing 太阳镜”不到一周就卖光了",
+      "_ts": 1786033253626
+    },
+    {
+      "s": "Tether expands tokenization business into Saudi Arabia, starting with real estate",
+      "t": "2026-08-06T16:10:04.000Z",
+      "ts": 1786032604,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/06/tether-expands-tokenization-business-into-saudi-arabia-starting-with-real-estate",
+      "s_cn": "Tether 将代币化业务扩展到沙特阿拉伯，从房地产开始",
+      "_ts": 1786032631772
+    },
+    {
+      "s": "First OpenAI, now Meta - why do AI hacks keep happening?",
+      "t": "2026-08-06T15:59:34.000Z",
+      "ts": 1786031974,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cp30989ee1wo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "先是 OpenAI，现在是 Meta——为什么 AI 黑客攻击不断发生？",
+      "_ts": 1786032337835
+    },
+    {
       "s": "This XRP ETF Is Down 95%",
       "t": "2026-08-06T15:33:05.000Z",
       "ts": 1786030385,
@@ -4375,6 +4447,6 @@
       "_ts": 1785715504325
     }
   ],
-  "updated": 1786032001209,
+  "updated": 1786035597208,
   "sources": 6
 }
