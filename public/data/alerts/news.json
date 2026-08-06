@@ -1,6 +1,38 @@
 {
-  "updated": 1786002847387,
+  "updated": 1786006627142,
   "alerts": [
+    {
+      "ts": 1786005883,
+      "detected": 1786006627141,
+      "src": "CoinTelegraph",
+      "title": "日元稳定币发行人 JPYC 的 B 轮融资达到 3800 万美元",
+      "orig": "Yen stablecoin issuer JPYC’s Series B reaches $38M",
+      "link": "https://cointelegraph.com/news/jpyc-series-b-funding-az-com?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786004700,
+      "detected": 1786005548496,
+      "src": "U.Today",
+      "title": "Zcash 宣布 8 月 25 日进行 1,000,000 名 ZEC 持币者投票：NU7 即将更新",
+      "orig": "Zcash Announces 1,000,000 ZEC Coinholder Vote on August 25: Upcoming NU7 Update",
+      "link": "https://u.today/zcash-announces-1000000-zec-coinholder-vote-on-august-25-upcoming-nu7-update"
+    },
+    {
+      "ts": 1786001183,
+      "detected": 1786004826618,
+      "src": "CoinDesk",
+      "title": "实时更新：Coinbase 允许英国用户交易美国股票。",
+      "orig": "Live updates: Coinbase lets U.K. users trade U.S. equities. BTC trades near $65,000",
+      "link": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive"
+    },
+    {
+      "ts": 1786002994,
+      "detected": 1786003747725,
+      "src": "CoinTelegraph",
+      "title": "比特币支持的贷款以 2% 的利率为 PowerCompute 的 1800 万美元债务进行再融资",
+      "orig": "Bitcoin-backed loan refinances PowerCompute’s $18M debt at 2%",
+      "link": "https://cointelegraph.com/news/bitcoin-collateral-cuts-powercompute-debt-rate?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
     {
       "ts": 1786000451,
       "detected": 1786002847386,
@@ -368,38 +400,6 @@
       "title": "特朗普“解放日”关税退款额达1000亿美元",
       "orig": "Trump's 'Liberation Day' tariff refunds hit $100bn",
       "link": "https://www.bbc.co.uk/news/articles/cwyewn5wexvo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785948714,
-      "detected": 1785949358142,
-      "src": "CoinTelegraph",
-      "title": "尽管 PAC 支持 200 万美元，加密货币支持的密歇根州众议院现任议员仍输掉初选",
-      "orig": "Crypto-backed Michigan House incumbent loses primary despite $2M PAC support",
-      "link": "https://cointelegraph.com/news/michigan-house-rep-loses-primary-support-crypto-pac?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785947456,
-      "detected": 1785948279819,
-      "src": "CoinTelegraph",
-      "title": "西联汇款通过 Stablecard 将稳定币汇款引入 Visa 网络",
-      "orig": "Western Union brings stablecoin remittances to Visa network with Stablecard",
-      "link": "https://cointelegraph.com/news/western-union-stablecard-stablecoin-remittances-visa?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785944505,
-      "detected": 1785945579129,
-      "src": "U.Today",
-      "title": "迪拜免税店欢迎柴犬 (SHIB)：首次推出加密货币到法定货币的支付",
-      "orig": "Dubai Duty Free Welcomes Shiba Inu (SHIB): Crypto-to-Fiat Payments Roll Out for First Time Ever",
-      "link": "https://u.today/dubai-duty-free-welcomes-shiba-inu-shib-crypto-to-fiat-payments-roll-out-for-first-time-ever"
-    },
-    {
-      "ts": 1785944919,
-      "detected": 1785945399203,
-      "src": "CNBC",
-      "title": "Tanger 首席执行官表示，世界杯推动了今年夏天的客流量和销售",
-      "orig": "Tanger CEO says World Cup drove up traffic, sales this summer",
-      "link": "https://www.cnbc.com/2026/08/05/tanger-ceo-world-cup-traffic-sales.html"
     }
   ]
 }

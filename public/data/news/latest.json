@@ -1,6 +1,60 @@
 {
   "items": [
     {
+      "s": "Yen stablecoin issuer JPYC’s Series B reaches $38M",
+      "t": "2026-08-06T08:44:43.000Z",
+      "ts": 1786005883,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/jpyc-series-b-funding-az-com?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "日元稳定币发行人 JPYC 的 B 轮融资达到 3800 万美元",
+      "_ts": 1786006598448
+    },
+    {
+      "s": "Meta becomes latest firm to say its AI hacked another company",
+      "t": "2026-08-06T05:53:58.000Z",
+      "ts": 1785995638,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cx2kgdnyk2po?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Meta 成为最新一家称其人工智能攻击了另一家公司的公司",
+      "_ts": 1786006210934
+    },
+    {
+      "s": "Zcash Announces 1,000,000 ZEC Coinholder Vote on August 25: Upcoming NU7 Update",
+      "t": "2026-08-06T08:25:00.000Z",
+      "ts": 1786004700,
+      "src": "U.Today",
+      "link": "https://u.today/zcash-announces-1000000-zec-coinholder-vote-on-august-25-upcoming-nu7-update",
+      "s_cn": "Zcash 宣布 8 月 25 日进行 1,000,000 名 ZEC 持币者投票：NU7 即将更新",
+      "_ts": 1786005430780
+    },
+    {
+      "s": "Live updates: Coinbase lets U.K. users trade U.S. equities. BTC trades near $65,000",
+      "t": "2026-08-06T07:26:23.000Z",
+      "ts": 1786001183,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive",
+      "s_cn": "实时更新：Coinbase 允许英国用户交易美国股票。",
+      "_ts": 1786004734077
+    },
+    {
+      "s": "Shorts, strappy tops and sandals: Should you wear them in the office?",
+      "t": "2026-08-05T23:22:17.000Z",
+      "ts": 1785972137,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cre49389g1qo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "短裤、系带上衣和凉鞋：你应该在办公室穿它们吗？",
+      "_ts": 1786004469443
+    },
+    {
+      "s": "Bitcoin-backed loan refinances PowerCompute’s $18M debt at 2%",
+      "t": "2026-08-06T07:56:34.000Z",
+      "ts": 1786002994,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bitcoin-collateral-cuts-powercompute-debt-rate?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "比特币支持的贷款以 2% 的利率为 PowerCompute 的 1800 万美元债务进行再融资",
+      "_ts": 1786003597278
+    },
+    {
       "s": "Bitcoin developers flag 85 critical bugs in an \"extremely bad\" situation",
       "t": "2026-08-06T07:14:11.000Z",
       "ts": 1786000451,
@@ -3754,6 +3808,6 @@
       "_ts": 1785715504325
     }
   ],
-  "updated": 1786003196444,
+  "updated": 1786006793648,
   "sources": 6
 }

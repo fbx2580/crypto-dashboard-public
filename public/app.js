@@ -250,6 +250,7 @@ async function refreshMarket() {
     if (data.sp500) setItem('moSp500', `$${data.sp500.price.toLocaleString('en', {minimumFractionDigits:0})}`, data.sp500.changePercent);
     if (data.oil) setItem('moOil', `$${data.oil.price.toFixed(2)}`, data.oil.changePercent);
     if (data.gold) setItem('moGold', `$${data.gold.price.toFixed(1)}`, data.gold.changePercent);
+    if (data.dxy) setItem('moDxy', data.dxy.price.toFixed(2), data.dxy.changePercent);
   } catch(e) {}
 }
 
