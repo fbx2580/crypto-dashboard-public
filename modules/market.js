@@ -7,7 +7,7 @@ let marketCache = { data: null, time: 0 };
 
 // 大盘总览
 router.get('/overview', async (req, res) => {
-  if (marketCache.data && Date.now() - marketCache.time < 30000) {
+  if (marketCache.data && Date.now() - marketCache.time < 60000) {
     return res.json(marketCache.data);
   }
   try {
@@ -40,21 +40,31 @@ router.get('/overview', async (req, res) => {
       }
     } catch(e) {}
 
-    let nasdaq = null, sp500 = null, oil = null, gold = null, dxy = null;
+    let nasdaq = null, sp500 = null, oil = null, gold = null, dxy = null, cny = null, hsi = null, tnx = null;
     try {
-      const [nasRes, spRes, dxyRes, oilRes, goldRes] = await Promise.all([
+      const [nasRes, spRes, dxyRes, hsiRes, tnxRes, cnyRes, oilRes, goldRes] = await Promise.all([
         axios.get('https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
         axios.get('https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
         axios.get('https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
+        axios.get('https://query1.finance.yahoo.com/v8/finance/chart/%5EHSI', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
+        axios.get('https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
+        axios.get('https://query1.finance.yahoo.com/v8/finance/chart/CNY%3DX?range=1d&interval=1d', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
         axios.get('https://fapi.binance.com/fapi/v1/ticker/24hr?symbol=BZUSDT', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
         axios.get('https://fapi.binance.com/fapi/v1/ticker/24hr?symbol=XAUUSDT', { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }),
       ]);
       const nasMeta = nasRes.data.chart.result[0].meta;
       const spMeta = spRes.data.chart.result[0].meta;
       const dxyMeta = dxyRes.data.chart.result[0].meta;
-      nasdaq = { price: nasMeta.regularMarketPrice, changePercent: (nasMeta.regularMarketPrice / nasMeta.previousClose - 1) * 100 };
-      sp500 = { price: spMeta.regularMarketPrice, changePercent: (spMeta.regularMarketPrice / spMeta.previousClose - 1) * 100 };
-      dxy = { price: dxyMeta.regularMarketPrice, changePercent: (dxyMeta.regularMarketPrice / dxyMeta.previousClose - 1) * 100 };
+      const hsiMeta = hsiRes.data.chart.result[0].meta;
+      const tnxMeta = tnxRes.data.chart.result[0].meta;
+      const cnyMeta = cnyRes.data.chart.result[0].meta;
+      const pc = m => m.previousClose || m.chartPreviousClose;
+      nasdaq = { price: nasMeta.regularMarketPrice, changePercent: (nasMeta.regularMarketPrice / pc(nasMeta) - 1) * 100 };
+      sp500 = { price: spMeta.regularMarketPrice, changePercent: (spMeta.regularMarketPrice / pc(spMeta) - 1) * 100 };
+      dxy = { price: dxyMeta.regularMarketPrice, changePercent: (dxyMeta.regularMarketPrice / pc(dxyMeta) - 1) * 100 };
+      hsi = { price: hsiMeta.regularMarketPrice, changePercent: (hsiMeta.regularMarketPrice / pc(hsiMeta) - 1) * 100 };
+      tnx = { price: tnxMeta.regularMarketPrice, changePercent: (tnxMeta.regularMarketPrice / pc(tnxMeta) - 1) * 100 };
+      cny = { price: cnyMeta.regularMarketPrice, changePercent: (cnyMeta.regularMarketPrice / pc(cnyMeta) - 1) * 100 };
       // 石油 + 黄金 → 币安永续合约 BZUSDT / XAUUSDT
       const oilData = oilRes.data;
       oil = { price: parseFloat(oilData.lastPrice), changePercent: parseFloat(oilData.priceChangePercent) };
@@ -68,10 +78,14 @@ router.get('/overview', async (req, res) => {
       if (btc) btcPrice = btc.price;
     }
 
-    const result = { crypto: { changePercent: totalCryptoChg, btcPrice }, aShares, nasdaq, sp500, dxy, oil, gold };
+    const result = { crypto: { changePercent: totalCryptoChg, btcPrice }, aShares, nasdaq, sp500, dxy, cny, hsi, tnx, oil, gold };
     marketCache = { data: result, time: Date.now() };
     res.json(result);
   } catch (err) {
+    if (marketCache.data) {
+      marketCache.data._stale = true;
+      return res.json(marketCache.data);
+    }
     res.status(500).json({ error: err.message });
   }
 });
@@ -90,13 +104,25 @@ router.get('/indicators', async (req, res) => {
   // ─── 并行拉取所有数据 ───
   const promises = [];
 
-  // 1. 恐惧贪婪
+  // 1. 恐惧贪婪（CMC 主源，alternative.me 兜底）
   promises.push((async () => {
     try {
-      const fng = await axios.get('https://api.alternative.me/fng/?limit=1', { timeout: 5000 });
-      const fngData = fng.data.data[0];
-      result.fear = { value: parseInt(fngData.value), label: fngData.value_classification };
-      // 更新本地文件
+      const cmcKey = require('fs').readFileSync(require('path').join(__dirname, '..', 'secrets', 'cmc.key'), 'utf8').trim();
+      const fng = await axios.get('https://pro-api.coinmarketcap.com/v3/fear-and-greed/latest', {
+        headers: { 'X-CMC_PRO_API_KEY': cmcKey }, timeout: 5000
+      });
+      const d = fng.data.data;
+      result.fear = { value: d.value, label: d.value_classification, source: 'cmc' };
+    } catch(e) {
+      // 兜底：alternative.me
+      try {
+        const fng = await axios.get('https://api.alternative.me/fng/?limit=1', { timeout: 5000 });
+        const fngData = fng.data.data[0];
+        result.fear = { value: parseInt(fngData.value), label: fngData.value_classification, source: 'altme' };
+      } catch(e2) {}
+    }
+    // 更新本地文件
+    if (result.fear) {
       const fs = require('fs'); const path = require('path');
       try {
         const fngFile = path.join(__dirname, '..', 'public', 'data', 'analysis', 'fng_history.json');
@@ -110,7 +136,7 @@ router.get('/indicators', async (req, res) => {
         }
         result.fngHistory = fngAll;
       } catch(e) {}
-    } catch(e) {}
+    }
   })());
 
   // 2. 山寨季

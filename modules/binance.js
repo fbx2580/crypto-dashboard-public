@@ -5,7 +5,7 @@ const path = require('path');
 const fs = require('fs');
 const router = express.Router();
 
-const MAJOR_PAIRS = ['BTCUSDT','ETHUSDT','SOLUSDT','XRPUSDT','BNBUSDT','DOGEUSDT','ADAUSDT','AVAXUSDT','LINKUSDT','DOTUSDT','TRXUSDT','LTCUSDT','BCHUSDT','XLMUSDT','HBARUSDT','SHIBUSDT','NEARUSDT','ATOMUSDT','UNIUSDT','FILUSDT','APTUSDT','SUIUSDT','INJUSDT','OPUSDT','ARBUSDT','TIAUSDT','ETCUSDT'];
+const MAJOR_PAIRS = ['BTCUSDT','ETHUSDT','BNBUSDT','SOLUSDT','XRPUSDT','DOGEUSDT','ADAUSDT','AVAXUSDT','TRXUSDT','LINKUSDT'];
 const DATA_DIR = path.join(__dirname, '..', 'public', 'data', 'binance');
 
 function getLatestSnapshot() {
@@ -23,6 +23,15 @@ async function getAllPerpTickers() {
 async function getPerpetualSymbols() {
   const res = await axios.get('https://fapi.binance.com/fapi/v1/exchangeInfo', { timeout: 10000 });
   return (res.data?.symbols || []).filter(s => (s.contractType === 'PERPETUAL' || s.contractType === 'TRADIFI_PERPETUAL') && s.quoteAsset === 'USDT').map(s => s.symbol);
+}
+
+// ─── 统一定排序：BTC/ETH 永远在最前面，其余按涨跌
+function sortMajors(tickers) {
+  const btc = tickers.find(t => t.symbol === 'BTCUSDT');
+  const eth = tickers.find(t => t.symbol === 'ETHUSDT');
+  const rest = tickers.filter(t => t.symbol !== 'BTCUSDT' && t.symbol !== 'ETHUSDT')
+    .sort((a, b) => b.change24h - a.change24h);
+  return [btc, eth, ...rest].filter(Boolean);
 }
 
 // BTC 实时价
@@ -70,7 +79,7 @@ router.get('/signals', async (req, res) => {
   if (fresh && snapshot.allTickers && snapshot.allTickers.length > 100) {
     return res.json({
       timestamp: Date.now(), fetchedAt: snapshot.timestamp,
-      majors: snapshot.allTickers.filter(t => MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
+      majors: sortMajors(snapshot.allTickers.filter(t => MAJOR_PAIRS.includes(t.symbol))),
       altcoins: snapshot.allTickers.filter(t => !MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
     });
   }
@@ -81,7 +90,7 @@ router.get('/signals', async (req, res) => {
     if (usdtTickers.length > 100) {
       return res.json({
         timestamp: Date.now(), fetchedAt: Date.now(),
-        majors: usdtTickers.filter(t => MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
+        majors: sortMajors(usdtTickers.filter(t => MAJOR_PAIRS.includes(t.symbol))),
         altcoins: usdtTickers.filter(t => !MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
       });
     }
@@ -90,7 +99,7 @@ router.get('/signals', async (req, res) => {
   if (snapshot && snapshot.allTickers && snapshot.allTickers.length > 100) {
     return res.json({
       timestamp: Date.now(), fetchedAt: snapshot.timestamp,
-      majors: snapshot.allTickers.filter(t => MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
+      majors: sortMajors(snapshot.allTickers.filter(t => MAJOR_PAIRS.includes(t.symbol))),
       altcoins: snapshot.allTickers.filter(t => !MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
     });
   }

@@ -1,6 +1,132 @@
 {
   "items": [
     {
+      "s": "Step App winds down after four years as FITFI token sinks",
+      "t": "2026-08-06T13:52:36.000Z",
+      "ts": 1786024356,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/step-app-winds-down-four-years-move-to-earn?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "随着 FITFI 代币的贬值，Step App 在四年后停业",
+      "_ts": 1786024631721
+    },
+    {
+      "s": "Fox won't renegotiate NFL media rights before current deal expires, CEO Lachlan Murdoch says",
+      "t": "2026-08-06T13:54:24.000Z",
+      "ts": 1786024464,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/fox-nfl-media-rights-renegotiations-opt-out.html",
+      "s_cn": "福克斯首席执行官拉克兰·默多克表示，在当前协议到期之前，福克斯不会重新谈判 NFL 媒体权",
+      "_ts": 1786024620354
+    },
+    {
+      "s": "Dogecoin Completes First August Death Cross: What to Watch Closely?",
+      "t": "2026-08-06T13:10:50.000Z",
+      "ts": 1786021850,
+      "src": "U.Today",
+      "link": "https://u.today/dogecoin-completes-first-august-death-cross-what-to-watch-closely",
+      "s_cn": "狗狗币完成了第一次八月死亡交叉：需要密切关注什么？",
+      "_ts": 1786024058706
+    },
+    {
+      "s": "The divide between Eli Lilly and Novo Nordisk is widening after their latest earnings",
+      "t": "2026-08-06T13:45:29.000Z",
+      "ts": 1786023929,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/eli-lilly-novo-nordisk-earnings-glp1-market.html",
+      "s_cn": "礼来公司和诺和诺德公司最新财报发布后，两者之间的分歧正在扩大",
+      "_ts": 1786023956866
+    },
+    {
+      "s": "Car washes and vape shops can still sponsor skilled foreign workers despite visa changes",
+      "t": "2026-08-06T11:06:26.000Z",
+      "ts": 1786014386,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cj639rx147eo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "尽管签证发生变化，洗车店和电子烟店仍然可以赞助熟练的外国工人",
+      "_ts": 1786023857288
+    },
+    {
+      "s": "Peloton posts first-ever annual net profit, but shares drop as outlook disappoints",
+      "t": "2026-08-06T13:42:32.000Z",
+      "ts": 1786023752,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/peloton-pton-q4-2026-earnings.html",
+      "s_cn": "Peloton 首次公布年度净利润，但因前景令人失望而股价下跌",
+      "_ts": 1786023766900
+    },
+    {
+      "s": "Versant shares surge 13% after company raises 2026 outlook on platforms, advertising momentum",
+      "t": "2026-08-06T13:36:03.000Z",
+      "ts": 1786023363,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/versant-vsnt-earnings-q2-2026.html",
+      "s_cn": "Versant 上调 2026 年平台和广告势头展望后股价飙升 13%",
+      "_ts": 1786023376402
+    },
+    {
+      "s": "What Is Arc? The Stablecoin Blockchain From USDC Issuer Circle",
+      "t": "2026-08-06T13:34:07.000Z",
+      "ts": 1786023247,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/resources/what-is-arc-the-stablecoin-blockchain-from-usdc-issuer-circle",
+      "s_cn": "什么是电弧？",
+      "_ts": 1786023362459
+    },
+    {
+      "s": "Ford's new 'Fathom' electric pickup truck will start at $28,000",
+      "t": "2026-08-06T13:29:39.000Z",
+      "ts": 1786022979,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/ford-fathom-pickup-truck-price.html",
+      "s_cn": "福特新款“Fathom”电动皮卡起售价为 28,000 美元",
+      "_ts": 1786023205255
+    },
+    {
+      "s": "10 weirdest things ever tokenized... including farts",
+      "t": "2026-08-06T13:30:00.000Z",
+      "ts": 1786023000,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/magazine/the-10-weirdest-things-already-finding-a-home-onchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "有史以来 10 个最奇怪的东西被代币化......包括放屁",
+      "_ts": 1786023127036
+    },
+    {
+      "s": "XRP 2026 Futures Axed as BitMEX Shuts Down; Coinbase Launches Free US Stocks in UK; Bitcoin Strategy Raises $15 Billion via ChatGPT: Michael Saylor — Morning Crypto Report",
+      "t": "2026-08-06T12:50:15.000Z",
+      "ts": 1786020615,
+      "src": "U.Today",
+      "link": "https://u.today/xrp-2026-futures-axed-as-bitmex-shuts-down-coinbase-launches-free-us-stocks-in-uk-bitcoin-strategy",
+      "s_cn": "BitMEX 关闭，XRP 2026 期货被砍掉；",
+      "_ts": 1786021357137
+    },
+    {
+      "s": "Hyperliquid RWA contracts grow to 32% of trading activity in Q2",
+      "t": "2026-08-06T12:55:44.000Z",
+      "ts": 1786020944,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/hyperliquid-rwa-contracts-rise-32-trading-q2?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "第二季度超流动性 RWA 合约增长至交易活动的 32%",
+      "_ts": 1786021322759
+    },
+    {
+      "s": "Blockchain.com wins Cayman custody license after MiCA and FCA approvals",
+      "t": "2026-08-06T13:00:00.000Z",
+      "ts": 1786021200,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/blockchain-com-cayman-custody-license?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "在 MiCA 和 FCA 批准后，Blockchain.com 获得开曼托管许可证",
+      "_ts": 1786021322759
+    },
+    {
+      "s": "Family offices back clean energy and sustainability startups in July as dealmaking holds steady",
+      "t": "2026-08-06T13:00:01.000Z",
+      "ts": 1786021201,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/family-offices-sustainability-startups-july-dealmaking.html",
+      "s_cn": "随着交易保持稳定，家族办公室在 7 月份支持清洁能源和可持续发展初创公司",
+      "_ts": 1786021218209
+    },
+    {
       "s": "Scammers Pose as EU Regulators to Prey on MiCA Deadline Fallout",
       "t": "2026-08-06T12:46:19.000Z",
       "ts": 1786020379,
@@ -4168,6 +4294,6 @@
       "_ts": 1785715504325
     }
   ],
-  "updated": 1786021196180,
+  "updated": 1786024797650,
   "sources": 6
 }

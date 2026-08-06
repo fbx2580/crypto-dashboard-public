@@ -251,6 +251,9 @@ async function refreshMarket() {
     if (data.oil) setItem('moOil', `$${data.oil.price.toFixed(2)}`, data.oil.changePercent);
     if (data.gold) setItem('moGold', `$${data.gold.price.toFixed(1)}`, data.gold.changePercent);
     if (data.dxy) setItem('moDxy', data.dxy.price.toFixed(2), data.dxy.changePercent);
+    if (data.cny) setItem('moCny', data.cny.price, data.cny.changePercent);
+    if (data.hsi) setItem('moHsi', `$${data.hsi.price.toLocaleString('en',{minimumFractionDigits:0})}`, data.hsi.changePercent);
+    if (data.tnx) setItem('moTnx', data.tnx.price.toFixed(2) + '%', data.tnx.changePercent);
   } catch(e) {}
 }
 
@@ -271,23 +274,17 @@ async function refreshTickers() {
     for (const c of (analysis.coins || [])) analysisMap[c.symbol] = c;
     for (const r of (abData.results || [])) abMap[r.symbol] = r;
     
-    // 固定27主流币 → 固定顺序全量渲染，永不跳变
-    const MAJORS = ['BTCUSDT','ETHUSDT','SOLUSDT','XRPUSDT','BNBUSDT','DOGEUSDT','ADAUSDT','AVAXUSDT','LINKUSDT','DOTUSDT','TRXUSDT','LTCUSDT','BCHUSDT','XLMUSDT','HBARUSDT','SHIBUSDT','NEARUSDT','ATOMUSDT','UNIUSDT','FILUSDT','APTUSDT','SUIUSDT','INJUSDT','OPUSDT','ARBUSDT','TIAUSDT','ETCUSDT'];
-    const symMap = {};
-    for (const t of (data.majors || [])) symMap[t.symbol] = t;
-    // 固定顺序：按 MAJORS 数组顺序，有数据就显示，没数据显示 —
-    const majors = MAJORS.map(sym => symMap[sym] || { symbol: sym, price: 0, change24h: 0 });
+    // 直接用后端返回的 majors（BTC/ETH已固定在前，其余按涨跌排），全量渲染
+    const majors = data.majors;
     const bar = document.getElementById('tickerBar');
-    // 全量渲染，不搞增量更新
+    if (!majors?.length) { bar.innerHTML = '<span class="ticker-loading">等待数据...</span>'; return; }
     bar.innerHTML = majors.map(t => {
       const chg = parseFloat(t.change24h) || 0;
       const cls = chg >= 0 ? 'up' : 'down';
       const sign = chg >= 0 ? '+' : '';
       const abData = abMap[t.symbol.replace('USDT','')];
-      const ab = abData ? abData.signal : '';
-      const badge = ab ? ' <span style="font-size:9px;color:var(--text-dim);">' + ab + '</span>' : '';
       return '<div class="ticker-item" data-sym="' + t.symbol + '">' +
-        '<span class="ticker-symbol">' + t.symbol.replace('USDT','') + badge + '</span>' +
+        '<span class="ticker-symbol">' + t.symbol.replace('USDT','') + '</span>' +
         '<span class="ticker-change ' + cls + '">' + sign + chg.toFixed(2) + '%</span>' +
         '<span class="ticker-price" style="color:var(--text-dim);font-size:10px">' + (t.price ? '$' + fmt.price(t.price) : '—') + '</span></div>';
     }).join('');

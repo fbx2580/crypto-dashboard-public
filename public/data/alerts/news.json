@@ -1,6 +1,110 @@
 {
-  "updated": 1786020493871,
+  "updated": 1786024638030,
   "alerts": [
+    {
+      "ts": 1786024464,
+      "detected": 1786024638030,
+      "src": "CNBC",
+      "title": "福克斯首席执行官拉克兰·默多克表示，在当前协议到期之前，福克斯不会重新谈判 NFL 媒体权",
+      "orig": "Fox won't renegotiate NFL media rights before current deal expires, CEO Lachlan Murdoch says",
+      "link": "https://www.cnbc.com/2026/08/06/fox-nfl-media-rights-renegotiations-opt-out.html"
+    },
+    {
+      "ts": 1786024356,
+      "detected": 1786024638030,
+      "src": "CoinTelegraph",
+      "title": "随着 FITFI 代币的贬值，Step App 在四年后停业",
+      "orig": "Step App winds down after four years as FITFI token sinks",
+      "link": "https://cointelegraph.com/news/step-app-winds-down-four-years-move-to-earn?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786023929,
+      "detected": 1786024095827,
+      "src": "CNBC",
+      "title": "礼来公司和诺和诺德公司最新财报发布后，两者之间的分歧正在扩大",
+      "orig": "The divide between Eli Lilly and Novo Nordisk is widening after their latest earnings",
+      "link": "https://www.cnbc.com/2026/08/06/eli-lilly-novo-nordisk-earnings-glp1-market.html"
+    },
+    {
+      "ts": 1786021850,
+      "detected": 1786024095827,
+      "src": "U.Today",
+      "title": "狗狗币完成了第一次八月死亡交叉：需要密切关注什么？",
+      "orig": "Dogecoin Completes First August Death Cross: What to Watch Closely?",
+      "link": "https://u.today/dogecoin-completes-first-august-death-cross-what-to-watch-closely"
+    },
+    {
+      "ts": 1786023752,
+      "detected": 1786023915614,
+      "src": "CNBC",
+      "title": "Peloton 首次公布年度净利润，但因前景令人失望而股价下跌",
+      "orig": "Peloton posts first-ever annual net profit, but shares drop as outlook disappoints",
+      "link": "https://www.cnbc.com/2026/08/06/peloton-pton-q4-2026-earnings.html"
+    },
+    {
+      "ts": 1786022979,
+      "detected": 1786023376412,
+      "src": "CNBC",
+      "title": "福特新款“Fathom”电动皮卡起售价为 28,000 美元",
+      "orig": "Ford's new 'Fathom' electric pickup truck will start at $28,000",
+      "link": "https://www.cnbc.com/2026/08/06/ford-fathom-pickup-truck-price.html"
+    },
+    {
+      "ts": 1786023247,
+      "detected": 1786023376412,
+      "src": "Decrypt",
+      "title": "什么是电弧？",
+      "orig": "What Is Arc? The Stablecoin Blockchain From USDC Issuer Circle",
+      "link": "https://decrypt.co/resources/what-is-arc-the-stablecoin-blockchain-from-usdc-issuer-circle"
+    },
+    {
+      "ts": 1786023363,
+      "detected": 1786023376412,
+      "src": "CNBC",
+      "title": "Versant 上调 2026 年平台和广告势头展望后股价飙升 13%",
+      "orig": "Versant shares surge 13% after company raises 2026 outlook on platforms, advertising momentum",
+      "link": "https://www.cnbc.com/2026/08/06/versant-vsnt-earnings-q2-2026.html"
+    },
+    {
+      "ts": 1786023000,
+      "detected": 1786023196270,
+      "src": "CoinTelegraph",
+      "title": "有史以来 10 个最奇怪的东西被代币化......包括放屁",
+      "orig": "10 weirdest things ever tokenized... including farts",
+      "link": "https://cointelegraph.com/magazine/the-10-weirdest-things-already-finding-a-home-onchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786021201,
+      "detected": 1786021394628,
+      "src": "CNBC",
+      "title": "随着交易保持稳定，家族办公室在 7 月份支持清洁能源和可持续发展初创公司",
+      "orig": "Family offices back clean energy and sustainability startups in July as dealmaking holds steady",
+      "link": "https://www.cnbc.com/2026/08/06/family-offices-sustainability-startups-july-dealmaking.html"
+    },
+    {
+      "ts": 1786021200,
+      "detected": 1786021394628,
+      "src": "CoinTelegraph",
+      "title": "在 MiCA 和 FCA 批准后，Blockchain.com 获得开曼托管许可证",
+      "orig": "Blockchain.com wins Cayman custody license after MiCA and FCA approvals",
+      "link": "https://cointelegraph.com/news/blockchain-com-cayman-custody-license?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786020944,
+      "detected": 1786021394628,
+      "src": "CoinTelegraph",
+      "title": "第二季度超流动性 RWA 合约增长至交易活动的 32%",
+      "orig": "Hyperliquid RWA contracts grow to 32% of trading activity in Q2",
+      "link": "https://cointelegraph.com/news/hyperliquid-rwa-contracts-rise-32-trading-q2?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786020615,
+      "detected": 1786021394628,
+      "src": "U.Today",
+      "title": "BitMEX 关闭，XRP 2026 期货被砍掉；",
+      "orig": "XRP 2026 Futures Axed as BitMEX Shuts Down; Coinbase Launches Free US Stocks in UK; Bitcoin Strategy Raises $15 Billion via ChatGPT: Michael Saylor — Morning Crypto Report",
+      "link": "https://u.today/xrp-2026-futures-axed-as-bitmex-shuts-down-coinbase-launches-free-us-stocks-in-uk-bitcoin-strategy"
+    },
     {
       "ts": 1786020402,
       "detected": 1786020493870,
@@ -296,110 +400,6 @@
       "title": "Zcash 宣布 8 月 25 日进行 1,000,000 名 ZEC 持币者投票：NU7 即将更新",
       "orig": "Zcash Announces 1,000,000 ZEC Coinholder Vote on August 25: Upcoming NU7 Update",
       "link": "https://u.today/zcash-announces-1000000-zec-coinholder-vote-on-august-25-upcoming-nu7-update"
-    },
-    {
-      "ts": 1786001183,
-      "detected": 1786004826618,
-      "src": "CoinDesk",
-      "title": "实时更新：Coinbase 允许英国用户交易美国股票。",
-      "orig": "Live updates: Coinbase lets U.K. users trade U.S. equities. BTC trades near $65,000",
-      "link": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive"
-    },
-    {
-      "ts": 1786002994,
-      "detected": 1786003747725,
-      "src": "CoinTelegraph",
-      "title": "比特币支持的贷款以 2% 的利率为 PowerCompute 的 1800 万美元债务进行再融资",
-      "orig": "Bitcoin-backed loan refinances PowerCompute’s $18M debt at 2%",
-      "link": "https://cointelegraph.com/news/bitcoin-collateral-cuts-powercompute-debt-rate?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786000451,
-      "detected": 1786002847386,
-      "src": "CoinDesk",
-      "title": "比特币开发者在“极其糟糕”的情况下标记了 85 个严重错误",
-      "orig": "Bitcoin developers flag 85 critical bugs in an \"extremely bad\" situation",
-      "link": "https://www.coindesk.com/tech/2026/08/06/bitcoin-developers-flag-85-critical-bugs-in-an-extremely-bad-situation"
-    },
-    {
-      "ts": 1786001183,
-      "detected": 1786001226725,
-      "src": "CoinDesk",
-      "title": "实时更新：比特币接近 65,000 美元，石油、通胀希望保持宏观竞价的活力",
-      "orig": "Live updates: Bitcoin nears $65,000 as oil, inflation hopes keep macro bid alive",
-      "link": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive"
-    },
-    {
-      "ts": 1785999625,
-      "detected": 1786001046274,
-      "src": "BBC Business",
-      "title": "罗利业主启动破产程序",
-      "orig": "Raleigh owner starts insolvency proceedings",
-      "link": "https://www.bbc.co.uk/news/articles/c4gv45w4j8eo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785999451,
-      "detected": 1786000145886,
-      "src": "CoinTelegraph",
-      "title": "比特币 ETF 吸金 2.44 亿美元，连续 3 天流入额突破 6.26 亿美元",
-      "orig": "Bitcoin ETFs pull in $244M, 3-day inflow streak tops $626M",
-      "link": "https://cointelegraph.com/markets/bitcoin-etf-244-million-three-day-inflow-streak-626-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785996962,
-      "detected": 1785997804506,
-      "src": "U.Today",
-      "title": "a16z 的 Andreessen：加密货币的生存正在赢得立法者的支持",
-      "orig": "a16z's Andreessen: Crypto's Survival Is Winning Over Lawmakers",
-      "link": "https://u.today/a16zs-andreessen-cryptos-survival-is-winning-over-lawmakers"
-    },
-    {
-      "ts": 1785996434,
-      "detected": 1785997084972,
-      "src": "CoinTelegraph",
-      "title": "欧盟监管机构警告 MiCA 许可洗牌过程中存在假冒诈骗行为",
-      "orig": "EU watchdogs warn of impersonation scams amid MiCA licensing shakeout",
-      "link": "https://cointelegraph.com/news/eu-watchdogs-mica-crypto-impersonation-scams?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785996643,
-      "detected": 1785996723135,
-      "src": "CoinDesk",
-      "title": "标准普尔 500 指数本月增加了加密货币的 2 万亿美元市值。",
-      "orig": "S&P 500 has added crypto's $2 trillion market cap this month. Bitcoin is not impressed. Here's why",
-      "link": "https://www.coindesk.com/markets/2026/08/06/s-and-p-500-has-added-crypto-s-usd2-trillion-market-cap-this-month-bitcoin-is-not-impressed-here-s-why"
-    },
-    {
-      "ts": 1785993580,
-      "detected": 1785996181886,
-      "src": "BBC Business",
-      "title": "酿酒师生意兴隆，但蔬菜农场在干旱中枯萎",
-      "orig": "Winemakers prosper but veg farms wilt in the drought",
-      "link": "https://www.bbc.co.uk/news/articles/c141vjlyjgko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785995044,
-      "detected": 1785995641578,
-      "src": "CoinTelegraph",
-      "title": "美联储库克表示，如果通货紧缩停止，她将支持加息",
-      "orig": "Fed’s Cook says she’d support rate hike if disinflation stalls",
-      "link": "https://cointelegraph.com/markets/feds-cook-warns-persistent-inflation-could-prompt-rate-hike?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785992884,
-      "detected": 1785993480900,
-      "src": "CoinTelegraph",
-      "title": "创始人宣布“死亡”后 ElizaOS 代币下跌 19% 创历史新低",
-      "orig": "ElizaOS token sinks 19% to record low after founder declares it ‘dead’",
-      "link": "https://cointelegraph.com/markets/elizaos-token-record-low-founder-declares-dead?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785992454,
-      "detected": 1785992760276,
-      "src": "BBC Business",
-      "title": "从 SpaceX 获利：“一有机会，我就会多卖一点”",
-      "orig": "Cashing in on SpaceX: 'Every chance I get, I'll sell a little more'",
-      "link": "https://www.bbc.co.uk/news/articles/cm2g0j3y339o?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
