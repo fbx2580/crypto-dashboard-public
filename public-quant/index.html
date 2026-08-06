@@ -31,6 +31,12 @@
 /* 右列 */
 .right{display:flex;flex-direction:column;gap:8px}
 .r2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+/* 市场快照 */
+.mk-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.mk-item{text-align:center;padding:4px;border-radius:4px;background:#1a2235;font-size:10px}
+.mk-item .val{font-size:15px;font-weight:bold}
+.mk-item .lbl{font-size:8px;color:var(--muted)}
+.mk-up{color:var(--green)} .mk-dn{color:var(--red)}
 /* ★ 响应式：手机/平板 ★ */
 @media screen and (max-width:768px){
   body{padding:6px;font-size:12px}
@@ -69,6 +75,7 @@
 
   <!-- 右列 -->
   <div class="right">
+    <div class="card"><h3>📊 市场快照</h3><div id="mkt">加载...</div></div>
     <div class="card"><h3>数据新鲜度</h3><div id="fresh">加载...</div></div>
     <div class="card"><h3>数据质量</h3><div class="qgrid" id="quality">加载...</div></div>
     <div class="card"><h3>数据源健康</h3><div id="health">加载...</div></div>
@@ -97,6 +104,24 @@ async function tick(){
       const ok=p.status==='alive';
       return `<div class="proc"><div class="s ${ok?'ok':'bad'}"></div><div class="info"><div class="name">${p.name}</div><div class="meta">${ok?'PID:'+p.pid+' ↑'+p.uptime:'❌ 挂了'}</div></div></div>`;
     }).join('');
+
+    // ── 市场快照 ──
+    const mkt=mon.marketSnapshot;
+    if(mkt){
+      const fmtPrice=v=>v>=1000?'$'+(v/1000).toFixed(1)+'k':'$'+v.toFixed(0);
+      const chgCls=v=>v>=0?'mk-up':'mk-dn';
+      document.getElementById('mkt').innerHTML=`
+        <div class="mk-grid">
+          <div class="mk-item"><div class="val">${fmtPrice(mkt.btc?.price||0)}</div><div class="lbl">BTC <span class="${chgCls(mkt.btc?.change24h||0)}">${(mkt.btc?.change24h||0)>=0?'+':''}${(mkt.btc?.change24h||0).toFixed(1)}%</span></div></div>
+          <div class="mk-item"><div class="val">$${mkt.eth?.price?.toFixed(0)||'?'}</div><div class="lbl">ETH <span class="${chgCls(mkt.eth?.change24h||0)}">${(mkt.eth?.change24h||0)>=0?'+':''}${(mkt.eth?.change24h||0).toFixed(1)}%</span></div></div>
+          <div class="mk-item"><div class="val">${mkt.btcDominance?.toFixed(1)||'?'}%</div><div class="lbl">BTC.D</div></div>
+          <div class="mk-item"><div class="val">$${mkt.totalMarketCap!=null?(mkt.totalMarketCap/1e12).toFixed(2)+'T':'?'}</div><div class="lbl">总市值</div></div>
+        </div>
+        <div style="text-align:center;margin-top:4px;font-size:9px;color:var(--muted)">🕐 ${new Date(mkt.updated).toLocaleString('zh-CN',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})}</div>
+      `;
+    } else {
+      document.getElementById('mkt').innerHTML='<div style="color:var(--red);font-size:10px">⚠️ 无数据</div>';
+    }
 
     // ── 新鲜度 ──
     document.getElementById('fresh').innerHTML=(mon.freshness||[]).map(f=>{

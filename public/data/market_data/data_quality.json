@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-08-05T03:55:01.205Z",
-  "overall_score": 89,
+  "timestamp": "2026-08-06T07:55:01.810Z",
+  "overall_score": 96,
   "status": "healthy",
   "checks": {
     "jin10": {
@@ -14,7 +14,7 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 9,
+      "delay": 10,
       "diagnosis": null
     },
     "whale": {
@@ -25,25 +25,19 @@
       "diagnosis": null
     },
     "eth": {
-      "status": "warn",
-      "score": 70,
-      "errors": [
-        "延迟138782s但诊断通过: Alchemy正常，区块25686172"
-      ],
-      "delay": 138782,
-      "diagnosis": {
-        "ok": true,
-        "detail": "Alchemy正常，区块25686172",
-        "fix": ""
-      }
+      "status": "ok",
+      "score": 100,
+      "errors": [],
+      "delay": 1313,
+      "diagnosis": null
     },
     "alerts": {
       "status": "warn",
       "score": 70,
       "errors": [
-        "延迟219348s但诊断通过: Binance API正常"
+        "延迟320149s但诊断通过: Binance API正常"
       ],
-      "delay": 219348,
+      "delay": 320149,
       "diagnosis": {
         "ok": true,
         "detail": "Binance API正常",
@@ -51,37 +45,29 @@
       }
     },
     "market_snapshot": {
-      "status": "warn",
-      "score": 70,
-      "errors": [
-        "延迟528894s但诊断通过: Binance正常"
-      ],
-      "delay": 528894,
-      "diagnosis": {
-        "ok": true,
-        "detail": "Binance正常",
-        "fix": ""
-      }
+      "status": "ok",
+      "score": 100,
+      "errors": [],
+      "delay": 2459,
+      "diagnosis": null
     },
     "data_quality": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 299,
+      "delay": 300,
       "diagnosis": null
     },
     "alerts_log": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 299,
+      "delay": 300,
       "diagnosis": null
     }
   },
   "dataErrors": [],
   "errors": [
-    "延迟138782s但诊断通过: Alchemy正常，区块25686172",
-    "延迟219348s但诊断通过: Binance API正常",
-    "延迟528894s但诊断通过: Binance正常"
+    "延迟320149s但诊断通过: Binance API正常"
   ]
 }

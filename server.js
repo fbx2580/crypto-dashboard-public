@@ -193,6 +193,15 @@ app.get('/api/whale/smart-money', (req, res) => {
   res.json({ updated: Date.now(), whales: [] });
 });
 
+// ═══ 存储板块股本（十亿股）═══
+app.get('/api/storage/shares', (req, res) => {
+  res.json({
+    NVDAUSDT: 24.22, AMDUSDT: 1.631, INTCUSDT: 5.045,
+    MUUSDT: 1.130, WDCUSDT: 0.345, SNDKUSDT: 0.148,
+    SKHYNIXUSDT: 1.50, SKHYUSDT: 0.75, DRAMUSDT: 0.10
+  });
+});
+
 // 行情异动告警 API
 app.get('/api/alerts/price', (req, res) => {
   const file = path.join(DATA_DIR, 'alerts', 'price_alerts.json');

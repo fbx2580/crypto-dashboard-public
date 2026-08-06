@@ -147,7 +147,7 @@ async function fetchNews() {
   try { require('./data-store').save('news', items, 's'); } catch(e) {}
   // P2: 按日归档 — 用本次新抓的 items
   try { const { archive } = require('./archive-manager'); archive('news', items, 's'); } catch(e) {}
-  try { const ins = db.prepare('INSERT OR IGNORE INTO news_archive (source, title, content, url, ts) VALUES (?, ?, ?, ?, ?)'); const tx = db.transaction((list) => { for (const i of list) { try { ins.run('rss', i.s||'', i.c||i.desc||'', i.u||i.link||'', Math.floor(i.t||Date.now()/1000)); }catch(e){} } }); tx(items); } catch(e2) {}
+  try { const ins = db.prepare('INSERT OR IGNORE INTO news_archive (source, title, content, url, ts) VALUES (?, ?, ?, ?, ?)'); const tx = db.transaction((list) => { for (const i of list) { try { ins.run(i.src||i.source||'rss', i.s||'', i.c||i.desc||'', i.u||i.link||'', Math.floor(i.t||Date.now()/1000)); }catch(e){} } }); tx(items); } catch(e2) {}
 
   console.log(`[rss] ✅ ${items.length} articles from ${finalCount}/${SOURCES.length} sources`);
   return merged;

@@ -81,6 +81,40 @@ function checkDaemons() {
       }
     } catch(e) {}
   } catch(e) { log('❌ jin10检查失败'); }
+
+  // ── eth-monitor ──
+  try {
+    const em = execSync('pgrep -cf eth-monitor', { encoding: 'utf8', timeout: 3000 }).trim();
+    const emCount = parseInt(em) || 0;
+    if (emCount < 1) {
+      log('⚠️ eth-monitor 挂了，拉起...');
+      execSync(`cd ${D} && nohup node eth-monitor.js > /tmp/eth-monitor.log 2>&1 &`, { timeout: 5000 });
+      log('✅ eth-monitor 已拉');
+      return;
+    }
+    try {
+      const emLog = fs.statSync('/tmp/eth-monitor.log');
+      const age = (Date.now() - emLog.mtimeMs) / 1000;
+      if (age > 120) {
+        log(`⚠️ eth-monitor PID存在但 ${Math.round(age)}s无心跳 (僵尸)`);
+        execSync('pkill -9 -f eth-monitor 2>/dev/null', { timeout: 3000 });
+        execSync(`cd ${D} && nohup node eth-monitor.js > /tmp/eth-monitor.log 2>&1 &`, { timeout: 5000 });
+        log('✅ eth-monitor 已杀旧启新');
+      }
+    } catch(e) {}
+  } catch(e) { log('❌ eth-monitor检查失败'); }
+
+  // ── quant-server ──
+  try {
+    const qs = execSync('pgrep -cf quant-server', { encoding: 'utf8', timeout: 3000 }).trim();
+    const qsCount = parseInt(qs) || 0;
+    if (qsCount < 1) {
+      log('⚠️ quant-server 挂了，拉起...');
+      execSync(`cd ${D} && nohup node quant-server.js > /tmp/quant-server.log 2>&1 &`, { timeout: 5000 });
+      log('✅ quant-server 已拉');
+      return;
+    }
+  } catch(e) { log('❌ quant-server检查失败'); }
 }
 
 log('🛡 supervisor v2 启动 (PID+心跳)');

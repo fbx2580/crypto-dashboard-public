@@ -25,7 +25,6 @@ app.get('/api/status', (req, res) => {
     { name: 'Binance FAPI', ok: fs.existsSync(path.join(CACHE_DIR, 'BTC.json')) },
     { name: 'K线缓存', ok: fs.existsSync(CACHE_DIR) && fs.readdirSync(CACHE_DIR).filter(f=>f.endsWith('.json')).length > 200 },
     { name: '新闻 RSS', ok: fs.existsSync(path.join(DATA_DIR, 'news', 'latest.json')) },
-    { name: '异动监控', ok: fs.existsSync(path.join(DATA_DIR, 'alerts', 'price_alerts.json')) },
     { name: '市场快照', ok: fs.existsSync(path.join(MKT_DIR, 'latest.json')) },
     { name: '金十快讯', ok: fs.existsSync(path.join(DATA_DIR, 'news', 'jin10.json')) },
   ];
@@ -43,7 +42,6 @@ app.get('/api/datacenter', (req, res) => {
     { name: '新闻 RSS', ok: fs.existsSync(path.join(DATA_DIR, 'news', 'latest.json')), lastSync: '1秒(实时)', volume: 'RSS聚合' },
     { name: '金十快讯', ok: fs.existsSync(path.join(DATA_DIR, 'news', 'jin10.json')), lastSync: '1秒(实时)', volume: '497条' },
     { name: '鲸鱼监控', ok: fs.existsSync(path.join(DATA_DIR, 'whale', 'transfers.json')), lastSync: '1秒(实时)', volume: 'ETH链' },
-    { name: '异动监控', ok: fs.existsSync(path.join(DATA_DIR, 'alerts', 'price_alerts.json')), lastSync: '1秒(实时)', volume: '全合约' },
     { name: 'ETH追踪', ok: fs.existsSync(path.join(DATA_DIR, 'analysis', 'eth_whales.json')), lastSync: '1秒(实时)', volume: 'ETH大户' },
   ];
 
@@ -137,7 +135,6 @@ app.get('/api/monitor', (req, res) => {
   freshness.push(checkFresh('RSS新闻', 'news/latest.json', 30));
   freshness.push(checkFresh('鲸鱼转账', 'whale/transfers.json', 60));
   freshness.push(checkFresh('ETH大户', 'analysis/eth_whales.json', 30));
-  freshness.push(checkFresh('异动数据', 'alerts/price_alerts.json', 60));
   freshness.push(checkFresh('市场快照', 'market_data/latest.json', 3600));
   freshness.push(checkFresh('数据质量', 'market_data/data_quality.json', 600));
   freshness.push(checkFresh('告警日志', 'market_data/alerts_log.json', 600));
@@ -152,7 +149,7 @@ app.get('/api/monitor', (req, res) => {
   try { const d=JSON.parse(fs.readFileSync(path.join(DATA_DIR,'news','latest.json'),'utf8')); volumes.rss=(d.items||[]).length; } catch(e) {}
   try { const d=JSON.parse(fs.readFileSync(path.join(DATA_DIR,'whale','transfers.json'),'utf8')); volumes.whale=(d.transfers||[]).length; } catch(e) {}
   try { const d=JSON.parse(fs.readFileSync(path.join(DATA_DIR,'analysis','eth_whales.json'),'utf8')); volumes.eth=(d.whales||[]).length; } catch(e) {}
-  try { const d=JSON.parse(fs.readFileSync(path.join(DATA_DIR,'alerts','price_alerts.json'),'utf8')); volumes.alerts=(d.alerts||[]).length; } catch(e) {}
+
   // P2: 归档存量
   const archVolumes = {};
   for (const [type, info] of Object.entries(archiveStats)) {
@@ -162,5 +159,25 @@ app.get('/api/monitor', (req, res) => {
   let dbStats = {};
   try { dbStats = require('./data-store').dbStats(); } catch(e) {}
 
-  res.json({ procs, freshness, archive: archiveStats, volumes, archVolumes, dbStats, timestamp: Date.now() });
+  // 5. 市场快照
+  let marketSnapshot = null;
+  try {
+    const mktFile = path.join(DATA_DIR, 'market_data', 'latest.json');
+    if (fs.existsSync(mktFile)) {
+      const raw = JSON.parse(fs.readFileSync(mktFile, 'utf8'));
+      const st = fs.statSync(mktFile);
+      marketSnapshot = {
+        date: raw.date || raw.today,
+        updated: st.mtime.toISOString(),
+        btc: raw.btc ? { price: raw.btc.price, change24h: raw.btc.change24h, ma200: raw.btc.ma200 } : null,
+        eth: raw.eth ? { price: raw.eth.price, change24h: raw.eth.change24h, ethbtc: raw.eth.ethBtc } : null,
+        btcDominance: raw.coingecko?.btcDominance,
+        totalMarketCap: raw.coingecko?.totalMarketCap,
+        fundingAvg: raw.funding?.avgFunding,
+        traditional: raw.traditional ? Object.keys(raw.traditional).reduce((o,k) => { o[k]={price:raw.traditional[k].price,changePct:raw.traditional[k].changePct}; return o; },{}) : null
+      };
+    }
+  } catch(e) {}
+
+  res.json({ procs, freshness, archive: archiveStats, volumes, archVolumes, dbStats, marketSnapshot, timestamp: Date.now() });
 });

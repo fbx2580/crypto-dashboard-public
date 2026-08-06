@@ -61,6 +61,7 @@ async function fetch() {
     // 写SQLite
     if (added > 0) {
       try {
+        const crypto = require('crypto');
         const db = require('better-sqlite3')(path.join(__dirname, 'data', 'dashboard.db'));
         const ins = db.prepare('INSERT OR IGNORE INTO news_archive (source, title, content, url, ts) VALUES (?, ?, ?, ?, ?)');
         const tx = db.transaction((list) => {
@@ -68,7 +69,8 @@ async function fetch() {
             const title = (i.s || '').slice(0, 200);
             if (!title) continue;
             const ts = Math.floor(Date.now() / 1000);
-            ins.run('jin10', title, '', '', ts);
+            const hashUrl = 'jin10:' + crypto.createHash('sha256').update(title).digest('hex').slice(0,16);
+            ins.run('金十数据', title, '', hashUrl, ts);
           }
         });
         const newItems = items.filter(item => {

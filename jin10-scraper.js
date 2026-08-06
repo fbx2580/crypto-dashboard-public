@@ -1,4 +1,5 @@
 const { chromium } = require('playwright');
+const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
@@ -81,7 +82,7 @@ async function scrapeJin10() {
       const merged = { items: existing.slice(0, 500), updated: Date.now(), source: 'jin10' };
       fs.writeFileSync(CACHE_FILE, JSON.stringify(merged, null, 2));
       fs.writeFileSync(FALLBACK_FILE, JSON.stringify(merged, null, 2));
-  try { const ins = db.prepare('INSERT OR IGNORE INTO news_archive (source, title, content, url, ts) VALUES (?, ?, ?, ?, ?)'); const tx = db.transaction((list) => { for (const i of list) { try { ins.run('jin10', i.s||'', i.body||'', '', Math.floor((i._ts||Date.now())/1000)); }catch(e){} } }); tx(items); } catch(e2) {}
+  try { const ins = db.prepare('INSERT OR IGNORE INTO news_archive (source, title, content, url, ts) VALUES (?, ?, ?, ?, ?)'); const tx = db.transaction((list) => { for (const i of list) { const hashUrl = 'jin10:' + crypto.createHash('sha256').update((i.s||'') + (i.body||'').slice(0,200)).digest('hex').slice(0,16); try { ins.run('金十数据', i.s||'', i.body||'', hashUrl, Math.floor((i._ts||Date.now())/1000)); }catch(e){} } }); tx(items); } catch(e2) {}
       console.log(`[jin10] ✅ ${items.length} new, ${existing.length} total`);
     }
 

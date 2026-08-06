@@ -188,14 +188,13 @@ function dbStats() {
   // 按来源细分 news_archive
   try {
     const srcs = db.prepare('SELECT source, COUNT(*) as cnt FROM news_archive GROUP BY source').all();
-    const jin10 = srcs.find(s => s.source === 'jin10');
-    const rss = srcs.filter(s => s.source !== 'jin10' && s.source !== 'rss');
-    const rssOld = srcs.find(s => s.source === 'rss');
+    const jin10 = srcs.find(s => s.source === '金十数据');
+    const rss = srcs.filter(s => s.source !== '金十数据');
     stats._jin10_db = jin10 ? jin10.cnt : 0;
-    stats._rss_db = (rssOld ? rssOld.cnt : 0) + rss.reduce((s, x) => s + x.cnt, 0);
+    stats._rss_db = rss.reduce((s, x) => s + x.cnt, 0);
     // 今日新增（北京时间）
-    stats._jin10_today = db.prepare('SELECT COUNT(*) as cnt FROM news_archive WHERE source=? AND ts >= ?').get('jin10', todayStart)?.cnt || 0;
-    stats._rss_today = db.prepare('SELECT COUNT(*) as cnt FROM news_archive WHERE source != ? AND source != ? AND ts >= ?').get('jin10', 'rss', todayStart)?.cnt || 0;
+    stats._jin10_today = db.prepare('SELECT COUNT(*) as cnt FROM news_archive WHERE source=? AND ts >= ?').get('金十数据', todayStart)?.cnt || 0;
+    stats._rss_today = db.prepare('SELECT COUNT(*) as cnt FROM news_archive WHERE source != ? AND ts >= ?').get('金十数据', todayStart)?.cnt || 0;
   } catch(e) {}
   // 鲸鱼今日
   try { stats._whale_today = db.prepare('SELECT COUNT(*) as cnt FROM whale_transfers WHERE ts >= ?').get(todayStart)?.cnt || 0; } catch(e) {}

@@ -390,23 +390,27 @@ async function tickChart() {
 // ─── 美股存储类排行（从币安拉）───
 async function refreshAnomalies() {
   try {
-    const [resp, analysisResp, abResp] = await Promise.all([
+    const [resp, analysisResp, abResp, sharesResp] = await Promise.all([
       fetch('/api/binance/signals'),
       fetch('/api/market/coin-analysis'),
-      fetch('/api/alpha-beta')
+      fetch('/api/alpha-beta'),
+      fetch('/api/storage/shares').catch(() => ({ json: () => ({}) }))
     ]);
     if (!resp.ok) return;
     const data = await resp.json();
     const analysis = analysisResp.ok ? await analysisResp.json() : { coins: [] };
     const abData = abResp.ok ? await abResp.json() : { results: [] };
+    const shares = sharesResp.ok ? await sharesResp.json() : {};
     const analysisMap = {};
     const abMap = {};
     for (const c of (analysis.coins || [])) analysisMap[c.symbol] = c;
     for (const r of (abData.results || [])) abMap[r.symbol] = r;
     
     const all = data.altcoins || [];
+    const fmtMktCap = v => v >= 1e12 ? '$' + (v/1e12).toFixed(1) + 'T' : v >= 1e9 ? '$' + (v/1e9).toFixed(1) + 'B' : '$' + (v/1e6).toFixed(0) + 'M';
     const stocks = (all || []).filter(t => STORAGE_STOCKS.includes(t.symbol))
-      .sort((a, b) => b.change24h - a.change24h);
+      .map(t => { t._mktCap = (parseFloat(t.price) || 0) * (shares[t.symbol] || 0) * 1e9; return t; })
+      .sort((a, b) => b._mktCap - a._mktCap);
     const scroll = document.getElementById('anomaliesScroll');
     if (!stocks?.length) {
       if (!scroll.querySelector('.ticker-item')) scroll.innerHTML = '<span class="ticker-loading">等待数据...</span>';
@@ -421,9 +425,11 @@ async function refreshAnomalies() {
         const sign = chg >= 0 ? '+' : '';
         const a = analysisMap[t.symbol.replace('USDT','')] || {};
         const badge = a.level ? ' <span style="font-size:9px;color:var(--' + (a.cl||'text-dim') + ');">' + (a.color||'') + ' ' + (a.level||'') + '</span>' : '';
+        const mc = fmtMktCap(t._mktCap);
         return '<div class="ticker-item" data-sym="' + t.symbol + '">' +
           '<span class="ticker-symbol">' + t.symbol.replace('USDT','') + badge + '</span>' +
           '<span class="ticker-change ' + cls + '">' + sign + chg.toFixed(2) + '%</span>' +
+          '<span class="ticker-mktcap" style="color:var(--cyan);font-size:9px">' + mc + '</span>' +
           '<span class="ticker-price" style="color:var(--text-dim);font-size:10px">$' + fmt.price(t.price) + '</span></div>';
       }).join('');
       return;
@@ -441,9 +447,12 @@ async function refreshAnomalies() {
       const sign = chg >= 0 ? '+' : '';
       const a = analysisMap[sym.replace('USDT','')] || {};
       const badge = a.level ? ' <span style="font-size:9px;color:var(--' + (a.cl||'text-dim') + ');">' + (a.color||'') + ' ' + (a.level||'') + '</span>' : '';
+      const mc = fmtMktCap(t._mktCap);
       item.querySelector('.ticker-symbol').innerHTML = sym.replace('USDT','') + badge;
       item.querySelector('.ticker-change').textContent = sign + chg.toFixed(2) + '%';
       item.querySelector('.ticker-change').className = 'ticker-change ' + cls;
+      const mcEl = item.querySelector('.ticker-mktcap');
+      if (mcEl) mcEl.textContent = mc; else { const el = item.querySelector('.ticker-price'); if (el) { const span = document.createElement('span'); span.className = 'ticker-mktcap'; span.style.cssText = 'color:var(--cyan);font-size:9px'; span.textContent = mc; el.before(span); } }
       item.querySelector('.ticker-price').textContent = '$' + fmt.price(t.price);
     }
   } catch(e) {}
