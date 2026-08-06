@@ -1,12 +1,27 @@
 #!/usr/bin/env node
 /**
- * P0: 进程守护 v2 — 不可删除
- * PID检查 + 心跳验证，双重保障
+ * P0: 进程守护 v3 — 异步+心跳，不可删除
+ * 每个 daemon 独立监控，用 fs.stat 检查日志心跳，避免 execSync 阻塞
  */
-const { execSync } = require('child_process');
 const fs = require('fs');
+const { spawn } = require('child_process');
+
 const D = '/root/.openclaw/workspace/crypto-dashboard';
 const LOG = '/tmp/supervisor.log';
+const PID_FILE = '/tmp/supervisor.pid';
+const CHECK_MS = 30000;
+const HEARTBEAT_MAX = 120; // 秒，超时视为僵尸
+
+// ─── 单实例锁 ───
+try {
+  const oldPid = fs.existsSync(PID_FILE) ? parseInt(fs.readFileSync(PID_FILE, 'utf8')) : 0;
+  if (oldPid) {
+    try { process.kill(oldPid, 0); console.log('[supervisor] 已有实例 PID=' + oldPid + '，退出'); process.exit(0); }
+    catch(e) { /* 旧进程已死，继续 */ }
+  }
+} catch(e) {}
+fs.writeFileSync(PID_FILE, String(process.pid));
+process.on('exit', () => { try { fs.unlinkSync(PID_FILE); } catch(e) {} });
 
 function log(msg) {
   const ts = new Date().toISOString().slice(0,19);
@@ -14,109 +29,48 @@ function log(msg) {
   fs.appendFileSync(LOG, msg + '\n');
 }
 
-function checkDaemons() {
-  // ── rt-daemon ──
+// ─── 启动 daemon ───
+function startDaemon(name, script, logFile) {
   try {
-    const rt = execSync('pgrep -cf rt-daemon', { encoding: 'utf8', timeout: 3000 }).trim();
-    const rtCount = parseInt(rt) || 0;
-    if (rtCount < 1) {
-      log('⚠️ rt-daemon 挂了，拉起...');
-      execSync(`cd ${D} && nohup node rt-daemon.js > /tmp/rt.log 2>&1 &`, { timeout: 5000 });
-      log('✅ rt-daemon 已拉');
-      return;
-    }
-    // 心跳检查：进程在但不输出 = 僵尸
-    try {
-      const rtLog = fs.statSync('/tmp/rt.log');
-      const age = (Date.now() - rtLog.mtimeMs) / 1000;
-      if (age > 120) {
-        log(`⚠️ rt-daemon PID存在但 ${Math.round(age)}s无心跳 (僵尸)`);
-        execSync('pkill -9 -f rt-daemon 2>/dev/null', { timeout: 3000 });
-        execSync(`cd ${D} && nohup node rt-daemon.js > /tmp/rt.log 2>&1 &`, { timeout: 5000 });
-        log('✅ rt-daemon 已杀旧启新');
-      }
-    } catch(e) {}
-  } catch(e) { log('❌ rt检查失败'); }
-
-  // ── jin10-http ──
-  try {
-    const jh = execSync('pgrep -cf jin10-http', { encoding: 'utf8', timeout: 3000 }).trim();
-    const jhCount = parseInt(jh) || 0;
-    if (jhCount < 1) {
-      log('⚠️ jin10-http 挂了，拉起...');
-      execSync(`cd ${D} && nohup node jin10-http.js > /tmp/jin10-http.log 2>&1 &`, { timeout: 5000 });
-      log('✅ jin10-http 已拉');
-      return;
-    }
-    try {
-      const jhLog = fs.statSync('/tmp/jin10-http.log');
-      const age = (Date.now() - jhLog.mtimeMs) / 1000;
-      if (age > 120) {
-        log(`⚠️ jin10-http PID存在但 ${Math.round(age)}s无心跳 (僵尸)`);
-        execSync('pkill -9 -f jin10-http 2>/dev/null', { timeout: 3000 });
-        execSync(`cd ${D} && nohup node jin10-http.js > /tmp/jin10-http.log 2>&1 &`, { timeout: 5000 });
-        log('✅ jin10-http 已杀旧启新');
-      }
-    } catch(e) {}
-  } catch(e) { log('❌ jin10-http检查失败'); }
-
-  // ── jin10-scraper ──
-  try {
-    const j10 = execSync('pgrep -cf jin10-scraper', { encoding: 'utf8', timeout: 3000 }).trim();
-    const j10Count = parseInt(j10) || 0;
-    if (j10Count < 1) {
-      log('⚠️ jin10-scraper 挂了，拉起...');
-      execSync(`cd ${D} && nohup node jin10-scraper.js > /tmp/jin10.log 2>&1 &`, { timeout: 5000 });
-      log('✅ jin10-scraper 已拉');
-      return;
-    }
-    try {
-      const j10Log = fs.statSync('/tmp/jin10.log');
-      const age = (Date.now() - j10Log.mtimeMs) / 1000;
-      if (age > 120) {
-        log(`⚠️ jin10 PID存在但 ${Math.round(age)}s无心跳 (僵尸)`);
-        execSync('pkill -9 -f jin10-scraper 2>/dev/null', { timeout: 3000 });
-        execSync(`cd ${D} && nohup node jin10-scraper.js > /tmp/jin10.log 2>&1 &`, { timeout: 5000 });
-        log('✅ jin10 已杀旧启新');
-      }
-    } catch(e) {}
-  } catch(e) { log('❌ jin10检查失败'); }
-
-  // ── eth-monitor ──
-  try {
-    const em = execSync('pgrep -cf eth-monitor', { encoding: 'utf8', timeout: 3000 }).trim();
-    const emCount = parseInt(em) || 0;
-    if (emCount < 1) {
-      log('⚠️ eth-monitor 挂了，拉起...');
-      execSync(`cd ${D} && nohup node eth-monitor.js > /tmp/eth-monitor.log 2>&1 &`, { timeout: 5000 });
-      log('✅ eth-monitor 已拉');
-      return;
-    }
-    try {
-      const emLog = fs.statSync('/tmp/eth-monitor.log');
-      const age = (Date.now() - emLog.mtimeMs) / 1000;
-      if (age > 120) {
-        log(`⚠️ eth-monitor PID存在但 ${Math.round(age)}s无心跳 (僵尸)`);
-        execSync('pkill -9 -f eth-monitor 2>/dev/null', { timeout: 3000 });
-        execSync(`cd ${D} && nohup node eth-monitor.js > /tmp/eth-monitor.log 2>&1 &`, { timeout: 5000 });
-        log('✅ eth-monitor 已杀旧启新');
-      }
-    } catch(e) {}
-  } catch(e) { log('❌ eth-monitor检查失败'); }
-
-  // ── quant-server ──
-  try {
-    const qs = execSync('pgrep -cf quant-server', { encoding: 'utf8', timeout: 3000 }).trim();
-    const qsCount = parseInt(qs) || 0;
-    if (qsCount < 1) {
-      log('⚠️ quant-server 挂了，拉起...');
-      execSync(`cd ${D} && nohup node quant-server.js > /tmp/quant-server.log 2>&1 &`, { timeout: 5000 });
-      log('✅ quant-server 已拉');
-      return;
-    }
-  } catch(e) { log('❌ quant-server检查失败'); }
+    const proc = spawn('node', [script], { cwd: D, stdio: ['ignore', fs.openSync(logFile, 'a'), fs.openSync(logFile, 'a')], detached: true });
+    proc.unref();
+    log(`✅ ${name} 已启动 PID=${proc.pid}`);
+  } catch(e) {
+    log(`❌ ${name} 启动失败: ${e.message}`);
+  }
 }
 
-log('🛡 supervisor v2 启动 (PID+心跳)');
-checkDaemons();
-setInterval(checkDaemons, 30000);
+// ─── 检查 daemon（心跳）───
+function checkDaemon(name, logFile) {
+  if (!fs.existsSync(logFile)) { log(`⚠️ ${name} 日志不存在，拉起...`); startDaemon(name, name + '.js', logFile); return; }
+  try {
+    const st = fs.statSync(logFile);
+    const age = (Date.now() - st.mtimeMs) / 1000;
+    if (age > HEARTBEAT_MAX) {
+      log(`⚠️ ${name} ${Math.round(age)}s无心跳 (僵尸)，杀旧启新`);
+      // 杀旧进程
+      const { execSync } = require('child_process');
+      try { execSync(`pkill -9 -f 'node.*${name}' 2>/dev/null`, { timeout: 3000 }); } catch(e) {}
+      setTimeout(() => startDaemon(name, name + '.js', logFile), 2000);
+    }
+  } catch(e) {}
+}
+
+// ─── daemon 列表 ───
+const DAEMONS = [
+  { name: 'quant-server',     log: '/tmp/quant-server.log' },
+  { name: 'eth-monitor',      log: '/tmp/eth-monitor.log' },
+  { name: 'jin10-http',       log: '/tmp/jin10-http.log' },
+  { name: 'jin10-scraper',    log: '/tmp/jin10.log' },
+  { name: 'binance-fetcher',  log: '/tmp/binance-fetcher.log' },
+];
+
+log('🛡 supervisor v3 启动 (异步+心跳) PID=' + process.pid);
+
+// 启动时检查一遍
+for (const d of DAEMONS) checkDaemon(d.name, d.log);
+
+// 每30秒检查
+setInterval(() => {
+  for (const d of DAEMONS) checkDaemon(d.name, d.log);
+}, CHECK_MS);

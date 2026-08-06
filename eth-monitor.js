@@ -7,12 +7,12 @@ const FILE = path.join(__dirname, 'public', 'data', 'analysis', 'eth_whales.json
 const P = {'0x7a250d5630b4cf539739df2c5dacb4c659f2488d':'🔄Uniswap','0xae7ab96520de3a18e5e111b589fa27aff3ab053b':'🥩Lido','0xdac17f958d2ee523a2206206994597c13d831ec7':'USDT','0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48':'USDC'};
 
 // ★ 令牌桶限速：Alchemy免费配额 ~10次/秒
-let _tokens = 10, _lastRefill = Date.now();
+let _tokens = 5, _lastRefill = Date.now();
 function rateLimit() {
   const now = Date.now();
-  _tokens = Math.min(10, _tokens + (now - _lastRefill) * 10 / 1000);
+  _tokens = Math.min(5, _tokens + (now - _lastRefill) * 3 / 1000);
   _lastRefill = now;
-  if (_tokens < 1) return new Promise(r => setTimeout(r, Math.ceil((1 - _tokens) * 100)));
+  if (_tokens < 1) return new Promise(r => setTimeout(r, Math.ceil((1 - _tokens) * 400)));
   _tokens -= 1;
   return Promise.resolve();
 }

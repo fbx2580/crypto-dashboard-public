@@ -613,10 +613,10 @@ let _newsVersion = 0;
 function dirLabel(t) {
   const fEx = t.exFrom || '';
   const tEx = t.exTo || '';
-  if (fEx && tEx) return fEx + ' → ' + tEx;
-  if (fEx) return fEx + ' → 钱包';
-  if (tEx) return '钱包 → ' + tEx;
-  return '钱包 → 钱包';
+  if (fEx && !tEx) return { icon: '🟢', text: '提币离开' + fEx, cls: 'whale-bull' };
+  if (!fEx && tEx) return { icon: '🔴', text: '转入' + tEx, cls: 'whale-bear' };
+  if (fEx && tEx) return { icon: '🔄', text: fEx + '→' + tEx, cls: '' };
+  return { icon: '⚪', text: '钱包互转', cls: '' };
 }
 function renderWhaleItem(t, isNew) {
   const newClass = isNew ? ' class="whale-new"' : '';
@@ -635,11 +635,12 @@ function renderWhaleItem(t, isNew) {
     '<div style="display:flex;justify-content:space-between;">' +
       '<span style="color:' + col + ';font-weight:700;">' + t.c + '</span>' +
       '<span style="font-weight:700;">' + vs + '</span>' +
+      '<span style="font-size:10px;" class="' + dir.cls + '">' + dir.icon + ' ' + dir.text + '</span>' +
       '<span style="color:var(--text-dim);font-size:10px;">' + tm + '</span>' +
       '<a href="' + explorer + t.hash + '" target="_blank" style="color:var(--accent);font-size:10px;text-decoration:none;">🔗</a>' +
     '</div>' +
     '<div style="color:var(--text-dim);font-size:10px;margin-top:2px;">' +
-      fEx + fAddr + ' → ' + tEx + tAddr + ' <span style="color:var(--text-dim);font-size:9px;">' + dir + '</span>' +
+      fEx + fAddr + ' → ' + tEx + tAddr +
     '</div>' +
   '</div>';
   if (newClass) div.firstChild.className += newClass;

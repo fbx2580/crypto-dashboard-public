@@ -1,6 +1,33 @@
 {
   "items": [
     {
+      "s": "US appellate court mandate affirms Sam Bankman-Fried conviction",
+      "t": "2026-08-06T17:17:34.000Z",
+      "ts": 1786036654,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/us-appellate-court-mandate-sam-bankman-fried?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "美国上诉法院授权维持萨姆·班克曼-弗里德定罪",
+      "_ts": 1786036943468
+    },
+    {
+      "s": "Cathie Wood's Ark Invest Makes SpaceX, Circle Top Holdings After Latest Buying Spree",
+      "t": "2026-08-06T17:20:54.000Z",
+      "ts": 1786036854,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375048/cathie-wood-ark-invest-spacex-circle-top-holdings",
+      "s_cn": "Cathie Wood 的 Ark Invest 继最新一轮收购热潮后，使 SpaceX 和 Circle 成为控股公司",
+      "_ts": 1786036882652
+    },
+    {
+      "s": "US Senate will vote on CLARITY crypto bill ‘without any question’ this week: Tim Scott",
+      "t": "2026-08-06T16:53:45.000Z",
+      "ts": 1786035225,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/us-senate-vote-clarity-act-tim-scott?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Tim Scott 表示，美国参议院本周将“毫无疑问”地对 CLARITY 加密货币法案进行投票",
+      "_ts": 1786035743628
+    },
+    {
       "s": "Bitcoin miners’ AI pivot loses Wall Street’s wow factor",
       "t": "2026-08-06T16:42:33.000Z",
       "ts": 1786034553,
@@ -4447,6 +4474,6 @@
       "_ts": 1785715504325
     }
   ],
-  "updated": 1786035597208,
+  "updated": 1786039044039,
   "sources": 6
 }

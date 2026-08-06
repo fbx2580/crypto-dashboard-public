@@ -1,6 +1,30 @@
 {
-  "updated": 1786034903481,
+  "updated": 1786037063471,
   "alerts": [
+    {
+      "ts": 1786036654,
+      "detected": 1786037063471,
+      "src": "CoinTelegraph",
+      "title": "美国上诉法院授权维持萨姆·班克曼-弗里德定罪",
+      "orig": "US appellate court mandate affirms Sam Bankman-Fried conviction",
+      "link": "https://cointelegraph.com/news/us-appellate-court-mandate-sam-bankman-fried?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786036854,
+      "detected": 1786036882664,
+      "src": "Decrypt",
+      "title": "Cathie Wood 的 Ark Invest 继最新一轮收购热潮后，使 SpaceX 和 Circle 成为控股公司",
+      "orig": "Cathie Wood's Ark Invest Makes SpaceX, Circle Top Holdings After Latest Buying Spree",
+      "link": "https://decrypt.co/375048/cathie-wood-ark-invest-spacex-circle-top-holdings"
+    },
+    {
+      "ts": 1786035225,
+      "detected": 1786035802070,
+      "src": "CoinTelegraph",
+      "title": "Tim Scott 表示，美国参议院本周将“毫无疑问”地对 CLARITY 加密货币法案进行投票",
+      "orig": "US Senate will vote on CLARITY crypto bill ‘without any question’ this week: Tim Scott",
+      "link": "https://cointelegraph.com/news/us-senate-vote-clarity-act-tim-scott?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
     {
       "ts": 1786034553,
       "detected": 1786034903481,
@@ -376,30 +400,6 @@
       "title": "为什么 Sandisk 和 Western Digital 暴跌 10%，这对比特币意味着什么",
       "orig": "Why Sandisk and Western Digital crashed 10% and what it means for bitcoin",
       "link": "https://www.coindesk.com/markets/2026/08/06/why-sandisk-and-western-digital-crashed-10-and-what-it-means-for-bitcoin"
-    },
-    {
-      "ts": 1786015024,
-      "detected": 1786015091388,
-      "src": "CNBC",
-      "title": "Peloton 首次公布年度净利润，但因前景令人失望而股价下跌",
-      "orig": "Peloton posts first ever annual net profit, but shares drop as outlook disappoints",
-      "link": "https://www.cnbc.com/2026/08/06/peloton-pton-q4-2026-earnings.html"
-    },
-    {
-      "ts": 1786012558,
-      "detected": 1786014911257,
-      "src": "U.Today",
-      "title": "仅仅 7 美元的 SHIB 就被烧毁了？",
-      "orig": "Just $7 in SHIB Burned? Shiba Inu Burn Rate Makes Unexpected Reversal",
-      "link": "https://u.today/just-7-in-shib-burned-shiba-inu-burn-rate-makes-unexpected-reversal"
-    },
-    {
-      "ts": 1786014319,
-      "detected": 1786014551170,
-      "src": "CNBC",
-      "title": "Peloton 在“具有里程碑意义”的财政年度首次实现年度净利润",
-      "orig": "Peloton delivers first annual net profit ever in 'landmark' financial year",
-      "link": "https://www.cnbc.com/2026/08/06/peloton-pton-q4-2026-earnings.html"
     }
   ]
 }
