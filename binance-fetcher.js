@@ -282,8 +282,9 @@ if (require.main === module) {
       try {
         // 只拉 ticker/24hr（全量，权重 40）→ 30秒一次 = 80/分钟，远低于 1200 限额
         const tickers = await getAllPerpTickers();
-        if (tickers && tickers.length) {
+        if (tickers && tickers.length > 100) {
           const usdtTickers = tickers.filter(t => t.symbol.endsWith('USDT'));
+          if (usdtTickers.length < 100) { console.log('[binance] ⚠ ticker不足', usdtTickers.length, ', 跳过写入'); setTimeout(fastLoop, 30000); return; }
           const vols = usdtTickers.map(t => t.quoteVolume);
           const avgVol = vols.filter(v => v > 0).reduce((a, b) => a + b, 0) / (vols.filter(v => v > 0).length || 1);
           const store = {

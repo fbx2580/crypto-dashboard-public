@@ -65,25 +65,36 @@ router.get('/anomalies', async (req, res) => {
 // 涨跌排行
 router.get('/signals', async (req, res) => {
   const snapshot = getLatestSnapshot();
-  const fresh = snapshot && (Date.now() - snapshot.timestamp < 60000);
-  if (fresh && snapshot.allTickers) {
+  const fresh = snapshot && (Date.now() - snapshot.timestamp < 120000);
+  // 缓存命中且数据完整
+  if (fresh && snapshot.allTickers && snapshot.allTickers.length > 100) {
     return res.json({
       timestamp: Date.now(), fetchedAt: snapshot.timestamp,
       majors: snapshot.allTickers.filter(t => MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
       altcoins: snapshot.allTickers.filter(t => !MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
     });
   }
+  // 尝试实时拉取
   try {
     const [tickers, perps] = await Promise.all([getAllPerpTickers(), getPerpetualSymbols()]);
     const usdtTickers = tickers.filter(t => perps.includes(t.symbol));
+    if (usdtTickers.length > 100) {
+      return res.json({
+        timestamp: Date.now(), fetchedAt: Date.now(),
+        majors: usdtTickers.filter(t => MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
+        altcoins: usdtTickers.filter(t => !MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
+      });
+    }
+  } catch(e) {}
+  // 兜底：用过期缓存（即使超过120秒也比空的好）
+  if (snapshot && snapshot.allTickers && snapshot.allTickers.length > 100) {
     return res.json({
-      timestamp: Date.now(), fetchedAt: Date.now(),
-      majors: usdtTickers.filter(t => MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
-      altcoins: usdtTickers.filter(t => !MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
+      timestamp: Date.now(), fetchedAt: snapshot.timestamp,
+      majors: snapshot.allTickers.filter(t => MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
+      altcoins: snapshot.allTickers.filter(t => !MAJOR_PAIRS.includes(t.symbol)).sort((a, b) => b.change24h - a.change24h),
     });
-  } catch(e) {
-    return res.json({ timestamp: Date.now(), fetchedAt: null, majors: [], altcoins: [] });
   }
+  return res.json({ timestamp: Date.now(), fetchedAt: null, majors: [], altcoins: [] });
 });
 
 // K线

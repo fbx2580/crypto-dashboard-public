@@ -1,6 +1,286 @@
 {
-  "updated": 1786006627142,
+  "updated": 1786020493871,
   "alerts": [
+    {
+      "ts": 1786020402,
+      "detected": 1786020493870,
+      "src": "CoinDesk",
+      "title": "摩根大通表示，随着竞争加剧，Hyperliquid ETF 资金流入已陷入停滞",
+      "orig": "JPMorgan says Hyperliquid ETF inflows have stalled as competition mounts",
+      "link": "https://www.coindesk.com/markets/2026/08/06/jpmorgan-says-hyperliquid-etf-inflows-have-stalled-as-competition-mounts"
+    },
+    {
+      "ts": 1786020379,
+      "detected": 1786020493870,
+      "src": "Decrypt",
+      "title": "诈骗者冒充欧盟监管机构，利用 MiCA 截止日期的影响进行诈骗",
+      "orig": "Scammers Pose as EU Regulators to Prey on MiCA Deadline Fallout",
+      "link": "https://decrypt.co/375034/scammers-pose-as-eu-regulators-to-prey-on-mica-deadline-fallout"
+    },
+    {
+      "ts": 1786019682,
+      "detected": 1786019773424,
+      "src": "BBC Business",
+      "title": "自行车制造商罗利的所有者申请破产",
+      "orig": "Owner of bike maker Raleigh files for insolvency",
+      "link": "https://www.bbc.co.uk/news/articles/c4gv45w4j8eo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1786019402,
+      "detected": 1786019593577,
+      "src": "CNBC",
+      "title": "巨型游艇 Amadea 以 1.87 亿美元的价格卖给与特朗普有联系的迪拜亿万富翁",
+      "orig": "Megayacht Amadea sold for $187 million to Dubai billionaire with Trump ties",
+      "link": "https://www.cnbc.com/2026/08/06/megayacht-amadea-sale-dubai-billionaire-trump-ties.html"
+    },
+    {
+      "ts": 1786018855,
+      "detected": 1786019593577,
+      "src": "U.Today",
+      "title": "Bitwise 推出不寻常的 XRP 促销活动，令人震惊",
+      "orig": "Bitwise Stuns With Unusual XRP Sale",
+      "link": "https://u.today/bitwise-stuns-with-unusual-xrp-sale"
+    },
+    {
+      "ts": 1786019326,
+      "detected": 1786019413290,
+      "src": "Decrypt",
+      "title": "早间分钟：Uniswap 进入 Robinhood 链上的 Launchpad 战争",
+      "orig": "Morning Minute: Uniswap Enters the Launchpad Wars on Robinhood Chain",
+      "link": "https://decrypt.co/375031/morning-minute-uniswap-enters-the-launchpad-wars-on-robinhood-chain"
+    },
+    {
+      "ts": 1786018309,
+      "detected": 1786018692993,
+      "src": "CoinTelegraph",
+      "title": "Zeus 钱包在网络攻击后下线，称没有客户资金面临风险",
+      "orig": "Zeus Wallet taken offline after cyberattack, says no customer funds at risk",
+      "link": "https://cointelegraph.com/news/zeus-offline-cyberattack-says-no-funds-at-risk?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786017600,
+      "detected": 1786018152784,
+      "src": "CoinTelegraph",
+      "title": "到目前为止，加密扳手攻击在 2026 年窃取了超过 3000 万美元：Chainaanalysis",
+      "orig": "Crypto wrench attacks steal more than $30M so far in 2026: Chainalysis",
+      "link": "https://cointelegraph.com/news/crypto-wrench-attacks-steal-30-million-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786017601,
+      "detected": 1786017792849,
+      "src": "CNBC",
+      "title": "沙奎尔·奥尼尔表示 WNBA 球员对待凯特琳·克拉克的方式是一种成人仪式",
+      "orig": "Shaquille O'Neal says WNBA players' treatment of Caitlin Clark is a rite of passage",
+      "link": "https://www.cnbc.com/2026/08/06/shaquille-oneal-caitlin-clark-rite-of-passage.html"
+    },
+    {
+      "ts": 1786017664,
+      "detected": 1786017792849,
+      "src": "Decrypt",
+      "title": "Chainaanalysis：2026 年加密货币扳手攻击将被盗 3000 万美元，创历史新高",
+      "orig": "Crypto Wrench Attacks on Pace for Record Year as $30M Stolen in 2026: Chainalysis",
+      "link": "https://decrypt.co/375014/crypto-wrench-attacks-30m-stolen-2026-chainalysis"
+    },
+    {
+      "ts": 1786016700,
+      "detected": 1786017612580,
+      "src": "U.Today",
+      "title": "残酷的柴犬 (SHIB) 入场被拒绝：价格进入看跌反转模式",
+      "orig": "Brutal Shiba Inu (SHIB) Entry Denial: Price Enters Bearish Reversal Mode",
+      "link": "https://u.today/brutal-shiba-inu-shib-entry-denial-price-enters-bearish-reversal-mode"
+    },
+    {
+      "ts": 1786017082,
+      "detected": 1786017432431,
+      "src": "CNBC",
+      "title": "华纳兄弟探索频道 (Warner Bros. Discovery) 报告称，在拟议的派拉蒙合并之前，流媒体收入增长了 10%",
+      "orig": "Warner Bros. Discovery reports 10% jump in streaming revenue ahead of proposed Paramount combination",
+      "link": "https://www.cnbc.com/2026/08/06/warner-bros-discovery-streaming-revenue-paramount-combination.html"
+    },
+    {
+      "ts": 1786014125,
+      "detected": 1786017432431,
+      "src": "CNBC",
+      "title": "Versant 上调了 2026 年平台细分市场实力和广告势头的展望",
+      "orig": "Versant raises 2026 outlook on strength of platforms segment and advertising momentum",
+      "link": "https://www.cnbc.com/2026/08/06/versant-vsnt-earnings-q2-2026.html"
+    },
+    {
+      "ts": 1786016917,
+      "detected": 1786017432431,
+      "src": "CoinTelegraph",
+      "title": "比特币国债交易“崩溃”，基金持有量下降 10%：分析",
+      "orig": "Bitcoin treasury trade ‘breaking’ and fund holdings drop 10%: Analysis",
+      "link": "https://cointelegraph.com/markets/bitcoin-treasury-trade-breaking-and-fund-holdings-drop-10-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786016223,
+      "detected": 1786016351891,
+      "src": "CoinDesk",
+      "title": "比特币的低波动性并不一定意味着低风险",
+      "orig": "Bitcoin’s low volatility doesn’t necessarily mean low risk",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/06/bitcoin-s-low-volatility-doesn-t-necessarily-mean-low-risk"
+    },
+    {
+      "ts": 1786015800,
+      "detected": 1786015991761,
+      "src": "CoinDesk",
+      "title": "自由市场和创新，某种程度上",
+      "orig": "Free Markets and Innovation, Sort Of",
+      "link": "https://www.coindesk.com/opinion/2026/08/06/free-markets-and-innovation-sort-of"
+    },
+    {
+      "ts": 1786015801,
+      "detected": 1786015812272,
+      "src": "CNBC",
+      "title": "欧盟敦促加勒比国家关闭黄金护照计划或面临旅行限制",
+      "orig": "EU urges Caribbean nations to shut down golden passport programs or face travel restrictions",
+      "link": "https://www.cnbc.com/2026/08/06/-eu-cracks-down-on-caribbean-golden-passport-programs-with-visa-threat.html"
+    },
+    {
+      "ts": 1786015245,
+      "detected": 1786015631481,
+      "src": "CoinTelegraph",
+      "title": "Coldcard 黑客将 64 BTC 和 200 ETH 转移到加密货币混合器",
+      "orig": "Coldcard hackers transfer 64 BTC and 200 ETH to cryptocurrency mixers",
+      "link": "https://cointelegraph.com/news/coldcard-hackers-64-btc-200-eth-cryptocurrency-mixers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786014887,
+      "detected": 1786015091388,
+      "src": "CoinDesk",
+      "title": "为什么 Sandisk 和 Western Digital 暴跌 10%，这对比特币意味着什么",
+      "orig": "Why Sandisk and Western Digital crashed 10% and what it means for bitcoin",
+      "link": "https://www.coindesk.com/markets/2026/08/06/why-sandisk-and-western-digital-crashed-10-and-what-it-means-for-bitcoin"
+    },
+    {
+      "ts": 1786015024,
+      "detected": 1786015091388,
+      "src": "CNBC",
+      "title": "Peloton 首次公布年度净利润，但因前景令人失望而股价下跌",
+      "orig": "Peloton posts first ever annual net profit, but shares drop as outlook disappoints",
+      "link": "https://www.cnbc.com/2026/08/06/peloton-pton-q4-2026-earnings.html"
+    },
+    {
+      "ts": 1786012558,
+      "detected": 1786014911257,
+      "src": "U.Today",
+      "title": "仅仅 7 美元的 SHIB 就被烧毁了？",
+      "orig": "Just $7 in SHIB Burned? Shiba Inu Burn Rate Makes Unexpected Reversal",
+      "link": "https://u.today/just-7-in-shib-burned-shiba-inu-burn-rate-makes-unexpected-reversal"
+    },
+    {
+      "ts": 1786014319,
+      "detected": 1786014551170,
+      "src": "CNBC",
+      "title": "Peloton 在“具有里程碑意义”的财政年度首次实现年度净利润",
+      "orig": "Peloton delivers first annual net profit ever in 'landmark' financial year",
+      "link": "https://www.cnbc.com/2026/08/06/peloton-pton-q4-2026-earnings.html"
+    },
+    {
+      "ts": 1786013589,
+      "detected": 1786013650442,
+      "src": "CoinDesk",
+      "title": "JPYC 获 3800 万美元 B 轮融资，由日本大型物流公司 AZ-COM Maruwa 领投",
+      "orig": "JPYC raises $38 million Series B led by major Japanese logistics firm AZ-COM Maruwa",
+      "link": "https://www.coindesk.com/business/2026/08/06/jpyc-raises-usd38-million-series-b-led-by-major-japanese-logistics-firm-az-com-maruwa"
+    },
+    {
+      "ts": 1786012909,
+      "detected": 1786013290806,
+      "src": "CoinTelegraph",
+      "title": "态势感知在几近崩溃后以 4 亿美元投资回归：报告",
+      "orig": "Situational Awareness returns with $400M investment after nearly collapsing: Report",
+      "link": "https://cointelegraph.com/markets/situational-awareness-400m-investment-nearly-collapsing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786012987,
+      "detected": 1786013110718,
+      "src": "CoinDesk",
+      "title": "交易者寻求最大代币的安全，比特币、以太币受益",
+      "orig": "Bitcoin, ether benefit as traders seek safety of largest tokens",
+      "link": "https://www.coindesk.com/markets/2026/08/06/bitcoin-ether-benefit-as-traders-seek-safety-of-largest-tokens"
+    },
+    {
+      "ts": 1786012323,
+      "detected": 1786012570270,
+      "src": "CNBC",
+      "title": "汉堡王美国业务飙升，餐厅品牌国际公司盈利超预期",
+      "orig": "Restaurant Brands International earnings beat as Burger King's U.S. business soars",
+      "link": "https://www.cnbc.com/2026/08/06/restaurant-brands-international-q2-2026-earnings.html"
+    },
+    {
+      "ts": 1786011600,
+      "detected": 1786012389838,
+      "src": "U.Today",
+      "title": "24 小时比特币 (BTC) 清算图：对流动性有何期待",
+      "orig": "24-Hour Bitcoin (BTC) Liquidation Map: What to Expect From Liquidity",
+      "link": "https://u.today/24-hour-bitcoin-btc-liquidation-map-what-to-expect-from-liquidity"
+    },
+    {
+      "ts": 1786011363,
+      "detected": 1786012209876,
+      "src": "U.Today",
+      "title": "欧盟监管机构对加密货币冒充诈骗激增发出警报",
+      "orig": "EU Regulators Sound Alarm Over Surge in Crypto Impersonation Scams",
+      "link": "https://u.today/eu-regulators-sound-alarm-over-surge-in-crypto-impersonation-scams"
+    },
+    {
+      "ts": 1786004282,
+      "detected": 1786011129468,
+      "src": "BBC Business",
+      "title": "印度航空新任首席执行官面临财务和安全动荡",
+      "orig": "Air India's new CEO faces financial and safety turbulence",
+      "link": "https://www.bbc.co.uk/news/articles/c9987kkrnl5o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1786009134,
+      "detected": 1786009688508,
+      "src": "CoinTelegraph",
+      "title": "俄罗斯总统签署加密法，核心规则将于 2026 年生效",
+      "orig": "Russian president signs crypto law, core rules take effect in 2026",
+      "link": "https://cointelegraph.com/news/putin-signs-crypto-law-core-rules-take-effect-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786009414,
+      "detected": 1786009508406,
+      "src": "Decrypt",
+      "title": "比特币人工智能安全审计记录了 390 个项目的 4,962 项调查结果",
+      "orig": "Bitcoin AI Security Audit Files 4,962 Findings Across 390 Projects",
+      "link": "https://decrypt.co/375029/bitcoin-ai-security-audit-files-4962-findings-across-390-projects"
+    },
+    {
+      "ts": 1786008500,
+      "detected": 1786009328417,
+      "src": "CoinTelegraph",
+      "title": "随着代币化资产获得吸引力，RWA 逆袭 DeFi 放缓：CoinShares",
+      "orig": "RWAs buck DeFi slowdown as tokenized assets gain traction: CoinShares",
+      "link": "https://cointelegraph.com/news/rwa-buck-defi-slowdown-tokenization-coinshares?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786008390,
+      "detected": 1786009148175,
+      "src": "U.Today",
+      "title": "随着市场完全扭转 Jim Cramer 的“量子恐慌”，比特币重回 65,000 美元",
+      "orig": "Bitcoin Reclaims $65,000 as Market Completely Reverses Jim Cramer's 'Quantum Scare'",
+      "link": "https://u.today/bitcoin-reclaims-65000-as-market-completely-reverses-jim-cramers-quantum-scare"
+    },
+    {
+      "ts": 1786007403,
+      "detected": 1786008248046,
+      "src": "BBC Business",
+      "title": "成千上万的年轻人错过了他们不知道的金钱",
+      "orig": "Thousands of young people missing out on money they don't know about",
+      "link": "https://www.bbc.co.uk/news/articles/c1d1z376k4ko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1786007943,
+      "detected": 1786008067924,
+      "src": "CoinDesk",
+      "title": "NFT 初创公司创始人被指控滥用 1000 万美元融资资金",
+      "orig": "NFT startup founder charged with misusing funds from $10 million fundraising",
+      "link": "https://www.coindesk.com/policy/2026/08/06/nft-startup-founder-charged-with-misusing-funds-from-usd10-million-fundraising"
+    },
     {
       "ts": 1786005883,
       "detected": 1786006627141,
@@ -120,286 +400,6 @@
       "title": "从 SpaceX 获利：“一有机会，我就会多卖一点”",
       "orig": "Cashing in on SpaceX: 'Every chance I get, I'll sell a little more'",
       "link": "https://www.bbc.co.uk/news/articles/cm2g0j3y339o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785992351,
-      "detected": 1785992580853,
-      "src": "CoinDesk",
-      "title": "随着交易员关注 SpaceX 解锁 1000 亿美元，比特币稳定在 64,000 美元以上",
-      "orig": "Bitcoin steadies above $64,000 as traders watch $100 billion SpaceX unlock",
-      "link": "https://www.coindesk.com/markets/2026/08/06/bitcoin-steadies-above-usd64-000-as-traders-watch-usd100-billion-spacex-unlock"
-    },
-    {
-      "ts": 1785991577,
-      "detected": 1785991679981,
-      "src": "CoinDesk",
-      "title": "XRP 鲸鱼继续逢低买入，但以太币表现出更深的投降",
-      "orig": "XRP whales keep buying the dip, but ether shows deeper capitulation",
-      "link": "https://www.coindesk.com/markets/2026/08/06/xrp-whales-keep-buying-the-dip-but-ether-shows-deeper-capitulation"
-    },
-    {
-      "ts": 1785990527,
-      "detected": 1785991139460,
-      "src": "CoinTelegraph",
-      "title": "Meta 最新人工智能公司发现模型在测试过程中出现异常",
-      "orig": "Meta latest AI firm to see model go rogue during testing",
-      "link": "https://cointelegraph.com/news/meta-latest-ai-firm-to-see-model-go-rogue-during-testing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785990701,
-      "detected": 1785990779915,
-      "src": "CoinDesk",
-      "title": "Robinhood Chain 锁定价值达到 7.74 亿美元，CASHCAT 一周内上涨 120%",
-      "orig": "CASHCAT jumps 120% in a week as Robinhood Chain hits $774 million of value locked",
-      "link": "https://www.coindesk.com/markets/2026/08/05/cashcat-jumps-120-in-a-week-as-robinhood-chain-tvl-hits-usd774-million"
-    },
-    {
-      "ts": 1785988144,
-      "detected": 1785988257831,
-      "src": "CoinDesk",
-      "title": "以下是 Clarity 目前可能出现的结果",
-      "orig": "Here are the possible outcomes for Clarity right now",
-      "link": "https://www.coindesk.com/policy/2026/08/05/here-are-the-possible-outcomes-for-clarity-right-now"
-    },
-    {
-      "ts": 1785980872,
-      "detected": 1785981234606,
-      "src": "BBC Business",
-      "title": "Meta 称人工智能模型访问了互联网并入侵了另一家公司",
-      "orig": "Meta says AI model accessed the internet and hacked another firm",
-      "link": "https://www.bbc.co.uk/news/articles/cx2kgdnyk2po?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785979895,
-      "detected": 1785980513686,
-      "src": "CoinTelegraph",
-      "title": "Mysten Labs 技术主管加入 Anthropic 致力于人工智能安全",
-      "orig": "Mysten Labs tech chief joins Anthropic to work on AI security",
-      "link": "https://cointelegraph.com/news/mysten-labs-tech-chief-joins-anthropic-to-work-on-ai-security?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785978546,
-      "detected": 1785979073175,
-      "src": "CoinTelegraph",
-      "title": "比特币红队报告了全面安全审计的 5K 发现",
-      "orig": "Bitcoin Red Team reports 5K findings in sweeping security audit",
-      "link": "https://cointelegraph.com/news/bitcoin-red-team-reports-5k-findings-in-sweeping-security-audit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785976362,
-      "detected": 1785976552307,
-      "src": "BBC Business",
-      "title": "伊朗称与阿曼就霍尔木兹海峡达成协议已进入最后阶段",
-      "orig": "Iran says deal with Oman on Strait of Hormuz is in final stages",
-      "link": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785975770,
-      "detected": 1785976191836,
-      "src": "CoinTelegraph",
-      "title": "Block 上调 2026 年强劲季度前景，称人工智能几乎涉及所有代码",
-      "orig": "Block raises 2026 outlook on strong quarter, says AI touches nearly all code",
-      "link": "https://cointelegraph.com/news/block-raises-2026-outlook-on-strong-quarter-says-ai-touches-nearly-all-code?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785974460,
-      "detected": 1785975291610,
-      "src": "U.Today",
-      "title": "Shiba Inu (SHIB)、Near Protocol (NEAR)、Solana (SOL) 和 Cardano (ADA) 8 月 6 日价格分析：本周流动性会激增吗？",
-      "orig": "Shiba Inu (SHIB), Near Protocol (NEAR), Solana (SOL) and Cardano (ADA) Price Analysis for August 6: Will Liquidity Surge This Week?",
-      "link": "https://u.today/shiba-inu-shib-near-protocol-near-solana-sol-and-cardano-ada-price-analysis-for-august-6-will"
-    },
-    {
-      "ts": 1785972185,
-      "detected": 1785972410546,
-      "src": "BBC Business",
-      "title": "是什么导致美国牛肉价格创历史新高？",
-      "orig": "What's causing record high US beef prices?",
-      "link": "https://www.bbc.co.uk/news/articles/cdrv0k0j662o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785972137,
-      "detected": 1785972410546,
-      "src": "BBC Business",
-      "title": "短裤、系带上衣和凉鞋：我的老板能告诉我夏天穿什么吗？",
-      "orig": "Shorts, strappy tops and sandals: Can my boss tell me what to wear in summer?",
-      "link": "https://www.bbc.co.uk/news/articles/cre49389g1qo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785965828,
-      "detected": 1785972410546,
-      "src": "BBC Business",
-      "title": "因凡蒂诺对错误表示歉意，但继续担任国际足联主席",
-      "orig": "Infantino sorry for errors but stays Fifa president",
-      "link": "https://www.bbc.co.uk/sport/football/articles/clyq3el5gkqo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785966946,
-      "detected": 1785967007142,
-      "src": "CNBC",
-      "title": "好莱坞再次制作价值数十亿美元的电影。",
-      "orig": "Hollywood is cranking out billion-dollar movies again. 'Spider-Man' just joined the ranks",
-      "link": "https://www.cnbc.com/2026/08/05/hollywood-2026-billion-dollar-movies.html"
-    },
-    {
-      "ts": 1785966033,
-      "detected": 1785966106752,
-      "src": "CoinDesk",
-      "title": "加密货币公司 RedotPay 表示将针对币安诉讼“积极”为自己辩护",
-      "orig": "Crypto firm RedotPay says it will defend itself ‘vigorously’ against Binance lawsuit",
-      "link": "https://www.coindesk.com/business/2026/08/05/binance-sues-redotpay-for-usd470-million-claiming-it-diverted-users"
-    },
-    {
-      "ts": 1785965046,
-      "detected": 1785965206167,
-      "src": "Decrypt",
-      "title": "Meta 首次推出 AI 编码代理 Muse：以下是它与 Claude Code 和 Codex 的比较",
-      "orig": "Meta Debuts AI Coding Agent Muse: Here’s How It Compares to Claude Code and Codex",
-      "link": "https://decrypt.co/375001/muse-code-meta-ai-coding-agent-claude-codex"
-    },
-    {
-      "ts": 1785964537,
-      "detected": 1785965026158,
-      "src": "CoinTelegraph",
-      "title": "参议员沃伦在特朗普加密货币投资后质疑美国人工智能芯片政策：报告",
-      "orig": "Senator Warren questions US AI chip policy after Trump crypto investment: Report",
-      "link": "https://cointelegraph.com/news/senator-warren-us-policy-uae-ai-chips-trump-crypto-investment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785964501,
-      "detected": 1785964665900,
-      "src": "CNBC",
-      "title": "好莱坞再次制作价值数十亿美元的电影。",
-      "orig": "Hollywood is cranking out billion-dollar movies again. Spider-Man just joined the ranks",
-      "link": "https://www.cnbc.com/2026/08/05/hollywood-2026-billion-dollar-movies.html"
-    },
-    {
-      "ts": 1785963117,
-      "detected": 1785964665900,
-      "src": "BBC Business",
-      "title": "伊朗表示已与阿曼就霍尔木兹海峡航线达成一致",
-      "orig": "Iran says it has agreed Strait of Hormuz shipping route with Oman",
-      "link": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785963433,
-      "detected": 1785964485864,
-      "src": "U.Today",
-      "title": "XRP Ledger 着眼于针对机构托管的重大多重签名升级",
-      "orig": "XRP Ledger Eyes Major Multisig Upgrade Targeting Institutional Custody",
-      "link": "https://u.today/xrp-ledger-eyes-major-multisig-upgrade-targeting-institutional-custody"
-    },
-    {
-      "ts": 1785962763,
-      "detected": 1785962864997,
-      "src": "Decrypt",
-      "title": "Cloudflare OS：以下是开源 AI 代理平台的内部内容",
-      "orig": "Cloudflare OS: Here’s What’s Inside the Open-Source AI Agent Platform",
-      "link": "https://decrypt.co/374997/cloudflare-os-inside-open-source-ai-agent-platform"
-    },
-    {
-      "ts": 1785955125,
-      "detected": 1785961784549,
-      "src": "BBC Business",
-      "title": "财政大臣表示，学生贷款偿还率是“不可持续的负担”",
-      "orig": "Student loan repayment rates an 'unsustainable burden', chancellor told",
-      "link": "https://www.bbc.co.uk/news/articles/c5yed780epqo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785958788,
-      "detected": 1785961604761,
-      "src": "BBC Business",
-      "title": "特朗普政府向企业偿还1000亿美元“解放日”关税",
-      "orig": "Trump administration pays back $100bn in 'Liberation Day' tariffs to businesses",
-      "link": "https://www.bbc.co.uk/news/articles/cwyewn5wexvo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1785960963,
-      "detected": 1785961064419,
-      "src": "Decrypt",
-      "title": "Perplexity 在人工智能代理购物诉讼中赢得针对亚马逊的上诉",
-      "orig": "Perplexity Wins Appeal Against Amazon in AI Agent Shopping Lawsuit",
-      "link": "https://decrypt.co/374996/perplexity-amazon-ai-agent-lawsuit"
-    },
-    {
-      "ts": 1785958968,
-      "detected": 1785959083157,
-      "src": "Decrypt",
-      "title": "Visa 通过 Zerohash Rails 扩大稳定币支付范围",
-      "orig": "Visa Widens Stablecoin Payouts via Zerohash Rails",
-      "link": "https://decrypt.co/374994/visa-stablecoin-payouts-zerohash"
-    },
-    {
-      "ts": 1785957504,
-      "detected": 1785958182632,
-      "src": "CoinTelegraph",
-      "title": "参议员卢米斯仍在八月休会前推动清晰度投票",
-      "orig": "Senator Lummis still pushing for CLARITY vote before August recess",
-      "link": "https://cointelegraph.com/news/senator-lummis-clarity-vote-movement-calendar?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785956761,
-      "detected": 1785957462449,
-      "src": "U.Today",
-      "title": "共和党和民主党急于谈判，《加密货币清晰度法案》看到了一线希望",
-      "orig": "Crypto Clarity Act Sees Glimmer of Hope as Republicans and Democrats Rush to Negotiate",
-      "link": "https://u.today/crypto-clarity-act-sees-glimmer-of-hope-as-republicans-and-democrats-rush-to-negotiate"
-    },
-    {
-      "ts": 1785957083,
-      "detected": 1785957282092,
-      "src": "Decrypt",
-      "title": "OpenAI 和 Anthropic 的流氓模型攻击了真实的公司。",
-      "orig": "OpenAI and Anthropic's Rogue Models Hacked Real Companies. The Law Has No Answer",
-      "link": "https://decrypt.co/374991/openai-anthropic-rogue-ai-models-hacked-law"
-    },
-    {
-      "ts": 1785956027,
-      "detected": 1785956562052,
-      "src": "CoinTelegraph",
-      "title": "Marex 投资 Digital Prime 以扩大机构加密贷款",
-      "orig": "Marex invests in Digital Prime to expand institutional crypto lending",
-      "link": "https://cointelegraph.com/news/marex-digital-prime-tokenet-institutional-crypto-lending?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1785955427,
-      "detected": 1785955661464,
-      "src": "Decrypt",
-      "title": "美联储称 NFT 创始人筹集 1000 万美元只是为了赌博、交易和 DJ 爱好",
-      "orig": "Feds Say an NFT Founder Raised $10 Million Only to Blow It All on Gambling, Trading, and a DJ Hobby",
-      "link": "https://decrypt.co/374986/nft-founder-10-million-fraud-gambling-dj-hobby"
-    },
-    {
-      "ts": 1785954814,
-      "detected": 1785954941008,
-      "src": "Decrypt",
-      "title": "Zcash 给持有者带来希望，比特币考验市场耐心：分析",
-      "orig": "Bitcoin Tests Market’s Patience as Zcash Gives Holders Hope: Analysis",
-      "link": "https://decrypt.co/374975/bitcoin-price-test-zcash-holds-golden-cross"
-    },
-    {
-      "ts": 1785954031,
-      "detected": 1785954220891,
-      "src": "CNBC",
-      "title": "Flutter 股价因盈利失误和另一次关键领导层变动而暴跌",
-      "orig": "Flutter shares plummet on earnings miss and another key leadership change",
-      "link": "https://www.cnbc.com/2026/08/05/flutter-earnings-ceo-leadership-change-stock.html"
-    },
-    {
-      "ts": 1785953721,
-      "detected": 1785954040469,
-      "src": "CoinDesk",
-      "title": "加密货币的竞选努力遭遇罕见损失，但国会中的加密货币名册可能会增加",
-      "orig": "Crypto's campaign efforts see rare loss, but crypto roster in Congress likely to grow",
-      "link": "https://www.coindesk.com/policy/2026/08/05/crypto-s-campaign-efforts-see-rare-loss-but-crypto-roster-in-congress-likely-to-grow"
-    },
-    {
-      "ts": 1785953302,
-      "detected": 1785953680641,
-      "src": "BBC Business",
-      "title": "特朗普“解放日”关税退款额达1000亿美元",
-      "orig": "Trump's 'Liberation Day' tariff refunds hit $100bn",
-      "link": "https://www.bbc.co.uk/news/articles/cwyewn5wexvo?at_medium=RSS&at_campaign=rss"
     }
   ]
 }

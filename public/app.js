@@ -271,49 +271,26 @@ async function refreshTickers() {
     for (const c of (analysis.coins || [])) analysisMap[c.symbol] = c;
     for (const r of (abData.results || [])) abMap[r.symbol] = r;
     
-    const majors = (data.majors || []).filter(t => ['BTCUSDT','ETHUSDT','SOLUSDT','XRPUSDT','BNBUSDT','DOGEUSDT','ADAUSDT','AVAXUSDT','LINKUSDT','DOTUSDT','TRXUSDT','LTCUSDT','BCHUSDT','XLMUSDT','HBARUSDT','SHIBUSDT','NEARUSDT','ATOMUSDT','UNIUSDT','FILUSDT','APTUSDT','SUIUSDT','INJUSDT','OPUSDT','ARBUSDT','TIAUSDT','ETCUSDT'].includes(t.symbol)).sort((a, b) => b.change24h - a.change24h);
-    const bar = document.getElementById('tickerBar');
-    if (!majors?.length) {
-      if (!bar.querySelector('.ticker-item')) bar.innerHTML = '<span class="ticker-loading">等待数据...</span>';
-      return;
-    }
-    
-    // 首次加载
-    if (!bar.querySelector('.ticker-item')) {
-      bar.innerHTML = majors.map(t => {
-        const chg = parseFloat(t.change24h) || 0;
-        const cls = chg >= 0 ? 'up' : 'down';
-        const sign = chg >= 0 ? '+' : '';
-        const a = analysisMap[t.symbol.replace('USDT','')] || {};
-        const abData = abMap[t.symbol.replace('USDT','')];
-        const ab = abData ? abData.signal : '';
-        const badge = ab ? ' <span style="font-size:9px;color:var(--text-dim);">' + ab + '</span>' : '';
-        return '<div class="ticker-item" data-sym="' + t.symbol + '">' +
-          '<span class="ticker-symbol">' + t.symbol.replace('USDT','') + badge + '</span>' +
-          '<span class="ticker-change ' + cls + '">' + sign + chg.toFixed(2) + '%</span>' +
-          '<span class="ticker-price" style="color:var(--text-dim);font-size:10px">$' + fmt.price(t.price) + '</span></div>';
-      }).join('');
-      return;
-    }
-    
-    // 按 data-sym 匹配更新
+    // 固定27主流币 → 固定顺序全量渲染，永不跳变
+    const MAJORS = ['BTCUSDT','ETHUSDT','SOLUSDT','XRPUSDT','BNBUSDT','DOGEUSDT','ADAUSDT','AVAXUSDT','LINKUSDT','DOTUSDT','TRXUSDT','LTCUSDT','BCHUSDT','XLMUSDT','HBARUSDT','SHIBUSDT','NEARUSDT','ATOMUSDT','UNIUSDT','FILUSDT','APTUSDT','SUIUSDT','INJUSDT','OPUSDT','ARBUSDT','TIAUSDT','ETCUSDT'];
     const symMap = {};
-    for (const t of majors) symMap[t.symbol] = t;
-    const items = bar.querySelectorAll('.ticker-item');
-    for (const item of items) {
-      const sym = item.dataset.sym;
-      const t = symMap[sym];
-      if (!t) continue;
+    for (const t of (data.majors || [])) symMap[t.symbol] = t;
+    // 固定顺序：按 MAJORS 数组顺序，有数据就显示，没数据显示 —
+    const majors = MAJORS.map(sym => symMap[sym] || { symbol: sym, price: 0, change24h: 0 });
+    const bar = document.getElementById('tickerBar');
+    // 全量渲染，不搞增量更新
+    bar.innerHTML = majors.map(t => {
       const chg = parseFloat(t.change24h) || 0;
       const cls = chg >= 0 ? 'up' : 'down';
       const sign = chg >= 0 ? '+' : '';
-      const a = analysisMap[sym.replace('USDT','')] || {};
-      const badge = a.level ? ' <span style="font-size:9px;color:var(--' + (a.cl||'text-dim') + ');">' + (a.color||'') + ' ' + (a.level||'') + '</span>' : '';
-      item.querySelector('.ticker-symbol').innerHTML = sym.replace('USDT','') + badge;
-      item.querySelector('.ticker-change').textContent = sign + chg.toFixed(2) + '%';
-      item.querySelector('.ticker-change').className = 'ticker-change ' + cls;
-      item.querySelector('.ticker-price').textContent = '$' + fmt.price(t.price);
-    }
+      const abData = abMap[t.symbol.replace('USDT','')];
+      const ab = abData ? abData.signal : '';
+      const badge = ab ? ' <span style="font-size:9px;color:var(--text-dim);">' + ab + '</span>' : '';
+      return '<div class="ticker-item" data-sym="' + t.symbol + '">' +
+        '<span class="ticker-symbol">' + t.symbol.replace('USDT','') + badge + '</span>' +
+        '<span class="ticker-change ' + cls + '">' + sign + chg.toFixed(2) + '%</span>' +
+        '<span class="ticker-price" style="color:var(--text-dim);font-size:10px">' + (t.price ? '$' + fmt.price(t.price) : '—') + '</span></div>';
+    }).join('');
   } catch(e) {}
 }
 
@@ -418,7 +395,13 @@ async function refreshAnomalies() {
       return;
     }
     
-    // 首次加载
+    // 如果币种数量变了，全量重建
+    const items = scroll.querySelectorAll('.ticker-item');
+    if (items.length !== stocks.length) {
+      scroll.innerHTML = '';
+    }
+    
+    // 首次加载或重建
     if (!scroll.querySelector('.ticker-item')) {
       scroll.innerHTML = stocks.map(t => {
         const chg = parseFloat(t.change24h) || 0;
@@ -438,7 +421,6 @@ async function refreshAnomalies() {
     
     const symMap = {};
     for (const t of stocks) symMap[t.symbol] = t;
-    const items = scroll.querySelectorAll('.ticker-item');
     for (const item of items) {
       const sym = item.dataset.sym;
       const t = symMap[sym];

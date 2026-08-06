@@ -1,9 +1,369 @@
 {
   "date": "2026-08-06",
   "type": "news",
-  "updated": 1786006598457,
-  "total": 89,
+  "updated": 1786020460225,
+  "total": 129,
   "records": [
+    {
+      "s": "Scammers Pose as EU Regulators to Prey on MiCA Deadline Fallout",
+      "t": "2026-08-06T12:46:19.000Z",
+      "ts": 1786020379,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375034/scammers-pose-as-eu-regulators-to-prey-on-mica-deadline-fallout",
+      "s_cn": "诈骗者冒充欧盟监管机构，利用 MiCA 截止日期的影响进行诈骗",
+      "_ts": 1786020460213
+    },
+    {
+      "s": "JPMorgan says Hyperliquid ETF inflows have stalled as competition mounts",
+      "t": "2026-08-06T12:46:42.000Z",
+      "ts": 1786020402,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/06/jpmorgan-says-hyperliquid-etf-inflows-have-stalled-as-competition-mounts",
+      "s_cn": "摩根大通表示，随着竞争加剧，Hyperliquid ETF 资金流入已陷入停滞",
+      "_ts": 1786020423652
+    },
+    {
+      "s": "Owner of bike maker Raleigh files for insolvency",
+      "t": "2026-08-06T12:34:42.000Z",
+      "ts": 1786019682,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c4gv45w4j8eo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "自行车制造商罗利的所有者申请破产",
+      "_ts": 1786019704340
+    },
+    {
+      "s": "Bitwise Stuns With Unusual XRP Sale",
+      "t": "2026-08-06T12:20:55.000Z",
+      "ts": 1786018855,
+      "src": "U.Today",
+      "link": "https://u.today/bitwise-stuns-with-unusual-xrp-sale",
+      "s_cn": "Bitwise 推出不寻常的 XRP 促销活动，令人震惊",
+      "_ts": 1786019557051
+    },
+    {
+      "s": "Megayacht Amadea sold for $187 million to Dubai billionaire with Trump ties",
+      "t": "2026-08-06T12:30:02.000Z",
+      "ts": 1786019402,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/megayacht-amadea-sale-dubai-billionaire-trump-ties.html",
+      "s_cn": "巨型游艇 Amadea 以 1.87 亿美元的价格卖给与特朗普有联系的迪拜亿万富翁",
+      "_ts": 1786019484388
+    },
+    {
+      "s": "Morning Minute: Uniswap Enters the Launchpad Wars on Robinhood Chain",
+      "t": "2026-08-06T12:28:46.000Z",
+      "ts": 1786019326,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375031/morning-minute-uniswap-enters-the-launchpad-wars-on-robinhood-chain",
+      "s_cn": "早间分钟：Uniswap 进入 Robinhood 链上的 Launchpad 战争",
+      "_ts": 1786019374570
+    },
+    {
+      "s": "Zeus Wallet taken offline after cyberattack, says no customer funds at risk",
+      "t": "2026-08-06T12:11:49.000Z",
+      "ts": 1786018309,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/zeus-offline-cyberattack-says-no-funds-at-risk?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Zeus 钱包在网络攻击后下线，称没有客户资金面临风险",
+      "_ts": 1786018618534
+    },
+    {
+      "s": "Crypto wrench attacks steal more than $30M so far in 2026: Chainalysis",
+      "t": "2026-08-06T12:00:00.000Z",
+      "ts": 1786017600,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/crypto-wrench-attacks-steal-30-million-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "到目前为止，加密扳手攻击在 2026 年窃取了超过 3000 万美元：Chainaanalysis",
+      "_ts": 1786018020026
+    },
+    {
+      "s": "Live updates: BTC trades near $65,000; SpaceX rises ahead of $100 billion unlock",
+      "t": "2026-08-06T07:26:23.000Z",
+      "ts": 1786001183,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive",
+      "s_cn": "实时更新：BTC 交易价格接近 65,000 美元；",
+      "_ts": 1786018009093
+    },
+    {
+      "s": "Crypto Wrench Attacks on Pace for Record Year as $30M Stolen in 2026: Chainalysis",
+      "t": "2026-08-06T12:01:04.000Z",
+      "ts": 1786017664,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375014/crypto-wrench-attacks-30m-stolen-2026-chainalysis",
+      "s_cn": "Chainaanalysis：2026 年加密货币扳手攻击将被盗 3000 万美元，创历史新高",
+      "_ts": 1786017752028
+    },
+    {
+      "s": "Shaquille O'Neal says WNBA players' treatment of Caitlin Clark is a rite of passage",
+      "t": "2026-08-06T12:00:01.000Z",
+      "ts": 1786017601,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/shaquille-oneal-caitlin-clark-rite-of-passage.html",
+      "s_cn": "沙奎尔·奥尼尔表示 WNBA 球员对待凯特琳·克拉克的方式是一种成人仪式",
+      "_ts": 1786017654638
+    },
+    {
+      "s": "Brutal Shiba Inu (SHIB) Entry Denial: Price Enters Bearish Reversal Mode",
+      "t": "2026-08-06T11:45:00.000Z",
+      "ts": 1786016700,
+      "src": "U.Today",
+      "link": "https://u.today/brutal-shiba-inu-shib-entry-denial-price-enters-bearish-reversal-mode",
+      "s_cn": "残酷的柴犬 (SHIB) 入场被拒绝：价格进入看跌反转模式",
+      "_ts": 1786017446912
+    },
+    {
+      "s": "Bitcoin treasury trade ‘breaking’ and fund holdings drop 10%: Analysis",
+      "t": "2026-08-06T11:48:37.000Z",
+      "ts": 1786016917,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/bitcoin-treasury-trade-breaking-and-fund-holdings-drop-10-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "比特币国债交易“崩溃”，基金持有量下降 10%：分析",
+      "_ts": 1786017422124
+    },
+    {
+      "s": "Versant raises 2026 outlook on strength of platforms segment and advertising momentum",
+      "t": "2026-08-06T11:02:05.000Z",
+      "ts": 1786014125,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/versant-vsnt-earnings-q2-2026.html",
+      "s_cn": "Versant 上调了 2026 年平台细分市场实力和广告势头的展望",
+      "_ts": 1786017276135
+    },
+    {
+      "s": "Warner Bros. Discovery reports 10% jump in streaming revenue ahead of proposed Paramount combination",
+      "t": "2026-08-06T11:51:22.000Z",
+      "ts": 1786017082,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/warner-bros-discovery-streaming-revenue-paramount-combination.html",
+      "s_cn": "华纳兄弟探索频道 (Warner Bros. Discovery) 报告称，在拟议的派拉蒙合并之前，流媒体收入增长了 10%",
+      "_ts": 1786017276135
+    },
+    {
+      "s": "Bitcoin’s low volatility doesn’t necessarily mean low risk",
+      "t": "2026-08-06T11:37:03.000Z",
+      "ts": 1786016223,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/06/bitcoin-s-low-volatility-doesn-t-necessarily-mean-low-risk",
+      "s_cn": "比特币的低波动性并不一定意味着低风险",
+      "_ts": 1786016239325
+    },
+    {
+      "s": "Free Markets and Innovation, Sort Of",
+      "t": "2026-08-06T11:30:00.000Z",
+      "ts": 1786015800,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/opinion/2026/08/06/free-markets-and-innovation-sort-of",
+      "s_cn": "自由市场和创新，某种程度上",
+      "_ts": 1786015835701
+    },
+    {
+      "s": "EU urges Caribbean nations to shut down golden passport programs or face travel restrictions",
+      "t": "2026-08-06T11:30:01.000Z",
+      "ts": 1786015801,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/-eu-cracks-down-on-caribbean-golden-passport-programs-with-visa-threat.html",
+      "s_cn": "欧盟敦促加勒比国家关闭黄金护照计划或面临旅行限制",
+      "_ts": 1786015811759
+    },
+    {
+      "s": "Coldcard hackers transfer 64 BTC and 200 ETH to cryptocurrency mixers",
+      "t": "2026-08-06T11:20:45.000Z",
+      "ts": 1786015245,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/coldcard-hackers-64-btc-200-eth-cryptocurrency-mixers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Coldcard 黑客将 64 BTC 和 200 ETH 转移到加密货币混合器",
+      "_ts": 1786015615818
+    },
+    {
+      "s": "Peloton posts first ever annual net profit, but shares drop as outlook disappoints",
+      "t": "2026-08-06T11:17:04.000Z",
+      "ts": 1786015024,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/peloton-pton-q4-2026-earnings.html",
+      "s_cn": "Peloton 首次公布年度净利润，但因前景令人失望而股价下跌",
+      "_ts": 1786015041830
+    },
+    {
+      "s": "Why Sandisk and Western Digital crashed 10% and what it means for bitcoin",
+      "t": "2026-08-06T11:14:47.000Z",
+      "ts": 1786014887,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/06/why-sandisk-and-western-digital-crashed-10-and-what-it-means-for-bitcoin",
+      "s_cn": "为什么 Sandisk 和 Western Digital 暴跌 10%，这对比特币意味着什么",
+      "_ts": 1786014920029
+    },
+    {
+      "s": "Just $7 in SHIB Burned? Shiba Inu Burn Rate Makes Unexpected Reversal",
+      "t": "2026-08-06T10:35:58.000Z",
+      "ts": 1786012558,
+      "src": "U.Today",
+      "link": "https://u.today/just-7-in-shib-burned-shiba-inu-burn-rate-makes-unexpected-reversal",
+      "s_cn": "仅仅 7 美元的 SHIB 就被烧毁了？",
+      "_ts": 1786014749083
+    },
+    {
+      "s": "Peloton delivers first annual net profit ever in 'landmark' financial year",
+      "t": "2026-08-06T11:05:19.000Z",
+      "ts": 1786014319,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/peloton-pton-q4-2026-earnings.html",
+      "s_cn": "Peloton 在“具有里程碑意义”的财政年度首次实现年度净利润",
+      "_ts": 1786014419773
+    },
+    {
+      "s": "JPYC raises $38 million Series B led by major Japanese logistics firm AZ-COM Maruwa",
+      "t": "2026-08-06T10:53:09.000Z",
+      "ts": 1786013589,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/06/jpyc-raises-usd38-million-series-b-led-by-major-japanese-logistics-firm-az-com-maruwa",
+      "s_cn": "JPYC 获 3800 万美元 B 轮融资，由日本大型物流公司 AZ-COM Maruwa 领投",
+      "_ts": 1786013613695
+    },
+    {
+      "s": "Situational Awareness returns with $400M investment after nearly collapsing: Report",
+      "t": "2026-08-06T10:41:49.000Z",
+      "ts": 1786012909,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/situational-awareness-400m-investment-nearly-collapsing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "态势感知在几近崩溃后以 4 亿美元投资回归：报告",
+      "_ts": 1786013212248
+    },
+    {
+      "s": "US beef prices have soared but farmers aren't making more money",
+      "t": "2026-08-05T23:23:05.000Z",
+      "ts": 1785972185,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cdrv0k0j662o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "美国牛肉价格飙升，但农民却赚不到更多钱",
+      "_ts": 1786013053334
+    },
+    {
+      "s": "Bitcoin, ether benefit as traders seek safety of largest tokens",
+      "t": "2026-08-06T10:43:07.000Z",
+      "ts": 1786012987,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/06/bitcoin-ether-benefit-as-traders-seek-safety-of-largest-tokens",
+      "s_cn": "交易者寻求最大代币的安全，比特币、以太币受益",
+      "_ts": 1786013004454
+    },
+    {
+      "s": "Shorts, strappy tops and sandals: What is acceptable to wear to work?",
+      "t": "2026-08-05T23:22:17.000Z",
+      "ts": 1785972137,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cre49389g1qo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "短裤、系带上衣和凉鞋：什么可以穿去上班？",
+      "_ts": 1786012906863
+    },
+    {
+      "s": "Restaurant Brands International earnings beat as Burger King's U.S. business soars",
+      "t": "2026-08-06T10:32:03.000Z",
+      "ts": 1786012323,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/restaurant-brands-international-q2-2026-earnings.html",
+      "s_cn": "汉堡王美国业务飙升，餐厅品牌国际公司盈利超预期",
+      "_ts": 1786012443472
+    },
+    {
+      "s": "24-Hour Bitcoin (BTC) Liquidation Map: What to Expect From Liquidity",
+      "t": "2026-08-06T10:20:00.000Z",
+      "ts": 1786011600,
+      "src": "U.Today",
+      "link": "https://u.today/24-hour-bitcoin-btc-liquidation-map-what-to-expect-from-liquidity",
+      "s_cn": "24 小时比特币 (BTC) 清算图：对流动性有何期待",
+      "_ts": 1786012333992
+    },
+    {
+      "s": "EU Regulators Sound Alarm Over Surge in Crypto Impersonation Scams",
+      "t": "2026-08-06T10:16:03.000Z",
+      "ts": 1786011363,
+      "src": "U.Today",
+      "link": "https://u.today/eu-regulators-sound-alarm-over-surge-in-crypto-impersonation-scams",
+      "s_cn": "欧盟监管机构对加密货币冒充诈骗激增发出警报",
+      "_ts": 1786012040563
+    },
+    {
+      "s": "Air India's new CEO faces financial and safety turbulence",
+      "t": "2026-08-06T08:18:02.000Z",
+      "ts": 1786004282,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c9987kkrnl5o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "印度航空新任首席执行官面临财务和安全动荡",
+      "_ts": 1786011003736
+    },
+    {
+      "s": "Russian president signs crypto law, core rules take effect in 2026",
+      "t": "2026-08-06T09:38:54.000Z",
+      "ts": 1786009134,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/putin-signs-crypto-law-core-rules-take-effect-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "俄罗斯总统签署加密法，核心规则将于 2026 年生效",
+      "_ts": 1786009600460
+    },
+    {
+      "s": "Bitcoin AI Security Audit Files 4,962 Findings Across 390 Projects",
+      "t": "2026-08-06T09:43:34.000Z",
+      "ts": 1786009414,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375029/bitcoin-ai-security-audit-files-4962-findings-across-390-projects",
+      "s_cn": "比特币人工智能安全审计记录了 390 个项目的 4,962 项调查结果",
+      "_ts": 1786009466474
+    },
+    {
+      "s": "RWAs buck DeFi slowdown as tokenized assets gain traction: CoinShares",
+      "t": "2026-08-06T09:28:20.000Z",
+      "ts": 1786008500,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/rwa-buck-defi-slowdown-tokenization-coinshares?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "随着代币化资产获得吸引力，RWA 逆袭 DeFi 放缓：CoinShares",
+      "_ts": 1786009307293
+    },
+    {
+      "s": "Bitcoin Reclaims $65,000 as Market Completely Reverses Jim Cramer's 'Quantum Scare'",
+      "t": "2026-08-06T09:26:30.000Z",
+      "ts": 1786008390,
+      "src": "U.Today",
+      "link": "https://u.today/bitcoin-reclaims-65000-as-market-completely-reverses-jim-cramers-quantum-scare",
+      "s_cn": "随着市场完全扭转 Jim Cramer 的“量子恐慌”，比特币重回 65,000 美元",
+      "_ts": 1786009039895
+    },
+    {
+      "s": "Live updates: Coinbase lets UK users trade U.S. equities. BTC trades near $65,000",
+      "t": "2026-08-06T07:26:23.000Z",
+      "ts": 1786001183,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive",
+      "s_cn": "实时更新：Coinbase 允许英国用户交易美国股票。",
+      "_ts": 1786008844409
+    },
+    {
+      "s": "Shorts, strappy tops and sandals: What is acceptable to wear in the office?",
+      "t": "2026-08-05T23:22:17.000Z",
+      "ts": 1785972137,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cre49389g1qo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "短裤、系带上衣和凉鞋：在办公室可以穿什么？",
+      "_ts": 1786008758874
+    },
+    {
+      "s": "Thousands of young people missing out on money they don't know about",
+      "t": "2026-08-06T09:10:03.000Z",
+      "ts": 1786007403,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c1d1z376k4ko?at_medium=RSS&at_campaign=rss",
+      "s_cn": "成千上万的年轻人错过了他们不知道的金钱",
+      "_ts": 1786008136446
+    },
+    {
+      "s": "NFT startup founder charged with misusing funds from $10 million fundraising",
+      "t": "2026-08-06T09:19:03.000Z",
+      "ts": 1786007943,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/08/06/nft-startup-founder-charged-with-misusing-funds-from-usd10-million-fundraising",
+      "s_cn": "NFT 初创公司创始人被指控滥用 1000 万美元融资资金",
+      "_ts": 1786007965675
+    },
     {
       "s": "Yen stablecoin issuer JPYC’s Series B reaches $38M",
       "t": "2026-08-06T08:44:43.000Z",
