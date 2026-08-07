@@ -1,6 +1,248 @@
 {
   "items": [
     {
+      "s": "MARA swings to Q2 loss as Bitcoin’s slump masks higher output",
+      "t": "2026-08-07T02:17:07.000Z",
+      "ts": 1786069027,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/mara-swings-to-q2-loss-as-bitcoins-slump-masks-higher-output?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "由于比特币的暴跌掩盖了更高的产出，MARA 第二季度出现亏损",
+      "_ts": 1786069480222
+    },
+    {
+      "s": "Senate won't vote on crypto Clarity Act before its summer break",
+      "t": "2026-08-07T02:14:43.000Z",
+      "ts": 1786068883,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/08/06/senate-won-t-vote-on-crypto-clarity-act-before-its-summer-break",
+      "s_cn": "参议院不会在暑假前就加密货币清晰度法案进行投票",
+      "_ts": 1786068940242
+    },
+    {
+      "s": "Trump imposes 15% tariff on key chip material to counter China",
+      "t": "2026-08-07T00:44:12.000Z",
+      "ts": 1786063452,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cdrvn686dljo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "特朗普对关键芯片材料征收15%关税以对抗中国",
+      "_ts": 1786064077369
+    },
+    {
+      "s": "Trump imposes 15% tariff on key chip and solar panel material",
+      "t": "2026-08-07T00:44:12.000Z",
+      "ts": 1786063452,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cdrvn686dljo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "特朗普对关键芯片和太阳能电池板材料征收15%的关税",
+      "_ts": 1786063897347
+    },
+    {
+      "s": "Crypto market maker Wintermute launches US broker-dealer",
+      "t": "2026-08-07T00:09:47.000Z",
+      "ts": 1786061387,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/crypto-market-maker-wintermute-launches-us-broker-dealer?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "加密货币做市商 Wintermute 推出美国经纪交易商",
+      "_ts": 1786062276158
+    },
+    {
+      "s": "Dogecoin (DOGE) Is Literally at Zero, XRP Bears Almost Give Up, Bitcoin (BTC) Back in Bull Mode: Crypto Market Review",
+      "t": "2026-08-07T00:01:00.000Z",
+      "ts": 1786060860,
+      "src": "U.Today",
+      "link": "https://u.today/dogecoin-doge-is-literally-at-zero-xrp-bears-almost-give-up-bitcoin-btc-back-in-bull-mode-crypto",
+      "s_cn": "狗狗币（DOGE）实际上为零，XRP 空头几乎放弃，比特币（BTC）重返牛市模式：加密货币市场评论",
+      "_ts": 1786061735999
+    },
+    {
+      "s": "Meta fined $567m in largest child safety ruling against social media giant",
+      "t": "2026-08-06T23:34:17.000Z",
+      "ts": 1786059257,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Meta 在针对社交媒体巨头的最大儿童安全裁决中被罚款 5.67 亿美元",
+      "_ts": 1786059755815
+    },
+    {
+      "s": "Argos is getting a makeover - but can it attract new shoppers?",
+      "t": "2026-08-06T23:03:48.000Z",
+      "ts": 1786057428,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c2lqvwewgp2o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "Argos 正在进行改造 - 但它能吸引新的购物者吗？",
+      "_ts": 1786057776385
+    },
+    {
+      "s": "Why airlines are warning over lithium-ion batteries",
+      "t": "2026-08-06T23:04:40.000Z",
+      "ts": 1786057480,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/cwyl6yz719jo?at_medium=RSS&at_campaign=rss",
+      "s_cn": "为什么航空公司对锂离子电池发出警告",
+      "_ts": 1786057596511
+    },
+    {
+      "s": "Power struggle erupts at Ondo Finance after founder’s death",
+      "t": "2026-08-06T21:59:33.000Z",
+      "ts": 1786053573,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/08/06/power-struggle-erupts-at-ondo-finance-after-founder-s-death",
+      "s_cn": "创始人去世后 Ondo Finance 爆发权力斗争",
+      "_ts": 1786053992341
+    },
+    {
+      "s": "SEC Bought a Billion Airline Records to Track Travelers—Likely Without a Warrant",
+      "t": "2026-08-06T21:36:03.000Z",
+      "ts": 1786052163,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375078/sec-billion-airline-records-track-travelers",
+      "s_cn": "美国证券交易委员会购买了十亿条航空公司记录来追踪旅客——可能没有搜查令",
+      "_ts": 1786052370967
+    },
+    {
+      "s": "Following primary loss, crypto PACs invest $1.5M in 3 US state races",
+      "t": "2026-08-06T21:11:19.000Z",
+      "ts": 1786050679,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/crypto-pac-florida-alaska-wyoming-primary-races?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "初次失利后，加密 PAC 在美国 3 个州的竞选中投资 150 万美元",
+      "_ts": 1786051470624
+    },
+    {
+      "s": "Tokyo Tells Trump to Stop Meme-ing Mario",
+      "t": "2026-08-06T21:01:03.000Z",
+      "ts": 1786050063,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375069/tokyo-trump-mario-naruto-pokemon-memes",
+      "s_cn": "东京要求特朗普停止模仿马里奥",
+      "_ts": 1786050209961
+    },
+    {
+      "s": "Sweetgreen cuts full-year outlook as cyclospora fears weigh on sales",
+      "t": "2026-08-06T20:40:16.000Z",
+      "ts": 1786048816,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/sweetgreen-cuts-full-year-outlook-as-cyclospora-fears-weigh-on-sales.html",
+      "s_cn": "由于对环孢子虫的担忧影响了销售，Sweetgreen 下调了全年预期",
+      "_ts": 1786048949051
+    },
+    {
+      "s": "Microsoft Warns Hackers Are Using BNB Chain to Spread Malware",
+      "t": "2026-08-06T20:26:21.000Z",
+      "ts": 1786047981,
+      "src": "U.Today",
+      "link": "https://u.today/microsoft-warns-hackers-are-using-bnb-chain-to-spread-malware",
+      "s_cn": "微软警告黑客正在利用 BNB 链传播恶意软件",
+      "_ts": 1786048769468
+    },
+    {
+      "s": "Live updates: Bitcoin flatlines near $64,000 ahead of Friday's jobs report",
+      "t": "2026-08-06T07:26:23.000Z",
+      "ts": 1786001183,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive",
+      "s_cn": "实时更新：周五就业报告发布前，比特币价格持平于 64,000 美元附近",
+      "_ts": 1786048589304
+    },
+    {
+      "s": "Meta Says Its AI Model Escaped and Hacked a Third-Party Company Too",
+      "t": "2026-08-06T20:31:03.000Z",
+      "ts": 1786048263,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375070/meta-says-ai-model-escaped-hack-third-party",
+      "s_cn": "Meta 表示其 AI 模型也逃脱并攻击了第三方公司",
+      "_ts": 1786048408726
+    },
+    {
+      "s": "Savers Value Village thrift store launches new AI tool to price items",
+      "t": "2026-08-06T20:06:56.000Z",
+      "ts": 1786046816,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/savers-value-village-thrift-store-launches-new-ai-tool-to-price-items.html",
+      "s_cn": "Savers Value Village旧货店推出新的人工智能工具来为商品定价",
+      "_ts": 1786046968477
+    },
+    {
+      "s": "American Airlines will stop upgrading elite flyers to business from coach on long domestic flights",
+      "t": "2026-08-06T19:56:57.000Z",
+      "ts": 1786046217,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/american-airlines-flight-upgrades-become-harder-to-get.html",
+      "s_cn": "美国航空将停止在长途国内航班上将精英旅客从经济舱升级为商务舱",
+      "_ts": 1786046247977
+    },
+    {
+      "s": "Senators Push CFTC to Ban Wildfire Bets on Prediction Markets",
+      "t": "2026-08-06T19:51:09.000Z",
+      "ts": 1786045869,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375066/senators-push-cftc-ban-wildfire-bets-prediction-markets",
+      "s_cn": "参议员敦促商品期货交易委员会禁止对预测市场进行野火押注",
+      "_ts": 1786046067758
+    },
+    {
+      "s": "Here’s what happened in crypto today",
+      "t": "2026-08-06T13:02:49.000Z",
+      "ts": 1786021369,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "这是今天加密货币领域发生的事情"
+    },
+    {
+      "s": "Putin Signs Russia's First Crypto Law: Trading Is Legal, Payments Stay Banned",
+      "t": "2026-08-06T18:38:21.000Z",
+      "ts": 1786041501,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375062/putin-signs-russia-first-crypto-trading-payments",
+      "s_cn": "普京签署俄罗斯首部加密法：交易合法，支付仍被禁止",
+      "_ts": 1786041565035
+    },
+    {
+      "s": "German Bitcoin Developer Reveals Key Reasons He Missed Out on BTC Gains",
+      "t": "2026-08-06T18:21:26.000Z",
+      "ts": 1786040486,
+      "src": "U.Today",
+      "link": "https://u.today/german-bitcoin-developer-reveals-key-reasons-he-missed-out-on-btc-gains",
+      "s_cn": "德国比特币开发商揭示了他错过比特币收益的关键原因",
+      "_ts": 1786041205168
+    },
+    {
+      "s": "OpenAI Reveals How AI Agents Secretly Coordinated Before Hugging Face Hack",
+      "t": "2026-08-06T18:26:29.000Z",
+      "ts": 1786040789,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375058/openai-ai-agents-secretly-coordinated-hugging-face-hack",
+      "s_cn": "OpenAI 揭示了人工智能代理在拥抱脸部黑客之前如何秘密协调",
+      "_ts": 1786041024662
+    },
+    {
+      "s": "Bitcoin ETF inflows surge after Coldcard hack, but link is unclear: Bloomberg analyst",
+      "t": "2026-08-06T18:17:57.000Z",
+      "ts": 1786040277,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bitcoin-etf-inflows-coldcard-hack-bloomberg-analyst?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Coldcard 黑客攻击后比特币 ETF 流入激增，但联系尚不清楚：彭博社分析师",
+      "_ts": 1786040664527
+    },
+    {
+      "s": "Genius Sports' media surge shows shift beyond sportsbook data",
+      "t": "2026-08-06T18:17:19.000Z",
+      "ts": 1786040239,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/06/genius-sports-media-surge-shows-shift-beyond-sportsbook-data.html",
+      "s_cn": "Genius Sports 的媒体激增显示出体育博彩数据之外的转变",
+      "_ts": 1786040484402
+    },
+    {
+      "s": "XRP, Bitcoin Whales Are Accumulating—Is the Bear Market Nearly Over?",
+      "t": "2026-08-06T18:13:40.000Z",
+      "ts": 1786040020,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375051/xrp-bitcoin-whales-accumulating-bear-market",
+      "s_cn": "XRP、比特币鲸鱼正在增持——熊市即将结束吗？",
+      "_ts": 1786040124156
+    },
+    {
       "s": "US appellate court mandate affirms Sam Bankman-Fried conviction",
       "t": "2026-08-06T17:17:34.000Z",
       "ts": 1786036654,
@@ -4256,224 +4498,8 @@
       "link": "https://cointelegraph.com/news/coldcard-biggest-sub-1-btc-transfer-ftx-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "s_cn": "CryptoQuant：Coldcard 黑客攻击引发自 FTX 以来最大的低于 1 BTC 的波动",
       "_ts": 1785715504325
-    },
-    {
-      "s": "Trump Media sells another 2,628 BTC, holdings fall to 4,261 BTC",
-      "t": "2026-08-02T09:31:00.000Z",
-      "ts": 1785663060,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/news/trump-media-2628-btc-crypto-com-4261-btc-holdings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "特朗普媒体又出售 2,628 BTC，持有量降至 4,261 BTC",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Crypto 'Dominated by Scam Memecoins and Security Failures,' Says Experienced Analyst",
-      "t": "2026-08-02T11:00:00.000Z",
-      "ts": 1785668400,
-      "src": "U.Today",
-      "link": "https://u.today/crypto-dominated-by-scam-memecoins-and-security-failures-says-experienced-analyst",
-      "s_cn": "经验丰富的分析师表示，加密货币“由诈骗模因币和安全故障主导”",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Self-Proclaimed Satoshi Says Bitcoin's Rules Should Never Change",
-      "t": "2026-08-02T11:16:30.000Z",
-      "ts": 1785669390,
-      "src": "U.Today",
-      "link": "https://u.today/self-proclaimed-satoshi-says-bitcoins-rules-should-never-change",
-      "s_cn": "自称中本聪的人表示比特币的规则永远不应该改变",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "'Head & Shoulders' Pattern Appears on Bitcoin Price Chart: Why $67,200 Is Key Level to Watch Next",
-      "t": "2026-08-02T11:19:05.000Z",
-      "ts": 1785669545,
-      "src": "U.Today",
-      "link": "https://u.today/head-shoulders-pattern-appears-on-bitcoin-price-chart-why-67200-is-key-level-to-watch-next",
-      "s_cn": "比特币价格图表上出现“头肩顶”形态：为什么 67,200 美元是下一步值得关注的关键水平",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "BNB Chain pursues legal action after ex-employee’s memecoin launch",
-      "t": "2026-08-02T11:24:00.000Z",
-      "ts": 1785669840,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/news/bnb-chain-legal-action-ex-employee-memecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "BNB Chain 在前员工推出 memecoin 后采取法律行动",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "XRP Ledger Swings Up More Than 100%, Shattering 1 Billion XRP Threshold",
-      "t": "2026-08-02T11:35:00.000Z",
-      "ts": 1785670500,
-      "src": "U.Today",
-      "link": "https://u.today/xrp-ledger-swings-up-more-than-100-shattering-1-billion-xrp-threshold",
-      "s_cn": "XRP账本波动超过100%，突破10亿XRP门槛",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Why flights are so expensive and will likely stay that way",
-      "t": "2026-08-02T12:00:01.000Z",
-      "ts": 1785672001,
-      "src": "CNBC",
-      "link": "https://www.cnbc.com/2026/08/02/flights-are-getting-even-more-expensive-as-fuel-prices-rise.html",
-      "s_cn": "为什么航班如此昂贵并且很可能会保持这种状态",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Unlike the FTX collapse, the $89 million Coldcard exploit has investors sending bitcoin back to exchanges",
-      "t": "2026-08-02T12:03:51.000Z",
-      "ts": 1785672231,
-      "src": "CoinDesk",
-      "link": "https://www.coindesk.com/markets/2026/08/02/unlike-the-ftx-collapse-the-usd88-million-coldcard-exploit-has-investors-sending-bitcoin-back-to-exchanges",
-      "s_cn": "与 FTX 崩溃不同，Coldcard 价值 8900 万美元的漏洞让投资者将比特币送回交易所",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "The reverse bridge: Crypto meets Wall Street using perps",
-      "t": "2026-08-02T13:00:00.000Z",
-      "ts": 1785675600,
-      "src": "CoinDesk",
-      "link": "https://www.coindesk.com/business/2026/08/02/the-reverse-bridge-crypto-meets-wall-street-using-perps",
-      "s_cn": "反向桥梁：加密货币与华尔街利用perps相遇",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "'Bitcoin Drive Engaged': Saylor Answers $8.2 Billion Loss with Signature Bull Teaser",
-      "t": "2026-08-02T13:41:15.000Z",
-      "ts": 1785678075,
-      "src": "U.Today",
-      "link": "https://u.today/bitcoin-drive-engaged-saylor-answers-82-billion-loss-with-signature-bull-teaser",
-      "s_cn": "“比特币驱动力已投入”：塞勒用标志性的牛市预告弥补了 82 亿美元的损失",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Dogecoin Contributor Issues Critical Warning to Coldcard Wallet Users",
-      "t": "2026-08-02T13:55:28.000Z",
-      "ts": 1785678928,
-      "src": "U.Today",
-      "link": "https://u.today/dogecoin-contributor-issues-critical-warning-to-coldcard-wallet-users",
-      "s_cn": "狗狗币贡献者向 Coldcard 钱包用户发出严重警告",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "4 Trillion SHIB in 24 Hours: Who Is Readying Shiba Inu Coin for $0.000005 Breakout?",
-      "t": "2026-08-02T14:10:15.000Z",
-      "ts": 1785679815,
-      "src": "U.Today",
-      "link": "https://u.today/4-trillion-shib-in-24-hours-who-is-readying-shiba-inu-coin-for-0000005-breakout",
-      "s_cn": "24 小时内 4 万亿 SHIB：谁准备让柴犬币突破 0.000005 美元？",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Urgent XRPL Update: Ripple Director Urges Node Operators to Install Critical Fix",
-      "t": "2026-08-02T14:45:56.000Z",
-      "ts": 1785681956,
-      "src": "U.Today",
-      "link": "https://u.today/urgent-xrpl-update-ripple-director-urges-node-operators-to-install-critical-fix",
-      "s_cn": "紧急 XRPL 更新：Ripple 总监敦促节点运营商安装关键修复程序",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "What’s the Deal With Meta’s ‘Pervert Glasses’?",
-      "t": "2026-08-02T15:01:03.000Z",
-      "ts": 1785682863,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374808/whats-the-deal-with-meta-pervert-glasses",
-      "s_cn": "Meta 的“变态眼镜”是怎么回事？",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Why $89 Million Coldcard Drain Is Bullish for Bitcoin ETFs, Bloomberg Analyst Explains",
-      "t": "2026-08-02T15:20:15.000Z",
-      "ts": 1785684015,
-      "src": "U.Today",
-      "link": "https://u.today/why-89-million-coldcard-drain-is-bullish-for-bitcoin-etfs-bloomberg-analyst-explains",
-      "s_cn": "彭博社分析师解释为何 Coldcard 流失 8900 万美元对比特币 ETF 有利",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Strategy leaves preferred STRC dividend at 12% as price still below par",
-      "t": "2026-08-02T15:24:00.000Z",
-      "ts": 1785684240,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/news/strategy-leaves-preferred-strc-dividend-at-12-price-still-below-par?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "由于价格仍低于面值，战略将优先 STRC 股息维持在 12%",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "The future of crypto payments won't include on-ramps or bridges, Fun CEO says",
-      "t": "2026-08-02T16:00:00.000Z",
-      "ts": 1785686400,
-      "src": "CoinDesk",
-      "link": "https://www.coindesk.com/tech/2026/08/02/the-future-of-crypto-payments-won-t-include-on-ramps-or-bridges-fun-ceo-says",
-      "s_cn": "Fun 首席执行官表示，加密支付的未来不会包括入口匝道或桥梁",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Why a DeFi platform ditched its consumer app to become the secret backend for tech giants",
-      "t": "2026-08-02T17:00:00.000Z",
-      "ts": 1785690000,
-      "src": "CoinDesk",
-      "link": "https://www.coindesk.com/web3/2026/08/02/why-a-defi-platform-ditched-its-consumer-app-to-become-the-secret-backend-for-tech-giants",
-      "s_cn": "为什么 DeFi 平台放弃其消费者应用程序而成为科技巨头的秘密后端",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Coldcard Bitcoin Exploit Balloons to $88 Million as Attackers Keep Draining Wallets",
-      "t": "2026-08-02T17:18:51.000Z",
-      "ts": 1785691131,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374817/coldcard-bitcoin-exploit-88-million-attackers-draining-wallets",
-      "s_cn": "随着攻击者不断耗尽钱包，Coldcard 比特币暴涨至 8800 万美元",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Counting down the days: State of Crypto",
-      "t": "2026-08-02T18:30:00.000Z",
-      "ts": 1785695400,
-      "src": "CoinDesk",
-      "link": "https://www.coindesk.com/policy/2026/08/02/counting-down-the-days-state-of-crypto",
-      "s_cn": "倒计时：加密货币现状",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "XRP ETFs Buck the Trend with Decent Inflows",
-      "t": "2026-08-02T19:11:14.000Z",
-      "ts": 1785697874,
-      "src": "U.Today",
-      "link": "https://u.today/xrp-etfs-buck-the-trend-with-decent-inflows",
-      "s_cn": "XRP ETF 逆势而上，资金大量流入",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Here’s what happened in crypto today",
-      "t": "2026-08-02T20:00:35.000Z",
-      "ts": 1785700835,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "这是今天加密货币领域发生的事情",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "The change that may help you get a mortgage as a first-time buyer",
-      "t": "2026-08-02T23:16:32.000Z",
-      "ts": 1785712592,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/cp3rkzpl7ngo?at_medium=RSS&at_campaign=rss",
-      "s_cn": "这项改变可能会帮助您作为首次购房者获得抵押贷款",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Coldcard exploit sparks Bitcoin flight, ‘bullish’ crypto consolidation: Hodler’s Digest, August 2",
-      "t": "2026-08-02T23:44:04.000Z",
-      "ts": 1785714244,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/magazine/coldcard-exploit-sparks-bitcoin-flight-clarity-act-no-vote-or-no-vote-hodlers-digest-august-2?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "Coldcard 漏洞引发比特币飞行，“看涨”加密货币整合：Hodler’s Digest，8 月 2 日",
-      "_ts": 1785715504325
     }
   ],
-  "updated": 1786039044039,
+  "updated": 1786071461401,
   "sources": 6
 }

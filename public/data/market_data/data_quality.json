@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-06T18:00:01.395Z",
+  "timestamp": "2026-08-07T02:55:01.215Z",
   "overall_score": 96,
   "status": "healthy",
   "checks": {
@@ -7,14 +7,14 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 1,
+      "delay": 2,
       "diagnosis": null
     },
     "rss": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 157,
+      "delay": 20,
       "diagnosis": null
     },
     "whale": {
@@ -28,16 +28,16 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 33,
+      "delay": 185,
       "diagnosis": null
     },
     "alerts": {
       "status": "warn",
       "score": 70,
       "errors": [
-        "延迟356448s但诊断通过: Binance API正常"
+        "延迟388548s但诊断通过: Binance API正常"
       ],
-      "delay": 356448,
+      "delay": 388548,
       "diagnosis": {
         "ok": true,
         "detail": "Binance API正常",
@@ -48,7 +48,7 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 38758,
+      "delay": 70858,
       "diagnosis": null
     },
     "data_quality": {
@@ -68,6 +68,6 @@
   },
   "dataErrors": [],
   "errors": [
-    "延迟356448s但诊断通过: Binance API正常"
+    "延迟388548s但诊断通过: Binance API正常"
   ]
 }
