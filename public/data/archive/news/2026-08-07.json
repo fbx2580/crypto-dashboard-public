@@ -1,9 +1,45 @@
 {
   "date": "2026-08-07",
   "type": "news",
-  "updated": 1786114505609,
-  "total": 124,
+  "updated": 1786116306554,
+  "total": 128,
   "records": [
+    {
+      "s": "OKX's Rafique doubts Clarity Act will pass, warns optimism is already priced into bitcoin",
+      "t": "2026-08-07T15:22:44.000Z",
+      "ts": 1786116164,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/08/04/okx-s-rafique-doubts-clarity-act-will-pass-warns-optimism-is-already-priced-into-bitcoin",
+      "s_cn": "OKX 的 Rafique 怀疑《澄清法案》能否通过，警告乐观情绪已经反映在比特币中",
+      "_ts": 1786116306545
+    },
+    {
+      "s": "Crypto Biz: Crypto’s biggest business is starting to look a lot like banking",
+      "t": "2026-08-07T15:07:49.000Z",
+      "ts": 1786115269,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/crypto-biz-crypto-business-converges-traditional-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "加密货币业务：加密货币最大的业务开始看起来很像银行业",
+      "_ts": 1786115765328
+    },
+    {
+      "s": "XRP Prints 2,809% Liquidation Imbalance as Bulls Get Caught Off Guard",
+      "t": "2026-08-07T14:59:34.000Z",
+      "ts": 1786114774,
+      "src": "U.Today",
+      "link": "https://u.today/xrp-prints-2809-liquidation-imbalance-as-bulls-get-caught-off-guard",
+      "s_cn": "XRP 清算失衡达 2,809%，多头措手不及",
+      "_ts": 1786115586235
+    },
+    {
+      "s": "How a five-second trick let traders drain millions from Polymarket",
+      "t": "2026-08-07T15:09:07.000Z",
+      "ts": 1786115347,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/07/how-a-five-second-trick-let-traders-drain-millions-from-polymarket",
+      "s_cn": "五秒技巧如何让交易者从 Polymarket 流失数百万美元",
+      "_ts": 1786115404237
+    },
     {
       "s": "Crypto Clarity Bill Not Dead Yet, Former SEC Adviser Says",
       "t": "2026-08-07T14:40:26.000Z",

@@ -1,43 +1,50 @@
 {
-  "timestamp": "2026-08-07T14:55:01.921Z",
-  "overall_score": 93,
+  "timestamp": "2026-08-07T15:25:01.300Z",
+  "overall_score": 84,
   "status": "healthy",
   "checks": {
     "jin10": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 0,
+      "delay": 1,
       "diagnosis": null
     },
     "rss": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 178,
+      "delay": 174,
       "diagnosis": null
     },
     "whale": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 1,
+      "delay": 3,
       "diagnosis": null
     },
     "eth": {
-      "status": "ok",
-      "score": 100,
-      "errors": [],
-      "delay": 3299,
-      "diagnosis": null
+      "status": "error",
+      "score": 30,
+      "errors": [
+        "Alchemy不可达: Request failed with status code 429",
+        "建议修复: 检查Alchemy API Key或网络"
+      ],
+      "delay": 5098,
+      "diagnosis": {
+        "ok": false,
+        "detail": "Alchemy不可达: Request failed with status code 429",
+        "fix": "检查Alchemy API Key或网络"
+      }
     },
     "alerts": {
       "status": "warn",
       "score": 70,
       "errors": [
-        "延迟431749s但诊断通过: Binance API正常"
+        "延迟433548s但诊断通过: Binance API正常"
       ],
-      "delay": 431749,
+      "delay": 433548,
       "diagnosis": {
         "ok": true,
         "detail": "Binance API正常",
@@ -48,9 +55,9 @@
       "status": "warn",
       "score": 70,
       "errors": [
-        "延迟114059s但诊断通过: Binance正常"
+        "延迟115858s但诊断通过: Binance正常"
       ],
-      "delay": 114059,
+      "delay": 115858,
       "diagnosis": {
         "ok": true,
         "detail": "Binance正常",
@@ -61,20 +68,22 @@
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 300,
+      "delay": 299,
       "diagnosis": null
     },
     "alerts_log": {
       "status": "ok",
       "score": 100,
       "errors": [],
-      "delay": 300,
+      "delay": 299,
       "diagnosis": null
     }
   },
   "dataErrors": [],
   "errors": [
-    "延迟431749s但诊断通过: Binance API正常",
-    "延迟114059s但诊断通过: Binance正常"
+    "Alchemy不可达: Request failed with status code 429",
+    "建议修复: 检查Alchemy API Key或网络",
+    "延迟433548s但诊断通过: Binance API正常",
+    "延迟115858s但诊断通过: Binance正常"
   ]
 }

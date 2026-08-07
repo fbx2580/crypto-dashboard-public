@@ -1,6 +1,42 @@
 {
   "items": [
     {
+      "s": "OKX's Rafique doubts Clarity Act will pass, warns optimism is already priced into bitcoin",
+      "t": "2026-08-07T15:22:44.000Z",
+      "ts": 1786116164,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/08/04/okx-s-rafique-doubts-clarity-act-will-pass-warns-optimism-is-already-priced-into-bitcoin",
+      "s_cn": "OKX 的 Rafique 怀疑《澄清法案》能否通过，警告乐观情绪已经反映在比特币中",
+      "_ts": 1786116306545
+    },
+    {
+      "s": "Crypto Biz: Crypto’s biggest business is starting to look a lot like banking",
+      "t": "2026-08-07T15:07:49.000Z",
+      "ts": 1786115269,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/crypto-biz-crypto-business-converges-traditional-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "加密货币业务：加密货币最大的业务开始看起来很像银行业",
+      "_ts": 1786115765328
+    },
+    {
+      "s": "XRP Prints 2,809% Liquidation Imbalance as Bulls Get Caught Off Guard",
+      "t": "2026-08-07T14:59:34.000Z",
+      "ts": 1786114774,
+      "src": "U.Today",
+      "link": "https://u.today/xrp-prints-2809-liquidation-imbalance-as-bulls-get-caught-off-guard",
+      "s_cn": "XRP 清算失衡达 2,809%，多头措手不及",
+      "_ts": 1786115586235
+    },
+    {
+      "s": "How a five-second trick let traders drain millions from Polymarket",
+      "t": "2026-08-07T15:09:07.000Z",
+      "ts": 1786115347,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/07/how-a-five-second-trick-let-traders-drain-millions-from-polymarket",
+      "s_cn": "五秒技巧如何让交易者从 Polymarket 流失数百万美元",
+      "_ts": 1786115404237
+    },
+    {
       "s": "Crypto Clarity Bill Not Dead Yet, Former SEC Adviser Says",
       "t": "2026-08-07T14:40:26.000Z",
       "ts": 1786113626,
@@ -4462,44 +4498,8 @@
       "link": "https://u.today/early-bitcoin-dev-explains-why-self-custody-is-still-superior-after-88-million-coldcard-bug",
       "s_cn": "早期比特币开发解释了为什么在 8800 万美元的 Coldcard 漏洞之后自我托管仍然优越",
       "_ts": 1785751276405
-    },
-    {
-      "s": "From 1 Billion to 90% Drop: XRP Ledger Enters Reversal",
-      "t": "2026-08-03T09:43:00.000Z",
-      "ts": 1785750180,
-      "src": "U.Today",
-      "link": "https://u.today/from-1-billion-to-90-drop-xrp-ledger-enters-reversal",
-      "s_cn": "从10亿跌至90%：XRP账本进入逆转",
-      "_ts": 1785750975730
-    },
-    {
-      "s": "It may be easier to get your first mortgage than you think - here's why",
-      "t": "2026-08-03T09:55:36.000Z",
-      "ts": 1785750936,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/cp3rkzpl7ngo?at_medium=RSS&at_campaign=rss",
-      "s_cn": "获得第一笔抵押贷款可能比您想象的更容易 - 这就是原因",
-      "_ts": 1785750962564
-    },
-    {
-      "s": "Robinhood wins UK crypto registration before new regulatory regime kicks off",
-      "t": "2026-08-03T09:38:53.000Z",
-      "ts": 1785749933,
-      "src": "CoinDesk",
-      "link": "https://www.coindesk.com/policy/2026/08/03/robinhood-wins-uk-crypto-registration-before-new-regulatory-regime-kicks-off",
-      "s_cn": "Robinhood 在新监管制度启动前赢得英国加密货币注册",
-      "_ts": 1785750336371
-    },
-    {
-      "s": "XRP Ledger Co-Creator Reveals 'Nuclear Briefcase' Strategy for Bitcoin Cold Storage",
-      "t": "2026-08-03T09:11:45.000Z",
-      "ts": 1785748305,
-      "src": "U.Today",
-      "link": "https://u.today/xrp-ledger-co-creator-reveals-nuclear-briefcase-strategy-for-bitcoin-cold-storage",
-      "s_cn": "XRP Ledger 联合创建者揭示了比特币冷存储的“核公文包”策略",
-      "_ts": 1785749173809
     }
   ],
-  "updated": 1786114683603,
+  "updated": 1786116486808,
   "sources": 6
 }

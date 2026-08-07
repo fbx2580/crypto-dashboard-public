@@ -1,6 +1,38 @@
 {
-  "updated": 1786114505613,
+  "updated": 1786116306559,
   "alerts": [
+    {
+      "ts": 1786116164,
+      "detected": 1786116306558,
+      "src": "CoinDesk",
+      "title": "OKX 的 Rafique 怀疑《澄清法案》能否通过，警告乐观情绪已经反映在比特币中",
+      "orig": "OKX's Rafique doubts Clarity Act will pass, warns optimism is already priced into bitcoin",
+      "link": "https://www.coindesk.com/policy/2026/08/04/okx-s-rafique-doubts-clarity-act-will-pass-warns-optimism-is-already-priced-into-bitcoin"
+    },
+    {
+      "ts": 1786115269,
+      "detected": 1786115765344,
+      "src": "CoinTelegraph",
+      "title": "加密货币业务：加密货币最大的业务开始看起来很像银行业",
+      "orig": "Crypto Biz: Crypto’s biggest business is starting to look a lot like banking",
+      "link": "https://cointelegraph.com/news/crypto-biz-crypto-business-converges-traditional-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786114774,
+      "detected": 1786115586253,
+      "src": "U.Today",
+      "title": "XRP 清算失衡达 2,809%，多头措手不及",
+      "orig": "XRP Prints 2,809% Liquidation Imbalance as Bulls Get Caught Off Guard",
+      "link": "https://u.today/xrp-prints-2809-liquidation-imbalance-as-bulls-get-caught-off-guard"
+    },
+    {
+      "ts": 1786115347,
+      "detected": 1786115404252,
+      "src": "CoinDesk",
+      "title": "五秒技巧如何让交易者从 Polymarket 流失数百万美元",
+      "orig": "How a five-second trick let traders drain millions from Polymarket",
+      "link": "https://www.coindesk.com/business/2026/08/07/how-a-five-second-trick-let-traders-drain-millions-from-polymarket"
+    },
     {
       "ts": 1786113626,
       "detected": 1786114505613,
@@ -368,38 +400,6 @@
       "title": "比特币鲸鱼买入 12 亿美元 BTC，ETF 吸引 7.5 亿美元",
       "orig": "Bitcoin whales load up on $1.2 billion in BTC as ETFs attract $750 million",
       "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-whales-load-up-on-usd1-2-billion-in-btc-as-etfs-attract-usd750-million"
-    },
-    {
-      "ts": 1786080278,
-      "detected": 1786080826411,
-      "src": "CoinTelegraph",
-      "title": "日本金融厅要求加密货币交易所延迟提款以打击诈骗",
-      "orig": "Japan FSA asks crypto exchanges to impose withdrawal delays to fight scams",
-      "link": "https://cointelegraph.com/news/japan-fsa-crypto-exchanges-withdrawal-delays-scams?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786079062,
-      "detected": 1786079745752,
-      "src": "CoinTelegraph",
-      "title": "彭博社：拟议的 CLARITY 道德协议可以为特朗普节省数百万美元的税款",
-      "orig": "Proposed CLARITY ethics deal could save Trump millions in taxes: Bloomberg",
-      "link": "https://cointelegraph.com/news/proposed-clarity-ethics-deal-could-save-trump-millions-in-taxes-bloomberg?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786078244,
-      "detected": 1786078304870,
-      "src": "CoinDesk",
-      "title": "自 2011 年以来一直处于休眠状态的比特币钱包将 320 万美元转移到 FalconX 链接地址",
-      "orig": "Bitcoin wallet dormant since 2011 moves $3.2 million toward FalconX-linked address",
-      "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-wallet-dormant-since-2011-moves-usd3-2-million-toward-falconx-linked-address"
-    },
-    {
-      "ts": 1786076897,
-      "detected": 1786077044279,
-      "src": "CoinDesk",
-      "title": "在无聊的价格走势之下，比特币飙升至 76,000 美元的理由可能正在形成，但有一个警告",
-      "orig": "A case for a bitcoin surge to $76,000 may be building beneath the boring price action, but there's a caveat",
-      "link": "https://www.coindesk.com/markets/2026/08/07/a-case-for-a-bitcoin-surge-to-usd76-000-may-be-building-beneath-the-boring-price-action-but-there-s-a-caveat"
     }
   ]
 }

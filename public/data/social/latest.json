@@ -1,10 +1,12 @@
 {
-  "timestamp": 1786114416849,
+  "timestamp": 1786114815030,
   "sources": {
     "reddit": {
-      "posts": 0,
-      "subreddits": [],
-      "coinMentions": 0
+      "posts": 25,
+      "subreddits": [
+        "CryptoCurrency"
+      ],
+      "coinMentions": 3
     },
     "coingecko": {
       "trending": 15
@@ -15,6 +17,28 @@
   },
   "sentiment": [
     {
+      "symbol": "BTC",
+      "redditHeat": 5,
+      "redditSent": 0.33,
+      "cgScore": 5,
+      "santimentScore": 0,
+      "composite": 0.499,
+      "redditNorm": 1,
+      "cgNorm": 0.33,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "LINK",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 4,
+      "santimentScore": 211.44746907552084,
+      "composite": 0.381,
+      "redditNorm": 0,
+      "cgNorm": 0.27,
+      "santimentNorm": 1
+    },
+    {
       "symbol": "BICO",
       "redditHeat": 0,
       "redditSent": 0,
@@ -24,17 +48,6 @@
       "redditNorm": 0,
       "cgNorm": 1,
       "santimentNorm": 0
-    },
-    {
-      "symbol": "LINK",
-      "redditHeat": 0,
-      "redditSent": 0,
-      "cgScore": 0,
-      "santimentScore": 211.44746907552084,
-      "composite": 0.3,
-      "redditNorm": 0,
-      "cgNorm": 0,
-      "santimentNorm": 1
     },
     {
       "symbol": "LIT",
@@ -59,7 +72,7 @@
       "santimentNorm": 0
     },
     {
-      "symbol": "ETHFI",
+      "symbol": "PUMP",
       "redditHeat": 0,
       "redditSent": 0,
       "cgScore": 12,
@@ -70,7 +83,7 @@
       "santimentNorm": 0
     },
     {
-      "symbol": "ONDO",
+      "symbol": "SOL",
       "redditHeat": 0,
       "redditSent": 0,
       "cgScore": 11,
@@ -81,7 +94,7 @@
       "santimentNorm": 0
     },
     {
-      "symbol": "SOL",
+      "symbol": "ONDO",
       "redditHeat": 0,
       "redditSent": 0,
       "cgScore": 10,
@@ -92,7 +105,7 @@
       "santimentNorm": 0
     },
     {
-      "symbol": "PUMP",
+      "symbol": "ETHFI",
       "redditHeat": 0,
       "redditSent": 0,
       "cgScore": 9,
@@ -103,18 +116,7 @@
       "santimentNorm": 0
     },
     {
-      "symbol": "UNI",
-      "redditHeat": 0,
-      "redditSent": 0,
-      "cgScore": 1,
-      "santimentScore": 107.87221272786458,
-      "composite": 0.174,
-      "redditNorm": 0,
-      "cgNorm": 0.07,
-      "santimentNorm": 0.51
-    },
-    {
-      "symbol": "ENA",
+      "symbol": "PENGU",
       "redditHeat": 0,
       "redditSent": 0,
       "cgScore": 8,
@@ -125,7 +127,18 @@
       "santimentNorm": 0
     },
     {
-      "symbol": "PENGU",
+      "symbol": "UNI",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 0,
+      "santimentScore": 107.87221272786458,
+      "composite": 0.153,
+      "redditNorm": 0,
+      "cgNorm": 0,
+      "santimentNorm": 0.51
+    },
+    {
+      "symbol": "ENA",
       "redditHeat": 0,
       "redditSent": 0,
       "cgScore": 7,
@@ -136,7 +149,7 @@
       "santimentNorm": 0
     },
     {
-      "symbol": "PI",
+      "symbol": "KGEN",
       "redditHeat": 0,
       "redditSent": 0,
       "cgScore": 6,
@@ -147,29 +160,29 @@
       "santimentNorm": 0
     },
     {
-      "symbol": "BP",
-      "redditHeat": 0,
-      "redditSent": 0,
-      "cgScore": 5,
+      "symbol": "ARB",
+      "redditHeat": 1,
+      "redditSent": 1,
+      "cgScore": 0,
       "santimentScore": 0,
-      "composite": 0.099,
-      "redditNorm": 0,
-      "cgNorm": 0.33,
+      "composite": 0.08,
+      "redditNorm": 0.2,
+      "cgNorm": 0,
       "santimentNorm": 0
     },
     {
-      "symbol": "PONS",
-      "redditHeat": 0,
+      "symbol": "BNB",
+      "redditHeat": 1,
       "redditSent": 0,
-      "cgScore": 4,
+      "cgScore": 0,
       "santimentScore": 0,
-      "composite": 0.081,
-      "redditNorm": 0,
-      "cgNorm": 0.27,
+      "composite": 0.08,
+      "redditNorm": 0.2,
+      "cgNorm": 0,
       "santimentNorm": 0
     },
     {
-      "symbol": "HFT",
+      "symbol": "NEAR",
       "redditHeat": 0,
       "redditSent": 0,
       "cgScore": 3,
@@ -180,7 +193,7 @@
       "santimentNorm": 0
     },
     {
-      "symbol": "STONKBROKER",
+      "symbol": "LAB",
       "redditHeat": 0,
       "redditSent": 0,
       "cgScore": 2,
@@ -189,14 +202,53 @@
       "redditNorm": 0,
       "cgNorm": 0.13,
       "santimentNorm": 0
+    },
+    {
+      "symbol": "XPL",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 1,
+      "santimentScore": 0,
+      "composite": 0.021,
+      "redditNorm": 0,
+      "cgNorm": 0.07,
+      "santimentNorm": 0
     }
   ],
-  "redditRaw": [],
+  "redditRaw": [
+    {
+      "symbol": "BTC",
+      "mentions": 5,
+      "bullish": 2,
+      "bearish": 1,
+      "posts": 5,
+      "sentiment": 0.33,
+      "heat": 5
+    },
+    {
+      "symbol": "ARB",
+      "mentions": 1,
+      "bullish": 1,
+      "bearish": 0,
+      "posts": 1,
+      "sentiment": 1,
+      "heat": 1
+    },
+    {
+      "symbol": "BNB",
+      "mentions": 1,
+      "bullish": 0,
+      "bearish": 0,
+      "posts": 1,
+      "sentiment": 0,
+      "heat": 1
+    }
+  ],
   "cgRaw": [
     {
       "symbol": "BICO",
       "name": "Biconomy",
-      "mcapRank": 432,
+      "mcapRank": 426,
       "score": 0
     },
     {
@@ -208,79 +260,79 @@
     {
       "symbol": "CASHCAT",
       "name": "Cash Cat",
-      "mcapRank": 258,
+      "mcapRank": 266,
       "score": 2
     },
     {
-      "symbol": "ETHFI",
-      "name": "Ether.fi",
-      "mcapRank": 111,
+      "symbol": "PUMP",
+      "name": "Pump.fun",
+      "mcapRank": 70,
       "score": 3
-    },
-    {
-      "symbol": "ONDO",
-      "name": "Ondo",
-      "mcapRank": 43,
-      "score": 4
     },
     {
       "symbol": "SOL",
       "name": "Solana",
       "mcapRank": 7,
+      "score": 4
+    },
+    {
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "mcapRank": 43,
       "score": 5
     },
     {
-      "symbol": "PUMP",
-      "name": "Pump.fun",
-      "mcapRank": 69,
+      "symbol": "ETHFI",
+      "name": "Ether.fi",
+      "mcapRank": 112,
       "score": 6
+    },
+    {
+      "symbol": "PENGU",
+      "name": "Pudgy Penguins",
+      "mcapRank": 110,
+      "score": 7
     },
     {
       "symbol": "ENA",
       "name": "Ethena",
       "mcapRank": 68,
-      "score": 7
-    },
-    {
-      "symbol": "PENGU",
-      "name": "Pudgy Penguins",
-      "mcapRank": 109,
       "score": 8
     },
     {
-      "symbol": "PI",
-      "name": "Pi Network",
-      "mcapRank": 65,
+      "symbol": "KGEN",
+      "name": "KGeN",
+      "mcapRank": 514,
       "score": 9
     },
     {
-      "symbol": "BP",
-      "name": "Backpack",
-      "mcapRank": 256,
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "mcapRank": 1,
       "score": 10
     },
     {
-      "symbol": "PONS",
-      "name": "Pons",
-      "mcapRank": 815,
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "mcapRank": 19,
       "score": 11
     },
     {
-      "symbol": "HFT",
-      "name": "Hashflow",
-      "mcapRank": 996,
+      "symbol": "NEAR",
+      "name": "NEAR Protocol",
+      "mcapRank": 39,
       "score": 12
     },
     {
-      "symbol": "STONKBROKER",
-      "name": "StonkBroker",
-      "mcapRank": 622,
+      "symbol": "LAB",
+      "name": "LAB",
+      "mcapRank": 503,
       "score": 13
     },
     {
-      "symbol": "UNI",
-      "name": "Uniswap",
-      "mcapRank": 37,
+      "symbol": "XPL",
+      "name": "Plasma",
+      "mcapRank": 164,
       "score": 14
     }
   ],
@@ -346,5 +398,170 @@
       "score": 105.1815694173177
     }
   ],
-  "recentPosts": []
+  "recentPosts": [
+    {
+      "title": "Daily Crypto Discussion - August 6, 2026 (GMT+0)",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-06T23:01:12+00:00",
+      "coins": []
+    },
+    {
+      "title": "Arbitrum to minimize Arbitrum Nova - Moons need to bridged",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-06-25T19:46:27+00:00",
+      "coins": [
+        "ARB"
+      ]
+    },
+    {
+      "title": "A tax official in France stole a list of everyone in the country who owns crypto and sold it. Now criminals are showing up at their front doors with zip ties.",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-07T04:22:09+00:00",
+      "coins": []
+    },
+    {
+      "title": "Anyone else find themselves naturally buying less Bitcoin over time?",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-07T07:13:41+00:00",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "With the whole ColdCard fiasco, you should consider generating a new 24-word seed phrase of your own, manually, regardless of what hardware wallet you're using. (Alternate title: Finding your 24th word the right way)",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-07T05:20:16+00:00",
+      "coins": []
+    },
+    {
+      "title": "US Senate Pushes Clarity Act Vote to September",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-07T09:43:01+00:00",
+      "coins": []
+    },
+    {
+      "title": "If you use a Cypher or Osmosis card, your spending dies tonight and unbacked wallets could go with it",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-07T14:47:58+00:00",
+      "coins": []
+    },
+    {
+      "title": "It makes sense",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-06T14:45:37+00:00",
+      "coins": []
+    },
+    {
+      "title": "There’s an interesting shift happening in how centralized exchanges are positioning themselves this year",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-07T09:57:58+00:00",
+      "coins": []
+    },
+    {
+      "title": "Friday Crypto Check-In: What’s on your radar?",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-07T14:11:24+00:00",
+      "coins": []
+    },
+    {
+      "title": "GENERIC AI POST",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-06T23:49:02+00:00",
+      "coins": []
+    },
+    {
+      "title": "How the CLARITY Act Would Divide Crypto Oversight Between the SEC and CFTC",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-07T10:00:54+00:00",
+      "coins": []
+    },
+    {
+      "title": "Be aware of the expected august hard fork for eCash from Bitcoin",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-06T22:29:47+00:00",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "BNB Chain now ISO 27001 & 27701 Certified by BSI",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-07T09:47:09+00:00",
+      "coins": [
+        "BNB"
+      ]
+    },
+    {
+      "title": "This is a trip down memory lane, so glad i didnt mine this bullshit",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-06T11:41:22+00:00",
+      "coins": []
+    },
+    {
+      "title": "In 2011, a guy bought Domino's with 19.12 BTC to record a tutorial on how Bitcoin works",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-06T18:42:09+00:00",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Reminder: Share your Bybit EU Year Recap and receive €20 in BTC",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-07T12:25:17+00:00",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "When the whole GC round trip from 24x but you exited at 2x",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-06T14:40:22+00:00",
+      "coins": []
+    },
+    {
+      "title": "The Clarity Act just missed its window before the August recess. Here's why September is a much smaller door than people think.",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-07T09:34:53+00:00",
+      "coins": []
+    },
+    {
+      "title": "Self-custody vs automation: I built an open wallet that puts an AI trading agent on-device, keys never leave the phone",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-06T20:49:19+00:00",
+      "coins": []
+    },
+    {
+      "title": "Easiest way to convert and then change exchange?",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-06T16:26:59+00:00",
+      "coins": []
+    },
+    {
+      "title": "Whatever happens: Do not chase betas",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-07T10:13:25+00:00",
+      "coins": []
+    },
+    {
+      "title": "Coldcard hack could lift demand for regulated bitcoin products",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-06T04:56:56+00:00",
+      "coins": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Why Doesn't Paying With Crypto Feel Easy Yet?",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-06T03:50:27+00:00",
+      "coins": []
+    },
+    {
+      "title": "Do you actually use crypto for everyday payments?",
+      "subreddit": "CryptoCurrency",
+      "time": "2026-08-06T13:29:44+00:00",
+      "coins": []
+    }
+  ]
 }
