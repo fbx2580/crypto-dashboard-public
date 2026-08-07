@@ -1,9 +1,135 @@
 {
   "date": "2026-08-07",
   "type": "news",
-  "updated": 1786069480233,
-  "total": 66,
+  "updated": 1786089290938,
+  "total": 80,
   "records": [
+    {
+      "s": "Anthony Scaramucci Predicts Invisible Crypto Adoption",
+      "t": "2026-08-07T07:41:48.000Z",
+      "ts": 1786088508,
+      "src": "U.Today",
+      "link": "https://u.today/anthony-scaramucci-predicts-invisible-crypto-adoption",
+      "s_cn": "安东尼·斯卡拉穆奇预测隐形加密货币的采用",
+      "_ts": 1786089290931
+    },
+    {
+      "s": "Live updates: Bitcoin flat at $64,300 before US jobs report, with oil back as a headwind",
+      "t": "2026-08-07T07:44:57.000Z",
+      "ts": 1786088697,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/live-updates-bitcoin-flat-at-usd64-300-before-us-jobs-report-with-oil-back-as-a-headwind",
+      "s_cn": "实时更新：美国就业报告前比特币持平于 64,300 美元，油价回升成为逆风",
+      "_ts": 1786088751046
+    },
+    {
+      "s": "Ripple's Alderoty Says Crypto Is No Longer Just for 'Crypto Boys'",
+      "t": "2026-08-07T06:22:25.000Z",
+      "ts": 1786083745,
+      "src": "U.Today",
+      "link": "https://u.today/scaramucci-people-will-soon-use-crypto-without-knowing-it",
+      "s_cn": "Ripple 的 Alderoty 表示加密不再只是“加密男孩”的专利",
+      "_ts": 1786088390461
+    },
+    {
+      "s": "A bitcoin pattern taking shape right now could send prices soaring to $76,000",
+      "t": "2026-08-07T04:28:17.000Z",
+      "ts": 1786076897,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/a-case-for-a-bitcoin-surge-to-usd76-000-may-be-building-beneath-the-boring-price-action-but-there-s-a-caveat",
+      "s_cn": "目前正在形成的比特币模式可能会导致价格飙升至 76,000 美元",
+      "_ts": 1786086769580
+    },
+    {
+      "s": "Scaramucci: People Will Soon Use Crypto Without Knowing It",
+      "t": "2026-08-07T06:22:25.000Z",
+      "ts": 1786083745,
+      "src": "U.Today",
+      "link": "https://u.today/scaramucci-people-will-soon-use-crypto-without-knowing-it",
+      "s_cn": "斯卡拉穆奇：人们很快就会在不知不觉中使用加密货币",
+      "_ts": 1786084608768
+    },
+    {
+      "s": "Bitcoin whales load up on $1.2 billion in BTC as ETFs attract $750 million",
+      "t": "2026-08-07T05:45:21.000Z",
+      "ts": 1786081521,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-whales-load-up-on-usd1-2-billion-in-btc-as-etfs-attract-usd750-million",
+      "s_cn": "比特币鲸鱼买入 12 亿美元 BTC，ETF 吸引 7.5 亿美元",
+      "_ts": 1786081726706
+    },
+    {
+      "s": "Japan FSA asks crypto exchanges to impose withdrawal delays to fight scams",
+      "t": "2026-08-07T05:24:38.000Z",
+      "ts": 1786080278,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/japan-fsa-crypto-exchanges-withdrawal-delays-scams?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "日本金融厅要求加密货币交易所延迟提款以打击诈骗",
+      "_ts": 1786080826397
+    },
+    {
+      "s": "Proposed CLARITY ethics deal could save Trump millions in taxes: Bloomberg",
+      "t": "2026-08-07T05:04:22.000Z",
+      "ts": 1786079062,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/proposed-clarity-ethics-deal-could-save-trump-millions-in-taxes-bloomberg?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "彭博社：拟议的 CLARITY 道德协议可以为特朗普节省数百万美元的税款",
+      "_ts": 1786079745741
+    },
+    {
+      "s": "Bitcoin wallet dormant since 2011 moves $3.2 million toward FalconX-linked address",
+      "t": "2026-08-07T04:50:44.000Z",
+      "ts": 1786078244,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-wallet-dormant-since-2011-moves-usd3-2-million-toward-falconx-linked-address",
+      "s_cn": "自 2011 年以来一直处于休眠状态的比特币钱包将 320 万美元转移到 FalconX 链接地址",
+      "_ts": 1786078304857
+    },
+    {
+      "s": "A case for a bitcoin surge to $76,000 may be building beneath the boring price action, but there's a caveat",
+      "t": "2026-08-07T04:28:17.000Z",
+      "ts": 1786076897,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/a-case-for-a-bitcoin-surge-to-usd76-000-may-be-building-beneath-the-boring-price-action-but-there-s-a-caveat",
+      "s_cn": "在无聊的价格走势之下，比特币飙升至 76,000 美元的理由可能正在形成，但有一个警告",
+      "_ts": 1786077044258
+    },
+    {
+      "s": "XRP leads majors losses as Clarity Act vote slips to September",
+      "t": "2026-08-07T04:17:01.000Z",
+      "ts": 1786076221,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-stuck-near-usd64-000-as-clarity-act-vote-slips-to-september",
+      "s_cn": "由于《澄清法案》投票推迟至 9 月，XRP 大幅下跌",
+      "_ts": 1786076323816
+    },
+    {
+      "s": "US Senate pushes CLARITY Act vote to September",
+      "t": "2026-08-07T02:49:53.000Z",
+      "ts": 1786070993,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/us-senate-pushes-clarity-act-vote-to-september-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "美国参议院推迟 CLARITY 法案投票至 9 月",
+      "_ts": 1786076143987
+    },
+    {
+      "s": "Bitget explores licensed crypto presence in Bhutan",
+      "t": "2026-08-07T03:22:26.000Z",
+      "ts": 1786072946,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bitget-explores-licensed-crypto-presence-in-bhutan?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Bitget 探索在不丹的许可加密货币存在",
+      "_ts": 1786073622487
+    },
+    {
+      "s": "US Senate pushes CLARITY Act vote to September: Report",
+      "t": "2026-08-07T02:49:53.000Z",
+      "ts": 1786070993,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/us-senate-pushes-clarity-act-vote-to-september-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "美国参议院将 CLARITY Act 投票推迟至 9 月：报告",
+      "_ts": 1786071641494
+    },
     {
       "s": "MARA swings to Q2 loss as Bitcoin’s slump masks higher output",
       "t": "2026-08-07T02:17:07.000Z",

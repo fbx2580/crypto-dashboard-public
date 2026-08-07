@@ -294,7 +294,7 @@ async function refreshTickers() {
 
 // 美股存储类（币安 TradFi 永续合约代码）
 const STORAGE_STOCKS = ['NVDAUSDT','AMDUSDT','INTCUSDT','MUUSDT','WDCUSDT','SKHYNIXUSDT','SKHYUSDT','SNDKUSDT','DRAMUSDT'];
-const OPTICAL_STOCKS = ['COHRUSDT','LITEUSDT','CIENUSDT','AAOIUSDT','GLWUSDT','FLEXUSDT'];
+const OPTICAL_STOCKS = []; // 币安已下架所有美股代币，待补充
 
 // ─── 秒级 BTC 价格刷新（无缓存，带跳动指示）───
 async function tickBtcPrice() {
@@ -440,29 +440,44 @@ async function refreshAnomalies() {
   } catch(e) {}
 }
 
-// ─── 光模块股票排行 ───
+// ─── 光模块排行（按市值）───
+let _opticalMCap = {}; // coinId -> marketCap
 async function refreshOptical() {
   try {
     const resp = await fetch('/api/binance/signals');
     if (!resp.ok) return;
     const data = await resp.json();
     const all = data.altcoins || [];
-    const fmtMktCap = v => v >= 1e12 ? '$' + (v/1e12).toFixed(1) + 'T' : v >= 1e9 ? '$' + (v/1e9).toFixed(1) + 'B' : v >= 1e6 ? '$' + (v/1e6).toFixed(0) + 'M' : '';
-    const stocks = (all || []).filter(t => OPTICAL_STOCKS.includes(t.symbol))
-      .sort((a, b) => b.change24h - a.change24h);
-    const scroll = document.getElementById('opticalScroll');
-    if (!stocks?.length) {
-      if (!scroll.querySelector('.ticker-item')) scroll.innerHTML = '<span class="ticker-loading">等待数据...</span>';
+    const stocks = (all || []).filter(t => OPTICAL_STOCKS.includes(t.symbol));
+    if (!stocks.length) {
+      document.getElementById('opticalScroll').innerHTML = '<span class="ticker-loading">暂无标的</span>';
       return;
     }
-    scroll.innerHTML = stocks.map(t => {
+    // 按市值排序：先从 CoinGecko 拉市值
+    const syms = [...new Set(stocks.map(t => t.symbol.replace('USDT','')))];
+    try {
+      const cgResp = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=' +
+        syms.map(s => s.toLowerCase()).join(',') + '&order=market_cap_desc&per_page=50&page=1');
+      const cgData = await cgResp.json();
+      _opticalMCap = {};
+      (cgData || []).forEach(c => { _opticalMCap[c.symbol.toUpperCase()] = c.market_cap || 0; });
+    } catch(e) {}
+    const fmtMCap = v => v >= 1e12 ? '$' + (v/1e12).toFixed(1) + 'T' : v >= 1e9 ? '$' + (v/1e9).toFixed(1) + 'B' : v >= 1e6 ? '$' + (v/1e6).toFixed(0) + 'M' : v >= 1e3 ? '$' + (v/1e3).toFixed(0) + 'K' : '$' + (v||0).toFixed(0);
+    const sorted = stocks.sort((a, b) => {
+      const ma = _opticalMCap[a.symbol.replace('USDT','')] || 0;
+      const mb = _opticalMCap[b.symbol.replace('USDT','')] || 0;
+      return mb - ma;
+    });
+    const scroll = document.getElementById('opticalScroll');
+    scroll.innerHTML = sorted.map(t => {
       const chg = parseFloat(t.change24h) || 0;
       const cls = chg >= 0 ? 'up' : 'down';
       const sign = chg >= 0 ? '+' : '';
+      const mcap = _opticalMCap[t.symbol.replace('USDT','')] || 0;
       return '<div class="ticker-item" data-sym="' + t.symbol + '">' +
         '<span class="ticker-symbol">' + t.symbol.replace('USDT','') + '</span>' +
         '<span class="ticker-change ' + cls + '">' + sign + chg.toFixed(2) + '%</span>' +
-        '<span class="ticker-price" style="color:var(--text-dim);font-size:10px">$' + fmt.price(t.price) + '</span></div>';
+        '<span class="ticker-price" style="color:var(--text-dim);font-size:10px">' + fmtMCap(mcap) + '</span></div>';
     }).join('');
   } catch(e) {}
 }
