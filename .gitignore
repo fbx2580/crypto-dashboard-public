@@ -32,3 +32,7 @@ public/data/snapshots.db
 .server_pid_checked
 data/dashboard.db*
 data/*.db*
+public_bak/
+data/dashboard.db*
+trade_data/
+trade_data2/
