@@ -1,6 +1,334 @@
 {
-  "updated": 1786089290943,
+  "updated": 1786114505613,
   "alerts": [
+    {
+      "ts": 1786113626,
+      "detected": 1786114505613,
+      "src": "U.Today",
+      "title": "前 SEC 顾问表示，加密货币清晰度法案尚未终止",
+      "orig": "Crypto Clarity Bill Not Dead Yet, Former SEC Adviser Says",
+      "link": "https://u.today/crypto-clarity-bill-not-dead-yet-former-sec-adviser-says"
+    },
+    {
+      "ts": 1786113025,
+      "detected": 1786113243332,
+      "src": "CoinDesk",
+      "title": "FTX 的一部分幸存下来，CLARITY 法案就是如此",
+      "orig": "A part of FTX survived, and it’s the case for the CLARITY Act",
+      "link": "https://www.coindesk.com/opinion/2026/08/07/a-part-of-ftx-survived-and-it-s-the-case-for-the-clarity-act"
+    },
+    {
+      "ts": 1786111487,
+      "detected": 1786111623061,
+      "src": "CoinDesk",
+      "title": "俄罗斯严厉打击据称与乌克兰有关的未经许可的加密货币交易所",
+      "orig": "Russia cracks down on unlicensed crypto exchanges it claims are linked to Ukraine",
+      "link": "https://www.coindesk.com/policy/2026/08/07/russia-cracks-down-on-unlicensed-crypto-exchanges-it-claims-are-linked-to-ukraine"
+    },
+    {
+      "ts": 1786109724,
+      "detected": 1786110541681,
+      "src": "U.Today",
+      "title": "XRP 账本的下一步是什么？",
+      "orig": "What's Next for XRP Ledger? Ripple's Engineering Chief to Break It Down at XRP Event",
+      "link": "https://u.today/whats-next-for-xrp-ledger-ripples-engineering-chief-to-break-it-down-at-xrp-event"
+    },
+    {
+      "ts": 1786109561,
+      "detected": 1786110541681,
+      "src": "BBC Business",
+      "title": "特朗普政府将向德国公司支付 12 亿美元以停止美国风电项目",
+      "orig": "Trump administration to pay German firm $1.2bn to halt US wind projects",
+      "link": "https://www.bbc.co.uk/news/articles/c1e1vg0gjl5o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1786109400,
+      "detected": 1786109821402,
+      "src": "CoinTelegraph",
+      "title": "对以太坊 EIP-8363 质押提案的强烈反对",
+      "orig": "Fierce backlash to Ethereum’s EIP-8363 staking proposal",
+      "link": "https://cointelegraph.com/magazine/fierce-backlash-to-ethereums-latest-staking-proposal-eip-8363?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786108800,
+      "detected": 1786109641142,
+      "src": "U.Today",
+      "title": "卡尔达诺（ADA）交易量24小时飙升116%：牛市会被触发吗？",
+      "orig": "Cardano (ADA) Volume Surges 116% in 24 Hours: Will Bullrun Be Triggered?",
+      "link": "https://u.today/cardano-ada-volume-surges-116-in-24-hours-will-bullrun-be-triggered"
+    },
+    {
+      "ts": 1786109179,
+      "detected": 1786109281355,
+      "src": "Decrypt",
+      "title": "随着 DeFi 萎缩，代币化资产存款增加两倍至 $7.4B：CoinShares",
+      "orig": "Tokenized Asset Deposits Tripled to $7.4B as DeFi Shrank: CoinShares",
+      "link": "https://decrypt.co/375099/tokenized-asset-deposits-tripled-to-7-4b-as-defi-shrank-coinshares"
+    },
+    {
+      "ts": 1786108454,
+      "detected": 1786108921512,
+      "src": "BBC Business",
+      "title": "由于夏季持续缓慢，上个月美国就业岗位意外下降",
+      "orig": "Surprise fall in US jobs last month as slow summer continues",
+      "link": "https://www.bbc.co.uk/news/articles/c20j5rle717o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1786107255,
+      "detected": 1786108200485,
+      "src": "U.Today",
+      "title": "经过 7 年的 GitHub 活动，官方 XRP 图标获得 Font Awesome 认可",
+      "orig": "Official XRP Icon Earns Font Awesome Recognition After 7-Year GitHub Campaign",
+      "link": "https://u.today/official-xrp-icon-earns-font-awesome-recognition-after-7-year-github-campaign"
+    },
+    {
+      "ts": 1786107601,
+      "detected": 1786108020389,
+      "src": "CoinTelegraph",
+      "title": "随着自我托管设置的重新评估，比特币爱好者转向掷骰子",
+      "orig": "Bitcoiners turn to dice throws as self-custody setups are re-evaluated",
+      "link": "https://cointelegraph.com/features/bitcoiners-turn-to-dice-throws-as-self-custody-setups-are-re-evaluated?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786105911,
+      "detected": 1786107660172,
+      "src": "CoinDesk",
+      "title": "美国7月意外裁员2.3万人，美联储加息受到质疑",
+      "orig": "U.S. unexpectedly shed 23,000 jobs in July, putting Fed rate hikes in question",
+      "link": "https://www.coindesk.com/markets/2026/08/07/the-u-s-lost-23-000-jobs-in-july-far-shy-of-forecasts-for-a-gain-of-80-000"
+    },
+    {
+      "ts": 1786106227,
+      "detected": 1786106940067,
+      "src": "U.Today",
+      "title": "迈克尔·塞勒宣称：“比特币不需要清晰度”",
+      "orig": "'Bitcoin Doesn't Need Clarity,' Michael Saylor Declares",
+      "link": "https://u.today/bitcoin-doesnt-need-clarity-michael-saylor-declares"
+    },
+    {
+      "ts": 1786105807,
+      "detected": 1786106579947,
+      "src": "BBC Business",
+      "title": "90秒停电如何给铁路通勤者带来混乱",
+      "orig": "How a 90-second power outage sparked  chaos for rail commuters",
+      "link": "https://www.bbc.co.uk/news/articles/c3ekd5784k5o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1786106234,
+      "detected": 1786106399826,
+      "src": "Decrypt",
+      "title": "中国的Kimi K3突破沙盒寻找测试答案",
+      "orig": "China’s Kimi K3 Broke Out of Its Sandbox to Look Up Test Answers",
+      "link": "https://decrypt.co/375096/chinas-kimi-k3-broke-out-of-its-sandbox-to-look-up-test-answers"
+    },
+    {
+      "ts": 1786105575,
+      "detected": 1786106399826,
+      "src": "U.Today",
+      "title": "65,000 美元的比特币悖论：为何矿工费收入降至 2019 年水平",
+      "orig": "$65,000 Bitcoin Paradox: Why Miner Fee Revenue Sinks to 2019 Levels",
+      "link": "https://u.today/65000-bitcoin-paradox-why-miner-fee-revenue-sinks-to-2019-levels"
+    },
+    {
+      "ts": 1786105911,
+      "detected": 1786106040109,
+      "src": "CoinDesk",
+      "title": "美国 7 月份失业 23,000 人，远低于预期的增长 80,000 人",
+      "orig": "The U.S. lost 23,000 jobs in July, far shy of forecasts for a gain of 80,000",
+      "link": "https://www.coindesk.com/markets/2026/08/07/the-u-s-lost-23-000-jobs-in-july-far-shy-of-forecasts-for-a-gain-of-80-000"
+    },
+    {
+      "ts": 1786105721,
+      "detected": 1786106040109,
+      "src": "CoinTelegraph",
+      "title": "俄罗斯严厉打击莫斯科市 9 家加密货币交易所",
+      "orig": "Russia cracks down on 9 crypto exchanges in Moscow City",
+      "link": "https://cointelegraph.com/news/russia-shuts-down-crypto-exchanges-moscow-city?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786104820,
+      "detected": 1786105499267,
+      "src": "CoinTelegraph",
+      "title": "CEX 永续期货成交量跌至 4T 美元，为 2023 年底以来的最低水平",
+      "orig": "CEX perpetual futures volume falls to $4T, lowest since late 2023",
+      "link": "https://cointelegraph.com/news/cex-futures-volume-falls-4t-july-lowest-level-2023?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786104942,
+      "detected": 1786105319262,
+      "src": "CNBC",
+      "title": "公司对航空公司最便宜的商务舱机票嗤之以鼻。",
+      "orig": "Companies scoff at airlines' cheapest business class tickets. 'The real value is flexibility'",
+      "link": "https://www.cnbc.com/2026/08/07/business-business-premium-fares.html"
+    },
+    {
+      "ts": 1786103149,
+      "detected": 1786104418711,
+      "src": "CoinDesk",
+      "title": "为什么比特币的 BIP-110 在矿工支持接近于零的情况下却拒绝消亡",
+      "orig": "Why Bitcoin's BIP-110 refuses to die despite near-zero miner support",
+      "link": "https://www.coindesk.com/tech/2026/08/06/why-bitcoin-s-bip-110-refuses-to-die-despite-near-zero-miner-support"
+    },
+    {
+      "ts": 1786104035,
+      "detected": 1786104238566,
+      "src": "Decrypt",
+      "title": "上午时间：MetaMask 为人工智能代理提供钱包",
+      "orig": "Morning Minute: MetaMask Hands AI Agents a Wallet",
+      "link": "https://decrypt.co/375093/morning-minute-metamask-hands-ai-agents-a-wallet"
+    },
+    {
+      "ts": 1786104000,
+      "detected": 1786104058534,
+      "src": "CoinDesk",
+      "title": "在《澄清法案》葬礼之后，加密世界将继续运转",
+      "orig": "After a Clarity Act funeral, the crypto world would keep turning",
+      "link": "https://www.coindesk.com/news-analysis/2026/08/06/after-a-clarity-act-funeral-the-crypto-world-would-keep-turning"
+    },
+    {
+      "ts": 1786102940,
+      "detected": 1786102977675,
+      "src": "CoinDesk",
+      "title": "比特币的波动性几乎消失了。",
+      "orig": "Bitcoin’s volatility has nearly disappeared. The risk hasn’t.",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/07/bitcoin-s-volatility-has-nearly-disappeared-the-risk-hasn-t"
+    },
+    {
+      "ts": 1786100701,
+      "detected": 1786101537566,
+      "src": "CoinTelegraph",
+      "title": "币安比特币交易量比率创历史新高，期货价格是现货价格的八倍以上",
+      "orig": "Binance Bitcoin volume ratio hits record as futures outweigh spot eight times over",
+      "link": "https://cointelegraph.com/markets/binance-bitcoin-volume-ratio-hits-record-as-futures-outweigh-spot-eight-times-over?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786098347,
+      "detected": 1786101357004,
+      "src": "U.Today",
+      "title": "“柴犬没有死”：社区资深人士呼吁过时的 SHIB 链接",
+      "orig": "'Shiba Inu Isn't Dead': Community Veteran Calls Out Outdated SHIB Link",
+      "link": "https://u.today/shiba-inu-isnt-dead-community-veteran-calls-out-outdated-shib-link"
+    },
+    {
+      "ts": 1786098974,
+      "detected": 1786099375728,
+      "src": "CoinDesk",
+      "title": "随着中东紧张局势进一步升级，比特币徘徊在 65,000 美元以下",
+      "orig": "Bitcoin hovers below $65,000 as Middle East tensions escalate further",
+      "link": "https://www.coindesk.com/markets/2026/08/07/cmt"
+    },
+    {
+      "ts": 1786099061,
+      "detected": 1786099195824,
+      "src": "Decrypt",
+      "title": "MyTrade 创始人因机器人洗售 60 种加密货币而被罚款 1 万美元",
+      "orig": "MyTrade Founder Fined $10K Over Bots That Wash Traded 60 Cryptocurrencies",
+      "link": "https://decrypt.co/375085/mytrade-founder-fined-10k-over-bots-that-wash-traded-60-cryptocurrencies"
+    },
+    {
+      "ts": 1786098974,
+      "detected": 1786099015576,
+      "src": "CoinDesk",
+      "title": "随着中东紧张局势进一步升级，比特币徘徊在 68,000 美元下方",
+      "orig": "Bitcoin hovers below $68,000 as Middle East tensions escalate further",
+      "link": "https://www.coindesk.com/markets/2026/08/07/cmt"
+    },
+    {
+      "ts": 1786096800,
+      "detected": 1786097575250,
+      "src": "U.Today",
+      "title": "Bonk Inu (BONK) 退市：Upbit 宣布意外措施",
+      "orig": "Bonk Inu (BONK) Delisted: Upbit Announces Unexpected Measures",
+      "link": "https://u.today/bonk-inu-bonk-delisted-upbit-announces-unexpected-measures"
+    },
+    {
+      "ts": 1786096254,
+      "detected": 1786097575250,
+      "src": "BBC Business",
+      "title": "美国达成12亿美元协议，向德国公司支付停止海上风电项目的费用",
+      "orig": "US strikes $1.2bn deal to pay German firm to halt offshore wind projects",
+      "link": "https://www.bbc.co.uk/news/articles/c1e1vg0gjl5o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "ts": 1786094756,
+      "detected": 1786095233804,
+      "src": "CoinTelegraph",
+      "title": "由于股价下跌，CleanSpark 营收未达华尔街预期",
+      "orig": "CleanSpark misses Wall Street revenue estimates as shares sink",
+      "link": "https://cointelegraph.com/news/cleanspark-wall-street-revenue-estimates-shares-sink?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786094762,
+      "detected": 1786094874071,
+      "src": "Decrypt",
+      "title": "由于民主党坚持不懈，参议院推迟《澄清法案》投票至 9 月进行",
+      "orig": "Senate Punts Clarity Act Vote to September as Democrats Hold Out",
+      "link": "https://decrypt.co/375082/senate-punts-clarity-act-vote-to-september-as-democrats-hold-out"
+    },
+    {
+      "ts": 1786094070,
+      "detected": 1786094874071,
+      "src": "U.Today",
+      "title": "新的 XRPL 版本在这里：每个 XRP 持有者需要了解的 6 个最终升级",
+      "orig": "New XRPL Version Here: 6 Definitive Upgrades Every XRP Holder Needs to Know",
+      "link": "https://u.today/new-xrpl-version-here-6-definitive-upgrades-every-xrp-holder-needs-to-know"
+    },
+    {
+      "ts": 1786094640,
+      "detected": 1786094693750,
+      "src": "CoinDesk",
+      "title": "210,000 比特币离开旧钱包，Coldcard 的影响出现在链上",
+      "orig": "Coldcard fallout shows up onchain as 210,000 bitcoin leaves old wallets",
+      "link": "https://www.coindesk.com/markets/2026/08/07/coldcard-fallout-shows-up-onchain-as-210-000-bitcoin-leaves-old-wallets"
+    },
+    {
+      "ts": 1786094057,
+      "detected": 1786094693750,
+      "src": "CoinTelegraph",
+      "title": "Stripe 旗下的 Bridge 在卢森堡批准后加入欧盟 MiCA 注册",
+      "orig": "Stripe-owned Bridge joins EU MiCA register after Luxembourg approval",
+      "link": "https://cointelegraph.com/news/bridge-mica-stablecoin-issuer-esma-register?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786093274,
+      "detected": 1786093793113,
+      "src": "CoinTelegraph",
+      "title": "First Digital首席执行官：《清晰法案》的延迟为亚洲金融中心提供了机会",
+      "orig": "CLARITY Act delay gives Asian financial hubs an opening: First Digital CEO",
+      "link": "https://cointelegraph.com/news/clarity-act-delay-asian-crypto-hubs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786092377,
+      "detected": 1786092532264,
+      "src": "CoinDesk",
+      "title": "加密货币做市商 Wintermute 获得 SEC 批准进行股票和 ETF 区块交易",
+      "orig": "Crypto market maker Wintermute lands SEC approval to trade equities and ETF blocks",
+      "link": "https://www.coindesk.com/business/2026/08/07/wintermute-gains-u-s-broker-dealer-status-in-wall-street-push"
+    },
+    {
+      "ts": 1786091400,
+      "detected": 1786092352270,
+      "src": "U.Today",
+      "title": "BNB 持有者数量突破 8000 万，超越 Tron 成为最大稳定币网络",
+      "orig": "BNB Hits 80 Million Holders, Overtakes Tron as Biggest Stablecoin Network",
+      "link": "https://u.today/bnb-hits-80-million-holders-overtakes-tron-as-biggest-stablecoin-network"
+    },
+    {
+      "ts": 1786089582,
+      "detected": 1786090192464,
+      "src": "CoinTelegraph",
+      "title": "Coldcard 漏洞导致 7 月份损失达到 2.47 亿美元，成为 2026 年第二糟糕的月份",
+      "orig": "Coldcard exploit pushes July losses to $247M as second-worst month of 2026",
+      "link": "https://cointelegraph.com/news/coldcard-exploit-july-second-worst-month-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    {
+      "ts": 1786089688,
+      "detected": 1786089831285,
+      "src": "CoinDesk",
+      "title": "随着奖励争论升温，以太坊质押代币 weETH 与重新质押分道扬镳",
+      "orig": "Ethereum staking token weETH splits from restaking as rewards debate heats up",
+      "link": "https://www.coindesk.com/tech/2026/08/07/ethereum-staking-token-weeth-splits-from-restaking-as-rewards-debate-heats-up"
+    },
     {
       "ts": 1786088508,
       "detected": 1786089290942,
@@ -72,334 +400,6 @@
       "title": "在无聊的价格走势之下，比特币飙升至 76,000 美元的理由可能正在形成，但有一个警告",
       "orig": "A case for a bitcoin surge to $76,000 may be building beneath the boring price action, but there's a caveat",
       "link": "https://www.coindesk.com/markets/2026/08/07/a-case-for-a-bitcoin-surge-to-usd76-000-may-be-building-beneath-the-boring-price-action-but-there-s-a-caveat"
-    },
-    {
-      "ts": 1786076221,
-      "detected": 1786076323832,
-      "src": "CoinDesk",
-      "title": "由于《澄清法案》投票推迟至 9 月，XRP 大幅下跌",
-      "orig": "XRP leads majors losses as Clarity Act vote slips to September",
-      "link": "https://www.coindesk.com/markets/2026/08/07/bitcoin-stuck-near-usd64-000-as-clarity-act-vote-slips-to-september"
-    },
-    {
-      "ts": 1786070993,
-      "detected": 1786076144003,
-      "src": "CoinTelegraph",
-      "title": "美国参议院推迟 CLARITY 法案投票至 9 月",
-      "orig": "US Senate pushes CLARITY Act vote to September",
-      "link": "https://cointelegraph.com/news/us-senate-pushes-clarity-act-vote-to-september-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786072946,
-      "detected": 1786073622499,
-      "src": "CoinTelegraph",
-      "title": "Bitget 探索在不丹的许可加密货币存在",
-      "orig": "Bitget explores licensed crypto presence in Bhutan",
-      "link": "https://cointelegraph.com/news/bitget-explores-licensed-crypto-presence-in-bhutan?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786070993,
-      "detected": 1786071641510,
-      "src": "CoinTelegraph",
-      "title": "美国参议院将 CLARITY Act 投票推迟至 9 月：报告",
-      "orig": "US Senate pushes CLARITY Act vote to September: Report",
-      "link": "https://cointelegraph.com/news/us-senate-pushes-clarity-act-vote-to-september-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786069027,
-      "detected": 1786069480236,
-      "src": "CoinTelegraph",
-      "title": "由于比特币的暴跌掩盖了更高的产出，MARA 第二季度出现亏损",
-      "orig": "MARA swings to Q2 loss as Bitcoin’s slump masks higher output",
-      "link": "https://cointelegraph.com/markets/mara-swings-to-q2-loss-as-bitcoins-slump-masks-higher-output?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786068883,
-      "detected": 1786068940255,
-      "src": "CoinDesk",
-      "title": "参议院不会在暑假前就加密货币清晰度法案进行投票",
-      "orig": "Senate won't vote on crypto Clarity Act before its summer break",
-      "link": "https://www.coindesk.com/policy/2026/08/06/senate-won-t-vote-on-crypto-clarity-act-before-its-summer-break"
-    },
-    {
-      "ts": 1786063452,
-      "detected": 1786064077378,
-      "src": "BBC Business",
-      "title": "特朗普对关键芯片材料征收15%关税以对抗中国",
-      "orig": "Trump imposes 15% tariff on key chip material to counter China",
-      "link": "https://www.bbc.co.uk/news/articles/cdrvn686dljo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1786063452,
-      "detected": 1786063897356,
-      "src": "BBC Business",
-      "title": "特朗普对关键芯片和太阳能电池板材料征收15%的关税",
-      "orig": "Trump imposes 15% tariff on key chip and solar panel material",
-      "link": "https://www.bbc.co.uk/news/articles/cdrvn686dljo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1786061387,
-      "detected": 1786062276166,
-      "src": "CoinTelegraph",
-      "title": "加密货币做市商 Wintermute 推出美国经纪交易商",
-      "orig": "Crypto market maker Wintermute launches US broker-dealer",
-      "link": "https://cointelegraph.com/news/crypto-market-maker-wintermute-launches-us-broker-dealer?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786060860,
-      "detected": 1786061736007,
-      "src": "U.Today",
-      "title": "狗狗币（DOGE）实际上为零，XRP 空头几乎放弃，比特币（BTC）重返牛市模式：加密货币市场评论",
-      "orig": "Dogecoin (DOGE) Is Literally at Zero, XRP Bears Almost Give Up, Bitcoin (BTC) Back in Bull Mode: Crypto Market Review",
-      "link": "https://u.today/dogecoin-doge-is-literally-at-zero-xrp-bears-almost-give-up-bitcoin-btc-back-in-bull-mode-crypto"
-    },
-    {
-      "ts": 1786059257,
-      "detected": 1786059755826,
-      "src": "BBC Business",
-      "title": "Meta 在针对社交媒体巨头的最大儿童安全裁决中被罚款 5.67 亿美元",
-      "orig": "Meta fined $567m in largest child safety ruling against social media giant",
-      "link": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1786057428,
-      "detected": 1786057776395,
-      "src": "BBC Business",
-      "title": "Argos 正在进行改造 - 但它能吸引新的购物者吗？",
-      "orig": "Argos is getting a makeover - but can it attract new shoppers?",
-      "link": "https://www.bbc.co.uk/news/articles/c2lqvwewgp2o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1786057480,
-      "detected": 1786057596524,
-      "src": "BBC Business",
-      "title": "为什么航空公司对锂离子电池发出警告",
-      "orig": "Why airlines are warning over lithium-ion batteries",
-      "link": "https://www.bbc.co.uk/news/articles/cwyl6yz719jo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1786053573,
-      "detected": 1786053992352,
-      "src": "CoinDesk",
-      "title": "创始人去世后 Ondo Finance 爆发权力斗争",
-      "orig": "Power struggle erupts at Ondo Finance after founder’s death",
-      "link": "https://www.coindesk.com/policy/2026/08/06/power-struggle-erupts-at-ondo-finance-after-founder-s-death"
-    },
-    {
-      "ts": 1786052163,
-      "detected": 1786052370977,
-      "src": "Decrypt",
-      "title": "美国证券交易委员会购买了十亿条航空公司记录来追踪旅客——可能没有搜查令",
-      "orig": "SEC Bought a Billion Airline Records to Track Travelers—Likely Without a Warrant",
-      "link": "https://decrypt.co/375078/sec-billion-airline-records-track-travelers"
-    },
-    {
-      "ts": 1786050679,
-      "detected": 1786051470633,
-      "src": "CoinTelegraph",
-      "title": "初次失利后，加密 PAC 在美国 3 个州的竞选中投资 150 万美元",
-      "orig": "Following primary loss, crypto PACs invest $1.5M in 3 US state races",
-      "link": "https://cointelegraph.com/news/crypto-pac-florida-alaska-wyoming-primary-races?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786050063,
-      "detected": 1786050209974,
-      "src": "Decrypt",
-      "title": "东京要求特朗普停止模仿马里奥",
-      "orig": "Tokyo Tells Trump to Stop Meme-ing Mario",
-      "link": "https://decrypt.co/375069/tokyo-trump-mario-naruto-pokemon-memes"
-    },
-    {
-      "ts": 1786048816,
-      "detected": 1786048949062,
-      "src": "CNBC",
-      "title": "由于对环孢子虫的担忧影响了销售，Sweetgreen 下调了全年预期",
-      "orig": "Sweetgreen cuts full-year outlook as cyclospora fears weigh on sales",
-      "link": "https://www.cnbc.com/2026/08/06/sweetgreen-cuts-full-year-outlook-as-cyclospora-fears-weigh-on-sales.html"
-    },
-    {
-      "ts": 1786047981,
-      "detected": 1786048769480,
-      "src": "U.Today",
-      "title": "微软警告黑客正在利用 BNB 链传播恶意软件",
-      "orig": "Microsoft Warns Hackers Are Using BNB Chain to Spread Malware",
-      "link": "https://u.today/microsoft-warns-hackers-are-using-bnb-chain-to-spread-malware"
-    },
-    {
-      "ts": 1786048263,
-      "detected": 1786048408754,
-      "src": "Decrypt",
-      "title": "Meta 表示其 AI 模型也逃脱并攻击了第三方公司",
-      "orig": "Meta Says Its AI Model Escaped and Hacked a Third-Party Company Too",
-      "link": "https://decrypt.co/375070/meta-says-ai-model-escaped-hack-third-party"
-    },
-    {
-      "ts": 1786046816,
-      "detected": 1786046968490,
-      "src": "CNBC",
-      "title": "Savers Value Village旧货店推出新的人工智能工具来为商品定价",
-      "orig": "Savers Value Village thrift store launches new AI tool to price items",
-      "link": "https://www.cnbc.com/2026/08/06/savers-value-village-thrift-store-launches-new-ai-tool-to-price-items.html"
-    },
-    {
-      "ts": 1786046217,
-      "detected": 1786046247986,
-      "src": "CNBC",
-      "title": "美国航空将停止在长途国内航班上将精英旅客从经济舱升级为商务舱",
-      "orig": "American Airlines will stop upgrading elite flyers to business from coach on long domestic flights",
-      "link": "https://www.cnbc.com/2026/08/06/american-airlines-flight-upgrades-become-harder-to-get.html"
-    },
-    {
-      "ts": 1786045869,
-      "detected": 1786046067768,
-      "src": "Decrypt",
-      "title": "参议员敦促商品期货交易委员会禁止对预测市场进行野火押注",
-      "orig": "Senators Push CFTC to Ban Wildfire Bets on Prediction Markets",
-      "link": "https://decrypt.co/375066/senators-push-cftc-ban-wildfire-bets-prediction-markets"
-    },
-    {
-      "ts": 1786041501,
-      "detected": 1786041565046,
-      "src": "Decrypt",
-      "title": "普京签署俄罗斯首部加密法：交易合法，支付仍被禁止",
-      "orig": "Putin Signs Russia's First Crypto Law: Trading Is Legal, Payments Stay Banned",
-      "link": "https://decrypt.co/375062/putin-signs-russia-first-crypto-trading-payments"
-    },
-    {
-      "ts": 1786040486,
-      "detected": 1786041205178,
-      "src": "U.Today",
-      "title": "德国比特币开发商揭示了他错过比特币收益的关键原因",
-      "orig": "German Bitcoin Developer Reveals Key Reasons He Missed Out on BTC Gains",
-      "link": "https://u.today/german-bitcoin-developer-reveals-key-reasons-he-missed-out-on-btc-gains"
-    },
-    {
-      "ts": 1786040789,
-      "detected": 1786041024675,
-      "src": "Decrypt",
-      "title": "OpenAI 揭示了人工智能代理在拥抱脸部黑客之前如何秘密协调",
-      "orig": "OpenAI Reveals How AI Agents Secretly Coordinated Before Hugging Face Hack",
-      "link": "https://decrypt.co/375058/openai-ai-agents-secretly-coordinated-hugging-face-hack"
-    },
-    {
-      "ts": 1786040277,
-      "detected": 1786040664537,
-      "src": "CoinTelegraph",
-      "title": "Coldcard 黑客攻击后比特币 ETF 流入激增，但联系尚不清楚：彭博社分析师",
-      "orig": "Bitcoin ETF inflows surge after Coldcard hack, but link is unclear: Bloomberg analyst",
-      "link": "https://cointelegraph.com/news/bitcoin-etf-inflows-coldcard-hack-bloomberg-analyst?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786040239,
-      "detected": 1786040484411,
-      "src": "CNBC",
-      "title": "Genius Sports 的媒体激增显示出体育博彩数据之外的转变",
-      "orig": "Genius Sports' media surge shows shift beyond sportsbook data",
-      "link": "https://www.cnbc.com/2026/08/06/genius-sports-media-surge-shows-shift-beyond-sportsbook-data.html"
-    },
-    {
-      "ts": 1786040020,
-      "detected": 1786040124170,
-      "src": "Decrypt",
-      "title": "XRP、比特币鲸鱼正在增持——熊市即将结束吗？",
-      "orig": "XRP, Bitcoin Whales Are Accumulating—Is the Bear Market Nearly Over?",
-      "link": "https://decrypt.co/375051/xrp-bitcoin-whales-accumulating-bear-market"
-    },
-    {
-      "ts": 1786036654,
-      "detected": 1786037063471,
-      "src": "CoinTelegraph",
-      "title": "美国上诉法院授权维持萨姆·班克曼-弗里德定罪",
-      "orig": "US appellate court mandate affirms Sam Bankman-Fried conviction",
-      "link": "https://cointelegraph.com/news/us-appellate-court-mandate-sam-bankman-fried?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786036854,
-      "detected": 1786036882664,
-      "src": "Decrypt",
-      "title": "Cathie Wood 的 Ark Invest 继最新一轮收购热潮后，使 SpaceX 和 Circle 成为控股公司",
-      "orig": "Cathie Wood's Ark Invest Makes SpaceX, Circle Top Holdings After Latest Buying Spree",
-      "link": "https://decrypt.co/375048/cathie-wood-ark-invest-spacex-circle-top-holdings"
-    },
-    {
-      "ts": 1786035225,
-      "detected": 1786035802070,
-      "src": "CoinTelegraph",
-      "title": "Tim Scott 表示，美国参议院本周将“毫无疑问”地对 CLARITY 加密货币法案进行投票",
-      "orig": "US Senate will vote on CLARITY crypto bill ‘without any question’ this week: Tim Scott",
-      "link": "https://cointelegraph.com/news/us-senate-vote-clarity-act-tim-scott?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786034553,
-      "detected": 1786034903481,
-      "src": "CoinTelegraph",
-      "title": "比特币矿工的人工智能转向失去了华尔街的惊叹因素",
-      "orig": "Bitcoin miners’ AI pivot loses Wall Street’s wow factor",
-      "link": "https://cointelegraph.com/news/bitcoin-miners-ai-infrastructure-deals-wall-street-reaction?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786033815,
-      "detected": 1786034721539,
-      "src": "U.Today",
-      "title": "如何拯救你的狗狗币：DOGE 领先分析硬件钱包的相关风险",
-      "orig": "How to Save Your Dogecoin: DOGE Lead Breaks Down Relevant Risks of Hardware Wallets",
-      "link": "https://u.today/how-to-save-your-dogecoin-doge-lead-breaks-down-relevant-risks-of-hardware-wallets"
-    },
-    {
-      "ts": 1786033458,
-      "detected": 1786034003170,
-      "src": "CoinTelegraph",
-      "title": "美国 PMI 数据带来新的“滞胀”警告，比特币价格跌破 6.5 万美元",
-      "orig": "Bitcoin price coils under $65K as US PMI data brings new ‘stagflation’ warning",
-      "link": "https://cointelegraph.com/markets/bitcoin-price-compresses-as-us-pmi-data-brings-new-stagflation-warning?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    {
-      "ts": 1786032397,
-      "detected": 1786034003170,
-      "src": "U.Today",
-      "title": "随着价格重新测试 1.04 美元，XRP ETF 进入红色区域",
-      "orig": "XRP ETFs Enter Red Zone as Price Retests $1.04",
-      "link": "https://u.today/xrp-etfs-enter-red-zone-as-price-retests-104"
-    },
-    {
-      "ts": 1786033616,
-      "detected": 1786033823105,
-      "src": "Decrypt",
-      "title": "MetaMask 推出用于自主加密货币交易的自我托管人工智能钱包",
-      "orig": "MetaMask Launches Self-Custodial AI Wallet for Autonomous Crypto Trading",
-      "link": "https://decrypt.co/375044/metamask-self-custodial-ai-wallet-autonomous-crypto-trading"
-    },
-    {
-      "ts": 1786033179,
-      "detected": 1786033282935,
-      "src": "Decrypt",
-      "title": "DuckDuckGo 的 Meta-Trolling“Normal F***ing 太阳镜”不到一周就卖光了",
-      "orig": "DuckDuckGo’s Meta-Trolling 'Normal F***ing Sunglasses' Sell Out in Under a Week",
-      "link": "https://decrypt.co/375037/duckduckgos-meta-trolling-normal-fing-sunglasses-sell-out-in-under-a-week"
-    },
-    {
-      "ts": 1786032604,
-      "detected": 1786032740593,
-      "src": "CoinDesk",
-      "title": "Tether 将代币化业务扩展到沙特阿拉伯，从房地产开始",
-      "orig": "Tether expands tokenization business into Saudi Arabia, starting with real estate",
-      "link": "https://www.coindesk.com/business/2026/08/06/tether-expands-tokenization-business-into-saudi-arabia-starting-with-real-estate"
-    },
-    {
-      "ts": 1786031974,
-      "detected": 1786032382043,
-      "src": "BBC Business",
-      "title": "先是 OpenAI，现在是 Meta——为什么 AI 黑客攻击不断发生？",
-      "orig": "First OpenAI, now Meta - why do AI hacks keep happening?",
-      "link": "https://www.bbc.co.uk/news/articles/cp30989ee1wo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "ts": 1786030385,
-      "detected": 1786031301870,
-      "src": "U.Today",
-      "title": "该 XRP ETF 下跌 95%",
-      "orig": "This XRP ETF Is Down 95%",
-      "link": "https://u.today/this-xrp-etf-is-down-95"
     }
   ]
 }

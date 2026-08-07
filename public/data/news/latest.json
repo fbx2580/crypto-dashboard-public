@@ -1,6 +1,402 @@
 {
   "items": [
     {
+      "s": "Crypto Clarity Bill Not Dead Yet, Former SEC Adviser Says",
+      "t": "2026-08-07T14:40:26.000Z",
+      "ts": 1786113626,
+      "src": "U.Today",
+      "link": "https://u.today/crypto-clarity-bill-not-dead-yet-former-sec-adviser-says",
+      "s_cn": "前 SEC 顾问表示，加密货币清晰度法案尚未终止",
+      "_ts": 1786114505600
+    },
+    {
+      "s": "A part of FTX survived, and it’s the case for the CLARITY Act",
+      "t": "2026-08-07T14:30:25.000Z",
+      "ts": 1786113025,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/opinion/2026/08/07/a-part-of-ftx-survived-and-it-s-the-case-for-the-clarity-act",
+      "s_cn": "FTX 的一部分幸存下来，CLARITY 法案就是如此",
+      "_ts": 1786113243318
+    },
+    {
+      "s": "Russia cracks down on unlicensed crypto exchanges it claims are linked to Ukraine",
+      "t": "2026-08-07T14:04:47.000Z",
+      "ts": 1786111487,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/policy/2026/08/07/russia-cracks-down-on-unlicensed-crypto-exchanges-it-claims-are-linked-to-ukraine",
+      "s_cn": "俄罗斯严厉打击据称与乌克兰有关的未经许可的加密货币交易所",
+      "_ts": 1786111623047
+    },
+    {
+      "s": "Trump administration to pay German firm $1.2bn to halt US wind projects",
+      "t": "2026-08-07T13:32:41.000Z",
+      "ts": 1786109561,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c1e1vg0gjl5o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "特朗普政府将向德国公司支付 12 亿美元以停止美国风电项目",
+      "_ts": 1786110541665
+    },
+    {
+      "s": "What's Next for XRP Ledger? Ripple's Engineering Chief to Break It Down at XRP Event",
+      "t": "2026-08-07T13:35:24.000Z",
+      "ts": 1786109724,
+      "src": "U.Today",
+      "link": "https://u.today/whats-next-for-xrp-ledger-ripples-engineering-chief-to-break-it-down-at-xrp-event",
+      "s_cn": "XRP 账本的下一步是什么？",
+      "_ts": 1786110541665
+    },
+    {
+      "s": "Fierce backlash to Ethereum’s EIP-8363 staking proposal",
+      "t": "2026-08-07T13:30:00.000Z",
+      "ts": 1786109400,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/magazine/fierce-backlash-to-ethereums-latest-staking-proposal-eip-8363?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "对以太坊 EIP-8363 质押提案的强烈反对",
+      "_ts": 1786109821391
+    },
+    {
+      "s": "Cardano (ADA) Volume Surges 116% in 24 Hours: Will Bullrun Be Triggered?",
+      "t": "2026-08-07T13:20:00.000Z",
+      "ts": 1786108800,
+      "src": "U.Today",
+      "link": "https://u.today/cardano-ada-volume-surges-116-in-24-hours-will-bullrun-be-triggered",
+      "s_cn": "卡尔达诺（ADA）交易量24小时飙升116%：牛市会被触发吗？",
+      "_ts": 1786109641119
+    },
+    {
+      "s": "Tokenized Asset Deposits Tripled to $7.4B as DeFi Shrank: CoinShares",
+      "t": "2026-08-07T13:26:19.000Z",
+      "ts": 1786109179,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375099/tokenized-asset-deposits-tripled-to-7-4b-as-defi-shrank-coinshares",
+      "s_cn": "随着 DeFi 萎缩，代币化资产存款增加两倍至 $7.4B：CoinShares",
+      "_ts": 1786109281334
+    },
+    {
+      "s": "Surprise fall in US jobs last month as slow summer continues",
+      "t": "2026-08-07T13:14:14.000Z",
+      "ts": 1786108454,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c20j5rle717o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "由于夏季持续缓慢，上个月美国就业岗位意外下降",
+      "_ts": 1786108921498
+    },
+    {
+      "s": "Official XRP Icon Earns Font Awesome Recognition After 7-Year GitHub Campaign",
+      "t": "2026-08-07T12:54:15.000Z",
+      "ts": 1786107255,
+      "src": "U.Today",
+      "link": "https://u.today/official-xrp-icon-earns-font-awesome-recognition-after-7-year-github-campaign",
+      "s_cn": "经过 7 年的 GitHub 活动，官方 XRP 图标获得 Font Awesome 认可",
+      "_ts": 1786108200468
+    },
+    {
+      "s": "Bitcoiners turn to dice throws as self-custody setups are re-evaluated",
+      "t": "2026-08-07T13:00:01.000Z",
+      "ts": 1786107601,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/features/bitcoiners-turn-to-dice-throws-as-self-custody-setups-are-re-evaluated?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "随着自我托管设置的重新评估，比特币爱好者转向掷骰子",
+      "_ts": 1786108020376
+    },
+    {
+      "s": "U.S. unexpectedly shed 23,000 jobs in July, putting Fed rate hikes in question",
+      "t": "2026-08-07T12:31:51.000Z",
+      "ts": 1786105911,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/the-u-s-lost-23-000-jobs-in-july-far-shy-of-forecasts-for-a-gain-of-80-000",
+      "s_cn": "美国7月意外裁员2.3万人，美联储加息受到质疑",
+      "_ts": 1786107660159
+    },
+    {
+      "s": "Live updates: Bitcoin holding near $65,000 as U.S. lost jobs last month",
+      "t": "2026-08-07T07:44:57.000Z",
+      "ts": 1786088697,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/live-updates-bitcoin-flat-at-usd64-300-before-us-jobs-report-with-oil-back-as-a-headwind",
+      "s_cn": "实时更新：上个月美国失业，比特币维持在 65,000 美元附近",
+      "_ts": 1786107120057
+    },
+    {
+      "s": "'Bitcoin Doesn't Need Clarity,' Michael Saylor Declares",
+      "t": "2026-08-07T12:37:07.000Z",
+      "ts": 1786106227,
+      "src": "U.Today",
+      "link": "https://u.today/bitcoin-doesnt-need-clarity-michael-saylor-declares",
+      "s_cn": "迈克尔·塞勒宣称：“比特币不需要清晰度”",
+      "_ts": 1786106940055
+    },
+    {
+      "s": "How a 90-second power outage sparked  chaos for rail commuters",
+      "t": "2026-08-07T12:30:07.000Z",
+      "ts": 1786105807,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c3ekd5784k5o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "90秒停电如何给铁路通勤者带来混乱",
+      "_ts": 1786106579930
+    },
+    {
+      "s": "Live updates: Bitcoin holding near $65,000 as U.S. jobs data falls short of forecasts",
+      "t": "2026-08-07T07:44:57.000Z",
+      "ts": 1786088697,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/live-updates-bitcoin-flat-at-usd64-300-before-us-jobs-report-with-oil-back-as-a-headwind",
+      "s_cn": "实时更新：美国就业数据低于预期，比特币维持在 65,000 美元附近",
+      "_ts": 1786106399808
+    },
+    {
+      "s": "$65,000 Bitcoin Paradox: Why Miner Fee Revenue Sinks to 2019 Levels",
+      "t": "2026-08-07T12:26:15.000Z",
+      "ts": 1786105575,
+      "src": "U.Today",
+      "link": "https://u.today/65000-bitcoin-paradox-why-miner-fee-revenue-sinks-to-2019-levels",
+      "s_cn": "65,000 美元的比特币悖论：为何矿工费收入降至 2019 年水平",
+      "_ts": 1786106399808
+    },
+    {
+      "s": "China’s Kimi K3 Broke Out of Its Sandbox to Look Up Test Answers",
+      "t": "2026-08-07T12:37:14.000Z",
+      "ts": 1786106234,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375096/chinas-kimi-k3-broke-out-of-its-sandbox-to-look-up-test-answers",
+      "s_cn": "中国的Kimi K3突破沙盒寻找测试答案",
+      "_ts": 1786106399808
+    },
+    {
+      "s": "Russia cracks down on 9 crypto exchanges in Moscow City",
+      "t": "2026-08-07T12:28:41.000Z",
+      "ts": 1786105721,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/russia-shuts-down-crypto-exchanges-moscow-city?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "俄罗斯严厉打击莫斯科市 9 家加密货币交易所",
+      "_ts": 1786106040097
+    },
+    {
+      "s": "The U.S. lost 23,000 jobs in July, far shy of forecasts for a gain of 80,000",
+      "t": "2026-08-07T12:31:51.000Z",
+      "ts": 1786105911,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/the-u-s-lost-23-000-jobs-in-july-far-shy-of-forecasts-for-a-gain-of-80-000",
+      "s_cn": "美国 7 月份失业 23,000 人，远低于预期的增长 80,000 人",
+      "_ts": 1786106040097
+    },
+    {
+      "s": "CEX perpetual futures volume falls to $4T, lowest since late 2023",
+      "t": "2026-08-07T12:13:40.000Z",
+      "ts": 1786104820,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/cex-futures-volume-falls-4t-july-lowest-level-2023?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "CEX 永续期货成交量跌至 4T 美元，为 2023 年底以来的最低水平",
+      "_ts": 1786105499253
+    },
+    {
+      "s": "Companies scoff at airlines' cheapest business class tickets. 'The real value is flexibility'",
+      "t": "2026-08-07T12:15:42.000Z",
+      "ts": 1786104942,
+      "src": "CNBC",
+      "link": "https://www.cnbc.com/2026/08/07/business-business-premium-fares.html",
+      "s_cn": "公司对航空公司最便宜的商务舱机票嗤之以鼻。",
+      "_ts": 1786105319244
+    },
+    {
+      "s": "Why Bitcoin's BIP-110 refuses to die despite near-zero miner support",
+      "t": "2026-08-07T11:45:49.000Z",
+      "ts": 1786103149,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/06/why-bitcoin-s-bip-110-refuses-to-die-despite-near-zero-miner-support",
+      "s_cn": "为什么比特币的 BIP-110 在矿工支持接近于零的情况下却拒绝消亡",
+      "_ts": 1786104418697
+    },
+    {
+      "s": "Morning Minute: MetaMask Hands AI Agents a Wallet",
+      "t": "2026-08-07T12:00:35.000Z",
+      "ts": 1786104035,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375093/morning-minute-metamask-hands-ai-agents-a-wallet",
+      "s_cn": "上午时间：MetaMask 为人工智能代理提供钱包",
+      "_ts": 1786104238552
+    },
+    {
+      "s": "After a Clarity Act funeral, the crypto world would keep turning",
+      "t": "2026-08-07T12:00:00.000Z",
+      "ts": 1786104000,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/news-analysis/2026/08/06/after-a-clarity-act-funeral-the-crypto-world-would-keep-turning",
+      "s_cn": "在《澄清法案》葬礼之后，加密世界将继续运转",
+      "_ts": 1786104058514
+    },
+    {
+      "s": "Bitcoin’s volatility has nearly disappeared. The risk hasn’t.",
+      "t": "2026-08-07T11:42:20.000Z",
+      "ts": 1786102940,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/daybook-us/2026/08/07/bitcoin-s-volatility-has-nearly-disappeared-the-risk-hasn-t",
+      "s_cn": "比特币的波动性几乎消失了。",
+      "_ts": 1786102977664
+    },
+    {
+      "s": "Live updates: Bitcoin edges higher to $65,000 ahead of key U.S. jobs data",
+      "t": "2026-08-07T07:44:57.000Z",
+      "ts": 1786088697,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/live-updates-bitcoin-flat-at-usd64-300-before-us-jobs-report-with-oil-back-as-a-headwind",
+      "s_cn": "实时更新：在美国关键就业数据公布之前，比特币小幅上涨至 65,000 美元",
+      "_ts": 1786102437577
+    },
+    {
+      "s": "Binance Bitcoin volume ratio hits record as futures outweigh spot eight times over",
+      "t": "2026-08-07T11:05:01.000Z",
+      "ts": 1786100701,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/markets/binance-bitcoin-volume-ratio-hits-record-as-futures-outweigh-spot-eight-times-over?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "币安比特币交易量比率创历史新高，期货价格是现货价格的八倍以上",
+      "_ts": 1786101537552
+    },
+    {
+      "s": "'Shiba Inu Isn't Dead': Community Veteran Calls Out Outdated SHIB Link",
+      "t": "2026-08-07T10:25:47.000Z",
+      "ts": 1786098347,
+      "src": "U.Today",
+      "link": "https://u.today/shiba-inu-isnt-dead-community-veteran-calls-out-outdated-shib-link",
+      "s_cn": "“柴犬没有死”：社区资深人士呼吁过时的 SHIB 链接",
+      "_ts": 1786101356991
+    },
+    {
+      "s": "Bitcoin hovers below $65,000 as Middle East tensions escalate further",
+      "t": "2026-08-07T10:36:14.000Z",
+      "ts": 1786098974,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/cmt",
+      "s_cn": "随着中东紧张局势进一步升级，比特币徘徊在 65,000 美元以下",
+      "_ts": 1786099375706
+    },
+    {
+      "s": "MyTrade Founder Fined $10K Over Bots That Wash Traded 60 Cryptocurrencies",
+      "t": "2026-08-07T10:37:41.000Z",
+      "ts": 1786099061,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375085/mytrade-founder-fined-10k-over-bots-that-wash-traded-60-cryptocurrencies",
+      "s_cn": "MyTrade 创始人因机器人洗售 60 种加密货币而被罚款 1 万美元",
+      "_ts": 1786099195813
+    },
+    {
+      "s": "Bitcoin hovers below $68,000 as Middle East tensions escalate further",
+      "t": "2026-08-07T10:36:14.000Z",
+      "ts": 1786098974,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/cmt",
+      "s_cn": "随着中东紧张局势进一步升级，比特币徘徊在 68,000 美元下方",
+      "_ts": 1786099015565
+    },
+    {
+      "s": "US strikes $1.2bn deal to pay German firm to halt offshore wind projects",
+      "t": "2026-08-07T09:50:54.000Z",
+      "ts": 1786096254,
+      "src": "BBC Business",
+      "link": "https://www.bbc.co.uk/news/articles/c1e1vg0gjl5o?at_medium=RSS&at_campaign=rss",
+      "s_cn": "美国达成12亿美元协议，向德国公司支付停止海上风电项目的费用",
+      "_ts": 1786097575240
+    },
+    {
+      "s": "Bonk Inu (BONK) Delisted: Upbit Announces Unexpected Measures",
+      "t": "2026-08-07T10:00:00.000Z",
+      "ts": 1786096800,
+      "src": "U.Today",
+      "link": "https://u.today/bonk-inu-bonk-delisted-upbit-announces-unexpected-measures",
+      "s_cn": "Bonk Inu (BONK) 退市：Upbit 宣布意外措施",
+      "_ts": 1786097575240
+    },
+    {
+      "s": "CleanSpark misses Wall Street revenue estimates as shares sink",
+      "t": "2026-08-07T09:25:56.000Z",
+      "ts": 1786094756,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/cleanspark-wall-street-revenue-estimates-shares-sink?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "由于股价下跌，CleanSpark 营收未达华尔街预期",
+      "_ts": 1786095233789
+    },
+    {
+      "s": "New XRPL Version Here: 6 Definitive Upgrades Every XRP Holder Needs to Know",
+      "t": "2026-08-07T09:14:30.000Z",
+      "ts": 1786094070,
+      "src": "U.Today",
+      "link": "https://u.today/new-xrpl-version-here-6-definitive-upgrades-every-xrp-holder-needs-to-know",
+      "s_cn": "新的 XRPL 版本在这里：每个 XRP 持有者需要了解的 6 个最终升级",
+      "_ts": 1786094874060
+    },
+    {
+      "s": "Senate Punts Clarity Act Vote to September as Democrats Hold Out",
+      "t": "2026-08-07T09:26:02.000Z",
+      "ts": 1786094762,
+      "src": "Decrypt",
+      "link": "https://decrypt.co/375082/senate-punts-clarity-act-vote-to-september-as-democrats-hold-out",
+      "s_cn": "由于民主党坚持不懈，参议院推迟《澄清法案》投票至 9 月进行",
+      "_ts": 1786094874060
+    },
+    {
+      "s": "Stripe-owned Bridge joins EU MiCA register after Luxembourg approval",
+      "t": "2026-08-07T09:14:17.000Z",
+      "ts": 1786094057,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/bridge-mica-stablecoin-issuer-esma-register?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Stripe 旗下的 Bridge 在卢森堡批准后加入欧盟 MiCA 注册",
+      "_ts": 1786094693734
+    },
+    {
+      "s": "Coldcard fallout shows up onchain as 210,000 bitcoin leaves old wallets",
+      "t": "2026-08-07T09:24:00.000Z",
+      "ts": 1786094640,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/markets/2026/08/07/coldcard-fallout-shows-up-onchain-as-210-000-bitcoin-leaves-old-wallets",
+      "s_cn": "210,000 比特币离开旧钱包，Coldcard 的影响出现在链上",
+      "_ts": 1786094693734
+    },
+    {
+      "s": "CLARITY Act delay gives Asian financial hubs an opening: First Digital CEO",
+      "t": "2026-08-07T09:01:14.000Z",
+      "ts": 1786093274,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/clarity-act-delay-asian-crypto-hubs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "First Digital首席执行官：《清晰法案》的延迟为亚洲金融中心提供了机会",
+      "_ts": 1786093793103
+    },
+    {
+      "s": "Crypto market maker Wintermute lands SEC approval to trade equities and ETF blocks",
+      "t": "2026-08-07T08:46:17.000Z",
+      "ts": 1786092377,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/business/2026/08/07/wintermute-gains-u-s-broker-dealer-status-in-wall-street-push",
+      "s_cn": "加密货币做市商 Wintermute 获得 SEC 批准进行股票和 ETF 区块交易",
+      "_ts": 1786092532252
+    },
+    {
+      "s": "BNB Hits 80 Million Holders, Overtakes Tron as Biggest Stablecoin Network",
+      "t": "2026-08-07T08:30:00.000Z",
+      "ts": 1786091400,
+      "src": "U.Today",
+      "link": "https://u.today/bnb-hits-80-million-holders-overtakes-tron-as-biggest-stablecoin-network",
+      "s_cn": "BNB 持有者数量突破 8000 万，超越 Tron 成为最大稳定币网络",
+      "_ts": 1786092352255
+    },
+    {
+      "s": "Coldcard exploit pushes July losses to $247M as second-worst month of 2026",
+      "t": "2026-08-07T07:59:42.000Z",
+      "ts": 1786089582,
+      "src": "CoinTelegraph",
+      "link": "https://cointelegraph.com/news/coldcard-exploit-july-second-worst-month-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "s_cn": "Coldcard 漏洞导致 7 月份损失达到 2.47 亿美元，成为 2026 年第二糟糕的月份",
+      "_ts": 1786090192452
+    },
+    {
+      "s": "Ethereum staking token weETH splits from restaking as rewards debate heats up",
+      "t": "2026-08-07T08:01:28.000Z",
+      "ts": 1786089688,
+      "src": "CoinDesk",
+      "link": "https://www.coindesk.com/tech/2026/08/07/ethereum-staking-token-weeth-splits-from-restaking-as-rewards-debate-heats-up",
+      "s_cn": "随着奖励争论升温，以太坊质押代币 weETH 与重新质押分道扬镳",
+      "_ts": 1786089831274
+    },
+    {
       "s": "Anthony Scaramucci Predicts Invisible Crypto Adoption",
       "t": "2026-08-07T07:41:48.000Z",
       "ts": 1786088508,
@@ -4102,404 +4498,8 @@
       "link": "https://u.today/xrp-ledger-co-creator-reveals-nuclear-briefcase-strategy-for-bitcoin-cold-storage",
       "s_cn": "XRP Ledger 联合创建者揭示了比特币冷存储的“核公文包”策略",
       "_ts": 1785749173809
-    },
-    {
-      "s": "HashKey receives JPMorgan approval to open client money account",
-      "t": "2026-08-03T09:14:38.000Z",
-      "ts": 1785748478,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/news/hashkey-jpmorgan-client-money-account?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "HashKey 获得摩根大通批准开设客户资金账户",
-      "_ts": 1785748853290
-    },
-    {
-      "s": "Coldcard wallet losses may near $114 million as possible fourth sweep emerges",
-      "t": "2026-08-03T08:51:39.000Z",
-      "ts": 1785747099,
-      "src": "CoinDesk",
-      "link": "https://www.coindesk.com/tech/2026/08/03/coldcard-wallet-losses-may-near-usd114-million-as-possible-fourth-sweep-emerges",
-      "s_cn": "第四次扫荡可能出现，冷卡钱包损失可能接近 1.14 亿美元",
-      "_ts": 1785748226127
-    },
-    {
-      "s": "'This Will Only Get Worse': Famous Bitcoin Critic Warns of AI and Quantum Danger for BTC",
-      "t": "2026-08-03T08:25:00.000Z",
-      "ts": 1785745500,
-      "src": "U.Today",
-      "link": "https://u.today/this-will-only-get-worse-famous-bitcoin-critic-warns-of-ai-and-quantum-danger-for-btc",
-      "s_cn": "“这只会变得更糟”：著名比特币评论家警告人工智能和量子对比特币的危险",
-      "_ts": 1785746173721
-    },
-    {
-      "s": "Bitget to exit Japan, close remaining positions after Dec. 31",
-      "t": "2026-08-03T08:21:23.000Z",
-      "ts": 1785745283,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/news/bitget-exit-japan-account-restrictions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "Bitget退出日本，12月31日后平仓剩余头寸",
-      "_ts": 1785745850842
-    },
-    {
-      "s": "U.S. Jobs, Circle, Galaxy, American Bitcoin earnings: Crypto Week Ahead",
-      "t": "2026-08-03T08:16:28.000Z",
-      "ts": 1785744988,
-      "src": "CoinDesk",
-      "link": "https://www.coindesk.com/markets/2026/08/03/u-s-jobs-circle-galaxy-american-bitcoin-earnings-crypto-week-ahead",
-      "s_cn": "美国就业、Circle、Galaxy、美国比特币收益：加密货币周展望",
-      "_ts": 1785745015599
-    },
-    {
-      "s": "Crypto treasury firm ZeroStack warns of survival risk amid $82.5M loss",
-      "t": "2026-08-03T07:15:56.000Z",
-      "ts": 1785741356,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/news/zerostack-survival-risk-82m-crypto-loss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "加密货币资金公司 ZeroStack 警告称，损失 8250 万美元，存在生存风险",
-      "_ts": 1785741947176
-    },
-    {
-      "s": "Claude Identifies $100 Million Bitcoin Vulnerability in Eight Minutes",
-      "t": "2026-08-03T06:02:15.000Z",
-      "ts": 1785736935,
-      "src": "U.Today",
-      "link": "https://u.today/claude-identifies-100-million-bitcoin-vulnerability-in-eight-minutes",
-      "s_cn": "克劳德在八分钟内发现价值 1 亿美元的比特币漏洞",
-      "_ts": 1785737760283
-    },
-    {
-      "s": "Bitcoin slips under $63,000 despite Iran deal hopes as Coldcard losses rattle market",
-      "t": "2026-08-03T06:15:38.000Z",
-      "ts": 1785737738,
-      "src": "CoinDesk",
-      "link": "https://www.coindesk.com/markets/2026/08/03/bitcoin-slips-under-usd63-000-despite-iran-deal-hopes-as-coldcard-losses-rattle-market",
-      "s_cn": "尽管伊朗协议有望达成，但由于 Coldcard 损失扰乱市场，比特币仍跌破 63,000 美元",
-      "_ts": 1785737760283
-    },
-    {
-      "s": "Bitcoin hits $62K while Coinbase premium hits 77-day negative streak",
-      "t": "2026-08-03T05:58:00.000Z",
-      "ts": 1785736680,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/markets/bitcoin-hits-62k-while-coinbase-premium-hits-77-day-negative-streak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "比特币触及 6.2 万美元，Coinbase 溢价连续 77 天负值",
-      "_ts": 1785737133479
-    },
-    {
-      "s": "Trump Media’s bitcoin stash may be down to loan collateral after $165 million BTC move",
-      "t": "2026-08-03T05:52:29.000Z",
-      "ts": 1785736349,
-      "src": "CoinDesk",
-      "link": "https://www.coindesk.com/markets/2026/08/03/trump-media-s-bitcoin-stash-may-be-down-to-loan-collateral-after-usd165-million-btc-move",
-      "s_cn": "在 1.65 亿美元的比特币转移后，特朗普媒体的比特币储备可能只剩下贷款抵押品",
-      "_ts": 1785736372122
-    },
-    {
-      "s": "Michael Saylor’s Strategy is now tracking bitcoin’s 200-week moving average",
-      "t": "2026-08-03T05:07:49.000Z",
-      "ts": 1785733669,
-      "src": "CoinDesk",
-      "link": "https://www.coindesk.com/markets/2026/08/03/michael-saylor-s-strategy-is-now-tracking-bitcoin-s-200-week-moving-average",
-      "s_cn": "Michael Saylor 的策略现在正在追踪比特币的 200 周移动平均线",
-      "_ts": 1785733688967
-    },
-    {
-      "s": "Suspected 4th Coldcard attack wave sweeps 448 Bitcoin: Galaxy’s Thorn",
-      "t": "2026-08-03T01:57:40.000Z",
-      "ts": 1785722260,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/news/suspected-4th-coldcard-attack-wave-sweeps-389-bitcoin-galaxys-thorn?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "疑似第四次Coldcard攻击浪潮席卷448个比特币：银河之刺",
-      "_ts": 1785731125476
-    },
-    {
-      "s": "Coldcard’s 5-year flaw reveals hardware wallet testing gap: Kraken’s security chief",
-      "t": "2026-08-03T04:09:44.000Z",
-      "ts": 1785730184,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/news/coldcards-5-year-flaw-reveals-hardware-wallet-testing-gap-krakens-security-chief?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "Kraken 安全主管：Coldcard 5 年缺陷揭示了硬件钱包测试差距",
-      "_ts": 1785730523422
-    },
-    {
-      "s": "South Korean stablecoin outflows top $367M in June: Report",
-      "t": "2026-08-03T04:05:11.000Z",
-      "ts": 1785729911,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/news/south-korea-stablecoin-outflows-overseas-exchanges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "报告称，6 月份韩国稳定币流出量突破 3.67 亿美元",
-      "_ts": 1785730224353
-    },
-    {
-      "s": "US and Japan take action to prop up yen in rare joint move",
-      "t": "2026-08-03T02:43:06.000Z",
-      "ts": 1785724986,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/cglj1pr0wjwo?at_medium=RSS&at_campaign=rss",
-      "s_cn": "美国和日本罕见联合采取行动支撑日元",
-      "_ts": 1785729405185
-    },
-    {
-      "s": "New Spider-Man film sees second-biggest ever global opening weekend",
-      "t": "2026-08-03T02:27:30.000Z",
-      "ts": 1785724050,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/c3w052le2elo?at_medium=RSS&at_campaign=rss",
-      "s_cn": "新蜘蛛侠电影迎来有史以来第二大的全球首映周末",
-      "_ts": 1785725443300
-    },
-    {
-      "s": "New Spider-Man film sees second-biggest global opening weekend ever",
-      "t": "2026-08-03T02:27:30.000Z",
-      "ts": 1785724050,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/c3w052le2elo?at_medium=RSS&at_campaign=rss",
-      "s_cn": "新蜘蛛侠电影迎来有史以来第二大的全球首映周末",
-      "_ts": 1785725220328
-    },
-    {
-      "s": "Almost £200,000 of fuel stolen from UK forecourts every day since Iran war began",
-      "t": "2026-08-03T01:04:23.000Z",
-      "ts": 1785719063,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/cy8mrrlkjppo?at_medium=RSS&at_campaign=rss",
-      "s_cn": "自伊朗战争开始以来，英国前院每天有近 20 万英镑的燃料被盗",
-      "_ts": 1785725045468
-    },
-    {
-      "s": "New Spider-Man film sees second-best global opening weekend ever",
-      "t": "2026-08-03T02:27:30.000Z",
-      "ts": 1785724050,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/c3w052le2elo?at_medium=RSS&at_campaign=rss",
-      "s_cn": "新蜘蛛侠电影迎来有史以来第二好的全球首映周末",
-      "_ts": 1785724220107
-    },
-    {
-      "s": "US and Japan jointly intervene to prop up yen in rare move",
-      "t": "2026-08-03T02:02:34.000Z",
-      "ts": 1785722554,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/cglj1pr0wjwo?at_medium=RSS&at_campaign=rss",
-      "s_cn": "美日罕见联合干预提振日元",
-      "_ts": 1785722841630
-    },
-    {
-      "s": "Suspected 4th Coldcard attack wave sweeps 389 Bitcoin: Galaxy’s Thorn",
-      "t": "2026-08-03T01:57:40.000Z",
-      "ts": 1785722260,
-      "src": "CoinTelegraph",
-      "link": "https://cointelegraph.com/news/suspected-4th-coldcard-attack-wave-sweeps-389-bitcoin-galaxys-thorn?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "s_cn": "疑似第四次Coldcard攻击浪潮席卷389个比特币：银河之刺",
-      "_ts": 1785722412406
-    },
-    {
-      "s": "XRP, Bitcoin (BTC), Cardano (ADA) and Solana (SOL) Price Analysis for August 3: Bullish Wind Blows on Cryptocurrency Market",
-      "t": "2026-08-03T00:01:00.000Z",
-      "ts": 1785715260,
-      "src": "U.Today",
-      "link": "https://u.today/xrp-bitcoin-btc-cardano-ada-and-solana-sol-price-analysis-for-august-3-bullish-wind-blows-on",
-      "s_cn": "8 月 3 日 XRP、比特币 (BTC)、卡尔达诺 (ADA) 和 Solana (SOL) 价格分析：加密货币市场看涨之风",
-      "_ts": 1785716119875
-    },
-    {
-      "s": "'The Odyssey' extends stay in 70 mm Imax theaters as shows sell out weeks in advance",
-      "t": "2026-07-30T20:51:02.000Z",
-      "ts": 1785444662,
-      "src": "CNBC",
-      "link": "https://www.cnbc.com/2026/07/30/the-odyssey-70mm-imax-run-extended-until-september.html",
-      "s_cn": "《奥德赛》延长在 70 毫米 Imax 影院的停留时间，演出提前几周售完",
-      "_ts": 1785715504326
-    },
-    {
-      "s": "Rivian reduces 2026 spending plans, narrows earnings guidance",
-      "t": "2026-07-30T21:19:16.000Z",
-      "ts": 1785446356,
-      "src": "CNBC",
-      "link": "https://www.cnbc.com/2026/07/30/rivian-rivn-q2-2026-earnings.html",
-      "s_cn": "Rivian 减少 2026 年支出计划，缩小盈利指引",
-      "_ts": 1785715504326
-    },
-    {
-      "s": "'I pay £580 a month to live in a disused care home': Property guardians show us around",
-      "t": "2026-07-30T23:05:41.000Z",
-      "ts": 1785452741,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/cj4kvge1pyvo?at_medium=RSS&at_campaign=rss",
-      "s_cn": "“我每月支付 580 英镑住在废弃的护理院”：财产监护人带我们参观",
-      "_ts": 1785715504326
-    },
-    {
-      "s": "UK petrol prices hit highest level since Iran war began",
-      "t": "2026-07-31T11:19:23.000Z",
-      "ts": 1785496763,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
-      "s_cn": "英国汽油价格创伊朗战争爆发以来最高水平",
-      "_ts": 1785715504326
-    },
-    {
-      "s": "More consumer companies are staying private for longer, avoiding the IPO road",
-      "t": "2026-07-31T11:30:01.000Z",
-      "ts": 1785497401,
-      "src": "CNBC",
-      "link": "https://www.cnbc.com/2026/07/31/private-consumer-companies-ipo.html",
-      "s_cn": "越来越多的消费品公司保持私有状态的时间更长，避免走IPO之路",
-      "_ts": 1785715504326
-    },
-    {
-      "s": "Passenger on British Airways mayday flight describes fear and shout of 'I don't want to die'",
-      "t": "2026-07-31T12:19:20.000Z",
-      "ts": 1785500360,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/cn9n2v3lwr0o?at_medium=RSS&at_campaign=rss",
-      "s_cn": "英国航空求救航班上的乘客描述了恐惧并大喊“我不想死”",
-      "_ts": 1785715504326
-    },
-    {
-      "s": "Sainsbury's agrees to sell Argos for £120m",
-      "t": "2026-07-31T12:42:22.000Z",
-      "ts": 1785501742,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/cpw9yrl4p2qo?at_medium=RSS&at_campaign=rss",
-      "s_cn": "Sainsbury's 同意以 1.2 亿英镑出售 Argos",
-      "_ts": 1785715504326
-    },
-    {
-      "s": "US Treasury Sanctions Iranian Firms Taking Bitcoin for Hormuz Passage",
-      "t": "2026-07-31T15:05:43.000Z",
-      "ts": 1785510343,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374789/us-treasury-sanctions-iranian-firms-taking-bitcoin-for-hormuz-passage",
-      "s_cn": "美国财政部制裁伊朗公司通过霍尔木兹海峡获取比特币",
-      "_ts": 1785715504326
-    },
-    {
-      "s": "Circle Lands New York Trust Charter as Stablecoin Issuer Expands Regulatory Footprint",
-      "t": "2026-07-31T15:32:02.000Z",
-      "ts": 1785511922,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374791/circle-new-york-trust-charter-stablecoin-issuer",
-      "s_cn": "随着稳定币发行人扩大监管范围，Circle 获得纽约信托宪章",
-      "_ts": 1785715504326
-    },
-    {
-      "s": "BP puts North Sea business up for sale",
-      "t": "2026-07-31T15:36:21.000Z",
-      "ts": 1785512181,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/c62q7w003lro?at_medium=RSS&at_campaign=rss",
-      "s_cn": "英国石油公司 (BP) 出售北海业务",
-      "_ts": 1785715504326
-    },
-    {
-      "s": "Tether Reports $1.5B Q2 Profit as USDT Supply Grows, Gold Holdings Rise",
-      "t": "2026-07-31T17:10:49.000Z",
-      "ts": 1785517849,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374796/tether-reports-1-5b-q2-profit-usdt-supply-grows",
-      "s_cn": "随着 USDT 供应增加、黄金持有量增加，Tether 第二季度利润达 1.5 亿美元",
-      "_ts": 1785715504326
-    },
-    {
-      "s": "AI firms must answer for rogue bots, says boss of hacked company",
-      "t": "2026-07-31T18:10:28.000Z",
-      "ts": 1785521428,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/cr7k49xjzzeo?at_medium=RSS&at_campaign=rss",
-      "s_cn": "被黑公司老板表示，人工智能公司必须对流氓机器人负责",
-      "_ts": 1785715504326
-    },
-    {
-      "s": "GM to launch proprietary in-vehicle AI system later this year",
-      "t": "2026-07-31T18:13:39.000Z",
-      "ts": 1785521619,
-      "src": "CNBC",
-      "link": "https://www.cnbc.com/2026/07/31/gm-in-vehicle-ai-system.html",
-      "s_cn": "通用汽车将于今年晚些时候推出专有的车载人工智能系统",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "US Is Banning Foreign Robots—Even Roombas",
-      "t": "2026-07-31T19:43:24.000Z",
-      "ts": 1785527004,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374799/fcc-bans-foreign-humanoid-robots-china-roombas",
-      "s_cn": "美国禁止外国机器人——甚至 Roomba",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "AI Music Company Suno Loses Copyright Case in Germany",
-      "t": "2026-07-31T20:03:22.000Z",
-      "ts": 1785528202,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374802/suno-ai-music-copyright-case-germany",
-      "s_cn": "AI音乐公司Suno在德国版权诉讼中败诉",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "How Leopold Aschenbrenner built a $45 billion AI hedge fund — and lost most of it in days",
-      "t": "2026-07-31T20:19:03.000Z",
-      "ts": 1785529143,
-      "src": "CNBC",
-      "link": "https://www.cnbc.com/2026/07/31/leopold-aschenbrenner-situational-awareness-fund-fire-sale.html",
-      "s_cn": "Leopold Aschenbrenner 如何建立了价值 450 亿美元的人工智能对冲基金 - 并在几天内损失了大部分资金",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Google Yanks Google Earth AI Image Tool a Day After Launch Over Deepfake Fears",
-      "t": "2026-07-31T20:32:50.000Z",
-      "ts": 1785529970,
-      "src": "Decrypt",
-      "link": "https://decrypt.co/374805/google-yanks-google-earth-ai-image-tool-deepfake-fears",
-      "s_cn": "谷歌因担心 Deepfake 威胁而在 Google Earth 人工智能图像工具推出一天后撤回该工具",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "FIFA tests the limits of private equity in sports with World Cup subsidiary sale",
-      "t": "2026-07-31T20:40:51.000Z",
-      "ts": 1785530451,
-      "src": "CNBC",
-      "link": "https://www.cnbc.com/2026/07/31/fifa-world-cup-private-equity-sports.html",
-      "s_cn": "国际足联通过出售世界杯子公司来测试私募股权在体育领域的极限",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "‘Spider-Man: Brand New Day’ sets domestic box office preview record with $72 million",
-      "t": "2026-07-31T21:06:36.000Z",
-      "ts": 1785531996,
-      "src": "CNBC",
-      "link": "https://www.cnbc.com/2026/07/31/spider-man-brand-new-day-box-office-preview-sales.html",
-      "s_cn": "《蜘蛛侠：崭新的一天》以 7200 万美元创下国内预映票房纪录",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Fintech broker Clear Street offers investors pre-IPO access to $188 billion AI giant Databricks",
-      "t": "2026-07-31T21:49:40.000Z",
-      "ts": 1785534580,
-      "src": "CNBC",
-      "link": "https://www.cnbc.com/2026/07/31/clear-street-pre-ipo-platform-databricks.html",
-      "s_cn": "金融科技经纪商 Clear Street 为投资者提供 IPO 前投资 1,880 亿美元人工智能巨头 Databricks 的机会",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Snapchat joins other popular platforms in fight against 'AI slop'",
-      "t": "2026-07-31T21:57:59.000Z",
-      "ts": 1785535079,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/c77g6dm5pr8o?at_medium=RSS&at_campaign=rss",
-      "s_cn": "Snapchat 与其他流行平台一起对抗“人工智能滥用”",
-      "_ts": 1785715504325
-    },
-    {
-      "s": "Stick to spending limits, PM and chancellor tell ministers in joint memo",
-      "t": "2026-08-01T07:48:01.000Z",
-      "ts": 1785570481,
-      "src": "BBC Business",
-      "link": "https://www.bbc.co.uk/news/articles/cjd4yz35x8go?at_medium=RSS&at_campaign=rss",
-      "s_cn": "总理和财政大臣在联合备忘录中告诉部长们，坚持支出限制",
-      "_ts": 1785715504325
     }
   ],
-  "updated": 1786089470968,
+  "updated": 1786114683603,
   "sources": 6
 }

@@ -1,0 +1,350 @@
+[
+  {
+    "timestamp": 1786114063158,
+    "sentiment": [
+      {
+        "symbol": "BTC",
+        "mentions": 5,
+        "sentiment": 0.33,
+        "heat": 5
+      },
+      {
+        "symbol": "ARB",
+        "mentions": 1,
+        "sentiment": 1,
+        "heat": 1
+      },
+      {
+        "symbol": "BNB",
+        "mentions": 1,
+        "sentiment": 0,
+        "heat": 1
+      },
+      {
+        "symbol": "TIA",
+        "mentions": 1,
+        "sentiment": 0,
+        "heat": 1
+      }
+    ]
+  },
+  {
+    "timestamp": 1786114299690,
+    "sentiment": [
+      {
+        "symbol": "SOL",
+        "mentions": 18,
+        "sentiment": 0.6,
+        "heat": 18
+      },
+      {
+        "symbol": "BTC",
+        "mentions": 5,
+        "sentiment": 0.33,
+        "heat": 5
+      },
+      {
+        "symbol": "ARB",
+        "mentions": 1,
+        "sentiment": 1,
+        "heat": 1
+      },
+      {
+        "symbol": "BNB",
+        "mentions": 1,
+        "sentiment": 0,
+        "heat": 1
+      },
+      {
+        "symbol": "BONK",
+        "mentions": 1,
+        "sentiment": 0,
+        "heat": 1
+      }
+    ]
+  },
+  {
+    "timestamp": 1786114388912,
+    "sources": {
+      "reddit": {
+        "posts": 50,
+        "subreddits": [
+          "CryptoMarkets",
+          "CryptoTrading"
+        ],
+        "coinMentions": 3
+      },
+      "coingecko": {
+        "trending": 15
+      },
+      "santiment": {
+        "words": 30
+      }
+    },
+    "topCoins": [
+      {
+        "symbol": "BTC",
+        "composite": 0.4,
+        "reddit": 1,
+        "cg": 0,
+        "santiment": 0
+      },
+      {
+        "symbol": "BICO",
+        "composite": 0.3,
+        "reddit": 0,
+        "cg": 1,
+        "santiment": 0
+      },
+      {
+        "symbol": "LINK",
+        "composite": 0.3,
+        "reddit": 0,
+        "cg": 0,
+        "santiment": 1
+      },
+      {
+        "symbol": "LIT",
+        "composite": 0.279,
+        "reddit": 0,
+        "cg": 0.93,
+        "santiment": 0
+      },
+      {
+        "symbol": "CASHCAT",
+        "composite": 0.261,
+        "reddit": 0,
+        "cg": 0.87,
+        "santiment": 0
+      },
+      {
+        "symbol": "ETHFI",
+        "composite": 0.24,
+        "reddit": 0,
+        "cg": 0.8,
+        "santiment": 0
+      },
+      {
+        "symbol": "ONDO",
+        "composite": 0.219,
+        "reddit": 0,
+        "cg": 0.73,
+        "santiment": 0
+      },
+      {
+        "symbol": "SOL",
+        "composite": 0.201,
+        "reddit": 0,
+        "cg": 0.67,
+        "santiment": 0
+      },
+      {
+        "symbol": "PUMP",
+        "composite": 0.18,
+        "reddit": 0,
+        "cg": 0.6,
+        "santiment": 0
+      },
+      {
+        "symbol": "UNI",
+        "composite": 0.174,
+        "reddit": 0,
+        "cg": 0.07,
+        "santiment": 0.51
+      },
+      {
+        "symbol": "ENA",
+        "composite": 0.159,
+        "reddit": 0,
+        "cg": 0.53,
+        "santiment": 0
+      },
+      {
+        "symbol": "PENGU",
+        "composite": 0.141,
+        "reddit": 0,
+        "cg": 0.47,
+        "santiment": 0
+      },
+      {
+        "symbol": "PI",
+        "composite": 0.12,
+        "reddit": 0,
+        "cg": 0.4,
+        "santiment": 0
+      },
+      {
+        "symbol": "BP",
+        "composite": 0.099,
+        "reddit": 0,
+        "cg": 0.33,
+        "santiment": 0
+      },
+      {
+        "symbol": "PONS",
+        "composite": 0.081,
+        "reddit": 0,
+        "cg": 0.27,
+        "santiment": 0
+      },
+      {
+        "symbol": "HFT",
+        "composite": 0.06,
+        "reddit": 0,
+        "cg": 0.2,
+        "santiment": 0
+      },
+      {
+        "symbol": "SEI",
+        "composite": 0.052,
+        "reddit": 0.13,
+        "cg": 0,
+        "santiment": 0
+      },
+      {
+        "symbol": "ALGO",
+        "composite": 0.052,
+        "reddit": 0.13,
+        "cg": 0,
+        "santiment": 0
+      },
+      {
+        "symbol": "STONKBROKER",
+        "composite": 0.039,
+        "reddit": 0,
+        "cg": 0.13,
+        "santiment": 0
+      }
+    ]
+  },
+  {
+    "timestamp": 1786114416849,
+    "sources": {
+      "reddit": {
+        "posts": 0,
+        "subreddits": [],
+        "coinMentions": 0
+      },
+      "coingecko": {
+        "trending": 15
+      },
+      "santiment": {
+        "words": 30
+      }
+    },
+    "topCoins": [
+      {
+        "symbol": "BICO",
+        "composite": 0.3,
+        "reddit": 0,
+        "cg": 1,
+        "santiment": 0
+      },
+      {
+        "symbol": "LINK",
+        "composite": 0.3,
+        "reddit": 0,
+        "cg": 0,
+        "santiment": 1
+      },
+      {
+        "symbol": "LIT",
+        "composite": 0.279,
+        "reddit": 0,
+        "cg": 0.93,
+        "santiment": 0
+      },
+      {
+        "symbol": "CASHCAT",
+        "composite": 0.261,
+        "reddit": 0,
+        "cg": 0.87,
+        "santiment": 0
+      },
+      {
+        "symbol": "ETHFI",
+        "composite": 0.24,
+        "reddit": 0,
+        "cg": 0.8,
+        "santiment": 0
+      },
+      {
+        "symbol": "ONDO",
+        "composite": 0.219,
+        "reddit": 0,
+        "cg": 0.73,
+        "santiment": 0
+      },
+      {
+        "symbol": "SOL",
+        "composite": 0.201,
+        "reddit": 0,
+        "cg": 0.67,
+        "santiment": 0
+      },
+      {
+        "symbol": "PUMP",
+        "composite": 0.18,
+        "reddit": 0,
+        "cg": 0.6,
+        "santiment": 0
+      },
+      {
+        "symbol": "UNI",
+        "composite": 0.174,
+        "reddit": 0,
+        "cg": 0.07,
+        "santiment": 0.51
+      },
+      {
+        "symbol": "ENA",
+        "composite": 0.159,
+        "reddit": 0,
+        "cg": 0.53,
+        "santiment": 0
+      },
+      {
+        "symbol": "PENGU",
+        "composite": 0.141,
+        "reddit": 0,
+        "cg": 0.47,
+        "santiment": 0
+      },
+      {
+        "symbol": "PI",
+        "composite": 0.12,
+        "reddit": 0,
+        "cg": 0.4,
+        "santiment": 0
+      },
+      {
+        "symbol": "BP",
+        "composite": 0.099,
+        "reddit": 0,
+        "cg": 0.33,
+        "santiment": 0
+      },
+      {
+        "symbol": "PONS",
+        "composite": 0.081,
+        "reddit": 0,
+        "cg": 0.27,
+        "santiment": 0
+      },
+      {
+        "symbol": "HFT",
+        "composite": 0.06,
+        "reddit": 0,
+        "cg": 0.2,
+        "santiment": 0
+      },
+      {
+        "symbol": "STONKBROKER",
+        "composite": 0.039,
+        "reddit": 0,
+        "cg": 0.13,
+        "santiment": 0
+      }
+    ]
+  }
+]

@@ -200,11 +200,25 @@
         </div>
         <!-- 社媒情绪子Tab -->
         <div class="sub-tab-content" id="sentSocial" style="display:none;">
-          <div style="padding:40px;text-align:center;color:var(--text-dim);">
-            <div style="font-size:48px;margin-bottom:16px;">🚧</div>
-            <div style="font-size:14px;">社媒情绪模块正在建设中</div>
-            <div style="font-size:12px;margin-top:8px;">Reddit · Twitter · Telegram 数据即将接入</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;padding:12px;">
+            <div style="flex:1;min-width:200px;">
+              <div style="font-size:11px;color:var(--text-dim);margin-bottom:8px;">📊 社媒综合热度 <span style="font-size:9px;">Reddit+CG+Santiment</span></div>
+              <div id="socialHeatList" style="font-size:11px;max-height:380px;overflow-y:auto;">
+                <span style="color:var(--text-dim);">加载中...</span>
+              </div>
+            </div>
+            <div style="flex:1;min-width:200px;">
+              <div style="font-size:11px;color:var(--text-dim);margin-bottom:8px;">🔥 CoinGecko Trending</div>
+              <div id="socialCGTrending" style="font-size:11px;max-height:180px;overflow-y:auto;">
+                <span style="color:var(--text-dim);">-</span>
+              </div>
+              <div style="font-size:11px;color:var(--text-dim);margin:12px 0 8px;">🌐 Santiment 热词</div>
+              <div id="socialSantiment" style="font-size:11px;max-height:180px;overflow-y:auto;color:var(--text-dim);">
+                <span style="color:var(--text-dim);">-</span>
+              </div>
+            </div>
           </div>
+          <div style="font-size:9px;color:var(--text-dim);padding:0 12px 8px;" id="socialUpdated">更新: -</div>
         </div>
       </div>
     </div>

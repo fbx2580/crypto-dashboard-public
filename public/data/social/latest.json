@@ -1,0 +1,350 @@
+{
+  "timestamp": 1786114416849,
+  "sources": {
+    "reddit": {
+      "posts": 0,
+      "subreddits": [],
+      "coinMentions": 0
+    },
+    "coingecko": {
+      "trending": 15
+    },
+    "santiment": {
+      "words": 30
+    }
+  },
+  "sentiment": [
+    {
+      "symbol": "BICO",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 15,
+      "santimentScore": 0,
+      "composite": 0.3,
+      "redditNorm": 0,
+      "cgNorm": 1,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "LINK",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 0,
+      "santimentScore": 211.44746907552084,
+      "composite": 0.3,
+      "redditNorm": 0,
+      "cgNorm": 0,
+      "santimentNorm": 1
+    },
+    {
+      "symbol": "LIT",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 14,
+      "santimentScore": 0,
+      "composite": 0.279,
+      "redditNorm": 0,
+      "cgNorm": 0.93,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "CASHCAT",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 13,
+      "santimentScore": 0,
+      "composite": 0.261,
+      "redditNorm": 0,
+      "cgNorm": 0.87,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "ETHFI",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 12,
+      "santimentScore": 0,
+      "composite": 0.24,
+      "redditNorm": 0,
+      "cgNorm": 0.8,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "ONDO",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 11,
+      "santimentScore": 0,
+      "composite": 0.219,
+      "redditNorm": 0,
+      "cgNorm": 0.73,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "SOL",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 10,
+      "santimentScore": 0,
+      "composite": 0.201,
+      "redditNorm": 0,
+      "cgNorm": 0.67,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "PUMP",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 9,
+      "santimentScore": 0,
+      "composite": 0.18,
+      "redditNorm": 0,
+      "cgNorm": 0.6,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "UNI",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 1,
+      "santimentScore": 107.87221272786458,
+      "composite": 0.174,
+      "redditNorm": 0,
+      "cgNorm": 0.07,
+      "santimentNorm": 0.51
+    },
+    {
+      "symbol": "ENA",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 8,
+      "santimentScore": 0,
+      "composite": 0.159,
+      "redditNorm": 0,
+      "cgNorm": 0.53,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "PENGU",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 7,
+      "santimentScore": 0,
+      "composite": 0.141,
+      "redditNorm": 0,
+      "cgNorm": 0.47,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "PI",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 6,
+      "santimentScore": 0,
+      "composite": 0.12,
+      "redditNorm": 0,
+      "cgNorm": 0.4,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "BP",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 5,
+      "santimentScore": 0,
+      "composite": 0.099,
+      "redditNorm": 0,
+      "cgNorm": 0.33,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "PONS",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 4,
+      "santimentScore": 0,
+      "composite": 0.081,
+      "redditNorm": 0,
+      "cgNorm": 0.27,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "HFT",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 3,
+      "santimentScore": 0,
+      "composite": 0.06,
+      "redditNorm": 0,
+      "cgNorm": 0.2,
+      "santimentNorm": 0
+    },
+    {
+      "symbol": "STONKBROKER",
+      "redditHeat": 0,
+      "redditSent": 0,
+      "cgScore": 2,
+      "santimentScore": 0,
+      "composite": 0.039,
+      "redditNorm": 0,
+      "cgNorm": 0.13,
+      "santimentNorm": 0
+    }
+  ],
+  "redditRaw": [],
+  "cgRaw": [
+    {
+      "symbol": "BICO",
+      "name": "Biconomy",
+      "mcapRank": 432,
+      "score": 0
+    },
+    {
+      "symbol": "LIT",
+      "name": "Lighter",
+      "mcapRank": 88,
+      "score": 1
+    },
+    {
+      "symbol": "CASHCAT",
+      "name": "Cash Cat",
+      "mcapRank": 258,
+      "score": 2
+    },
+    {
+      "symbol": "ETHFI",
+      "name": "Ether.fi",
+      "mcapRank": 111,
+      "score": 3
+    },
+    {
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "mcapRank": 43,
+      "score": 4
+    },
+    {
+      "symbol": "SOL",
+      "name": "Solana",
+      "mcapRank": 7,
+      "score": 5
+    },
+    {
+      "symbol": "PUMP",
+      "name": "Pump.fun",
+      "mcapRank": 69,
+      "score": 6
+    },
+    {
+      "symbol": "ENA",
+      "name": "Ethena",
+      "mcapRank": 68,
+      "score": 7
+    },
+    {
+      "symbol": "PENGU",
+      "name": "Pudgy Penguins",
+      "mcapRank": 109,
+      "score": 8
+    },
+    {
+      "symbol": "PI",
+      "name": "Pi Network",
+      "mcapRank": 65,
+      "score": 9
+    },
+    {
+      "symbol": "BP",
+      "name": "Backpack",
+      "mcapRank": 256,
+      "score": 10
+    },
+    {
+      "symbol": "PONS",
+      "name": "Pons",
+      "mcapRank": 815,
+      "score": 11
+    },
+    {
+      "symbol": "HFT",
+      "name": "Hashflow",
+      "mcapRank": 996,
+      "score": 12
+    },
+    {
+      "symbol": "STONKBROKER",
+      "name": "StonkBroker",
+      "mcapRank": 622,
+      "score": 13
+    },
+    {
+      "symbol": "UNI",
+      "name": "Uniswap",
+      "mcapRank": 37,
+      "score": 14
+    }
+  ],
+  "santimentRaw": [
+    {
+      "word": "binanceexchange",
+      "score": 577.2266031901041
+    },
+    {
+      "word": "link",
+      "score": 211.44746907552084
+    },
+    {
+      "word": "limits",
+      "score": 152.89983113606772
+    },
+    {
+      "word": "coldcard",
+      "score": 149.65576171875
+    },
+    {
+      "word": "text",
+      "score": 148.60248819986978
+    },
+    {
+      "word": "elonbet",
+      "score": 147.50923665364584
+    },
+    {
+      "word": "thursday",
+      "score": 137.55357869466147
+    },
+    {
+      "word": "nikita",
+      "score": 135.22268676757812
+    },
+    {
+      "word": "drive",
+      "score": 132.40885416666666
+    },
+    {
+      "word": "grab",
+      "score": 128.23274739583334
+    },
+    {
+      "word": "stakers",
+      "score": 126.72939046223958
+    },
+    {
+      "word": "exposed",
+      "score": 119.08797200520833
+    },
+    {
+      "word": "insane",
+      "score": 111.92144775390625
+    },
+    {
+      "word": "uni",
+      "score": 107.87221272786458
+    },
+    {
+      "word": "banned",
+      "score": 105.1815694173177
+    }
+  ],
+  "recentPosts": []
+}

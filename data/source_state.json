@@ -1,18 +1,18 @@
 {
   "etherscan": {
     "status": "ok",
-    "time": 1786089460728
+    "time": 1786114668749
   },
   "mempool": {
     "status": "ok",
-    "time": 1786089460736
+    "time": 1786114668758
   },
   "blockstream": {
     "status": "ok",
-    "time": 1786089461060
+    "time": 1786114669083
   },
   "alchemy": {
-    "status": "ok",
-    "time": 1786089461284
+    "status": "down",
+    "time": 1786111368157
   }
 }

@@ -796,6 +796,51 @@ function switchSentimentTab(btn, tabId) {
   btn.style.background = 'var(--accent)'; btn.style.color = '#fff';
   document.querySelectorAll('.sub-tab-content').forEach(c => c.style.display = 'none');
   document.getElementById(tabId).style.display = '';
+  if (tabId === 'sentSocial') refreshSocialSentiment();
+}
+
+// ─── 社媒情绪 ───
+async function refreshSocialSentiment() {
+  try {
+    const resp = await fetch('/api/social/sentiment');
+    if (!resp.ok) return;
+    const data = await resp.json();
+    // 综合热度排行
+    const list = document.getElementById('socialHeatList');
+    if (list && data.sentiment?.length) {
+      list.innerHTML = data.sentiment.slice(0, 20).map(s => {
+        const bar = '▌'.repeat(Math.ceil(s.composite * 15));
+        const cls = s.composite > 0.3 ? 'var(--accent)' : s.composite > 0.1 ? 'var(--text)' : 'var(--text-dim)';
+        return `<div style="display:flex;align-items:center;gap:6px;padding:2px 0;">
+          <span style="width:50px;font-weight:600;color:${cls};">${s.symbol}</span>
+          <span style="flex:1;color:${cls};font-size:10px;overflow:hidden;white-space:nowrap;">${bar}</span>
+          <span style="font-size:10px;color:var(--text-dim);">${(s.composite*100).toFixed(0)}</span>
+        </div>`;
+      }).join('');
+    }
+    // CG Trending
+    const cg = document.getElementById('socialCGTrending');
+    if (cg && data.cgRaw?.length) {
+      cg.innerHTML = data.cgRaw.slice(0, 10).map((c,i) =>
+        `<div style="padding:1px 0;"><span style="color:var(--accent);">${c.symbol}</span> ${c.name} <span style="color:var(--text-dim);">#${c.mcapRank}</span></div>`
+      ).join('');
+    }
+    // Santiment
+    const sm = document.getElementById('socialSantiment');
+    if (sm && data.santimentRaw?.length) {
+      const maxScore = Math.max(...data.santimentRaw.map(w => w.score));
+      sm.innerHTML = data.santimentRaw.slice(0, 10).map(w => {
+        const bar = '▌'.repeat(Math.ceil(w.score / maxScore * 12));
+        return `<div style="padding:1px 0;"><span>${w.word}</span> <span style="color:var(--text-dim);font-size:9px;">${bar}</span></div>`;
+      }).join('');
+    }
+    // 更新时间和数据源
+    const upd = document.getElementById('socialUpdated');
+    if (upd) {
+      const src = data.sources || {};
+      upd.textContent = `更新: ${new Date(data.timestamp).toLocaleTimeString()} | Reddit:${src.reddit?.posts||0}帖 CG:${src.coingecko?.trending||0}币 Santiment:${src.santiment?.words||0}词`;
+    }
+  } catch(e) {}
 }
 
 // ─── Tab Switching ───
